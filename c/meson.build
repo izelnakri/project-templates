@@ -1,38 +1,34 @@
-# TODO: how to version the deps?
-# Make them runnable with flatpak
 project('github_user_fetcher', 'c', version : '1.0.0', default_options : ['warning_level=3'])
 
 cc = meson.get_compiler('c')
 
-deps = [
+dependencies = [
   dependency('jansson', required: true),
   dependency('libcurl', required: true),
 ]
 
-incdir = include_directories('src')
+headers = include_directories('src', 'vendor/civetweb')
+executable_src = files('src/main.c', 'src/user.c', 'src/server.c', 'vendor/civetweb/civetweb.c')
 
-sources = files('src/main.c', 'src/user.c')
+executable('github_user_fetcher', executable_src,
+  dependencies: dependencies,
+  include_directories: headers,
+  c_args: ['-DOPENSSL_API_3_0'],
+  install: true,
+)
 
-# Build the executable
-executable('github_user_fetcher', sources,
-  dependencies: deps,
-  include_directories: incdir,
+lib_src = files('src/user.c')
+shared_library('github_user_fetcher', lib_src,
+  dependencies: dependencies,
+  include_directories: headers,
+  install: true,
+)
+
+static_library('github_user_fetcher_static', lib_src,
+  dependencies: dependencies,
+  include_directories: headers,
+  c_args: ['-DOPENSSL_API_3_0'],
   install: true
 )
 
-# Build static and shared libs
-libsrc = files('src/user.c')
-shared_library('github_user_fetcher', libsrc,
-  dependencies: deps,
-  include_directories: incdir,
-  install: true
-)
-
-static_library('github_user_fetcher_static', libsrc,
-  dependencies: deps,
-  include_directories: incdir,
-  install: true
-)
-
-# Install header file
-install_headers('src/user.h', subdir: 'github_user_fetcher')
+install_headers('src/user.h', subdir: 'github_user_fetcher') # installs to /{prefix}/include/github_user_fetcher/user.h
