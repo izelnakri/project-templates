@@ -1,0 +1,51 @@
+{
+    "app-id": "org.example.GithubUserFetcher",
+    "runtime": "org.freedesktop.Platform",
+    "runtime-version": "23.08",
+    "sdk": "org.freedesktop.Sdk",
+    "command": "github_user_fetcher",
+    "finish-args": [
+        "--share=network",
+        "--filesystem=home"
+    ],
+    "modules": [
+        {
+          "name": "nix-dependencies",
+          "buildsystem": "simple",
+          "build-commands": [
+            "mkdir -p /app/include /app/lib/pkgconfig",
+            "cp -r nix-deps/include/* /app/include/",
+            "cp -r nix-deps/lib/*.so* /app/lib/",
+            "cp -r nix-deps/lib/*.a /app/lib/ || true",
+            "cp -r nix-deps/lib/pkgconfig/* /app/lib/pkgconfig/",
+            "chmod -R u+w /app/lib/*.so*"
+          ],
+          "sources": [
+            {
+              "type": "archive",
+              "path": "nix-deps.tar.gz",
+              "dest": "nix-deps"
+            }
+          ]
+        },
+        {
+            "name": "github-user-fetcher",
+            "buildsystem": "meson",
+            "builddir": true,
+            "build-options": {
+                "env": {
+                    "PKG_CONFIG_PATH": "/app/lib/pkgconfig",
+                    "LD_LIBRARY_PATH": "/app/lib",
+                    "C_INCLUDE_PATH": "/app/include",
+                    "LDFLAGS": "-L/app/lib"
+                }
+            },
+            "sources": [
+                {
+                    "type": "dir",
+                    "path": "."
+                }
+            ]
+        }
+    ]
+}
