@@ -154,86 +154,12 @@ for STORE_PATH in "${ALL_PATHS[@]}"; do
   fi
 done
 
-# STEP 4: Fix library symlinks and ensure standard library naming convention -> NOTE: is this part really needed?
-cd "$FINAL_STAGE/lib"
-echo "🔧 Checking library symlinks..."
-
-# Get list of all real libraries (not symlinks)
-REAL_LIBS=$(find . -type f -name "*.so*" | sort)
-
-# For each real library, ensure we have the proper symlinks
-for lib in $REAL_LIBS; do
-  # Get the SONAME for this library
-  SONAME=$(objdump -p "$lib" 2>/dev/null | grep SONAME | awk '{print $2}' || echo "")
-  
-  # If no SONAME, try to generate one from the filename
-  if [[ -z "$SONAME" ]]; then
-    BASE_NAME=$(basename "$lib")
-    # Extract the base name and version
-    if [[ "$BASE_NAME" =~ (lib[^.]*)\.so\.([0-9]+)(\.[0-9]+)* ]]; then
-      LIB_NAME="${BASH_REMATCH[1]}"
-      MAJOR_VERSION="${BASH_REMATCH[2]}"
-      SONAME="${LIB_NAME}.so.${MAJOR_VERSION}"
-      echo "📚 Generated SONAME for $lib: $SONAME"
-    fi
-  else
-    echo "📚 Found SONAME for $lib: $SONAME"
-  fi
-  
-  # If we have a SONAME, ensure the symlink exists
-  if [[ -n "$SONAME" && ! -e "$SONAME" && "$lib" != "./$SONAME" ]]; then
-    ln -sf "$(basename "$lib")" "$SONAME"
-    echo "🔗 Created symlink $SONAME -> $(basename "$lib")"
-  fi
-  
-  # Also create the unversioned .so symlink for linking
-  if [[ "$SONAME" =~ (lib[^.]*)\.so\..* ]]; then
-    LIB_BASE="${BASH_REMATCH[1]}"
-    UNVERSIONED="${LIB_BASE}.so"
-    if [[ ! -e "$UNVERSIONED" ]]; then
-      ln -sf "$SONAME" "$UNVERSIONED"
-      echo "🔗 Created unversioned symlink $UNVERSIONED -> $SONAME"
-    fi
-  fi
-done
-
-cd - > /dev/null
-
-# STEP 5: Patch all pkg-config files
+# STEP 4: Patch all pkg-config files
 for pc_file in "$FINAL_STAGE/lib/pkgconfig/"*.pc; do
   [ -f "$pc_file" ] || continue
   sed -i 's|^prefix=.*|prefix=/app|g' "$pc_file"
   # Remove problematic dependencies
   sed -i '/sysprof-capture-4/d' "$pc_file"
-done
-
-# STEP 6: Final check for missing deps. NOTE:Why is this part needed?
-while true; do
-  MISSING=()
-  for dep in $(get_all_needed_pc_files); do
-    if ! pc_file_exists "$dep"; then
-      MISSING+=("$dep")
-    fi
-  done
-
-  if [[ ${#MISSING[@]} -eq 0 ]]; then
-    echo "✅ All dependencies satisfied!"
-    break
-  fi
-
-  echo "🔁 Trying to fetch missing deps: ${MISSING[*]}"
-  NEW_FOUND=0
-  for missing_dep in "${MISSING[@]}"; do
-    if try_fetch_and_copy_pc_file "$missing_dep"; then
-      ALL_PACKAGES+=("$missing_dep")
-      NEW_FOUND=1
-    fi
-  done
-
-  if [[ $NEW_FOUND -eq 0 ]]; then
-    echo "❌ Could not find some .pc files: ${MISSING[*]}"
-    break
-  fi
 done
 
 # Print library directory contents for verification

@@ -19,7 +19,7 @@
             pkg-config
             curl.dev
             jansson
-            # criterion
+            criterion
             gtk4
           ];
 

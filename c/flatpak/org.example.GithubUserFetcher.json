@@ -45,10 +45,12 @@
                 "env": {
                   "PKG_CONFIG_PATH": "/app/lib/pkgconfig",
                   "LD_LIBRARY_PATH": "/app/lib",
-                  "C_INCLUDE_PATH": "/app/include",
-                  "LDFLAGS": "-L/app/lib -Wl,-rpath,/app/lib"
+                  "C_INCLUDE_PATH": "/app/include"
                 }
             },
+            "config-opts": [
+                "-Dtests=disabled"
+            ],
             "sources": [
                 {
                     "type": "dir",
