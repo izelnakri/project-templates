@@ -42,11 +42,23 @@ install: all
 	install -D $(SHARED_LIB) $(DESTDIR)$(LIBDIR)/$(SHARED_LIB)
 	install -D src/user.h $(DESTDIR)$(INCLUDEDIR)/github_user_fetcher/user.h
 
-build-flatpak: 
-	flatpak-builder build-dir org.example.GithubUserFetcher.json --force-clean
-run-flatpak: build-flatpak
-	echo "Running org.example.GithubUserFetcher.json:"
-	flatpak-builder --run build-dir org.example.GithubUserFetcher.json github_user_fetcher
+prepare-flatpak-builder:
+	sh flatpak/prepare-nix-deps.sh
+flatpak-builder: 
+	flatpak-builder flatpak/build flatpak/org.example.GithubUserFetcher.json --force-clean
+build-flatpak: clean-flatpak-build prepare-flatpak-builder flatpak-builder
+run-flatpak-cli: build-flatpak
+	echo "Running org.example.GithubUserFetcher.json CLI:"
+	flatpak-builder --run flatpak/build flatpak/org.example.GithubUserFetcher.json github_user_fetcher
+run-flatpak-gui: build-flatpak
+	echo "Running org.example.GithubUserFetcher.json GUI:"
+	flatpak-builder --run flatpak/build flatpak/org.example.GithubUserFetcher.json github_user_fetcher_gui
+run-flatpak: run-flatpak-gui
+clean-flatpak-build:
+	rm -rf .flatpak-builder flatpak/build flatpak/nix-deps.tar.gz
+
+test:
+	meson compile -C build && meson test -C build
 
 clean:
 	rm -f $(OBJ) $(LIBOBJ) $(TARGET) $(STATIC_LIB) $(SHARED_LIB)

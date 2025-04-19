@@ -2,7 +2,7 @@
 set -euo pipefail
 
 # INITIAL_PACKAGES=("jansson" "gtk4" "glib" "lerc") # Add packages as needed
-INITIAL_PACKAGES=("jansson")
+INITIAL_PACKAGES=("jansson") # NOTE: this doesnt need gtk4, glib on gnome sdk & runtime
 TEMP_DIR=$(mktemp -d)
 FINAL_STAGE="$TEMP_DIR/final"
 PC_TEMP="$TEMP_DIR/pcfiles"
@@ -154,7 +154,7 @@ for STORE_PATH in "${ALL_PATHS[@]}"; do
   fi
 done
 
-# STEP 4: Fix library symlinks and ensure standard library naming convention
+# STEP 4: Fix library symlinks and ensure standard library naming convention -> NOTE: is this part really needed?
 cd "$FINAL_STAGE/lib"
 echo "🔧 Checking library symlinks..."
 
@@ -207,7 +207,7 @@ for pc_file in "$FINAL_STAGE/lib/pkgconfig/"*.pc; do
   sed -i '/sysprof-capture-4/d' "$pc_file"
 done
 
-# STEP 6: Final check for missing deps
+# STEP 6: Final check for missing deps. NOTE:Why is this part needed?
 while true; do
   MISSING=()
   for dep in $(get_all_needed_pc_files); do
@@ -244,8 +244,8 @@ ls -la "$FINAL_STAGE/lib" | grep -v "total"
 find "$FINAL_STAGE" -type d -empty -delete
 
 # Create the tarball
-tar -czf nix-deps.tar.gz -C "$FINAL_STAGE" .
+tar -czf flatpak/nix-deps.tar.gz -C "$FINAL_STAGE" .
 
 # Clean up temporary directory
 rm -rf "$TEMP_DIR"
-echo "🎉 Done: nix-deps.tar.gz ready"
+echo "🎉 Done: flatpak/nix-deps.tar.gz ready"

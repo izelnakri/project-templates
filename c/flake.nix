@@ -19,7 +19,8 @@
             pkg-config
             curl.dev
             jansson
-            gcc
+            # criterion
+            gtk4
           ];
 
           PKG_CONFIG_PATH = pkgs.lib.makeLibraryPath [ pkgs.jansson.dev pkgs.curl.dev ] + "/lib/pkgconfig";
