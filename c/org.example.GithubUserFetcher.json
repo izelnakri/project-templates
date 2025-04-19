@@ -1,12 +1,21 @@
 {
     "app-id": "org.example.GithubUserFetcher",
-    "runtime": "org.freedesktop.Platform",
-    "runtime-version": "23.08",
-    "sdk": "org.freedesktop.Sdk",
-    "command": "github_user_fetcher",
+    "runtime": "org.gnome.Platform",
+    "runtime-version": "48",
+    "sdk": "org.gnome.Sdk",
+    "command": "github_user_fetcher_gui",
     "finish-args": [
         "--share=network",
-        "--filesystem=home"
+        "--filesystem=home",
+        "--socket=x11",
+        "--socket=wayland",
+        "--share=ipc",
+        "--device=dri",
+        "--socket=session-bus",
+        "--filesystem=xdg-run/dconf",
+        "--filesystem=~/.config/dconf:ro",
+        "--talk-name=ca.desrt.dconf",
+        "--env=DCONF_USER_CONFIG_DIR=.config/dconf"
     ],
     "modules": [
         {
@@ -18,7 +27,7 @@
             "cp -r nix-deps/lib/*.so* /app/lib/",
             "cp -r nix-deps/lib/*.a /app/lib/ || true",
             "cp -r nix-deps/lib/pkgconfig/* /app/lib/pkgconfig/",
-            "chmod -R u+w /app/lib/*.so*"
+            "echo 'Libraries installed:' && ls -la /app/lib"
           ],
           "sources": [
             {
@@ -34,10 +43,10 @@
             "builddir": true,
             "build-options": {
                 "env": {
-                    "PKG_CONFIG_PATH": "/app/lib/pkgconfig",
-                    "LD_LIBRARY_PATH": "/app/lib",
-                    "C_INCLUDE_PATH": "/app/include",
-                    "LDFLAGS": "-L/app/lib"
+                  "PKG_CONFIG_PATH": "/app/lib/pkgconfig",
+                  "LD_LIBRARY_PATH": "/app/lib",
+                  "C_INCLUDE_PATH": "/app/include",
+                  "LDFLAGS": "-L/app/lib -Wl,-rpath,/app/lib"
                 }
             },
             "sources": [
