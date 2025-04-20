@@ -7,11 +7,8 @@ dependencies = [
   dependency('libcurl', required: true),
 ]
 
-dependency('glib-2.0') # NOTE: check if needed
-
 headers = include_directories('src', 'vendor/civetweb')
 
-# NOTE: check if it can be simplified
 executable('github_user_fetcher', files('src/main.c', 'src/user.c', 'src/server.c', 'vendor/civetweb/civetweb.c'),
   dependencies: dependencies,
   include_directories: headers,
@@ -50,7 +47,7 @@ if build_tests
   ]
 
   test_executable = executable('test_user', 
-    files('tests/test_user.c'),  # Check if it can me wildcarded
+    files('tests/test_user.c'),
     include_directories: headers,
     dependencies: dependencies + test_dependencies,
     link_with: libgithub_user_fetcher,

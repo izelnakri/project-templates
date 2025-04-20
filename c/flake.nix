@@ -14,7 +14,7 @@
           f { inherit pkgs system; }
       );
     in {
-      devShells = forAllSystems ({ pkgs }: {
+      devShells = forAllSystems ({ pkgs, system }: {
         default = pkgs.mkShell {
           buildInputs = with pkgs; [
             meson

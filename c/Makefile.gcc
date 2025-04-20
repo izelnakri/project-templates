@@ -1,4 +1,16 @@
-CONFIG   ?= release
+.DEFAULT_GOAL := all
+
+CONFIG ?= debug
+DEBUG ?= false
+RELEASE ?= false
+
+ifeq ($(DEBUG), true)
+  CONFIG := debug
+endif
+ifeq ($(RELEASE), true)
+  CONFIG := release
+endif
+
 CC       ?= gcc
 BUILD    := build/$(CONFIG)
 SRC      := src
@@ -22,20 +34,36 @@ TEST_SRCS := tests/test_user.c $(SRC)/user.c
 CLI_BIN := $(BUILD)/github_user_fetcher
 GUI_BIN := $(BUILD)/github_user_fetcher_gui
 TEST_BIN := $(BUILD)/test_user
-STATIC_LIB := $(BUILD)/libuser.a
-SHARED_LIB := $(BUILD)/libuser.so
+
+# Library targets:
+STATIC_OBJS := $(BUILD)/libgithub_user_fetcher_static.a.p/src_user.c.o
+STATIC_LIB := $(BUILD)/libgithub_user_fetcher_static.a
+
+SHARED_OBJS := $(BUILD)/libgithub_user_fetcher.so.p/src_user.c.o
+SHARED_LIB := $(BUILD)/libgithub_user_fetcher.so
+
+# Release related
+PREFIX     ?= /usr/local
+INCDIR     := $(PREFIX)/include/github_user_fetcher
+LIBDIR     := $(PREFIX)/lib/github_user_fetcher
 
 # === Targets ===
 
-.PHONY: all clean test run run-cli run-gui run-server lib static shared
+.PHONY: all clean test run run-cli run-gui run-server lib static shared release install uninstall debug
 
-all: $(CLI_BIN) $(GUI_BIN)
+all: clean $(CLI_BIN) $(GUI_BIN) static shared
 
 $(BUILD):
 	mkdir -p $@
 
+cli: $(CLI_BIN)
+
+server: cli
+
 $(CLI_BIN): $(CLI_SRCS) | $(BUILD)
 	$(CC) $(CFLAGS) $(INCLUDES) $^ -o $@ $(LIBS)
+
+gui: $(GUI_BIN)
 
 $(GUI_BIN): $(GUI_SRCS) | $(BUILD)
 	$(CC) $(CFLAGS) $(INCLUDES) $^ -o $@ $(GTK_LIBS)
@@ -47,15 +75,25 @@ $(TEST_BIN): $(TEST_SRCS) | $(BUILD)
 
 static: $(STATIC_LIB)
 
-$(STATIC_LIB): $(SRC)/user.c | $(BUILD)
-	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $(BUILD)/user.o
-	ar rcs $@ $(BUILD)/user.o
+$(STATIC_OBJS): $(SRC)/user.c | $(BUILD)/libgithub_user_fetcher_static.a.p
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
+
+$(STATIC_LIB): $(STATIC_OBJS)
+	ar rcs $@ $^
+
+$(BUILD)/libgithub_user_fetcher_static.a.p:
+	mkdir -p $@
 
 shared: $(SHARED_LIB)
 
-$(SHARED_LIB): $(SRC)/user.c | $(BUILD)
-	$(CC) $(CFLAGS) $(INCLUDES) -fPIC -c $< -o $(BUILD)/user.o
-	$(CC) -shared -o $@ $(BUILD)/user.o
+$(SHARED_OBJS): $(SRC)/user.c | $(BUILD)/libgithub_user_fetcher.so.p
+	$(CC) $(CFLAGS) $(INCLUDES) -fPIC -c $< -o $@
+
+$(SHARED_LIB): $(SHARED_OBJS)
+	$(CC) -shared -o $@ $^
+
+$(BUILD)/libgithub_user_fetcher.so.p:
+	mkdir -p $@
 
 # === Utilities ===
 
@@ -82,3 +120,35 @@ debug:
 	@echo "CFLAGS: $(CFLAGS)"
 	@echo "INCLUDES: $(INCLUDES)"
 	@echo "LIBS: $(LIBS)"
+
+# === Build and Release Commands ===
+
+release:
+	@echo "Building in $(CONFIG) mode"
+	make CONFIG=$(CONFIG) all
+
+install: release
+	@echo "Installing binaries to $(PREFIX)/bin..."
+	install -Dm755 $(CLI_BIN)    $(PREFIX)/bin/github_user_fetcher
+	install -Dm755 $(GUI_BIN)    $(PREFIX)/bin/github_user_gui
+
+	@echo "Installing headers to $(INCDIR)..."
+	install -d $(INCDIR)
+	install -m644 $(SRC)/user.h $(INCDIR)/user.h
+
+	@echo "Installing libraries to $(LIBDIR)..."
+	install -Dm644 $(STATIC_LIB) $(LIBDIR)/libuser.a
+	install -Dm755 $(SHARED_LIB) $(LIBDIR)/libuser.so
+
+uninstall:
+	@echo "Uninstalling binaries..."
+	rm -f $(PREFIX)/bin/github_user_fetcher
+	rm -f $(PREFIX)/bin/github_user_gui
+
+	@echo "Uninstalling headers..."
+	rm -f $(INCDIR)/user.h
+	rmdir --ignore-fail-on-non-empty $(INCDIR)
+
+	@echo "Uninstalling libraries..."
+	rm -f $(LIBDIR)/libuser.a
+	rm -f $(LIBDIR)/libuser.so

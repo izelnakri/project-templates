@@ -1,3 +1,16 @@
+.DEFAULT_GOAL := all
+
+BUILD_TYPE ?= debugoptimized
+DEBUG ?= false
+RELEASE ?= false
+
+ifeq ($(DEBUG), true)
+  BUILD_TYPE := debug
+endif
+ifeq ($(RELEASE), true)
+  BUILD_TYPE := release
+endif
+
 clean-flatpak-build:
 	rm -rf .flatpak-builder build flatpak/build flatpak/nix-environment-dependencies.tar.gz
 prepare-flatpak-builder:
@@ -16,8 +29,10 @@ run-flatpak-gui: build-flatpak
 	flatpak-builder --run flatpak/build flatpak/org.example.GithubUserFetcher.json github_user_fetcher_gui
 run-flatpak: run-flatpak-gui
 
+all: clean-all build
+
 setup:
-	meson setup build
+	meson setup build --buildtype=$(BUILD_TYPE)
 build: clean setup
 	ninja -C build
 test:
@@ -77,3 +92,16 @@ debug:
 	@echo "CFLAGS: $(CFLAGS)"
 	@echo "LDFLAGS: $(LDFLAGS)"
 	@echo "LIBS: $(LIBS)"
+
+release:
+	@echo "Building in RELEASE mode"
+	make RELEASE=true setup
+	make RELEASE=true build
+
+install: release
+	@echo "Installing release build"
+	sudo meson install -C build
+
+uninstall:
+	@echo "Removing installed release build"
+	sudo ninja uninstall -C build
