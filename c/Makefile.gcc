@@ -1,51 +1,84 @@
-CC = gcc
-AR = ar
+CONFIG   ?= release
+CC       ?= gcc
+BUILD    := build/$(CONFIG)
+SRC      := src
+VENDOR   := vendor/civetweb
+INCLUDES := -I. -I$(SRC) -I$(VENDOR)
+LIBS     := -lcurl -ljansson
 
-PKGS = jansson libcurl
-CFLAGS += -Wall -std=c11 -fPIC -g -I./src $(shell pkg-config --cflags $(PKGS))
-LDFLAGS += $(shell pkg-config --libs-only-L $(PKGS))
-LIBS = $(shell pkg-config --libs-only-l $(PKGS))
+GTK_LIBS := $(shell pkg-config --cflags --libs gtk4)
+CRIT_LIBS := $(shell pkg-config --cflags --libs criterion)
 
-SRC = src/main.c src/user.c
-LIBSRC = src/user.c
+ifeq ($(CONFIG),debug)
+  CFLAGS := -Wall -Wextra -pedantic -std=c11 -DOPENSSL_API_3_0 -g -O0 -DDEBUG
+else
+  CFLAGS := -Wall -Wextra -pedantic -std=c11 -DOPENSSL_API_3_0 -O2
+endif
 
-OBJ = $(SRC:.c=.o)
-LIBOBJ = $(LIBSRC:.c=.o)
+CLI_SRCS := $(SRC)/main.c $(SRC)/user.c $(SRC)/server.c $(VENDOR)/civetweb.c
+GUI_SRCS := $(SRC)/gui.c
+TEST_SRCS := tests/test_user.c $(SRC)/user.c
 
-TARGET = github_user_fetcher
-STATIC_LIB = libgithub_user_fetcher.a
-SHARED_LIB = libgithub_user_fetcher.so
+CLI_BIN := $(BUILD)/github_user_fetcher
+GUI_BIN := $(BUILD)/github_user_fetcher_gui
+TEST_BIN := $(BUILD)/test_user
+STATIC_LIB := $(BUILD)/libuser.a
+SHARED_LIB := $(BUILD)/libuser.so
 
-PREFIX ?= /usr
-LIBDIR ?= $(PREFIX)/lib
-INCLUDEDIR ?= $(PREFIX)/include
+# === Targets ===
 
-.PHONY: all clean install debug
+.PHONY: all clean test run run-cli run-gui run-server lib static shared
 
-all: $(TARGET) $(STATIC_LIB) $(SHARED_LIB)
+all: $(CLI_BIN) $(GUI_BIN)
 
-$(TARGET): $(OBJ)
-	$(CC) -o $@ $(OBJ) $(LDFLAGS) $(LIBS)
+$(BUILD):
+	mkdir -p $@
 
-$(STATIC_LIB): $(LIBOBJ)
-	$(AR) rcs $@ $^
+$(CLI_BIN): $(CLI_SRCS) | $(BUILD)
+	$(CC) $(CFLAGS) $(INCLUDES) $^ -o $@ $(LIBS)
 
-$(SHARED_LIB): $(LIBOBJ)
-	$(CC) -shared -o $@ $^ $(LDFLAGS) $(LIBS)
+$(GUI_BIN): $(GUI_SRCS) | $(BUILD)
+	$(CC) $(CFLAGS) $(INCLUDES) $^ -o $@ $(GTK_LIBS)
 
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+$(TEST_BIN): $(TEST_SRCS) | $(BUILD)
+	$(CC) $(CFLAGS) -DTESTING $(INCLUDES) $^ -o $@ $(LIBS) $(CRIT_LIBS)
 
-install: all
-	install -D $(TARGET) $(DESTDIR)$(PREFIX)/bin/$(TARGET)
-	install -D $(STATIC_LIB) $(DESTDIR)$(LIBDIR)/$(STATIC_LIB)
-	install -D $(SHARED_LIB) $(DESTDIR)$(LIBDIR)/$(SHARED_LIB)
-	install -D src/user.h $(DESTDIR)$(INCLUDEDIR)/github_user_fetcher/user.h
+# === Library builds ===
+
+static: $(STATIC_LIB)
+
+$(STATIC_LIB): $(SRC)/user.c | $(BUILD)
+	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $(BUILD)/user.o
+	ar rcs $@ $(BUILD)/user.o
+
+shared: $(SHARED_LIB)
+
+$(SHARED_LIB): $(SRC)/user.c | $(BUILD)
+	$(CC) $(CFLAGS) $(INCLUDES) -fPIC -c $< -o $(BUILD)/user.o
+	$(CC) -shared -o $@ $(BUILD)/user.o
+
+# === Utilities ===
 
 clean:
-	rm -f $(OBJ) $(LIBOBJ) $(TARGET) $(STATIC_LIB) $(SHARED_LIB)
+	rm -rf $(BUILD) access.log
+
+test: $(TEST_BIN)
+	$(TEST_BIN)
+
+run: run-gui
+
+run-cli: $(CLI_BIN)
+	$(CLI_BIN)
+
+run-server: $(CLI_BIN)
+	$(CLI_BIN) --server
+
+run-gui: $(GUI_BIN)
+	$(GUI_BIN)
 
 debug:
+	@echo "CONFIG: $(CONFIG)"
+	@echo "CC: $(CC)"
 	@echo "CFLAGS: $(CFLAGS)"
-	@echo "LDFLAGS: $(LDFLAGS)"
+	@echo "INCLUDES: $(INCLUDES)"
 	@echo "LIBS: $(LIBS)"

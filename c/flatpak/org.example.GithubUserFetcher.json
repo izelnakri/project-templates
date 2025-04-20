@@ -19,21 +19,21 @@
     ],
     "modules": [
         {
-          "name": "nix-dependencies",
+          "name": "untar-nix-environment-dependencies",
           "buildsystem": "simple",
           "build-commands": [
             "mkdir -p /app/include /app/lib/pkgconfig",
-            "cp -r nix-deps/include/* /app/include/",
-            "cp -r nix-deps/lib/*.so* /app/lib/",
-            "cp -r nix-deps/lib/*.a /app/lib/ || true",
-            "cp -r nix-deps/lib/pkgconfig/* /app/lib/pkgconfig/",
+            "cp -r nix-environment-dependencies/include/* /app/include/",
+            "cp -r nix-environment-dependencies/lib/*.so* /app/lib/",
+            "cp -r nix-environment-dependencies/lib/*.a /app/lib/ || true",
+            "cp -r nix-environment-dependencies/lib/pkgconfig/* /app/lib/pkgconfig/",
             "echo 'Libraries installed:' && ls -la /app/lib"
           ],
           "sources": [
             {
               "type": "archive",
-              "path": "nix-deps.tar.gz",
-              "dest": "nix-deps"
+              "path": "nix-environment-dependencies.tar.gz",
+              "dest": "nix-environment-dependencies"
             }
           ]
         },

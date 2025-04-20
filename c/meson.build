@@ -7,13 +7,12 @@ dependencies = [
   dependency('libcurl', required: true),
 ]
 
-dependency('glib-2.0')
-gtk_dep = dependency('gtk4', required: true)
+dependency('glib-2.0') # NOTE: check if needed
 
 headers = include_directories('src', 'vendor/civetweb')
-executable_src = files('src/main.c', 'src/user.c', 'src/server.c', 'vendor/civetweb/civetweb.c')
 
-executable('github_user_fetcher', executable_src,
+# NOTE: check if it can be simplified
+executable('github_user_fetcher', files('src/main.c', 'src/user.c', 'src/server.c', 'vendor/civetweb/civetweb.c'),
   dependencies: dependencies,
   include_directories: headers,
   c_args: ['-DOPENSSL_API_3_0'],
@@ -21,11 +20,12 @@ executable('github_user_fetcher', executable_src,
 )
 
 executable('github_user_fetcher_gui', files('src/gui.c'),
-  dependencies: [gtk_dep],
+  dependencies: [dependency('gtk4', required: true)],
   install: true,
 )
 
 lib_src = files('src/user.c')
+
 shared_library('github_user_fetcher', lib_src,
   dependencies: dependencies,
   include_directories: headers,
@@ -50,7 +50,7 @@ if build_tests
   ]
 
   test_executable = executable('test_user', 
-    files('tests/test_user.c'), 
+    files('tests/test_user.c'),  # Check if it can me wildcarded
     include_directories: headers,
     dependencies: dependencies + test_dependencies,
     link_with: libgithub_user_fetcher,
@@ -58,4 +58,3 @@ if build_tests
   )
   test('user_tests', test_executable)
 endif
-

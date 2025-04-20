@@ -170,8 +170,8 @@ ls -la "$FINAL_STAGE/lib" | grep -v "total"
 find "$FINAL_STAGE" -type d -empty -delete
 
 # Create the tarball
-tar -czf flatpak/nix-deps.tar.gz -C "$FINAL_STAGE" .
+tar -czf flatpak/nix-environment-dependencies.tar.gz -C "$FINAL_STAGE" .
 
 # Clean up temporary directory
 rm -rf "$TEMP_DIR"
-echo "🎉 Done: flatpak/nix-deps.tar.gz ready"
+echo "🎉 Done: flatpak/nix-environment-dependencies.tar.gz ready"
