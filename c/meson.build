@@ -1,4 +1,4 @@
-project('github_user_fetcher', 'c', version : '1.0.0', default_options : ['warning_level=3'])
+project('github_user_fetcher', 'c', 'cpp', version : '1.0.0')
 
 cc = meson.get_compiler('c')
 
@@ -29,7 +29,7 @@ shared_library('github_user_fetcher', lib_src,
   install: true,
 )
 
-libgithub_user_fetcher = static_library('github_user_fetcher_static', lib_src,
+libgithub_user_fetcher_static = static_library('github_user_fetcher_static', lib_src,
   dependencies: dependencies,
   include_directories: headers,
   c_args: ['-DOPENSSL_API_3_0'],
@@ -50,8 +50,23 @@ if build_tests
     files('tests/test_user.c'),
     include_directories: headers,
     dependencies: dependencies + test_dependencies,
-    link_with: libgithub_user_fetcher,
+    link_with: libgithub_user_fetcher_static,
     c_args: ['-DTESTING']
   )
   test('user_tests', test_executable)
+endif
+
+if get_option('benchmarks').enabled()
+  benchmark_dependencies = [
+    dependency('benchmark', required: true)
+  ]
+
+  benchmark_executable = executable('bench_user',
+    files('benchmarks/bench_user.cpp'), # Maybe I need to add user.c here
+    include_directories: headers,
+    dependencies: dependencies + benchmark_dependencies,
+    link_with: libgithub_user_fetcher_static,
+    c_args: ['-DBENCHMARKING'] # NOTE: Check if this is really needed
+  )
+  test('user_benchmarks', benchmark_executable, is_parallel: false, suite: ['benchmark'])
 endif

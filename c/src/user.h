@@ -8,7 +8,14 @@ typedef struct {
     char location[256];
 } User;
 
+#ifdef __cplusplus
+extern "C" {
+#endif
 User fetch_github_user(const char *username);
+
 void print_github_user(const User *user);
+#ifdef __cplusplus
+}
+#endif
 
 #endif

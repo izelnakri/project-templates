@@ -1,43 +1,62 @@
 {
   description = "GitHub user fetcher in C using libcurl and jansson";
 
-  inputs.nixpkgs.url = "github:NixOS/nixpkgs";
+  inputs.nixpkgs.url = "github:NixOS/nixpkgs/nixos-24.11";
+  inputs.nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
 
   outputs = 
-    { self, nixpkgs }: 
+    { self, nixpkgs, nixpkgs-unstable }: 
     let 
       allSystems = [ "x86_64-linux" "aarch64-linux" "x86_64-darwin" "aarch64-darwin" ];
       forAllSystems = f: nixpkgs.lib.genAttrs allSystems (system:
         let
           pkgs = import nixpkgs { inherit system; };
+          unstable = import nixpkgs-unstable { inherit system; };
         in
-          f { inherit pkgs system; }
+          f { inherit pkgs system unstable; }
       );
+      getAllPkgConfigPaths = pkgs: inputs:
+        let
+          allDeps = pkgs.lib.closePropagation inputs;
+        in
+          pkgs.lib.makeSearchPathOutput "out" "lib/pkgconfig" allDeps + ":" +
+          pkgs.lib.makeSearchPathOutput "out" "share/pkgconfig" allDeps + ":" +
+          pkgs.lib.makeSearchPathOutput "dev" "lib/pkgconfig" allDeps + ":" +
+          pkgs.lib.makeSearchPathOutput "dev" "share/pkgconfig" allDeps;
     in {
-      devShells = forAllSystems ({ pkgs, system }: {
-        default = pkgs.mkShell {
+      devShells = forAllSystems ({ pkgs, system, unstable }: {
+        default = pkgs.mkShell rec {
+          nativeBuildInputs = [];
+
           buildInputs = with pkgs; [
             meson
             ninja
-            pkg-config
+            pkg-config-unwrapped
+            unstable.vcpkg
             curl.dev
             jansson
             criterion
             gtk4
           ];
+          
+          # NOTE: These were probably redundant:
+          # VCPKG_ROOT = "${unstable.vcpkg}/share/vcpkg";
+          # VCPKG_FORCE_SYSTEM_BINARIES = 1;
 
-          PKG_CONFIG_PATH = pkgs.lib.makeLibraryPath [ pkgs.jansson.dev pkgs.curl.dev ] + "/lib/pkgconfig";
+          PKG_CONFIG_PATH = getAllPkgConfigPaths pkgs (buildInputs ++ nativeBuildInputs);
 
           shellHook = with pkgs; ''
-            # export CFLAGS=$(pkg-config --cflags libcurl jansson)
-            # export LDFLAGS=$(pkg-config --libs libcurl jansson)
+            export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:$HOME/.cache/vcpkg/packages/benchmark_x64-linux/lib/pkgconfig"
+
+            # TODO: In future add vcpkg packages(ports) directly to /nix/store
+            vcpkg install
 
             echo "🔧 Dev environment ready. Run: make"
           '';
         };
       });
 
-      packages = forAllSystems ({ pkgs, system }: {
+      packages = forAllSystems ({ pkgs, system, unstable }: {
         default = pkgs.callPackage ./default.nix {};
 
         dockerImage = pkgs.dockerTools.buildImage {

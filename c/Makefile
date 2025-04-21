@@ -93,6 +93,13 @@ debug:
 	@echo "LDFLAGS: $(LDFLAGS)"
 	@echo "LIBS: $(LIBS)"
 
+bench: clean 
+	meson setup build --buildtype=$(BUILD_TYPE) -Dbenchmarks=enabled
+	meson compile -C build && meson test -C build --suite benchmark
+
+bench-user:
+	meson compile -C build && ./build/bench_user
+
 release:
 	@echo "Building in RELEASE mode"
 	make RELEASE=true setup
