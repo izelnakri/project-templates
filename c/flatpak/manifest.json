@@ -3,7 +3,7 @@
     "runtime": "org.gnome.Platform",
     "runtime-version": "48",
     "sdk": "org.gnome.Sdk",
-    "command": "github_user_fetcher_gui",
+    "command": "github_user_fetcher",
     "finish-args": [
         "--share=network",
         "--filesystem=home",
@@ -57,6 +57,15 @@
                     "path": ".."
                 }
             ]
+        },
+        {
+          "name": "metadata",
+          "buildsystem": "simple",
+          "build-commands": [
+            "install -Dm644 org.example.GithubUserFetcher.desktop /app/share/applications/org.example.GithubUserFetcher.desktop",
+            "install -Dm644 org.example.GithubUserFetcher.metainfo.xml /app/share/metainfo/org.example.GithubUserFetcher.metainfo.xml"
+          ],
+          "sources": [ { "type": "dir", "path": "." } ]
         }
     ]
 }

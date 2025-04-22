@@ -16,17 +16,21 @@ clean-flatpak-build:
 prepare-flatpak-builder:
 	sh flatpak/bundle-nix-environment-dependencies.sh
 flatpak-builder: 
-	flatpak-builder flatpak/build flatpak/org.example.GithubUserFetcher.json --force-clean
+	flatpak-builder flatpak/build flatpak/manifest.json --force-clean
 build-flatpak: clean-flatpak-build prepare-flatpak-builder flatpak-builder
+install-flatpak:
+	flatpak build-export local-flatpak-repo flatpak/build
+	flatpak remote-add --user --no-gpg-verify local-last-exported-flatpak-remote ./local-flatpak-repo 
+	flatpak install --user local-last-exported-flatpak-remote org.example.GithubUserFetcher
 run-flatpak-cli: build-flatpak
-	echo "Running org.example.GithubUserFetcher.json CLI:"
-	flatpak-builder --run flatpak/build flatpak/org.example.GithubUserFetcher.json github_user_fetcher
+	echo "Running manifest.json CLI:"
+	flatpak-builder --run flatpak/build flatpak/manifest.json github_user_fetcher
 run-flatpak-cli-server: build-flatpak
-	echo "Running org.example.GithubUserFetcher.json CLI server:"
-	flatpak-builder --run flatpak/build flatpak/org.example.GithubUserFetcher.json github_user_fetcher --server
+	echo "Running manifest.json CLI server:"
+	flatpak-builder --run flatpak/build flatpak/manifest.json github_user_fetcher --server
 run-flatpak-gui: build-flatpak
-	echo "Running org.example.GithubUserFetcher.json GUI:"
-	flatpak-builder --run flatpak/build flatpak/org.example.GithubUserFetcher.json github_user_fetcher_gui
+	echo "Running manifest.json GUI:"
+	flatpak-builder --run flatpak/build flatpak/manifest.json github_user_fetcher_gui
 run-flatpak: run-flatpak-gui
 
 all: clean-all build

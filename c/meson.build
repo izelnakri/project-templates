@@ -3,7 +3,7 @@ project('github_user_fetcher', 'c', 'cpp', version : '1.0.0')
 cc = meson.get_compiler('c')
 
 dependencies = [
-  dependency('jansson', required: true),
+  dependency('jansson', required: true), # static: true makes it prefer x.a over x.so
   dependency('libcurl', required: true),
 ]
 
