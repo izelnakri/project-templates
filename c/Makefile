@@ -62,6 +62,14 @@ clean-all: clean clean-flatpak-build
 develop:
 	nix develop
 
+format:
+	@echo "Formatting code with clang-format..."
+	@find src tests benchmarks -name "*.c" -o -name "*.h" -o -name "*.cpp" | xargs clang-format -i -style=file
+	@echo "Code formatting complete."
+format-check:
+	@echo "Checking code formatting..."
+	@find src tests benchmarks -name "*.c" -o -name "*.h" -o -name "*.cpp" | xargs -I{} bash -c 'clang-format -style=file {} | diff --color=always -u {} - || printf "\033[31m=> File {} needs formatting\033[0m\n"'
+
 build-docker-cli:
 	nix build .#dockerImage
 run-docker-cli: build-docker-cli
