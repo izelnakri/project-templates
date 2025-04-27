@@ -1,3 +1,6 @@
+# TODO: Implement the pre-commit hook, also for formatting
+# TODO: Do valgrind additions
+# TODO: Documentation generator
 .DEFAULT_GOAL := all
 
 BUILD_TYPE ?= debugoptimized
@@ -10,6 +13,13 @@ endif
 ifeq ($(RELEASE), true)
   BUILD_TYPE := release
 endif
+
+INCLUDE_DIRS = -I./src -I./vendor/civetweb
+
+C_SOURCES := $(wildcard src/*.c)
+CPP_SOURCES := $(wildcard benchmarks/*.cpp)
+H_SOURCES := $(wildcard src/*.h)
+ALL_SOURCES := $(C_SOURCES) $(CPP_SOURCES) $(H_SOURCES)
 
 clean-flatpak-build:
 	rm -rf .flatpak-builder build flatpak/build flatpak/nix-environment-dependencies.tar.gz
@@ -61,6 +71,24 @@ clean-all: clean clean-flatpak-build
 
 develop:
 	nix develop
+
+compile-commands:
+	@if [ ! -d build ]; then meson setup build --buildtype=$(BUILD_TYPE); fi
+	cd build && ninja -t compdb > compile_commands.json
+	cp build/compile_commands.json .
+
+lint: lint-clang-tidy lint-cppcheck lint-flawfinder
+lint-clang-tidy: compile-commands
+	@echo "Running clang-tidy..."
+	@find src -name "*.c" -o -name "*.h" | xargs -r clang-tidy -p .
+lint-cppcheck:
+	@echo "Running cppcheck..."
+	cppcheck --enable=all --suppress=unusedStructMember --suppress=missingIncludeSystem --inline-suppr --quiet --check-level=exhaustive $(INCLUDE_DIRS) $(ALL_SOURCES)
+lint-flawfinder:
+	@echo "Running flawfinder (security check)..."
+	flawfinder --minlevel=1 $(ALL_SOURCES)
+lint-fix:
+	@find src -name "*.c" -o -name "*.h" | xargs -r clang-tidy -fix -fix-errors -p .
 
 format:
 	@echo "Formatting code with clang-format..."

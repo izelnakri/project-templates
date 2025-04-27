@@ -1,8 +1,8 @@
 #include <gtk/gtk.h>
 
 typedef struct {
-    GtkEntry *entry;
-    GtkTextBuffer *output_buffer;
+  GtkEntry *entry;
+  GtkTextBuffer *output_buffer;
 } AppWidgets;
 
 static void display_output(GtkTextBuffer *buffer, const gchar *output) {
@@ -10,6 +10,7 @@ static void display_output(GtkTextBuffer *buffer, const gchar *output) {
 }
 
 static void on_button_clicked(GtkButton *button, gpointer user_data) {
+  (void)button; // Mark parameter as deliberately unused
   AppWidgets *widgets = user_data;
   const gchar *username = gtk_editable_get_text(GTK_EDITABLE(widgets->entry));
 
@@ -25,7 +26,7 @@ static void on_button_clicked(GtkButton *button, gpointer user_data) {
   gchar *stdout_data = NULL;
   gchar *stderr_data = NULL;
   GError *error = NULL;
-  gint exit_status;
+  gint exit_status = 0;
 
   gboolean success =
       g_spawn_sync(NULL, argv, NULL, G_SPAWN_DEFAULT, NULL, NULL, &stdout_data,
@@ -52,6 +53,8 @@ static void on_button_clicked(GtkButton *button, gpointer user_data) {
 }
 
 static void activate(GtkApplication *app, gpointer user_data) {
+  (void)user_data; // Mark parameter as deliberately unused
+
   GtkWidget *window = gtk_application_window_new(app);
   gtk_window_set_title(GTK_WINDOW(window), "GitHub User Fetcher");
   gtk_window_set_default_size(GTK_WINDOW(window), 600, 400);
@@ -105,7 +108,7 @@ static void activate(GtkApplication *app, gpointer user_data) {
 
 int main(int argc, char *argv[]) {
   GtkApplication *app = gtk_application_new("com.example.githubfetcher",
-                                            G_APPLICATION_FLAGS_NONE);
+                                            G_APPLICATION_DEFAULT_FLAGS);
   g_signal_connect(app, "activate", G_CALLBACK(activate), NULL);
   int status = g_application_run(G_APPLICATION(app), argc, argv);
   g_object_unref(app);

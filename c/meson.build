@@ -1,6 +1,7 @@
 project('github_user_fetcher', 'c', 'cpp', version : '1.0.0')
 
 cc = meson.get_compiler('c')
+warning_flags = ['-Wall', '-Wextra']
 
 dependencies = [
   dependency('jansson', required: true), # static: true makes it prefer x.a over x.so
@@ -12,12 +13,18 @@ headers = include_directories('src', 'vendor/civetweb')
 executable('github_user_fetcher', files('src/main.c', 'src/user.c', 'src/server.c', 'vendor/civetweb/civetweb.c'),
   dependencies: dependencies,
   include_directories: headers,
-  c_args: ['-DOPENSSL_API_3_0'],
+  c_args: warning_flags + ['-DOPENSSL_API_3_0'],
   install: true,
 )
 
 executable('github_user_fetcher_gui', files('src/gui.c'),
-  dependencies: [dependency('gtk4', required: true)],
+  dependencies: [
+    # dependency('gtk+-3.0', required: true),
+    dependency('gtk4', required: true),
+    # dependency('webkitgtk-6.0', required: true)
+    # dependency('webkit2gtk-4.1', required: true)
+  ],
+  c_args: warning_flags,
   install: true,
 )
 
@@ -26,13 +33,14 @@ lib_src = files('src/user.c')
 shared_library('github_user_fetcher', lib_src,
   dependencies: dependencies,
   include_directories: headers,
+  c_args: warning_flags,
   install: true,
 )
 
 libgithub_user_fetcher_static = static_library('github_user_fetcher_static', lib_src,
   dependencies: dependencies,
   include_directories: headers,
-  c_args: ['-DOPENSSL_API_3_0'],
+  c_args: warning_flags + ['-DOPENSSL_API_3_0'],
   install: true
 )
 
@@ -51,7 +59,7 @@ if build_tests
     include_directories: headers,
     dependencies: dependencies + test_dependencies,
     link_with: libgithub_user_fetcher_static,
-    c_args: ['-DTESTING']
+    c_args: warning_flags + ['-DTESTING']
   )
   test('user_tests', test_executable)
 endif
@@ -66,7 +74,7 @@ if get_option('benchmarks').enabled()
     include_directories: headers,
     dependencies: dependencies + benchmark_dependencies,
     link_with: libgithub_user_fetcher_static,
-    c_args: ['-DBENCHMARKING'] # NOTE: Check if this is really needed
+    c_args: warning_flags + ['-DBENCHMARKING']
   )
   test('user_benchmarks', benchmark_executable, is_parallel: false, suite: ['benchmark'])
 endif

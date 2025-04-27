@@ -18,7 +18,12 @@ int main(int argc, char **argv) {
     } else if (strcmp(argv[i], "--server") == 0) {
       run_server = 1;
     } else if (strncmp(argv[i], "--port=", 7) == 0) {
-      port = atoi(argv[i] + 7);
+      char *endptr = NULL;
+      port = (int)strtol(argv[i] + 7, &endptr, 10);
+      if (endptr == argv[i] + 7 || *endptr != '\0') {
+        (void)fprintf(stderr, "Invalid port number: %s\n", argv[i] + 7);
+        exit(EXIT_FAILURE);
+      }
     }
   }
 

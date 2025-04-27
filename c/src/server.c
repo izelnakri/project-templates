@@ -1,6 +1,6 @@
 #include "server.h"
+#include "../vendor/civetweb/civetweb.h"
 #include "user.h"
-#include "vendor/civetweb/civetweb.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -8,10 +8,13 @@
 #include <unistd.h>
 
 static int user_handler(struct mg_connection *conn, void *cbdata) {
+  (void)cbdata; // Mark parameter as deliberately unused
   const struct mg_request_info *req_info = mg_get_request_info(conn);
   const char *uri = req_info->local_uri;
 
-  if (!uri || strlen(uri) < 2) {
+  // Validate that the URI is valid and null-terminated
+  size_t uri_len = strnlen(uri, 1024); // Limit max length to avoid over-read
+  if (uri_len < 2) {
     mg_printf(conn, "HTTP/1.1 400 Bad Request\r\nContent-Type: "
                     "text/plain\r\n\r\nMissing username\n");
     return 400;
@@ -30,8 +33,11 @@ static int user_handler(struct mg_connection *conn, void *cbdata) {
 }
 
 void start_http_server(int port) {
-  char port_str[16];
-  snprintf(port_str, sizeof(port_str), "%d", port);
+  char *port_str = NULL;
+  if (asprintf(&port_str, "%d", port) == -1) {
+    (void)fprintf(stderr, "Failed to allocate memory for port\n");
+    return;
+  }
 
   const char *options[] = {"listening_ports",
                            port_str,
@@ -45,7 +51,7 @@ void start_http_server(int port) {
   struct mg_context *ctx = mg_start(&callbacks, NULL, options);
 
   if (!ctx) {
-    fprintf(stderr, "Failed to start Civetweb server\n");
+    (void)fprintf(stderr, "Failed to start Civetweb server\n");
     return;
   }
 
@@ -54,6 +60,7 @@ void start_http_server(int port) {
   printf("Server started on port %s. Visit http://localhost:%s/USERNAME\n",
          port_str, port_str);
   puts("Press Ctrl+C to quit.");
+  free(port_str);
 
   // Keep running (or use signal handler in future)
   while (1) {

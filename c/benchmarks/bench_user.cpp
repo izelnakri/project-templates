@@ -8,7 +8,7 @@ User fake_octo_user = {.login = "octocat",
                        .company = "GitHub",
                        .location = "San Francisco"};
 
-static void BM_PrintUser(benchmark::State &state) {
+static void BM_PrintUser(const benchmark::State &state) {
   for (auto _ : state) {
     // Code to benchmark
     print_github_user(&fake_octo_user);
