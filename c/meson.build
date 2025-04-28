@@ -30,7 +30,7 @@ executable('github_user_fetcher_gui', files('src/gui.c'),
 
 lib_src = files('src/user.c')
 
-shared_library('github_user_fetcher', lib_src,
+libgithub_user_fetcher = shared_library('github_user_fetcher', lib_src,
   dependencies: dependencies,
   include_directories: headers,
   c_args: warning_flags,
@@ -78,3 +78,10 @@ if get_option('benchmarks').enabled()
   )
   test('user_benchmarks', benchmark_executable, is_parallel: false, suite: ['benchmark'])
 endif
+
+pkg = import('pkgconfig')
+pkg.generate(
+  name : 'libgithub_user_fetcher',
+  description : 'GitHub user fetcher library',
+  libraries : libgithub_user_fetcher,
+  version : '0.1.0')
