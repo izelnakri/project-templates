@@ -20,6 +20,7 @@
           kcachegrind # For visualizing valgrind callgrind output
           gdb
           flatpak-builder
+          doxygen # Documentation
           # cmake # not needed for now
           # ccls       # C/C++ language server, not needed for now
         ];
@@ -63,6 +64,30 @@
 
             # TODO: In future add vcpkg packages(ports) directly to /nix/store
             vcpkg install
+
+            if git rev-parse --git-dir > /dev/null 2>&1; then # Only proceed with git hook setup if we're in a git repository
+              HOOKS_DIR="$(git rev-parse --git-dir)/hooks"
+              PRE_COMMIT_HOOK_PATH="$HOOKS_DIR/pre-commit"
+
+              FLAKE_DIR="$(dirname "$(readlink -f "$PWD/flake.nix")")" # Find the pre-commit script relative to the flake.nix location
+              PRE_COMMIT_SOURCE="$FLAKE_DIR/pre-commit"
+              
+              mkdir -p "$HOOKS_DIR"
+
+              if [ -f "$PRE_COMMIT_HOOK_PATH" ]; then
+                rm "$PRE_COMMIT_HOOK_PATH"
+                echo "🗑️ Removed existing pre-commit hook"
+              fi
+
+              if [ -f "$PRE_COMMIT_SOURCE" ]; then
+                cp "$PRE_COMMIT_SOURCE" "$PRE_COMMIT_HOOK_PATH"
+                chmod +x "$PRE_COMMIT_HOOK_PATH"
+                echo "✅ Installed pre-commit hook from $PRE_COMMIT_SOURCE => $PRE_COMMIT_HOOK_PATH"
+              else
+                echo "❌ Could not find pre-commit script at $PRE_COMMIT_SOURCE"
+                exit 1
+              fi
+            fi
 
             echo "🔧 Dev environment ready. Run: make"
           '';

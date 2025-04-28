@@ -1,6 +1,3 @@
-# TODO: Implement the pre-commit hook, also for formatting
-# TODO: Do valgrind additions
-# TODO: Documentation generator
 .DEFAULT_GOAL := all
 
 BUILD_TYPE ?= debugoptimized
@@ -133,12 +130,44 @@ debug:
 	@echo "LDFLAGS: $(LDFLAGS)"
 	@echo "LIBS: $(LIBS)"
 
+ifeq (,$(wildcard build/meson-info/intro-dependencies.json))
+$(error Run 'meson setup build' first!)
+endif
+
+doc:
+	@echo "Generating documentation..."
+	@chmod +x docs/build.sh
+	@./docs/build.sh
+	@echo "Opening documentation in Brave..."
+	@brave docs/html/index.html || echo "Failed to open documentation in Brave"
+
 bench: clean 
 	meson setup build --buildtype=$(BUILD_TYPE) -Dbenchmarks=enabled
 	meson compile -C build && meson test -C build --suite benchmark
 
 bench-user:
 	meson compile -C build && ./build/bench_user
+
+valgrind-cli: build
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose ./build/github_user_fetcher
+
+valgrind-cli-server: build
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose ./build/github_user_fetcher --server
+
+valgrind-gui: build
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose ./build/github_user_fetcher_gui
+
+valgrind-callgrind: build
+	valgrind --tool=callgrind ./build/github_user_fetcher
+	@echo "Use 'kcachegrind callgrind.out.*' to visualize the call graph"
+
+valgrind-cachegrind: build
+	valgrind --tool=cachegrind ./build/github_user_fetcher
+	@echo "Use 'kcachegrind cachegrind.out.*' to visualize the cache profile"
+
+valgrind-massif: build
+	valgrind --tool=massif ./build/github_user_fetcher
+	@echo "Use 'ms_print massif.out.*' to view heap profile"
 
 release:
 	@echo "Building in RELEASE mode"
