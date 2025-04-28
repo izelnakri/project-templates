@@ -1,3 +1,9 @@
+/**
+ * @file server.c
+ * @brief Implements a simple HTTP server using Civetweb to serve GitHub user
+ * information.
+ */
+
 #include "server.h"
 #include "../vendor/civetweb/civetweb.h"
 #include "user.h"
@@ -7,6 +13,16 @@
 #include <string.h>
 #include <unistd.h>
 
+/**
+ * @brief HTTP request handler for user lookup.
+ *
+ * Parses the request URI to extract the username, fetches the corresponding
+ * GitHub user, and responds with a JSON object.
+ *
+ * @param conn The connection to the client.
+ * @param cbdata Callback data (unused).
+ * @return HTTP status code (e.g., 200 for success, 400 for bad request).
+ */
 static int user_handler(struct mg_connection *conn, void *cbdata) {
   (void)cbdata; // Mark parameter as deliberately unused
   const struct mg_request_info *req_info = mg_get_request_info(conn);
@@ -32,6 +48,14 @@ static int user_handler(struct mg_connection *conn, void *cbdata) {
   return 200;
 }
 
+/**
+ * @brief Starts an HTTP server on the specified port.
+ *
+ * Configures Civetweb with basic options and handles incoming user requests.
+ * The server runs indefinitely until manually interrupted.
+ *
+ * @param port The TCP port to listen on.
+ */
 void start_http_server(int port) {
   char *port_str = NULL;
   if (asprintf(&port_str, "%d", port) == -1) {
