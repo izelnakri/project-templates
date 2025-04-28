@@ -1,14 +1,33 @@
 #include <gtk/gtk.h>
 
+/**
+ * @struct AppWidgets
+ * @brief Holds references to key GTK widgets used in the application.
+ */
 typedef struct {
   GtkEntry *entry;
   GtkTextBuffer *output_buffer;
 } AppWidgets;
 
+/**
+ * @brief Display text output in the GtkTextBuffer.
+ *
+ * @param buffer The GtkTextBuffer where the output will be shown.
+ * @param output The text to display.
+ */
 static void display_output(GtkTextBuffer *buffer, const gchar *output) {
   gtk_text_buffer_set_text(buffer, output, -1);
 }
 
+/**
+ * @brief Callback triggered when the "Fetch" button is clicked.
+ *
+ * It reads the username from the entry, spawns the external fetcher process,
+ * captures its output or error, and displays it.
+ *
+ * @param button The GtkButton that was clicked.
+ * @param user_data Pointer to AppWidgets containing references to UI elements.
+ */
 static void on_button_clicked(GtkButton *button, gpointer user_data) {
   (void)button; // Mark parameter as deliberately unused
   AppWidgets *widgets = user_data;
@@ -20,7 +39,7 @@ static void on_button_clicked(GtkButton *button, gpointer user_data) {
   }
 
   gchar *argv[] = {
-      "/home/izelnakri/Github/c-projects/c/build/github_user_fetcher",
+      "/home/izelnakri/Github/project-templates/c/build/github_user_fetcher",
       (gchar *)username, NULL};
 
   gchar *stdout_data = NULL;
@@ -52,6 +71,15 @@ static void on_button_clicked(GtkButton *button, gpointer user_data) {
   g_free(stderr_data);
 }
 
+/**
+ * @brief Activates the application window and sets up the UI.
+ *
+ * Creates the window, applies CSS styling, sets up the layout,
+ * connects signals, and displays the window.
+ *
+ * @param app The GtkApplication instance.
+ * @param user_data User data (unused).
+ */
 static void activate(GtkApplication *app, gpointer user_data) {
   (void)user_data; // Mark parameter as deliberately unused
 
@@ -106,6 +134,16 @@ static void activate(GtkApplication *app, gpointer user_data) {
   gtk_window_present(GTK_WINDOW(window));
 }
 
+/**
+ * @brief Main entry point.
+ *
+ * Initializes the GtkApplication, connects the activate signal, and runs the
+ * application loop.
+ *
+ * @param argc Argument count.
+ * @param argv Argument vector.
+ * @return Application exit status.
+ */
 int main(int argc, char *argv[]) {
   GtkApplication *app = gtk_application_new("com.example.githubfetcher",
                                             G_APPLICATION_DEFAULT_FLAGS);

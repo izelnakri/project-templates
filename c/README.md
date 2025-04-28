@@ -1,3 +1,7 @@
-# My C project Template
+# My C Project Template
 
-Docs coming soon, check Makefile
+## 📚 Documentation
+
+[View the documentation here](https://izelnakri.github.io/project-templates/c/)
+
+Check the `Makefile` for build instructions.

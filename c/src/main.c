@@ -1,9 +1,29 @@
+/**
+ * @file main.c
+ * @brief Entry point for the application. Parses command-line arguments
+ *        and either starts the HTTP server or fetches and displays a GitHub
+ * user.
+ */
+
 #include "server.h"
 #include "user.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * @brief Main function that initializes and runs the application.
+ *
+ * Supported command-line arguments:
+ * - `--user <username>` : Specify the GitHub username to fetch.
+ * - `--user=<username>` : Alternative way to specify the GitHub username.
+ * - `--server`          : Run the HTTP server instead of fetching a user.
+ * - `--port=<port>`     : Specify the port for the HTTP server (default: 1234).
+ *
+ * @param argc Argument count.
+ * @param argv Argument vector.
+ * @return int Exit status code (0 for success, nonzero for failure).
+ */
 int main(int argc, char **argv) {
   const char *username = "izelnakri";
   int port = 1234;

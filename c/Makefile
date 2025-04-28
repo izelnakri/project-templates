@@ -65,6 +65,7 @@ gui:
 clean:
 	rm -rf build access.log
 clean-all: clean clean-flatpak-build
+	rm -rf docs/html
 
 develop:
 	nix develop

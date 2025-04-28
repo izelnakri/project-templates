@@ -5,31 +5,20 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Safe copy functions with proper bounds checking
-#define SAFE_STRLCPY(dest, src, max_len)                                       \
-  do {                                                                         \
-    size_t len = strnlen((src), (max_len) - 1);                                \
-    if (len < (max_len)) {                                                     \
-      if (len > 0) {                                                           \
-        memmove(                                                               \
-            (dest), (src),                                                     \
-            len); /* memmove is safer for potentially overlapping memory */    \
-      }                                                                        \
-      (dest)[len] = '\0';                                                      \
-    } else {                                                                   \
-      (void)fprintf(stderr, "Buffer size exceeded\n");                         \
-      (dest)[0] = '\0';                                                        \
-    }                                                                          \
-  } while (0)
-
-// Buffer structure for handling HTTP response data
+/**
+ * @brief Buffer structure to hold incoming HTTP response data.
+ */
 typedef struct {
   char *data;
   size_t size;
   size_t capacity; // Added capacity field to track buffer size
 } Buffer;
 
-// Initialize the Buffer struct
+/**
+ * @brief Initialize a Buffer structure.
+ *
+ * @param buf Pointer to Buffer to initialize.
+ */
 void buffer_init(Buffer *buf) {
   buf->data = malloc(1024); // Initial allocation
   buf->size = 0;
@@ -39,7 +28,11 @@ void buffer_init(Buffer *buf) {
   }
 }
 
-// Clean up buffer resources
+/**
+ * @brief Free the memory held by a Buffer.
+ *
+ * @param buf Pointer to Buffer to clean up.
+ */
 void buffer_cleanup(Buffer *buf) {
   if (buf && buf->data) {
     free(buf->data);
@@ -49,7 +42,13 @@ void buffer_cleanup(Buffer *buf) {
   }
 }
 
-// Ensure there's enough space to append data
+/**
+ * @brief Ensure that a Buffer has enough capacity for new data.
+ *
+ * @param buf Pointer to Buffer.
+ * @param required_size Size needed.
+ * @return 1 if successful, 0 on failure.
+ */
 int buffer_ensure_capacity(Buffer *buf, size_t required_size) {
   if (buf->capacity >= required_size) {
     return 1; // Enough space
@@ -78,7 +77,15 @@ int buffer_ensure_capacity(Buffer *buf, size_t required_size) {
   return 1;
 }
 
-// Callback function to handle incoming data
+/**
+ * @brief Callback for libcurl to write response data into a Buffer.
+ *
+ * @param contents Pointer to incoming data.
+ * @param size Size of a single item.
+ * @param nmemb Number of items.
+ * @param userp Pointer to Buffer structure.
+ * @return Number of bytes handled.
+ */
 static size_t write_callback(const void *contents, size_t size, size_t nmemb,
                              void *userp) {
   size_t total_size = size * nmemb;
@@ -112,7 +119,14 @@ static size_t write_callback(const void *contents, size_t size, size_t nmemb,
   return total_size;
 }
 
-// Initialize the User struct with the fetched data
+/**
+ * @brief Fetch a GitHub user's information via the GitHub API.
+ *
+ * @param username GitHub username.
+ * @return User structure containing fetched information.
+ *
+ * The returned User must be freed using user_free().
+ */
 User fetch_github_user(const char *username) {
   User user = {0};
   Buffer buffer = {0};
@@ -208,7 +222,11 @@ User fetch_github_user(const char *username) {
   return user;
 }
 
-// Print the user information
+/**
+ * @brief Print a User's information to the console.
+ *
+ * @param user Pointer to the User structure.
+ */
 void print_github_user(const User *user) {
   if (!user) {
     (void)fprintf(stderr, "NULL user pointer\n");
@@ -222,7 +240,13 @@ void print_github_user(const User *user) {
   printf("  Location: %s\n", user->location ? user->location : "N/A");
 }
 
-// Free the dynamically allocated memory for the user
+/**
+ * @brief Free memory used by a User structure.
+ *
+ * @param user Pointer to User.
+ *
+ * After freeing, all pointers are set to NULL.
+ */
 void user_free(User *user) {
   if (!user) {
     return;
