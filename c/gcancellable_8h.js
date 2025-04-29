@@ -1,0 +1,28 @@
+var gcancellable_8h =
+[
+    [ "_GCancellable", "struct__GCancellable.html", "struct__GCancellable" ],
+    [ "_GCancellableClass", "struct__GCancellableClass.html", "struct__GCancellableClass" ],
+    [ "G_CANCELLABLE", "gcancellable_8h.html#acc53fc2ff3204239263f5287c46a9c5b", null ],
+    [ "G_CANCELLABLE_CLASS", "gcancellable_8h.html#aaa9d74d98891f29904b7dabaa62beb92", null ],
+    [ "G_CANCELLABLE_GET_CLASS", "gcancellable_8h.html#ab2af8f640af754b553c1283672bfdc88", null ],
+    [ "G_IS_CANCELLABLE", "gcancellable_8h.html#a19d8c66872fdbc2668e2b9c27a95ed36", null ],
+    [ "G_IS_CANCELLABLE_CLASS", "gcancellable_8h.html#a52bc2cb0f0e2604a866d7119f863c471", null ],
+    [ "G_TYPE_CANCELLABLE", "gcancellable_8h.html#a7668eaca3289e9089f1b79074b785982", null ],
+    [ "GCancellableClass", "gcancellable_8h.html#a7de9df5922b0582bb2d8fa3e2865cbc6", null ],
+    [ "GCancellablePrivate", "gcancellable_8h.html#afa95c85ee11ab54e4e47824cca2a35c2", null ],
+    [ "g_cancellable_cancel", "gcancellable_8h.html#a553a592a01eaf0cb10d673f6e05f6ff2", null ],
+    [ "g_cancellable_connect", "gcancellable_8h.html#afafd1793429c0772152247e375e5d685", null ],
+    [ "g_cancellable_disconnect", "gcancellable_8h.html#af81318692f316b3fa166d5751b6d0f0f", null ],
+    [ "g_cancellable_get_current", "gcancellable_8h.html#a1160900db3fdaaabf2564792b1fcc3eb", null ],
+    [ "g_cancellable_get_fd", "gcancellable_8h.html#a258aaabf41a25a5ffef1702a64f663c0", null ],
+    [ "g_cancellable_get_type", "gcancellable_8h.html#ac83cdb78515d30c28c0c2bd5374dd1b1", null ],
+    [ "g_cancellable_is_cancelled", "gcancellable_8h.html#a087601c94588431ecdf3c2444d372efd", null ],
+    [ "g_cancellable_make_pollfd", "gcancellable_8h.html#a8ba9b4433f6114882a42f21b4210626c", null ],
+    [ "g_cancellable_new", "gcancellable_8h.html#a49ab7d0f56b8cc8246b0131dba3f6dd2", null ],
+    [ "g_cancellable_pop_current", "gcancellable_8h.html#acac75c73ecc59dbaf310c27b3f3d8c7e", null ],
+    [ "g_cancellable_push_current", "gcancellable_8h.html#a4b282a4951b575dfabc945eedb77769b", null ],
+    [ "g_cancellable_release_fd", "gcancellable_8h.html#ace263410759cfea96a34b4c74106fe61", null ],
+    [ "g_cancellable_reset", "gcancellable_8h.html#a9ad799a0c5ff1679b1d1a93e78ab2f02", null ],
+    [ "g_cancellable_set_error_if_cancelled", "gcancellable_8h.html#a6b4e80b90a39b1ce0eda967f70a68d23", null ],
+    [ "g_cancellable_source_new", "gcancellable_8h.html#a53d1962681c9dedc8f42019f920e2686", null ]
+];

@@ -1,0 +1,25 @@
+var pango_utils_8h =
+[
+    [ "PANGO_VERSION", "pango-utils_8h.html#a4ad721a5e02985a061ee626e2d492adb", null ],
+    [ "PANGO_VERSION_CHECK", "pango-utils_8h.html#a2c60dbcd17ee0a3d2f991102550fe68a", null ],
+    [ "PANGO_VERSION_ENCODE", "pango-utils_8h.html#a0cbe27f886066503b110813150f1d2f9", null ],
+    [ "pango_find_paragraph_boundary", "pango-utils_8h.html#a5ce0f09e9c449f001965ae80be4649f5", null ],
+    [ "pango_is_zero_width", "pango-utils_8h.html#a5af12207295471f9dc070715d9c78c8e", null ],
+    [ "pango_log2vis_get_embedding_levels", "pango-utils_8h.html#a338b9746b9a03fa545a99835aec5ec22", null ],
+    [ "pango_parse_enum", "pango-utils_8h.html#aae197b3b67d33b54b30159401eb33355", null ],
+    [ "pango_parse_stretch", "pango-utils_8h.html#a446ed839d838437918e03f6b9a08d2be", null ],
+    [ "pango_parse_style", "pango-utils_8h.html#a26b3b6b1d8f318182d668cfed7ff8d17", null ],
+    [ "pango_parse_variant", "pango-utils_8h.html#a1974dfe61cde8574f8d88c2374d044be", null ],
+    [ "pango_parse_weight", "pango-utils_8h.html#ab04076104774ef8b3d75a3a1d6e58a23", null ],
+    [ "pango_quantize_line_geometry", "pango-utils_8h.html#a4372bfa179192c0d7b670dc3797abb77", null ],
+    [ "pango_read_line", "pango-utils_8h.html#a58d80f9d66d0ab1efb352fc1863f55e8", null ],
+    [ "pango_scan_int", "pango-utils_8h.html#afe8bae4fba348658ecdd70ee2a1ad063", null ],
+    [ "pango_scan_string", "pango-utils_8h.html#ab951bd223fbd51a2fb64a90190cd56d3", null ],
+    [ "pango_scan_word", "pango-utils_8h.html#a4861b69e3f563715ef63d65f4b16bae2", null ],
+    [ "pango_skip_space", "pango-utils_8h.html#ad245b016f21071ff144c66ec1ece2129", null ],
+    [ "pango_split_file_list", "pango-utils_8h.html#a4aa207649de3471da4221a82eab11374", null ],
+    [ "pango_trim_string", "pango-utils_8h.html#ab1765323675e5dc6ab6b9a31f6897082", null ],
+    [ "pango_version", "pango-utils_8h.html#a41cb20d1fbe4064dad8882007af5d51c", null ],
+    [ "pango_version_check", "pango-utils_8h.html#ac59e0f4c5ca8bf01f73d6a44514a0907", null ],
+    [ "pango_version_string", "pango-utils_8h.html#a9cac5bf92daf4b6ac627e29c68b51704", null ]
+];

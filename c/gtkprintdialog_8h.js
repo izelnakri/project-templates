@@ -1,0 +1,28 @@
+var gtkprintdialog_8h =
+[
+    [ "GTK_TYPE_PRINT_DIALOG", "gtkprintdialog_8h.html#a032cd5144bb3646076d5dac4135c9858", null ],
+    [ "GTK_TYPE_PRINT_SETUP", "gtkprintdialog_8h.html#afa627a115686431672b6e73e917c9b20", null ],
+    [ "GtkPrintSetup", "gtkprintdialog_8h.html#a6edea96ed0aa73f1a63576212a38e696", null ],
+    [ "gtk_print_dialog_get_accept_label", "gtkprintdialog_8h.html#a772798ad7694377ba945ff3ae629c2ef", null ],
+    [ "gtk_print_dialog_get_modal", "gtkprintdialog_8h.html#af59c6f590afdc502a5a72908af9bd035", null ],
+    [ "gtk_print_dialog_get_page_setup", "gtkprintdialog_8h.html#a0828751e8f41b8b251bdf7c705d3bd30", null ],
+    [ "gtk_print_dialog_get_print_settings", "gtkprintdialog_8h.html#a9d9f7cd9cf80398f5bac41aadba49a35", null ],
+    [ "gtk_print_dialog_get_title", "gtkprintdialog_8h.html#add54f25d880c342efda7978b0e3a1288", null ],
+    [ "gtk_print_dialog_new", "gtkprintdialog_8h.html#a3866d980a799903bb8e71afbf5aa3636", null ],
+    [ "gtk_print_dialog_print", "gtkprintdialog_8h.html#af1c5db65ea12bdaff2e09f016fca1916", null ],
+    [ "gtk_print_dialog_print_file", "gtkprintdialog_8h.html#ad5764d47edc12d2ef3fc2a59aa186ebc", null ],
+    [ "gtk_print_dialog_print_file_finish", "gtkprintdialog_8h.html#a7db7c787922e0d51eccabb2c88776442", null ],
+    [ "gtk_print_dialog_print_finish", "gtkprintdialog_8h.html#ab0d7f42dfaa290cedf42bbca955a961c", null ],
+    [ "gtk_print_dialog_set_accept_label", "gtkprintdialog_8h.html#ac6b60b68678f3966870ff840d3981b47", null ],
+    [ "gtk_print_dialog_set_modal", "gtkprintdialog_8h.html#a16366a63c64e6f57408720f887f201d8", null ],
+    [ "gtk_print_dialog_set_page_setup", "gtkprintdialog_8h.html#a7de778402b28598e1276856193bc811f", null ],
+    [ "gtk_print_dialog_set_print_settings", "gtkprintdialog_8h.html#a417b5bcb7f4dbd3fceb84bb2161b4c3f", null ],
+    [ "gtk_print_dialog_set_title", "gtkprintdialog_8h.html#a12b838ea5fdc2131260de04025bece94", null ],
+    [ "gtk_print_dialog_setup", "gtkprintdialog_8h.html#a06cb94787816cbe5c7c32b5ea8bb8613", null ],
+    [ "gtk_print_dialog_setup_finish", "gtkprintdialog_8h.html#a4b5fae235cd1c36204924a13ad43db40", null ],
+    [ "gtk_print_setup_get_page_setup", "gtkprintdialog_8h.html#a6f3bdcba49bcc6ed381302257ed60065", null ],
+    [ "gtk_print_setup_get_print_settings", "gtkprintdialog_8h.html#a40b66592b45822263b48f465d27c88ec", null ],
+    [ "gtk_print_setup_get_type", "gtkprintdialog_8h.html#a475d42496e22dc2bdbeda69440c5e2fe", null ],
+    [ "gtk_print_setup_ref", "gtkprintdialog_8h.html#a6ac913c1b1d243ba3cf6b51f932e2b03", null ],
+    [ "gtk_print_setup_unref", "gtkprintdialog_8h.html#abd69e939dd7d8097e566e06f6461153a", null ]
+];

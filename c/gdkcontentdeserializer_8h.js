@@ -1,0 +1,25 @@
+var gdkcontentdeserializer_8h =
+[
+    [ "GDK_CONTENT_DESERIALIZER", "gdkcontentdeserializer_8h.html#ad97a3eec87c8b1af9ab2621038b82802", null ],
+    [ "GDK_IS_CONTENT_DESERIALIZER", "gdkcontentdeserializer_8h.html#a31b9b0595f5f5a132d6c7a86dd6a2b4f", null ],
+    [ "GDK_TYPE_CONTENT_DESERIALIZER", "gdkcontentdeserializer_8h.html#a6a327da7c33b39dc38782e91d7720d21", null ],
+    [ "GdkContentDeserializeFunc", "gdkcontentdeserializer_8h.html#a62beb814521a1c9ed6201d30ce31763e", null ],
+    [ "GdkContentDeserializer", "gdkcontentdeserializer_8h.html#a83b55be8402280c6c1807b4c0e531621", null ],
+    [ "gdk_content_deserialize_async", "gdkcontentdeserializer_8h.html#aa3d4ff21502f4edc6519b307791c1b0b", null ],
+    [ "gdk_content_deserialize_finish", "gdkcontentdeserializer_8h.html#a5c531513916e517be1175031de673a39", null ],
+    [ "gdk_content_deserializer_get_cancellable", "gdkcontentdeserializer_8h.html#a765955bc5a40b519076f6eca93670bc8", null ],
+    [ "gdk_content_deserializer_get_gtype", "gdkcontentdeserializer_8h.html#a2db737399b653c6f5a55cca711020d09", null ],
+    [ "gdk_content_deserializer_get_input_stream", "gdkcontentdeserializer_8h.html#a52771c1bf93ba59596e7ca179c7a2e6d", null ],
+    [ "gdk_content_deserializer_get_mime_type", "gdkcontentdeserializer_8h.html#a185fec42f912ab06559a236e709716b4", null ],
+    [ "gdk_content_deserializer_get_priority", "gdkcontentdeserializer_8h.html#abda52f615714518ff6275c3aa14e79b5", null ],
+    [ "gdk_content_deserializer_get_task_data", "gdkcontentdeserializer_8h.html#a6d4c8981cf3a887549c66b4861a176f6", null ],
+    [ "gdk_content_deserializer_get_type", "gdkcontentdeserializer_8h.html#aa872cb8d807905034cf35732b029c1b1", null ],
+    [ "gdk_content_deserializer_get_user_data", "gdkcontentdeserializer_8h.html#a42153b5609bd2f1b620f1dc8903792b2", null ],
+    [ "gdk_content_deserializer_get_value", "gdkcontentdeserializer_8h.html#a95715309b76dd4ca2d868a99490e2683", null ],
+    [ "gdk_content_deserializer_return_error", "gdkcontentdeserializer_8h.html#a3de33b1755634973242191915c50926c", null ],
+    [ "gdk_content_deserializer_return_success", "gdkcontentdeserializer_8h.html#a195bbf5b50fb76d6120465b16bfecbc6", null ],
+    [ "gdk_content_deserializer_set_task_data", "gdkcontentdeserializer_8h.html#a9394a741fa3b3946dfdbc5612186e93c", null ],
+    [ "gdk_content_formats_union_deserialize_gtypes", "gdkcontentdeserializer_8h.html#a73bcb6a0a6bc4e5796c0264f23d28047", null ],
+    [ "gdk_content_formats_union_deserialize_mime_types", "gdkcontentdeserializer_8h.html#adebd5c9b2326067b384bbb94024fb1f6", null ],
+    [ "gdk_content_register_deserializer", "gdkcontentdeserializer_8h.html#a391595ef22c76b16657628fb8edcca38", null ]
+];

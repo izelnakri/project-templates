@@ -1,0 +1,27 @@
+var gdbusmethodinvocation_8h =
+[
+    [ "G_DBUS_METHOD_INVOCATION", "gdbusmethodinvocation_8h.html#a8f1e89e90df0d770dfb8e797db49e194", null ],
+    [ "G_DBUS_METHOD_INVOCATION_HANDLED", "gdbusmethodinvocation_8h.html#a7846ad1b86d14cf4f887b4a7b907806a", null ],
+    [ "G_DBUS_METHOD_INVOCATION_UNHANDLED", "gdbusmethodinvocation_8h.html#ae4b71869dafb91d1ac19dc99c330ec60", null ],
+    [ "G_IS_DBUS_METHOD_INVOCATION", "gdbusmethodinvocation_8h.html#aec26f7e4ffb27a65b6d51df3a4cd9716", null ],
+    [ "G_TYPE_DBUS_METHOD_INVOCATION", "gdbusmethodinvocation_8h.html#ae345e8c90584687f782ae716600b8b1b", null ],
+    [ "g_dbus_method_invocation_get_connection", "gdbusmethodinvocation_8h.html#a40d177cc7b6c7de3921d1d0ed2b22292", null ],
+    [ "g_dbus_method_invocation_get_interface_name", "gdbusmethodinvocation_8h.html#a4e9c88fe263a0386140726ffdbbb2d8d", null ],
+    [ "g_dbus_method_invocation_get_message", "gdbusmethodinvocation_8h.html#a7571ae77e15954baa61b9c13db96a9c1", null ],
+    [ "g_dbus_method_invocation_get_method_info", "gdbusmethodinvocation_8h.html#a3f0a7d2f1f8f5e994efa51ec9f832bff", null ],
+    [ "g_dbus_method_invocation_get_method_name", "gdbusmethodinvocation_8h.html#aeaf313bb8f4a54d74b10b8712d4a6f55", null ],
+    [ "g_dbus_method_invocation_get_object_path", "gdbusmethodinvocation_8h.html#a36861aafdcf4f480d85e2396f274a0a4", null ],
+    [ "g_dbus_method_invocation_get_parameters", "gdbusmethodinvocation_8h.html#a9d70d101337515450582546ea72e2a40", null ],
+    [ "g_dbus_method_invocation_get_property_info", "gdbusmethodinvocation_8h.html#a4c6b8d7de502a858f7134ee3be3e58bf", null ],
+    [ "g_dbus_method_invocation_get_sender", "gdbusmethodinvocation_8h.html#a9e736ea5854b7a44acf89b8e4cb56f65", null ],
+    [ "g_dbus_method_invocation_get_type", "gdbusmethodinvocation_8h.html#afbd7787ad4755d177545d4ddfb6a735e", null ],
+    [ "g_dbus_method_invocation_get_user_data", "gdbusmethodinvocation_8h.html#ac7c606d96c076f02115c2d35d7b3a810", null ],
+    [ "g_dbus_method_invocation_return_dbus_error", "gdbusmethodinvocation_8h.html#a4016300c680f75b07e77812c56e67161", null ],
+    [ "g_dbus_method_invocation_return_error", "gdbusmethodinvocation_8h.html#a869451b413aad71a60af9252aa7710c0", null ],
+    [ "g_dbus_method_invocation_return_error_literal", "gdbusmethodinvocation_8h.html#a5767dd343d0c0223e693b9867478e0a1", null ],
+    [ "g_dbus_method_invocation_return_error_valist", "gdbusmethodinvocation_8h.html#ad0d366ade46ea854e400ed1e71769c74", null ],
+    [ "g_dbus_method_invocation_return_gerror", "gdbusmethodinvocation_8h.html#ad1fbc57ef06e445579b728df25435efd", null ],
+    [ "g_dbus_method_invocation_return_value", "gdbusmethodinvocation_8h.html#a5355e30a8ca76f0cadc1a9816b59d8f6", null ],
+    [ "g_dbus_method_invocation_return_value_with_unix_fd_list", "gdbusmethodinvocation_8h.html#ab10e8e8b467953dc73c7754cc82a0d95", null ],
+    [ "g_dbus_method_invocation_take_error", "gdbusmethodinvocation_8h.html#a2a6495ed6bde49b9a622c3d63eff5544", null ]
+];

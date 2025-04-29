@@ -1,0 +1,38 @@
+var hb_ot_name_8h =
+[
+    [ "hb_ot_name_entry_t", "structhb__ot__name__entry__t.html", "structhb__ot__name__entry__t" ],
+    [ "hb_ot_name_entry_t", "hb-ot-name_8h.html#af51632a127d6a2ef68439fcc768e9f61", null ],
+    [ "hb_ot_name_id_t", "hb-ot-name_8h.html#a24671a765e21dbd6543164ebf036052b", null ],
+    [ "hb_ot_name_id_predefined_t", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdd", [
+      [ "HB_OT_NAME_ID_COPYRIGHT", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbddae30a4461af7e544ee97a0b7d78dca193", null ],
+      [ "HB_OT_NAME_ID_FONT_FAMILY", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda5be773ca16feb431028bfbef0d9acf96", null ],
+      [ "HB_OT_NAME_ID_FONT_SUBFAMILY", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda770c71f22d2d7e542ba2ae9e787e0c4a", null ],
+      [ "HB_OT_NAME_ID_UNIQUE_ID", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda2117da8c4872a45ddcdd40200112c737", null ],
+      [ "HB_OT_NAME_ID_FULL_NAME", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda9e606d3280494aaf323232080c21b90d", null ],
+      [ "HB_OT_NAME_ID_VERSION_STRING", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda1d574f2fb43ee430e9833c13670d7763", null ],
+      [ "HB_OT_NAME_ID_POSTSCRIPT_NAME", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda43bfc74df30e189470e30c797c1a8692", null ],
+      [ "HB_OT_NAME_ID_TRADEMARK", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbddad8af1023878d7dd7119572a5be9e48a1", null ],
+      [ "HB_OT_NAME_ID_MANUFACTURER", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbddabdbc32c032ab33eaec97ffa72313baeb", null ],
+      [ "HB_OT_NAME_ID_DESIGNER", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbddaf4e0fd72b5e59e5ebdc6722ca0c37712", null ],
+      [ "HB_OT_NAME_ID_DESCRIPTION", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda030ccff96fcfb59f97ab1b3f802db421", null ],
+      [ "HB_OT_NAME_ID_VENDOR_URL", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbddad681ee8bc12c2d2a054daeb152135ace", null ],
+      [ "HB_OT_NAME_ID_DESIGNER_URL", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda13a68c4e3c5a6ca8144b1990a5b88aa9", null ],
+      [ "HB_OT_NAME_ID_LICENSE", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda7a27f00e74e9034c8e22331ffa2a3bc0", null ],
+      [ "HB_OT_NAME_ID_LICENSE_URL", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbddaf8eda1a77a8dce6de2626abdcced11cd", null ],
+      [ "HB_OT_NAME_ID_TYPOGRAPHIC_FAMILY", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda611e30b774105dfd806980ac8641d85a", null ],
+      [ "HB_OT_NAME_ID_TYPOGRAPHIC_SUBFAMILY", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda42b875d0fa5d630c0c62df6ec3abbf3c", null ],
+      [ "HB_OT_NAME_ID_MAC_FULL_NAME", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbddad638129f33491ba4f99f7dc3c0f2c164", null ],
+      [ "HB_OT_NAME_ID_SAMPLE_TEXT", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda1e17cd5530a87c30296e9a5bb3316544", null ],
+      [ "HB_OT_NAME_ID_CID_FINDFONT_NAME", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda6c2e629804d88cc6b1a3aa8725ac1e3f", null ],
+      [ "HB_OT_NAME_ID_WWS_FAMILY", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda5860558bf998679b44718153ce1ab43a", null ],
+      [ "HB_OT_NAME_ID_WWS_SUBFAMILY", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbdda48fa3940fe9ec966ffbf91e6551b70cd", null ],
+      [ "HB_OT_NAME_ID_LIGHT_BACKGROUND", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbddafda7bbb5fd0741b3cb02150bb8fad878", null ],
+      [ "HB_OT_NAME_ID_DARK_BACKGROUND", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbddac191412693c702fbdb811524891a4d1b", null ],
+      [ "HB_OT_NAME_ID_VARIATIONS_PS_PREFIX", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbddab6a06c43583d05706702a62fc730b861", null ],
+      [ "HB_OT_NAME_ID_INVALID", "hb-ot-name_8h.html#a638da7297c387200bc7fa4dcc682bbddaab1dfba401ffdd40a502ea3efeb635d7", null ]
+    ] ],
+    [ "hb_ot_name_get_utf16", "hb-ot-name_8h.html#a385325a9c97017ea83f19cfb5172decc", null ],
+    [ "hb_ot_name_get_utf32", "hb-ot-name_8h.html#a1f4ad4570a249255163c648f8b0ec5e0", null ],
+    [ "hb_ot_name_get_utf8", "hb-ot-name_8h.html#a8c27252fe52c1b50ea66c776ef988cda", null ],
+    [ "hb_ot_name_list_names", "hb-ot-name_8h.html#af0db2a4259797fb6d248179e6db6976a", null ]
+];

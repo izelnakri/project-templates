@@ -1,0 +1,28 @@
+var pangoft2_8h =
+[
+    [ "PANGO_FT2_FONT_MAP", "pangoft2_8h.html#a3349e8ace3e5345ffc90e65afc5a457c", null ],
+    [ "PANGO_FT2_IS_FONT_MAP", "pangoft2_8h.html#a4417521d86d66c34f73d17ecf054d8a4", null ],
+    [ "PANGO_RENDER_TYPE_FT2", "pangoft2_8h.html#a8252ce5e0d4c6a93f68304313a64b9a7", null ],
+    [ "PANGO_TYPE_FT2_FONT_MAP", "pangoft2_8h.html#a6b6fecadfb54fc620f820eec692821ff", null ],
+    [ "PangoFT2FontMap", "pangoft2_8h.html#a6e77a825f79dbdbcaa1e621c04c986a5", null ],
+    [ "PangoFT2SubstituteFunc", "pangoft2_8h.html#a030112b21cc4c8076a63db513b02c73f", null ],
+    [ "pango_ft2_font_get_coverage", "pangoft2_8h.html#a7c287dc70c5db42f1134dfdbfe5f01ce", null ],
+    [ "pango_ft2_font_get_face", "pangoft2_8h.html#afd3a162ffbb25a7d65b0ce98c158316a", null ],
+    [ "pango_ft2_font_get_kerning", "pangoft2_8h.html#abec2f65d07aaa2a571ff2d4f0a9e2777", null ],
+    [ "pango_ft2_font_map_create_context", "pangoft2_8h.html#a037ac5fd1e0cdbfbd05fbfa06e29f433", null ],
+    [ "pango_ft2_font_map_for_display", "pangoft2_8h.html#a15280a0787f9502e4052db94d084ba5a", null ],
+    [ "pango_ft2_font_map_get_type", "pangoft2_8h.html#a5369847b6533dd5a9c68f4e472b52e3e", null ],
+    [ "pango_ft2_font_map_new", "pangoft2_8h.html#a50be62df2b399f3a0996077e0de8453c", null ],
+    [ "pango_ft2_font_map_set_default_substitute", "pangoft2_8h.html#a58c7e5d803e3e47753a0dc9c2f184538", null ],
+    [ "pango_ft2_font_map_set_resolution", "pangoft2_8h.html#a44e8f7a5add79b9350bd8280a26b178d", null ],
+    [ "pango_ft2_font_map_substitute_changed", "pangoft2_8h.html#a9de8fd6d2e446f1a751b9566915ce039", null ],
+    [ "pango_ft2_get_context", "pangoft2_8h.html#a6625011ad4b6cd576855b1d9024f6f7c", null ],
+    [ "pango_ft2_get_unknown_glyph", "pangoft2_8h.html#ac2fd53709c011e84a5dda5f150f1b7aa", null ],
+    [ "pango_ft2_render", "pangoft2_8h.html#aff09f9c3f3ed8f364e7fa5bc848b738c", null ],
+    [ "pango_ft2_render_layout", "pangoft2_8h.html#a0675521b2349c6e3d4778febb95aa6e8", null ],
+    [ "pango_ft2_render_layout_line", "pangoft2_8h.html#abd1b8ea8ee1741750762cc2dd5b4ace0", null ],
+    [ "pango_ft2_render_layout_line_subpixel", "pangoft2_8h.html#add07b2f595255c9b5d4ae38f317fc2d0", null ],
+    [ "pango_ft2_render_layout_subpixel", "pangoft2_8h.html#ac3c373143b4757af9a43228ca4853a7b", null ],
+    [ "pango_ft2_render_transformed", "pangoft2_8h.html#a243d45bc9341cb9311c3600ad84c168e", null ],
+    [ "pango_ft2_shutdown_display", "pangoft2_8h.html#a33bbfbefebd66bca8f9734d6ff5bc710", null ]
+];
