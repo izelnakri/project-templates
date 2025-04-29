@@ -1,0 +1,26 @@
+var gtkshortcuttrigger_8h =
+[
+    [ "GTK_TYPE_ALTERNATIVE_TRIGGER", "gtkshortcuttrigger_8h.html#a3c0d1357327439ca03bd247e64915299", null ],
+    [ "GTK_TYPE_KEYVAL_TRIGGER", "gtkshortcuttrigger_8h.html#a3554c742db391a1944d891c6fbfc4905", null ],
+    [ "GTK_TYPE_MNEMONIC_TRIGGER", "gtkshortcuttrigger_8h.html#a0ebcb10bcac972abbf59f2e4f991c51c", null ],
+    [ "GTK_TYPE_NEVER_TRIGGER", "gtkshortcuttrigger_8h.html#a21bb5fcc7ae0856ed59ee64934251bf9", null ],
+    [ "GTK_TYPE_SHORTCUT_TRIGGER", "gtkshortcuttrigger_8h.html#ab3eff254fff09ab7695ab4321ae92728", null ],
+    [ "gtk_alternative_trigger_get_first", "gtkshortcuttrigger_8h.html#a4bef0a9ae7f294ff42f8667bbe0b2ac8", null ],
+    [ "gtk_alternative_trigger_get_second", "gtkshortcuttrigger_8h.html#ad5fcdf79bfbc776bb9fb36c8c2f83683", null ],
+    [ "gtk_alternative_trigger_new", "gtkshortcuttrigger_8h.html#aead62487ab1b24f463a026d5d7af4d93", null ],
+    [ "gtk_keyval_trigger_get_keyval", "gtkshortcuttrigger_8h.html#a545aeb9d34a4cab27d673af800229ac2", null ],
+    [ "gtk_keyval_trigger_get_modifiers", "gtkshortcuttrigger_8h.html#aed2265dfb6aeb353eeec616426f5a55e", null ],
+    [ "gtk_keyval_trigger_new", "gtkshortcuttrigger_8h.html#ae5b2ae2e26e154c2c068adbd6f3c1870", null ],
+    [ "gtk_mnemonic_trigger_get_keyval", "gtkshortcuttrigger_8h.html#a4521d346de7afdbf66b7d562aa0ae348", null ],
+    [ "gtk_mnemonic_trigger_new", "gtkshortcuttrigger_8h.html#aa3263550964375315096bd083b2a8254", null ],
+    [ "gtk_never_trigger_get", "gtkshortcuttrigger_8h.html#ae3b22671745dff34cd047ef710936b5d", null ],
+    [ "gtk_shortcut_trigger_compare", "gtkshortcuttrigger_8h.html#a84f019952cdcbfd068fc0a3f629d3447", null ],
+    [ "gtk_shortcut_trigger_equal", "gtkshortcuttrigger_8h.html#a8fa733424956a34c8841d059226b38e0", null ],
+    [ "gtk_shortcut_trigger_hash", "gtkshortcuttrigger_8h.html#af95fee0517ce058a6f9c7520e137759f", null ],
+    [ "gtk_shortcut_trigger_parse_string", "gtkshortcuttrigger_8h.html#af48df8c9a9b2529d15a0fa530e5e439f", null ],
+    [ "gtk_shortcut_trigger_print", "gtkshortcuttrigger_8h.html#a509b8d5acd76d2fb51be8e16f02a9d86", null ],
+    [ "gtk_shortcut_trigger_print_label", "gtkshortcuttrigger_8h.html#a9cbddf96d727b8ac6de791ee894caab1", null ],
+    [ "gtk_shortcut_trigger_to_label", "gtkshortcuttrigger_8h.html#a9dabcc71fc9ed33a21d12b606451f24b", null ],
+    [ "gtk_shortcut_trigger_to_string", "gtkshortcuttrigger_8h.html#a1cf81a109f335377c2e9591baf99b4af", null ],
+    [ "gtk_shortcut_trigger_trigger", "gtkshortcuttrigger_8h.html#af482ff4f4fba27680a97b1c7be44246c", null ]
+];

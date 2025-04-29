@@ -1,0 +1,26 @@
+var gresource_8h =
+[
+    [ "_GStaticResource", "struct__GStaticResource.html", "struct__GStaticResource" ],
+    [ "G_RESOURCE_ERROR", "gresource_8h.html#ae7099864e72af393d139305d75712f50", null ],
+    [ "G_TYPE_RESOURCE", "gresource_8h.html#a2abcfaaf3328fe32b5f9fca96c31f991", null ],
+    [ "GStaticResource", "gresource_8h.html#a787d66b37f751f9bd470d7c899c20683", null ],
+    [ "g_resource_enumerate_children", "gresource_8h.html#abf943744965293d558a44ef5226efaf6", null ],
+    [ "g_resource_error_quark", "gresource_8h.html#a1995102b92ac3f8205af240cd4e2f464", null ],
+    [ "g_resource_get_info", "gresource_8h.html#aaed966333d5d79b16212a9c3b2e1c07b", null ],
+    [ "g_resource_get_type", "gresource_8h.html#a05611ea5183e75b82d41f1e984e5cbf3", null ],
+    [ "g_resource_load", "gresource_8h.html#a87d91af8b43f4a7c3dd7554050699345", null ],
+    [ "g_resource_lookup_data", "gresource_8h.html#ad6bac20d453cb835942cd5e1b2b39034", null ],
+    [ "g_resource_new_from_data", "gresource_8h.html#aa3df0b52295c804c79a93a7e864a55b3", null ],
+    [ "g_resource_open_stream", "gresource_8h.html#a756ced07a355608871af391d7b65b072", null ],
+    [ "g_resource_ref", "gresource_8h.html#a07df4c32113207f07343a528a2173418", null ],
+    [ "g_resource_unref", "gresource_8h.html#ae9304ba25f69b9119f4504677b574710", null ],
+    [ "g_resources_enumerate_children", "gresource_8h.html#a851fe228347d7d28e4390caf6413d382", null ],
+    [ "g_resources_get_info", "gresource_8h.html#a5b5b66deea87204917ec951c3dbf2bf3", null ],
+    [ "g_resources_lookup_data", "gresource_8h.html#ab8afc212e20373738d29bcd2239bcf39", null ],
+    [ "g_resources_open_stream", "gresource_8h.html#a4a3ee5e31b90758ef01cf639846e0519", null ],
+    [ "g_resources_register", "gresource_8h.html#a32fa3ba2abf6a2fa9e566cc710a618bd", null ],
+    [ "g_resources_unregister", "gresource_8h.html#a13013b069bcf3ff72e6a10a18b8284b5", null ],
+    [ "g_static_resource_fini", "gresource_8h.html#a4c975a554cc11df61b513d871b997a03", null ],
+    [ "g_static_resource_get_resource", "gresource_8h.html#ace5582db94da462f1899bdba06411d6e", null ],
+    [ "g_static_resource_init", "gresource_8h.html#a12bb00039ef838c4001046a3e9df4b3a", null ]
+];

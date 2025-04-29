@@ -1,7 +1,0 @@
-.flatpak-builder
-c/flatpak/build
-c/flatpak/nix-deps.tar.gz
-c/build
-c/access.log
-c/compile_commands.json
-docs/html

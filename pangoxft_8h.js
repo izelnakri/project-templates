@@ -1,0 +1,27 @@
+var pangoxft_8h =
+[
+    [ "PANGO_RENDER_TYPE_XFT", "pangoxft_8h.html#a46ac9d8586d5c54650e2d90c0ed15d04", null ],
+    [ "PANGO_TYPE_XFT_FONT", "pangoxft_8h.html#a051ff9a48912174dde16407823cc363b", null ],
+    [ "PANGO_TYPE_XFT_FONT_MAP", "pangoxft_8h.html#a1ba88735b7a5dd2ffbb732fba529fdef", null ],
+    [ "PANGO_XFT_FONT", "pangoxft_8h.html#acd55ed31b003a38cd4b2569b4133ba95", null ],
+    [ "PANGO_XFT_FONT_MAP", "pangoxft_8h.html#a3ac897f9725ea7911bcf1fde8915b1e6", null ],
+    [ "PANGO_XFT_IS_FONT", "pangoxft_8h.html#a63723032e9b39893609137cde7362e39", null ],
+    [ "PANGO_XFT_IS_FONT_MAP", "pangoxft_8h.html#a37361e4a756af45b3f35a339b2685a8e", null ],
+    [ "PangoXftFont", "pangoxft_8h.html#a88b466528201494e97a3d228024ce6ca", null ],
+    [ "PangoXftFontMap", "pangoxft_8h.html#a80b624231dd3943b20c4faaee5a0c0a4", null ],
+    [ "PangoXftSubstituteFunc", "pangoxft_8h.html#a5e4d57bb0560a0ef372cbb62a5297b78", null ],
+    [ "pango_xft_font_get_display", "pangoxft_8h.html#ab10cf95bf17a359d4a06c1969877ec81", null ],
+    [ "pango_xft_font_get_font", "pangoxft_8h.html#a1d14e7f40b2fd64df549faa4a18acca7", null ],
+    [ "pango_xft_font_get_glyph", "pangoxft_8h.html#a5b9f204733bf4928ec65f8a6a7806a75", null ],
+    [ "pango_xft_font_get_type", "pangoxft_8h.html#a9b38f4467aae952a76e6aa8f93839b54", null ],
+    [ "pango_xft_font_get_unknown_glyph", "pangoxft_8h.html#ab5918f525a574abad09181cd2edafb00", null ],
+    [ "pango_xft_font_has_char", "pangoxft_8h.html#abef4b94a8dee05e54a33fd310c73602e", null ],
+    [ "pango_xft_font_lock_face", "pangoxft_8h.html#ac4c3e975fc85e7fb3a2997c5a1943d20", null ],
+    [ "pango_xft_font_map_get_type", "pangoxft_8h.html#a6e4c1d9c5aa8ca8fe848f6eaac657b66", null ],
+    [ "pango_xft_font_unlock_face", "pangoxft_8h.html#adde582cae320d37ca91553a8ff780902", null ],
+    [ "pango_xft_get_context", "pangoxft_8h.html#a2fd8f346df3fba0be9ff8cd303963626", null ],
+    [ "pango_xft_get_font_map", "pangoxft_8h.html#a579dd7f80aeb3af8569750cc7da41f9d", null ],
+    [ "pango_xft_set_default_substitute", "pangoxft_8h.html#ab02475d7e2d014d0b0b9c7ce6f0cc5e9", null ],
+    [ "pango_xft_shutdown_display", "pangoxft_8h.html#abda374d9b944278b8b531515db92426e", null ],
+    [ "pango_xft_substitute_changed", "pangoxft_8h.html#a26b382979241486a5ddbdeee0f18abdd", null ]
+];

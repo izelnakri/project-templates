@@ -1,2 +1,0 @@
-option('tests', type: 'feature', value: 'enabled', description: 'Build tests')
-option('benchmarks', type : 'feature', value : 'disabled', description : 'Enable building benchmarks')

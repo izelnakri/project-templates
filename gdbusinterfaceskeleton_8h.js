@@ -1,0 +1,27 @@
+var gdbusinterfaceskeleton_8h =
+[
+    [ "_GDBusInterfaceSkeleton", "struct__GDBusInterfaceSkeleton.html", "struct__GDBusInterfaceSkeleton" ],
+    [ "_GDBusInterfaceSkeletonClass", "struct__GDBusInterfaceSkeletonClass.html", "struct__GDBusInterfaceSkeletonClass" ],
+    [ "G_DBUS_INTERFACE_SKELETON", "gdbusinterfaceskeleton_8h.html#a7e6aa75d04238c0e3c9d152f116245ea", null ],
+    [ "G_DBUS_INTERFACE_SKELETON_CLASS", "gdbusinterfaceskeleton_8h.html#ac4672443807c5f1650539f8b4d6ce251", null ],
+    [ "G_DBUS_INTERFACE_SKELETON_GET_CLASS", "gdbusinterfaceskeleton_8h.html#a763a150d3a7f835d6c95f7c60009cbcf", null ],
+    [ "G_IS_DBUS_INTERFACE_SKELETON", "gdbusinterfaceskeleton_8h.html#aa88a2ad8dabcb6139f71c57d87d98a7e", null ],
+    [ "G_IS_DBUS_INTERFACE_SKELETON_CLASS", "gdbusinterfaceskeleton_8h.html#ad47734aad83260bf59dcedcc7cba38f1", null ],
+    [ "G_TYPE_DBUS_INTERFACE_SKELETON", "gdbusinterfaceskeleton_8h.html#ac63766c50d91a79741ed1770f40d9a39", null ],
+    [ "GDBusInterfaceSkeletonClass", "gdbusinterfaceskeleton_8h.html#a45052af3d97b69015e0eee7bed16ea21", null ],
+    [ "GDBusInterfaceSkeletonPrivate", "gdbusinterfaceskeleton_8h.html#aac2805de633f763612f9513f01cb7f1e", null ],
+    [ "g_dbus_interface_skeleton_export", "gdbusinterfaceskeleton_8h.html#a04280d8cb03cf566081d234ea7b2d181", null ],
+    [ "g_dbus_interface_skeleton_flush", "gdbusinterfaceskeleton_8h.html#a69d03dc5717199c26f9294b933b6b8bb", null ],
+    [ "g_dbus_interface_skeleton_get_connection", "gdbusinterfaceskeleton_8h.html#af6d261ef63702aa2abf8e56300668b1c", null ],
+    [ "g_dbus_interface_skeleton_get_connections", "gdbusinterfaceskeleton_8h.html#aa8f99f9aaa9cfb0e771c1f09d550f5a7", null ],
+    [ "g_dbus_interface_skeleton_get_flags", "gdbusinterfaceskeleton_8h.html#a85a023e9269fba19f850517aadf045a0", null ],
+    [ "g_dbus_interface_skeleton_get_info", "gdbusinterfaceskeleton_8h.html#a10bd37479b78d8e6eef8d65e1970139b", null ],
+    [ "g_dbus_interface_skeleton_get_object_path", "gdbusinterfaceskeleton_8h.html#ab1394bb98c7364e709e35e92c233609b", null ],
+    [ "g_dbus_interface_skeleton_get_properties", "gdbusinterfaceskeleton_8h.html#a891086320bb41992c5869d77dd2a6eaf", null ],
+    [ "g_dbus_interface_skeleton_get_type", "gdbusinterfaceskeleton_8h.html#af1e2f909bf9dff3e728202e96ad656f2", null ],
+    [ "g_dbus_interface_skeleton_get_vtable", "gdbusinterfaceskeleton_8h.html#a691ab96d1604a759d4038817f614916f", null ],
+    [ "g_dbus_interface_skeleton_has_connection", "gdbusinterfaceskeleton_8h.html#a24a820113d1a0d993d02942edbf66988", null ],
+    [ "g_dbus_interface_skeleton_set_flags", "gdbusinterfaceskeleton_8h.html#a85a297d49966cb3f7e7846b76d2e86a0", null ],
+    [ "g_dbus_interface_skeleton_unexport", "gdbusinterfaceskeleton_8h.html#adb3232db38ec87ef117b005536725e09", null ],
+    [ "g_dbus_interface_skeleton_unexport_from_connection", "gdbusinterfaceskeleton_8h.html#a372671b9ccd83ed604c4dcd15d7ae04d", null ]
+];

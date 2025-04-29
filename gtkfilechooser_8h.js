@@ -1,0 +1,46 @@
+var gtkfilechooser_8h =
+[
+    [ "GTK_FILE_CHOOSER", "gtkfilechooser_8h.html#a0a7b74ae252ad5910b821070c0364466", null ],
+    [ "GTK_FILE_CHOOSER_ERROR", "gtkfilechooser_8h.html#a2f9654a5992c694e17d731cd93077e02", null ],
+    [ "GTK_IS_FILE_CHOOSER", "gtkfilechooser_8h.html#a72518dcdb6abe1e168f46c4ac2f4309d", null ],
+    [ "GTK_TYPE_FILE_CHOOSER", "gtkfilechooser_8h.html#ade9d22b95739d90bfe78134fa73481e5", null ],
+    [ "GtkFileChooser", "gtkfilechooser_8h.html#a84572ba47bed6c4af894b289fd13869d", null ],
+    [ "GtkFileChooserAction", "gtkfilechooser_8h.html#a8191111802319d904bdea9511174db88", [
+      [ "GTK_FILE_CHOOSER_ACTION_OPEN", "gtkfilechooser_8h.html#a8191111802319d904bdea9511174db88a83e495bda20777cc310c172c0979ae2b", null ],
+      [ "GTK_FILE_CHOOSER_ACTION_SAVE", "gtkfilechooser_8h.html#a8191111802319d904bdea9511174db88a4ede158800f434f05f080e226f4c643a", null ],
+      [ "GTK_FILE_CHOOSER_ACTION_SELECT_FOLDER", "gtkfilechooser_8h.html#a8191111802319d904bdea9511174db88a6177372279f88f339def30d6106cedf0", null ]
+    ] ],
+    [ "GtkFileChooserError", "gtkfilechooser_8h.html#a8e54a0697ce59cd9c421655d95ff05a7", [
+      [ "GTK_FILE_CHOOSER_ERROR_NONEXISTENT", "gtkfilechooser_8h.html#a8e54a0697ce59cd9c421655d95ff05a7aa04bbc5d2f2f87b3129db07f9885c070", null ],
+      [ "GTK_FILE_CHOOSER_ERROR_BAD_FILENAME", "gtkfilechooser_8h.html#a8e54a0697ce59cd9c421655d95ff05a7a9bd75e8689039202f1a58ec640dee240", null ],
+      [ "GTK_FILE_CHOOSER_ERROR_ALREADY_EXISTS", "gtkfilechooser_8h.html#a8e54a0697ce59cd9c421655d95ff05a7ae41c5b0eba2c95f5c27792d733d09b0b", null ],
+      [ "GTK_FILE_CHOOSER_ERROR_INCOMPLETE_HOSTNAME", "gtkfilechooser_8h.html#a8e54a0697ce59cd9c421655d95ff05a7a0df61e0b13c23806a5e5dd88e3bb637a", null ]
+    ] ],
+    [ "gtk_file_chooser_add_choice", "gtkfilechooser_8h.html#a4ddf6eaac6091e92ae7459ccbcd820e4", null ],
+    [ "gtk_file_chooser_add_filter", "gtkfilechooser_8h.html#aac3990d3cb54861888708829b8a0f75b", null ],
+    [ "gtk_file_chooser_add_shortcut_folder", "gtkfilechooser_8h.html#ad52f0247ffcd9d98624af2dd7f607092", null ],
+    [ "gtk_file_chooser_error_quark", "gtkfilechooser_8h.html#a4a027ac55e9166aa4f5152a81c86ad8d", null ],
+    [ "gtk_file_chooser_get_action", "gtkfilechooser_8h.html#a2b3b5b2621447821689ee28c2e1097d7", null ],
+    [ "gtk_file_chooser_get_choice", "gtkfilechooser_8h.html#a02e8118546c66f328a5f4d3e25a48757", null ],
+    [ "gtk_file_chooser_get_create_folders", "gtkfilechooser_8h.html#a91aaa507d19bcfff9e22ef91ca8ce8a0", null ],
+    [ "gtk_file_chooser_get_current_folder", "gtkfilechooser_8h.html#af60d8efaad592f4dc0052e120c23379a", null ],
+    [ "gtk_file_chooser_get_current_name", "gtkfilechooser_8h.html#a3545a1fee610fcf383b2c5d06336c0c7", null ],
+    [ "gtk_file_chooser_get_file", "gtkfilechooser_8h.html#a19a785b6a7d72169cfe1ea4cc5d59d3e", null ],
+    [ "gtk_file_chooser_get_files", "gtkfilechooser_8h.html#a2ac6c72db48a89860c8be543e258b989", null ],
+    [ "gtk_file_chooser_get_filter", "gtkfilechooser_8h.html#af821a4869038a2e2128bf14929d811f9", null ],
+    [ "gtk_file_chooser_get_filters", "gtkfilechooser_8h.html#acc168f1601d3fe5f4064803d513d42da", null ],
+    [ "gtk_file_chooser_get_select_multiple", "gtkfilechooser_8h.html#a650fb8de962a897b00eff312a8f3c6b4", null ],
+    [ "gtk_file_chooser_get_shortcut_folders", "gtkfilechooser_8h.html#adf83c3afc394413fc24f1ed39d4ed807", null ],
+    [ "gtk_file_chooser_get_type", "gtkfilechooser_8h.html#afb097f411f38a993aa5c9c67bef456f0", null ],
+    [ "gtk_file_chooser_remove_choice", "gtkfilechooser_8h.html#acb83dfa00f74abba99d546fb6cadefd0", null ],
+    [ "gtk_file_chooser_remove_filter", "gtkfilechooser_8h.html#a8e7ff56dc2b65560eaba2064c9a6a49b", null ],
+    [ "gtk_file_chooser_remove_shortcut_folder", "gtkfilechooser_8h.html#ac6cb944cffe03e8d2e78fea0528fb6e3", null ],
+    [ "gtk_file_chooser_set_action", "gtkfilechooser_8h.html#a7b0f1b96c9ffc0009a147b4ccd4dfa42", null ],
+    [ "gtk_file_chooser_set_choice", "gtkfilechooser_8h.html#a22e31acc57a8725c8f8c5cd584b124d2", null ],
+    [ "gtk_file_chooser_set_create_folders", "gtkfilechooser_8h.html#a7b590ed6e2d4b30f7ccdef9e66d47161", null ],
+    [ "gtk_file_chooser_set_current_folder", "gtkfilechooser_8h.html#a473df632bf2879d64207d93e55214eaa", null ],
+    [ "gtk_file_chooser_set_current_name", "gtkfilechooser_8h.html#ae219d346ebde39aab9f24489095dcdb1", null ],
+    [ "gtk_file_chooser_set_file", "gtkfilechooser_8h.html#a23e1132c1173fff400374989a42db3fa", null ],
+    [ "gtk_file_chooser_set_filter", "gtkfilechooser_8h.html#ad9ab9b4ca6a36bf648cef49b877c5122", null ],
+    [ "gtk_file_chooser_set_select_multiple", "gtkfilechooser_8h.html#ab0eb66dc2e6f0f8396278bcd6a8f0e62", null ]
+];

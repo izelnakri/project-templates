@@ -1,0 +1,20 @@
+var searchData=
+[
+  ['xfercompatibleindex_0',['xferCompatibleIndex',['../sqlite3_8c.html#ab575125542540f8b67a3b4beb3e02d06',1,'sqlite3.c']]],
+  ['xferoptimization_1',['xferOptimization',['../sqlite3_8c.html#ae85c90f7d064fe83f4ed930e708855d2',1,'sqlite3.c']]],
+  ['xml_5fappend_2',['Xml_append',['../LuaXML__lib_8c.html#a0986e98c151bf1d0a7d259083882d163',1,'LuaXML_lib.c']]],
+  ['xml_5fdecode_3',['Xml_decode',['../LuaXML__lib_8c.html#ae67a4ad7262adec84d992334151a40c6',1,'LuaXML_lib.c']]],
+  ['xml_5fencode_4',['Xml_encode',['../LuaXML__lib_8c.html#aafd876f582721f8a8fef402e01300d8c',1,'LuaXML_lib.c']]],
+  ['xml_5feval_5',['Xml_eval',['../LuaXML__lib_8c.html#a6cfa20751b0a4f0bff71c7326c8386ec',1,'LuaXML_lib.c']]],
+  ['xml_5ffind_6',['Xml_find',['../LuaXML__lib_8c.html#a077a372d7965550383ea9eebaa5b76c4',1,'LuaXML_lib.c']]],
+  ['xml_5fiterate_7',['Xml_iterate',['../LuaXML__lib_8c.html#a70c963af19827acc07ee951bcc60f40d',1,'LuaXML_lib.c']]],
+  ['xml_5fload_8',['Xml_load',['../LuaXML__lib_8c.html#a07b8930b629b0000db5e0540b1bee189',1,'LuaXML_lib.c']]],
+  ['xml_5fmatch_9',['Xml_match',['../LuaXML__lib_8c.html#a9d8f3af0d16b2cacd3c7cac6c61bc642',1,'LuaXML_lib.c']]],
+  ['xml_5fnew_10',['Xml_new',['../LuaXML__lib_8c.html#aebebc9c7e778a0a9b70729f68ac355fa',1,'LuaXML_lib.c']]],
+  ['xml_5fpushdecode_11',['Xml_pushDecode',['../LuaXML__lib_8c.html#ac231357aed3a3e19647a92eaf5984e81',1,'LuaXML_lib.c']]],
+  ['xml_5fpushencode_12',['Xml_pushEncode',['../LuaXML__lib_8c.html#a6c4f03461a7dca3ff6eb72c6be41f2aa',1,'LuaXML_lib.c']]],
+  ['xml_5fregistercode_13',['Xml_registerCode',['../LuaXML__lib_8c.html#af7a3af412a6f4b815ba277c4fc0382c7',1,'LuaXML_lib.c']]],
+  ['xml_5fstr_14',['Xml_str',['../LuaXML__lib_8c.html#a9c49c7587de875bcb3c28c57892ce394',1,'LuaXML_lib.c']]],
+  ['xml_5ftag_15',['Xml_tag',['../LuaXML__lib_8c.html#a2c1f901539127bd9c9c8079e2aa5989f',1,'LuaXML_lib.c']]],
+  ['xmlencoding_5freplacement_16',['XMLencoding_replacement',['../LuaXML__lib_8c.html#a81892eade917e392f21016fc165470fc',1,'LuaXML_lib.c']]]
+];

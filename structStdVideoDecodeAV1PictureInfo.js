@@ -1,0 +1,27 @@
+var structStdVideoDecodeAV1PictureInfo =
+[
+    [ "coded_denom", "structStdVideoDecodeAV1PictureInfo.html#a17cd29afa4d747814caa2b1aec94a176", null ],
+    [ "current_frame_id", "structStdVideoDecodeAV1PictureInfo.html#a436e2fac299ccbd9cf980efdb351aee8", null ],
+    [ "delta_lf_res", "structStdVideoDecodeAV1PictureInfo.html#a71110ea8bacfc9adcd138072d3bcf43f", null ],
+    [ "delta_q_res", "structStdVideoDecodeAV1PictureInfo.html#a4fc0a4472b81fcf58fdc9d70f36b8222", null ],
+    [ "expectedFrameId", "structStdVideoDecodeAV1PictureInfo.html#aa15ee39c794c0b7b14caf1182fe46450", null ],
+    [ "flags", "structStdVideoDecodeAV1PictureInfo.html#a614e8d1878a64167b22888ecd0815a2b", null ],
+    [ "frame_type", "structStdVideoDecodeAV1PictureInfo.html#a06e2486dbb96966645e82c69bac0f850", null ],
+    [ "interpolation_filter", "structStdVideoDecodeAV1PictureInfo.html#a34a6d882a8eee949d0f69e3924a49836", null ],
+    [ "OrderHint", "structStdVideoDecodeAV1PictureInfo.html#ae575a01302b912bee5cd855f70291a4d", null ],
+    [ "OrderHints", "structStdVideoDecodeAV1PictureInfo.html#a5cb60dceb8335c020f3b46b71196a942", null ],
+    [ "pCDEF", "structStdVideoDecodeAV1PictureInfo.html#a135d0a094007329c457aef269c81598f", null ],
+    [ "pFilmGrain", "structStdVideoDecodeAV1PictureInfo.html#a354cae321ad665be00cb3e44007718be", null ],
+    [ "pGlobalMotion", "structStdVideoDecodeAV1PictureInfo.html#a1402486498c0f142742b5898bf54910e", null ],
+    [ "pLoopFilter", "structStdVideoDecodeAV1PictureInfo.html#ab6a232dc9ee788480be5898034e74504", null ],
+    [ "pLoopRestoration", "structStdVideoDecodeAV1PictureInfo.html#a80ab88f8d4a75f6bcf753d84fb343933", null ],
+    [ "pQuantization", "structStdVideoDecodeAV1PictureInfo.html#a21009959300c17a75f1430393f302840", null ],
+    [ "primary_ref_frame", "structStdVideoDecodeAV1PictureInfo.html#a42f8e10d86e1d3bcda801b2dd2f27fcd", null ],
+    [ "pSegmentation", "structStdVideoDecodeAV1PictureInfo.html#a13a6f1eb967b8d8167c4a776f7ec8ee3", null ],
+    [ "pTileInfo", "structStdVideoDecodeAV1PictureInfo.html#ae0cf7bef23783f02a22010ae55c42bf2", null ],
+    [ "refresh_frame_flags", "structStdVideoDecodeAV1PictureInfo.html#aa0d9345e8ac76ed9bf7b31078fdcf4bc", null ],
+    [ "reserved1", "structStdVideoDecodeAV1PictureInfo.html#a4f9f56699a8d3a27ebf02a7292224da0", null ],
+    [ "reserved2", "structStdVideoDecodeAV1PictureInfo.html#adbc69705adcffe5ea08a075e48a40f6d", null ],
+    [ "SkipModeFrame", "structStdVideoDecodeAV1PictureInfo.html#a8e014e7f2e1af1587022ce00fb6d65f5", null ],
+    [ "TxMode", "structStdVideoDecodeAV1PictureInfo.html#ae8ee133583a2e6c217f48682906c9336", null ]
+];
