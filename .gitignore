@@ -4,4 +4,4 @@ c/flatpak/nix-deps.tar.gz
 c/build
 c/access.log
 c/compile_commands.json
-docs/html
+c/docs/html

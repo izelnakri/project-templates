@@ -9,7 +9,7 @@ PROJECT_NUMBER         = 1.0.0
 PROJECT_LOGO           =  # logo.png # Optional. Put a logo.png inside docs/
 HTML_FOOTER            = 
 HTML_HEADER            = 
-HTML_EXTRA_STYLESHEET  = 
+HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css
 
 # Repository link
 HTML_DYNAMIC_SECTIONS  = YES
@@ -46,15 +46,20 @@ SOURCE_BROWSER         = YES
 INLINE_SOURCES         = YES
 STRIP_CODE_COMMENTS    = NO
 
+# Doxygen Awesome needed theme configuration
+DISABLE_INDEX = NO
+FULL_SIDEBAR = NO
+HTML_EXTRA_STYLESHEET  = ../doxygen-awesome-css/doxygen-awesome.css
+HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1.9.5
+
 # Look & Feel
-HTML_COLORSTYLE_HUE    = 220
-HTML_COLORSTYLE_SAT    = 100
-HTML_COLORSTYLE_GAMMA  = 80
+# HTML_COLORSTYLE_HUE    = 220
+# HTML_COLORSTYLE_SAT    = 100
+# HTML_COLORSTYLE_GAMMA  = 80
 FULL_PATH_NAMES        = NO
 
 # GitHub integration (change this URL to yours)
 HTML_EXTRA_FILES       =
-HTML_EXTRA_STYLESHEET  =
 HTML_EXTRA_FILES       =
 PROJECT_LOGO           = # logo.png
 HTML_DYNAMIC_MENUS     = YES
