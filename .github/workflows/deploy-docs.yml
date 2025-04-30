@@ -27,11 +27,6 @@ jobs:
         run: |
           cd c
           nix develop --command bash -c '
-            git submodule update --recursive
-            cd ..
-            cd doxygen-awesome-css
-            git checkout v2.3.4
-            cd ../c
             meson setup build
             make doc
           '
