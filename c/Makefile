@@ -44,9 +44,23 @@ all: clean-all build
 
 setup:
 	meson setup build --buildtype=$(BUILD_TYPE)
+check-setup:
+	@if [ ! -f build/meson-info/intro-dependencies.json ]; then \
+		echo "Run 'meson setup build' first!"; \
+		make setup
+	fi
+	
 build: clean setup
 	ninja -C build
-test:
+clean:
+	rm -rf build access.log
+clean-all: clean clean-flatpak-build
+	rm -rf docs/html
+reset: clean-all build
+
+develop:
+	nix develop
+test: check-setup
 	meson compile -C build && meson test -C build
 run-cli: clean setup
 	meson compile -C build && ./build/github_user_fetcher
@@ -55,20 +69,13 @@ run-cli-server: clean setup
 run-server: run-cli-server
 run-gui: clean setup
 	meson compile -C build && ./build/github_user_fetcher_gui
-cli:
+cli: check-setup
 	meson compile -C build && ./build/github_user_fetcher
-cli-server:
+cli-server: check-setup
 	meson compile -C build && ./build/github_user_fetcher --server
 server: cli-server
-gui:
+gui: check-setup
 	meson compile -C build && ./build/github_user_fetcher_gui
-clean:
-	rm -rf build access.log
-clean-all: clean clean-flatpak-build
-	rm -rf docs/html
-
-develop:
-	nix develop
 
 compile-commands:
 	@if [ ! -d build ]; then meson setup build --buildtype=$(BUILD_TYPE); fi
@@ -96,21 +103,25 @@ format-check:
 	@echo "Checking code formatting..."
 	@find src tests benchmarks -name "*.c" -o -name "*.h" -o -name "*.cpp" | xargs -I{} bash -c 'clang-format -style=file {} | diff --color=always -u {} - || printf "\033[31m=> File {} needs formatting\033[0m\n"'
 
-build-docker-cli:
+build-docker-image:
+ifeq ($(RELEASE), true)
+	nix build .#dockerProductionImage
+else
 	nix build .#dockerImage
-run-docker-cli: build-docker-cli
+endif
+run-docker-cli: build-docker-image
 	sudo docker load < ./result
 	sudo docker run -it --rm github_user_fetcher github_user_fetcher
-run-docker-cli-user: build-docker-cli
+run-docker-cli-user: build-docker-image
 	sudo docker load < ./result
 	sudo docker run -it --rm github_user_fetcher github_user_fetcher --user izelnakri
-run-docker-cli-server: build-docker-cli
+run-docker-cli-server: build-docker-image
 	sudo docker load < ./result
 	sudo docker run -it --rm \
 		-p 1234:1234 \
 		--init \
 		github_user_fetcher github_user_fetcher --server
-run-docker-gui: build-docker-cli
+run-docker-gui: build-docker-image
 	sudo docker load < ./result
 	sudo docker run -it --rm \
     --user $(shell id -u):$(shell id -g) \
@@ -125,15 +136,14 @@ run-docker-gui: build-docker-cli
 		--ipc=host \
 		--net=host \
 		github_user_fetcher github_user_fetcher_gui
+debug-docker: build-docker-image
+	sudo docker load < ./result
+	sudo docker run -it --rm github_user_fetcher zsh
 
 debug:
 	@echo "CFLAGS: $(CFLAGS)"
 	@echo "LDFLAGS: $(LDFLAGS)"
 	@echo "LIBS: $(LIBS)"
-
-ifeq (,$(wildcard build/meson-info/intro-dependencies.json))
-$(error Run 'meson setup build' first!)
-endif
 
 doc:
 	@echo "Generating documentation..."

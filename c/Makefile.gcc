@@ -36,11 +36,11 @@ GUI_BIN := $(BUILD)/github_user_fetcher_gui
 TEST_BIN := $(BUILD)/test_user
 
 # Library targets:
-STATIC_OBJS := $(BUILD)/libgithub_user_fetcher_static.a.p/src_user.c.o
-STATIC_LIB := $(BUILD)/libgithub_user_fetcher_static.a
+STATIC_OBJS := $(BUILD)/github_user_fetcher_static.a.p/src_user.c.o
+STATIC_LIB := $(BUILD)/github_user_fetcher_static.a
 
-SHARED_OBJS := $(BUILD)/libgithub_user_fetcher.so.p/src_user.c.o
-SHARED_LIB := $(BUILD)/libgithub_user_fetcher.so
+SHARED_OBJS := $(BUILD)/github_user_fetcher.so.p/src_user.c.o
+SHARED_LIB := $(BUILD)/github_user_fetcher.so
 
 # Release related
 PREFIX     ?= /usr/local
@@ -75,24 +75,24 @@ $(TEST_BIN): $(TEST_SRCS) | $(BUILD)
 
 static: $(STATIC_LIB)
 
-$(STATIC_OBJS): $(SRC)/user.c | $(BUILD)/libgithub_user_fetcher_static.a.p
+$(STATIC_OBJS): $(SRC)/user.c | $(BUILD)/github_user_fetcher_static.a.p
 	$(CC) $(CFLAGS) $(INCLUDES) -c $< -o $@
 
 $(STATIC_LIB): $(STATIC_OBJS)
 	ar rcs $@ $^
 
-$(BUILD)/libgithub_user_fetcher_static.a.p:
+$(BUILD)/github_user_fetcher_static.a.p:
 	mkdir -p $@
 
 shared: $(SHARED_LIB)
 
-$(SHARED_OBJS): $(SRC)/user.c | $(BUILD)/libgithub_user_fetcher.so.p
+$(SHARED_OBJS): $(SRC)/user.c | $(BUILD)/github_user_fetcher.so.p
 	$(CC) $(CFLAGS) $(INCLUDES) -fPIC -c $< -o $@
 
 $(SHARED_LIB): $(SHARED_OBJS)
 	$(CC) -shared -o $@ $^
 
-$(BUILD)/libgithub_user_fetcher.so.p:
+$(BUILD)/github_user_fetcher.so.p:
 	mkdir -p $@
 
 # === Utilities ===

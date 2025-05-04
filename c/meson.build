@@ -30,14 +30,14 @@ executable('github_user_fetcher_gui', files('src/gui.c'),
 
 lib_src = files('src/user.c')
 
-libgithub_user_fetcher = shared_library('github_user_fetcher', lib_src,
+github_user_fetcher_shared = shared_library('github_user_fetcher', lib_src,
   dependencies: dependencies,
   include_directories: headers,
   c_args: warning_flags,
   install: true,
 )
 
-libgithub_user_fetcher_static = static_library('github_user_fetcher_static', lib_src,
+github_user_fetcher_static = static_library('github_user_fetcher_static', lib_src,
   dependencies: dependencies,
   include_directories: headers,
   c_args: warning_flags + ['-DOPENSSL_API_3_0'],
@@ -58,7 +58,7 @@ if build_tests
     files('tests/test_user.c'),
     include_directories: headers,
     dependencies: dependencies + test_dependencies,
-    link_with: libgithub_user_fetcher_static,
+    link_with: github_user_fetcher_static,
     c_args: warning_flags + ['-DTESTING']
   )
   test('user_tests', test_executable)
@@ -73,7 +73,7 @@ if get_option('benchmarks').enabled()
     files('benchmarks/bench_user.cpp'), # Maybe I need to add user.c here
     include_directories: headers,
     dependencies: dependencies + benchmark_dependencies,
-    link_with: libgithub_user_fetcher_static,
+    link_with: github_user_fetcher_static,
     c_args: warning_flags + ['-DBENCHMARKING']
   )
   test('user_benchmarks', benchmark_executable, is_parallel: false, suite: ['benchmark'])
@@ -81,7 +81,7 @@ endif
 
 pkg = import('pkgconfig')
 pkg.generate(
-  name : 'libgithub_user_fetcher',
-  description : 'GitHub user fetcher library',
-  libraries : libgithub_user_fetcher,
+  name : 'github_user_fetcher',
+  description : 'My github_user_fetcher library',
+  libraries : github_user_fetcher_shared,
   version : '0.1.0')

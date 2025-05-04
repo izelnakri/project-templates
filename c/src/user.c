@@ -239,27 +239,3 @@ void print_github_user(const User *user) {
   printf("  Company:  %s\n", user->company ? user->company : "N/A");
   printf("  Location: %s\n", user->location ? user->location : "N/A");
 }
-
-/**
- * @brief Free memory used by a User structure.
- *
- * @param user Pointer to User.
- *
- * After freeing, all pointers are set to NULL.
- */
-void user_free(User *user) {
-  if (!user) {
-    return;
-  }
-
-  free(user->login);
-  free(user->name);
-  free(user->company);
-  free(user->location);
-
-  // Zero out pointers after freeing
-  user->login = NULL;
-  user->name = NULL;
-  user->company = NULL;
-  user->location = NULL;
-}
