@@ -1,5 +1,16 @@
 var NAVTREEINDEX360 =
 {
+"struct__GtkGridClass.html#a19dec5701f425f0540af9a543ced20f6":[5,0,356,1],
+"struct__GtkGridClass.html#ab50f7af47c87ec7b5e8c721d17e93c70":[5,0,356,0],
+"struct__GtkIMContext.html":[5,0,357],
+"struct__GtkIMContext.html#a601c5d14fd66e661039718f9a61bc2e2":[5,0,357,0],
+"struct__GtkIMContextClass.html":[5,0,358],
+"struct__GtkIMContextClass.html#a068f6d534a7b47f4460c20a928105f7b":[5,0,358,20],
+"struct__GtkIMContextClass.html#a0b61a24e04c72f4053bffa743505ec86":[5,0,358,15],
+"struct__GtkIMContextClass.html#a205dac39ddc739868357df0c30687de4":[5,0,358,4],
+"struct__GtkIMContextClass.html#a215a5e6172f59e30f8f4d6ad0af706c9":[5,0,358,9],
+"struct__GtkIMContextClass.html#a369e3d4f20b32c72a21836f32f8ad08e":[5,0,358,13],
+"struct__GtkIMContextClass.html#a45b45b65a80690f854c3f7c9d25f2758":[5,0,358,10],
 "struct__GtkIMContextClass.html#a4ae84825cf138c0064db4628ba116e56":[5,0,358,22],
 "struct__GtkIMContextClass.html#a5bed10c438f8a1d734a77bed0db2a31a":[5,0,358,8],
 "struct__GtkIMContextClass.html#a7672d0782c81d485917ed41b821489ed":[5,0,358,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX360 =
 "struct__GtkStyleContextClass.html#a05d06fce616eb470698640d4e6863173":[5,0,401,0],
 "struct__GtkStyleContextClass.html#a4a3856a33e0281ce2a1a26b8d75b6c3d":[5,0,401,1],
 "struct__GtkStyleContextClass.html#a7771aadf12530e22d5de1c092d3c9897":[5,0,401,2],
-"struct__GtkStyleContextClass.html#a9d68ee13c777c53bbc3a7edc63cc2cc1":[5,0,401,5],
-"struct__GtkStyleContextClass.html#aa11b56a735b5c2303c2739bef65462c0":[5,0,401,4],
-"struct__GtkStyleContextClass.html#abbb4ec5ca76f7f2b27066ad6e1150bae":[5,0,401,3],
-"struct__GtkSymbolicPaintableInterface.html":[5,0,402],
-"struct__GtkSymbolicPaintableInterface.html#a2e852e4c84769105e65c744c3ad6031e":[5,0,402,1],
-"struct__GtkSymbolicPaintableInterface.html#ad7093b6e19cc2db7efeb29f6941d002f":[5,0,402,0],
-"struct__GtkText.html":[5,0,403],
-"struct__GtkText.html#ad3e39c6c7caba187908c7d53cfa2b63e":[5,0,403,0],
-"struct__GtkTextBuffer.html":[5,0,404],
-"struct__GtkTextBuffer.html#ad846e158d1c8f000857e5514369b646e":[5,0,404,0],
-"struct__GtkTextBuffer.html#adb5fb5ca3f143e62a51b45faae0692be":[5,0,404,1],
-"struct__GtkTextBufferClass.html":[5,0,405]
+"struct__GtkStyleContextClass.html#a9d68ee13c777c53bbc3a7edc63cc2cc1":[5,0,401,5]
 };

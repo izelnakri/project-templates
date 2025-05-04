@@ -1,5 +1,16 @@
 var NAVTREEINDEX334 =
 {
+"structVkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV.html#a8c5536902a26101db989175963ba3052":[5,0,1653,1],
+"structVkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV.html#a9fcd1dac16b9ce8ce4c866b7c4e800fa":[5,0,1653,2],
+"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html":[5,0,1654],
+"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#a09e689b55991f46dd92dfde839009ffa":[5,0,1654,5],
+"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#a121f9737398ab1e3ef22b62ad26694a1":[5,0,1654,4],
+"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#a4596f59abb0670b4147cfd6d5f52b58f":[5,0,1654,0],
+"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#a54d2dda49fc72f9713d6a7b678ef17ec":[5,0,1654,1],
+"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#ab388e69cc08acf5568c33325ff74e0ab":[5,0,1654,2],
+"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#ab586ca1d86bceb80d1970ea66cb96f19":[5,0,1654,3],
+"structVkPhysicalDeviceDepthClampControlFeaturesEXT.html":[5,0,1655],
+"structVkPhysicalDeviceDepthClampControlFeaturesEXT.html#a2b1aa95f01e0f48f822b29d4cbf5054b":[5,0,1655,0],
 "structVkPhysicalDeviceDepthClampControlFeaturesEXT.html#a48c6c7a25f85e332193388f7757f7b66":[5,0,1655,2],
 "structVkPhysicalDeviceDepthClampControlFeaturesEXT.html#a73f90c73f3df1501d4c3367158b4ad3b":[5,0,1655,1],
 "structVkPhysicalDeviceDepthClampZeroOneFeaturesEXT.html":[5,0,1656],
@@ -238,16 +249,5 @@ var NAVTREEINDEX334 =
 "structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#a508b2d3e74455d1d95133a22b930a17e":[5,0,1684,2],
 "structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#a731c310934a0dea113047ae70cbb1a54":[5,0,1684,28],
 "structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#a74308726ff9813e725eebb7dc6072386":[5,0,1684,18],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#a774d795790350a84c76156b0498c0490":[5,0,1684,11],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#a7aba97a4f9e19d7ec0b34e994a0af698":[5,0,1684,31],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#a886422672fd48325278d68d125a7d935":[5,0,1684,14],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#a8adfa77951355b94ef5e804d8e33fd9d":[5,0,1684,0],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#a8af9082e751775b6353a8d35e441ce5a":[5,0,1684,29],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#a9325a544180d337d0474c9a711e371f4":[5,0,1684,3],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#a962346d32c9e441833821958bfa97727":[5,0,1684,15],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#aa9a21d2cd4893045dfabf93d7fb08e06":[5,0,1684,17],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#ab14a81ff91382d5103f8f1078514e1d3":[5,0,1684,1],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#ab24edb245f3188005567555bff711861":[5,0,1684,23],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#ab358b1d5cddcac9749239e7c3bf0945c":[5,0,1684,13],
-"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#acd7dead1627fe9788e80f6e3adde5120":[5,0,1684,32]
+"structVkPhysicalDeviceExtendedDynamicState3FeaturesEXT.html#a774d795790350a84c76156b0498c0490":[5,0,1684,11]
 };

@@ -1,5 +1,16 @@
 var NAVTREEINDEX333 =
 {
+"structVkPastPresentationTimingGOOGLE.html#a2d5013046ecc2f274376250b0251f7a0":[5,0,1602,4],
+"structVkPastPresentationTimingGOOGLE.html#a5a1299c84b7653118432e8322983841a":[5,0,1602,1],
+"structVkPastPresentationTimingGOOGLE.html#a5e783e17c9c4fef2247a496ca2f982f2":[5,0,1602,2],
+"structVkPastPresentationTimingGOOGLE.html#ac3e49ea493eacf5e4c4ca2cae5c39b69":[5,0,1602,0],
+"structVkPerformanceConfigurationAcquireInfoINTEL.html":[5,0,1603],
+"structVkPerformanceConfigurationAcquireInfoINTEL.html#a3bbb85ebe9003d8553644b782c66f922":[5,0,1603,1],
+"structVkPerformanceConfigurationAcquireInfoINTEL.html#a862141a5cfc30a59c3def00f91222591":[5,0,1603,0],
+"structVkPerformanceConfigurationAcquireInfoINTEL.html#aa8b65c895be3b38f132fdfffc2579e5f":[5,0,1603,2],
+"structVkPerformanceCounterDescriptionKHR.html":[5,0,1604],
+"structVkPerformanceCounterDescriptionKHR.html#a134efbd0af849aeacd5dec924d3acbf9":[5,0,1604,2],
+"structVkPerformanceCounterDescriptionKHR.html#a147176fd37dc0bbf9f03370f98582554":[5,0,1604,4],
 "structVkPerformanceCounterDescriptionKHR.html#a2b54a88d9cf48184f9167a7d9c14b54b":[5,0,1604,1],
 "structVkPerformanceCounterDescriptionKHR.html#a346f6427c8e3838c7b417e075c91fd43":[5,0,1604,3],
 "structVkPerformanceCounterDescriptionKHR.html#a78ad79a7f895a4e4a2e3439f52fc9595":[5,0,1604,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX333 =
 "structVkPhysicalDeviceCustomBorderColorPropertiesEXT.html#aaef171878f334a2015338a52a53609e0":[5,0,1652,1],
 "structVkPhysicalDeviceCustomBorderColorPropertiesEXT.html#ab910b0fdd5c0020bf30f09a90b8bb64e":[5,0,1652,2],
 "structVkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV.html":[5,0,1653],
-"structVkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV.html#a3bac3afd0d830b3997d193917a74bfde":[5,0,1653,0],
-"structVkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV.html#a8c5536902a26101db989175963ba3052":[5,0,1653,1],
-"structVkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV.html#a9fcd1dac16b9ce8ce4c866b7c4e800fa":[5,0,1653,2],
-"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html":[5,0,1654],
-"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#a09e689b55991f46dd92dfde839009ffa":[5,0,1654,5],
-"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#a121f9737398ab1e3ef22b62ad26694a1":[5,0,1654,4],
-"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#a4596f59abb0670b4147cfd6d5f52b58f":[5,0,1654,0],
-"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#a54d2dda49fc72f9713d6a7b678ef17ec":[5,0,1654,1],
-"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#ab388e69cc08acf5568c33325ff74e0ab":[5,0,1654,2],
-"structVkPhysicalDeviceDepthBiasControlFeaturesEXT.html#ab586ca1d86bceb80d1970ea66cb96f19":[5,0,1654,3],
-"structVkPhysicalDeviceDepthClampControlFeaturesEXT.html":[5,0,1655],
-"structVkPhysicalDeviceDepthClampControlFeaturesEXT.html#a2b1aa95f01e0f48f822b29d4cbf5054b":[5,0,1655,0]
+"structVkPhysicalDeviceDedicatedAllocationImageAliasingFeaturesNV.html#a3bac3afd0d830b3997d193917a74bfde":[5,0,1653,0]
 };

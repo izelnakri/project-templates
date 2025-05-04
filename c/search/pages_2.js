@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['my_20c_20project_20template_0',['My C Project Template',['../index.html',1,'']]]
+  ['fetcher_0',['My C Project Template - GitHub User Fetcher',['../index.html',1,'']]]
 ];

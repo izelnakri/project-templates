@@ -1,5 +1,16 @@
 var NAVTREEINDEX322 =
 {
+"structVdbe.html#a1958421b98e6b660a86f58300e2d207d":[5,0,1137,14],
+"structVdbe.html#a1ba82f08947b275dd72a3e3095ad02d5":[5,0,1137,3],
+"structVdbe.html#a1de76a5c58ed36608a163bfdc2e9e8b7":[5,0,1137,48],
+"structVdbe.html#a27fbd083a0335ac2b332d37ea2b90bdc":[5,0,1137,25],
+"structVdbe.html#a2acd8f1fa65e19eb48fc62ddb6cb7569":[5,0,1137,32],
+"structVdbe.html#a2afc3b6cd2f5b38d991148b809b3c53f":[5,0,1137,40],
+"structVdbe.html#a2eafa7984a14e56f31e46fa4b90b0582":[5,0,1137,10],
+"structVdbe.html#a423327ceb7c76869af080633cbe2be57":[5,0,1137,1],
+"structVdbe.html#a43c515d3521658be7f7e33e4eb2aa136":[5,0,1137,33],
+"structVdbe.html#a4676092811a564b044383fe23c687429":[5,0,1137,44],
+"structVdbe.html#a495366101a593999f4d2ed905e839029":[5,0,1137,11],
 "structVdbe.html#a4d1f6dfd3a6c17fa28e9ad1eac8e4839":[5,0,1137,49],
 "structVdbe.html#a525830c709542b280d11c764e9a9994a":[5,0,1137,29],
 "structVdbe.html#a59d1ece56f21e260cdd0fef936242b28":[5,0,1137,22],
@@ -238,16 +249,5 @@ var NAVTREEINDEX322 =
 "structVkAccelerationStructureMotionInfoNV.html#aabd39e5cb76949dfa8bf102cd8045dba":[5,0,1163,1],
 "structVkAccelerationStructureMotionInstanceNV.html":[5,0,1165],
 "structVkAccelerationStructureMotionInstanceNV.html#a9e0e6b08a1544fc2583795dfa4f3e1f5":[5,0,1165,0],
-"structVkAccelerationStructureMotionInstanceNV.html#ab5d62f8edbffcaece163ea474e36b01f":[5,0,1165,1],
-"structVkAccelerationStructureMotionInstanceNV.html#ac4070513615401a86eb94780acaffe7b":[5,0,1165,2],
-"structVkAccelerationStructureSRTMotionInstanceNV.html":[5,0,1166],
-"structVkAccelerationStructureSRTMotionInstanceNV.html#a2e9351d335a8bea1fb158234c593808a":[5,0,1166,4],
-"structVkAccelerationStructureSRTMotionInstanceNV.html#a6540de16114de807431022d937baa14b":[5,0,1166,0],
-"structVkAccelerationStructureSRTMotionInstanceNV.html#a76c452b5a48c7ad8df5ac28f41d4cc90":[5,0,1166,3],
-"structVkAccelerationStructureSRTMotionInstanceNV.html#ab1f14076ac16524738c167f1ffaa0faa":[5,0,1166,2],
-"structVkAccelerationStructureSRTMotionInstanceNV.html#ab41f75941dc55541d799950f792e412d":[5,0,1166,6],
-"structVkAccelerationStructureSRTMotionInstanceNV.html#abca2cd33ef1124271e42e82b8972f30c":[5,0,1166,5],
-"structVkAccelerationStructureSRTMotionInstanceNV.html#adaa312571a56df2c1f0fce789ebce8e0":[5,0,1166,1],
-"structVkAccelerationStructureTrianglesDisplacementMicromapNV.html":[5,0,1167],
-"structVkAccelerationStructureTrianglesDisplacementMicromapNV.html#a06a3409e9993591dab3aa8c640a5d31e":[5,0,1167,12]
+"structVkAccelerationStructureMotionInstanceNV.html#ab5d62f8edbffcaece163ea474e36b01f":[5,0,1165,1]
 };

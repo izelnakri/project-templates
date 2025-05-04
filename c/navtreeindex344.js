@@ -1,5 +1,16 @@
 var NAVTREEINDEX344 =
 {
+"structVkRayTracingShaderGroupCreateInfoKHR.html#a9d9d701ac2d0537183ba6dba805e2709":[5,0,2025,1],
+"structVkRayTracingShaderGroupCreateInfoKHR.html#aea94365d7e081703fd68604fae0cd8e9":[5,0,2025,7],
+"structVkRayTracingShaderGroupCreateInfoNV.html":[5,0,2026],
+"structVkRayTracingShaderGroupCreateInfoNV.html#a0b446e17342285c95e608dc02cf2d114":[5,0,2026,1],
+"structVkRayTracingShaderGroupCreateInfoNV.html#a146f68345fb6ef999a893db096b8f88b":[5,0,2026,6],
+"structVkRayTracingShaderGroupCreateInfoNV.html#a46ca7092cf03015ba1b9bd858c343a7d":[5,0,2026,4],
+"structVkRayTracingShaderGroupCreateInfoNV.html#a6398248114d725588783fe08ef2befe9":[5,0,2026,5],
+"structVkRayTracingShaderGroupCreateInfoNV.html#a865027cce009fa4ab710b90ba0f03103":[5,0,2026,3],
+"structVkRayTracingShaderGroupCreateInfoNV.html#abb8e00496dd07a28d4d1adab3b03d80b":[5,0,2026,0],
+"structVkRayTracingShaderGroupCreateInfoNV.html#ad457315876105d2b808fd85b56ef0a09":[5,0,2026,2],
+"structVkRect2D.html":[5,0,2027],
 "structVkRect2D.html#a9a31a9e1b65f9dd46128de90cf9f1536":[5,0,2027,0],
 "structVkRect2D.html#ad8291eabcebdf98bbdef34b677e912db":[5,0,2027,1],
 "structVkRectLayerKHR.html":[5,0,2028],
@@ -238,16 +249,5 @@ var NAVTREEINDEX344 =
 "structVkSamplerCreateInfo.html#afdbdc0e31be86cc73feff9bb34131a13":[5,0,2062,10],
 "structVkSamplerCubicWeightsCreateInfoQCOM.html":[5,0,2063],
 "structVkSamplerCubicWeightsCreateInfoQCOM.html#a76e3636502331f689ead73aac2d033fb":[5,0,2063,1],
-"structVkSamplerCubicWeightsCreateInfoQCOM.html#a7932a1e0df8e3e2e0a948afa09f9c5b9":[5,0,2063,0],
-"structVkSamplerCubicWeightsCreateInfoQCOM.html#ae2f53d53039edb44388689a324d67ca3":[5,0,2063,2],
-"structVkSamplerCustomBorderColorCreateInfoEXT.html":[5,0,2064],
-"structVkSamplerCustomBorderColorCreateInfoEXT.html#a16f454b449f0273b7c5fbe2d96033c39":[5,0,2064,0],
-"structVkSamplerCustomBorderColorCreateInfoEXT.html#a24723d1270eb3c9c8eda9d8bba7be447":[5,0,2064,3],
-"structVkSamplerCustomBorderColorCreateInfoEXT.html#a910b848bc27ec42246ed705d328c82d8":[5,0,2064,2],
-"structVkSamplerCustomBorderColorCreateInfoEXT.html#ac5be8500e255d65d84a3ed391b7570cb":[5,0,2064,1],
-"structVkSamplerReductionModeCreateInfo.html":[5,0,2065],
-"structVkSamplerReductionModeCreateInfo.html#a428711deec1f7b7add002e2b6bc3a63e":[5,0,2065,2],
-"structVkSamplerReductionModeCreateInfo.html#a81c5ef72f3e871e7dce2ad6137db64e1":[5,0,2065,0],
-"structVkSamplerReductionModeCreateInfo.html#a8d3c0aa67edddf6ac8afe5911e342351":[5,0,2065,1],
-"structVkSamplerYcbcrConversionCreateInfo.html":[5,0,2066]
+"structVkSamplerCubicWeightsCreateInfoQCOM.html#a7932a1e0df8e3e2e0a948afa09f9c5b9":[5,0,2063,0]
 };

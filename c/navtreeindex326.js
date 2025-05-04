@@ -1,5 +1,16 @@
 var NAVTREEINDEX326 =
 {
+"structVkCudaModuleCreateInfoNV.html#a0df8cb04eb4c6b414dc48ea9e0e487e5":[5,0,1281,1],
+"structVkCudaModuleCreateInfoNV.html#a2efdf0f8070edad215939d5dd0cae5e0":[5,0,1281,2],
+"structVkCudaModuleCreateInfoNV.html#a432126e2d3514a63b4078ba172eda556":[5,0,1281,0],
+"structVkCudaModuleCreateInfoNV.html#a7310cf2eb86cdc0fdd9e56da23f775a1":[5,0,1281,3],
+"structVkD3D12FenceSubmitInfoKHR.html":[5,0,1285],
+"structVkD3D12FenceSubmitInfoKHR.html#a490d150d8a934cf6d64403546a465db5":[5,0,1285,5],
+"structVkD3D12FenceSubmitInfoKHR.html#a4cf0daff2298f3aa91cde55b6a027e96":[5,0,1285,4],
+"structVkD3D12FenceSubmitInfoKHR.html#a7d73472ef64c8aaf0a2766b02ea3668a":[5,0,1285,2],
+"structVkD3D12FenceSubmitInfoKHR.html#a92491c3bb33ca70550a90c6e21f09460":[5,0,1285,1],
+"structVkD3D12FenceSubmitInfoKHR.html#adbec098ebb94c12e9dd700dabfce8354":[5,0,1285,3],
+"structVkD3D12FenceSubmitInfoKHR.html#af488abf7e4a0ae6cfe79af7325449445":[5,0,1285,0],
 "structVkDebugMarkerMarkerInfoEXT.html":[5,0,1286],
 "structVkDebugMarkerMarkerInfoEXT.html#a535f9b94b181e718018b1a939f426ad6":[5,0,1286,2],
 "structVkDebugMarkerMarkerInfoEXT.html#a8f2ffac56860229d56aa17f7238fdbf3":[5,0,1286,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX326 =
 "structVkDeviceCreateInfo.html#afe08d1b35bad12a2aa96fa7961bc34c6":[5,0,1326,9],
 "structVkDeviceDeviceMemoryReportCreateInfoEXT.html":[5,0,1327],
 "structVkDeviceDeviceMemoryReportCreateInfoEXT.html#a56b890775a650a4ac7d4457bd44bd8ea":[5,0,1327,0],
-"structVkDeviceDeviceMemoryReportCreateInfoEXT.html#a8834e43dc073eba347cb7d59435a9336":[5,0,1327,1],
-"structVkDeviceDeviceMemoryReportCreateInfoEXT.html#acdeccbc409c6b40ab4ca6ebf8c88a43e":[5,0,1327,2],
-"structVkDeviceDeviceMemoryReportCreateInfoEXT.html#adbfba0e7c23a06f5e3265c91ae083b51":[5,0,1327,4],
-"structVkDeviceDeviceMemoryReportCreateInfoEXT.html#ae6302f7b01b90fe5e7e8fc810e253414":[5,0,1327,3],
-"structVkDeviceDiagnosticsConfigCreateInfoNV.html":[5,0,1328],
-"structVkDeviceDiagnosticsConfigCreateInfoNV.html#a91c261f34d5a7b181b90893604d0a991":[5,0,1328,1],
-"structVkDeviceDiagnosticsConfigCreateInfoNV.html#aa1c853db37d03be269373d135d8c9347":[5,0,1328,2],
-"structVkDeviceDiagnosticsConfigCreateInfoNV.html#ae17fc471310abf4445f977aae4c4db40":[5,0,1328,0],
-"structVkDeviceEventInfoEXT.html":[5,0,1329],
-"structVkDeviceEventInfoEXT.html#a2bf57ca44aa2066f60127e402b6ed506":[5,0,1329,1],
-"structVkDeviceEventInfoEXT.html#a31f30787b8f73c141e718924bc92a040":[5,0,1329,0],
-"structVkDeviceEventInfoEXT.html#af0e9192c0c29df54739a726449f42e35":[5,0,1329,2]
+"structVkDeviceDeviceMemoryReportCreateInfoEXT.html#a8834e43dc073eba347cb7d59435a9336":[5,0,1327,1]
 };

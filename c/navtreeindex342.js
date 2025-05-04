@@ -1,5 +1,16 @@
 var NAVTREEINDEX342 =
 {
+"structVkPipelineCacheHeaderVersionOne.html#a00bb15037ae19b3b95be70159badce04":[5,0,1940,2],
+"structVkPipelineCacheHeaderVersionOne.html#a060183120e2df21a056c45cafec9d6c0":[5,0,1940,1],
+"structVkPipelineCacheHeaderVersionOne.html#a293c5d4271e439a5245ef90a7d6c4f52":[5,0,1940,0],
+"structVkPipelineCacheHeaderVersionOne.html#a8df843305a06ab3c01e3b43a5d206dec":[5,0,1940,4],
+"structVkPipelineCacheHeaderVersionOne.html#abe81e054b0cc1d09c5240166fdc327a4":[5,0,1940,3],
+"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html":[5,0,1941],
+"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html#a0848abf534ed62a115972f78c0f54f22":[5,0,1941,3],
+"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html#a6ed9fc7821bacaae12b4aa3c3543a30b":[5,0,1941,1],
+"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html#ab8eaf1abbeb2cfa14d34d684f46af137":[5,0,1941,2],
+"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html#aca9f80bed9574129f0ef14117dd30127":[5,0,1941,4],
+"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html#afaa15837293e35bb823c3ce0b22dce1d":[5,0,1941,0],
 "structVkPipelineColorBlendAttachmentState.html":[5,0,1942],
 "structVkPipelineColorBlendAttachmentState.html#a35d07872610f4794eaba5cfdfb8fde7d":[5,0,1942,0],
 "structVkPipelineColorBlendAttachmentState.html#a562d3bd3ee822fcb21d107ffed091ea5":[5,0,1942,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX342 =
 "structVkPipelineSampleLocationsStateCreateInfoEXT.html#af484b2ef8d33b9ea0ff253ab55eabb77":[5,0,1980,1],
 "structVkPipelineSampleLocationsStateCreateInfoEXT.html#afcbe0fab8901df939dc9f3b50b1471e8":[5,0,1980,3],
 "structVkPipelineShaderStageCreateInfo.html":[5,0,1981],
-"structVkPipelineShaderStageCreateInfo.html#a03e003bc4e706e13f918d3ffecf6362f":[5,0,1981,0],
-"structVkPipelineShaderStageCreateInfo.html#a2d86a11e50007bddf62f382a39989d5e":[5,0,1981,3],
-"structVkPipelineShaderStageCreateInfo.html#a5cafa13c2f71b6752cab032e0f21da9d":[5,0,1981,5],
-"structVkPipelineShaderStageCreateInfo.html#aad79ed7c586e963723234f5cf297955a":[5,0,1981,1],
-"structVkPipelineShaderStageCreateInfo.html#ab7e2da0ca40f5ed507e615ba7032c61a":[5,0,1981,2],
-"structVkPipelineShaderStageCreateInfo.html#ad5cbefa3e37f2ff27650d3d81934111a":[5,0,1981,4],
-"structVkPipelineShaderStageModuleIdentifierCreateInfoEXT.html":[5,0,1982],
-"structVkPipelineShaderStageModuleIdentifierCreateInfoEXT.html#a068e5a95ed42e01fbef003a88b1ffefe":[5,0,1982,3],
-"structVkPipelineShaderStageModuleIdentifierCreateInfoEXT.html#a530ac8221bc11c539acf6f75e4728e4a":[5,0,1982,2],
-"structVkPipelineShaderStageModuleIdentifierCreateInfoEXT.html#a67ef82c7044145af4444ca98a2579238":[5,0,1982,1],
-"structVkPipelineShaderStageModuleIdentifierCreateInfoEXT.html#a6980b94332abbe5268e208e5f86218b6":[5,0,1982,0],
-"structVkPipelineShaderStageNodeCreateInfoAMDX.html":[5,0,1983]
+"structVkPipelineShaderStageCreateInfo.html#a03e003bc4e706e13f918d3ffecf6362f":[5,0,1981,0]
 };

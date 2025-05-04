@@ -1,5 +1,16 @@
 var NAVTREEINDEX358 =
 {
+"struct__GUnixInputStreamClass.html#adb4dfeda889b9a158d9f287281030dbb":[5,0,474,4],
+"struct__GUnixOutputStream.html":[5,0,475],
+"struct__GUnixOutputStream.html#a13aacebe211f7ab12ebffe38e5b462fa":[5,0,475,1],
+"struct__GUnixOutputStream.html#a4bddc4df22bb6f55bc1ecc44cc8c697e":[5,0,475,0],
+"struct__GUnixOutputStreamClass.html":[5,0,476],
+"struct__GUnixOutputStreamClass.html#a8645073941076c1d92bfc31fd1050696":[5,0,476,2],
+"struct__GUnixOutputStreamClass.html#a8da6037d18d631b6ccb9bbe2ee47aede":[5,0,476,0],
+"struct__GUnixOutputStreamClass.html#a955bfd22b01822488932a5ce6c33c814":[5,0,476,1],
+"struct__GUnixOutputStreamClass.html#ab129866a7f03660a3ac77c322a5fc4dc":[5,0,476,3],
+"struct__GUnixOutputStreamClass.html#ab8a4bc5f57d4e9fa9603b3f7d55a49e9":[5,0,476,5],
+"struct__GUnixOutputStreamClass.html#ac9a43a8382849099006576b950f9e7a0":[5,0,476,4],
 "struct__GUnixSocketAddress.html":[5,0,477],
 "struct__GUnixSocketAddress.html#a68bbe1813ea9ed71eb0528f259c8369d":[5,0,477,0],
 "struct__GUnixSocketAddress.html#a9fff161547333f621dff27a8821ab217":[5,0,477,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX358 =
 "struct__GtkApplicationClass.html":[5,0,306],
 "struct__GtkApplicationClass.html#a8f6c6a291c4383d0fbae52d95424abc1":[5,0,306,3],
 "struct__GtkApplicationClass.html#a9f98ccc78fc8aad9dc832ebc3a2cb863":[5,0,306,2],
-"struct__GtkApplicationClass.html#ad85f22fe6a7361922dae202b05119f8c":[5,0,306,0],
-"struct__GtkApplicationClass.html#ae6230a94002a278ed4b44b0b61a2f304":[5,0,306,1],
-"struct__GtkApplicationWindow.html":[5,0,307],
-"struct__GtkApplicationWindow.html#acdf1260b70c4dc3edbf6766365d9ec2e":[5,0,307,0],
-"struct__GtkApplicationWindowClass.html":[5,0,308],
-"struct__GtkApplicationWindowClass.html#aad97876850790cf4223822f9830803e9":[5,0,308,1],
-"struct__GtkApplicationWindowClass.html#ac075a4d0691bf2af2eb74afc682f4b4a":[5,0,308,0],
-"struct__GtkBitsetIter.html":[5,0,309],
-"struct__GtkBitsetIter.html#a21870905351278d416451ceefe1492d0":[5,0,309,0],
-"struct__GtkBorder.html":[5,0,310],
-"struct__GtkBorder.html#a062f2d2cc9e0a6d14af3793dd8a2b094":[5,0,310,1],
-"struct__GtkBorder.html#a7c13e54aafe3eba7e46d1290ff619e9c":[5,0,310,3]
+"struct__GtkApplicationClass.html#ad85f22fe6a7361922dae202b05119f8c":[5,0,306,0]
 };

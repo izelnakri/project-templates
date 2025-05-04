@@ -1,5 +1,16 @@
 var NAVTREEINDEX328 =
 {
+"structVkDisplaySurfaceCreateInfoKHR.html#a7c35da53f58358681450479e8fcd600e":[5,0,1378,6],
+"structVkDisplaySurfaceCreateInfoKHR.html#a9b277dc4ec6a20b8cd45b51781649845":[5,0,1378,7],
+"structVkDisplaySurfaceCreateInfoKHR.html#aa8daf81400a28e8bc6cc56311170d3da":[5,0,1378,8],
+"structVkDisplaySurfaceCreateInfoKHR.html#ad8e20900d550b811a6f355c955d119b1":[5,0,1378,5],
+"structVkDisplaySurfaceCreateInfoKHR.html#ade4bd70b4af41d6020b8aa8eb50f27e6":[5,0,1378,3],
+"structVkDisplaySurfaceCreateInfoKHR.html#af33f4840ccd8f19bab8480e32b841c36":[5,0,1378,2],
+"structVkDisplaySurfaceCreateInfoKHR.html#af4d2d4766b2b9b5e1f58a50032ac47bf":[5,0,1378,9],
+"structVkDrawIndexedIndirectCommand.html":[5,0,1379],
+"structVkDrawIndexedIndirectCommand.html#a295d85c9b4fbaed55a602f886ca8aa58":[5,0,1379,3],
+"structVkDrawIndexedIndirectCommand.html#a701fd8e0db993fda253c11b8bfb39dab":[5,0,1379,2],
+"structVkDrawIndexedIndirectCommand.html#a87de65cf0876b481ea7aad0897396fe8":[5,0,1379,0],
 "structVkDrawIndexedIndirectCommand.html#aafa1992da32b757462c0702343bd519e":[5,0,1379,4],
 "structVkDrawIndexedIndirectCommand.html#adfcb76c25469d4c06ecf572dc3069f5a":[5,0,1379,1],
 "structVkDrawIndirectCommand.html":[5,0,1380],
@@ -238,16 +249,5 @@ var NAVTREEINDEX328 =
 "structVkFormatProperties3.html":[5,0,1431],
 "structVkFormatProperties3.html#a5952c169f439529d582ee77871e3dbd5":[5,0,1431,4],
 "structVkFormatProperties3.html#a60dda2f1164010fed7dc5002bfa5e435":[5,0,1431,3],
-"structVkFormatProperties3.html#ab9ff23202c7b92d6794cff40a451bce3":[5,0,1431,0],
-"structVkFormatProperties3.html#abc25e5ff2573bb2ac3bd9e8c3ef4e404":[5,0,1431,1],
-"structVkFormatProperties3.html#ae10275181ad757b5022326289bd2fb92":[5,0,1431,2],
-"structVkFragmentShadingRateAttachmentInfoKHR.html":[5,0,1432],
-"structVkFragmentShadingRateAttachmentInfoKHR.html#a21c012b4145a3d5aedcd8c2403bb7eaf":[5,0,1432,0],
-"structVkFragmentShadingRateAttachmentInfoKHR.html#a5e2339d5bce3089d09c82a90d9cd2603":[5,0,1432,3],
-"structVkFragmentShadingRateAttachmentInfoKHR.html#a6f344242e8ae87fbb0e470473138bee5":[5,0,1432,2],
-"structVkFragmentShadingRateAttachmentInfoKHR.html#ade4ca93112822f70c61fd2024ee4fa2e":[5,0,1432,1],
-"structVkFrameBoundaryEXT.html":[5,0,1433],
-"structVkFrameBoundaryEXT.html#a07b247a58d66f9e77fe3e4d7d419eed3":[5,0,1433,9],
-"structVkFrameBoundaryEXT.html#a07bb196177252a7de1cdfe0adad98d08":[5,0,1433,6],
-"structVkFrameBoundaryEXT.html#a07e297c742e326fd8e4bf40426f950dd":[5,0,1433,1]
+"structVkFormatProperties3.html#ab9ff23202c7b92d6794cff40a451bce3":[5,0,1431,0]
 };

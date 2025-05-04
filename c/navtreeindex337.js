@@ -1,5 +1,16 @@
 var NAVTREEINDEX337 =
 {
+"structVkPhysicalDeviceLimits.html#aaba7bf67860c9600a8bf56ec07c2de79":[5,0,1753,56],
+"structVkPhysicalDeviceLimits.html#ab2cb332cec29a5fd5e9283f52727b6c3":[5,0,1753,6],
+"structVkPhysicalDeviceLimits.html#ab47b44c012b26cef6d50f974b8b784c7":[5,0,1753,59],
+"structVkPhysicalDeviceLimits.html#ab5442e8409472eea54fa70c388bc1ad1":[5,0,1753,64],
+"structVkPhysicalDeviceLimits.html#ab66a7872695481b3ac13e71ee89f43d8":[5,0,1753,35],
+"structVkPhysicalDeviceLimits.html#aba4b1dfaaa6376ad1709a9e0ea3b611f":[5,0,1753,44],
+"structVkPhysicalDeviceLimits.html#ac0706ce0407e3adea5e2e768ec1fbaad":[5,0,1753,48],
+"structVkPhysicalDeviceLimits.html#ac0e59921780a4cf81060e602d70905b3":[5,0,1753,62],
+"structVkPhysicalDeviceLimits.html#ac1069a72fad0035962e4a230aa4af73d":[5,0,1753,61],
+"structVkPhysicalDeviceLimits.html#ac33992d6c3d92c66629cc9936080c656":[5,0,1753,51],
+"structVkPhysicalDeviceLimits.html#aca6c996b2b635b5324c7c080efea704c":[5,0,1753,63],
 "structVkPhysicalDeviceLimits.html#acacbdd5d719540aafcd7a9e26c73a6ad":[5,0,1753,89],
 "structVkPhysicalDeviceLimits.html#ace0c6f381acc7f5d0cde35ac00ea1c59":[5,0,1753,13],
 "structVkPhysicalDeviceLimits.html#ad264dea355732f7b6125babedbcd8e24":[5,0,1753,38],
@@ -238,16 +249,5 @@ var NAVTREEINDEX337 =
 "structVkPhysicalDeviceNestedCommandBufferFeaturesEXT.html#aab6b036e5a219ecc5ad7c9c8594fc794":[5,0,1787,3],
 "structVkPhysicalDeviceNestedCommandBufferFeaturesEXT.html#aca13791bdc89de23922367e96c9515ad":[5,0,1787,4],
 "structVkPhysicalDeviceNestedCommandBufferPropertiesEXT.html":[5,0,1788],
-"structVkPhysicalDeviceNestedCommandBufferPropertiesEXT.html#a139e328ab6005d3671891efee506e9ce":[5,0,1788,1],
-"structVkPhysicalDeviceNestedCommandBufferPropertiesEXT.html#a1ece9e190938f6fe9e453feaf8d449d3":[5,0,1788,2],
-"structVkPhysicalDeviceNestedCommandBufferPropertiesEXT.html#a6dc148af0d4c2f40939ee1521d6bdded":[5,0,1788,0],
-"structVkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT.html":[5,0,1789],
-"structVkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT.html#a11cd1488fdbdb9d6e666b9838b709a1e":[5,0,1789,0],
-"structVkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT.html#a5266e2d6458967e36384f5827d3283bd":[5,0,1789,2],
-"structVkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT.html#a8fd3a15696d4fbaafe105e9bc7180fac":[5,0,1789,1],
-"structVkPhysicalDeviceOpacityMicromapFeaturesEXT.html":[5,0,1790],
-"structVkPhysicalDeviceOpacityMicromapFeaturesEXT.html#a181c6a0357f7b7590540434949647de6":[5,0,1790,1],
-"structVkPhysicalDeviceOpacityMicromapFeaturesEXT.html#a356c9327096a5be30a60d469eae9f486":[5,0,1790,2],
-"structVkPhysicalDeviceOpacityMicromapFeaturesEXT.html#a97badd46f2fdd97088479e8ce2cdb2e6":[5,0,1790,4],
-"structVkPhysicalDeviceOpacityMicromapFeaturesEXT.html#acc35541f3ed822aba90bc1edf324df3d":[5,0,1790,0]
+"structVkPhysicalDeviceNestedCommandBufferPropertiesEXT.html#a139e328ab6005d3671891efee506e9ce":[5,0,1788,1]
 };

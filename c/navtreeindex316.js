@@ -1,5 +1,16 @@
 var NAVTREEINDEX316 =
 {
+"structPmaReader.html#af8d5ac60d1ba7ff84e84d5eb6aba4447":[5,0,929,0],
+"structPmaReader.html#af8f5dbc63cbbcbf9ee4c2c462ab1c6ff":[5,0,929,2],
+"structPmaWriter.html":[5,0,930],
+"structPmaWriter.html#a3d74aff37c8abafd22ec8f8159d08725":[5,0,930,1],
+"structPmaWriter.html#a54606c98fb9e7318a55ed59de0e55550":[5,0,930,6],
+"structPmaWriter.html#a5d8e651696b33ff6318e7d8473ee9e1b":[5,0,930,5],
+"structPmaWriter.html#ab15d816e53fb4496dd1e59094d4839a6":[5,0,930,2],
+"structPmaWriter.html#ad45a9271cbcdd0e506b81b77d2a744a5":[5,0,930,4],
+"structPmaWriter.html#ae53ada27501eb89a45409db4776f3b23":[5,0,930,0],
+"structPmaWriter.html#ae77a80d66a5f3d40cd5d57861a455281":[5,0,930,3],
+"structPragmaName.html":[5,0,935],
 "structPragmaName.html#a299da7e18dfd00b25463b16062dbca09":[5,0,935,3],
 "structPragmaName.html#a62d8aae764f7d69ea67d62645d05d327":[5,0,935,0],
 "structPragmaName.html#a888352750feeb739877a4ed55e54bdf4":[5,0,935,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX316 =
 "structSqlite3Config.html#a6d21468c424041f10eb0c251220088f6":[5,0,997,40],
 "structSqlite3Config.html#a6dc51cea630491a7c0694c1547894f1f":[5,0,997,22],
 "structSqlite3Config.html#a7bdc3109ecd839317f722b5da5339fab":[5,0,997,3],
-"structSqlite3Config.html#a8bdcc8caffe59bb5f7ac2c4d44fcca46":[5,0,997,38],
-"structSqlite3Config.html#a922ec99508e346db8e4fbaec58aa1ff9":[5,0,997,15],
-"structSqlite3Config.html#a945ec3af8fd8f2efaccec88e2597393b":[5,0,997,14],
-"structSqlite3Config.html#aab2aff0daff6b09c1d77299c81892a28":[5,0,997,36],
-"structSqlite3Config.html#aad0a2a72fc46e88d31685454255e2b84":[5,0,997,6],
-"structSqlite3Config.html#aae01de5f37a66422f2a7413e108e03fe":[5,0,997,4],
-"structSqlite3Config.html#ab0ec050075ee245df0a54623b0073bfc":[5,0,997,12],
-"structSqlite3Config.html#ab1504fcfc7d18b64e26554a644ed9f6d":[5,0,997,28],
-"structSqlite3Config.html#ab5fb29ac41756c38a16bf3555adca853":[5,0,997,35],
-"structSqlite3Config.html#ac4976841f2245a238d41f2e1c6e05f91":[5,0,997,27],
-"structSqlite3Config.html#ace1a82399d547db5e5f2f72d2f31a064":[5,0,997,10],
-"structSqlite3Config.html#ad7504c4c1867db9837b40d7c22ba7582":[5,0,997,34]
+"structSqlite3Config.html#a8bdcc8caffe59bb5f7ac2c4d44fcca46":[5,0,997,38]
 };

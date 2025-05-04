@@ -1,5 +1,16 @@
 var NAVTREEINDEX329 =
 {
+"structVkFormatProperties3.html#abc25e5ff2573bb2ac3bd9e8c3ef4e404":[5,0,1431,1],
+"structVkFormatProperties3.html#ae10275181ad757b5022326289bd2fb92":[5,0,1431,2],
+"structVkFragmentShadingRateAttachmentInfoKHR.html":[5,0,1432],
+"structVkFragmentShadingRateAttachmentInfoKHR.html#a21c012b4145a3d5aedcd8c2403bb7eaf":[5,0,1432,0],
+"structVkFragmentShadingRateAttachmentInfoKHR.html#a5e2339d5bce3089d09c82a90d9cd2603":[5,0,1432,3],
+"structVkFragmentShadingRateAttachmentInfoKHR.html#a6f344242e8ae87fbb0e470473138bee5":[5,0,1432,2],
+"structVkFragmentShadingRateAttachmentInfoKHR.html#ade4ca93112822f70c61fd2024ee4fa2e":[5,0,1432,1],
+"structVkFrameBoundaryEXT.html":[5,0,1433],
+"structVkFrameBoundaryEXT.html#a07b247a58d66f9e77fe3e4d7d419eed3":[5,0,1433,9],
+"structVkFrameBoundaryEXT.html#a07bb196177252a7de1cdfe0adad98d08":[5,0,1433,6],
+"structVkFrameBoundaryEXT.html#a07e297c742e326fd8e4bf40426f950dd":[5,0,1433,1],
 "structVkFrameBoundaryEXT.html#a1ce7b950379401069440706a4fa09509":[5,0,1433,3],
 "structVkFrameBoundaryEXT.html#a261e99350c2a5bc6618a677003474e6d":[5,0,1433,4],
 "structVkFrameBoundaryEXT.html#a5aaef38baaa534bb8a9083aa68057ada":[5,0,1433,8],
@@ -238,16 +249,5 @@ var NAVTREEINDEX329 =
 "structVkImageCompressionControlEXT.html#aeec7ff1ce20beb8a134483e87834cbeb":[5,0,1464,4],
 "structVkImageCompressionPropertiesEXT.html":[5,0,1465],
 "structVkImageCompressionPropertiesEXT.html#a01d9d0cebdd2b5b804c85e4457251862":[5,0,1465,1],
-"structVkImageCompressionPropertiesEXT.html#a42e178b9c5d8702debc9c81b680bc6aa":[5,0,1465,3],
-"structVkImageCompressionPropertiesEXT.html#aa9ffb6ecda3d6dd36d0383ffd44fed8b":[5,0,1465,0],
-"structVkImageCompressionPropertiesEXT.html#ab32b7179e3e2eff7e661b7f3f5f24830":[5,0,1465,2],
-"structVkImageConstraintsInfoFUCHSIA.html":[5,0,1466],
-"structVkImageConstraintsInfoFUCHSIA.html#a0ae47955bd4997e6c887e3f8ae21ceb6":[5,0,1466,5],
-"structVkImageConstraintsInfoFUCHSIA.html#a11dd2333074ce2c8e3668e0e2457834a":[5,0,1466,4],
-"structVkImageConstraintsInfoFUCHSIA.html#a6e44c918b527167503e51008187a0889":[5,0,1466,2],
-"structVkImageConstraintsInfoFUCHSIA.html#a75bfd275b93f0cc8fb2a91b437679788":[5,0,1466,0],
-"structVkImageConstraintsInfoFUCHSIA.html#a85583c4da2f0156e5c0d215fe74a09a7":[5,0,1466,3],
-"structVkImageConstraintsInfoFUCHSIA.html#aa5fe44fbc261959db39aaf9ccf1a6fb7":[5,0,1466,1],
-"structVkImageCopy.html":[5,0,1467],
-"structVkImageCopy.html#a11c0caef139634ece994552bac4951f8":[5,0,1467,2]
+"structVkImageCompressionPropertiesEXT.html#a42e178b9c5d8702debc9c81b680bc6aa":[5,0,1465,3]
 };

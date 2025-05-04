@@ -1,5 +1,16 @@
 var NAVTREEINDEX343 =
 {
+"structVkPipelineShaderStageCreateInfo.html#a2d86a11e50007bddf62f382a39989d5e":[5,0,1981,3],
+"structVkPipelineShaderStageCreateInfo.html#a5cafa13c2f71b6752cab032e0f21da9d":[5,0,1981,5],
+"structVkPipelineShaderStageCreateInfo.html#aad79ed7c586e963723234f5cf297955a":[5,0,1981,1],
+"structVkPipelineShaderStageCreateInfo.html#ab7e2da0ca40f5ed507e615ba7032c61a":[5,0,1981,2],
+"structVkPipelineShaderStageCreateInfo.html#ad5cbefa3e37f2ff27650d3d81934111a":[5,0,1981,4],
+"structVkPipelineShaderStageModuleIdentifierCreateInfoEXT.html":[5,0,1982],
+"structVkPipelineShaderStageModuleIdentifierCreateInfoEXT.html#a068e5a95ed42e01fbef003a88b1ffefe":[5,0,1982,3],
+"structVkPipelineShaderStageModuleIdentifierCreateInfoEXT.html#a530ac8221bc11c539acf6f75e4728e4a":[5,0,1982,2],
+"structVkPipelineShaderStageModuleIdentifierCreateInfoEXT.html#a67ef82c7044145af4444ca98a2579238":[5,0,1982,1],
+"structVkPipelineShaderStageModuleIdentifierCreateInfoEXT.html#a6980b94332abbe5268e208e5f86218b6":[5,0,1982,0],
+"structVkPipelineShaderStageNodeCreateInfoAMDX.html":[5,0,1983],
 "structVkPipelineShaderStageNodeCreateInfoAMDX.html#a209d8a8dbe82b668a62eca8b6a975a74":[5,0,1983,1],
 "structVkPipelineShaderStageNodeCreateInfoAMDX.html#a5647ba4c895c9f91f50eb9d916a82bb7":[5,0,1983,3],
 "structVkPipelineShaderStageNodeCreateInfoAMDX.html#abea30769df3cfeb0c4d01d91b2d9c07d":[5,0,1983,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX343 =
 "structVkRayTracingShaderGroupCreateInfoKHR.html#a755281884c070c2440bf20fbe37a57ab":[5,0,2025,3],
 "structVkRayTracingShaderGroupCreateInfoKHR.html#a990b8073d1ee365ac6e70d84b98c9b3a":[5,0,2025,4],
 "structVkRayTracingShaderGroupCreateInfoKHR.html#a9b715ac4f6c4ad472b3f214525611bce":[5,0,2025,5],
-"structVkRayTracingShaderGroupCreateInfoKHR.html#a9ce34f02ba29b5c508a6c1b08705bcb4":[5,0,2025,2],
-"structVkRayTracingShaderGroupCreateInfoKHR.html#a9d9d701ac2d0537183ba6dba805e2709":[5,0,2025,1],
-"structVkRayTracingShaderGroupCreateInfoKHR.html#aea94365d7e081703fd68604fae0cd8e9":[5,0,2025,7],
-"structVkRayTracingShaderGroupCreateInfoNV.html":[5,0,2026],
-"structVkRayTracingShaderGroupCreateInfoNV.html#a0b446e17342285c95e608dc02cf2d114":[5,0,2026,1],
-"structVkRayTracingShaderGroupCreateInfoNV.html#a146f68345fb6ef999a893db096b8f88b":[5,0,2026,6],
-"structVkRayTracingShaderGroupCreateInfoNV.html#a46ca7092cf03015ba1b9bd858c343a7d":[5,0,2026,4],
-"structVkRayTracingShaderGroupCreateInfoNV.html#a6398248114d725588783fe08ef2befe9":[5,0,2026,5],
-"structVkRayTracingShaderGroupCreateInfoNV.html#a865027cce009fa4ab710b90ba0f03103":[5,0,2026,3],
-"structVkRayTracingShaderGroupCreateInfoNV.html#abb8e00496dd07a28d4d1adab3b03d80b":[5,0,2026,0],
-"structVkRayTracingShaderGroupCreateInfoNV.html#ad457315876105d2b808fd85b56ef0a09":[5,0,2026,2],
-"structVkRect2D.html":[5,0,2027]
+"structVkRayTracingShaderGroupCreateInfoKHR.html#a9ce34f02ba29b5c508a6c1b08705bcb4":[5,0,2025,2]
 };

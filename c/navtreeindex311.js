@@ -1,5 +1,16 @@
 var NAVTREEINDEX311 =
 {
+"structDblquoteStr.html#a51b32bd799e6c597e68e6c7c782f9d38":[5,0,641,1],
+"structDistinctCtx.html":[5,0,645],
+"structDistinctCtx.html#a897fdd9a1025f3d6c438a5113cf925d2":[5,0,645,0],
+"structDistinctCtx.html#aaaa3b23ad86358ba11b4da77cd753bbd":[5,0,645,2],
+"structDistinctCtx.html#ae57f819b64420f943f21d8d0e9c36205":[5,0,645,1],
+"structDistinctCtx.html#af4514e425f99659e97b2bbe756716517":[5,0,645,3],
+"structDumpState.html":[5,0,706],
+"structDumpState.html#a673485f23b723a08f496b001ef8127de":[5,0,706,2],
+"structDumpState.html#abc79fa1fbe205cd87266542ce80f6fdd":[5,0,706,1],
+"structDumpState.html#ac92b1985689ee766e53540b21702e7dc":[5,0,706,4],
+"structDumpState.html#afcf0c1e762b484d87154f3b8e3611b6b":[5,0,706,0],
 "structDumpState.html#afd4b1bbfc1bd094919b8eca23a268391":[5,0,706,3],
 "structDyndata.html":[5,0,707],
 "structDyndata.html#a0e4b4f8cf1af3f8e4398e705f22e09cb":[5,0,707,4],
@@ -238,16 +249,5 @@ var NAVTREEINDEX311 =
 "structFT__Glyph__Class__.html#a26738bd14d5845e18d09ccaa3a709d23":[5,0,733,3],
 "structFT__Glyph__Class__.html#a5f72ac1d0d92eb31fa3e2bb721a97ef2":[5,0,733,7],
 "structFT__Glyph__Class__.html#a657200ad15ff061b38fb25b168737f95":[5,0,733,4],
-"structFT__Glyph__Class__.html#aabf05a4368dccacf45e1a54e542e5d63":[5,0,733,2],
-"structFT__Glyph__Class__.html#af7f406e5ea20a6614c946746938830c9":[5,0,733,5],
-"structFT__Glyph__Class__.html#afc78dcdc4802760ebcaccf3a7b6cd088":[5,0,733,1],
-"structFT__Glyph__Metrics__.html":[5,0,734],
-"structFT__Glyph__Metrics__.html#a0ff1be869e6a28d1f2990b0e5719dca9":[5,0,734,7],
-"structFT__Glyph__Metrics__.html#a2afc877f52c8a8910ec144a1948186cc":[5,0,734,2],
-"structFT__Glyph__Metrics__.html#a594f43c64fe5c12a399a0f0a47c04990":[5,0,734,4],
-"structFT__Glyph__Metrics__.html#a7f1aba91b86fddeb11030eab15dcce08":[5,0,734,6],
-"structFT__Glyph__Metrics__.html#aa2a76ec448ec9d18acf343f01b77cb21":[5,0,734,0],
-"structFT__Glyph__Metrics__.html#aead5c5637b983b811738bff3bcea8cea":[5,0,734,5],
-"structFT__Glyph__Metrics__.html#af12db260a90b8a7c938ad48ebf20ccbe":[5,0,734,1],
-"structFT__Glyph__Metrics__.html#afd97c10d43ed1f66598a18884468b536":[5,0,734,3]
+"structFT__Glyph__Class__.html#aabf05a4368dccacf45e1a54e542e5d63":[5,0,733,2]
 };

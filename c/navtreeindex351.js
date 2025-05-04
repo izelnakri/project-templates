@@ -1,5 +1,16 @@
 var NAVTREEINDEX351 =
 {
+"struct__GActionGroupInterface.html#ad3474f757c20f8828954a6d80fccb01b":[5,0,9,4],
+"struct__GActionGroupInterface.html#af26cca5a7de6b427e65242eafcaa451f":[5,0,9,9],
+"struct__GActionGroupInterface.html#af2c23e04815094b81654153657a33b32":[5,0,9,12],
+"struct__GActionInterface.html":[5,0,10],
+"struct__GActionInterface.html#a10e4298b3a01ac98f8ca197dc4a6a128":[5,0,10,6],
+"struct__GActionInterface.html#a126f8289169571c8accf79a582da2bd0":[5,0,10,2],
+"struct__GActionInterface.html#a37bb182b9cf954d30bb9505cbc76ce44":[5,0,10,5],
+"struct__GActionInterface.html#a393653944f47a0865f55ac21b6666b97":[5,0,10,1],
+"struct__GActionInterface.html#a5efbbc51e6a6a722a65e6aa0149cbe33":[5,0,10,8],
+"struct__GActionInterface.html#a695f38c99e8f0283213dd879c0c325aa":[5,0,10,3],
+"struct__GActionInterface.html#a7f1a9c617f8cc5200b42633e2f389a7a":[5,0,10,7],
 "struct__GActionInterface.html#aac00efc0500fe34b10d626aeea47c30e":[5,0,10,4],
 "struct__GActionInterface.html#acdc389b42b6b9d9e59ee3b5dfe1f0945":[5,0,10,0],
 "struct__GActionMapInterface.html":[5,0,11],
@@ -238,16 +249,5 @@ var NAVTREEINDEX351 =
 "struct__GDBusObjectIface.html#a4dc480b492cd07bc36e98c319a9be030":[5,0,56,2],
 "struct__GDBusObjectIface.html#a66f1e647c555869ef53d3e2b4d688a3d":[5,0,56,1],
 "struct__GDBusObjectIface.html#a82bc838f88a7e905206aca3c24f1ff9a":[5,0,56,3],
-"struct__GDBusObjectIface.html#ad1560fade600ee6c1906b5b2e59c968f":[5,0,56,4],
-"struct__GDBusObjectIface.html#adab4727cd804260b672dcd9b4238a75e":[5,0,56,0],
-"struct__GDBusObjectIface.html#adc9dd19b920f137182e863205192f695":[5,0,56,5],
-"struct__GDBusObjectManagerClient.html":[5,0,57],
-"struct__GDBusObjectManagerClient.html#a395dc92039ef995196163e9a10e8bfa5":[5,0,57,0],
-"struct__GDBusObjectManagerClient.html#ac582507a4415b0472aa30033eadc3ab0":[5,0,57,1],
-"struct__GDBusObjectManagerClientClass.html":[5,0,58],
-"struct__GDBusObjectManagerClientClass.html#a441b856e7bef4236207171fe7808191f":[5,0,58,0],
-"struct__GDBusObjectManagerClientClass.html#a5ad92917b28e430eebe7beb0de1f95bc":[5,0,58,1],
-"struct__GDBusObjectManagerClientClass.html#a827751259487668aefa002e803405af9":[5,0,58,3],
-"struct__GDBusObjectManagerClientClass.html#aa95ad7d2b5471ca90ae70e6366c5864b":[5,0,58,2],
-"struct__GDBusObjectManagerIface.html":[5,0,59]
+"struct__GDBusObjectIface.html#ad1560fade600ee6c1906b5b2e59c968f":[5,0,56,4]
 };

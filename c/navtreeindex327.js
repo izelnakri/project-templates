@@ -1,5 +1,16 @@
 var NAVTREEINDEX327 =
 {
+"structVkDeviceDeviceMemoryReportCreateInfoEXT.html#acdeccbc409c6b40ab4ca6ebf8c88a43e":[5,0,1327,2],
+"structVkDeviceDeviceMemoryReportCreateInfoEXT.html#adbfba0e7c23a06f5e3265c91ae083b51":[5,0,1327,4],
+"structVkDeviceDeviceMemoryReportCreateInfoEXT.html#ae6302f7b01b90fe5e7e8fc810e253414":[5,0,1327,3],
+"structVkDeviceDiagnosticsConfigCreateInfoNV.html":[5,0,1328],
+"structVkDeviceDiagnosticsConfigCreateInfoNV.html#a91c261f34d5a7b181b90893604d0a991":[5,0,1328,1],
+"structVkDeviceDiagnosticsConfigCreateInfoNV.html#aa1c853db37d03be269373d135d8c9347":[5,0,1328,2],
+"structVkDeviceDiagnosticsConfigCreateInfoNV.html#ae17fc471310abf4445f977aae4c4db40":[5,0,1328,0],
+"structVkDeviceEventInfoEXT.html":[5,0,1329],
+"structVkDeviceEventInfoEXT.html#a2bf57ca44aa2066f60127e402b6ed506":[5,0,1329,1],
+"structVkDeviceEventInfoEXT.html#a31f30787b8f73c141e718924bc92a040":[5,0,1329,0],
+"structVkDeviceEventInfoEXT.html#af0e9192c0c29df54739a726449f42e35":[5,0,1329,2],
 "structVkDeviceFaultAddressInfoEXT.html":[5,0,1330],
 "structVkDeviceFaultAddressInfoEXT.html#a1fb6d2973a6810c923e40538f556b420":[5,0,1330,2],
 "structVkDeviceFaultAddressInfoEXT.html#a62ed88ce56d995313fb18574eac74b77":[5,0,1330,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX327 =
 "structVkDisplaySurfaceCreateInfoKHR.html":[5,0,1378],
 "structVkDisplaySurfaceCreateInfoKHR.html#a00f5dabb47a3e329be899d418543f64e":[5,0,1378,1],
 "structVkDisplaySurfaceCreateInfoKHR.html#a50856aad07c6247ccaf43c98143e8fec":[5,0,1378,0],
-"structVkDisplaySurfaceCreateInfoKHR.html#a7245a3bcf98739181f18d3745af10079":[5,0,1378,4],
-"structVkDisplaySurfaceCreateInfoKHR.html#a7c35da53f58358681450479e8fcd600e":[5,0,1378,6],
-"structVkDisplaySurfaceCreateInfoKHR.html#a9b277dc4ec6a20b8cd45b51781649845":[5,0,1378,7],
-"structVkDisplaySurfaceCreateInfoKHR.html#aa8daf81400a28e8bc6cc56311170d3da":[5,0,1378,8],
-"structVkDisplaySurfaceCreateInfoKHR.html#ad8e20900d550b811a6f355c955d119b1":[5,0,1378,5],
-"structVkDisplaySurfaceCreateInfoKHR.html#ade4bd70b4af41d6020b8aa8eb50f27e6":[5,0,1378,3],
-"structVkDisplaySurfaceCreateInfoKHR.html#af33f4840ccd8f19bab8480e32b841c36":[5,0,1378,2],
-"structVkDisplaySurfaceCreateInfoKHR.html#af4d2d4766b2b9b5e1f58a50032ac47bf":[5,0,1378,9],
-"structVkDrawIndexedIndirectCommand.html":[5,0,1379],
-"structVkDrawIndexedIndirectCommand.html#a295d85c9b4fbaed55a602f886ca8aa58":[5,0,1379,3],
-"structVkDrawIndexedIndirectCommand.html#a701fd8e0db993fda253c11b8bfb39dab":[5,0,1379,2],
-"structVkDrawIndexedIndirectCommand.html#a87de65cf0876b481ea7aad0897396fe8":[5,0,1379,0]
+"structVkDisplaySurfaceCreateInfoKHR.html#a7245a3bcf98739181f18d3745af10079":[5,0,1378,4]
 };

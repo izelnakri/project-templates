@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.10.0"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Github User Fetcher: My C Project Template</title>
+<title>Github User Fetcher: My C Project Template - GitHub User Fetcher</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -93,14 +93,145 @@ $(function(){initNavTree('index.html',''); initResizable(); });
 </div>
 
 <div><div class="header">
-  <div class="headertitle"><div class="title">My C Project Template </div></div>
+  <div class="headertitle"><div class="title">My C Project Template - GitHub <a class="el" href="structUser.html" title="Structure representing a GitHub user.">User</a> Fetcher </div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><p><a class="anchor" id="md_README"></a> </p>
+<div class="textblock"><p><a class="anchor" id="md_README"></a> A complex C binary &amp; library for fetching GitHub user data. This project includes external dependencies and tools and is packaged with <b>Flatpak</b> and <b>Docker</b>.</p>
 <h1><a class="anchor" id="autotoc_md1"></a>
-📚 Documentation</h1>
-<p><a href="https://izelnakri.github.io/project-templates/c/">View the documentation here</a></p>
-<p>Check the <code>Makefile</code> for build instructions. </p>
+Table of Contents</h1>
+<ul>
+<li>Installation</li>
+<li>Development Setup</li>
+<li>Commands<ul>
+<li>Build &amp; Clean</li>
+<li>Flatpak</li>
+<li>Docker</li>
+<li>Testing</li>
+<li>Linting &amp; Formatting</li>
+</ul>
+</li>
+<li>Releases</li>
+<li>Documentation</li>
+</ul>
+<h1><a class="anchor" id="autotoc_md2"></a>
+Installation</h1>
+<p>To install the release version of the project, use the following steps:</p>
+<div class="fragment"><div class="line">make release</div>
+<div class="line">make install</div>
+</div><!-- fragment --><h1><a class="anchor" id="autotoc_md3"></a>
+Development Setup</h1>
+<ol type="1">
+<li><p class="startli"><b>Clone the repository:</b></p>
+<div class="fragment"><div class="line">git clone https://github.com/yourusername/github-user-fetcher.git</div>
+<div class="line">cd github-user-fetcher</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Install dependencies:</b></p><ul>
+<li>Use <code>nix-shell</code> for the development environment or install manually. Don't forget to be on this nix shell, so you can have the required dependencies for the make commands.</li>
+</ul>
+<div class="fragment"><div class="line">nix develop</div>
+</div><!-- fragment --></li>
+</ol>
+<h1><a class="anchor" id="autotoc_md4"></a>
+Commands</h1>
+<h2><a class="anchor" id="autotoc_md5"></a>
+Build &amp; Clean</h2>
+<ul>
+<li><p class="startli"><b>Build the project:</b></p>
+<div class="fragment"><div class="line">make build</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Clean build artifacts:</b></p>
+<div class="fragment"><div class="line">make clean</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Clean everything (including Flatpak and Docker):</b></p>
+<div class="fragment"><div class="line">make clean-all</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Reset the project:</b></p>
+<div class="fragment"><div class="line">make reset</div>
+</div><!-- fragment --></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md6"></a>
+Flatpak</h2>
+<ul>
+<li><p class="startli"><b>Prepare and build the Flatpak package:</b></p>
+<div class="fragment"><div class="line">make flatpak-builder</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Install the built Flatpak:</b></p>
+<div class="fragment"><div class="line">make install-flatpak</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Run the Flatpak application:</b></p>
+<div class="fragment"><div class="line">make run-flatpak</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Run the Flatpak CLI server:</b></p>
+<div class="fragment"><div class="line">make run-flatpak-cli-server</div>
+</div><!-- fragment --></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md7"></a>
+Docker</h2>
+<ul>
+<li><p class="startli"><b>Build the Docker image:</b></p>
+<div class="fragment"><div class="line">make build-docker-image</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Run the Docker CLI:</b></p>
+<div class="fragment"><div class="line">make run-docker-cli</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Run the Docker CLI with a user:</b></p>
+<div class="fragment"><div class="line">make run-docker-cli-user</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Run the Docker CLI server:</b></p>
+<div class="fragment"><div class="line">make run-docker-cli-server</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Run the Docker GUI:</b></p>
+<div class="fragment"><div class="line">make run-docker-gui</div>
+</div><!-- fragment --></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md8"></a>
+Testing</h2>
+<ul>
+<li><p class="startli"><b>Run all tests:</b></p>
+<div class="fragment"><div class="line">make test</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Run specific tests (e.g., Clang-Tidy):</b></p>
+<div class="fragment"><div class="line">make lint-clang-tidy</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Run all tests and benchmarks:</b></p>
+<div class="fragment"><div class="line">make bench</div>
+</div><!-- fragment --></li>
+</ul>
+<h2><a class="anchor" id="autotoc_md9"></a>
+Linting &amp; Formatting</h2>
+<ul>
+<li><p class="startli"><b>Check code format:</b></p>
+<div class="fragment"><div class="line">make format-check</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Fix code format issues:</b></p>
+<div class="fragment"><div class="line">make format</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Run static analysis tools (e.g., <code>clang-tidy</code>, <code>cppcheck</code>, <code>flawfinder</code>):</b></p>
+<div class="fragment"><div class="line">make lint</div>
+</div><!-- fragment --><ul>
+<li>To run specific tools like <code>cppcheck</code> or <code>flawfinder</code>, use:</li>
+</ul>
+<div class="fragment"><div class="line">make lint-cppcheck</div>
+<div class="line">make lint-flawfinder</div>
+</div><!-- fragment --></li>
+<li><p class="startli"><b>Automatically fix issues using <code>clang-tidy</code>:</b></p>
+<div class="fragment"><div class="line">make lint-fix</div>
+</div><!-- fragment --></li>
+</ul>
+<h1><a class="anchor" id="autotoc_md10"></a>
+Releases</h1>
+<h2><a class="anchor" id="autotoc_md11"></a>
+Build a Release</h2>
+<p>To create a release version of the project:</p>
+<div class="fragment"><div class="line">make release</div>
+</div><!-- fragment --><p>This will build the project in <b>release</b> mode.</p>
+<h1><a class="anchor" id="autotoc_md12"></a>
+Documentation</h1>
+<p>To generate and view the documentation:</p>
+<div class="fragment"><div class="line">make doc</div>
+</div><!-- fragment --><p>This will generate the documentation and attempt to open it in <b>Brave</b>.</p>
+<hr  />
+<p>For further details, consult the <a href="https://izelnakri.github.io/project-templates/c">official documentation</a> or refer to the <a href="https://github.com/izelnakri/project-templates">project repository</a>. ``` </p>
 </div></div><!-- PageDoc -->
 <a href="doxygen_crawl.html"/>
 </div><!-- contents -->

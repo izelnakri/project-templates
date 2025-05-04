@@ -1,5 +1,16 @@
 var NAVTREEINDEX347 =
 {
+"structVkTraceRaysIndirectCommand2KHR.html#a8b17d32f745d6e1f7d2d498eda4078c0":[5,0,2149,1],
+"structVkTraceRaysIndirectCommand2KHR.html#ab3db302a44db08b4bc137607a23f2f4f":[5,0,2149,3],
+"structVkTraceRaysIndirectCommand2KHR.html#ac48b429074df0c21bf7a16a5f4eb6435":[5,0,2149,12],
+"structVkTraceRaysIndirectCommand2KHR.html#ad0ecb3a15a9f508b2115d5d33d5009bf":[5,0,2149,4],
+"structVkTraceRaysIndirectCommand2KHR.html#ada7b42c279dd2b24acf5b43aff0d1d99":[5,0,2149,11],
+"structVkTraceRaysIndirectCommand2KHR.html#ae0443d04a92dd4211c36d26b1c2e6177":[5,0,2149,5],
+"structVkTraceRaysIndirectCommand2KHR.html#ae8b3238a5523dbbfe3f7db8fd5e0065f":[5,0,2149,7],
+"structVkTraceRaysIndirectCommand2KHR.html#af0ea3c26266e4721ccfcd01f77d3bb28":[5,0,2149,8],
+"structVkTraceRaysIndirectCommand2KHR.html#af9df00107a49769d59fcb1905faa0d32":[5,0,2149,0],
+"structVkTraceRaysIndirectCommandKHR.html":[5,0,2150],
+"structVkTraceRaysIndirectCommandKHR.html#a6c72cb8deb915e94603993fc9f3a98b6":[5,0,2150,1],
 "structVkTraceRaysIndirectCommandKHR.html#ae167b4c6bd5f749d9663d5f3201a3183":[5,0,2150,0],
 "structVkTraceRaysIndirectCommandKHR.html#af3bb6b6b4953af0b63122a13e071dfde":[5,0,2150,2],
 "structVkTransformMatrixKHR.html":[5,0,2151],
@@ -238,16 +249,5 @@ var NAVTREEINDEX347 =
 "structVkVideoEncodeH264PictureInfoKHR.html":[5,0,2189],
 "structVkVideoEncodeH264PictureInfoKHR.html#a13d779b79e2a38486bc983846784bfe5":[5,0,2189,5],
 "structVkVideoEncodeH264PictureInfoKHR.html#a1f951eccdc23f1321934b56ba49cce0a":[5,0,2189,3],
-"structVkVideoEncodeH264PictureInfoKHR.html#a280ad5c7c5aa4601cd822e987535f33b":[5,0,2189,4],
-"structVkVideoEncodeH264PictureInfoKHR.html#a3e113dee6ffb57f0a9e86bb57764ab53":[5,0,2189,2],
-"structVkVideoEncodeH264PictureInfoKHR.html#a556b63e0e57cc2f400869a7a3b330f8c":[5,0,2189,0],
-"structVkVideoEncodeH264PictureInfoKHR.html#a723c188d6891032868549c36081b3ea9":[5,0,2189,1],
-"structVkVideoEncodeH264ProfileInfoKHR.html":[5,0,2190],
-"structVkVideoEncodeH264ProfileInfoKHR.html#a26ad6ac0fc91faa995ba6c6ce3e10b6b":[5,0,2190,0],
-"structVkVideoEncodeH264ProfileInfoKHR.html#a83a967cc2026ceadca98a313c44571df":[5,0,2190,1],
-"structVkVideoEncodeH264ProfileInfoKHR.html#adbc18ff2eb1bb122eb3fd1d5362a64ec":[5,0,2190,2],
-"structVkVideoEncodeH264QpKHR.html":[5,0,2191],
-"structVkVideoEncodeH264QpKHR.html#a13c6380c058989c8bf18d2bd54ab3bc6":[5,0,2191,0],
-"structVkVideoEncodeH264QpKHR.html#a569451ec899b69479532082c40f9fc5b":[5,0,2191,2],
-"structVkVideoEncodeH264QpKHR.html#ad961e297b34eac3462c313e8498cc409":[5,0,2191,1]
+"structVkVideoEncodeH264PictureInfoKHR.html#a280ad5c7c5aa4601cd822e987535f33b":[5,0,2189,4]
 };

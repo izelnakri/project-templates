@@ -1,5 +1,16 @@
 var NAVTREEINDEX325 =
 {
+"structVkCommandBufferInheritanceInfo.html#ac022bae7eafe80c1d2a2583fd819dfb3":[5,0,1249,1],
+"structVkCommandBufferInheritanceInfo.html#ad763c4da66f16a57ab43685781287a62":[5,0,1249,0],
+"structVkCommandBufferInheritanceInfo.html#ae4094eae52e780944768c115d48ddfe9":[5,0,1249,2],
+"structVkCommandBufferInheritanceRenderPassTransformInfoQCOM.html":[5,0,1251],
+"structVkCommandBufferInheritanceRenderPassTransformInfoQCOM.html#a3606e84248b3821e9e4ebf8f8fc780f0":[5,0,1251,0],
+"structVkCommandBufferInheritanceRenderPassTransformInfoQCOM.html#aa8ffb88654b7a2a4f8c3b0aa9ed3939d":[5,0,1251,2],
+"structVkCommandBufferInheritanceRenderPassTransformInfoQCOM.html#ae551a401a0bcd1da2404dd48ff49530c":[5,0,1251,1],
+"structVkCommandBufferInheritanceRenderPassTransformInfoQCOM.html#ae867189d20045a696da5030d9416a3d1":[5,0,1251,3],
+"structVkCommandBufferInheritanceRenderingInfo.html":[5,0,1250],
+"structVkCommandBufferInheritanceRenderingInfo.html#a1b0ae534cf7eb0773c07cd4107feedb5":[5,0,1250,2],
+"structVkCommandBufferInheritanceRenderingInfo.html#a2cbce23b808aa5c8af1412a35c2051ad":[5,0,1250,0],
 "structVkCommandBufferInheritanceRenderingInfo.html#a3be5d22b4e8e1bd1e9f383ea766a82aa":[5,0,1250,8],
 "structVkCommandBufferInheritanceRenderingInfo.html#a44035b0c6191a79b0a121f07b8759f43":[5,0,1250,7],
 "structVkCommandBufferInheritanceRenderingInfo.html#a49c27f70ea3c1c77238f1b6e34fa555e":[5,0,1250,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX325 =
 "structVkCudaLaunchInfoNV.html#acaed42e65b951007a9b4a5945907de52":[5,0,1280,6],
 "structVkCudaLaunchInfoNV.html#ad656f8f43d55b894bd7f6c40acc743f3":[5,0,1280,10],
 "structVkCudaLaunchInfoNV.html#aeffc59296103fc4ffb99e27a9c0ca703":[5,0,1280,8],
-"structVkCudaModuleCreateInfoNV.html":[5,0,1281],
-"structVkCudaModuleCreateInfoNV.html#a0df8cb04eb4c6b414dc48ea9e0e487e5":[5,0,1281,1],
-"structVkCudaModuleCreateInfoNV.html#a2efdf0f8070edad215939d5dd0cae5e0":[5,0,1281,2],
-"structVkCudaModuleCreateInfoNV.html#a432126e2d3514a63b4078ba172eda556":[5,0,1281,0],
-"structVkCudaModuleCreateInfoNV.html#a7310cf2eb86cdc0fdd9e56da23f775a1":[5,0,1281,3],
-"structVkD3D12FenceSubmitInfoKHR.html":[5,0,1285],
-"structVkD3D12FenceSubmitInfoKHR.html#a490d150d8a934cf6d64403546a465db5":[5,0,1285,5],
-"structVkD3D12FenceSubmitInfoKHR.html#a4cf0daff2298f3aa91cde55b6a027e96":[5,0,1285,4],
-"structVkD3D12FenceSubmitInfoKHR.html#a7d73472ef64c8aaf0a2766b02ea3668a":[5,0,1285,2],
-"structVkD3D12FenceSubmitInfoKHR.html#a92491c3bb33ca70550a90c6e21f09460":[5,0,1285,1],
-"structVkD3D12FenceSubmitInfoKHR.html#adbec098ebb94c12e9dd700dabfce8354":[5,0,1285,3],
-"structVkD3D12FenceSubmitInfoKHR.html#af488abf7e4a0ae6cfe79af7325449445":[5,0,1285,0]
+"structVkCudaModuleCreateInfoNV.html":[5,0,1281]
 };

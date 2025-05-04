@@ -1,5 +1,16 @@
 var NAVTREEINDEX364 =
 {
+"structcriterion__logger.html#a2f96434b4d64d01fc7f841b9aa687826":[5,0,607,13],
+"structcriterion__logger.html#a45b7e1c8bbfa2a37052d0ea4a4cea0b9":[5,0,607,0],
+"structcriterion__logger.html#a45c40f7015d87c9d4622b0cec517a322":[5,0,607,16],
+"structcriterion__logger.html#a52712266b693ded49e9840c47e955559":[5,0,607,15],
+"structcriterion__logger.html#a547d22948f36f251463f63bf5a3c0c30":[5,0,607,8],
+"structcriterion__logger.html#a63430eafc4673626d8c5e2acfbda57d4":[5,0,607,6],
+"structcriterion__logger.html#a798a45f0755393cb00e4488d8fef0d6d":[5,0,607,7],
+"structcriterion__logger.html#a94a63afb692579d13121e83000404ef5":[5,0,607,2],
+"structcriterion__logger.html#aad8b1d4c54cce5362f2526eb5d4a60ed":[5,0,607,5],
+"structcriterion__logger.html#aaea593bfe68defe8580caa25970d6dee":[5,0,607,9],
+"structcriterion__logger.html#ab70cb24a917254f846b51ece380f0d76":[5,0,607,4],
 "structcriterion__logger.html#ac274266911e198105564b561e72a8670":[5,0,607,18],
 "structcriterion__logger.html#acbe942ce4e95cc886e3527717106abbf":[5,0,607,14],
 "structcriterion__logger.html#ad18970476a076c2d0ecf463c43b515af":[5,0,607,12],
@@ -238,16 +249,5 @@ var NAVTREEINDEX364 =
 "structduk____exp__limits.html#a6fec1c870a79bffad6053ecb0fdd3156":[5,0,649,1],
 "structduk____id__lookup__result.html":[5,0,650],
 "structduk____id__lookup__result.html#a4ca03d31c9725401718b0d65e153dd44":[5,0,650,3],
-"structduk____id__lookup__result.html#a6c170d0f1d0170f1a6daa9edf2916fd6":[5,0,650,0],
-"structduk____id__lookup__result.html#a6dc3cd20d4a90d0605678b2eac1bfa10":[5,0,650,4],
-"structduk____id__lookup__result.html#a913fb34ec06f5986bc7680cd629c6f35":[5,0,650,2],
-"structduk____id__lookup__result.html#a944c946e5b1b0cfabe01c71256ef9151":[5,0,650,1],
-"structduk____numconv__stringify__ctx.html":[5,0,651],
-"structduk____numconv__stringify__ctx.html#a119ad46abfa04c08b950a39e7574c2d7":[5,0,651,10],
-"structduk____numconv__stringify__ctx.html#a132c71e7d657d0bcb95d86bf2b849ae6":[5,0,651,15],
-"structduk____numconv__stringify__ctx.html#a1bb2d5a31fc93dd550be750084ea84a1":[5,0,651,4],
-"structduk____numconv__stringify__ctx.html#a26cd16fb629e5e88fdad02f7b45dad55":[5,0,651,16],
-"structduk____numconv__stringify__ctx.html#a26fa6ec3207c30db99c44c9e1b08ce29":[5,0,651,2],
-"structduk____numconv__stringify__ctx.html#a40368a996d1fec02a473ca34ed9fdc87":[5,0,651,5],
-"structduk____numconv__stringify__ctx.html#a4dadc17f50677f263d572b23ace12210":[5,0,651,1]
+"structduk____id__lookup__result.html#a6c170d0f1d0170f1a6daa9edf2916fd6":[5,0,650,0]
 };

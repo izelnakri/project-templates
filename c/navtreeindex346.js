@@ -1,5 +1,16 @@
 var NAVTREEINDEX346 =
 {
+"structVkSubmitInfo2.html#a365bd80ec497bb086dcbfed306fa7bb0":[5,0,2108,4],
+"structVkSubmitInfo2.html#a3aaf132980fb12ea259abc4fafefe991":[5,0,2108,1],
+"structVkSubmitInfo2.html#a649dda3fab79f7bdaa9774f615209b3c":[5,0,2108,3],
+"structVkSubmitInfo2.html#a94fa3a30f2f038e3cf9e517e4a399e72":[5,0,2108,2],
+"structVkSubmitInfo2.html#abf7308097802ea7a53bb5c4fe81224dd":[5,0,2108,7],
+"structVkSubmitInfo2.html#ae4b060e9b33fcecad2f4cfd6ef76cc04":[5,0,2108,6],
+"structVkSubpassBeginInfo.html":[5,0,2109],
+"structVkSubpassBeginInfo.html#a10f7faec3f8edf5553db1960cafcc26f":[5,0,2109,2],
+"structVkSubpassBeginInfo.html#a64e1e60cd0a79c586c76b9293a4f522c":[5,0,2109,1],
+"structVkSubpassBeginInfo.html#a86baa0ec39bbfd40555bec184ece652e":[5,0,2109,0],
+"structVkSubpassDependency.html":[5,0,2110],
 "structVkSubpassDependency.html#a01dfa39a4157ec8750ddb2397ba44c17":[5,0,2110,1],
 "structVkSubpassDependency.html#a626f1def4dbf219f6fbb428cc5b985e9":[5,0,2110,0],
 "structVkSubpassDependency.html#a7cb3a42d5f46a6e7261afd6de6adb1e0":[5,0,2110,6],
@@ -238,16 +249,5 @@ var NAVTREEINDEX346 =
 "structVkTraceRaysIndirectCommand2KHR.html#a167221f8d239f90cece62fb177e6b65c":[5,0,2149,13],
 "structVkTraceRaysIndirectCommand2KHR.html#a23ae9763fe19290c1e717d0090fdfbec":[5,0,2149,10],
 "structVkTraceRaysIndirectCommand2KHR.html#a34f45be1582fcda677a20fbd7d1c0a7c":[5,0,2149,9],
-"structVkTraceRaysIndirectCommand2KHR.html#a359cda1cb85246647f0f553e48b38d0c":[5,0,2149,2],
-"structVkTraceRaysIndirectCommand2KHR.html#a8b17d32f745d6e1f7d2d498eda4078c0":[5,0,2149,1],
-"structVkTraceRaysIndirectCommand2KHR.html#ab3db302a44db08b4bc137607a23f2f4f":[5,0,2149,3],
-"structVkTraceRaysIndirectCommand2KHR.html#ac48b429074df0c21bf7a16a5f4eb6435":[5,0,2149,12],
-"structVkTraceRaysIndirectCommand2KHR.html#ad0ecb3a15a9f508b2115d5d33d5009bf":[5,0,2149,4],
-"structVkTraceRaysIndirectCommand2KHR.html#ada7b42c279dd2b24acf5b43aff0d1d99":[5,0,2149,11],
-"structVkTraceRaysIndirectCommand2KHR.html#ae0443d04a92dd4211c36d26b1c2e6177":[5,0,2149,5],
-"structVkTraceRaysIndirectCommand2KHR.html#ae8b3238a5523dbbfe3f7db8fd5e0065f":[5,0,2149,7],
-"structVkTraceRaysIndirectCommand2KHR.html#af0ea3c26266e4721ccfcd01f77d3bb28":[5,0,2149,8],
-"structVkTraceRaysIndirectCommand2KHR.html#af9df00107a49769d59fcb1905faa0d32":[5,0,2149,0],
-"structVkTraceRaysIndirectCommandKHR.html":[5,0,2150],
-"structVkTraceRaysIndirectCommandKHR.html#a6c72cb8deb915e94603993fc9f3a98b6":[5,0,2150,1]
+"structVkTraceRaysIndirectCommand2KHR.html#a359cda1cb85246647f0f553e48b38d0c":[5,0,2149,2]
 };

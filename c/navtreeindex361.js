@@ -1,5 +1,16 @@
 var NAVTREEINDEX361 =
 {
+"struct__GtkStyleContextClass.html#aa11b56a735b5c2303c2739bef65462c0":[5,0,401,4],
+"struct__GtkStyleContextClass.html#abbb4ec5ca76f7f2b27066ad6e1150bae":[5,0,401,3],
+"struct__GtkSymbolicPaintableInterface.html":[5,0,402],
+"struct__GtkSymbolicPaintableInterface.html#a2e852e4c84769105e65c744c3ad6031e":[5,0,402,1],
+"struct__GtkSymbolicPaintableInterface.html#ad7093b6e19cc2db7efeb29f6941d002f":[5,0,402,0],
+"struct__GtkText.html":[5,0,403],
+"struct__GtkText.html#ad3e39c6c7caba187908c7d53cfa2b63e":[5,0,403,0],
+"struct__GtkTextBuffer.html":[5,0,404],
+"struct__GtkTextBuffer.html#ad846e158d1c8f000857e5514369b646e":[5,0,404,0],
+"struct__GtkTextBuffer.html#adb5fb5ca3f143e62a51b45faae0692be":[5,0,404,1],
+"struct__GtkTextBufferClass.html":[5,0,405],
 "struct__GtkTextBufferClass.html#a0e1d831ea746070c35a500cc9e25f8d2":[5,0,405,6],
 "struct__GtkTextBufferClass.html#a12c5152acd66fc0fcf1e1f06d4c29e50":[5,0,405,17],
 "struct__GtkTextBufferClass.html#a12c539d0a30cfad70c9694a493e8c20f":[5,0,405,16],
@@ -238,16 +249,5 @@ var NAVTREEINDEX361 =
 "struct__PangoAttrColor.html#aa3b133c4a8441759ee99d2f556592929":[5,0,496,1],
 "struct__PangoAttrFloat.html":[5,0,497],
 "struct__PangoAttrFloat.html#a3a56247d130dd387a98e42689aabb0a1":[5,0,497,1],
-"struct__PangoAttrFloat.html#ad94b4f9ea76a5dd5d3ff52c0d1b07e91":[5,0,497,0],
-"struct__PangoAttrFontDesc.html":[5,0,498],
-"struct__PangoAttrFontDesc.html#a57f13797cf3622496eac5275114a0d8c":[5,0,498,1],
-"struct__PangoAttrFontDesc.html#ab63befc97c39e45e2420e95cc865b816":[5,0,498,0],
-"struct__PangoAttrFontFeatures.html":[5,0,499],
-"struct__PangoAttrFontFeatures.html#a17476bc65d2d2baa7d92bd7ae689f39f":[5,0,499,0],
-"struct__PangoAttrFontFeatures.html#af7ed8b3f70dd45132d308bf0847983ed":[5,0,499,1],
-"struct__PangoAttrInt.html":[5,0,501],
-"struct__PangoAttrInt.html#a7bea2d3e39c56931ce5d986f1ecfdd3d":[5,0,501,0],
-"struct__PangoAttrInt.html#af3ed4c56cbb48a54db3d08fe5a3e4266":[5,0,501,1],
-"struct__PangoAttrLanguage.html":[5,0,502],
-"struct__PangoAttrLanguage.html#a28c90aa897a08e586a4d7a5c7057d0df":[5,0,502,1]
+"struct__PangoAttrFloat.html#ad94b4f9ea76a5dd5d3ff52c0d1b07e91":[5,0,497,0]
 };

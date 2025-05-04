@@ -1,5 +1,16 @@
 var NAVTREEINDEX339 =
 {
+"structVkPhysicalDeviceRayTracingPositionFetchFeaturesKHR.html#ad67b9c38462420e7197dee87e40b4bdf":[5,0,1833,2],
+"structVkPhysicalDeviceRayTracingPropertiesNV.html":[5,0,1834],
+"structVkPhysicalDeviceRayTracingPropertiesNV.html#a044edd622044c83f25d0aa532aa18ed6":[5,0,1834,4],
+"structVkPhysicalDeviceRayTracingPropertiesNV.html#a150d6936bfd0bb34a1c40631b15cd5ab":[5,0,1834,3],
+"structVkPhysicalDeviceRayTracingPropertiesNV.html#a1b077c6c4b55d5f391ad40ca6ab86292":[5,0,1834,5],
+"structVkPhysicalDeviceRayTracingPropertiesNV.html#a40f962174493125b7558286d2592616e":[5,0,1834,9],
+"structVkPhysicalDeviceRayTracingPropertiesNV.html#a41ca5224f92411f104c76c3a1bfebe3b":[5,0,1834,6],
+"structVkPhysicalDeviceRayTracingPropertiesNV.html#a45cbc22813e1aa9e1fff14d8a0fbf599":[5,0,1834,7],
+"structVkPhysicalDeviceRayTracingPropertiesNV.html#a6b7793035368ca3006536aab1969d8c5":[5,0,1834,1],
+"structVkPhysicalDeviceRayTracingPropertiesNV.html#ab36940fa41cfbbf719f7c5ef5fc77ae0":[5,0,1834,8],
+"structVkPhysicalDeviceRayTracingPropertiesNV.html#ab502e88b777d40f4f113b850af806741":[5,0,1834,0],
 "structVkPhysicalDeviceRayTracingPropertiesNV.html#af37a65abf976cdda79cd52c0e5f64811":[5,0,1834,2],
 "structVkPhysicalDeviceRayTracingValidationFeaturesNV.html":[5,0,1835],
 "structVkPhysicalDeviceRayTracingValidationFeaturesNV.html#a29c663d9ae770f15ee1eccebaf49b917":[5,0,1835,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX339 =
 "structVkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR.html":[5,0,1873],
 "structVkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR.html#a16a31abda4b8b80dd742018d4729f1c9":[5,0,1873,1],
 "structVkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR.html#aa295cc1f43d63928595c043919f2502f":[5,0,1873,0],
-"structVkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR.html#ab722163231ca86e078224f5e4f1e9f69":[5,0,1873,2],
-"structVkPhysicalDeviceShaderModuleIdentifierFeaturesEXT.html":[5,0,1874],
-"structVkPhysicalDeviceShaderModuleIdentifierFeaturesEXT.html#a9cce34fac9cbac1d0686af904ac1aa24":[5,0,1874,1],
-"structVkPhysicalDeviceShaderModuleIdentifierFeaturesEXT.html#a9cd88c8d894a5dffc10b02ad8c8fc30c":[5,0,1874,2],
-"structVkPhysicalDeviceShaderModuleIdentifierFeaturesEXT.html#abca52a0d725d898edf1c48411b52914e":[5,0,1874,0],
-"structVkPhysicalDeviceShaderModuleIdentifierPropertiesEXT.html":[5,0,1875],
-"structVkPhysicalDeviceShaderModuleIdentifierPropertiesEXT.html#a3e26d438bf01bb21774c145517ee3429":[5,0,1875,2],
-"structVkPhysicalDeviceShaderModuleIdentifierPropertiesEXT.html#ac754e831043f54092be914531026966f":[5,0,1875,1],
-"structVkPhysicalDeviceShaderModuleIdentifierPropertiesEXT.html#acf3e4aca760468c506a9dedc2aeddb6e":[5,0,1875,0],
-"structVkPhysicalDeviceShaderObjectFeaturesEXT.html":[5,0,1876],
-"structVkPhysicalDeviceShaderObjectFeaturesEXT.html#a23158f27b11800d2639126eda6acd7b2":[5,0,1876,1],
-"structVkPhysicalDeviceShaderObjectFeaturesEXT.html#a3716eac99c73528fa93d8c927761bcb3":[5,0,1876,0]
+"structVkPhysicalDeviceShaderMaximalReconvergenceFeaturesKHR.html#ab722163231ca86e078224f5e4f1e9f69":[5,0,1873,2]
 };

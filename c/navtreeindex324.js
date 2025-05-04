@@ -1,5 +1,16 @@
 var NAVTREEINDEX324 =
 {
+"structVkBindMemoryStatusKHR.html#aec35a030a614f68ea2100a51aee01eba":[5,0,1204,1],
+"structVkBindPipelineIndirectCommandNV.html":[5,0,1205],
+"structVkBindPipelineIndirectCommandNV.html#ae5fc9bde9cde82bb98ca543b6c71e65c":[5,0,1205,0],
+"structVkBindShaderGroupIndirectCommandNV.html":[5,0,1206],
+"structVkBindShaderGroupIndirectCommandNV.html#ae60279b4c865ac52668cdd8c4fb735ef":[5,0,1206,0],
+"structVkBindSparseInfo.html":[5,0,1207],
+"structVkBindSparseInfo.html#a18893f5d87b232d66f81462022bb032c":[5,0,1207,6],
+"structVkBindSparseInfo.html#a4d869c04f8ead0ef0147d7968b81c7aa":[5,0,1207,3],
+"structVkBindSparseInfo.html#a54da18d16a8692948172d62bd40b390d":[5,0,1207,9],
+"structVkBindSparseInfo.html#a57317b229975e5ece6aebaf03d39b926":[5,0,1207,5],
+"structVkBindSparseInfo.html#a66040655d1f4a48646ccdc7b237cb87a":[5,0,1207,11],
 "structVkBindSparseInfo.html#a6931c50ed543648319fd1426bb023492":[5,0,1207,0],
 "structVkBindSparseInfo.html#a7063b7b548252d153197bb02d2048820":[5,0,1207,1],
 "structVkBindSparseInfo.html#a8b50d2cce85cd33a176447332dc0c8df":[5,0,1207,8],
@@ -238,16 +249,5 @@ var NAVTREEINDEX324 =
 "structVkCommandBufferInheritanceInfo.html#a0b262cf04f4ab41ee25d88348379e992":[5,0,1249,5],
 "structVkCommandBufferInheritanceInfo.html#aa75de234b0171519801c7cb6bcce9582":[5,0,1249,4],
 "structVkCommandBufferInheritanceInfo.html#ab39ea4f4a719d27325f7d91454cfaa82":[5,0,1249,3],
-"structVkCommandBufferInheritanceInfo.html#ab979e2e8f6fdde9ceacba965ba912173":[5,0,1249,7],
-"structVkCommandBufferInheritanceInfo.html#ac022bae7eafe80c1d2a2583fd819dfb3":[5,0,1249,1],
-"structVkCommandBufferInheritanceInfo.html#ad763c4da66f16a57ab43685781287a62":[5,0,1249,0],
-"structVkCommandBufferInheritanceInfo.html#ae4094eae52e780944768c115d48ddfe9":[5,0,1249,2],
-"structVkCommandBufferInheritanceRenderPassTransformInfoQCOM.html":[5,0,1251],
-"structVkCommandBufferInheritanceRenderPassTransformInfoQCOM.html#a3606e84248b3821e9e4ebf8f8fc780f0":[5,0,1251,0],
-"structVkCommandBufferInheritanceRenderPassTransformInfoQCOM.html#aa8ffb88654b7a2a4f8c3b0aa9ed3939d":[5,0,1251,2],
-"structVkCommandBufferInheritanceRenderPassTransformInfoQCOM.html#ae551a401a0bcd1da2404dd48ff49530c":[5,0,1251,1],
-"structVkCommandBufferInheritanceRenderPassTransformInfoQCOM.html#ae867189d20045a696da5030d9416a3d1":[5,0,1251,3],
-"structVkCommandBufferInheritanceRenderingInfo.html":[5,0,1250],
-"structVkCommandBufferInheritanceRenderingInfo.html#a1b0ae534cf7eb0773c07cd4107feedb5":[5,0,1250,2],
-"structVkCommandBufferInheritanceRenderingInfo.html#a2cbce23b808aa5c8af1412a35c2051ad":[5,0,1250,0]
+"structVkCommandBufferInheritanceInfo.html#ab979e2e8f6fdde9ceacba965ba912173":[5,0,1249,7]
 };

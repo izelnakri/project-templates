@@ -1,5 +1,16 @@
 var NAVTREEINDEX331 =
 {
+"structVkImportMemoryWin32HandleInfoKHR.html":[5,0,1507],
+"structVkImportMemoryWin32HandleInfoKHR.html#a09771f87c7c42bf14ac4b7127be999a0":[5,0,1507,4],
+"structVkImportMemoryWin32HandleInfoKHR.html#a6bc9d6898ba25d243aa146c73b215c62":[5,0,1507,2],
+"structVkImportMemoryWin32HandleInfoKHR.html#aaabfc971fe3d4c5a14e6146bf9f10302":[5,0,1507,1],
+"structVkImportMemoryWin32HandleInfoKHR.html#ae08e4255d70ec10a09db3da21e6b4c22":[5,0,1507,3],
+"structVkImportMemoryWin32HandleInfoKHR.html#aed26a3e32722a5c30aaf9114cefdafbb":[5,0,1507,0],
+"structVkImportMemoryWin32HandleInfoNV.html":[5,0,1508],
+"structVkImportMemoryWin32HandleInfoNV.html#a7d4b1708b6ff1faf37620b79ede7ae31":[5,0,1508,2],
+"structVkImportMemoryWin32HandleInfoNV.html#a830968c34ffc6a4c1d954c977c4f986e":[5,0,1508,1],
+"structVkImportMemoryWin32HandleInfoNV.html#abf9ca24f76ddf92fde2e138b38a1dc67":[5,0,1508,3],
+"structVkImportMemoryWin32HandleInfoNV.html#ae399fde8fbb554cd5dca52853e6044c2":[5,0,1508,0],
 "structVkImportMemoryZirconHandleInfoFUCHSIA.html":[5,0,1509],
 "structVkImportMemoryZirconHandleInfoFUCHSIA.html#a2b6faf65224c26519fffe6db539c1183":[5,0,1509,2],
 "structVkImportMemoryZirconHandleInfoFUCHSIA.html#a5969b7b63b407351d467042f1ee990af":[5,0,1509,3],
@@ -238,16 +249,5 @@ var NAVTREEINDEX331 =
 "structVkMemoryAllocateFlagsInfo.html#abc408d150dce8a09b2742c234fec8586":[5,0,1552,1],
 "structVkMemoryAllocateFlagsInfo.html#ac15d75f07bacc359b2161faa5cae783f":[5,0,1552,3],
 "structVkMemoryAllocateFlagsInfo.html#acafcaa7eadc8fe38661e70a594a41f40":[5,0,1552,2],
-"structVkMemoryAllocateFlagsInfo.html#afabc5f50cb5112738b7fc1c6f6342cce":[5,0,1552,0],
-"structVkMemoryAllocateInfo.html":[5,0,1553],
-"structVkMemoryAllocateInfo.html#a22fbbb0478ef090166205bd5d37fbcf7":[5,0,1553,3],
-"structVkMemoryAllocateInfo.html#a2660ad821a4c767d4fb51cfedd4e2d65":[5,0,1553,1],
-"structVkMemoryAllocateInfo.html#a75e3b738318f8247395f02ea9d6a22ad":[5,0,1553,0],
-"structVkMemoryAllocateInfo.html#a93a9b6ee1e272c5a7aad3d7a96d2d0da":[5,0,1553,2],
-"structVkMemoryBarrier.html":[5,0,1554],
-"structVkMemoryBarrier.html#a009343c923f7ddfb6d7ec5481efd3b71":[5,0,1554,3],
-"structVkMemoryBarrier.html#a364f90c26c18f5626f7777a419b8fb08":[5,0,1554,1],
-"structVkMemoryBarrier.html#a71860149fad2b072df45c012e3cb208f":[5,0,1554,0],
-"structVkMemoryBarrier.html#a79b075e5dd1819daf9767e328368a630":[5,0,1554,2],
-"structVkMemoryBarrier2.html":[5,0,1555]
+"structVkMemoryAllocateFlagsInfo.html#afabc5f50cb5112738b7fc1c6f6342cce":[5,0,1552,0]
 };

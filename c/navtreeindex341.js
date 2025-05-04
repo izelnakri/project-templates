@@ -1,5 +1,16 @@
 var NAVTREEINDEX341 =
 {
+"structVkPhysicalDeviceVulkan11Properties.html#a71e088fca03e5724a6755006b88b9cc6":[5,0,1921,16],
+"structVkPhysicalDeviceVulkan11Properties.html#a72fe5019f1c6e64ec37a71011666771a":[5,0,1921,12],
+"structVkPhysicalDeviceVulkan11Properties.html#a800c4510915b0cf2753578859b3be919":[5,0,1921,11],
+"structVkPhysicalDeviceVulkan11Properties.html#a9847cdc93da6b3a57ea177818c262be1":[5,0,1921,2],
+"structVkPhysicalDeviceVulkan11Properties.html#a9c6cf4fe79487fec2bcf9f3ab3c5057f":[5,0,1921,10],
+"structVkPhysicalDeviceVulkan11Properties.html#a9f0875c03f19b3170dfad4c0f1077710":[5,0,1921,7],
+"structVkPhysicalDeviceVulkan11Properties.html#aa94a932ac0694a35c2ac0dc9ed4927e9":[5,0,1921,13],
+"structVkPhysicalDeviceVulkan11Properties.html#ab26fc803ae1540ad3815f0a69f109817":[5,0,1921,14],
+"structVkPhysicalDeviceVulkan11Properties.html#abaa6aeddd4ebe06d848a226e538b28f2":[5,0,1921,1],
+"structVkPhysicalDeviceVulkan11Properties.html#af7d1f6fe8fcb1d2370aeabb6295daf06":[5,0,1921,5],
+"structVkPhysicalDeviceVulkan11Properties.html#af8c28f1471e1c4ad1a5d4ffb4b4e2f43":[5,0,1921,8],
 "structVkPhysicalDeviceVulkan12Features.html":[5,0,1922],
 "structVkPhysicalDeviceVulkan12Features.html#a006c9c38f32115f3e70e99e53e49edf4":[5,0,1922,43],
 "structVkPhysicalDeviceVulkan12Features.html#a009242268cff35779cebddaa862cd840":[5,0,1922,24],
@@ -238,16 +249,5 @@ var NAVTREEINDEX341 =
 "structVkPipelineCacheCreateInfo.html#a6f06f97d0c848179a3fba4619f8e6d04":[5,0,1939,1],
 "structVkPipelineCacheCreateInfo.html#a70dcc2189087fa18e3ec64f957196901":[5,0,1939,3],
 "structVkPipelineCacheCreateInfo.html#a734e6589e48fa13f4fb15abdf50cc80a":[5,0,1939,4],
-"structVkPipelineCacheHeaderVersionOne.html":[5,0,1940],
-"structVkPipelineCacheHeaderVersionOne.html#a00bb15037ae19b3b95be70159badce04":[5,0,1940,2],
-"structVkPipelineCacheHeaderVersionOne.html#a060183120e2df21a056c45cafec9d6c0":[5,0,1940,1],
-"structVkPipelineCacheHeaderVersionOne.html#a293c5d4271e439a5245ef90a7d6c4f52":[5,0,1940,0],
-"structVkPipelineCacheHeaderVersionOne.html#a8df843305a06ab3c01e3b43a5d206dec":[5,0,1940,4],
-"structVkPipelineCacheHeaderVersionOne.html#abe81e054b0cc1d09c5240166fdc327a4":[5,0,1940,3],
-"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html":[5,0,1941],
-"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html#a0848abf534ed62a115972f78c0f54f22":[5,0,1941,3],
-"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html#a6ed9fc7821bacaae12b4aa3c3543a30b":[5,0,1941,1],
-"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html#ab8eaf1abbeb2cfa14d34d684f46af137":[5,0,1941,2],
-"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html#aca9f80bed9574129f0ef14117dd30127":[5,0,1941,4],
-"structVkPipelineColorBlendAdvancedStateCreateInfoEXT.html#afaa15837293e35bb823c3ce0b22dce1d":[5,0,1941,0]
+"structVkPipelineCacheHeaderVersionOne.html":[5,0,1940]
 };

@@ -27,7 +27,7 @@ var searchData=
   ['ymin_24',['yMin',['../structFT__BBox__.html#a959ca1d5bc1c5338da0d85c8e7135f4e',1,'FT_BBox_::yMin'],['../structTT__Header__.html#ac6aad4966bac8a96c5bc48765b3d694a',1,'TT_Header_::yMin']]],
   ['ynvar_25',['ynVar',['../sqlite3_8c.html#a8f09a8707e1c321e17c3625018c599ce',1,'sqlite3.c']]],
   ['youngcollection_26',['youngcollection',['../lua-5_84_83_2src_2lgc_8c.html#a7528878b4bb9da15db0a23fab038a339',1,'lgc.c']]],
-  ['your_20customizations_27',['Share your customizations',['../md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md7',1,'']]],
+  ['your_20customizations_27',['Share your customizations',['../md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md19',1,'']]],
   ['ystrikeoutposition_28',['yStrikeoutPosition',['../structTT__OS2__.html#ab5c15642248db1ca5c40c96b684c82d0',1,'TT_OS2_']]],
   ['ystrikeoutsize_29',['yStrikeoutSize',['../structTT__OS2__.html#a372e2b573bf86bc9ffb7a1a80c826455',1,'TT_OS2_']]],
   ['ysubscriptxoffset_30',['ySubscriptXOffset',['../structTT__OS2__.html#ab471c53b6e8a1c1f81cc410959bb5851',1,'TT_OS2_']]],

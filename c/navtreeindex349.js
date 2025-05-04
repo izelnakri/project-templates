@@ -1,5 +1,16 @@
 var NAVTREEINDEX349 =
 {
+"structVkVideoFormatPropertiesKHR.html#af8c7253641ebb4abb0088c6141b85c1e":[5,0,2225,1],
+"structVkVideoInlineQueryInfoKHR.html":[5,0,2226],
+"structVkVideoInlineQueryInfoKHR.html#a1cad122494b5e3e8f367cba8fda28d33":[5,0,2226,1],
+"structVkVideoInlineQueryInfoKHR.html#a3144722efba3960ad1109fc403261e1e":[5,0,2226,0],
+"structVkVideoInlineQueryInfoKHR.html#a4ce872ccd1418291b465c311f8b251bc":[5,0,2226,3],
+"structVkVideoInlineQueryInfoKHR.html#a7c72363149e71f1a6f072b74bbaebd2a":[5,0,2226,2],
+"structVkVideoInlineQueryInfoKHR.html#adce588d4a6a2b0e181b15ca5f22099b9":[5,0,2226,4],
+"structVkVideoPictureResourceInfoKHR.html":[5,0,2227],
+"structVkVideoPictureResourceInfoKHR.html#a58915607e96576a446a00fa60eac42ac":[5,0,2227,2],
+"structVkVideoPictureResourceInfoKHR.html#a5f3c4653bbc8d9ac0e2278ba5da2d1cb":[5,0,2227,0],
+"structVkVideoPictureResourceInfoKHR.html#a820f34fdef2f42c6a0abe05a5a5c78a7":[5,0,2227,3],
 "structVkVideoPictureResourceInfoKHR.html#a9154b44e88dc2934c926406a64c0bd76":[5,0,2227,4],
 "structVkVideoPictureResourceInfoKHR.html#abfad19d0625d2002b37009ef37c51c2b":[5,0,2227,1],
 "structVkVideoPictureResourceInfoKHR.html#af5025ae90d6a47eb22896e4404dc0e8f":[5,0,2227,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX349 =
 "structWalker.html#afa30acf714235acde42049207dbad838":[5,0,2260,6],
 "structWalker.html#afb8e209cee52c2f25e89b89bdbeb25f5":[5,0,2260,2],
 "structWhereAndInfo.html":[5,0,2263],
-"structWhereAndInfo.html#a01cea99f069b1e598004a1cd0d0c3a80":[5,0,2263,0],
-"structWhereClause.html":[5,0,2264],
-"structWhereClause.html#a140d726a3e20ac7b6853d539c59add72":[5,0,2264,0],
-"structWhereClause.html#a40045b5806b481237c7fc4c0e21cd29b":[5,0,2264,7],
-"structWhereClause.html#a4acb8640bc9f42752900de5735bcd8e0":[5,0,2264,1],
-"structWhereClause.html#a6f72d61f416a323f39a8d3e2be62f607":[5,0,2264,6],
-"structWhereClause.html#a7a56a5fe1ab6603e930f3b5372ff2f71":[5,0,2264,5],
-"structWhereClause.html#ab4385fc1d8f21dce3b43cdae28d67d9a":[5,0,2264,2],
-"structWhereClause.html#ab84924c3c78af1ab387ab3919c5031c4":[5,0,2264,4],
-"structWhereClause.html#ac92b93d65d4c3d9216707a049a4edb1c":[5,0,2264,3],
-"structWhereConst.html":[5,0,2265],
-"structWhereConst.html#a35fb4e9d49659ccc8d57eeba59353523":[5,0,2265,1]
+"structWhereAndInfo.html#a01cea99f069b1e598004a1cd0d0c3a80":[5,0,2263,0]
 };

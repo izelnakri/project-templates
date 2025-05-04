@@ -1,5 +1,16 @@
 var NAVTREEINDEX330 =
 {
+"structVkImageCompressionPropertiesEXT.html#aa9ffb6ecda3d6dd36d0383ffd44fed8b":[5,0,1465,0],
+"structVkImageCompressionPropertiesEXT.html#ab32b7179e3e2eff7e661b7f3f5f24830":[5,0,1465,2],
+"structVkImageConstraintsInfoFUCHSIA.html":[5,0,1466],
+"structVkImageConstraintsInfoFUCHSIA.html#a0ae47955bd4997e6c887e3f8ae21ceb6":[5,0,1466,5],
+"structVkImageConstraintsInfoFUCHSIA.html#a11dd2333074ce2c8e3668e0e2457834a":[5,0,1466,4],
+"structVkImageConstraintsInfoFUCHSIA.html#a6e44c918b527167503e51008187a0889":[5,0,1466,2],
+"structVkImageConstraintsInfoFUCHSIA.html#a75bfd275b93f0cc8fb2a91b437679788":[5,0,1466,0],
+"structVkImageConstraintsInfoFUCHSIA.html#a85583c4da2f0156e5c0d215fe74a09a7":[5,0,1466,3],
+"structVkImageConstraintsInfoFUCHSIA.html#aa5fe44fbc261959db39aaf9ccf1a6fb7":[5,0,1466,1],
+"structVkImageCopy.html":[5,0,1467],
+"structVkImageCopy.html#a11c0caef139634ece994552bac4951f8":[5,0,1467,2],
 "structVkImageCopy.html#a98fe25f1deb142efe4f26c0e0b541a43":[5,0,1467,3],
 "structVkImageCopy.html#aaaad50075b6078ace7a50f213e253232":[5,0,1467,4],
 "structVkImageCopy.html#ab0eae0bde779e2ec807e4709321bca68":[5,0,1467,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX330 =
 "structVkImportMemoryHostPointerInfoEXT.html#a1c5755765b44b27026a49314ba727051":[5,0,1506,3],
 "structVkImportMemoryHostPointerInfoEXT.html#a7fe32c04d6926bbb1d3d6d124811da14":[5,0,1506,0],
 "structVkImportMemoryHostPointerInfoEXT.html#aa8d24893eca28f62a15e1311f881605a":[5,0,1506,2],
-"structVkImportMemoryHostPointerInfoEXT.html#aacbcc22c83aeba3e9c17e8cce387ec03":[5,0,1506,1],
-"structVkImportMemoryWin32HandleInfoKHR.html":[5,0,1507],
-"structVkImportMemoryWin32HandleInfoKHR.html#a09771f87c7c42bf14ac4b7127be999a0":[5,0,1507,4],
-"structVkImportMemoryWin32HandleInfoKHR.html#a6bc9d6898ba25d243aa146c73b215c62":[5,0,1507,2],
-"structVkImportMemoryWin32HandleInfoKHR.html#aaabfc971fe3d4c5a14e6146bf9f10302":[5,0,1507,1],
-"structVkImportMemoryWin32HandleInfoKHR.html#ae08e4255d70ec10a09db3da21e6b4c22":[5,0,1507,3],
-"structVkImportMemoryWin32HandleInfoKHR.html#aed26a3e32722a5c30aaf9114cefdafbb":[5,0,1507,0],
-"structVkImportMemoryWin32HandleInfoNV.html":[5,0,1508],
-"structVkImportMemoryWin32HandleInfoNV.html#a7d4b1708b6ff1faf37620b79ede7ae31":[5,0,1508,2],
-"structVkImportMemoryWin32HandleInfoNV.html#a830968c34ffc6a4c1d954c977c4f986e":[5,0,1508,1],
-"structVkImportMemoryWin32HandleInfoNV.html#abf9ca24f76ddf92fde2e138b38a1dc67":[5,0,1508,3],
-"structVkImportMemoryWin32HandleInfoNV.html#ae399fde8fbb554cd5dca52853e6044c2":[5,0,1508,0]
+"structVkImportMemoryHostPointerInfoEXT.html#aacbcc22c83aeba3e9c17e8cce387ec03":[5,0,1506,1]
 };

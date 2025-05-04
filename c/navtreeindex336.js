@@ -1,5 +1,16 @@
 var NAVTREEINDEX336 =
 {
+"structVkPhysicalDeviceFrameBoundaryFeaturesEXT.html#a57de7c6f0607e834cf1549b62170b46f":[5,0,1716,2],
+"structVkPhysicalDeviceFrameBoundaryFeaturesEXT.html#ae069f324e16ffd615edbfee52f1a1bbf":[5,0,1716,0],
+"structVkPhysicalDeviceFrameBoundaryFeaturesEXT.html#af62f2dd3833c1bd802d884acfd643cc8":[5,0,1716,1],
+"structVkPhysicalDeviceGlobalPriorityQueryFeaturesKHR.html":[5,0,1717],
+"structVkPhysicalDeviceGlobalPriorityQueryFeaturesKHR.html#a02ec8f00a295c40dd56d432fbd186a97":[5,0,1717,2],
+"structVkPhysicalDeviceGlobalPriorityQueryFeaturesKHR.html#a7b74288cc3a9fd69fc7a33bb8bc9ca51":[5,0,1717,0],
+"structVkPhysicalDeviceGlobalPriorityQueryFeaturesKHR.html#a97f995d21f0a88c46ba29e852a9f90f5":[5,0,1717,1],
+"structVkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT.html":[5,0,1718],
+"structVkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT.html#a595ea86472b061c694966ea9cc5e03ae":[5,0,1718,2],
+"structVkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT.html#a5aa5ea8dcdb72d905f5b8f752ce1a321":[5,0,1718,0],
+"structVkPhysicalDeviceGraphicsPipelineLibraryFeaturesEXT.html#ae77085400f66b4b4dca14bfe45e39bef":[5,0,1718,1],
 "structVkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT.html":[5,0,1719],
 "structVkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT.html#a0b065267181d314aed2b4acf2dac77ee":[5,0,1719,0],
 "structVkPhysicalDeviceGraphicsPipelineLibraryPropertiesEXT.html#a761adbc3e44c7a8de957a350664db267":[5,0,1719,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX336 =
 "structVkPhysicalDeviceLimits.html#a9a8e9ca4650f3e8ee3b4a65804d2a47b":[5,0,1753,50],
 "structVkPhysicalDeviceLimits.html#a9c72df46e5fedc37ae1392c99ff1baac":[5,0,1753,37],
 "structVkPhysicalDeviceLimits.html#aa1b6e64a829245f432d15c386b5056c8":[5,0,1753,8],
-"structVkPhysicalDeviceLimits.html#aa3adac54a7f9b1338037699e170fc981":[5,0,1753,5],
-"structVkPhysicalDeviceLimits.html#aaba7bf67860c9600a8bf56ec07c2de79":[5,0,1753,56],
-"structVkPhysicalDeviceLimits.html#ab2cb332cec29a5fd5e9283f52727b6c3":[5,0,1753,6],
-"structVkPhysicalDeviceLimits.html#ab47b44c012b26cef6d50f974b8b784c7":[5,0,1753,59],
-"structVkPhysicalDeviceLimits.html#ab5442e8409472eea54fa70c388bc1ad1":[5,0,1753,64],
-"structVkPhysicalDeviceLimits.html#ab66a7872695481b3ac13e71ee89f43d8":[5,0,1753,35],
-"structVkPhysicalDeviceLimits.html#aba4b1dfaaa6376ad1709a9e0ea3b611f":[5,0,1753,44],
-"structVkPhysicalDeviceLimits.html#ac0706ce0407e3adea5e2e768ec1fbaad":[5,0,1753,48],
-"structVkPhysicalDeviceLimits.html#ac0e59921780a4cf81060e602d70905b3":[5,0,1753,62],
-"structVkPhysicalDeviceLimits.html#ac1069a72fad0035962e4a230aa4af73d":[5,0,1753,61],
-"structVkPhysicalDeviceLimits.html#ac33992d6c3d92c66629cc9936080c656":[5,0,1753,51],
-"structVkPhysicalDeviceLimits.html#aca6c996b2b635b5324c7c080efea704c":[5,0,1753,63]
+"structVkPhysicalDeviceLimits.html#aa3adac54a7f9b1338037699e170fc981":[5,0,1753,5]
 };

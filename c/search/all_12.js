@@ -3219,7 +3219,7 @@ var searchData=
   ['progress_5fhandler_3216',['progress_handler',['../structsqlite3__api__routines.html#a58d79a7091ade0d1630d62ecf1931e9d',1,'sqlite3_api_routines']]],
   ['progress_5fudata_3217',['progress_udata',['../structsdb.html#aa72900508dd19b38ca28f71e861e31f6',1,'sdb']]],
   ['project_3218',['project',['../lua-5_84_83_2src_2lmathlib_8c.html#a13ece5b7fa9dd48246430a48dec238b1',1,'lmathlib.c']]],
-  ['project_20template_3219',['My C Project Template',['../index.html',1,'']]],
+  ['project_20template_20github_20user_20fetcher_3219',['My C Project Template - GitHub User Fetcher',['../index.html',1,'']]],
   ['prollbackarg_3220',['pRollbackArg',['../structsqlite3.html#a3215967241f15d4599132a8dc2adfb93',1,'sqlite3']]],
   ['propagateall_3221',['propagateall',['../lua-5_81_85_2src_2lgc_8c.html#a5dc2b7a11d04f03d72a0f691eaae0582',1,'propagateall(global_State *g):&#160;lgc.c'],['../lua-5_82_84_2src_2lgc_8c.html#a9a291e8a23c3611b6c79d792fe421f5c',1,'propagateall(global_State *g):&#160;lgc.c'],['../lua-5_83_86_2src_2lgc_8c.html#a9a291e8a23c3611b6c79d792fe421f5c',1,'propagateall(global_State *g):&#160;lgc.c'],['../lua-5_84_83_2src_2lgc_8c.html#a344b3515bc8cbe737fbdd9fa1521d17d',1,'propagateall(global_State *g):&#160;lgc.c']]],
   ['propagateconstantexprrewrite_3222',['propagateConstantExprRewrite',['../sqlite3_8c.html#ad46f9049e689b95b672d0a98693e9c80',1,'sqlite3.c']]],

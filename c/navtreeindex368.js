@@ -1,5 +1,16 @@
 var NAVTREEINDEX368 =
 {
+"structlua__Debug.html#ab87c2a6ef686abf10da683f7e9af1b23":[5,0,873,13],
+"structlua__Debug.html#ab87c2a6ef686abf10da683f7e9af1b23":[5,0,873,14],
+"structlua__Debug.html#adb5efd1576224ce9d14f42f8bfee7a1a":[5,0,873,11],
+"structlua__Debug.html#af162e2b3fd4c8ce1ef502b8af2872dac":[5,0,873,10],
+"structlua__State.html":[5,0,875],
+"structlua__State.html#a01c9be39c5c49b7163154450af227198":[5,0,875,6],
+"structlua__State.html#a09de3a7c6d3bcb6c2b0d26a81bb8d44b":[5,0,875,10],
+"structlua__State.html#a0b6456a08b1283b41f93626154c62f59":[5,0,875,30],
+"structlua__State.html#a195f448e76fd404953fa1962d28212a3":[5,0,875,36],
+"structlua__State.html#a1d4ee1613c41d6100db9e0c73217b41f":[5,0,875,16],
+"structlua__State.html#a24099a91bbfa23048f1b940f26819f44":[5,0,875,24],
 "structlua__State.html#a27e1d5122ef7fffae7542814c72fdd2f":[5,0,875,31],
 "structlua__State.html#a2e61b336dd088d36d92e5a2cc68f66df":[5,0,875,17],
 "structlua__State.html#a44530127453a374634f7ad22eee9ec6c":[5,0,875,33],
@@ -238,16 +249,5 @@ var NAVTREEINDEX368 =
 "structmg__workerTLS.html#a1d9e297c87be3d5eebf4d653a3816a46":[5,0,910,3],
 "structmg__workerTLS.html#ad84dcf3abe6cc2f92de7cced66bdddd1":[5,0,910,0],
 "structmg__workerTLS.html#afb66eb6c9a175525b219dfcda7b40c7e":[5,0,910,1],
-"structmg__workerTLS.html#aff70c6a5939daba5919683e36d2e6ff9":[5,0,910,2],
-"structpool__free__entry.html":[5,0,931],
-"structpool__free__entry.html#ad130437e86d53cb5c10fcdde662579ca":[5,0,931,0],
-"structpool__header.html":[5,0,932],
-"structpool__header.html#a47a48ab3e1526b9d601420f80b8a1e95":[5,0,932,3],
-"structpool__header.html#a4a94615bdad948339098d9426420bbda":[5,0,932,2],
-"structpool__header.html#ab5d83e447c3b5dcbbf066f8406ff1821":[5,0,932,0],
-"structpool__header.html#acce86f204f8d6054b90f0c712de90f13":[5,0,932,4],
-"structpool__header.html#ae604a6a6f43b7c34d0887d06cb809850":[5,0,932,1],
-"structpool__size__spec.html":[5,0,933],
-"structpool__size__spec.html#a31360473c4bf4dac0a036341c58ee42b":[5,0,933,1],
-"structpool__size__spec.html#a5e244e7bd782f0b3b219d3fa8688d4ed":[5,0,933,0]
+"structmg__workerTLS.html#aff70c6a5939daba5919683e36d2e6ff9":[5,0,910,2]
 };

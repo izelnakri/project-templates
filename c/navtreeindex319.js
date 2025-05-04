@@ -1,5 +1,16 @@
 var NAVTREEINDEX319 =
 {
+"structStdVideoEncodeH265WeightTable.html":[5,0,1057],
+"structStdVideoEncodeH265WeightTable.html#a1dfc9f14fbfbddfd41361564503a54cf":[5,0,1057,7],
+"structStdVideoEncodeH265WeightTable.html#a4c941d3674a2fc02e309adaa6d2bcd89":[5,0,1057,2],
+"structStdVideoEncodeH265WeightTable.html#a528580720c1b2a8b6537fdcc58cf5da4":[5,0,1057,1],
+"structStdVideoEncodeH265WeightTable.html#a5bdb7c713296187a529e13794ab511cc":[5,0,1057,5],
+"structStdVideoEncodeH265WeightTable.html#a7fa560c0af03567bc4ada05a0d363b0c":[5,0,1057,4],
+"structStdVideoEncodeH265WeightTable.html#a87d00b6b02f6140519dc888d74dcdb48":[5,0,1057,8],
+"structStdVideoEncodeH265WeightTable.html#aafca7c6255e0c0375dea96c70dbdfcfa":[5,0,1057,9],
+"structStdVideoEncodeH265WeightTable.html#abc29f724d5ef32ae933290e77e0efe54":[5,0,1057,10],
+"structStdVideoEncodeH265WeightTable.html#acbf21222cd0a952d7f5a11081e0f9be6":[5,0,1057,0],
+"structStdVideoEncodeH265WeightTable.html#ae8823fdb0e346b3fe8e04fa29373f9bc":[5,0,1057,3],
 "structStdVideoEncodeH265WeightTable.html#ae97240392e674deeda92bb0d68320f81":[5,0,1057,6],
 "structStdVideoEncodeH265WeightTableFlags.html":[5,0,1058],
 "structStdVideoEncodeH265WeightTableFlags.html#a1cca34702f3922c21fca544c80dd0882":[5,0,1058,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX319 =
 "structStdVideoH265ScalingLists.html#adc6242e8547d7bd6412dd890d81bc620":[5,0,1076,3],
 "structStdVideoH265SequenceParameterSet.html":[5,0,1077],
 "structStdVideoH265SequenceParameterSet.html#a060f6b32af19368deef3d8edead98785":[5,0,1077,6],
-"structStdVideoH265SequenceParameterSet.html#a0945ea775b97c22c1175696695fa9d79":[5,0,1077,1],
-"structStdVideoH265SequenceParameterSet.html#a15cd7ed995fa9220ee8c6d7768a19812":[5,0,1077,13],
-"structStdVideoH265SequenceParameterSet.html#a1c9272f619bf6d4ca20bb3762536fdc6":[5,0,1077,9],
-"structStdVideoH265SequenceParameterSet.html#a1ed8329f9da777cae82c50eb1226cf64":[5,0,1077,8],
-"structStdVideoH265SequenceParameterSet.html#a23f51e3646daa812872ae6ae0b879dcc":[5,0,1077,14],
-"structStdVideoH265SequenceParameterSet.html#a26e0eea690669be36df8c06c0bd374a0":[5,0,1077,27],
-"structStdVideoH265SequenceParameterSet.html#a30c860d592c9e077ed5af8313890436f":[5,0,1077,38],
-"structStdVideoH265SequenceParameterSet.html#a31a3b676960c0ce20b5b04d95b09ed4e":[5,0,1077,35],
-"structStdVideoH265SequenceParameterSet.html#a33e2c3a74fb3ec70d10dc0c673a37952":[5,0,1077,34],
-"structStdVideoH265SequenceParameterSet.html#a38dbfd8062918a9edf30f64493776e1f":[5,0,1077,3],
-"structStdVideoH265SequenceParameterSet.html#a39a233e1d35cf71dafff1e9352b81e37":[5,0,1077,36],
-"structStdVideoH265SequenceParameterSet.html#a3cb1a248c31711277f8da3ab6863a40d":[5,0,1077,16]
+"structStdVideoH265SequenceParameterSet.html#a0945ea775b97c22c1175696695fa9d79":[5,0,1077,1]
 };

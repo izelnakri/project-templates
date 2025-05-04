@@ -1,5 +1,16 @@
 var NAVTREEINDEX354 =
 {
+"struct__GInetSocketAddress.html#a0d7b831cb6049dfe6deae6372cc6d55a":[5,0,126,0],
+"struct__GInetSocketAddress.html#a675f8806e26a7cd3140adca8d1b89473":[5,0,126,1],
+"struct__GInetSocketAddressClass.html":[5,0,127],
+"struct__GInetSocketAddressClass.html#a2fdad9d3c737515b8c2d0f6432f08ce2":[5,0,127,0],
+"struct__GInitableIface.html":[5,0,128],
+"struct__GInitableIface.html#a65cbd93f5c4727144265b6e94d690a5e":[5,0,128,0],
+"struct__GInitableIface.html#a824c416f61cb064c5e87f3d7e2de5d11":[5,0,128,1],
+"struct__GInputMessage.html":[5,0,129],
+"struct__GInputMessage.html#a09bd49b141ba46cd43d4a0cb78de8303":[5,0,129,4],
+"struct__GInputMessage.html#a161c71012bd0f5e21b1592da59bcd3f4":[5,0,129,2],
+"struct__GInputMessage.html#a7e95b3f6b2c9a91f39d30ce4e5f6f79e":[5,0,129,3],
 "struct__GInputMessage.html#a840370f8d45cb457292ac5d85c075e51":[5,0,129,1],
 "struct__GInputMessage.html#a858328889ecaebf5b4063d732d81d94f":[5,0,129,0],
 "struct__GInputMessage.html#ab964daea84ae8c878a3abf49b091d5c0":[5,0,129,5],
@@ -238,16 +249,5 @@ var NAVTREEINDEX354 =
 "struct__GOutputMessage.html#a1a7601310d1a7799627d27c3af74b479":[5,0,176,0],
 "struct__GOutputMessage.html#a388ca9622af0305bbe56cd37b95b9806":[5,0,176,2],
 "struct__GOutputMessage.html#a5e68607d70fa857c30feb731a537dc7b":[5,0,176,4],
-"struct__GOutputMessage.html#a6b70461ff8527402238fa3b44c215be6":[5,0,176,1],
-"struct__GOutputMessage.html#acd930fbe7fc7d81400cd35e6a9a2a731":[5,0,176,3],
-"struct__GOutputStream.html":[5,0,177],
-"struct__GOutputStream.html#a0f8e831436638b4ef7c1435497399664":[5,0,177,1],
-"struct__GOutputStream.html#ae22d1d25e0323712171daea76a8d84db":[5,0,177,0],
-"struct__GOutputStreamClass.html":[5,0,178],
-"struct__GOutputStreamClass.html#a1ce01cfe5b37dde26a5422c086114611":[5,0,178,1],
-"struct__GOutputStreamClass.html#a271ecf5f96317b027fb7963282f633af":[5,0,178,9],
-"struct__GOutputStreamClass.html#a3d555a8b052477af9bacb1ead572904c":[5,0,178,2],
-"struct__GOutputStreamClass.html#a3ff9b34e365c36c976ba4abe63fac541":[5,0,178,8],
-"struct__GOutputStreamClass.html#a42560e9bed2ef5856d48d036d38f09cb":[5,0,178,6],
-"struct__GOutputStreamClass.html#a521a0c630dfc133d3cff5e50526c620f":[5,0,178,4]
+"struct__GOutputMessage.html#a6b70461ff8527402238fa3b44c215be6":[5,0,176,1]
 };

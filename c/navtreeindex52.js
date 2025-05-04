@@ -248,6 +248,6 @@ var NAVTREEINDEX52 =
 "duktape-1_85_82_2src_2duk__config_8h.html#a7996d6880278fb7605a8758639e694cc":[6,0,6,0,0,0,1,0,20],
 "duktape-1_85_82_2src_2duk__config_8h.html#a79afea6036b1b68a01a72301aeb3882f":[6,0,6,0,0,0,1,0,113],
 "duktape-1_85_82_2src_2duk__config_8h.html#a7b82c7113050140401feb4610b30b4cc":[6,0,6,0,0,0,1,0,215],
-"duktape-1_85_82_2src_2duk__config_8h.html#a7bb636cf3007898ec6e5f8e978741660":[6,0,6,0,0,0,1,0,102],
-"duktape-1_85_82_2src_2duk__config_8h.html#a7bb636cf3007898ec6e5f8e978741660":[6,0,6,0,0,0,1,0,101]
+"duktape-1_85_82_2src_2duk__config_8h.html#a7bb636cf3007898ec6e5f8e978741660":[6,0,6,0,0,0,1,0,101],
+"duktape-1_85_82_2src_2duk__config_8h.html#a7bb636cf3007898ec6e5f8e978741660":[6,0,6,0,0,0,1,0,102]
 };

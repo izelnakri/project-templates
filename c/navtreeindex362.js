@@ -1,5 +1,16 @@
 var NAVTREEINDEX362 =
 {
+"struct__PangoAttrFontDesc.html":[5,0,498],
+"struct__PangoAttrFontDesc.html#a57f13797cf3622496eac5275114a0d8c":[5,0,498,1],
+"struct__PangoAttrFontDesc.html#ab63befc97c39e45e2420e95cc865b816":[5,0,498,0],
+"struct__PangoAttrFontFeatures.html":[5,0,499],
+"struct__PangoAttrFontFeatures.html#a17476bc65d2d2baa7d92bd7ae689f39f":[5,0,499,0],
+"struct__PangoAttrFontFeatures.html#af7ed8b3f70dd45132d308bf0847983ed":[5,0,499,1],
+"struct__PangoAttrInt.html":[5,0,501],
+"struct__PangoAttrInt.html#a7bea2d3e39c56931ce5d986f1ecfdd3d":[5,0,501,0],
+"struct__PangoAttrInt.html#af3ed4c56cbb48a54db3d08fe5a3e4266":[5,0,501,1],
+"struct__PangoAttrLanguage.html":[5,0,502],
+"struct__PangoAttrLanguage.html#a28c90aa897a08e586a4d7a5c7057d0df":[5,0,502,1],
 "struct__PangoAttrLanguage.html#ad343d88a1f3df8fcde8ec514da9fa3f9":[5,0,502,0],
 "struct__PangoAttrShape.html":[5,0,503],
 "struct__PangoAttrShape.html#a029f1e9cd473e6c37ef6291d0c12847d":[5,0,503,3],
@@ -238,16 +249,5 @@ var NAVTREEINDEX362 =
 "struct__PangoRenderer.html#ac767b415149e694b3deefb4b187e0394":[5,0,544,4],
 "struct__PangoRenderer.html#ad6226de2fd7beff9655c49be3e63f259":[5,0,544,1],
 "struct__PangoRenderer.html#ada14fe2b3f02e808f694f0d11dfd9fe8":[5,0,544,0],
-"struct__PangoRendererClass.html":[5,0,545],
-"struct__PangoRendererClass.html#a1a563f26e48e36eecdf0d283de6705cc":[5,0,545,10],
-"struct__PangoRendererClass.html#a211a22b28d18cb79dc5d0d8dc6eafc7d":[5,0,545,6],
-"struct__PangoRendererClass.html#a2154407b9e339428d33e2c1076b608c1":[5,0,545,1],
-"struct__PangoRendererClass.html#a24321a1279394c9fd04edb32c9418b27":[5,0,545,0],
-"struct__PangoRendererClass.html#a3a2a9740acc38cd6236de156f6538391":[5,0,545,5],
-"struct__PangoRendererClass.html#a59c85e035ab06370c0f0dc3f5e4521e5":[5,0,545,4],
-"struct__PangoRendererClass.html#a63bcb2646ba0fb9e9ac25b33d72e2886":[5,0,545,3],
-"struct__PangoRendererClass.html#a6d8f4fd4cec81c5617085b593433d8d7":[5,0,545,13],
-"struct__PangoRendererClass.html#aad2acdd33245327a81783e7986ef265a":[5,0,545,7],
-"struct__PangoRendererClass.html#abcc82fe28a43dc90ed83d7d0ec8021c1":[5,0,545,11],
-"struct__PangoRendererClass.html#ac12b6c1d3599d40211824ab7c2ad94d5":[5,0,545,9]
+"struct__PangoRendererClass.html":[5,0,545]
 };

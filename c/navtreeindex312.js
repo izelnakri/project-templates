@@ -1,5 +1,16 @@
 var NAVTREEINDEX312 =
 {
+"structFT__Glyph__Class__.html#af7f406e5ea20a6614c946746938830c9":[5,0,733,5],
+"structFT__Glyph__Class__.html#afc78dcdc4802760ebcaccf3a7b6cd088":[5,0,733,1],
+"structFT__Glyph__Metrics__.html":[5,0,734],
+"structFT__Glyph__Metrics__.html#a0ff1be869e6a28d1f2990b0e5719dca9":[5,0,734,7],
+"structFT__Glyph__Metrics__.html#a2afc877f52c8a8910ec144a1948186cc":[5,0,734,2],
+"structFT__Glyph__Metrics__.html#a594f43c64fe5c12a399a0f0a47c04990":[5,0,734,4],
+"structFT__Glyph__Metrics__.html#a7f1aba91b86fddeb11030eab15dcce08":[5,0,734,6],
+"structFT__Glyph__Metrics__.html#aa2a76ec448ec9d18acf343f01b77cb21":[5,0,734,0],
+"structFT__Glyph__Metrics__.html#aead5c5637b983b811738bff3bcea8cea":[5,0,734,5],
+"structFT__Glyph__Metrics__.html#af12db260a90b8a7c938ad48ebf20ccbe":[5,0,734,1],
+"structFT__Glyph__Metrics__.html#afd97c10d43ed1f66598a18884468b536":[5,0,734,3],
 "structFT__Incremental__FuncsRec__.html":[5,0,737],
 "structFT__Incremental__FuncsRec__.html#a9201afcfda8c15be839aee04306dff0a":[5,0,737,0],
 "structFT__Incremental__FuncsRec__.html#ac276b7ff9624b8d8bf144ab8d00538b4":[5,0,737,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX312 =
 "structFT__SvgGlyphRec__.html#a28b9c1af5329b4f329ef452ad25aa912":[5,0,783,6],
 "structFT__SvgGlyphRec__.html#a5ef1105226ac0a9b4501231d8a082c72":[5,0,783,0],
 "structFT__SvgGlyphRec__.html#a61f38a8c68a3a4f09e90b478ed3c60ab":[5,0,783,8],
-"structFT__SvgGlyphRec__.html#a9d24fc13a4716d64574cd13bd75004df":[5,0,783,1],
-"structFT__SvgGlyphRec__.html#aaba63759a4338a5c2fd7a37d57ce5d1b":[5,0,783,7],
-"structFT__SvgGlyphRec__.html#aba7e6a97cb990784ce05dbe352dea65b":[5,0,783,4],
-"structFT__SvgGlyphRec__.html#ae1febdf2ebc4b4c386cca912ac06772b":[5,0,783,9],
-"structFT__SvgGlyphRec__.html#aeebdd8015578db51e68afff6815aad00":[5,0,783,5],
-"structFT__SvgGlyphRec__.html#af1c616513b23d5f4f861077b015c92a3":[5,0,783,2],
-"structFT__UnitVector__.html":[5,0,784],
-"structFT__UnitVector__.html#a03c9f8ae35a5ad1bcac49995a9dac714":[5,0,784,0],
-"structFT__UnitVector__.html#a12eb9ad5c47614f5f2d3f9e401933d0e":[5,0,784,1],
-"structFT__Var__Axis__.html":[5,0,785],
-"structFT__Var__Axis__.html#a01ef9396e34e740c2d2b8c7117094624":[5,0,785,5],
-"structFT__Var__Axis__.html#a297d28ab0f5666e56d7575249ccc75d7":[5,0,785,4]
+"structFT__SvgGlyphRec__.html#a9d24fc13a4716d64574cd13bd75004df":[5,0,783,1]
 };

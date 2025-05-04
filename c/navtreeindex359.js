@@ -1,5 +1,16 @@
 var NAVTREEINDEX359 =
 {
+"struct__GtkApplicationClass.html#ae6230a94002a278ed4b44b0b61a2f304":[5,0,306,1],
+"struct__GtkApplicationWindow.html":[5,0,307],
+"struct__GtkApplicationWindow.html#acdf1260b70c4dc3edbf6766365d9ec2e":[5,0,307,0],
+"struct__GtkApplicationWindowClass.html":[5,0,308],
+"struct__GtkApplicationWindowClass.html#aad97876850790cf4223822f9830803e9":[5,0,308,1],
+"struct__GtkApplicationWindowClass.html#ac075a4d0691bf2af2eb74afc682f4b4a":[5,0,308,0],
+"struct__GtkBitsetIter.html":[5,0,309],
+"struct__GtkBitsetIter.html#a21870905351278d416451ceefe1492d0":[5,0,309,0],
+"struct__GtkBorder.html":[5,0,310],
+"struct__GtkBorder.html#a062f2d2cc9e0a6d14af3793dd8a2b094":[5,0,310,1],
+"struct__GtkBorder.html#a7c13e54aafe3eba7e46d1290ff619e9c":[5,0,310,3],
 "struct__GtkBorder.html#aad56ca57800a5ced6ec15b3df7ae543a":[5,0,310,2],
 "struct__GtkBorder.html#ad671a7ff9a346fbbbe2a7bf9328058d6":[5,0,310,0],
 "struct__GtkBox.html":[5,0,311],
@@ -238,16 +249,5 @@ var NAVTREEINDEX359 =
 "struct__GtkGLAreaClass.html#af62a37468ba347285f79f65ff2488321":[5,0,354,1],
 "struct__GtkGrid.html":[5,0,355],
 "struct__GtkGrid.html#a0aed29635ef58f8a8e1a3a0afc597a27":[5,0,355,0],
-"struct__GtkGridClass.html":[5,0,356],
-"struct__GtkGridClass.html#a19dec5701f425f0540af9a543ced20f6":[5,0,356,1],
-"struct__GtkGridClass.html#ab50f7af47c87ec7b5e8c721d17e93c70":[5,0,356,0],
-"struct__GtkIMContext.html":[5,0,357],
-"struct__GtkIMContext.html#a601c5d14fd66e661039718f9a61bc2e2":[5,0,357,0],
-"struct__GtkIMContextClass.html":[5,0,358],
-"struct__GtkIMContextClass.html#a068f6d534a7b47f4460c20a928105f7b":[5,0,358,20],
-"struct__GtkIMContextClass.html#a0b61a24e04c72f4053bffa743505ec86":[5,0,358,15],
-"struct__GtkIMContextClass.html#a205dac39ddc739868357df0c30687de4":[5,0,358,4],
-"struct__GtkIMContextClass.html#a215a5e6172f59e30f8f4d6ad0af706c9":[5,0,358,9],
-"struct__GtkIMContextClass.html#a369e3d4f20b32c72a21836f32f8ad08e":[5,0,358,13],
-"struct__GtkIMContextClass.html#a45b45b65a80690f854c3f7c9d25f2758":[5,0,358,10]
+"struct__GtkGridClass.html":[5,0,356]
 };

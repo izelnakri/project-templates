@@ -1,5 +1,16 @@
 var NAVTREEINDEX352 =
 {
+"struct__GDBusObjectIface.html#adab4727cd804260b672dcd9b4238a75e":[5,0,56,0],
+"struct__GDBusObjectIface.html#adc9dd19b920f137182e863205192f695":[5,0,56,5],
+"struct__GDBusObjectManagerClient.html":[5,0,57],
+"struct__GDBusObjectManagerClient.html#a395dc92039ef995196163e9a10e8bfa5":[5,0,57,0],
+"struct__GDBusObjectManagerClient.html#ac582507a4415b0472aa30033eadc3ab0":[5,0,57,1],
+"struct__GDBusObjectManagerClientClass.html":[5,0,58],
+"struct__GDBusObjectManagerClientClass.html#a441b856e7bef4236207171fe7808191f":[5,0,58,0],
+"struct__GDBusObjectManagerClientClass.html#a5ad92917b28e430eebe7beb0de1f95bc":[5,0,58,1],
+"struct__GDBusObjectManagerClientClass.html#a827751259487668aefa002e803405af9":[5,0,58,3],
+"struct__GDBusObjectManagerClientClass.html#aa95ad7d2b5471ca90ae70e6366c5864b":[5,0,58,2],
+"struct__GDBusObjectManagerIface.html":[5,0,59],
 "struct__GDBusObjectManagerIface.html#a36da04987adc0f5d2170815ee2869562":[5,0,59,7],
 "struct__GDBusObjectManagerIface.html#a429bdb48264493008e2bdd6374926b07":[5,0,59,1],
 "struct__GDBusObjectManagerIface.html#a654ca51dc7e2f0e5c447934728aaff58":[5,0,59,6],
@@ -238,16 +249,5 @@ var NAVTREEINDEX352 =
 "struct__GFileIface.html#a235847212df4189e93f2a659737ae12a":[5,0,100,27],
 "struct__GFileIface.html#a2603e121c7a81bb084a465c9ea91c002":[5,0,100,82],
 "struct__GFileIface.html#a2630f1e7e79676fe16505c14c2ecba0d":[5,0,100,31],
-"struct__GFileIface.html#a2baf15478f3ccfdffe7c5ae75be86fb0":[5,0,100,12],
-"struct__GFileIface.html#a2cedbb142af29210595fbcfb6adfcebc":[5,0,100,87],
-"struct__GFileIface.html#a2df97728d07a73e3e36a87675a96b73a":[5,0,100,96],
-"struct__GFileIface.html#a2ec7f755ee13f2a74fe6b3a6bcfdd733":[5,0,100,95],
-"struct__GFileIface.html#a2ed871cc1e928a80adedcb1b25fd54e3":[5,0,100,48],
-"struct__GFileIface.html#a31869bb8132ba606eb3afa667c34254c":[5,0,100,103],
-"struct__GFileIface.html#a36ba02966b7796e68e9a27dbccd451c8":[5,0,100,93],
-"struct__GFileIface.html#a37353c6e54680376549a7146bcb24546":[5,0,100,70],
-"struct__GFileIface.html#a38e2fb68616ac4458f2ffe78065a9ae3":[5,0,100,72],
-"struct__GFileIface.html#a39027b44e2fccddc36e3bfb244890267":[5,0,100,51],
-"struct__GFileIface.html#a3b30ddd4358adf56622fb5e2b05c39d5":[5,0,100,71],
-"struct__GFileIface.html#a40e6b14ebc813560b664a8c4c1ce09f1":[5,0,100,22]
+"struct__GFileIface.html#a2baf15478f3ccfdffe7c5ae75be86fb0":[5,0,100,12]
 };

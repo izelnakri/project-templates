@@ -1,5 +1,16 @@
 var NAVTREEINDEX369 =
 {
+"structpool__free__entry.html":[5,0,931],
+"structpool__free__entry.html#ad130437e86d53cb5c10fcdde662579ca":[5,0,931,0],
+"structpool__header.html":[5,0,932],
+"structpool__header.html#a47a48ab3e1526b9d601420f80b8a1e95":[5,0,932,3],
+"structpool__header.html#a4a94615bdad948339098d9426420bbda":[5,0,932,2],
+"structpool__header.html#ab5d83e447c3b5dcbbf066f8406ff1821":[5,0,932,0],
+"structpool__header.html#acce86f204f8d6054b90f0c712de90f13":[5,0,932,4],
+"structpool__header.html#ae604a6a6f43b7c34d0887d06cb809850":[5,0,932,1],
+"structpool__size__spec.html":[5,0,933],
+"structpool__size__spec.html#a31360473c4bf4dac0a036341c58ee42b":[5,0,933,1],
+"structpool__size__spec.html#a5e244e7bd782f0b3b219d3fa8688d4ed":[5,0,933,0],
 "structpool__state.html":[5,0,934],
 "structpool__state.html#a448ff853d21ed10f3f22ca38d5408045":[5,0,934,1],
 "structpool__state.html#a68523de34ba445cb22205519ac62577a":[5,0,934,2],
@@ -238,16 +249,5 @@ var NAVTREEINDEX369 =
 "structsqlite3__api__routines.html#a4dc19fae70a22f0bce829e7be36bea3a":[5,0,975,96],
 "structsqlite3__api__routines.html#a4ecc8645b639cabe1fb630aceaec9017":[5,0,975,37],
 "structsqlite3__api__routines.html#a4ef1b575694d6406ec4f6d81bceca20e":[5,0,975,17],
-"structsqlite3__api__routines.html#a506ea7218da25d4973721f4770ce8dc7":[5,0,975,138],
-"structsqlite3__api__routines.html#a5118769b1db47e48f1686bc55fb018ad":[5,0,975,104],
-"structsqlite3__api__routines.html#a51e4c10c9ad6aa8b2925cac3b07db982":[5,0,975,158],
-"structsqlite3__api__routines.html#a58d3ff1185d4aae08c6be2b71c4a2e23":[5,0,975,135],
-"structsqlite3__api__routines.html#a58d79a7091ade0d1630d62ecf1931e9d":[5,0,975,145],
-"structsqlite3__api__routines.html#a5b9b53496b4b49645b4117aeb52fe651":[5,0,975,198],
-"structsqlite3__api__routines.html#a5c30292eef0130d7e8a408c4e3396012":[5,0,975,35],
-"structsqlite3__api__routines.html#a5c5a8c9438f6326b32773e125767e9a5":[5,0,975,54],
-"structsqlite3__api__routines.html#a5fdec81362b57fd3825e64154def9340":[5,0,975,16],
-"structsqlite3__api__routines.html#a600f476bdaff1340fa4fa6255e4f0394":[5,0,975,212],
-"structsqlite3__api__routines.html#a629c5e5c03b3223242357282c84af46d":[5,0,975,98],
-"structsqlite3__api__routines.html#a643887391be801fe3ee197ab3adc7e8b":[5,0,975,219]
+"structsqlite3__api__routines.html#a506ea7218da25d4973721f4770ce8dc7":[5,0,975,138]
 };

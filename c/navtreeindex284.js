@@ -1,5 +1,16 @@
 var NAVTREEINDEX284 =
 {
+"pango-glyph-item_8h.html#a858895aa3570ce586c80e89051e911b5":[6,0,3,0,4,0,0,0,14,3],
+"pango-glyph-item_8h.html#a8651c0a61281b17853a3fa28331924b5":[6,0,3,0,4,0,0,0,14,6],
+"pango-glyph-item_8h.html#a89cb5c2e0fa4bb5f1ed05f143156cf7e":[6,0,3,0,4,0,0,0,14,17],
+"pango-glyph-item_8h.html#a8a9ffb7e34e717b115a49d3e3807f46d":[6,0,3,0,4,0,0,0,14,18],
+"pango-glyph-item_8h.html#a9e659b94126d2c9bbc6e4b5f6d8a77a7":[6,0,3,0,4,0,0,0,14,11],
+"pango-glyph-item_8h.html#ab934d197b8eb416b1d1277415d1e33c8":[6,0,3,0,4,0,0,0,14,4],
+"pango-glyph-item_8h.html#ac8bbf05714eaf701271d8f1939240ccf":[6,0,3,0,4,0,0,0,14,10],
+"pango-glyph-item_8h.html#acc1b0395d9a9922c3c68c455f792681f":[6,0,3,0,4,0,0,0,14,15],
+"pango-glyph-item_8h.html#ae36be0d0b13a2c1efe73a62307149904":[6,0,3,0,4,0,0,0,14,7],
+"pango-glyph-item_8h.html#afeab52008551ed5cd09374a972b86740":[6,0,3,0,4,0,0,0,14,5],
+"pango-glyph-item_8h_source.html":[6,0,3,0,4,0,0,0,14],
 "pango-glyph_8h.html":[6,0,3,0,4,0,0,0,15],
 "pango-glyph_8h.html#a01b3986b8d93644116f049378ff15e5f":[6,0,3,0,4,0,0,0,15,26],
 "pango-glyph_8h.html#a0b55660800587b5654abd2947863f592":[6,0,3,0,4,0,0,0,15,11],
@@ -238,16 +249,5 @@ var NAVTREEINDEX284 =
 "pango-matrix_8h.html#a8171a19098ebd801af34081774dc8d32":[6,0,3,0,4,0,0,0,21,1],
 "pango-matrix_8h.html#a8c85794df0080db9f485ca53240f2675":[6,0,3,0,4,0,0,0,21,13],
 "pango-matrix_8h.html#aa666986a33b6d2f266e10f3e79b2a8b9":[6,0,3,0,4,0,0,0,21,12],
-"pango-matrix_8h.html#aafdea23de44c2f45af7030047660be5a":[6,0,3,0,4,0,0,0,21,4],
-"pango-matrix_8h.html#ab489471a1d9c351a047e62e1d70b064e":[6,0,3,0,4,0,0,0,21,15],
-"pango-matrix_8h.html#acbd6a8c7e6801073c9afb64c07d13325":[6,0,3,0,4,0,0,0,21,2],
-"pango-matrix_8h.html#afb8f20eb0e3d00757f62bd5fbdf6ecbd":[6,0,3,0,4,0,0,0,21,5],
-"pango-matrix_8h_source.html":[6,0,3,0,4,0,0,0,21],
-"pango-modules_8h.html":[6,0,3,0,4,0,0,0,22],
-"pango-modules_8h.html#a1b385d9b61ea3e573f0f23d9ab955c5d":[6,0,3,0,4,0,0,0,22,2],
-"pango-modules_8h.html#a413543c4aebc264a1b2dcbbf35757781":[6,0,3,0,4,0,0,0,22,1],
-"pango-modules_8h.html#a7aec2a6150136df74c77fd48bb8ad966":[6,0,3,0,4,0,0,0,22,6],
-"pango-modules_8h.html#aba0891f5a6785e7d3d23eef7f6d328eb":[6,0,3,0,4,0,0,0,22,7],
-"pango-modules_8h.html#ad8da2e2e0c6616ee5e4c6e82b5ba00fe":[6,0,3,0,4,0,0,0,22,3],
-"pango-modules_8h.html#aecfb48fff0b7f45868985e63328c96c7":[6,0,3,0,4,0,0,0,22,5]
+"pango-matrix_8h.html#aafdea23de44c2f45af7030047660be5a":[6,0,3,0,4,0,0,0,21,4]
 };

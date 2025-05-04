@@ -1,5 +1,16 @@
 var NAVTREEINDEX367 =
 {
+"structexpdesc.html#afb93d1a666295d46961688d72ad9b8ce":[5,0,710,18],
+"structexpdesc.html#afe6e22f2c18d75bc97add0e1f62e93e2":[5,0,710,1],
+"structexpdesc.html#aff73ceb852b920307d0adf7b42111d7b":[5,0,710,14],
+"structfts5__api.html":[5,0,792],
+"structfts5__api.html#a3c338289abb33e1805da870172956a7c":[5,0,792,0],
+"structfts5__api.html#a6cb9929558ff13c7b5a30292eb5aea7c":[5,0,792,2],
+"structfts5__api.html#aa232f72a0d7c7205fbd0dc6818e24aee":[5,0,792,3],
+"structfts5__api.html#aa932ba45865c10b49592920b9610db93":[5,0,792,1],
+"structfts5__tokenizer.html":[5,0,793],
+"structfts5__tokenizer.html#a5df6926b15f5ccbffdcdf635f2f76142":[5,0,793,1],
+"structfts5__tokenizer.html#ab0e73328047d3191668ecad51839873d":[5,0,793,0],
 "structfts5__tokenizer.html#aca859d7c328ff545aef9a16c07a70ed4":[5,0,793,2],
 "structglobal__State.html":[5,0,809],
 "structglobal__State.html#a112c02e74c5adda770367c8a120b1fdd":[5,0,809,39],
@@ -238,16 +249,5 @@ var NAVTREEINDEX367 =
 "structlua__Debug.html#a97cb69b18daa46d20fb1a13eec78661b":[5,0,873,8],
 "structlua__Debug.html#aa223bb38bc02d27c56f3abe85651d752":[5,0,873,9],
 "structlua__Debug.html#aace8e6efdb999325e7a77452c849293b":[5,0,873,17],
-"structlua__Debug.html#aaf0845009754fbc00f8c0c2d570362e1":[5,0,873,2],
-"structlua__Debug.html#ab87c2a6ef686abf10da683f7e9af1b23":[5,0,873,14],
-"structlua__Debug.html#ab87c2a6ef686abf10da683f7e9af1b23":[5,0,873,13],
-"structlua__Debug.html#adb5efd1576224ce9d14f42f8bfee7a1a":[5,0,873,11],
-"structlua__Debug.html#af162e2b3fd4c8ce1ef502b8af2872dac":[5,0,873,10],
-"structlua__State.html":[5,0,875],
-"structlua__State.html#a01c9be39c5c49b7163154450af227198":[5,0,875,6],
-"structlua__State.html#a09de3a7c6d3bcb6c2b0d26a81bb8d44b":[5,0,875,10],
-"structlua__State.html#a0b6456a08b1283b41f93626154c62f59":[5,0,875,30],
-"structlua__State.html#a195f448e76fd404953fa1962d28212a3":[5,0,875,36],
-"structlua__State.html#a1d4ee1613c41d6100db9e0c73217b41f":[5,0,875,16],
-"structlua__State.html#a24099a91bbfa23048f1b940f26819f44":[5,0,875,24]
+"structlua__Debug.html#aaf0845009754fbc00f8c0c2d570362e1":[5,0,873,2]
 };

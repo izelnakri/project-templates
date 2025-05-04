@@ -1,5 +1,16 @@
 var NAVTREEINDEX355 =
 {
+"struct__GOutputMessage.html#acd930fbe7fc7d81400cd35e6a9a2a731":[5,0,176,3],
+"struct__GOutputStream.html":[5,0,177],
+"struct__GOutputStream.html#a0f8e831436638b4ef7c1435497399664":[5,0,177,1],
+"struct__GOutputStream.html#ae22d1d25e0323712171daea76a8d84db":[5,0,177,0],
+"struct__GOutputStreamClass.html":[5,0,178],
+"struct__GOutputStreamClass.html#a1ce01cfe5b37dde26a5422c086114611":[5,0,178,1],
+"struct__GOutputStreamClass.html#a271ecf5f96317b027fb7963282f633af":[5,0,178,9],
+"struct__GOutputStreamClass.html#a3d555a8b052477af9bacb1ead572904c":[5,0,178,2],
+"struct__GOutputStreamClass.html#a3ff9b34e365c36c976ba4abe63fac541":[5,0,178,8],
+"struct__GOutputStreamClass.html#a42560e9bed2ef5856d48d036d38f09cb":[5,0,178,6],
+"struct__GOutputStreamClass.html#a521a0c630dfc133d3cff5e50526c620f":[5,0,178,4],
 "struct__GOutputStreamClass.html#a5fbe3cf293fa35c73c28eefab9befada":[5,0,178,5],
 "struct__GOutputStreamClass.html#a669852081185c90436bbbd03323b43bb":[5,0,178,16],
 "struct__GOutputStreamClass.html#a738032d31135df996e305603652ef625":[5,0,178,15],
@@ -238,16 +249,5 @@ var NAVTREEINDEX355 =
 "struct__GResolverClass.html#a2435e972091bd7f980bfbb1c98002527":[5,0,243,8],
 "struct__GResolverClass.html#a281c94f74eecb0acb94d8e6b7073e15d":[5,0,243,2],
 "struct__GResolverClass.html#a539619263718cd3f8edd6776f5d3c10e":[5,0,243,6],
-"struct__GResolverClass.html#a54f6d2c36609707ab55680b39ddc81de":[5,0,243,4],
-"struct__GResolverClass.html#a81b3f0969a8b9afd20a3e85337650cb1":[5,0,243,16],
-"struct__GResolverClass.html#a870f9fc55e3987083ed3341f6c7356bc":[5,0,243,7],
-"struct__GResolverClass.html#a9285493108b564a6b11425d0295098b8":[5,0,243,10],
-"struct__GResolverClass.html#a9a2b667318e6ce39601a7ed9729f6fab":[5,0,243,9],
-"struct__GResolverClass.html#a9c569933e90b0417ad3f4c07508a059e":[5,0,243,13],
-"struct__GResolverClass.html#aa6025cc02c673ca7c78bc3c8c0fae366":[5,0,243,14],
-"struct__GResolverClass.html#aaa33f9ae964d4fce91c2e0ef15ce7f2f":[5,0,243,12],
-"struct__GResolverClass.html#abace95bf330682536c1883a5b10787e2":[5,0,243,1],
-"struct__GResolverClass.html#acecfc9f4986b3742cf15dd02ecd01676":[5,0,243,5],
-"struct__GResolverClass.html#adda744d4a6b164ab6e9b6878069856ff":[5,0,243,3],
-"struct__GResolverClass.html#ade5e8ec89a7658f625f2b9686df3f0e7":[5,0,243,0]
+"struct__GResolverClass.html#a54f6d2c36609707ab55680b39ddc81de":[5,0,243,4]
 };

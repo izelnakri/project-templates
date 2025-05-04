@@ -1,5 +1,16 @@
 var NAVTREEINDEX348 =
 {
+"structVkVideoEncodeH264PictureInfoKHR.html#a3e113dee6ffb57f0a9e86bb57764ab53":[5,0,2189,2],
+"structVkVideoEncodeH264PictureInfoKHR.html#a556b63e0e57cc2f400869a7a3b330f8c":[5,0,2189,0],
+"structVkVideoEncodeH264PictureInfoKHR.html#a723c188d6891032868549c36081b3ea9":[5,0,2189,1],
+"structVkVideoEncodeH264ProfileInfoKHR.html":[5,0,2190],
+"structVkVideoEncodeH264ProfileInfoKHR.html#a26ad6ac0fc91faa995ba6c6ce3e10b6b":[5,0,2190,0],
+"structVkVideoEncodeH264ProfileInfoKHR.html#a83a967cc2026ceadca98a313c44571df":[5,0,2190,1],
+"structVkVideoEncodeH264ProfileInfoKHR.html#adbc18ff2eb1bb122eb3fd1d5362a64ec":[5,0,2190,2],
+"structVkVideoEncodeH264QpKHR.html":[5,0,2191],
+"structVkVideoEncodeH264QpKHR.html#a13c6380c058989c8bf18d2bd54ab3bc6":[5,0,2191,0],
+"structVkVideoEncodeH264QpKHR.html#a569451ec899b69479532082c40f9fc5b":[5,0,2191,2],
+"structVkVideoEncodeH264QpKHR.html#ad961e297b34eac3462c313e8498cc409":[5,0,2191,1],
 "structVkVideoEncodeH264QualityLevelPropertiesKHR.html":[5,0,2192],
 "structVkVideoEncodeH264QualityLevelPropertiesKHR.html#a0fac86c3f912f8b0abded0a472514c71":[5,0,2192,2],
 "structVkVideoEncodeH264QualityLevelPropertiesKHR.html#a14e5af1b0c6b2794f2a4f345fff32bb3":[5,0,2192,10],
@@ -238,16 +249,5 @@ var NAVTREEINDEX348 =
 "structVkVideoFormatPropertiesKHR.html#aa2107641af752dc9eb24711d701e0185":[5,0,2225,6],
 "structVkVideoFormatPropertiesKHR.html#acb23ea26cdb02b50a548944b46bf23a2":[5,0,2225,4],
 "structVkVideoFormatPropertiesKHR.html#ad0c67cec86697d0c8e1f2c6dc54bf57b":[5,0,2225,3],
-"structVkVideoFormatPropertiesKHR.html#ae8a324a19ae47a7a294aa577cc94b8f5":[5,0,2225,2],
-"structVkVideoFormatPropertiesKHR.html#af8c7253641ebb4abb0088c6141b85c1e":[5,0,2225,1],
-"structVkVideoInlineQueryInfoKHR.html":[5,0,2226],
-"structVkVideoInlineQueryInfoKHR.html#a1cad122494b5e3e8f367cba8fda28d33":[5,0,2226,1],
-"structVkVideoInlineQueryInfoKHR.html#a3144722efba3960ad1109fc403261e1e":[5,0,2226,0],
-"structVkVideoInlineQueryInfoKHR.html#a4ce872ccd1418291b465c311f8b251bc":[5,0,2226,3],
-"structVkVideoInlineQueryInfoKHR.html#a7c72363149e71f1a6f072b74bbaebd2a":[5,0,2226,2],
-"structVkVideoInlineQueryInfoKHR.html#adce588d4a6a2b0e181b15ca5f22099b9":[5,0,2226,4],
-"structVkVideoPictureResourceInfoKHR.html":[5,0,2227],
-"structVkVideoPictureResourceInfoKHR.html#a58915607e96576a446a00fa60eac42ac":[5,0,2227,2],
-"structVkVideoPictureResourceInfoKHR.html#a5f3c4653bbc8d9ac0e2278ba5da2d1cb":[5,0,2227,0],
-"structVkVideoPictureResourceInfoKHR.html#a820f34fdef2f42c6a0abe05a5a5c78a7":[5,0,2227,3]
+"structVkVideoFormatPropertiesKHR.html#ae8a324a19ae47a7a294aa577cc94b8f5":[5,0,2225,2]
 };

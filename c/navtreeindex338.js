@@ -1,5 +1,16 @@
 var NAVTREEINDEX338 =
 {
+"structVkPhysicalDeviceNestedCommandBufferPropertiesEXT.html#a1ece9e190938f6fe9e453feaf8d449d3":[5,0,1788,2],
+"structVkPhysicalDeviceNestedCommandBufferPropertiesEXT.html#a6dc148af0d4c2f40939ee1521d6bdded":[5,0,1788,0],
+"structVkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT.html":[5,0,1789],
+"structVkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT.html#a11cd1488fdbdb9d6e666b9838b709a1e":[5,0,1789,0],
+"structVkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT.html#a5266e2d6458967e36384f5827d3283bd":[5,0,1789,2],
+"structVkPhysicalDeviceNonSeamlessCubeMapFeaturesEXT.html#a8fd3a15696d4fbaafe105e9bc7180fac":[5,0,1789,1],
+"structVkPhysicalDeviceOpacityMicromapFeaturesEXT.html":[5,0,1790],
+"structVkPhysicalDeviceOpacityMicromapFeaturesEXT.html#a181c6a0357f7b7590540434949647de6":[5,0,1790,1],
+"structVkPhysicalDeviceOpacityMicromapFeaturesEXT.html#a356c9327096a5be30a60d469eae9f486":[5,0,1790,2],
+"structVkPhysicalDeviceOpacityMicromapFeaturesEXT.html#a97badd46f2fdd97088479e8ce2cdb2e6":[5,0,1790,4],
+"structVkPhysicalDeviceOpacityMicromapFeaturesEXT.html#acc35541f3ed822aba90bc1edf324df3d":[5,0,1790,0],
 "structVkPhysicalDeviceOpacityMicromapFeaturesEXT.html#afecb205fa0fe124778835d95cc0cfb13":[5,0,1790,3],
 "structVkPhysicalDeviceOpacityMicromapPropertiesEXT.html":[5,0,1791],
 "structVkPhysicalDeviceOpacityMicromapPropertiesEXT.html#a0a0dff90537b83afae62468909609195":[5,0,1791,0],
@@ -238,16 +249,5 @@ var NAVTREEINDEX338 =
 "structVkPhysicalDeviceRayTracingPipelinePropertiesKHR.html#adb10c51400e9ad4f28f6618409196db4":[5,0,1832,5],
 "structVkPhysicalDeviceRayTracingPositionFetchFeaturesKHR.html":[5,0,1833],
 "structVkPhysicalDeviceRayTracingPositionFetchFeaturesKHR.html#a6e5fde5057d4cba2db0d240d4b1d290b":[5,0,1833,0],
-"structVkPhysicalDeviceRayTracingPositionFetchFeaturesKHR.html#ab4556a3cacbfc145075893cea439def8":[5,0,1833,1],
-"structVkPhysicalDeviceRayTracingPositionFetchFeaturesKHR.html#ad67b9c38462420e7197dee87e40b4bdf":[5,0,1833,2],
-"structVkPhysicalDeviceRayTracingPropertiesNV.html":[5,0,1834],
-"structVkPhysicalDeviceRayTracingPropertiesNV.html#a044edd622044c83f25d0aa532aa18ed6":[5,0,1834,4],
-"structVkPhysicalDeviceRayTracingPropertiesNV.html#a150d6936bfd0bb34a1c40631b15cd5ab":[5,0,1834,3],
-"structVkPhysicalDeviceRayTracingPropertiesNV.html#a1b077c6c4b55d5f391ad40ca6ab86292":[5,0,1834,5],
-"structVkPhysicalDeviceRayTracingPropertiesNV.html#a40f962174493125b7558286d2592616e":[5,0,1834,9],
-"structVkPhysicalDeviceRayTracingPropertiesNV.html#a41ca5224f92411f104c76c3a1bfebe3b":[5,0,1834,6],
-"structVkPhysicalDeviceRayTracingPropertiesNV.html#a45cbc22813e1aa9e1fff14d8a0fbf599":[5,0,1834,7],
-"structVkPhysicalDeviceRayTracingPropertiesNV.html#a6b7793035368ca3006536aab1969d8c5":[5,0,1834,1],
-"structVkPhysicalDeviceRayTracingPropertiesNV.html#ab36940fa41cfbbf719f7c5ef5fc77ae0":[5,0,1834,8],
-"structVkPhysicalDeviceRayTracingPropertiesNV.html#ab502e88b777d40f4f113b850af806741":[5,0,1834,0]
+"structVkPhysicalDeviceRayTracingPositionFetchFeaturesKHR.html#ab4556a3cacbfc145075893cea439def8":[5,0,1833,1]
 };

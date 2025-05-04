@@ -1,5 +1,16 @@
 var NAVTREEINDEX371 =
 {
+"structsqlite3__mem__methods.html#a5bb7e62164d0934888473c618c61dc77":[5,0,981,4],
+"structsqlite3__mem__methods.html#a6c68275b577d66ae659ef30344c8f86c":[5,0,981,7],
+"structsqlite3__mem__methods.html#a6f48100692bd935d7f3dbb8c701ab6ca":[5,0,981,6],
+"structsqlite3__mem__methods.html#a8b3f0d1ddeb498c4aaf9bbce5b92a268":[5,0,981,5],
+"structsqlite3__mem__methods.html#aa2e7fe8d030adaa17fd23a44fec1eca1":[5,0,981,1],
+"structsqlite3__mem__methods.html#acb9151cf501c851b61ab6b378832b159":[5,0,981,3],
+"structsqlite3__mem__methods.html#ad0997b548928358d655000b6ac825cf4":[5,0,981,2],
+"structsqlite3__mem__methods.html#af91b7adfa1f6aace0b129bac800bd444":[5,0,981,0],
+"structsqlite3__module.html":[5,0,982],
+"structsqlite3__module.html#a029d0713dbb3c847a6de773a0a179605":[5,0,982,23],
+"structsqlite3__module.html#a1ddde32dcae461910096ebb2c42d1a6a":[5,0,982,11],
 "structsqlite3__module.html#a1e119b28bd3ad706d1982aaa938aac79":[5,0,982,19],
 "structsqlite3__module.html#a296dae8dadd4eb1f7d0f1187650c7aa5":[5,0,982,8],
 "structsqlite3__module.html#a2cb9f8c149617189efa6ceec0a3211e9":[5,0,982,14],
@@ -238,16 +249,5 @@ var NAVTREEINDEX371 =
 "system_8h.html#a40d2af72d0db5b3a4e84924a4c97f446":[6,0,3,0,11,0,0,8,8],
 "system_8h.html#a43e0f711f24e09c6bc8347d272d5d8e8":[6,0,3,0,11,0,0,8,7],
 "system_8h.html#a494e2b4279dc064f7ed1d0abd602b28d":[6,0,3,0,11,0,0,8,10],
-"system_8h.html#a5c5d338cf3f0e585ed739b384f2a2a6e":[6,0,3,0,11,0,0,8,2],
-"system_8h.html#a7de53b6e0a3867bac214753a56d68a8a":[6,0,3,0,11,0,0,8,3],
-"system_8h.html#aea4148936d8d06576fc84c42b0a85dbf":[6,0,3,0,11,0,0,8,9],
-"system_8h.html#af197c5a22f34282f0100b9d3886fc3b1":[6,0,3,0,11,0,0,8,6],
-"system_8h.html#af89f74b4f46628d93e3cc829fcd69801":[6,0,3,0,11,0,0,8,11],
-"system_8h_source.html":[6,0,3,0,11,0,0,8],
-"t1tables_8h.html":[6,0,3,0,10,0,0,0,43],
-"t1tables_8h.html#a0232e99788bb3dfd67f6911caa0d0db2":[6,0,3,0,10,0,0,0,43,4],
-"t1tables_8h.html#a071e7c41fba472ec9f4099da2eebbd69":[6,0,3,0,10,0,0,0,43,24],
-"t1tables_8h.html#a134958a0ab798b12e61a2cd43807e3cd":[6,0,3,0,10,0,0,0,43,37],
-"t1tables_8h.html#a15212228136e80fe97091cf24fd2f6cd":[6,0,3,0,10,0,0,0,43,36],
-"t1tables_8h.html#a15212228136e80fe97091cf24fd2f6cda21a15de3c50e98c1b2e9ed09797825e0":[6,0,3,0,10,0,0,0,43,36,0]
+"system_8h.html#a5c5d338cf3f0e585ed739b384f2a2a6e":[6,0,3,0,11,0,0,8,2]
 };

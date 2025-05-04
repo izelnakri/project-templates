@@ -1,5 +1,15 @@
 var NAVTREEINDEX415 =
 {
+"vulkan__win32_8h.html#ae14b93f4ac8e584a0665bfaad3f62cb4":[6,0,3,0,7,0,1,16,50],
+"vulkan__win32_8h.html#ae4525c2b5ee93d8585b1d4b0301f0ad9":[6,0,3,0,7,0,1,16,31],
+"vulkan__win32_8h.html#ae7715588008122df9bac4d842d74d528":[6,0,3,0,7,0,1,16,75],
+"vulkan__win32_8h.html#ae89f3ad909d971d969381a5a2fea4ddc":[6,0,3,0,7,0,1,16,30],
+"vulkan__win32_8h.html#ae9626ca959ecd2cd09d43f65621ac540":[6,0,3,0,7,0,1,16,44],
+"vulkan__win32_8h.html#aef4e42fb244040f6e7f3749036111677":[6,0,3,0,7,0,1,16,41],
+"vulkan__win32_8h.html#af196bd289023d5ad77750f574288cdfa":[6,0,3,0,7,0,1,16,63],
+"vulkan__win32_8h.html#af869e752917f35d5960f0e2385207152":[6,0,3,0,7,0,1,16,49],
+"vulkan__win32_8h.html#afd36e7d9684deb76629391e0b4c9cf83":[6,0,3,0,7,0,1,16,86],
+"vulkan__win32_8h.html#afe96b1bae4a81f8f03224bebc8ffde21":[6,0,3,0,7,0,1,16,47],
 "vulkan__win32_8h_source.html":[6,0,3,0,7,0,1,16],
 "vulkan__xcb_8h.html":[6,0,3,0,7,0,1,17],
 "vulkan__xcb_8h.html#a255b9a103c477d1406debf9e140014f7":[6,0,3,0,7,0,1,17,2],

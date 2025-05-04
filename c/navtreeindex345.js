@@ -1,5 +1,16 @@
 var NAVTREEINDEX345 =
 {
+"structVkSamplerCubicWeightsCreateInfoQCOM.html#ae2f53d53039edb44388689a324d67ca3":[5,0,2063,2],
+"structVkSamplerCustomBorderColorCreateInfoEXT.html":[5,0,2064],
+"structVkSamplerCustomBorderColorCreateInfoEXT.html#a16f454b449f0273b7c5fbe2d96033c39":[5,0,2064,0],
+"structVkSamplerCustomBorderColorCreateInfoEXT.html#a24723d1270eb3c9c8eda9d8bba7be447":[5,0,2064,3],
+"structVkSamplerCustomBorderColorCreateInfoEXT.html#a910b848bc27ec42246ed705d328c82d8":[5,0,2064,2],
+"structVkSamplerCustomBorderColorCreateInfoEXT.html#ac5be8500e255d65d84a3ed391b7570cb":[5,0,2064,1],
+"structVkSamplerReductionModeCreateInfo.html":[5,0,2065],
+"structVkSamplerReductionModeCreateInfo.html#a428711deec1f7b7add002e2b6bc3a63e":[5,0,2065,2],
+"structVkSamplerReductionModeCreateInfo.html#a81c5ef72f3e871e7dce2ad6137db64e1":[5,0,2065,0],
+"structVkSamplerReductionModeCreateInfo.html#a8d3c0aa67edddf6ac8afe5911e342351":[5,0,2065,1],
+"structVkSamplerYcbcrConversionCreateInfo.html":[5,0,2066],
 "structVkSamplerYcbcrConversionCreateInfo.html#a11e29de67453558c518f1af7fb607692":[5,0,2066,6],
 "structVkSamplerYcbcrConversionCreateInfo.html#a197e5011d3da73425ed863ece471e53a":[5,0,2066,0],
 "structVkSamplerYcbcrConversionCreateInfo.html#a2e8efa6e502b79c82f57dd0fb2354bc1":[5,0,2066,3],
@@ -238,16 +249,5 @@ var NAVTREEINDEX345 =
 "structVkSubmitInfo2.html":[5,0,2108],
 "structVkSubmitInfo2.html#a1f0e62c72f8652581adc15c7916d8d02":[5,0,2108,5],
 "structVkSubmitInfo2.html#a25d019394293ada5b5ec5ffa255287be":[5,0,2108,8],
-"structVkSubmitInfo2.html#a281575e3027728f8842855d347d61bf8":[5,0,2108,0],
-"structVkSubmitInfo2.html#a365bd80ec497bb086dcbfed306fa7bb0":[5,0,2108,4],
-"structVkSubmitInfo2.html#a3aaf132980fb12ea259abc4fafefe991":[5,0,2108,1],
-"structVkSubmitInfo2.html#a649dda3fab79f7bdaa9774f615209b3c":[5,0,2108,3],
-"structVkSubmitInfo2.html#a94fa3a30f2f038e3cf9e517e4a399e72":[5,0,2108,2],
-"structVkSubmitInfo2.html#abf7308097802ea7a53bb5c4fe81224dd":[5,0,2108,7],
-"structVkSubmitInfo2.html#ae4b060e9b33fcecad2f4cfd6ef76cc04":[5,0,2108,6],
-"structVkSubpassBeginInfo.html":[5,0,2109],
-"structVkSubpassBeginInfo.html#a10f7faec3f8edf5553db1960cafcc26f":[5,0,2109,2],
-"structVkSubpassBeginInfo.html#a64e1e60cd0a79c586c76b9293a4f522c":[5,0,2109,1],
-"structVkSubpassBeginInfo.html#a86baa0ec39bbfd40555bec184ece652e":[5,0,2109,0],
-"structVkSubpassDependency.html":[5,0,2110]
+"structVkSubmitInfo2.html#a281575e3027728f8842855d347d61bf8":[5,0,2108,0]
 };

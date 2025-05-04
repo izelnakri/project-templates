@@ -1,5 +1,15 @@
 var NAVTREEINDEX412 =
 {
+"vulkan__fuchsia_8h.html#ab76c8e6ee77095bbae62e4bb6d829119":[6,0,3,0,7,0,1,8,26],
+"vulkan__fuchsia_8h.html#abd75b82c0cef27bd2798d60c4b2a0368":[6,0,3,0,7,0,1,8,28],
+"vulkan__fuchsia_8h.html#ac4509b2704fe6d3823d3a637edbffcd3":[6,0,3,0,7,0,1,8,23],
+"vulkan__fuchsia_8h.html#ac82d2ce49f4bf4880275c8cd26dde7ca":[6,0,3,0,7,0,1,8,63],
+"vulkan__fuchsia_8h.html#ac9b8c77b89a25333be3049b5e08f8e4f":[6,0,3,0,7,0,1,8,42],
+"vulkan__fuchsia_8h.html#acb784f88d9518fe6faa698bedfb6ac79":[6,0,3,0,7,0,1,8,35],
+"vulkan__fuchsia_8h.html#acf01a94279d46c8522ce2533df042baf":[6,0,3,0,7,0,1,8,25],
+"vulkan__fuchsia_8h.html#acf7384da199b308fe81520ca6b201cd7":[6,0,3,0,7,0,1,8,58],
+"vulkan__fuchsia_8h.html#acf7384da199b308fe81520ca6b201cd7a184dc5864f02234c0e8caa182a03ca93":[6,0,3,0,7,0,1,8,58,5],
+"vulkan__fuchsia_8h.html#acf7384da199b308fe81520ca6b201cd7a2941837457c356e8db66e9d74c7021a3":[6,0,3,0,7,0,1,8,58,3],
 "vulkan__fuchsia_8h.html#acf7384da199b308fe81520ca6b201cd7aad1d8b7b7c75bd3c703666e031d05b3b":[6,0,3,0,7,0,1,8,58,4],
 "vulkan__fuchsia_8h.html#acf7384da199b308fe81520ca6b201cd7ab101b940d2bd59984100b08e89606d37":[6,0,3,0,7,0,1,8,58,0],
 "vulkan__fuchsia_8h.html#acf7384da199b308fe81520ca6b201cd7ab3cb0b209920ad79024963e2df919f42":[6,0,3,0,7,0,1,8,58,2],
@@ -239,15 +249,5 @@ var NAVTREEINDEX412 =
 "vulkan__video__codec__av1std_8h.html#a92173420de5060f739cc0d131b3d096b":[6,0,3,0,7,0,0,0,57],
 "vulkan__video__codec__av1std_8h.html#a94a83a8347d13763b4fc44c6995492bd":[6,0,3,0,7,0,0,0,50],
 "vulkan__video__codec__av1std_8h.html#a954554b79a3d53a20a437d1b310db053":[6,0,3,0,7,0,0,0,34],
-"vulkan__video__codec__av1std_8h.html#a9b90def992d92af16f884ab6a285ee17":[6,0,3,0,7,0,0,0,52],
-"vulkan__video__codec__av1std_8h.html#a9f8fbef15f9ff1c8e23e3a931c7e691f":[6,0,3,0,7,0,0,0,39],
-"vulkan__video__codec__av1std_8h.html#aa26368a164b65808b4f3674015acc4cd":[6,0,3,0,7,0,0,0,59],
-"vulkan__video__codec__av1std_8h.html#aa33b03d0df4fc36210170c4e8f9db342":[6,0,3,0,7,0,0,0,67],
-"vulkan__video__codec__av1std_8h.html#aa9f810a6322efed7de43e095f0745351":[6,0,3,0,7,0,0,0,40],
-"vulkan__video__codec__av1std_8h.html#aaa708bb21031727e931e0adfaad0d361":[6,0,3,0,7,0,0,0,42],
-"vulkan__video__codec__av1std_8h.html#aaa7ab7586ad1866f2ed69fe054fabff0":[6,0,3,0,7,0,0,0,22],
-"vulkan__video__codec__av1std_8h.html#aab0cdbdc9b6fab38d36af99fd43c690b":[6,0,3,0,7,0,0,0,38],
-"vulkan__video__codec__av1std_8h.html#aac068d63460a6668133bf3aaf091e0aa":[6,0,3,0,7,0,0,0,32],
-"vulkan__video__codec__av1std_8h.html#aae07f930c8c49319ba99a5f8220a6812":[6,0,3,0,7,0,0,0,55],
-"vulkan__video__codec__av1std_8h.html#aaf39c4f92961b39389e0bedf47acee18":[6,0,3,0,7,0,0,0,64]
+"vulkan__video__codec__av1std_8h.html#a9b90def992d92af16f884ab6a285ee17":[6,0,3,0,7,0,0,0,52]
 };

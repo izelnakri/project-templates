@@ -1,5 +1,16 @@
 var NAVTREEINDEX332 =
 {
+"structVkMemoryAllocateInfo.html":[5,0,1553],
+"structVkMemoryAllocateInfo.html#a22fbbb0478ef090166205bd5d37fbcf7":[5,0,1553,3],
+"structVkMemoryAllocateInfo.html#a2660ad821a4c767d4fb51cfedd4e2d65":[5,0,1553,1],
+"structVkMemoryAllocateInfo.html#a75e3b738318f8247395f02ea9d6a22ad":[5,0,1553,0],
+"structVkMemoryAllocateInfo.html#a93a9b6ee1e272c5a7aad3d7a96d2d0da":[5,0,1553,2],
+"structVkMemoryBarrier.html":[5,0,1554],
+"structVkMemoryBarrier.html#a009343c923f7ddfb6d7ec5481efd3b71":[5,0,1554,3],
+"structVkMemoryBarrier.html#a364f90c26c18f5626f7777a419b8fb08":[5,0,1554,1],
+"structVkMemoryBarrier.html#a71860149fad2b072df45c012e3cb208f":[5,0,1554,0],
+"structVkMemoryBarrier.html#a79b075e5dd1819daf9767e328368a630":[5,0,1554,2],
+"structVkMemoryBarrier2.html":[5,0,1555],
 "structVkMemoryBarrier2.html#a03c2a3308bc79793756752d7653b7e16":[5,0,1555,5],
 "structVkMemoryBarrier2.html#a7c05ee6716b2262aa4dfd0957c61cfd8":[5,0,1555,2],
 "structVkMemoryBarrier2.html#a9371cb2fb7390e067795df059bdb40ec":[5,0,1555,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX332 =
 "structVkOutOfBandQueueTypeInfoNV.html#abb2ce78af547cee0da51f15cacba8b2d":[5,0,1601,1],
 "structVkOutOfBandQueueTypeInfoNV.html#ae5f5d74b8f628a6a4fcb1890ca473b43":[5,0,1601,2],
 "structVkPastPresentationTimingGOOGLE.html":[5,0,1602],
-"structVkPastPresentationTimingGOOGLE.html#a0a2f95362a1279c0d6de43dadc9d497c":[5,0,1602,3],
-"structVkPastPresentationTimingGOOGLE.html#a2d5013046ecc2f274376250b0251f7a0":[5,0,1602,4],
-"structVkPastPresentationTimingGOOGLE.html#a5a1299c84b7653118432e8322983841a":[5,0,1602,1],
-"structVkPastPresentationTimingGOOGLE.html#a5e783e17c9c4fef2247a496ca2f982f2":[5,0,1602,2],
-"structVkPastPresentationTimingGOOGLE.html#ac3e49ea493eacf5e4c4ca2cae5c39b69":[5,0,1602,0],
-"structVkPerformanceConfigurationAcquireInfoINTEL.html":[5,0,1603],
-"structVkPerformanceConfigurationAcquireInfoINTEL.html#a3bbb85ebe9003d8553644b782c66f922":[5,0,1603,1],
-"structVkPerformanceConfigurationAcquireInfoINTEL.html#a862141a5cfc30a59c3def00f91222591":[5,0,1603,0],
-"structVkPerformanceConfigurationAcquireInfoINTEL.html#aa8b65c895be3b38f132fdfffc2579e5f":[5,0,1603,2],
-"structVkPerformanceCounterDescriptionKHR.html":[5,0,1604],
-"structVkPerformanceCounterDescriptionKHR.html#a134efbd0af849aeacd5dec924d3acbf9":[5,0,1604,2],
-"structVkPerformanceCounterDescriptionKHR.html#a147176fd37dc0bbf9f03370f98582554":[5,0,1604,4]
+"structVkPastPresentationTimingGOOGLE.html#a0a2f95362a1279c0d6de43dadc9d497c":[5,0,1602,3]
 };

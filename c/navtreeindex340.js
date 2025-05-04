@@ -1,5 +1,16 @@
 var NAVTREEINDEX340 =
 {
+"structVkPhysicalDeviceShaderModuleIdentifierFeaturesEXT.html":[5,0,1874],
+"structVkPhysicalDeviceShaderModuleIdentifierFeaturesEXT.html#a9cce34fac9cbac1d0686af904ac1aa24":[5,0,1874,1],
+"structVkPhysicalDeviceShaderModuleIdentifierFeaturesEXT.html#a9cd88c8d894a5dffc10b02ad8c8fc30c":[5,0,1874,2],
+"structVkPhysicalDeviceShaderModuleIdentifierFeaturesEXT.html#abca52a0d725d898edf1c48411b52914e":[5,0,1874,0],
+"structVkPhysicalDeviceShaderModuleIdentifierPropertiesEXT.html":[5,0,1875],
+"structVkPhysicalDeviceShaderModuleIdentifierPropertiesEXT.html#a3e26d438bf01bb21774c145517ee3429":[5,0,1875,2],
+"structVkPhysicalDeviceShaderModuleIdentifierPropertiesEXT.html#ac754e831043f54092be914531026966f":[5,0,1875,1],
+"structVkPhysicalDeviceShaderModuleIdentifierPropertiesEXT.html#acf3e4aca760468c506a9dedc2aeddb6e":[5,0,1875,0],
+"structVkPhysicalDeviceShaderObjectFeaturesEXT.html":[5,0,1876],
+"structVkPhysicalDeviceShaderObjectFeaturesEXT.html#a23158f27b11800d2639126eda6acd7b2":[5,0,1876,1],
+"structVkPhysicalDeviceShaderObjectFeaturesEXT.html#a3716eac99c73528fa93d8c927761bcb3":[5,0,1876,0],
 "structVkPhysicalDeviceShaderObjectFeaturesEXT.html#acc10551e983672ab7b91dd398d1d35c8":[5,0,1876,2],
 "structVkPhysicalDeviceShaderObjectPropertiesEXT.html":[5,0,1877],
 "structVkPhysicalDeviceShaderObjectPropertiesEXT.html#a0835fa9cef00235baae2e1b3ced61910":[5,0,1877,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX340 =
 "structVkPhysicalDeviceVulkan11Properties.html#a332890ae7ce0b1c9df9f37a36d1f1ba1":[5,0,1921,3],
 "structVkPhysicalDeviceVulkan11Properties.html#a3b876bed6b70e97e41d939a131223551":[5,0,1921,6],
 "structVkPhysicalDeviceVulkan11Properties.html#a48eac39793f32b867086d93a5d80cdf8":[5,0,1921,0],
-"structVkPhysicalDeviceVulkan11Properties.html#a6b234d863ebffcf6df83e033090412bc":[5,0,1921,4],
-"structVkPhysicalDeviceVulkan11Properties.html#a71e088fca03e5724a6755006b88b9cc6":[5,0,1921,16],
-"structVkPhysicalDeviceVulkan11Properties.html#a72fe5019f1c6e64ec37a71011666771a":[5,0,1921,12],
-"structVkPhysicalDeviceVulkan11Properties.html#a800c4510915b0cf2753578859b3be919":[5,0,1921,11],
-"structVkPhysicalDeviceVulkan11Properties.html#a9847cdc93da6b3a57ea177818c262be1":[5,0,1921,2],
-"structVkPhysicalDeviceVulkan11Properties.html#a9c6cf4fe79487fec2bcf9f3ab3c5057f":[5,0,1921,10],
-"structVkPhysicalDeviceVulkan11Properties.html#a9f0875c03f19b3170dfad4c0f1077710":[5,0,1921,7],
-"structVkPhysicalDeviceVulkan11Properties.html#aa94a932ac0694a35c2ac0dc9ed4927e9":[5,0,1921,13],
-"structVkPhysicalDeviceVulkan11Properties.html#ab26fc803ae1540ad3815f0a69f109817":[5,0,1921,14],
-"structVkPhysicalDeviceVulkan11Properties.html#abaa6aeddd4ebe06d848a226e538b28f2":[5,0,1921,1],
-"structVkPhysicalDeviceVulkan11Properties.html#af7d1f6fe8fcb1d2370aeabb6295daf06":[5,0,1921,5],
-"structVkPhysicalDeviceVulkan11Properties.html#af8c28f1471e1c4ad1a5d4ffb4b4e2f43":[5,0,1921,8]
+"structVkPhysicalDeviceVulkan11Properties.html#a6b234d863ebffcf6df83e033090412bc":[5,0,1921,4]
 };

@@ -1,5 +1,16 @@
 var NAVTREEINDEX356 =
 {
+"struct__GResolverClass.html#a81b3f0969a8b9afd20a3e85337650cb1":[5,0,243,16],
+"struct__GResolverClass.html#a870f9fc55e3987083ed3341f6c7356bc":[5,0,243,7],
+"struct__GResolverClass.html#a9285493108b564a6b11425d0295098b8":[5,0,243,10],
+"struct__GResolverClass.html#a9a2b667318e6ce39601a7ed9729f6fab":[5,0,243,9],
+"struct__GResolverClass.html#a9c569933e90b0417ad3f4c07508a059e":[5,0,243,13],
+"struct__GResolverClass.html#aa6025cc02c673ca7c78bc3c8c0fae366":[5,0,243,14],
+"struct__GResolverClass.html#aaa33f9ae964d4fce91c2e0ef15ce7f2f":[5,0,243,12],
+"struct__GResolverClass.html#abace95bf330682536c1883a5b10787e2":[5,0,243,1],
+"struct__GResolverClass.html#acecfc9f4986b3742cf15dd02ecd01676":[5,0,243,5],
+"struct__GResolverClass.html#adda744d4a6b164ab6e9b6878069856ff":[5,0,243,3],
+"struct__GResolverClass.html#ade5e8ec89a7658f625f2b9686df3f0e7":[5,0,243,0],
 "struct__GResolverClass.html#ae054ab180ac6164a2a2f06cc42cc067e":[5,0,243,11],
 "struct__GSList.html":[5,0,263],
 "struct__GSList.html#ae27fad568745131b6b28277f0be35e8e":[5,0,263,1],
@@ -238,16 +249,5 @@ var NAVTREEINDEX356 =
 "struct__GStaticPrivate.html#a2bbca001f31a6e3693954ea38aefba44":[5,0,284,0],
 "struct__GStaticRWLock.html":[5,0,287],
 "struct__GStaticRWLock.html#a0dbaa129e8e7874e01ba36d67b48d9a7":[5,0,287,3],
-"struct__GStaticRWLock.html#a29511695171e1f2d3e8e755e1a8dc811":[5,0,287,4],
-"struct__GStaticRWLock.html#a51023f88d5b6ded234bdbf761daf35a4":[5,0,287,1],
-"struct__GStaticRWLock.html#a587a26729a7e4d0fbeee188a4a7f7deb":[5,0,287,0],
-"struct__GStaticRWLock.html#ab03efc7734a77656315a496a01976590":[5,0,287,2],
-"struct__GStaticRWLock.html#acae0ee5ba45624afe68e43dc0f6926da":[5,0,287,5],
-"struct__GStaticRWLock.html#ae11b0d6bc5d64728325070523d0bde26":[5,0,287,6],
-"struct__GStaticRecMutex.html":[5,0,285],
-"struct__GStaticRecMutex.html#a0955516fa98461c1d9e5e383a2531c5d":[5,0,285,0],
-"struct__GStaticRecMutex.html#a1ac0d77dd06555471880c468fdf17192":[5,0,285,3],
-"struct__GStaticRecMutex.html#a269abf2f0bd0d751b40f7b12792a798e":[5,0,285,2],
-"struct__GStaticRecMutex.html#a5444a58adc8ee63e431f62cfb8ceb56f":[5,0,285,4],
-"struct__GStaticRecMutex.html#a66367f06b7fc70773cd9a0423ec63ecb":[5,0,285,1]
+"struct__GStaticRWLock.html#a29511695171e1f2d3e8e755e1a8dc811":[5,0,287,4]
 };

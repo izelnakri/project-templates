@@ -134,9 +134,6 @@ Functions</h2></td></tr>
 <tr class="memitem:aa47247d318032404794b38b4796770f9" id="r_aa47247d318032404794b38b4796770f9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa47247d318032404794b38b4796770f9">print_github_user</a> (const <a class="el" href="structUser.html">User</a> *user)</td></tr>
 <tr class="memdesc:aa47247d318032404794b38b4796770f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print a <a class="el" href="structUser.html" title="Structure representing a GitHub user.">User</a>'s information to the console.  <br /></td></tr>
 <tr class="separator:aa47247d318032404794b38b4796770f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aedad3e2ef85707627832b2884b450802" id="r_aedad3e2ef85707627832b2884b450802"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aedad3e2ef85707627832b2884b450802">user_free</a> (<a class="el" href="structUser.html">User</a> *user)</td></tr>
-<tr class="memdesc:aedad3e2ef85707627832b2884b450802"><td class="mdescLeft">&#160;</td><td class="mdescRight">Free memory used by a <a class="el" href="structUser.html" title="Structure representing a GitHub user.">User</a> structure.  <br /></td></tr>
-<tr class="separator:aedad3e2ef85707627832b2884b450802"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a737ae55335ae9be85890c359f7c87988" name="a737ae55335ae9be85890c359f7c87988"></a>
@@ -485,53 +482,6 @@ Functions</h2></td></tr>
 <p class="reference">References <a class="el" href="user_8h_source.html#l00012">User::company</a>, <a class="el" href="user_8h_source.html#l00013">User::location</a>, <a class="el" href="user_8h_source.html#l00010">User::login</a>, <a class="el" href="user_8h_source.html#l00011">User::name</a>, and <a class="el" href="vendor_2civetweb_2main_8c_source.html#l00104">printf</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="bench__user_8cpp_source.html#l00011">BM_PrintUser()</a>, and <a class="el" href="src_2main_8c_source.html#l00027">main()</a>.</p>
-
-</div>
-</div>
-<a id="aedad3e2ef85707627832b2884b450802" name="aedad3e2ef85707627832b2884b450802"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aedad3e2ef85707627832b2884b450802">&#9670;&#160;</a></span>user_free()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void user_free </td>
-          <td>(</td>
-          <td class="paramtype"><a class="el" href="structUser.html">User</a> *</td>          <td class="paramname"><span class="paramname"><em>user</em></span></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Free memory used by a <a class="el" href="structUser.html" title="Structure representing a GitHub user.">User</a> structure. </p>
-<p>Free dynamically allocated memory in a <a class="el" href="structUser.html" title="Structure representing a GitHub user.">User</a> structure.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">user</td><td>Pointer to <a class="el" href="structUser.html" title="Structure representing a GitHub user.">User</a>.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>After freeing, all pointers are set to NULL. </p>
-
-<p class="definition">Definition at line <a class="el" href="user_8c_source.html#l00250">250</a> of file <a class="el" href="user_8c_source.html">user.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  250</span>                           {</div>
-<div class="line"><span class="lineno">  251</span>  <span class="keywordflow">if</span> (!user) {</div>
-<div class="line"><span class="lineno">  252</span>    <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">  253</span>  }</div>
-<div class="line"><span class="lineno">  254</span> </div>
-<div class="line"><span class="lineno">  255</span>  <a class="code hl_define" href="civetweb_8c.html#a2c6efa7679f8cd9f61af96e105017560">free</a>(user-&gt;<a class="code hl_variable" href="structUser.html#ac73f4253311bea2f3678634a5287fecb">login</a>);</div>
-<div class="line"><span class="lineno">  256</span>  <a class="code hl_define" href="civetweb_8c.html#a2c6efa7679f8cd9f61af96e105017560">free</a>(user-&gt;<a class="code hl_variable" href="structUser.html#a829fa9c7710707548005c76f41340d77">name</a>);</div>
-<div class="line"><span class="lineno">  257</span>  <a class="code hl_define" href="civetweb_8c.html#a2c6efa7679f8cd9f61af96e105017560">free</a>(user-&gt;<a class="code hl_variable" href="structUser.html#a6a336682b52b213b277dd4ba23450f26">company</a>);</div>
-<div class="line"><span class="lineno">  258</span>  <a class="code hl_define" href="civetweb_8c.html#a2c6efa7679f8cd9f61af96e105017560">free</a>(user-&gt;<a class="code hl_variable" href="structUser.html#ab618fd7f262c27bda5aa22482555d7fe">location</a>);</div>
-<div class="line"><span class="lineno">  259</span> </div>
-<div class="line"><span class="lineno">  260</span>  <span class="comment">// Zero out pointers after freeing</span></div>
-<div class="line"><span class="lineno">  261</span>  user-&gt;<a class="code hl_variable" href="structUser.html#ac73f4253311bea2f3678634a5287fecb">login</a> = <a class="code hl_define" href="gmacros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><span class="lineno">  262</span>  user-&gt;<a class="code hl_variable" href="structUser.html#a829fa9c7710707548005c76f41340d77">name</a> = <a class="code hl_define" href="gmacros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><span class="lineno">  263</span>  user-&gt;<a class="code hl_variable" href="structUser.html#a6a336682b52b213b277dd4ba23450f26">company</a> = <a class="code hl_define" href="gmacros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><span class="lineno">  264</span>  user-&gt;<a class="code hl_variable" href="structUser.html#ab618fd7f262c27bda5aa22482555d7fe">location</a> = <a class="code hl_define" href="gmacros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><span class="lineno">  265</span>}</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="user_8h_source.html#l00012">User::company</a>, <a class="el" href="civetweb_8c_source.html#l01542">free</a>, <a class="el" href="user_8h_source.html#l00013">User::location</a>, <a class="el" href="user_8h_source.html#l00010">User::login</a>, <a class="el" href="user_8h_source.html#l00011">User::name</a>, and <a class="el" href="gmacros_8h_source.html#l00924">NULL</a>.</p>
 
 </div>
 </div>
