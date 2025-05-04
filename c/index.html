@@ -122,8 +122,8 @@ Installation</h1>
 Development Setup</h1>
 <ol type="1">
 <li><p class="startli"><b>Clone the repository:</b></p>
-<div class="fragment"><div class="line">git clone https://github.com/yourusername/github-user-fetcher.git</div>
-<div class="line">cd github-user-fetcher</div>
+<div class="fragment"><div class="line">git clone https://github.com/izelnakri/project-templates.git</div>
+<div class="line">cd github-user-fetcher/c</div>
 </div><!-- fragment --></li>
 <li><p class="startli"><b>Install dependencies:</b></p><ul>
 <li>Use <code>nix-shell</code> for the development environment or install manually. Don't forget to be on this nix shell, so you can have the required dependencies for the make commands.</li>
@@ -161,7 +161,7 @@ Flatpak</h2>
 <li><p class="startli"><b>Run the Flatpak application:</b></p>
 <div class="fragment"><div class="line">make run-flatpak</div>
 </div><!-- fragment --></li>
-<li><p class="startli"><b>Run the Flatpak CLI server:</b></p>
+<li><p class="startli"><b>Run the Flatpak CLI server application:</b></p>
 <div class="fragment"><div class="line">make run-flatpak-cli-server</div>
 </div><!-- fragment --></li>
 </ul>
@@ -171,16 +171,16 @@ Docker</h2>
 <li><p class="startli"><b>Build the Docker image:</b></p>
 <div class="fragment"><div class="line">make build-docker-image</div>
 </div><!-- fragment --></li>
-<li><p class="startli"><b>Run the Docker CLI:</b></p>
+<li><p class="startli"><b>Run the Docker CLI application:</b></p>
 <div class="fragment"><div class="line">make run-docker-cli</div>
 </div><!-- fragment --></li>
-<li><p class="startli"><b>Run the Docker CLI with a user:</b></p>
+<li><p class="startli"><b>Run the Docker CLI application with a user:</b></p>
 <div class="fragment"><div class="line">make run-docker-cli-user</div>
 </div><!-- fragment --></li>
-<li><p class="startli"><b>Run the Docker CLI server:</b></p>
+<li><p class="startli"><b>Run the Docker CLI server application:</b></p>
 <div class="fragment"><div class="line">make run-docker-cli-server</div>
 </div><!-- fragment --></li>
-<li><p class="startli"><b>Run the Docker GUI:</b></p>
+<li><p class="startli"><b>Run the Docker GUI application:</b></p>
 <div class="fragment"><div class="line">make run-docker-gui</div>
 </div><!-- fragment --></li>
 </ul>
@@ -190,10 +190,10 @@ Testing</h2>
 <li><p class="startli"><b>Run all tests:</b></p>
 <div class="fragment"><div class="line">make test</div>
 </div><!-- fragment --></li>
-<li><p class="startli"><b>Run specific tests (e.g., Clang-Tidy):</b></p>
+<li><p class="startli"><b>Run specific Clang-Tidy lints on source code:</b></p>
 <div class="fragment"><div class="line">make lint-clang-tidy</div>
 </div><!-- fragment --></li>
-<li><p class="startli"><b>Run all tests and benchmarks:</b></p>
+<li><p class="startli"><b>Run all benchmarks:</b></p>
 <div class="fragment"><div class="line">make bench</div>
 </div><!-- fragment --></li>
 </ul>
