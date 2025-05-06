@@ -51,8 +51,6 @@ let
   # Entry script that sets up the environment
   zshEntryScript = pkgs.writeShellScriptBin "enter-zsh-env" ''
     #!/usr/bin/env zsh
-    set -euo pipefail
-
     export ZDOTDIR=$(mktemp -d)
     export ORIG_HOME="$HOME"
     
@@ -107,10 +105,15 @@ pkgs.mkShell rec {
   PKG_CONFIG_PATH = getAllPkgConfigPaths pkgs (inputsFrom ++ buildInputs ++ nativeBuildInputs);
 
   shellHook = with pkgs; ''
+    set -eo pipefail;
+
     export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:$HOME/.cache/vcpkg/packages/benchmark_x64-linux/lib/pkgconfig"
-    export SHELL=${pkgs.zsh}/bin/zsh
     
-    # Execute our ZSH script directly
-    exec ${zshEntryScript}/bin/enter-zsh-env
+    if [ -z "$CI" ]; then
+      export SHELL=${pkgs.zsh}/bin/zsh
+      # Execute our ZSH script directly
+      exec ${zshEntryScript}/bin/enter-zsh-env
+    fi
+    set -u # Fail undefined variables only on CI environment
   '';
 }
