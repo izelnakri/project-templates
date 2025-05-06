@@ -86,66 +86,11 @@
           };
         };
 
-        devShells.default = pkgs.mkShell rec {
-          inputsFrom = [ self.packages.${system}.default ]; # This will allow me to get packages buildInputs & nativeBuildInputs
-
-          nativeBuildInputs = with pkgs; [
-            pkg-config-unwrapped
-            unstable.vcpkg
-            appstream # required for bundling flatpak/*.appdata.xml
-            # optional: appstream-glib # for now for appstream utils
-
-            clang-tools # Includes clang-tidy and clang-format
-            cppcheck
-            flawfinder
-            valgrind
-            bear # For generating compile_commands.json
-            kcachegrind # For visualizing valgrind callgrind output
-            gdb
-            flatpak-builder
-            doxygen
-          ];
-          buildInputs = [ self.packages.${system}.default ];
-
-          # NOTE: These were redundant but maybe useful in future: VCPKG_ROOT = "${unstable.vcpkg}/share/vcpkg";
-          # VCPKG_FORCE_SYSTEM_BINARIES = 1;
-
-          PKG_CONFIG_PATH = getAllPkgConfigPaths pkgs (inputsFrom ++ buildInputs ++ nativeBuildInputs);
-
-          shellHook = with pkgs; ''
-            export PKG_CONFIG_PATH="$PKG_CONFIG_PATH:$HOME/.cache/vcpkg/packages/benchmark_x64-linux/lib/pkgconfig"
-
-            # vcpkg install # TODO: In future, add vcpkg packages(ports) directly to /nix/store
-
-            if git rev-parse --git-dir > /dev/null 2>&1; then # Only proceed with git hook setup if we're in a git repository
-              HOOKS_DIR="$(git rev-parse --git-dir)/hooks"
-              PRE_COMMIT_HOOK_PATH="$HOOKS_DIR/pre-commit"
-
-              FLAKE_DIR="$(dirname "$(readlink -f "$PWD/flake.nix")")" # Find the pre-commit script relative to the flake.nix location
-              PRE_COMMIT_SOURCE="$FLAKE_DIR/pre-commit"
-              
-              mkdir -p "$HOOKS_DIR"
-
-              if [ -f "$PRE_COMMIT_HOOK_PATH" ]; then
-                rm "$PRE_COMMIT_HOOK_PATH"
-                echo "🗑️ Removed existing pre-commit hook"
-              fi
-
-              if [ -f "$PRE_COMMIT_SOURCE" ]; then
-                cp "$PRE_COMMIT_SOURCE" "$PRE_COMMIT_HOOK_PATH"
-                chmod +x "$PRE_COMMIT_HOOK_PATH"
-                echo "✅ Installed pre-commit hook from $PRE_COMMIT_SOURCE => $PRE_COMMIT_HOOK_PATH"
-              else
-                echo "❌ Could not find pre-commit script at $PRE_COMMIT_SOURCE"
-                exit 1
-              fi
-            fi
-
-            echo "🔧 Dev environment ready. Run: make"
-          '';
+        devShells.default = import ./nix/devShells/default.nix {
+          inherit pkgs unstable self system;
         };
 
-        formatter = pkgs.nixpkgs-fmt; # Allows nix fmt .
+        formatter = pkgs.nixpkgs-fmt;
 
         apps = rec {
           cli = {
