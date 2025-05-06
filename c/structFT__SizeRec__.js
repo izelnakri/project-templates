@@ -1,7 +1,0 @@
-var structFT__SizeRec__ =
-[
-    [ "face", "structFT__SizeRec__.html#a21b54fb07feaba8be23321054da98f5f", null ],
-    [ "generic", "structFT__SizeRec__.html#aa24520b093a9b4ba9ff388bfe7b9491d", null ],
-    [ "internal", "structFT__SizeRec__.html#a236c47ea3138e485c29b0d7baa5cf3b6", null ],
-    [ "metrics", "structFT__SizeRec__.html#a29a6b518d09f6cf1714d9aed01eddc01", null ]
-];
