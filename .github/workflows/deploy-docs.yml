@@ -1,38 +1,125 @@
-name: Deploy Doxygen Docs
+name: Deploy Doxygen Docs + Lint + Checks + Tests
+
 permissions:
   contents: write
 
 on:
   push:
-    branches: [ main ]
+    branches:
+      - '**'  # all branches
+    tags:
+      - 'v*'  # tags starting with 'v'
+  pull_request:
   workflow_dispatch:
 
 jobs:
-  deploy:
+  lint-clang-tidy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+      - uses: actions/checkout@v4
         with:
           submodules: true
-
-      - name: Set up Nix
-        uses: cachix/install-nix-action@v31
+      - uses: cachix/install-nix-action@v31
         with:
-          extra_nix_config: |
-            experimental-features = nix-command flakes
+          extra_nix_config: experimental-features = nix-command flakes
+      - uses: cachix/cachix-action@v14
+        with:
+          name: project-templates
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+      - run: cd c && nix develop --command make lint-clang-tidy
 
-      - name: Enter devShell and generate docs
-        run: |
-          cd c
-          nix develop --command bash -c '
-            meson setup build
-            make doc
-          '
+  lint-cppcheck:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: experimental-features = nix-command flakes
+      - uses: cachix/cachix-action@v14
+        with:
+          name: project-templates
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+      - run: cd c && nix develop --command make lint-cppcheck
 
-      - name: Deploy to GitHub Pages
-        uses: peaceiris/actions-gh-pages@v4
+  lint-flawfinder:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: experimental-features = nix-command flakes
+      - uses: cachix/cachix-action@v14
+        with:
+          name: project-templates
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+      - run: cd c && nix develop --command make lint-flawfinder
+
+  format-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: experimental-features = nix-command flakes
+      - uses: cachix/cachix-action@v14
+        with:
+          name: project-templates
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+      - run: cd c && nix develop --command make format-check
+
+  nix-vm-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: cachix/install-nix-action@v31
+        with:
+          enable_kvm: true
+          extra_nix_config: "system-features = nixos-test benchmark big-parallel kvm"
+      - uses: cachix/cachix-action@v14
+        with:
+          name: project-templates
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+      - run: cd c && nix run .#checks.x86_64-linux.output
+
+  run-tests:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: experimental-features = nix-command flakes
+      - uses: cachix/cachix-action@v14
+        with:
+          name: project-templates
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+      - run: cd c && nix develop --command make test
+
+  deploy-docs:
+    if: github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/tags/v')
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          submodules: true
+      - uses: cachix/install-nix-action@v31
+        with:
+          extra_nix_config: experimental-features = nix-command flakes
+      - uses: cachix/cachix-action@v14
+        with:
+          name: project-templates
+          authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
+      - run: cd c && nix develop --command bash -c 'meson setup build && make doc'
+      - uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./c/docs/html

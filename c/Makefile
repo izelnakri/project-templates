@@ -47,7 +47,7 @@ setup:
 check-setup:
 	@if [ ! -f build/meson-info/intro-dependencies.json ]; then \
 		echo "Run 'meson setup build' first!"; \
-		make setup
+		make setup; \
 	fi
 	
 build: clean setup
