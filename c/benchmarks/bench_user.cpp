@@ -8,12 +8,14 @@ User fake_octo_user = {.login = "octocat",
                        .company = "GitHub",
                        .location = "San Francisco"};
 
-static void BM_PrintUser(const benchmark::State &state) {
+// cppcheck-suppress constParameterCallback
+static void BM_PrintUser(benchmark::State &state) {
   for (auto _ : state) {
-    // Code to benchmark
     print_github_user(&fake_octo_user);
   }
 }
+
+// Cast the function pointer to the expected signature
 BENCHMARK(BM_PrintUser);
 
 BENCHMARK_MAIN();

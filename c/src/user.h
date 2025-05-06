@@ -7,10 +7,10 @@
  * @brief Structure representing a GitHub user.
  */
 typedef struct {
-  char *login;    ///< GitHub username
-  char *name;     ///< Full name
-  char *company;  ///< Company name
-  char *location; ///< User's location
+  const char *login;    ///< GitHub username
+  const char *name;     ///< Full name
+  const char *company;  ///< Company name
+  const char *location; ///< User's location
 } User;
 
 #ifdef __cplusplus
