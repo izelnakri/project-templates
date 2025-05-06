@@ -51,6 +51,8 @@ let
   # Entry script that sets up the environment
   zshEntryScript = pkgs.writeShellScriptBin "enter-zsh-env" ''
     #!/usr/bin/env zsh
+    set -euo pipefail
+
     export ZDOTDIR=$(mktemp -d)
     export ORIG_HOME="$HOME"
     
