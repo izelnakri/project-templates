@@ -29,12 +29,12 @@ make install
 
    ```bash
    git clone https://github.com/izelnakri/project-templates.git
-   cd github-user-fetcher/c
+   cd project-templates/c
    ```
 
 2. **Install dependencies:**
 
-   - Use `nix-shell` for the development environment or install manually. Don't forget to be on this nix shell, so you can have the required dependencies for the make commands.
+   - Use `nix-shell` for the development environment or install manually. This `devShell` comes with a very developer friendly zsh & advanced zsh plugins. Don't forget to be on this nix shell, so you can have the required dependencies for the `make` commands.
 
    ```bash
    nix develop
