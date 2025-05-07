@@ -558,6 +558,7 @@ var hierarchy =
     [ "ah", "structah.html", null ],
     [ "alloc_hdr", "structalloc__hdr.html", null ],
     [ "analysisInfo", "structanalysisInfo.html", null ],
+    [ "AppConfig", "structAppConfig.html", null ],
     [ "AppWidgets", "structAppWidgets.html", null ],
     [ "AuthContext", "structAuthContext.html", null ],
     [ "AutoincInfo", "structAutoincInfo.html", null ],
@@ -712,6 +713,9 @@ var hierarchy =
     [ "duk_tval_struct", "structduk__tval__struct.html", null ],
     [ "DumpState", "structDumpState.html", null ],
     [ "Dyndata", "structDyndata.html", null ],
+    [ "std::enable_shared_from_this", null, [
+      [ "HttpSession", "classHttpSession.html", null ]
+    ] ],
     [ "et_info", "structet__info.html", null ],
     [ "ev_timer", "structev__timer.html", null ],
     [ "std::exception", null, [

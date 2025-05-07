@@ -22,5 +22,6 @@ var searchData=
   ['hb_5fuser_5fdata_5fkey_5ft_19',['hb_user_data_key_t',['../structhb__user__data__key__t.html',1,'']]],
   ['hb_5fvariation_5ft_20',['hb_variation_t',['../structhb__variation__t.html',1,'']]],
   ['header_21',['Header',['../structHeader.html',1,'']]],
-  ['hiddenindexinfo_22',['HiddenIndexInfo',['../structHiddenIndexInfo.html',1,'']]]
+  ['hiddenindexinfo_22',['HiddenIndexInfo',['../structHiddenIndexInfo.html',1,'']]],
+  ['httpsession_23',['HttpSession',['../classHttpSession.html',1,'']]]
 ];
