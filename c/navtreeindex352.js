@@ -1,5 +1,17 @@
 var NAVTREEINDEX352 =
 {
+"struct__GDBusInterfaceSkeleton.html":[5,0,51],
+"struct__GDBusInterfaceSkeleton.html#a9ea332e8a2278c8f85066b0816bee61b":[5,0,51,1],
+"struct__GDBusInterfaceSkeleton.html#af11d0a36efafa71a42d6e3431d3f4fd4":[5,0,51,0],
+"struct__GDBusInterfaceSkeletonClass.html":[5,0,52],
+"struct__GDBusInterfaceSkeletonClass.html#a1a5b932d9d6d11d00c673fc0d6075188":[5,0,52,7],
+"struct__GDBusInterfaceSkeletonClass.html#a695c57b58d42274f62f407b06a7156c3":[5,0,52,6],
+"struct__GDBusInterfaceSkeletonClass.html#a6db37f5f15a818b3890eb3ecaa12bf81":[5,0,52,3],
+"struct__GDBusInterfaceSkeletonClass.html#a8336f5111a63a4e325c3418b2e8bffd1":[5,0,52,1],
+"struct__GDBusInterfaceSkeletonClass.html#a97b65441cb1d3f042df0cf0b9addfb6e":[5,0,52,5],
+"struct__GDBusInterfaceSkeletonClass.html#ac829fa9cbef543165c423bc154441385":[5,0,52,0],
+"struct__GDBusInterfaceSkeletonClass.html#aec7ddf3bd0cf270539709f1589f126e6":[5,0,52,2],
+"struct__GDBusInterfaceSkeletonClass.html#aff6d7b3a557648f7a53a2dc8dfa88491":[5,0,52,4],
 "struct__GDBusInterfaceVTable.html":[5,0,53],
 "struct__GDBusInterfaceVTable.html#a0fa2a5d9b25e368d3ae4227f146c861f":[5,0,53,1],
 "struct__GDBusInterfaceVTable.html#a58be940957f3e12d975f68b0fe5dfa5d":[5,0,53,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX352 =
 "struct__GFileIOStreamClass.html#a69275470dcb7d4c487ab94939fbc50a6":[5,0,104,4],
 "struct__GFileIOStreamClass.html#a6a90abdb0b2614cd916e0878a80ae08a":[5,0,104,6],
 "struct__GFileIOStreamClass.html#a9ed4da69f85300ee9275b8b8713c9933":[5,0,104,9],
-"struct__GFileIOStreamClass.html#ab3984aebc6abc564485197b80aafe6f1":[5,0,104,11],
-"struct__GFileIOStreamClass.html#ab7ebe2c80d9fd94ab8763ad9af6d148d":[5,0,104,5],
-"struct__GFileIOStreamClass.html#ac6ec7eea1b645eef90ce58442cd5b764":[5,0,104,1],
-"struct__GFileIOStreamClass.html#ad4bcdb83ca6aa572e79d850096dd0dca":[5,0,104,2],
-"struct__GFileIOStreamClass.html#ad874fb89614d3bd20d3013b00a6e22e0":[5,0,104,10],
-"struct__GFileIOStreamClass.html#aded995528adfc7e59f859319f25a9441":[5,0,104,7],
-"struct__GFileIOStreamClass.html#ae3db54e2b4c5088c2b6d7becae9cf69e":[5,0,104,14],
-"struct__GFileIOStreamClass.html#afbee25acd148eb13d6e583690710e251":[5,0,104,13],
-"struct__GFileIface.html":[5,0,100],
-"struct__GFileIface.html#a049ab0b2dbca02d74182b230e9fd8a9e":[5,0,100,88],
-"struct__GFileIface.html#a04d01a1761a71f4accb03ff2e4086cf4":[5,0,100,3],
-"struct__GFileIface.html#a05135989219f784668a9f9ee322dd415":[5,0,100,65],
-"struct__GFileIface.html#a072bcc2fe1ab0abe184b98dbfd5afccf":[5,0,100,37]
+"struct__GFileIOStreamClass.html#ab3984aebc6abc564485197b80aafe6f1":[5,0,104,11]
 };

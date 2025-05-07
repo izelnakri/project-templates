@@ -1,5 +1,14 @@
 var NAVTREEINDEX217 =
 {
+"gtkshortcutcontroller_8h.html#a7222ec6bd7e538881ac4bb1fba1c7f08":[6,0,4,0,8,0,0,2,167,15],
+"gtkshortcutcontroller_8h.html#a7df94b32b6d0f43d0d32846301a1a148":[6,0,4,0,8,0,0,2,167,2],
+"gtkshortcutcontroller_8h.html#a85bf8d2df6979a009d17f850788307c4":[6,0,4,0,8,0,0,2,167,11],
+"gtkshortcutcontroller_8h.html#a8dc34f45d4d125990fc87310be40bf06":[6,0,4,0,8,0,0,2,167,12],
+"gtkshortcutcontroller_8h.html#aa9d1490128362e2570f8d5bb402256c1":[6,0,4,0,8,0,0,2,167,8],
+"gtkshortcutcontroller_8h.html#aac3662868ab6260a32aec3ea31f938af":[6,0,4,0,8,0,0,2,167,7],
+"gtkshortcutcontroller_8h.html#abd1b712fe80a130dc28d7f13d1218953":[6,0,4,0,8,0,0,2,167,14],
+"gtkshortcutcontroller_8h.html#accd0794043ac110c59b3bfa7e27c0cc2":[6,0,4,0,8,0,0,2,167,0],
+"gtkshortcutcontroller_8h.html#ad46bfb49eb94f689ef02aa9bdfb3de57":[6,0,4,0,8,0,0,2,167,6],
 "gtkshortcutcontroller_8h_source.html":[6,0,4,0,8,0,0,2,167],
 "gtkshortcutlabel_8h.html":[6,0,4,0,8,0,0,2,168],
 "gtkshortcutlabel_8h.html#a0890002ae7764da20994417fd84190b8":[6,0,4,0,8,0,0,2,168,7],
@@ -240,14 +249,5 @@ var NAVTREEINDEX217 =
 "gtkspinbutton_8h.html#a37edecc3c5d9f24324b1e9a483efa5ea":[6,0,4,0,8,0,0,2,183,20],
 "gtkspinbutton_8h.html#a490e0d7526195c2f3639cde595b33746":[6,0,4,0,8,0,0,2,183,31],
 "gtkspinbutton_8h.html#a494b624b2c7ec5bd94020fc8047c23e5":[6,0,4,0,8,0,0,2,183,32],
-"gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27":[6,0,4,0,8,0,0,2,183,6],
-"gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27a0eacdd1772642b831b41ccb791ca4021":[6,0,4,0,8,0,0,2,183,6,4],
-"gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27a1e133ab0688a7996714519e8ee3f7c1b":[6,0,4,0,8,0,0,2,183,6,3],
-"gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27a1fd267fd4ba013075f9af3a7d298cbb7":[6,0,4,0,8,0,0,2,183,6,1],
-"gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27a2ca92e129339699a4d42036489750d61":[6,0,4,0,8,0,0,2,183,6,0],
-"gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27a52c57456a800bbac720462066578ac4c":[6,0,4,0,8,0,0,2,183,6,5],
-"gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27a7ed58a460ec1d2f0eb314c9570c79479":[6,0,4,0,8,0,0,2,183,6,6],
-"gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27ae47cb589239b9466bd78c60b47a5f61b":[6,0,4,0,8,0,0,2,183,6,2],
-"gtkspinbutton_8h.html#a5bf5ee06aa2dde1af9aa12f7169ec0e7":[6,0,4,0,8,0,0,2,183,8],
-"gtkspinbutton_8h.html#a5cbb8570d4871a196200e1355317ad0d":[6,0,4,0,8,0,0,2,183,17]
+"gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27":[6,0,4,0,8,0,0,2,183,6]
 };

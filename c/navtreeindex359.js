@@ -1,5 +1,17 @@
 var NAVTREEINDEX359 =
 {
+"struct__GtkAccessibleRangeInterface.html#a3842ea3ca16c3436a486d73ce1a52218":[5,0,300,1],
+"struct__GtkAccessibleRangeInterface.html#ad54fc911a4d18e3c31ddefeb832ac069":[5,0,300,0],
+"struct__GtkAccessibleTextInterface.html":[5,0,301],
+"struct__GtkAccessibleTextInterface.html#a24990ac04eb99c5c343767a8908c46b9":[5,0,301,8],
+"struct__GtkAccessibleTextInterface.html#a2fe2354e6af3a87606b1db465b65dd91":[5,0,301,1],
+"struct__GtkAccessibleTextInterface.html#a3d63d919c5f12f815a343ae8ae2fc912":[5,0,301,6],
+"struct__GtkAccessibleTextInterface.html#a710abd45143684d9da9dbbc40bbe259c":[5,0,301,4],
+"struct__GtkAccessibleTextInterface.html#a74840361d4bf23ec2e00a1e2f094378f":[5,0,301,7],
+"struct__GtkAccessibleTextInterface.html#a9e4fb9fa53fd13f645eb0c0723b8fed7":[5,0,301,0],
+"struct__GtkAccessibleTextInterface.html#ace3398db142999dad5b36992429b011d":[5,0,301,2],
+"struct__GtkAccessibleTextInterface.html#ae1f0c00129ecd67705589d38036563f1":[5,0,301,3],
+"struct__GtkAccessibleTextInterface.html#af40ddeb9122cfe1ee315ff9f1b4b1029":[5,0,301,5],
 "struct__GtkActionableInterface.html":[5,0,302],
 "struct__GtkActionableInterface.html#a27660b91bd61b6ef2e3863e5dabcd578":[5,0,302,4],
 "struct__GtkActionableInterface.html#a501f04ed5d1583fbfb059f3754f862c0":[5,0,302,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX359 =
 "struct__GtkFixed.html":[5,0,346],
 "struct__GtkFixed.html#a43892f7f0e4dd1e5e5d4279adc50da7f":[5,0,346,0],
 "struct__GtkFixedClass.html":[5,0,347],
-"struct__GtkFixedClass.html#a7fcb4b5216da73b5d6784e791dccdbac":[5,0,347,0],
-"struct__GtkFixedClass.html#abc732951e9c4760e78c67cc4ad198e6f":[5,0,347,1],
-"struct__GtkFlowBoxChild.html":[5,0,348],
-"struct__GtkFlowBoxChild.html#a0f32c9ec8056f9e93ee0cfc8d9a47257":[5,0,348,0],
-"struct__GtkFlowBoxChildClass.html":[5,0,349],
-"struct__GtkFlowBoxChildClass.html#a6273575460d43f92a5be3d7f31b3af7c":[5,0,349,0],
-"struct__GtkFlowBoxChildClass.html#ade4cf50e12207a77ad52e33a8bc4154e":[5,0,349,2],
-"struct__GtkFlowBoxChildClass.html#afe3cd5a3ae9f9bbead68314c30fafe6a":[5,0,349,1],
-"struct__GtkFontChooserIface.html":[5,0,350],
-"struct__GtkFontChooserIface.html#a58d4ed0e662b8264e6f59d664d09b12a":[5,0,350,0],
-"struct__GtkFontChooserIface.html#a70ef878ba24e7eb79c11c9f82a8a473f":[5,0,350,3],
-"struct__GtkFontChooserIface.html#aa6cbc9986f508fbaff5bc9e4b996b5c9":[5,0,350,4],
-"struct__GtkFontChooserIface.html#aade6393cf24725ef177fb65fb6ca5e03":[5,0,350,5]
+"struct__GtkFixedClass.html#a7fcb4b5216da73b5d6784e791dccdbac":[5,0,347,0]
 };

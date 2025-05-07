@@ -1150,8 +1150,8 @@ var hierarchy =
     [ "UnpackedRecord", "structUnpackedRecord.html", null ],
     [ "Upsert", "structUpsert.html", null ],
     [ "UpVal", "structUpVal.html", null ],
-    [ "upvaldesc", "structupvaldesc.html", null ],
     [ "Upvaldesc", "structUpvaldesc.html", null ],
+    [ "upvaldesc", "structupvaldesc.html", null ],
     [ "usa", "unionusa.html", null ],
     [ "User", "structUser.html", null ],
     [ "UTString", "unionUTString.html", null ],
@@ -2302,6 +2302,9 @@ var hierarchy =
     [ "WherePath", "structWherePath.html", null ],
     [ "WhereScan", "structWhereScan.html", null ],
     [ "WhereTerm", "structWhereTerm.html", null ],
+    [ "Gtk::Window", null, [
+      [ "GitHubUserFetcherWindow", "classGitHubUserFetcherWindow.html", null ]
+    ] ],
     [ "Window", "structWindow.html", null ],
     [ "WindowCodeArg", "structWindowCodeArg.html", null ],
     [ "WindowCsrAndReg", "structWindowCsrAndReg.html", null ],

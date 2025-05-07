@@ -1,5 +1,17 @@
 var NAVTREEINDEX362 =
 {
+"struct__GtkWindowClass.html#ac133a06292857d56d460ec28ac590c59":[5,0,434,6],
+"struct__GtkWindowClass.html#ac6013edbb086efe1a4ff559b2feb3e52":[5,0,434,0],
+"struct__GtkWindowClass.html#ad6ee8bd434c13cbbdb88bf424037d2fd":[5,0,434,5],
+"struct__GtkWindowClass.html#ad85b3a706311ca58ee6e4f2ddc4142c1":[5,0,434,3],
+"struct__GtkWindowGroup.html":[5,0,435],
+"struct__GtkWindowGroup.html#a36d39aa38e6908c494cc0482380f7365":[5,0,435,0],
+"struct__GtkWindowGroup.html#aca43e5ba6671539ab48994613453cb18":[5,0,435,1],
+"struct__GtkWindowGroupClass.html":[5,0,436],
+"struct__GtkWindowGroupClass.html#a0237be14be1c8db45d2ead8e15741259":[5,0,436,0],
+"struct__GtkWindowGroupClass.html#a0a8cf2541050b8d749fba396095db3cd":[5,0,436,3],
+"struct__GtkWindowGroupClass.html#a48efe5342fff14a6f15cab6a7d483efd":[5,0,436,1],
+"struct__GtkWindowGroupClass.html#a89114a43ef584eaec58053d0487515ff":[5,0,436,2],
 "struct__GtkWindowGroupClass.html#ac6b86adea625f1940fc65de8ad93ee50":[5,0,436,4],
 "struct__PangoAnalysis.html":[5,0,494],
 "struct__PangoAnalysis.html#a05a51e50ac0929cd8ab26e230ce8ff4d":[5,0,494,3],
@@ -237,17 +249,5 @@ var NAVTREEINDEX362 =
 "struct__PangoMatrix.html#a0de7d28a2f1e1de5d53cb64013ec6e2c":[5,0,539,5],
 "struct__PangoMatrix.html#a24e19055f3823b5aa98451f5c5aba09c":[5,0,539,2],
 "struct__PangoMatrix.html#a3847b3556c4b27586effb6cf4f1d42d4":[5,0,539,3],
-"struct__PangoMatrix.html#a733522f6c863e006caf6e17991793fe0":[5,0,539,1],
-"struct__PangoMatrix.html#a7a0497b1e8cb5872f96214990e64c0d8":[5,0,539,0],
-"struct__PangoMatrix.html#aba545fe0e67122b5bf87942e4b2e0c75":[5,0,539,4],
-"struct__PangoOTFeatureMap.html":[5,0,540],
-"struct__PangoOTFeatureMap.html#a4e538657d8b2e56f361313dda876b3a3":[5,0,540,1],
-"struct__PangoOTFeatureMap.html#a7bdcc4175bd071d5a80ea9d9a5206ff6":[5,0,540,0],
-"struct__PangoOTGlyph.html":[5,0,541],
-"struct__PangoOTGlyph.html#a1c6f45f8e0f83e7eec0a3614c0958a21":[5,0,541,0],
-"struct__PangoOTGlyph.html#a28c2c8739e01767a2b1bde286e8821e9":[5,0,541,5],
-"struct__PangoOTGlyph.html#a56d43fed2086f42f24e24d6c9f07bc22":[5,0,541,3],
-"struct__PangoOTGlyph.html#a663b97cffe127360690f2491746e29d5":[5,0,541,1],
-"struct__PangoOTGlyph.html#a700ad13fa37d8e2de8fccfffedebddd4":[5,0,541,2],
-"struct__PangoOTGlyph.html#aa9f3b98dfe0f2dd3ef1fd3b06deebd3b":[5,0,541,4]
+"struct__PangoMatrix.html#a733522f6c863e006caf6e17991793fe0":[5,0,539,1]
 };

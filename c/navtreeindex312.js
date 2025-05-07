@@ -1,5 +1,17 @@
 var NAVTREEINDEX312 =
 {
+"structFT__GlyphRec__.html#a00679b5e2519affab0f3999718817f8e":[5,0,736,3],
+"structFT__GlyphRec__.html#a26b42a2610a69dcaed3e7c8b6d506211":[5,0,736,2],
+"structFT__GlyphRec__.html#ad7074cfe0e9fd6616e4dc4011e481524":[5,0,736,1],
+"structFT__GlyphRec__.html#afd95b047df6a249db79018a279137018":[5,0,736,0],
+"structFT__GlyphSlotRec__.html":[5,0,737],
+"structFT__GlyphSlotRec__.html#a09779d1a4781ea029382e92c01048c6a":[5,0,737,0],
+"structFT__GlyphSlotRec__.html#a0c150c0fb007e49fe4b9db6a69df53b7":[5,0,737,3],
+"structFT__GlyphSlotRec__.html#a0f5dbaf7d539bf2d92ecdff740342b04":[5,0,737,6],
+"structFT__GlyphSlotRec__.html#a23c0d33b901b2678f322a0334a8508df":[5,0,737,9],
+"structFT__GlyphSlotRec__.html#a295f5a3108399c4c0703e6ee2f88cc67":[5,0,737,21],
+"structFT__GlyphSlotRec__.html#a2af67814d985bcdfcffdf7e8a36ebbdf":[5,0,737,4],
+"structFT__GlyphSlotRec__.html#a2ca5f5e7b92df3aee4584949fa6a2a1c":[5,0,737,20],
 "structFT__GlyphSlotRec__.html#a5415bcbf70efb3aae7a6b77040e21e91":[5,0,737,11],
 "structFT__GlyphSlotRec__.html#a5753b48d7165b08f106de3ad7c12bdd7":[5,0,737,17],
 "structFT__GlyphSlotRec__.html#a7a088255cb09abe42f19f650f48b6b3f":[5,0,737,5],
@@ -237,17 +249,5 @@ var NAVTREEINDEX312 =
 "structFT__SizeRec__.html#a29a6b518d09f6cf1714d9aed01eddc01":[5,0,779,3],
 "structFT__SizeRec__.html#aa24520b093a9b4ba9ff388bfe7b9491d":[5,0,779,1],
 "structFT__Size__Metrics__.html":[5,0,777],
-"structFT__Size__Metrics__.html#a1f8b1cb3538b9920127f721dd061379d":[5,0,777,7],
-"structFT__Size__Metrics__.html#a5e92028bb9881e107a6fb75d557eaff1":[5,0,777,5],
-"structFT__Size__Metrics__.html#a9b2ca3a4391803e8721ed99eb9953d52":[5,0,777,1],
-"structFT__Size__Metrics__.html#ab5fde60a2661d7b774f61c264a2a6070":[5,0,777,0],
-"structFT__Size__Metrics__.html#abb42b175a3450e9d8b84483f166d6c8a":[5,0,777,4],
-"structFT__Size__Metrics__.html#abcdb70cb9e39a74679bc39c07f3275f7":[5,0,777,6],
-"structFT__Size__Metrics__.html#ac315a7a834ac1a57c7169ce021718958":[5,0,777,3],
-"structFT__Size__Metrics__.html#ae3361e264fb8a9e669f118bdb244439b":[5,0,777,2],
-"structFT__Size__RequestRec__.html":[5,0,778],
-"structFT__Size__RequestRec__.html#a3a85704d13561d9db53aa60f7805ec73":[5,0,778,1],
-"structFT__Size__RequestRec__.html#a7644b04dd2b26c0698df558775320494":[5,0,778,2],
-"structFT__Size__RequestRec__.html#a7b044d36af318b053d5e3939eb0d5039":[5,0,778,4],
-"structFT__Size__RequestRec__.html#a86601c38d91064b6efe256a9e99c56f4":[5,0,778,3]
+"structFT__Size__Metrics__.html#a1f8b1cb3538b9920127f721dd061379d":[5,0,777,7]
 };

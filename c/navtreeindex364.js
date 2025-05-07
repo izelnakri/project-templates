@@ -1,5 +1,17 @@
 var NAVTREEINDEX364 =
 {
+"structcri__stream__data.html#ab6204589fb426af9585a2bd60512a258":[5,0,603,5],
+"structcriterion__assert__args.html":[5,0,604],
+"structcriterion__assert__args.html#ac49741a16faf303853c1b6c51aceeddf":[5,0,604,1],
+"structcriterion__assert__args.html#ac60cff32071d2a5a9e41b3d99725fe9a":[5,0,604,0],
+"structcriterion__assert__stats.html":[5,0,605],
+"structcriterion__assert__stats.html#a39f7df8c19d4713b702058c2907aeb5c":[5,0,605,3],
+"structcriterion__assert__stats.html#a4b9f7eda96b2ae1a215d7cf253a3169f":[5,0,605,0],
+"structcriterion__assert__stats.html#a6ddc0f083ef54e8cedb622867f99613e":[5,0,605,4],
+"structcriterion__assert__stats.html#a84e5737595638afa0dfcccab05b69f74":[5,0,605,2],
+"structcriterion__assert__stats.html#ab0d37c8703f945d3ac5492b0bb152de6":[5,0,605,1],
+"structcriterion__datapoints.html":[5,0,606],
+"structcriterion__datapoints.html#a22be6a0ddbb055e52c6910723f6a76ce":[5,0,606,2],
 "structcriterion__datapoints.html#a5a9fa755d97ad060a77df4ac32c367c7":[5,0,606,1],
 "structcriterion__datapoints.html#aa1f0f323c03fb608a399e3d82b71f32b":[5,0,606,3],
 "structcriterion__datapoints.html#aadbdc846ad9a53a8a662878d292282aa":[5,0,606,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX364 =
 "structcurl__version__info__data.html#afa8789779d0c2b3540fc2b64ef9a182e":[5,0,635,13],
 "structcurl__waitfd.html":[5,0,636],
 "structcurl__waitfd.html#a14e87b528f4a052ec65edbc14b6ab080":[5,0,636,2],
-"structcurl__waitfd.html#ac8286d3f03be1a2f2d43a9516251f0f2":[5,0,636,0],
-"structcurl__waitfd.html#ae4712fac510d50249e1a430a3d160a17":[5,0,636,1],
-"structcurl__ws__frame.html":[5,0,637],
-"structcurl__ws__frame.html#a0f416a2da9864ad5c62fd611eba44ec8":[5,0,637,2],
-"structcurl__ws__frame.html#a65da96e005a5894c0d01a3e6b598c48d":[5,0,637,1],
-"structcurl__ws__frame.html#a87384403b6044852d697c964953afd13":[5,0,637,4],
-"structcurl__ws__frame.html#a8a591547f87f88fb51696bbda828a4ba":[5,0,637,3],
-"structcurl__ws__frame.html#a8aa38db589389f9ead421e0caebbb2ea":[5,0,637,0],
-"structde.html":[5,0,643],
-"structde.html#a08f58ddfc5471054734d921fc199b7ed":[5,0,643,1],
-"structde.html#ac819ba780b7179da19a396bd296bd258":[5,0,643,0],
-"structdir__data.html":[5,0,644],
-"structdir__data.html#a9888a18b3e273d6d7d47e9ac3069dac2":[5,0,644,1]
+"structcurl__waitfd.html#ac8286d3f03be1a2f2d43a9516251f0f2":[5,0,636,0]
 };

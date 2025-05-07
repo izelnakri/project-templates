@@ -48,7 +48,7 @@ var searchData=
   ['omit_45',['omit',['../structsqlite3__index__info_1_1sqlite3__index__constraint__usage.html#ad07fa17d30e4fb3abe23ceaf84edf0ef',1,'sqlite3_index_info::sqlite3_index_constraint_usage']]],
   ['omit_5ftempdb_46',['OMIT_TEMPDB',['../sqlite3_8c.html#a66e48cdcd6a4b9d9ae001c2e9d81311a',1,'sqlite3.c']]],
   ['omitmask_47',['omitMask',['../structWhereLoop.html#af67ad30433e111e3b1380bb422b8b7cd',1,'WhereLoop']]],
-  ['on_5fbutton_5fclicked_48',['on_button_clicked',['../gui_8c.html#abb5819a7b127f5e6c4c6b0dc7349a437',1,'gui.c']]],
+  ['on_5fbutton_5fclicked_48',['on_button_clicked',['../classGitHubUserFetcherWindow.html#a6baeddb668e9efaa290841fc8c473532',1,'GitHubUserFetcherWindow::on_button_clicked()'],['../gui_8c.html#abb5819a7b127f5e6c4c6b0dc7349a437',1,'on_button_clicked(GtkButton *button, gpointer user_data):&#160;gui.c']]],
   ['one_5fbyte_5fint_49',['ONE_BYTE_INT',['../sqlite3_8c.html#a3c779bd7ccfa8ceb71b6c5d32bcfa3e6',1,'sqlite3.c']]],
   ['onepass_5fmulti_50',['ONEPASS_MULTI',['../sqlite3_8c.html#a5e406d6e16a2a408d407380345c01c23',1,'sqlite3.c']]],
   ['onepass_5foff_51',['ONEPASS_OFF',['../sqlite3_8c.html#a19d13c651fe3a1c49aaa7b8c49a5e242',1,'sqlite3.c']]],

@@ -1,5 +1,17 @@
 var NAVTREEINDEX358 =
 {
+"struct__GUnixConnectionClass.html#a5fb7a14e2452c2091852a01ffb470b22":[5,0,466,0],
+"struct__GUnixCredentialsMessage.html":[5,0,467],
+"struct__GUnixCredentialsMessage.html#a06a4281827dd8d0559815c2974ff21a6":[5,0,467,0],
+"struct__GUnixCredentialsMessage.html#a8726fbb8191db2665d0f7b8e1766d2bf":[5,0,467,1],
+"struct__GUnixCredentialsMessageClass.html":[5,0,468],
+"struct__GUnixCredentialsMessageClass.html#a027dd28798929ad647c66665f59083bb":[5,0,468,0],
+"struct__GUnixCredentialsMessageClass.html#a529efee1cb597557317a628f744abd35":[5,0,468,2],
+"struct__GUnixCredentialsMessageClass.html#aa8751c0c05a2aaf0a6305cf68b6db6b2":[5,0,468,1],
+"struct__GUnixFDList.html":[5,0,469],
+"struct__GUnixFDList.html#a506f7dab276f3e4d4a3f13144171a09a":[5,0,469,1],
+"struct__GUnixFDList.html#ab8ee11b28f4d7fb71547d5d537e829a7":[5,0,469,0],
+"struct__GUnixFDListClass.html":[5,0,470],
 "struct__GUnixFDListClass.html#a003e11896ac793b0a95458a6c5810201":[5,0,470,1],
 "struct__GUnixFDListClass.html#a23224c9a6627a2979ef3d608d0c3a4ae":[5,0,470,5],
 "struct__GUnixFDListClass.html#a5c5d5820c26f5d57c472995609d9a527":[5,0,470,4],
@@ -237,17 +249,5 @@ var NAVTREEINDEX358 =
 "struct__GtkAccessibleInterface.html#a9addcaabffbe17243bd5a6fab43452de":[5,0,299,4],
 "struct__GtkAccessibleInterface.html#aac7d89d9ef5b30f50c34b4e574d56e53":[5,0,299,1],
 "struct__GtkAccessibleInterface.html#ab3b3fbd639e1077dd45e9781f1a674f8":[5,0,299,0],
-"struct__GtkAccessibleRangeInterface.html":[5,0,300],
-"struct__GtkAccessibleRangeInterface.html#a3842ea3ca16c3436a486d73ce1a52218":[5,0,300,1],
-"struct__GtkAccessibleRangeInterface.html#ad54fc911a4d18e3c31ddefeb832ac069":[5,0,300,0],
-"struct__GtkAccessibleTextInterface.html":[5,0,301],
-"struct__GtkAccessibleTextInterface.html#a24990ac04eb99c5c343767a8908c46b9":[5,0,301,8],
-"struct__GtkAccessibleTextInterface.html#a2fe2354e6af3a87606b1db465b65dd91":[5,0,301,1],
-"struct__GtkAccessibleTextInterface.html#a3d63d919c5f12f815a343ae8ae2fc912":[5,0,301,6],
-"struct__GtkAccessibleTextInterface.html#a710abd45143684d9da9dbbc40bbe259c":[5,0,301,4],
-"struct__GtkAccessibleTextInterface.html#a74840361d4bf23ec2e00a1e2f094378f":[5,0,301,7],
-"struct__GtkAccessibleTextInterface.html#a9e4fb9fa53fd13f645eb0c0723b8fed7":[5,0,301,0],
-"struct__GtkAccessibleTextInterface.html#ace3398db142999dad5b36992429b011d":[5,0,301,2],
-"struct__GtkAccessibleTextInterface.html#ae1f0c00129ecd67705589d38036563f1":[5,0,301,3],
-"struct__GtkAccessibleTextInterface.html#af40ddeb9122cfe1ee315ff9f1b4b1029":[5,0,301,5]
+"struct__GtkAccessibleRangeInterface.html":[5,0,300]
 };

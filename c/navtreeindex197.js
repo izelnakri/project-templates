@@ -1,5 +1,14 @@
 var NAVTREEINDEX197 =
 {
+"gtkaboutdialog_8h.html#a902c7616303fd54d43b22a021eb11d17":[6,0,4,0,8,0,0,2,5,1],
+"gtkaboutdialog_8h.html#a92713edd4de447ca6a03d5a114608e80":[6,0,4,0,8,0,0,2,5,39],
+"gtkaboutdialog_8h.html#a94ee6b536c93bf0f41f46adf7f5cd253":[6,0,4,0,8,0,0,2,5,6],
+"gtkaboutdialog_8h.html#aa2072df9e6ab20cc8a3422396100e43f":[6,0,4,0,8,0,0,2,5,40],
+"gtkaboutdialog_8h.html#aa567670eb91059d31b66573afb1f9d18":[6,0,4,0,8,0,0,2,5,27],
+"gtkaboutdialog_8h.html#aac9d1628b587e2c4e3268ac2ca62359a":[6,0,4,0,8,0,0,2,5,7],
+"gtkaboutdialog_8h.html#aba484707230a5313fda00fb0911601c3":[6,0,4,0,8,0,0,2,5,35],
+"gtkaboutdialog_8h.html#ac819281bf20c1dbed00f2c1b16df26fa":[6,0,4,0,8,0,0,2,5,5],
+"gtkaboutdialog_8h.html#acf04814d68cd14501baae92657721710":[6,0,4,0,8,0,0,2,5,4],
 "gtkaboutdialog_8h.html#acf04814d68cd14501baae92657721710a08c35424a915f7c5050c9cdfd8312a62":[6,0,4,0,8,0,0,2,5,4,17],
 "gtkaboutdialog_8h.html#acf04814d68cd14501baae92657721710a1583c6102c0c231153a446e47e5b860b":[6,0,4,0,8,0,0,2,5,4,0],
 "gtkaboutdialog_8h.html#acf04814d68cd14501baae92657721710a37b19b6d54b51c43e494afac5dba7987":[6,0,4,0,8,0,0,2,5,4,1],
@@ -240,14 +249,5 @@ var NAVTREEINDEX197 =
 "gtkappchooserdialog_8h.html#a8fd54f48e0b26b99f8b2fee4cfd760ee":[6,0,4,0,8,0,0,2,2,2,5],
 "gtkappchooserdialog_8h.html#aa8bdacf44d8cc6bc5a3df407ffeb05ba":[6,0,4,0,8,0,0,2,2,2,0],
 "gtkappchooserdialog_8h.html#aaa1d83451a307e4507259be4df7c411b":[6,0,4,0,8,0,0,2,2,2,6],
-"gtkappchooserdialog_8h.html#aca1cea1a8839a8d0c9bc57b1a69fd16a":[6,0,4,0,8,0,0,2,2,2,2],
-"gtkappchooserdialog_8h_source.html":[6,0,4,0,8,0,0,2,2,2],
-"gtkappchooserwidget_8h.html":[6,0,4,0,8,0,0,2,2,3],
-"gtkappchooserwidget_8h.html#a0597e6896093a581b208e8f7a0049b69":[6,0,4,0,8,0,0,2,2,3,12],
-"gtkappchooserwidget_8h.html#a1ec7df86184a1072b8ffc6fb114b53d0":[6,0,4,0,8,0,0,2,2,3,9],
-"gtkappchooserwidget_8h.html#a45c759fa242b74dd9ae7dd2c3617facd":[6,0,4,0,8,0,0,2,2,3,17],
-"gtkappchooserwidget_8h.html#a56edb0b2c6496fcdbe37fcf6140156cd":[6,0,4,0,8,0,0,2,2,3,6],
-"gtkappchooserwidget_8h.html#a59d501f63f19489700d024b471433a14":[6,0,4,0,8,0,0,2,2,3,11],
-"gtkappchooserwidget_8h.html#a671126a84f01f02e05c9e706f0c97641":[6,0,4,0,8,0,0,2,2,3,3],
-"gtkappchooserwidget_8h.html#a6f480a5ed96078de9a408b18b4ef6d82":[6,0,4,0,8,0,0,2,2,3,14]
+"gtkappchooserdialog_8h.html#aca1cea1a8839a8d0c9bc57b1a69fd16a":[6,0,4,0,8,0,0,2,2,2,2]
 };

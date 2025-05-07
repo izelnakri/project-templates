@@ -1,5 +1,17 @@
 var NAVTREEINDEX356 =
 {
+"struct__GProxyInterface.html#a89ebf3f2a90332e9ffba2b0f9bc8aace":[5,0,219,3],
+"struct__GProxyInterface.html#ab48e2e930885411a534c1c8b677d33f7":[5,0,219,0],
+"struct__GProxyResolverInterface.html":[5,0,220],
+"struct__GProxyResolverInterface.html#a22afb75c3c48f043fc954bb2d9449fc8":[5,0,220,1],
+"struct__GProxyResolverInterface.html#a668da2b834166f83875ba1c163befddf":[5,0,220,4],
+"struct__GProxyResolverInterface.html#a670b738f28ed8ba263d30680dd4375f7":[5,0,220,2],
+"struct__GProxyResolverInterface.html#aa0173ba236d8cdd9d8c1f61248c5eb29":[5,0,220,3],
+"struct__GProxyResolverInterface.html#ab48cfe8c25a213ccce08fc3a7ee69f14":[5,0,220,0],
+"struct__GPtrArray.html":[5,0,221],
+"struct__GPtrArray.html#aa77b9442b4d495f35602d0f92208acb0":[5,0,221,1],
+"struct__GPtrArray.html#aacb30aec0b5a0622f5ed31a0e8bb4911":[5,0,221,0],
+"struct__GQueue.html":[5,0,222],
 "struct__GQueue.html#a664ba33726d8909bdc6b4670e402b59a":[5,0,222,1],
 "struct__GQueue.html#ab5bab2e73ec48c9530e27ece80e201e9":[5,0,222,2],
 "struct__GQueue.html#ab665e65b86c3edc24a855ac5a59f460a":[5,0,222,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX356 =
 "struct__GSocketServiceClass.html#a185a44f0af663795587fb11481927d4d":[5,0,280,3],
 "struct__GSocketServiceClass.html#a27f60b96b8696b99abcedb3c3beea7b2":[5,0,280,2],
 "struct__GSocketServiceClass.html#a372366817e30dad84376f15f45f84bd1":[5,0,280,4],
-"struct__GSocketServiceClass.html#a6433cec0f8c2c76c90e07214cb518d2a":[5,0,280,5],
-"struct__GSocketServiceClass.html#a9b42b3d21a7e8b29be95e8c415bafb4a":[5,0,280,0],
-"struct__GSocketServiceClass.html#a9c1f6743d872ebdaaf2d04a0a08babbe":[5,0,280,6],
-"struct__GSocketServiceClass.html#ae159981b2b349720bfed7a986aaa8079":[5,0,280,7],
-"struct__GSocketServiceClass.html#ae62f98978efb091b233e4dd11b5f12af":[5,0,280,1],
-"struct__GSource.html":[5,0,281],
-"struct__GSource.html#a48d5b3dcc463ce14b406c3243822cacd":[5,0,281,0],
-"struct__GSource.html#a4d16cb1f46ad46affe98e98160abbc7e":[5,0,281,9],
-"struct__GSource.html#a4d7961f73892d5a3f9537997b7f955e2":[5,0,281,8],
-"struct__GSource.html#a52399b6c3a7ffdaa8bb5b3c3d2043035":[5,0,281,11],
-"struct__GSource.html#a531e0650c4c633524a0e74dbf837c04d":[5,0,281,5],
-"struct__GSource.html#a8601f7e0ad07bc38b58e219e672ee4c2":[5,0,281,1],
-"struct__GSource.html#a9fd4f4995af2a06c3f1862f46c3d8535":[5,0,281,7]
+"struct__GSocketServiceClass.html#a6433cec0f8c2c76c90e07214cb518d2a":[5,0,280,5]
 };

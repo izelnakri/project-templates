@@ -1,5 +1,17 @@
 var NAVTREEINDEX365 =
 {
+"structcurl__waitfd.html#ae4712fac510d50249e1a430a3d160a17":[5,0,636,1],
+"structcurl__ws__frame.html":[5,0,637],
+"structcurl__ws__frame.html#a0f416a2da9864ad5c62fd611eba44ec8":[5,0,637,2],
+"structcurl__ws__frame.html#a65da96e005a5894c0d01a3e6b598c48d":[5,0,637,1],
+"structcurl__ws__frame.html#a87384403b6044852d697c964953afd13":[5,0,637,4],
+"structcurl__ws__frame.html#a8a591547f87f88fb51696bbda828a4ba":[5,0,637,3],
+"structcurl__ws__frame.html#a8aa38db589389f9ead421e0caebbb2ea":[5,0,637,0],
+"structde.html":[5,0,643],
+"structde.html#a08f58ddfc5471054734d921fc199b7ed":[5,0,643,1],
+"structde.html#ac819ba780b7179da19a396bd296bd258":[5,0,643,0],
+"structdir__data.html":[5,0,644],
+"structdir__data.html#a9888a18b3e273d6d7d47e9ac3069dac2":[5,0,644,1],
 "structdir__data.html#af50920b5bdd885f01f7c2652ebd14d8a":[5,0,644,0],
 "structdir__scan__data.html":[5,0,645],
 "structdir__scan__data.html#a46f144aee1c95408b664e24a7ca29684":[5,0,645,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX365 =
 "structduk__heap.html#ab564d681186a71065b5d36d4c61c2362":[5,0,673,14],
 "structduk__heap.html#ab812ddb1d5d41e6f77b2f4477ba9a8db":[5,0,673,0],
 "structduk__heap.html#ac4718d3e8c84c5e09cfe6e0ed7ba5856":[5,0,673,10],
-"structduk__heap.html#aed0ef6d12659275479d5618edb35caa6":[5,0,673,9],
-"structduk__heaphdr.html":[5,0,674],
-"structduk__heaphdr.html#a0b3d5074e34601f7ff7579b0755c21a6":[5,0,674,0],
-"structduk__heaphdr.html#a2e30174897882e1363720ea4afff0c00":[5,0,674,1],
-"structduk__heaphdr.html#a2e87a6b0fd99267b76b3d6b1471d3b44":[5,0,674,2],
-"structduk__heaphdr.html#ac178c9e183f9986cebbd3f96423a802a":[5,0,674,3],
-"structduk__heaphdr__string.html":[5,0,675],
-"structduk__heaphdr__string.html#a1eaa76f92c4ee873c5952901ef557180":[5,0,675,0],
-"structduk__heaphdr__string.html#abe0b8b289d656d71b4d8069effa88f35":[5,0,675,2],
-"structduk__heaphdr__string.html#ae112ea07b50929c8808b44098e89b564":[5,0,675,1],
-"structduk__hnativefunction.html":[5,0,676],
-"structduk__hnativefunction.html#a6918409d863e79929ea5e963ffdd5941":[5,0,676,1],
-"structduk__hnativefunction.html#a69ed6d3fa7a2ad92f046e482b85974a8":[5,0,676,3]
+"structduk__heap.html#aed0ef6d12659275479d5618edb35caa6":[5,0,673,9]
 };

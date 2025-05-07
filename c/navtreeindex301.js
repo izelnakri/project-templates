@@ -1,5 +1,17 @@
 var NAVTREEINDEX301 =
 {
+"sqlite3_8c.html#ab371db913cbbd98a1bcac92eaf4611ce":[6,0,7,0,0,13,1736],
+"sqlite3_8c.html#ab376f1dc8a665e1f0c3dfe90266f7acf":[6,0,7,0,0,13,1121],
+"sqlite3_8c.html#ab378c3771e5d778800a91b24d1efa7c0":[6,0,7,0,0,13,1790],
+"sqlite3_8c.html#ab379966a1411dab39cc1892adf60020a":[6,0,7,0,0,13,694],
+"sqlite3_8c.html#ab37b3a4d1652e3acb2c43d1252e6b852":[6,0,7,0,0,13,3468],
+"sqlite3_8c.html#ab38d8627f4750672e72712df0b709e0d":[6,0,7,0,0,13,3519],
+"sqlite3_8c.html#ab3e07a30b9b5471f9f5e8f9cb7229934":[6,0,7,0,0,13,3934],
+"sqlite3_8c.html#ab3e8f088af6ba153c6cba3fd7473301b":[6,0,7,0,0,13,1274],
+"sqlite3_8c.html#ab46debef26325b83fd097b87c244e371":[6,0,7,0,0,13,4022],
+"sqlite3_8c.html#ab47407e54eb32d3147aec19f3235e0cd":[6,0,7,0,0,13,2906],
+"sqlite3_8c.html#ab474b40c53c8f972e81d5b952f1e7639":[6,0,7,0,0,13,4521],
+"sqlite3_8c.html#ab47a14715c5e3c8cbfaed5d92c5c374f":[6,0,7,0,0,13,3245],
 "sqlite3_8c.html#ab4954b805784b958300b203fda451283":[6,0,7,0,0,13,1246],
 "sqlite3_8c.html#ab49bb51eb514eb17ac64f0678291b30e":[6,0,7,0,0,13,1613],
 "sqlite3_8c.html#ab4abf85b0dd9ed4ff481efc7a87b2a9d":[6,0,7,0,0,13,2931],
@@ -237,17 +249,5 @@ var NAVTREEINDEX301 =
 "sqlite3_8c.html#ac1ff716629f328226bbafaad1725abd6":[6,0,7,0,0,13,3161],
 "sqlite3_8c.html#ac1fff729aec147d9825a4930042a626b":[6,0,7,0,0,13,4153],
 "sqlite3_8c.html#ac20a731dbd52edec68a09962c7f39a4c":[6,0,7,0,0,13,3582],
-"sqlite3_8c.html#ac20c4bf42ce4b69719538dac8043396a":[6,0,7,0,0,13,4501],
-"sqlite3_8c.html#ac2109d6ef272c796bd8881a430bc1052":[6,0,7,0,0,13,4362],
-"sqlite3_8c.html#ac25e3e7f766c9b899cc5138fc2c12b36":[6,0,7,0,0,13,1937],
-"sqlite3_8c.html#ac26804ddefd3a1c9bc43a0b2dcc4db78":[6,0,7,0,0,13,410],
-"sqlite3_8c.html#ac26c4c00ed416dafa56f3200c7c34ec1":[6,0,7,0,0,13,4335],
-"sqlite3_8c.html#ac27471822a1a4cd2505ed6a143aad1d9":[6,0,7,0,0,13,638],
-"sqlite3_8c.html#ac285cb102ca0ced83ce8eaf34de49f2c":[6,0,7,0,0,13,1407],
-"sqlite3_8c.html#ac29025cd2b000dd0ee3d2da4dc9f74bd":[6,0,7,0,0,13,1557],
-"sqlite3_8c.html#ac29376249bb57c927b3022fc529b6e96":[6,0,7,0,0,13,685],
-"sqlite3_8c.html#ac2abf0acf925b9e3feecb4c0f3e10003":[6,0,7,0,0,13,3137],
-"sqlite3_8c.html#ac2b8b882b701cfbad6bfca4ac6db76bc":[6,0,7,0,0,13,746],
-"sqlite3_8c.html#ac2be1f21295735080e8676eaa74b2b96":[6,0,7,0,0,13,1607],
-"sqlite3_8c.html#ac2c1df37c47b404f7582ba88d7bb5da5":[6,0,7,0,0,13,2586]
+"sqlite3_8c.html#ac20c4bf42ce4b69719538dac8043396a":[6,0,7,0,0,13,4501]
 };

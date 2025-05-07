@@ -1,5 +1,14 @@
 var NAVTREEINDEX215 =
 {
+"gtkprintsettings_8h.html#aa4ddc4308e025b7440b9ec3afceab77f":[6,0,4,0,8,0,0,2,3,5,23],
+"gtkprintsettings_8h.html#aa5569a41e91eb87be54bd7dcdd106108":[6,0,4,0,8,0,0,2,3,5,76],
+"gtkprintsettings_8h.html#aa5c9fc495df6bb66f7fc2159563da83b":[6,0,4,0,8,0,0,2,3,5,101],
+"gtkprintsettings_8h.html#aa6d8845b8336d59f4ca3526627888199":[6,0,4,0,8,0,0,2,3,5,56],
+"gtkprintsettings_8h.html#aa99e2c525ed71e8537e8d5e70e3a06e7":[6,0,4,0,8,0,0,2,3,5,51],
+"gtkprintsettings_8h.html#aaa8946c126fb5c48088889dc81cf77bb":[6,0,4,0,8,0,0,2,3,5,16],
+"gtkprintsettings_8h.html#aaac7eb3afec610bf9a8aaf6868956786":[6,0,4,0,8,0,0,2,3,5,92],
+"gtkprintsettings_8h.html#aab2feb28aabb83e9e7f7910bc8d79e37":[6,0,4,0,8,0,0,2,3,5,95],
+"gtkprintsettings_8h.html#aab38e43e7d153bbaefb9c1411f2e1357":[6,0,4,0,8,0,0,2,3,5,57],
 "gtkprintsettings_8h.html#aac2381507732a0cb1ef114f7145d1937":[6,0,4,0,8,0,0,2,3,5,3],
 "gtkprintsettings_8h.html#aacf3742381f18335c1d531754005e5c7":[6,0,4,0,8,0,0,2,3,5,108],
 "gtkprintsettings_8h.html#aad1d66d0236c99728c5771c1acd58d64":[6,0,4,0,8,0,0,2,3,5,97],
@@ -240,14 +249,5 @@ var NAVTREEINDEX215 =
 "gtkscale_8h.html#a4dde2790c0a8388fdbbbf85aaa8b5dff":[6,0,4,0,8,0,0,2,152,12],
 "gtkscale_8h.html#a5449a0dc6a2f6bf883e59a9257415c62":[6,0,4,0,8,0,0,2,152,2],
 "gtkscale_8h.html#a5b55395e0923d991c75fe3e48dfe9b96":[6,0,4,0,8,0,0,2,152,7],
-"gtkscale_8h.html#a5f4e3f5521192875fd7a965a085d9c11":[6,0,4,0,8,0,0,2,152,24],
-"gtkscale_8h.html#a68b196b3f12fd271f09a97631a6d0b61":[6,0,4,0,8,0,0,2,152,11],
-"gtkscale_8h.html#a6aabca45ca0577472a3c3b5c8ca9b34f":[6,0,4,0,8,0,0,2,152,17],
-"gtkscale_8h.html#a6d5b798b73ab337e5f1db995826cd515":[6,0,4,0,8,0,0,2,152,9],
-"gtkscale_8h.html#a6e8a184b14cdfe9afe5997b98b9350b6":[6,0,4,0,8,0,0,2,152,20],
-"gtkscale_8h.html#a7caa631209f019344c494e17b724c2c3":[6,0,4,0,8,0,0,2,152,15],
-"gtkscale_8h.html#a854f5db9d4c0c19ecc4f8d24feac8a7e":[6,0,4,0,8,0,0,2,152,22],
-"gtkscale_8h.html#a8755d7f790a250f511aebe5aa13a0023":[6,0,4,0,8,0,0,2,152,14],
-"gtkscale_8h.html#a8a6dfbd5c3d3f7f080cfbe38ac35f4ff":[6,0,4,0,8,0,0,2,152,5],
-"gtkscale_8h.html#a9686602c384c5729723c880d4e5db991":[6,0,4,0,8,0,0,2,152,8]
+"gtkscale_8h.html#a5f4e3f5521192875fd7a965a085d9c11":[6,0,4,0,8,0,0,2,152,24]
 };

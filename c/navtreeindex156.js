@@ -1,5 +1,14 @@
 var NAVTREEINDEX156 =
 {
+"gdksnapshot_8h.html#a2296e834b5d53005a4712dc228623959":[6,0,4,0,8,0,0,0,52,2],
+"gdksnapshot_8h.html#a8ffb6dc26c805af3cdad32bc0d9434d4":[6,0,4,0,8,0,0,0,52,1],
+"gdksnapshot_8h.html#a98f7b087102cceb1d0bdc42cc64451f3":[6,0,4,0,8,0,0,0,52,0],
+"gdksnapshot_8h.html#acff95c871559cd20c62fd8cfe2f4d8f3":[6,0,4,0,8,0,0,0,52,4],
+"gdksnapshot_8h.html#ad632ea6e1dec2d5de549bdd6568e53d2":[6,0,4,0,8,0,0,0,52,3],
+"gdksnapshot_8h_source.html":[6,0,4,0,8,0,0,0,52],
+"gdksurface_8h.html":[6,0,4,0,8,0,0,0,53],
+"gdksurface_8h.html#a04d2a25131819f313276052bd1e84083":[6,0,4,0,8,0,0,0,53,19],
+"gdksurface_8h.html#a0c41876df7557773216f7b67396a45ef":[6,0,4,0,8,0,0,0,53,1],
 "gdksurface_8h.html#a0e0d3ce64d55436646c1e24c6cd0cab9":[6,0,4,0,8,0,0,0,53,9],
 "gdksurface_8h.html#a10ce050caaaae1601cfdd82a9fc9e4ab":[6,0,4,0,8,0,0,0,53,11],
 "gdksurface_8h.html#a1110c70f1612017f78bbc33b0b1efc0c":[6,0,4,0,8,0,0,0,53,18],
@@ -240,14 +249,5 @@ var NAVTREEINDEX156 =
 "gdkwaylanddevice_8h.html#acb48579efe10b7ae74cd0636422333fb":[6,0,4,0,8,0,0,0,3,1,0],
 "gdkwaylanddevice_8h.html#ace49776fd35dc1c8163033e8a43e4d47":[6,0,4,0,8,0,0,0,3,1,7],
 "gdkwaylanddevice_8h.html#ad4929d181077a1189da222bf51297b58":[6,0,4,0,8,0,0,0,3,1,3],
-"gdkwaylanddevice_8h.html#ae5d28580136e9003fb2cfb6301941422":[6,0,4,0,8,0,0,0,3,1,2],
-"gdkwaylanddevice_8h.html#ae9bd71f4f135de05e4b9bca50acd0614":[6,0,4,0,8,0,0,0,3,1,11],
-"gdkwaylanddevice_8h_source.html":[6,0,4,0,8,0,0,0,3,1],
-"gdkwaylanddisplay_8h.html":[6,0,4,0,8,0,0,0,3,2],
-"gdkwaylanddisplay_8h.html#a07980f13ba827dcb4dc2bc4b9476691c":[6,0,4,0,8,0,0,0,3,2,1],
-"gdkwaylanddisplay_8h.html#a0e491af15cbb94acceb8aaa56e89d350":[6,0,4,0,8,0,0,0,3,2,14],
-"gdkwaylanddisplay_8h.html#a209383289f024be1d28dbdd64ebdb743":[6,0,4,0,8,0,0,0,3,2,3],
-"gdkwaylanddisplay_8h.html#a2272342a6ab602b5f9bdefd0875b0629":[6,0,4,0,8,0,0,0,3,2,0],
-"gdkwaylanddisplay_8h.html#a38aba604abaf0b472277bb898a438c35":[6,0,4,0,8,0,0,0,3,2,8],
-"gdkwaylanddisplay_8h.html#a3f60d7ab9181b6fdb94b24828b6206d5":[6,0,4,0,8,0,0,0,3,2,6]
+"gdkwaylanddevice_8h.html#ae5d28580136e9003fb2cfb6301941422":[6,0,4,0,8,0,0,0,3,1,2]
 };

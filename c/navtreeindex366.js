@@ -1,5 +1,17 @@
 var NAVTREEINDEX366 =
 {
+"structduk__heaphdr.html":[5,0,674],
+"structduk__heaphdr.html#a0b3d5074e34601f7ff7579b0755c21a6":[5,0,674,0],
+"structduk__heaphdr.html#a2e30174897882e1363720ea4afff0c00":[5,0,674,1],
+"structduk__heaphdr.html#a2e87a6b0fd99267b76b3d6b1471d3b44":[5,0,674,2],
+"structduk__heaphdr.html#ac178c9e183f9986cebbd3f96423a802a":[5,0,674,3],
+"structduk__heaphdr__string.html":[5,0,675],
+"structduk__heaphdr__string.html#a1eaa76f92c4ee873c5952901ef557180":[5,0,675,0],
+"structduk__heaphdr__string.html#abe0b8b289d656d71b4d8069effa88f35":[5,0,675,2],
+"structduk__heaphdr__string.html#ae112ea07b50929c8808b44098e89b564":[5,0,675,1],
+"structduk__hnativefunction.html":[5,0,676],
+"structduk__hnativefunction.html#a6918409d863e79929ea5e963ffdd5941":[5,0,676,1],
+"structduk__hnativefunction.html#a69ed6d3fa7a2ad92f046e482b85974a8":[5,0,676,3],
 "structduk__hnativefunction.html#ae0716d250e1f627dc97cd8727a411c14":[5,0,676,2],
 "structduk__hnativefunction.html#ae4b8506465d4b5fcec7ab1781f2656bc":[5,0,676,0],
 "structduk__hobject.html":[5,0,677],
@@ -237,17 +249,5 @@ var NAVTREEINDEX366 =
 "structduk__tval__struct.html#adaee42c933580a3e9400d1ed09fb16bd":[5,0,706,16],
 "structduk__tval__struct.html#adedec5d21d5492f74d28e3813455760e":[5,0,706,13],
 "structduk__tval__struct.html#ae0ab0f488ebf5899ea207ebd04abf535":[5,0,706,18],
-"structduk__tval__struct.html#af0bdb8139d66f5c96b13babc8ff2c0ca":[5,0,706,6],
-"structduk__tval__struct.html#af360bd671ef15677eaf603bb893c2856":[5,0,706,12],
-"structet__info.html":[5,0,709],
-"structet__info.html#a148bd1efa49018c9a723701ba5747825":[5,0,709,5],
-"structet__info.html#a1740af27f0c9d5840e7dda59a129aa4b":[5,0,709,3],
-"structet__info.html#a20f5a4c11c7aa1d9c777805d11965c66":[5,0,709,0],
-"structet__info.html#a23cc866bf202c34e49bd49599b051628":[5,0,709,4],
-"structet__info.html#a77131acb7479b0e6aad61af0901e11c2":[5,0,709,1],
-"structet__info.html#a8f11646aaec803f0870683dc3ba2f756":[5,0,709,2],
-"structev__timer.html":[5,0,710],
-"structev__timer.html#a0d9eadae424749438035c88e2b0dbb58":[5,0,710,4],
-"structev__timer.html#a7e994203126f070d2d9e679a9f84c8aa":[5,0,710,2],
-"structev__timer.html#a9c6706fa99f5a693eeee55ebc031ec7c":[5,0,710,0]
+"structduk__tval__struct.html#af0bdb8139d66f5c96b13babc8ff2c0ca":[5,0,706,6]
 };

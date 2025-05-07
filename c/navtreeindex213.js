@@ -1,5 +1,14 @@
 var NAVTREEINDEX213 =
 {
+"gtkpadcontroller_8h.html#a6571b0b1f3b36dc4781ba879f5e32daf":[6,0,4,0,8,0,0,2,138,4],
+"gtkpadcontroller_8h.html#a6a068b58bca0f92d953121f7ffc9fa1f":[6,0,4,0,8,0,0,2,138,3],
+"gtkpadcontroller_8h.html#a8b9fb370b6d794139141934e710f3e8a":[6,0,4,0,8,0,0,2,138,13],
+"gtkpadcontroller_8h.html#aa16cea1e315bd04321081923ba584db5":[6,0,4,0,8,0,0,2,138,8],
+"gtkpadcontroller_8h.html#ac60cef459c54e0400e7dbf6decdda70c":[6,0,4,0,8,0,0,2,138,12],
+"gtkpadcontroller_8h.html#ac61cd48cff85ff6befb5e2379741ef20":[6,0,4,0,8,0,0,2,138,9],
+"gtkpadcontroller_8h.html#acfab9f5a398b3fc205610dd1a86f8437":[6,0,4,0,8,0,0,2,138,5],
+"gtkpadcontroller_8h.html#ada471faa22a0e4bb10c14eee758c7acf":[6,0,4,0,8,0,0,2,138,6],
+"gtkpadcontroller_8h.html#aeaaae4522987991dfe1988ece863fe10":[6,0,4,0,8,0,0,2,138,11],
 "gtkpadcontroller_8h_source.html":[6,0,4,0,8,0,0,2,138],
 "gtkpagesetup_8h.html":[6,0,4,0,8,0,0,2,3,0],
 "gtkpagesetup_8h.html#a07024a34cfee6ca811b1b5dbff0199fa":[6,0,4,0,8,0,0,2,3,0,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX213 =
 "gtkprintdialog_8h.html#a6ac913c1b1d243ba3cf6b51f932e2b03":[6,0,4,0,8,0,0,2,146,23],
 "gtkprintdialog_8h.html#a6edea96ed0aa73f1a63576212a38e696":[6,0,4,0,8,0,0,2,146,2],
 "gtkprintdialog_8h.html#a6f3bdcba49bcc6ed381302257ed60065":[6,0,4,0,8,0,0,2,146,20],
-"gtkprintdialog_8h.html#a772798ad7694377ba945ff3ae629c2ef":[6,0,4,0,8,0,0,2,146,3],
-"gtkprintdialog_8h.html#a7db7c787922e0d51eccabb2c88776442":[6,0,4,0,8,0,0,2,146,11],
-"gtkprintdialog_8h.html#a7de778402b28598e1276856193bc811f":[6,0,4,0,8,0,0,2,146,15],
-"gtkprintdialog_8h.html#a9d9f7cd9cf80398f5bac41aadba49a35":[6,0,4,0,8,0,0,2,146,6],
-"gtkprintdialog_8h.html#ab0d7f42dfaa290cedf42bbca955a961c":[6,0,4,0,8,0,0,2,146,12],
-"gtkprintdialog_8h.html#abd69e939dd7d8097e566e06f6461153a":[6,0,4,0,8,0,0,2,146,24],
-"gtkprintdialog_8h.html#ac6b60b68678f3966870ff840d3981b47":[6,0,4,0,8,0,0,2,146,13],
-"gtkprintdialog_8h.html#ad5764d47edc12d2ef3fc2a59aa186ebc":[6,0,4,0,8,0,0,2,146,10],
-"gtkprintdialog_8h.html#add54f25d880c342efda7978b0e3a1288":[6,0,4,0,8,0,0,2,146,7],
-"gtkprintdialog_8h.html#af1c5db65ea12bdaff2e09f016fca1916":[6,0,4,0,8,0,0,2,146,9]
+"gtkprintdialog_8h.html#a772798ad7694377ba945ff3ae629c2ef":[6,0,4,0,8,0,0,2,146,3]
 };

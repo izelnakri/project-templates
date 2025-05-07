@@ -1,5 +1,17 @@
 var NAVTREEINDEX357 =
 {
+"struct__GSocketServiceClass.html#a9b42b3d21a7e8b29be95e8c415bafb4a":[5,0,280,0],
+"struct__GSocketServiceClass.html#a9c1f6743d872ebdaaf2d04a0a08babbe":[5,0,280,6],
+"struct__GSocketServiceClass.html#ae159981b2b349720bfed7a986aaa8079":[5,0,280,7],
+"struct__GSocketServiceClass.html#ae62f98978efb091b233e4dd11b5f12af":[5,0,280,1],
+"struct__GSource.html":[5,0,281],
+"struct__GSource.html#a48d5b3dcc463ce14b406c3243822cacd":[5,0,281,0],
+"struct__GSource.html#a4d16cb1f46ad46affe98e98160abbc7e":[5,0,281,9],
+"struct__GSource.html#a4d7961f73892d5a3f9537997b7f955e2":[5,0,281,8],
+"struct__GSource.html#a52399b6c3a7ffdaa8bb5b3c3d2043035":[5,0,281,11],
+"struct__GSource.html#a531e0650c4c633524a0e74dbf837c04d":[5,0,281,5],
+"struct__GSource.html#a8601f7e0ad07bc38b58e219e672ee4c2":[5,0,281,1],
+"struct__GSource.html#a9fd4f4995af2a06c3f1862f46c3d8535":[5,0,281,7],
 "struct__GSource.html#a9fdac977bf703b625483e6ee20d09a04":[5,0,281,12],
 "struct__GSource.html#acf4c1e24ae6f720647f5ad69a1c1d42b":[5,0,281,3],
 "struct__GSource.html#ad89db391c5603dc647de9482c764714e":[5,0,281,2],
@@ -237,17 +249,5 @@ var NAVTREEINDEX357 =
 "struct__GUnixConnection.html":[5,0,465],
 "struct__GUnixConnection.html#a6192d92e07562e5ee0d1996e9aae3acc":[5,0,465,0],
 "struct__GUnixConnection.html#aada563b3c7a2b866065d345a621c6ea5":[5,0,465,1],
-"struct__GUnixConnectionClass.html":[5,0,466],
-"struct__GUnixConnectionClass.html#a5fb7a14e2452c2091852a01ffb470b22":[5,0,466,0],
-"struct__GUnixCredentialsMessage.html":[5,0,467],
-"struct__GUnixCredentialsMessage.html#a06a4281827dd8d0559815c2974ff21a6":[5,0,467,0],
-"struct__GUnixCredentialsMessage.html#a8726fbb8191db2665d0f7b8e1766d2bf":[5,0,467,1],
-"struct__GUnixCredentialsMessageClass.html":[5,0,468],
-"struct__GUnixCredentialsMessageClass.html#a027dd28798929ad647c66665f59083bb":[5,0,468,0],
-"struct__GUnixCredentialsMessageClass.html#a529efee1cb597557317a628f744abd35":[5,0,468,2],
-"struct__GUnixCredentialsMessageClass.html#aa8751c0c05a2aaf0a6305cf68b6db6b2":[5,0,468,1],
-"struct__GUnixFDList.html":[5,0,469],
-"struct__GUnixFDList.html#a506f7dab276f3e4d4a3f13144171a09a":[5,0,469,1],
-"struct__GUnixFDList.html#ab8ee11b28f4d7fb71547d5d537e829a7":[5,0,469,0],
-"struct__GUnixFDListClass.html":[5,0,470]
+"struct__GUnixConnectionClass.html":[5,0,466]
 };

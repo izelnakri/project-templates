@@ -1,5 +1,17 @@
 var NAVTREEINDEX284 =
 {
+"pango-fontset-simple_8h.html#addcaf572bdc14fe71f390e72e637d0e9":[6,0,4,0,4,0,0,0,12,4],
+"pango-fontset-simple_8h_source.html":[6,0,4,0,4,0,0,0,12],
+"pango-fontset_8h.html":[6,0,4,0,4,0,0,0,13],
+"pango-fontset_8h.html#a0c3a3ed1b4a8a9719873e772c7082695":[6,0,4,0,4,0,0,0,13,3],
+"pango-fontset_8h.html#a153692fdcecb4d4f4fb53263d978ac9a":[6,0,4,0,4,0,0,0,13,2],
+"pango-fontset_8h.html#a162d15c28bc9d0d7493e835978fdb794":[6,0,4,0,4,0,0,0,13,12],
+"pango-fontset_8h.html#a215b7411b1944be0c284956ca512cafa":[6,0,4,0,4,0,0,0,13,7],
+"pango-fontset_8h.html#a3d0640a299059ad6d464a60d657fe5a8":[6,0,4,0,4,0,0,0,13,5],
+"pango-fontset_8h.html#a5e854d05c7773458ce3195c1dcd3ec2a":[6,0,4,0,4,0,0,0,13,6],
+"pango-fontset_8h.html#a61a9373efe892ad4f70defe1df3d144a":[6,0,4,0,4,0,0,0,13,10],
+"pango-fontset_8h.html#a855f52f3a9cdcfe0be037eb7f4df3ffa":[6,0,4,0,4,0,0,0,13,13],
+"pango-fontset_8h.html#a8ff3f5a621c37677c3c456440d14dacd":[6,0,4,0,4,0,0,0,13,4],
 "pango-fontset_8h.html#a8fff92a5daf0698a89cebae2120d8ea3":[6,0,4,0,4,0,0,0,13,8],
 "pango-fontset_8h.html#a92f995d66ac915c90911d90a4f761169":[6,0,4,0,4,0,0,0,13,14],
 "pango-fontset_8h.html#ad7b8ddad684e13579c72e98f5cd9d40b":[6,0,4,0,4,0,0,0,13,11],
@@ -237,17 +249,5 @@ var NAVTREEINDEX284 =
 "pango-layout_8h.html#af747d1354d6dc53030e4647fdf9c79e6":[6,0,4,0,4,0,0,0,19,91],
 "pango-layout_8h.html#af8531241b77aa7e9a01c6a87d63a8a80":[6,0,4,0,4,0,0,0,19,100],
 "pango-layout_8h.html#af92f09d2f221d74f6bb5be0a0db87e65":[6,0,4,0,4,0,0,0,19,70],
-"pango-layout_8h.html#af97487633e56c4b74af1114286fcb4af":[6,0,4,0,4,0,0,0,19,75],
-"pango-layout_8h.html#afba86611e5fb6b34e1656ea1ab9c67d0":[6,0,4,0,4,0,0,0,19,40],
-"pango-layout_8h.html#afd26a4fe9dccad8385bc0e1ae833a645":[6,0,4,0,4,0,0,0,19,57],
-"pango-layout_8h.html#afd3bba05578c29196f630f5c5830e023":[6,0,4,0,4,0,0,0,19,51],
-"pango-layout_8h.html#aff8b908244240d9667889da72889d2d4":[6,0,4,0,4,0,0,0,19,107],
-"pango-layout_8h.html#affaa31313a3a6a90e0cb705cb51dfa0a":[6,0,4,0,4,0,0,0,19,97],
-"pango-layout_8h_source.html":[6,0,4,0,4,0,0,0,19],
-"pango-markup_8h.html":[6,0,4,0,4,0,0,0,20],
-"pango-markup_8h.html#a25f83b3812406ac3790d7e8eb8651e3a":[6,0,4,0,4,0,0,0,20,0],
-"pango-markup_8h.html#a4c107cf4f1aa329ee04c4a4526e705c6":[6,0,4,0,4,0,0,0,20,2],
-"pango-markup_8h.html#af77960b1abd8111123dacb4dc706844c":[6,0,4,0,4,0,0,0,20,1],
-"pango-markup_8h_source.html":[6,0,4,0,4,0,0,0,20],
-"pango-matrix_8h.html":[6,0,4,0,4,0,0,0,21]
+"pango-layout_8h.html#af97487633e56c4b74af1114286fcb4af":[6,0,4,0,4,0,0,0,19,75]
 };

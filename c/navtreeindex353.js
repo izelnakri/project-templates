@@ -1,5 +1,17 @@
 var NAVTREEINDEX353 =
 {
+"struct__GFileIOStreamClass.html#ab7ebe2c80d9fd94ab8763ad9af6d148d":[5,0,104,5],
+"struct__GFileIOStreamClass.html#ac6ec7eea1b645eef90ce58442cd5b764":[5,0,104,1],
+"struct__GFileIOStreamClass.html#ad4bcdb83ca6aa572e79d850096dd0dca":[5,0,104,2],
+"struct__GFileIOStreamClass.html#ad874fb89614d3bd20d3013b00a6e22e0":[5,0,104,10],
+"struct__GFileIOStreamClass.html#aded995528adfc7e59f859319f25a9441":[5,0,104,7],
+"struct__GFileIOStreamClass.html#ae3db54e2b4c5088c2b6d7becae9cf69e":[5,0,104,14],
+"struct__GFileIOStreamClass.html#afbee25acd148eb13d6e583690710e251":[5,0,104,13],
+"struct__GFileIface.html":[5,0,100],
+"struct__GFileIface.html#a049ab0b2dbca02d74182b230e9fd8a9e":[5,0,100,88],
+"struct__GFileIface.html#a04d01a1761a71f4accb03ff2e4086cf4":[5,0,100,3],
+"struct__GFileIface.html#a05135989219f784668a9f9ee322dd415":[5,0,100,65],
+"struct__GFileIface.html#a072bcc2fe1ab0abe184b98dbfd5afccf":[5,0,100,37],
 "struct__GFileIface.html#a0979a460022dbc9b80300874aa1b7410":[5,0,100,80],
 "struct__GFileIface.html#a0e9bca514b3f460ab07e30053f8a4c0c":[5,0,100,92],
 "struct__GFileIface.html#a0eba3bddd76574ea98222532ff98cd89":[5,0,100,32],
@@ -237,17 +249,5 @@ var NAVTREEINDEX353 =
 "struct__GIOStream.html#a63f0bb47a7a26cee38c98a47cc71a5bb":[5,0,136,0],
 "struct__GIOStreamClass.html":[5,0,137],
 "struct__GIOStreamClass.html#a0410e86bdb50eebe49102b1feefa9c99":[5,0,137,4],
-"struct__GIOStreamClass.html#a0474cfb645608fe0d26bc977617c3d99":[5,0,137,13],
-"struct__GIOStreamClass.html#a04e170174d289f4e310cea4677181031":[5,0,137,1],
-"struct__GIOStreamClass.html#a33547a659ff088b093324d9a4e5e29d4":[5,0,137,0],
-"struct__GIOStreamClass.html#a43f5871449efa088cf807fa9a77ba8d6":[5,0,137,6],
-"struct__GIOStreamClass.html#a44b65104d8ab21231804faf3794dbafe":[5,0,137,2],
-"struct__GIOStreamClass.html#a462e9298dc0a470c5a159af78760cfef":[5,0,137,10],
-"struct__GIOStreamClass.html#a4b3d28f8c740bbb49f0fb0eae1cb67b5":[5,0,137,9],
-"struct__GIOStreamClass.html#a4dcc96fe9a4eebea4bc7dfc54440d88b":[5,0,137,7],
-"struct__GIOStreamClass.html#a90ecf92270c57cf71418912ad1828c68":[5,0,137,11],
-"struct__GIOStreamClass.html#abbb69533d1922325e4be149fe88fdb74":[5,0,137,8],
-"struct__GIOStreamClass.html#abbdc8b7da691591ee725b35e97b47dc9":[5,0,137,15],
-"struct__GIOStreamClass.html#abeb69a8ada4074516c6b43da18e334b2":[5,0,137,5],
-"struct__GIOStreamClass.html#ad6115a08c2a578b681c3e5faca80c282":[5,0,137,12]
+"struct__GIOStreamClass.html#a0474cfb645608fe0d26bc977617c3d99":[5,0,137,13]
 };

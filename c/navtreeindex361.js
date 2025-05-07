@@ -1,5 +1,17 @@
 var NAVTREEINDEX361 =
 {
+"struct__GtkSelectionModelInterface.html#a412fa9efb8fe6f5b5404998fe4f51b75":[5,0,396,4],
+"struct__GtkSelectionModelInterface.html#a48982e347e6edd5eea68577c9f43c841":[5,0,396,7],
+"struct__GtkSelectionModelInterface.html#a63834de6523338f5885efba5b8dcfe29":[5,0,396,1],
+"struct__GtkSelectionModelInterface.html#a6d251e3e87e90144dfede5f6e5d54714":[5,0,396,0],
+"struct__GtkSelectionModelInterface.html#a81f4496503ea5647cd07e458bcf020df":[5,0,396,3],
+"struct__GtkSelectionModelInterface.html#ac61add023e5279137963c5bfc5ffce26":[5,0,396,9],
+"struct__GtkSelectionModelInterface.html#ad789ab28b183b00bb92df6988ea46d2b":[5,0,396,6],
+"struct__GtkSelectionModelInterface.html#afc4e6c558a9bb0a30b3be09db2a6a885":[5,0,396,2],
+"struct__GtkSelectionModelInterface.html#afc825f9cbcf83f928d70c1df4d7f479c":[5,0,396,8],
+"struct__GtkShortcutManagerInterface.html":[5,0,397],
+"struct__GtkShortcutManagerInterface.html#a09a7d796f6a19181a2d076f62175a8f5":[5,0,397,0],
+"struct__GtkShortcutManagerInterface.html#a27308697b54bef3fce9461dbb6209474":[5,0,397,1],
 "struct__GtkShortcutManagerInterface.html#ab05609b6ea46d8d9180ea82d90190f07":[5,0,397,2],
 "struct__GtkSizeGroup.html":[5,0,398],
 "struct__GtkSizeGroup.html#af6ffc11bbbea2a3f39dc59d11fbd10c3":[5,0,398,0],
@@ -237,17 +249,5 @@ var NAVTREEINDEX361 =
 "struct__GtkWindowClass.html":[5,0,434],
 "struct__GtkWindowClass.html#a09b639f14eb4c0e5f5886d03498a9bf1":[5,0,434,1],
 "struct__GtkWindowClass.html#a5fc75e6e3a509bbb03d10c4607c2ec8a":[5,0,434,2],
-"struct__GtkWindowClass.html#a73becfdd225024ac2b3d74e4963ffadd":[5,0,434,4],
-"struct__GtkWindowClass.html#ac133a06292857d56d460ec28ac590c59":[5,0,434,6],
-"struct__GtkWindowClass.html#ac6013edbb086efe1a4ff559b2feb3e52":[5,0,434,0],
-"struct__GtkWindowClass.html#ad6ee8bd434c13cbbdb88bf424037d2fd":[5,0,434,5],
-"struct__GtkWindowClass.html#ad85b3a706311ca58ee6e4f2ddc4142c1":[5,0,434,3],
-"struct__GtkWindowGroup.html":[5,0,435],
-"struct__GtkWindowGroup.html#a36d39aa38e6908c494cc0482380f7365":[5,0,435,0],
-"struct__GtkWindowGroup.html#aca43e5ba6671539ab48994613453cb18":[5,0,435,1],
-"struct__GtkWindowGroupClass.html":[5,0,436],
-"struct__GtkWindowGroupClass.html#a0237be14be1c8db45d2ead8e15741259":[5,0,436,0],
-"struct__GtkWindowGroupClass.html#a0a8cf2541050b8d749fba396095db3cd":[5,0,436,3],
-"struct__GtkWindowGroupClass.html#a48efe5342fff14a6f15cab6a7d483efd":[5,0,436,1],
-"struct__GtkWindowGroupClass.html#a89114a43ef584eaec58053d0487515ff":[5,0,436,2]
+"struct__GtkWindowClass.html#a73becfdd225024ac2b3d74e4963ffadd":[5,0,434,4]
 };

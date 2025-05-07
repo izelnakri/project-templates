@@ -1,5 +1,14 @@
 var NAVTREEINDEX194 =
 {
+"gsocketservice_8h.html#a5bca670336ab5835af127d9065d57cb7":[6,0,4,0,9,0,1,0,130,5],
+"gsocketservice_8h.html#a999b3c08bc06223fadb9322936dd4583":[6,0,4,0,9,0,1,0,130,10],
+"gsocketservice_8h.html#aa9d830b465553f1787bde2f4e6917df8":[6,0,4,0,9,0,1,0,130,7],
+"gsocketservice_8h.html#ac12807dd4ceff0146b4f7ec8b42b8461":[6,0,4,0,9,0,1,0,130,12],
+"gsocketservice_8h.html#ac60d0882c3bea0a28f3075b9ddca812a":[6,0,4,0,9,0,1,0,130,13],
+"gsocketservice_8h.html#acb910506f976b351f1b22d737a3648e6":[6,0,4,0,9,0,1,0,130,11],
+"gsocketservice_8h.html#ace26d5d3dcbfcaeeeb6eadc74b6057d2":[6,0,4,0,9,0,1,0,130,9],
+"gsocketservice_8h.html#add852cf775b1bb8d4fb142e7a83fa1d1":[6,0,4,0,9,0,1,0,130,14],
+"gsocketservice_8h.html#aea08050b799c081978e97a25ca2c1c2d":[6,0,4,0,9,0,1,0,130,2],
 "gsocketservice_8h_source.html":[6,0,4,0,9,0,1,0,130],
 "gsourceclosure_8h.html":[6,0,4,0,9,0,1,4,16],
 "gsourceclosure_8h.html#a3eeee6bc6ab46927a8494050bf26f05e":[6,0,4,0,9,0,1,4,16,0],
@@ -240,14 +249,5 @@ var NAVTREEINDEX194 =
 "gstringchunk_8h.html#a3f187586ca55a96b032a5d0f3eefb79a":[6,0,4,0,9,0,1,2,63,1],
 "gstringchunk_8h.html#a84add04e8ff9a101d5703c031b7c8adb":[6,0,4,0,9,0,1,2,63,4],
 "gstringchunk_8h.html#aab7d894390e79a55c21c66f8498bb56b":[6,0,4,0,9,0,1,2,63,5],
-"gstringchunk_8h.html#ae3a74ff15e2ad1e958c9160d4b0af447":[6,0,4,0,9,0,1,2,63,0],
-"gstringchunk_8h.html#afc5e564e6153d81ad4548d0f8bd99e81":[6,0,4,0,9,0,1,2,63,2],
-"gstringchunk_8h_source.html":[6,0,4,0,9,0,1,2,63],
-"gstrvbuilder_8h.html":[6,0,4,0,9,0,1,2,64],
-"gstrvbuilder_8h.html#a02f87618e8786b440b7c0d0435bb39bd":[6,0,4,0,9,0,1,2,64,5],
-"gstrvbuilder_8h.html#a37fec0ef3db120f6cb142a86470ef9ce":[6,0,4,0,9,0,1,2,64,9],
-"gstrvbuilder_8h.html#a4471af85f288c4035c57602085258b52":[6,0,4,0,9,0,1,2,64,7],
-"gstrvbuilder_8h.html#a54e7c6417a5bb0ffe6308a6f2390016c":[6,0,4,0,9,0,1,2,64,2],
-"gstrvbuilder_8h.html#aa3c16c916c4c068de04ffb217cb3fd30":[6,0,4,0,9,0,1,2,64,4],
-"gstrvbuilder_8h.html#aa459d270576ec3f470bcbba6cf15e8eb":[6,0,4,0,9,0,1,2,64,3]
+"gstringchunk_8h.html#ae3a74ff15e2ad1e958c9160d4b0af447":[6,0,4,0,9,0,1,2,63,0]
 };

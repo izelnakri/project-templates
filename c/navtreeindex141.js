@@ -1,5 +1,14 @@
 var NAVTREEINDEX141 =
 {
+"gdk-pixbuf-io_8h.html#a0961ea0f2c19e97a3eb7d2b37bae829e":[6,0,4,0,13,0,0,0,5,11],
+"gdk-pixbuf-io_8h.html#a0bac8757d41809b1f3bf78e4ba02b53b":[6,0,4,0,13,0,0,0,5,15],
+"gdk-pixbuf-io_8h.html#a0cde746f3872d88fd33fb85d104cee53":[6,0,4,0,13,0,0,0,5,4],
+"gdk-pixbuf-io_8h.html#a190dbe2fabdd0ff5a54932dadf1c7536":[6,0,4,0,13,0,0,0,5,3],
+"gdk-pixbuf-io_8h.html#a1f7579627589061ada6041a581e6aa51":[6,0,4,0,13,0,0,0,5,17],
+"gdk-pixbuf-io_8h.html#a2897f2bd370b1250c76d0179b579ef2f":[6,0,4,0,13,0,0,0,5,12],
+"gdk-pixbuf-io_8h.html#a5dea4f7651cee4066c244130c59567f2":[6,0,4,0,13,0,0,0,5,14],
+"gdk-pixbuf-io_8h.html#a667dc7f5f1c453e7138a6222b4d5e09a":[6,0,4,0,13,0,0,0,5,16],
+"gdk-pixbuf-io_8h.html#a839c9fdcc55c68e979995b1e7fcaf9a8":[6,0,4,0,13,0,0,0,5,1],
 "gdk-pixbuf-io_8h.html#a897a4bb9f5ec63bd7bce6993a47ea6bf":[6,0,4,0,13,0,0,0,5,0],
 "gdk-pixbuf-io_8h.html#a9de13e1e7ef348e09c6dcc71a31860e1":[6,0,4,0,13,0,0,0,5,6],
 "gdk-pixbuf-io_8h.html#aa496afa728e1cd85f80ee73c770492a5":[6,0,4,0,13,0,0,0,5,2],
@@ -240,14 +249,5 @@ var NAVTREEINDEX141 =
 "gdk-visibility_8h.html#a4ddeb5886f22dd7d0766377769a77f8d":[6,0,4,0,8,0,0,0,2,0,52],
 "gdk-visibility_8h.html#a4fef1b5f0ad7c51206d63d0367e7804d":[6,0,4,0,8,0,0,0,2,0,62],
 "gdk-visibility_8h.html#a52f962fe84bfbf708a78b450a496a085":[6,0,4,0,8,0,0,0,2,0,34],
-"gdk-visibility_8h.html#a54969c0ad0937c3210f1b367b1b5911c":[6,0,4,0,8,0,0,0,2,0,69],
-"gdk-visibility_8h.html#a56ef844b23714d33e356d54ad0d5df24":[6,0,4,0,8,0,0,0,2,0,104],
-"gdk-visibility_8h.html#a5824e91a57b5dedb8d20b0293b5c4ecc":[6,0,4,0,8,0,0,0,2,0,1],
-"gdk-visibility_8h.html#a5c9427d74f43b42cb44f48251ac8d667":[6,0,4,0,8,0,0,0,2,0,91],
-"gdk-visibility_8h.html#a5d8002b4f880bb0b4e6101adb373ce59":[6,0,4,0,8,0,0,0,2,0,88],
-"gdk-visibility_8h.html#a5db2719a8dbd390f1341d100baee8010":[6,0,4,0,8,0,0,0,2,0,102],
-"gdk-visibility_8h.html#a5f5a6ae2ece41f1d1f86b6b9c71e256c":[6,0,4,0,8,0,0,0,2,0,61],
-"gdk-visibility_8h.html#a5ffed9f89c80adac19b23eda0714f4ab":[6,0,4,0,8,0,0,0,2,0,58],
-"gdk-visibility_8h.html#a60c19aab552f1fe510963fd766a3bab4":[6,0,4,0,8,0,0,0,2,0,28],
-"gdk-visibility_8h.html#a614e1ec6b0aa151b33cc70678cd926d3":[6,0,4,0,8,0,0,0,2,0,45]
+"gdk-visibility_8h.html#a54969c0ad0937c3210f1b367b1b5911c":[6,0,4,0,8,0,0,0,2,0,69]
 };

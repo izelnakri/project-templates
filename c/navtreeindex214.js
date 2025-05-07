@@ -1,5 +1,14 @@
 var NAVTREEINDEX214 =
 {
+"gtkprintdialog_8h.html#a7db7c787922e0d51eccabb2c88776442":[6,0,4,0,8,0,0,2,146,11],
+"gtkprintdialog_8h.html#a7de778402b28598e1276856193bc811f":[6,0,4,0,8,0,0,2,146,15],
+"gtkprintdialog_8h.html#a9d9f7cd9cf80398f5bac41aadba49a35":[6,0,4,0,8,0,0,2,146,6],
+"gtkprintdialog_8h.html#ab0d7f42dfaa290cedf42bbca955a961c":[6,0,4,0,8,0,0,2,146,12],
+"gtkprintdialog_8h.html#abd69e939dd7d8097e566e06f6461153a":[6,0,4,0,8,0,0,2,146,24],
+"gtkprintdialog_8h.html#ac6b60b68678f3966870ff840d3981b47":[6,0,4,0,8,0,0,2,146,13],
+"gtkprintdialog_8h.html#ad5764d47edc12d2ef3fc2a59aa186ebc":[6,0,4,0,8,0,0,2,146,10],
+"gtkprintdialog_8h.html#add54f25d880c342efda7978b0e3a1288":[6,0,4,0,8,0,0,2,146,7],
+"gtkprintdialog_8h.html#af1c5db65ea12bdaff2e09f016fca1916":[6,0,4,0,8,0,0,2,146,9],
 "gtkprintdialog_8h.html#af59c6f590afdc502a5a72908af9bd035":[6,0,4,0,8,0,0,2,146,4],
 "gtkprintdialog_8h.html#afa627a115686431672b6e73e917c9b20":[6,0,4,0,8,0,0,2,146,1],
 "gtkprintdialog_8h_source.html":[6,0,4,0,8,0,0,2,146],
@@ -240,14 +249,5 @@ var NAVTREEINDEX214 =
 "gtkprintsettings_8h.html#a9f1359f5cad97d5ae93c5e3c7305db01":[6,0,4,0,8,0,0,2,3,5,22],
 "gtkprintsettings_8h.html#aa06c266dfe9012a1eefc20d5a7332bc7":[6,0,4,0,8,0,0,2,3,5,13],
 "gtkprintsettings_8h.html#aa0e385dd317ad62aeaee9209f5b742b1":[6,0,4,0,8,0,0,2,3,5,35],
-"gtkprintsettings_8h.html#aa2d372eecac59d45c2e685774bab3ed1":[6,0,4,0,8,0,0,2,3,5,91],
-"gtkprintsettings_8h.html#aa4ddc4308e025b7440b9ec3afceab77f":[6,0,4,0,8,0,0,2,3,5,23],
-"gtkprintsettings_8h.html#aa5569a41e91eb87be54bd7dcdd106108":[6,0,4,0,8,0,0,2,3,5,76],
-"gtkprintsettings_8h.html#aa5c9fc495df6bb66f7fc2159563da83b":[6,0,4,0,8,0,0,2,3,5,101],
-"gtkprintsettings_8h.html#aa6d8845b8336d59f4ca3526627888199":[6,0,4,0,8,0,0,2,3,5,56],
-"gtkprintsettings_8h.html#aa99e2c525ed71e8537e8d5e70e3a06e7":[6,0,4,0,8,0,0,2,3,5,51],
-"gtkprintsettings_8h.html#aaa8946c126fb5c48088889dc81cf77bb":[6,0,4,0,8,0,0,2,3,5,16],
-"gtkprintsettings_8h.html#aaac7eb3afec610bf9a8aaf6868956786":[6,0,4,0,8,0,0,2,3,5,92],
-"gtkprintsettings_8h.html#aab2feb28aabb83e9e7f7910bc8d79e37":[6,0,4,0,8,0,0,2,3,5,95],
-"gtkprintsettings_8h.html#aab38e43e7d153bbaefb9c1411f2e1357":[6,0,4,0,8,0,0,2,3,5,57]
+"gtkprintsettings_8h.html#aa2d372eecac59d45c2e685774bab3ed1":[6,0,4,0,8,0,0,2,3,5,91]
 };

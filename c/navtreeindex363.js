@@ -1,5 +1,17 @@
 var NAVTREEINDEX363 =
 {
+"struct__PangoMatrix.html#a7a0497b1e8cb5872f96214990e64c0d8":[5,0,539,0],
+"struct__PangoMatrix.html#aba545fe0e67122b5bf87942e4b2e0c75":[5,0,539,4],
+"struct__PangoOTFeatureMap.html":[5,0,540],
+"struct__PangoOTFeatureMap.html#a4e538657d8b2e56f361313dda876b3a3":[5,0,540,1],
+"struct__PangoOTFeatureMap.html#a7bdcc4175bd071d5a80ea9d9a5206ff6":[5,0,540,0],
+"struct__PangoOTGlyph.html":[5,0,541],
+"struct__PangoOTGlyph.html#a1c6f45f8e0f83e7eec0a3614c0958a21":[5,0,541,0],
+"struct__PangoOTGlyph.html#a28c2c8739e01767a2b1bde286e8821e9":[5,0,541,5],
+"struct__PangoOTGlyph.html#a56d43fed2086f42f24e24d6c9f07bc22":[5,0,541,3],
+"struct__PangoOTGlyph.html#a663b97cffe127360690f2491746e29d5":[5,0,541,1],
+"struct__PangoOTGlyph.html#a700ad13fa37d8e2de8fccfffedebddd4":[5,0,541,2],
+"struct__PangoOTGlyph.html#aa9f3b98dfe0f2dd3ef1fd3b06deebd3b":[5,0,541,4],
 "struct__PangoOTRulesetDescription.html":[5,0,542],
 "struct__PangoOTRulesetDescription.html#a0d5c82d7be3bf67918d93da416c64347":[5,0,542,5],
 "struct__PangoOTRulesetDescription.html#a12f462f4cd11dda2dba25d9620ccd84e":[5,0,542,7],
@@ -237,17 +249,5 @@ var NAVTREEINDEX363 =
 "structcri__stream__data.html#a869923f3b86e5cab8858fd27c0091da3":[5,0,603,2],
 "structcri__stream__data.html#a9f0b6fd295996d69683afe4afa436a33":[5,0,603,4],
 "structcri__stream__data.html#aa33321ef657fd380094ffc5df5c0a5c9":[5,0,603,3],
-"structcri__stream__data.html#aa4e0805ec31ba9ae2839980d2d787d7f":[5,0,603,1],
-"structcri__stream__data.html#ab6204589fb426af9585a2bd60512a258":[5,0,603,5],
-"structcriterion__assert__args.html":[5,0,604],
-"structcriterion__assert__args.html#ac49741a16faf303853c1b6c51aceeddf":[5,0,604,1],
-"structcriterion__assert__args.html#ac60cff32071d2a5a9e41b3d99725fe9a":[5,0,604,0],
-"structcriterion__assert__stats.html":[5,0,605],
-"structcriterion__assert__stats.html#a39f7df8c19d4713b702058c2907aeb5c":[5,0,605,3],
-"structcriterion__assert__stats.html#a4b9f7eda96b2ae1a215d7cf253a3169f":[5,0,605,0],
-"structcriterion__assert__stats.html#a6ddc0f083ef54e8cedb622867f99613e":[5,0,605,4],
-"structcriterion__assert__stats.html#a84e5737595638afa0dfcccab05b69f74":[5,0,605,2],
-"structcriterion__assert__stats.html#ab0d37c8703f945d3ac5492b0bb152de6":[5,0,605,1],
-"structcriterion__datapoints.html":[5,0,606],
-"structcriterion__datapoints.html#a22be6a0ddbb055e52c6910723f6a76ce":[5,0,606,2]
+"structcri__stream__data.html#aa4e0805ec31ba9ae2839980d2d787d7f":[5,0,603,1]
 };

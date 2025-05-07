@@ -1,5 +1,14 @@
 var NAVTREEINDEX59 =
 {
+"duktape-1_85_82_2src_2duktape_8c.html#a5caac89af4a6e271a0029503711c6964":[6,0,7,0,0,0,1,1,2030],
+"duktape-1_85_82_2src_2duktape_8c.html#a5cb18928dd011b9dcf79b5b91e95fe24":[6,0,7,0,0,0,1,1,1189],
+"duktape-1_85_82_2src_2duktape_8c.html#a5cd519f2ef17be7a3b5ab50ebfbfb3f4":[6,0,7,0,0,0,1,1,1883],
+"duktape-1_85_82_2src_2duktape_8c.html#a5cd7b1474dbf4f7b20bb8387c6eb865d":[6,0,7,0,0,0,1,1,2850],
+"duktape-1_85_82_2src_2duktape_8c.html#a5cd9392add913379254db7a226f1706c":[6,0,7,0,0,0,1,1,2707],
+"duktape-1_85_82_2src_2duktape_8c.html#a5cddbda72ae6a410b02df36ca04b1897":[6,0,7,0,0,0,1,1,1413],
+"duktape-1_85_82_2src_2duktape_8c.html#a5cf23b1f4a82f92eaef05e2549741f85":[6,0,7,0,0,0,1,1,1449],
+"duktape-1_85_82_2src_2duktape_8c.html#a5d16304ed7edd641b717c94800a8e9fb":[6,0,7,0,0,0,1,1,3063],
+"duktape-1_85_82_2src_2duktape_8c.html#a5d1be16b47e89d330ea27275815ab373":[6,0,7,0,0,0,1,1,3576],
 "duktape-1_85_82_2src_2duktape_8c.html#a5d27f2db33813d52df021712c34be58e":[6,0,7,0,0,0,1,1,2743],
 "duktape-1_85_82_2src_2duktape_8c.html#a5d2b6c5f1be0d673b074d167c9ff7d4d":[6,0,7,0,0,0,1,1,3485],
 "duktape-1_85_82_2src_2duktape_8c.html#a5d3d2f4662ed0d134770f4b5d111ee24":[6,0,7,0,0,0,1,1,1610],
@@ -240,14 +249,5 @@ var NAVTREEINDEX59 =
 "duktape-1_85_82_2src_2duktape_8c.html#a6c190ab014f82dce64115c09e7933f5c":[6,0,7,0,0,0,1,1,1612],
 "duktape-1_85_82_2src_2duktape_8c.html#a6c2b8d6ee2a0562ac37680285ce543c3":[6,0,7,0,0,0,1,1,2744],
 "duktape-1_85_82_2src_2duktape_8c.html#a6c3a2adb6e09294c7e65f69821e5e81a":[6,0,7,0,0,0,1,1,750],
-"duktape-1_85_82_2src_2duktape_8c.html#a6c69af82f6e2dfca457492c26590ccdc":[6,0,7,0,0,0,1,1,2587],
-"duktape-1_85_82_2src_2duktape_8c.html#a6c6fb2d3379f79c8d5e3dfaf4d631b2e":[6,0,7,0,0,0,1,1,3574],
-"duktape-1_85_82_2src_2duktape_8c.html#a6c7658e9b47ff42793a66bcf75afa98c":[6,0,7,0,0,0,1,1,1384],
-"duktape-1_85_82_2src_2duktape_8c.html#a6c98324d6f7b2dd6bb313088c2e1ff01":[6,0,7,0,0,0,1,1,1794],
-"duktape-1_85_82_2src_2duktape_8c.html#a6c9ac8df9e1a3663d959f9af55345926":[6,0,7,0,0,0,1,1,2888],
-"duktape-1_85_82_2src_2duktape_8c.html#a6cc630245be6ccbaba92d7f57a7c8fc8":[6,0,7,0,0,0,1,1,2923],
-"duktape-1_85_82_2src_2duktape_8c.html#a6cc8d3b647a6afc26f8809d6412e3c34":[6,0,7,0,0,0,1,1,2269],
-"duktape-1_85_82_2src_2duktape_8c.html#a6cfcaa5cee1561530d5d7c718c61ddbe":[6,0,7,0,0,0,1,1,693],
-"duktape-1_85_82_2src_2duktape_8c.html#a6d3a8adca37b5f6becfccafd87d6fe79":[6,0,7,0,0,0,1,1,2025],
-"duktape-1_85_82_2src_2duktape_8c.html#a6d4f7573a59487e64b49d91b8717de9f":[6,0,7,0,0,0,1,1,2465]
+"duktape-1_85_82_2src_2duktape_8c.html#a6c69af82f6e2dfca457492c26590ccdc":[6,0,7,0,0,0,1,1,2587]
 };
