@@ -88,7 +88,7 @@ lint-clang-tidy: compile-commands
 	@find src -name "*.c" -o -name "*.h" | xargs -r clang-tidy -p .
 lint-cppcheck:
 	@echo "Running cppcheck..."
-	cppcheck --enable=all --suppress=unusedStructMember --suppress=missingIncludeSystem --inline-suppr --quiet --check-level=exhaustive $(INCLUDE_DIRS) $(ALL_SOURCES)
+	cppcheck --enable=all --error-exitcode=1 --suppress=unusedStructMember --suppress=missingIncludeSystem --inline-suppr --quiet --check-level=exhaustive $(INCLUDE_DIRS) $(ALL_SOURCES)
 lint-flawfinder:
 	@echo "Running flawfinder (security check)..."
 	flawfinder --minlevel=1 $(ALL_SOURCES)

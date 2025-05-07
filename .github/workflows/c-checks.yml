@@ -40,7 +40,7 @@ jobs:
         with:
           name: project-templates
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
-      - run: cd c && nix develop --impure --command bash -c "make lint-cppcheck"
+      - run: cd c && nix run ".#checks.x86_64-linux.cppcheck"
 
   lint-flawfinder:
     runs-on: ubuntu-latest
@@ -53,7 +53,7 @@ jobs:
         with:
           name: project-templates
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
-      - run: cd c && nix develop --impure --command bash -c "make lint-flawfinder"
+      - run: cd c && nix run ".#checks.x86_64-linux.flawfinder"
 
   format-check:
     runs-on: ubuntu-latest
@@ -66,7 +66,7 @@ jobs:
         with:
           name: project-templates
           authToken: ${{ secrets.CACHIX_AUTH_TOKEN }}
-      - run: cd c && nix develop --impure --command bash -c "make format-check"
+      - run: cd c && nix run ".#checks.x86_64-linux.format"
 
   nix-vm-check:
     runs-on: ubuntu-latest
