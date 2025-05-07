@@ -1,0 +1,27 @@
+var gsocketlistener_8h =
+[
+    [ "_GSocketListenerClass", "struct__GSocketListenerClass.html", "struct__GSocketListenerClass" ],
+    [ "_GSocketListener", "struct__GSocketListener.html", "struct__GSocketListener" ],
+    [ "G_IS_SOCKET_LISTENER", "gsocketlistener_8h.html#a1a5aeae391edb650d4b2ca2f6b3ad084", null ],
+    [ "G_IS_SOCKET_LISTENER_CLASS", "gsocketlistener_8h.html#aea8f6265fdaae196b71d2cd3433b7ac3", null ],
+    [ "G_SOCKET_LISTENER", "gsocketlistener_8h.html#a47bc31fc99a632dc4d7513a80266c055", null ],
+    [ "G_SOCKET_LISTENER_CLASS", "gsocketlistener_8h.html#a2d6abd28f802c19ae6013c651e0373b5", null ],
+    [ "G_SOCKET_LISTENER_GET_CLASS", "gsocketlistener_8h.html#a93285cc4772ae30bf14309328af00516", null ],
+    [ "G_TYPE_SOCKET_LISTENER", "gsocketlistener_8h.html#acda2c5767b462eb1c7042c3494c89bc1", null ],
+    [ "GSocketListenerClass", "gsocketlistener_8h.html#aa2bd2f73d97167d440165d9102fec4a7", null ],
+    [ "GSocketListenerPrivate", "gsocketlistener_8h.html#aa5e8a20e9d0bc4c5d4bfd8d26429d69e", null ],
+    [ "g_socket_listener_accept", "gsocketlistener_8h.html#aed7235caef7bfd1232b2b11ca924cf60", null ],
+    [ "g_socket_listener_accept_async", "gsocketlistener_8h.html#a77dee8b89ad51120751dbe2b86daa69a", null ],
+    [ "g_socket_listener_accept_finish", "gsocketlistener_8h.html#afa9b1eb7b1652dac9471ca97a862ce4c", null ],
+    [ "g_socket_listener_accept_socket", "gsocketlistener_8h.html#ac4c6d5444e2139bd0618ae27c55c8708", null ],
+    [ "g_socket_listener_accept_socket_async", "gsocketlistener_8h.html#a5b5a7bcf12ce2fc4dcb630a0bb99cd1e", null ],
+    [ "g_socket_listener_accept_socket_finish", "gsocketlistener_8h.html#ad5ceb6e2ff2ae2665e2c49323db84004", null ],
+    [ "g_socket_listener_add_address", "gsocketlistener_8h.html#ac130621b24ee38f95987051165b7e98d", null ],
+    [ "g_socket_listener_add_any_inet_port", "gsocketlistener_8h.html#aec84b3aa2ce9ccac8d9ee000e0956d6b", null ],
+    [ "g_socket_listener_add_inet_port", "gsocketlistener_8h.html#a6d4f120789ac53276c580fb59346e8db", null ],
+    [ "g_socket_listener_add_socket", "gsocketlistener_8h.html#a2c22550dae1ee99ff4111aa9bf25208b", null ],
+    [ "g_socket_listener_close", "gsocketlistener_8h.html#a270a6713f432ad4e8cf08d46df384899", null ],
+    [ "g_socket_listener_get_type", "gsocketlistener_8h.html#a7a0dce344edc0dcab3f6b1c079a811da", null ],
+    [ "g_socket_listener_new", "gsocketlistener_8h.html#a3451e0e8b73715ac2d2b70baa9f1eb7b", null ],
+    [ "g_socket_listener_set_backlog", "gsocketlistener_8h.html#af227073de7bd119463afc97fd0d87edf", null ]
+];

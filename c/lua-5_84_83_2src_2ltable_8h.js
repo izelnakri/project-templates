@@ -1,0 +1,25 @@
+var lua_5_84_83_2src_2ltable_8h =
+[
+    [ "allocsizenode", "lua-5_84_83_2src_2ltable_8h.html#af3ab680af234ee7ea0f7e6078b4b73bf", null ],
+    [ "gnext", "lua-5_84_83_2src_2ltable_8h.html#aac0e00b2296e00cfc818b74f1aff4f8b", null ],
+    [ "gnode", "lua-5_84_83_2src_2ltable_8h.html#a644cfa3b6d4be1782e818a8340b5f78b", null ],
+    [ "gval", "lua-5_84_83_2src_2ltable_8h.html#acbbecd9bd8fbb72a17f6e2f5acf7113d", null ],
+    [ "invalidateTMcache", "lua-5_84_83_2src_2ltable_8h.html#a69534d37fbaf464430636bf437108530", null ],
+    [ "isdummy", "lua-5_84_83_2src_2ltable_8h.html#a97b22167368e065caf9d8d11ae7ca1de", null ],
+    [ "nodefromval", "lua-5_84_83_2src_2ltable_8h.html#aa318820e0b85f1a9b1c34821e3d37a10", null ],
+    [ "luaH_finishset", "lua-5_84_83_2src_2ltable_8h.html#a69192a67dd4b7ca2b108468b2bcec01b", null ],
+    [ "luaH_free", "lua-5_84_83_2src_2ltable_8h.html#aa2e2ed92ac2178bb87aa3a178c0a83bb", null ],
+    [ "luaH_get", "lua-5_84_83_2src_2ltable_8h.html#a9030835978ede38d64789b7f9547cda7", null ],
+    [ "luaH_getint", "lua-5_84_83_2src_2ltable_8h.html#af255c7ad270fc935b76d212be7cfa11d", null ],
+    [ "luaH_getn", "lua-5_84_83_2src_2ltable_8h.html#a4d485656e3b0f1bead63b2f27904c1eb", null ],
+    [ "luaH_getshortstr", "lua-5_84_83_2src_2ltable_8h.html#ac165266ffc597fcd85bf21f4b949d0b9", null ],
+    [ "luaH_getstr", "lua-5_84_83_2src_2ltable_8h.html#ae303da22e681c6a608515bd5b95e9842", null ],
+    [ "luaH_new", "lua-5_84_83_2src_2ltable_8h.html#a226f2738cfb2497699d62e7380d38a25", null ],
+    [ "luaH_newkey", "lua-5_84_83_2src_2ltable_8h.html#ae160dfbae65610c39fff0098caa66563", null ],
+    [ "luaH_next", "lua-5_84_83_2src_2ltable_8h.html#a55be2c48e6e2c113dabda3819f5301e7", null ],
+    [ "luaH_realasize", "lua-5_84_83_2src_2ltable_8h.html#a8f20a204b7a78780847939086b847781", null ],
+    [ "luaH_resize", "lua-5_84_83_2src_2ltable_8h.html#ae5c4f9153b2f7118209c50711409b4d4", null ],
+    [ "luaH_resizearray", "lua-5_84_83_2src_2ltable_8h.html#a5a11320761545d5a718dd0dd57ae1d7e", null ],
+    [ "luaH_set", "lua-5_84_83_2src_2ltable_8h.html#a8957db41a7676a02ce7ed2008f1cbc9f", null ],
+    [ "luaH_setint", "lua-5_84_83_2src_2ltable_8h.html#ac62838e269732b63812012592c454462", null ]
+];

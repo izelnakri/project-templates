@@ -1,0 +1,27 @@
+var gdkclipboard_8h =
+[
+    [ "GDK_CLIPBOARD", "gdkclipboard_8h.html#a481a5e84595ac413cc1db758a8c0b35b", null ],
+    [ "GDK_IS_CLIPBOARD", "gdkclipboard_8h.html#adf8aeaf960f1517a8400023820500bc0", null ],
+    [ "GDK_TYPE_CLIPBOARD", "gdkclipboard_8h.html#af63b14f39d6de8cb99875fd3804a0c0b", null ],
+    [ "gdk_clipboard_get_content", "gdkclipboard_8h.html#a135b52c924d4799a64493983b24b4a5b", null ],
+    [ "gdk_clipboard_get_display", "gdkclipboard_8h.html#aa7fa208db0f4290d79fb536a93fe91ee", null ],
+    [ "gdk_clipboard_get_formats", "gdkclipboard_8h.html#aeb2ca8a65baeb824b8334d327236db07", null ],
+    [ "gdk_clipboard_get_type", "gdkclipboard_8h.html#ac13e476ac55780150fc868b09f61428c", null ],
+    [ "gdk_clipboard_is_local", "gdkclipboard_8h.html#a3afa8ceaaae6b11b6b8ae608cba4539a", null ],
+    [ "gdk_clipboard_read_async", "gdkclipboard_8h.html#a961793cdde4837b03d9f48f02c7a0f15", null ],
+    [ "gdk_clipboard_read_finish", "gdkclipboard_8h.html#aa62522f1d459df4aba6d72e2027aa18c", null ],
+    [ "gdk_clipboard_read_text_async", "gdkclipboard_8h.html#adec7790563829ef8168de24e9cb931dc", null ],
+    [ "gdk_clipboard_read_text_finish", "gdkclipboard_8h.html#a4cb7a2784be94942f7d51621ed710acb", null ],
+    [ "gdk_clipboard_read_texture_async", "gdkclipboard_8h.html#afc081230f270534ccc6ef5607269114d", null ],
+    [ "gdk_clipboard_read_texture_finish", "gdkclipboard_8h.html#a4ac9a996e68f838b9a27a10170170926", null ],
+    [ "gdk_clipboard_read_value_async", "gdkclipboard_8h.html#a4c566c54d19164f40b868838a7cc869b", null ],
+    [ "gdk_clipboard_read_value_finish", "gdkclipboard_8h.html#af2ab6c9c8d4b8fe1b59dbe00740670fe", null ],
+    [ "gdk_clipboard_set", "gdkclipboard_8h.html#a83dd9e91fcab1e2fad091506e2ae3f48", null ],
+    [ "gdk_clipboard_set_content", "gdkclipboard_8h.html#a0e1b6d729f7575889df51bd9880338df", null ],
+    [ "gdk_clipboard_set_text", "gdkclipboard_8h.html#a9c601dad41bf46abf16c269826cc66c7", null ],
+    [ "gdk_clipboard_set_texture", "gdkclipboard_8h.html#a079eb600464bc19a0503946a2e5ee64b", null ],
+    [ "gdk_clipboard_set_valist", "gdkclipboard_8h.html#aeb89b8b43efe16b14544eb05da68e27b", null ],
+    [ "gdk_clipboard_set_value", "gdkclipboard_8h.html#a8770429d0cffc95a031ce28febe58554", null ],
+    [ "gdk_clipboard_store_async", "gdkclipboard_8h.html#ae646265516530db04726599c41819e54", null ],
+    [ "gdk_clipboard_store_finish", "gdkclipboard_8h.html#a7dbf5c0248826a6fabb45451d920e30c", null ]
+];

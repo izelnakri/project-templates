@@ -1,0 +1,28 @@
+var gtkgesture_8h =
+[
+    [ "GTK_GESTURE", "gtkgesture_8h.html#a647052cf88346b86fc27e71e4b385eb2", null ],
+    [ "GTK_GESTURE_CLASS", "gtkgesture_8h.html#adc5f48db5cbfb7f6e2da0418f3f27869", null ],
+    [ "GTK_GESTURE_GET_CLASS", "gtkgesture_8h.html#adbaae0e3fd8568395b12d4d88fb905ad", null ],
+    [ "GTK_IS_GESTURE", "gtkgesture_8h.html#aee10a69aa6dd0898e8da6c3e2666c623", null ],
+    [ "GTK_IS_GESTURE_CLASS", "gtkgesture_8h.html#abec3f01d529b69ad7c6d04a4666fa24d", null ],
+    [ "GTK_TYPE_GESTURE", "gtkgesture_8h.html#a62eca483237b68ba3e2b675b1a7a7c2d", null ],
+    [ "GtkGestureClass", "gtkgesture_8h.html#a57f04afed915ea9ef0f5dec6ae3fb0cb", null ],
+    [ "gtk_gesture_get_bounding_box", "gtkgesture_8h.html#abad7b93290477533d283ece17579f2a7", null ],
+    [ "gtk_gesture_get_bounding_box_center", "gtkgesture_8h.html#a1d0bb1805dc094e3d4af526fc181d459", null ],
+    [ "gtk_gesture_get_device", "gtkgesture_8h.html#a18a2fc76c10125c40cd45854b31d5c60", null ],
+    [ "gtk_gesture_get_group", "gtkgesture_8h.html#abb81f5816880fa20c211e9af3c625a90", null ],
+    [ "gtk_gesture_get_last_event", "gtkgesture_8h.html#a746a053570ea4f1be9a4a605cea5bc18", null ],
+    [ "gtk_gesture_get_last_updated_sequence", "gtkgesture_8h.html#a7b79bdb610b0566019427d64655e3f4e", null ],
+    [ "gtk_gesture_get_point", "gtkgesture_8h.html#a0ebbbdfdeb210b272478dbe0562515a5", null ],
+    [ "gtk_gesture_get_sequence_state", "gtkgesture_8h.html#a5c1b376d8790cf75508f311cc971417a", null ],
+    [ "gtk_gesture_get_sequences", "gtkgesture_8h.html#a21b1fb4b8afbdf99aa1f9fdede4b748f", null ],
+    [ "gtk_gesture_get_type", "gtkgesture_8h.html#a5440460e3b0d67f7035fdef4e3394e1c", null ],
+    [ "gtk_gesture_group", "gtkgesture_8h.html#a4afef09acf4c20a73b5896b1ac3bdc67", null ],
+    [ "gtk_gesture_handles_sequence", "gtkgesture_8h.html#af11f7b9b4c98199cd50c845bba7e62cd", null ],
+    [ "gtk_gesture_is_active", "gtkgesture_8h.html#ac9b79f3e26129712d86f7f439441dc75", null ],
+    [ "gtk_gesture_is_grouped_with", "gtkgesture_8h.html#a29dc8f27cbccdf5df5fe95424b653f6f", null ],
+    [ "gtk_gesture_is_recognized", "gtkgesture_8h.html#a5051a9edfc3efe1280a0579da8204e79", null ],
+    [ "gtk_gesture_set_sequence_state", "gtkgesture_8h.html#a8908c71a3c3253a4838c79188a5f984a", null ],
+    [ "gtk_gesture_set_state", "gtkgesture_8h.html#a8717ed06e9ed835a03c9ef3218b8ecb3", null ],
+    [ "gtk_gesture_ungroup", "gtkgesture_8h.html#abd3770584464c58359cbc4797ea81729", null ]
+];

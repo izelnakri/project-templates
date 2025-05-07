@@ -1,0 +1,26 @@
+var gtkprintunixdialog_8h =
+[
+    [ "GTK_IS_PRINT_UNIX_DIALOG", "gtkprintunixdialog_8h.html#ac7276ede8fa4f5a9b04882a90862680a", null ],
+    [ "GTK_PRINT_UNIX_DIALOG", "gtkprintunixdialog_8h.html#a9489dd3cb82df53d273f4cc9e25f63b8", null ],
+    [ "GTK_TYPE_PRINT_UNIX_DIALOG", "gtkprintunixdialog_8h.html#acee6085f8525f1e5da73f8b99d133d23", null ],
+    [ "GtkPrintUnixDialog", "gtkprintunixdialog_8h.html#a780133fffc6a8e6c9f9132a0c9e400c6", null ],
+    [ "gtk_print_unix_dialog_add_custom_tab", "gtkprintunixdialog_8h.html#a9317e6f5c7538fce4cfac862cb1a37b8", null ],
+    [ "gtk_print_unix_dialog_get_current_page", "gtkprintunixdialog_8h.html#a09947a189192db84cab6a0e0018f0dd9", null ],
+    [ "gtk_print_unix_dialog_get_embed_page_setup", "gtkprintunixdialog_8h.html#a5a4ce55a3aa62126b8d2241046b3e7c2", null ],
+    [ "gtk_print_unix_dialog_get_has_selection", "gtkprintunixdialog_8h.html#adf509d3b5ab96af61c403c08337b5c6f", null ],
+    [ "gtk_print_unix_dialog_get_manual_capabilities", "gtkprintunixdialog_8h.html#a2b75cc3f8771d5b7bd3ea23e72dbeead", null ],
+    [ "gtk_print_unix_dialog_get_page_setup", "gtkprintunixdialog_8h.html#aee47644223dfb40767b8b0c1e58207f6", null ],
+    [ "gtk_print_unix_dialog_get_page_setup_set", "gtkprintunixdialog_8h.html#a0263be79a4e6ccb0e9cd047e003be284", null ],
+    [ "gtk_print_unix_dialog_get_selected_printer", "gtkprintunixdialog_8h.html#a420ce41f3d0f0b8e5e6204c7353a682c", null ],
+    [ "gtk_print_unix_dialog_get_settings", "gtkprintunixdialog_8h.html#acacc3583372f940d26d5055164386eb7", null ],
+    [ "gtk_print_unix_dialog_get_support_selection", "gtkprintunixdialog_8h.html#ac763978838151abb746adc39de77e006", null ],
+    [ "gtk_print_unix_dialog_get_type", "gtkprintunixdialog_8h.html#aca679690471dd53a75474633db722afe", null ],
+    [ "gtk_print_unix_dialog_new", "gtkprintunixdialog_8h.html#abfff6e90872c4643fa3bca0f942afd7e", null ],
+    [ "gtk_print_unix_dialog_set_current_page", "gtkprintunixdialog_8h.html#ae413ac72f6ae06e7c348575c7492ce2a", null ],
+    [ "gtk_print_unix_dialog_set_embed_page_setup", "gtkprintunixdialog_8h.html#abf691167d7b046564f1e53a2209ee427", null ],
+    [ "gtk_print_unix_dialog_set_has_selection", "gtkprintunixdialog_8h.html#a874933c91fe1ab0382b471e18e751e5e", null ],
+    [ "gtk_print_unix_dialog_set_manual_capabilities", "gtkprintunixdialog_8h.html#a0874459dc5e39b9c92a9564fcc26c6f8", null ],
+    [ "gtk_print_unix_dialog_set_page_setup", "gtkprintunixdialog_8h.html#a744d1ae8a1ed31e5f08d94d5a63fb9a1", null ],
+    [ "gtk_print_unix_dialog_set_settings", "gtkprintunixdialog_8h.html#ac3fca357d84cde0ff9a4581be0f1aab1", null ],
+    [ "gtk_print_unix_dialog_set_support_selection", "gtkprintunixdialog_8h.html#afcb5fa9db21d8777169eb62593175dab", null ]
+];

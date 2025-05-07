@@ -1,0 +1,28 @@
+var gdkversionmacros_8h =
+[
+    [ "GDK_DEPRECATED_ENUMERATOR", "gdkversionmacros_8h.html#a9476682db2a1417d63f76a0f8e94c471", null ],
+    [ "GDK_DEPRECATED_ENUMERATOR_FOR", "gdkversionmacros_8h.html#a4fd0cea5f7a5a89f11e1bbf585238756", null ],
+    [ "GDK_DEPRECATED_MACRO", "gdkversionmacros_8h.html#a35340a2c6d8c83f6a379066c27a5a345", null ],
+    [ "GDK_DEPRECATED_MACRO_FOR", "gdkversionmacros_8h.html#ac967c0f728fc3ee77cb71efc648576d6", null ],
+    [ "GDK_DEPRECATED_TYPE", "gdkversionmacros_8h.html#ad2309082d5c7dcfdb1051f5d06b22f24", null ],
+    [ "GDK_DEPRECATED_TYPE_FOR", "gdkversionmacros_8h.html#a63db5c29f9eac2b3f0ea41181b143672", null ],
+    [ "GDK_MAJOR_VERSION", "gdkversionmacros_8h.html#aed2ffad4487a1c5d8c8759f567193b9c", null ],
+    [ "GDK_MICRO_VERSION", "gdkversionmacros_8h.html#a0d58cf2202dc2639858b8107cfd10322", null ],
+    [ "GDK_MINOR_VERSION", "gdkversionmacros_8h.html#a0b222737cbfdfa224992746cae57ff99", null ],
+    [ "GDK_UNAVAILABLE_ENUMERATOR", "gdkversionmacros_8h.html#a553578f089ed73f274aac37986ae9c90", null ],
+    [ "GDK_UNAVAILABLE_MACRO", "gdkversionmacros_8h.html#ae2c190eed4dac9b1dac1bf96cef0abe7", null ],
+    [ "GDK_UNAVAILABLE_TYPE", "gdkversionmacros_8h.html#a41297083e24b035b654eb15b7f5232f9", null ],
+    [ "GDK_VERSION_4_0", "gdkversionmacros_8h.html#aee90812f385ee7823ce8f57d32d43de3", null ],
+    [ "GDK_VERSION_4_10", "gdkversionmacros_8h.html#a2f9c7d5a082ca1d11a72a10d1987f858", null ],
+    [ "GDK_VERSION_4_12", "gdkversionmacros_8h.html#ac360b1f132a6ed11b3b19e0a7b55d700", null ],
+    [ "GDK_VERSION_4_14", "gdkversionmacros_8h.html#a3911cc09bc587b5fde7c0cd2d4069516", null ],
+    [ "GDK_VERSION_4_16", "gdkversionmacros_8h.html#a8d734d348bb65e2aa4b6406027f222a5", null ],
+    [ "GDK_VERSION_4_2", "gdkversionmacros_8h.html#aabaf078ba746bb5560c7ce639a5286e1", null ],
+    [ "GDK_VERSION_4_4", "gdkversionmacros_8h.html#a90b499528a5879a4ff65cb9cbf3ff51e", null ],
+    [ "GDK_VERSION_4_6", "gdkversionmacros_8h.html#a9a733859b936734d3588a10952350454", null ],
+    [ "GDK_VERSION_4_8", "gdkversionmacros_8h.html#a529dab1bf6a95428e1a61ab8083ba8de", null ],
+    [ "GDK_VERSION_CUR_STABLE", "gdkversionmacros_8h.html#a784e7b252458c08bac2e5b5f854f0aa3", null ],
+    [ "GDK_VERSION_MAX_ALLOWED", "gdkversionmacros_8h.html#a301beb18055c8f73039d84fe647fd8fb", null ],
+    [ "GDK_VERSION_MIN_REQUIRED", "gdkversionmacros_8h.html#a89b2f77ff519177b7a8ed6461eafd8ea", null ],
+    [ "GDK_VERSION_PREV_STABLE", "gdkversionmacros_8h.html#a95ee7058246c66f037bbd51b61fde0a9", null ]
+];

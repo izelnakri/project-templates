@@ -1,0 +1,35 @@
+var gdkdevice_8h =
+[
+    [ "_GdkTimeCoord", "struct__GdkTimeCoord.html", "struct__GdkTimeCoord" ],
+    [ "GDK_DEVICE", "gdkdevice_8h.html#ae27bf492687ef5ed88ee482d8bfdfe3a", null ],
+    [ "GDK_IS_DEVICE", "gdkdevice_8h.html#a93a46fb7f2c439f0a2d205bce1e8ce4e", null ],
+    [ "GDK_TYPE_DEVICE", "gdkdevice_8h.html#a64dff4241f4cc101ff724ca1fa26dc82", null ],
+    [ "GdkTimeCoord", "gdkdevice_8h.html#ac15618f7269f5b12ba73bcd859af3d84", null ],
+    [ "GdkInputSource", "gdkdevice_8h.html#a63c474c87aaa41cb6a29e694a425f8b9", [
+      [ "GDK_SOURCE_MOUSE", "gdkdevice_8h.html#a63c474c87aaa41cb6a29e694a425f8b9aff215f3ee06b6f0ccbe1719c45fb28ec", null ],
+      [ "GDK_SOURCE_PEN", "gdkdevice_8h.html#a63c474c87aaa41cb6a29e694a425f8b9afa6cc71a131b8f63149dd26026bad565", null ],
+      [ "GDK_SOURCE_KEYBOARD", "gdkdevice_8h.html#a63c474c87aaa41cb6a29e694a425f8b9a5fa1f1e860df3e6af46cf38bab0d8c3a", null ],
+      [ "GDK_SOURCE_TOUCHSCREEN", "gdkdevice_8h.html#a63c474c87aaa41cb6a29e694a425f8b9a41c21501846a18c2ff36316329e0b2b2", null ],
+      [ "GDK_SOURCE_TOUCHPAD", "gdkdevice_8h.html#a63c474c87aaa41cb6a29e694a425f8b9ad71e6db9b569ea8e9c32cf40e96fa9c5", null ],
+      [ "GDK_SOURCE_TRACKPOINT", "gdkdevice_8h.html#a63c474c87aaa41cb6a29e694a425f8b9a5d1f05889396834774e8054e39c33859", null ],
+      [ "GDK_SOURCE_TABLET_PAD", "gdkdevice_8h.html#a63c474c87aaa41cb6a29e694a425f8b9a184b8d043c53357fe2e48e2245d001ac", null ]
+    ] ],
+    [ "gdk_device_get_caps_lock_state", "gdkdevice_8h.html#a7f1d4b40f4cf5e4ea865bbcbf24aae24", null ],
+    [ "gdk_device_get_device_tool", "gdkdevice_8h.html#a4d456862ceeee395444925613e361fc9", null ],
+    [ "gdk_device_get_direction", "gdkdevice_8h.html#a818d9cadbfce892184e7adbda3c1941c", null ],
+    [ "gdk_device_get_display", "gdkdevice_8h.html#ab927bcd58d4685691b8e36c32247a5a6", null ],
+    [ "gdk_device_get_has_cursor", "gdkdevice_8h.html#acdd1222f6a3a215cc365ea1c9f128722", null ],
+    [ "gdk_device_get_modifier_state", "gdkdevice_8h.html#a906a85d7ab3a77d33fe1a6a46033c1e6", null ],
+    [ "gdk_device_get_name", "gdkdevice_8h.html#a156d0a9606c34464f349d48eaeab5deb", null ],
+    [ "gdk_device_get_num_lock_state", "gdkdevice_8h.html#a15967c1321fa623f2a74b2e868442d32", null ],
+    [ "gdk_device_get_num_touches", "gdkdevice_8h.html#ad9a6d65c211b29d23cdbbe2edd226f97", null ],
+    [ "gdk_device_get_product_id", "gdkdevice_8h.html#a90f0f71cb0ae8f2707a0529c8ebe129b", null ],
+    [ "gdk_device_get_scroll_lock_state", "gdkdevice_8h.html#ac62fbedf3f65fbd141d11a144f56ff6f", null ],
+    [ "gdk_device_get_seat", "gdkdevice_8h.html#a4e0780161b4fe8199ded309dbdf57965", null ],
+    [ "gdk_device_get_source", "gdkdevice_8h.html#a9abf8ab880ce7f6204e4122636ab1536", null ],
+    [ "gdk_device_get_surface_at_position", "gdkdevice_8h.html#af5da58c814bbfa5978ebd865dfacb559", null ],
+    [ "gdk_device_get_timestamp", "gdkdevice_8h.html#a081d461a8266777f0e17e760dd8568b7", null ],
+    [ "gdk_device_get_type", "gdkdevice_8h.html#a0955222195304e3767284bb05e08008a", null ],
+    [ "gdk_device_get_vendor_id", "gdkdevice_8h.html#aafbd454e3f9fcda93026b9a728fa742b", null ],
+    [ "gdk_device_has_bidi_layouts", "gdkdevice_8h.html#a57c8686e99dc4fe3d9d7f8e30ffec465", null ]
+];

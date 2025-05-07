@@ -1,0 +1,25 @@
+var structVkPhysicalDeviceDescriptorIndexingFeatures =
+[
+    [ "descriptorBindingPartiallyBound", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a869c6789d3a77788a340eafab2f73091", null ],
+    [ "descriptorBindingSampledImageUpdateAfterBind", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#aa378d79a9c8ab4eeaeaa254e80f74704", null ],
+    [ "descriptorBindingStorageBufferUpdateAfterBind", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#aa76fadb81220b6cb94027ae952317257", null ],
+    [ "descriptorBindingStorageImageUpdateAfterBind", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a4db8041de502c665b9ce3705fe0739f2", null ],
+    [ "descriptorBindingStorageTexelBufferUpdateAfterBind", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a9cfadeddfe6e5d398989573fdf0b6a51", null ],
+    [ "descriptorBindingUniformBufferUpdateAfterBind", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a7df80efe410e26db879fb56a1299240c", null ],
+    [ "descriptorBindingUniformTexelBufferUpdateAfterBind", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#adbe29436bc86d772fa591bb99097f926", null ],
+    [ "descriptorBindingUpdateUnusedWhilePending", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#af3268a1e2f4ff91f1f81959591de6652", null ],
+    [ "descriptorBindingVariableDescriptorCount", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a3d63b852fa7f655385670fad1a7130fc", null ],
+    [ "pNext", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#abf19f157082539daec7bf893dfb68d11", null ],
+    [ "runtimeDescriptorArray", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a797fbde81b00082732cb98485242de6d", null ],
+    [ "shaderInputAttachmentArrayDynamicIndexing", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a527462240debed285b38a30dcd955b50", null ],
+    [ "shaderInputAttachmentArrayNonUniformIndexing", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a5953fcb43671a141a52c13e56cc6784b", null ],
+    [ "shaderSampledImageArrayNonUniformIndexing", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#ae542949647be1858b3eafce2fe494e38", null ],
+    [ "shaderStorageBufferArrayNonUniformIndexing", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#ad7306d1ea46751b4e4b105682fadaadb", null ],
+    [ "shaderStorageImageArrayNonUniformIndexing", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a71b109a40e9daeb7ed00e5e2cfe7439c", null ],
+    [ "shaderStorageTexelBufferArrayDynamicIndexing", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#ab355d443b765fc84d54d9a1aee95be9b", null ],
+    [ "shaderStorageTexelBufferArrayNonUniformIndexing", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a7987eb9fa6bc996209c091bf5cdafd77", null ],
+    [ "shaderUniformBufferArrayNonUniformIndexing", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#ac7c183814683e5be42e8baaab048175b", null ],
+    [ "shaderUniformTexelBufferArrayDynamicIndexing", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a5dbc3c3c9346b65514da36932fab5e28", null ],
+    [ "shaderUniformTexelBufferArrayNonUniformIndexing", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a7de32567afb9a51bbecd49c14d8649d1", null ],
+    [ "sType", "structVkPhysicalDeviceDescriptorIndexingFeatures.html#a6973003b642e981a223548868731a570", null ]
+];
