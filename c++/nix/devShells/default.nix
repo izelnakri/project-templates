@@ -101,7 +101,7 @@ pkgs.mkShell rec {
   
   # TODO: Ideally move there:
   # buildInputs = [ self.packages.${system}.default ]; # TODO: This was before, in the C project
-  buildInputs = [ pkgs.meson pkgs.ninja pkgs.boost pkgs.nlohmann_json pkgs.openssl ];
+  buildInputs = [ pkgs.meson pkgs.ninja pkgs.boost pkgs.nlohmann_json pkgs.openssl pkgs.gtkmm4 ];
 
   # PKG_CONFIG_PATH = getAllPkgConfigPaths pkgs (inputsFrom ++ buildInputs ++ nativeBuildInputs); # TODO: This was before, in the C project
   PKG_CONFIG_PATH = getAllPkgConfigPaths pkgs (buildInputs ++ nativeBuildInputs);

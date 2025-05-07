@@ -24,15 +24,6 @@ executable('github_user_fetcher', files('src/main.cpp', 'src/user.cpp', 'src/ser
   install: true,
 )
 
-# executable('github_user_fetcher_gui', files('src/gui.cpp'),
-#   dependencies: [
-#     dependency('gtk4', required: true),
-#     # If using webkit, add dependencies here.
-#   ],
-#   cpp_args: warning_flags,
-#   install: true,
-# )
-
 lib_src = files('src/user.cpp')
 
 github_user_fetcher_shared = shared_library('github_user_fetcher', lib_src,
@@ -50,6 +41,17 @@ github_user_fetcher_static = static_library('github_user_fetcher_static', lib_sr
 )
 
 install_headers('src/user.hpp', subdir: 'github_user_fetcher') # ?!Does it instal to /{prefix}/include/github_user_fetcher/user
+
+executable('github_user_fetcher_gui', files('src/gui.cpp'),
+  dependencies: [
+    dependency('gtkmm-4.0', required: true),
+    # In future: If using webkit, add dependencies here.
+  ],
+  include_directories: headers,
+  link_with: github_user_fetcher_static,
+  cpp_args: warning_flags,
+  install: true,
+)
 
 # Testing setup
 # tests_opt = get_option('tests')
