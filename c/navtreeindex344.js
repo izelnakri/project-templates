@@ -1,5 +1,6 @@
 var NAVTREEINDEX344 =
 {
+"structVkRayTracingPipelineCreateInfoKHR.html#a3923782a0d3a7bcb0d1eefd6740f3ce0":[5,0,2025,7],
 "structVkRayTracingPipelineCreateInfoKHR.html#a56cf4c1fe04f10992d7eaffe2cb48b34":[5,0,2025,8],
 "structVkRayTracingPipelineCreateInfoKHR.html#a63cc6aca3dd6c83af6a823def3e40691":[5,0,2025,13],
 "structVkRayTracingPipelineCreateInfoKHR.html#a855dda15efe6cc4e05140ead78e669b9":[5,0,2025,9],
@@ -248,6 +249,5 @@ var NAVTREEINDEX344 =
 "structVkSampleLocationsInfoEXT.html#ab284a3f36be5d44dcbfdf9b30c4ed578":[5,0,2061,5],
 "structVkSampleLocationsInfoEXT.html#ab46e44d99dafa4bedf5cc4c3c20dfa77":[5,0,2061,1],
 "structVkSampleLocationsInfoEXT.html#aee74fe71c7b6d4bea4824988219d8dd9":[5,0,2061,0],
-"structVkSamplerBlockMatchWindowCreateInfoQCOM.html":[5,0,2062],
-"structVkSamplerBlockMatchWindowCreateInfoQCOM.html#a1132f79c18b3a22962b3828cc7936fbd":[5,0,2062,3]
+"structVkSamplerBlockMatchWindowCreateInfoQCOM.html":[5,0,2062]
 };

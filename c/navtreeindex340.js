@@ -1,5 +1,6 @@
 var NAVTREEINDEX340 =
 {
+"structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a2d54ac4d1704cf863e80f40f02fa7e4f":[5,0,1874,8],
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a3b2c3093ab700310884a8b20002b57ec":[5,0,1874,2],
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a3b4735274b5eeabc512e43d5e789e8da":[5,0,1874,11],
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a4188532f8e162e08fc64de937b3a9d07":[5,0,1874,30],
@@ -248,6 +249,5 @@ var NAVTREEINDEX340 =
 "structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html":[5,0,1919],
 "structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html#a24ca0c47da5e8664231da0bb397f2400":[5,0,1919,1],
 "structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html#a2fd03a0d08d62ef717fddedcaa063340":[5,0,1919,2],
-"structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html#aacb231f46eaaf6a81c1f31ad760e79b6":[5,0,1919,0],
-"structVkPhysicalDeviceVideoEncodeQualityLevelInfoKHR.html":[5,0,1920]
+"structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html#aacb231f46eaaf6a81c1f31ad760e79b6":[5,0,1919,0]
 };

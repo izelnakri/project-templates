@@ -1,5 +1,6 @@
 var NAVTREEINDEX316 =
 {
+"structParse.html#afcf3d47e9424b79e6911cf366cb73bd4":[5,0,924,60],
 "structParse.html#afd929c54566cfc4d6f748fcc6b79b973":[5,0,924,64],
 "structPgFreeslot.html":[5,0,928],
 "structPgFreeslot.html#ac38a6e51f86c650fb943585d7b6c8b70":[5,0,928,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX316 =
 "structSortSubtask.html#abb534010ac35e0c37e41c26712e7b58c":[5,0,975,6],
 "structSortSubtask.html#af2312bacbb7e4cbe905eae20a60a3f39":[5,0,975,7],
 "structSorterFile.html":[5,0,972],
-"structSorterFile.html#a5c5f37fc8b5c432d8bf30eb6e40f7823":[5,0,972,0],
-"structSorterFile.html#afa23123282380b8d04b943479cabadef":[5,0,972,1]
+"structSorterFile.html#a5c5f37fc8b5c432d8bf30eb6e40f7823":[5,0,972,0]
 };

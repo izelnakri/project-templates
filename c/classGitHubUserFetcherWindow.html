@@ -136,7 +136,7 @@ Private Attributes</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock">
-<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00008">8</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00018">18</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ad5d697e18854da172db22ff1883ee37c" name="ad5d697e18854da172db22ff1883ee37c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad5d697e18854da172db22ff1883ee37c">&#9670;&#160;</a></span>GitHubUserFetcherWindow()</h2>
@@ -161,39 +161,54 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00010">10</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   10</span>                              {</div>
-<div class="line"><span class="lineno">   11</span>        set_title(<span class="stringliteral">&quot;GitHub User Fetcher&quot;</span>);</div>
-<div class="line"><span class="lineno">   12</span>        set_default_size(400, 300);</div>
-<div class="line"><span class="lineno">   13</span> </div>
-<div class="line"><span class="lineno">   14</span>        <span class="comment">// Layout</span></div>
-<div class="line"><span class="lineno">   15</span>        <a class="code hl_variable" href="#a28c1d656b8f2bed41e4002c9e06e567a">box</a>.set_orientation(Gtk::Orientation::VERTICAL);</div>
-<div class="line"><span class="lineno">   16</span>        set_child(<a class="code hl_variable" href="#a28c1d656b8f2bed41e4002c9e06e567a">box</a>);</div>
-<div class="line"><span class="lineno">   17</span> </div>
-<div class="line"><span class="lineno">   18</span>        <a class="code hl_variable" href="#aad6ae4fec90f6ddbb2012b856a26655a">entry</a>.set_placeholder_text(<span class="stringliteral">&quot;Enter GitHub username...&quot;</span>);</div>
-<div class="line"><span class="lineno">   19</span>        <a class="code hl_variable" href="#a28c1d656b8f2bed41e4002c9e06e567a">box</a>.append(<a class="code hl_variable" href="#aad6ae4fec90f6ddbb2012b856a26655a">entry</a>);</div>
-<div class="line"><span class="lineno">   20</span> </div>
-<div class="line"><span class="lineno">   21</span>        <a class="code hl_variable" href="#a575dd4dd58f2944129b288d6a3931864">button</a>.set_label(<span class="stringliteral">&quot;Fetch User&quot;</span>);</div>
-<div class="line"><span class="lineno">   22</span>        <a class="code hl_variable" href="#a28c1d656b8f2bed41e4002c9e06e567a">box</a>.append(<a class="code hl_variable" href="#a575dd4dd58f2944129b288d6a3931864">button</a>);</div>
+<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00020">20</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>                              {</div>
+<div class="line"><span class="lineno">   21</span>        <span class="comment">// CSS styling</span></div>
+<div class="line"><span class="lineno">   22</span>        <span class="keyword">auto</span> css_provider = Gtk::CssProvider::create();</div>
 <div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>        <a class="code hl_variable" href="#aa7ba888181d076932edb576038ab88f1">scrolled_window</a>.set_child(<a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>);</div>
-<div class="line"><span class="lineno">   25</span>        <a class="code hl_variable" href="#aa7ba888181d076932edb576038ab88f1">scrolled_window</a>.set_policy(Gtk::PolicyType::AUTOMATIC, Gtk::PolicyType::AUTOMATIC);</div>
-<div class="line"><span class="lineno">   26</span>        <a class="code hl_variable" href="#aa7ba888181d076932edb576038ab88f1">scrolled_window</a>.set_expand(<span class="keyword">true</span>);</div>
-<div class="line"><span class="lineno">   27</span>        <a class="code hl_variable" href="#a28c1d656b8f2bed41e4002c9e06e567a">box</a>.append(<a class="code hl_variable" href="#aa7ba888181d076932edb576038ab88f1">scrolled_window</a>);</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>        <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.set_editable(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   30</span>        <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.set_wrap_mode(Gtk::WrapMode::WORD);</div>
-<div class="line"><span class="lineno">   31</span> </div>
-<div class="line"><span class="lineno">   32</span>        <a class="code hl_variable" href="#a575dd4dd58f2944129b288d6a3931864">button</a>.signal_clicked().connect(sigc::mem_fun(*<span class="keyword">this</span>, &amp;<a class="code hl_function" href="#a6baeddb668e9efaa290841fc8c473532">GitHubUserFetcherWindow::on_button_clicked</a>));</div>
-<div class="line"><span class="lineno">   33</span>    }</div>
-<div class="ttc" id="aclassGitHubUserFetcherWindow_html_a1a3b369e41b4064677aaa56bcbb74a51"><div class="ttname"><a href="#a1a3b369e41b4064677aaa56bcbb74a51">GitHubUserFetcherWindow::text_view</a></div><div class="ttdeci">Gtk::TextView text_view</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00040">gui.cpp:40</a></div></div>
-<div class="ttc" id="aclassGitHubUserFetcherWindow_html_a28c1d656b8f2bed41e4002c9e06e567a"><div class="ttname"><a href="#a28c1d656b8f2bed41e4002c9e06e567a">GitHubUserFetcherWindow::box</a></div><div class="ttdeci">Gtk::Box box</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00036">gui.cpp:36</a></div></div>
-<div class="ttc" id="aclassGitHubUserFetcherWindow_html_a575dd4dd58f2944129b288d6a3931864"><div class="ttname"><a href="#a575dd4dd58f2944129b288d6a3931864">GitHubUserFetcherWindow::button</a></div><div class="ttdeci">Gtk::Button button</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00038">gui.cpp:38</a></div></div>
-<div class="ttc" id="aclassGitHubUserFetcherWindow_html_a6baeddb668e9efaa290841fc8c473532"><div class="ttname"><a href="#a6baeddb668e9efaa290841fc8c473532">GitHubUserFetcherWindow::on_button_clicked</a></div><div class="ttdeci">void on_button_clicked()</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00042">gui.cpp:42</a></div></div>
-<div class="ttc" id="aclassGitHubUserFetcherWindow_html_aa7ba888181d076932edb576038ab88f1"><div class="ttname"><a href="#aa7ba888181d076932edb576038ab88f1">GitHubUserFetcherWindow::scrolled_window</a></div><div class="ttdeci">Gtk::ScrolledWindow scrolled_window</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00039">gui.cpp:39</a></div></div>
-<div class="ttc" id="aclassGitHubUserFetcherWindow_html_aad6ae4fec90f6ddbb2012b856a26655a"><div class="ttname"><a href="#aad6ae4fec90f6ddbb2012b856a26655a">GitHubUserFetcherWindow::entry</a></div><div class="ttdeci">Gtk::Entry entry</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00037">gui.cpp:37</a></div></div>
+<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   25</span>            <span class="comment">// Load CSS from the determined path</span></div>
+<div class="line"><span class="lineno">   26</span>            css_provider-&gt;load_from_path(<a class="code hl_variable" href="gui_8cpp.html#aa21f1e8afac4bc80b2593c72974c8c4e">css_file_path</a>);</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>            <span class="keyword">auto</span> display = Gdk::Display::get_default();</div>
+<div class="line"><span class="lineno">   29</span>            Gtk::StyleContext::add_provider_for_display(display, css_provider, <a class="code hl_define" href="gtkstyleprovider_8h.html#a3788cc2752df12487bff43c338065500">GTK_STYLE_PROVIDER_PRIORITY_USER</a>);</div>
+<div class="line"><span class="lineno">   30</span>        } <span class="keywordflow">catch</span> (<span class="keyword">const</span> Glib::FileError&amp; e) {</div>
+<div class="line"><span class="lineno">   31</span>            <span class="comment">// Handle the case where the file doesn&#39;t exist</span></div>
+<div class="line"><span class="lineno">   32</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Failed to load CSS file: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   33</span>        }</div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>        set_title(<span class="stringliteral">&quot;GitHub User Fetcher&quot;</span>);</div>
+<div class="line"><span class="lineno">   36</span>        set_default_size(400, 300);</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>        <a class="code hl_variable" href="#a28c1d656b8f2bed41e4002c9e06e567a">box</a>.set_orientation(Gtk::Orientation::VERTICAL);</div>
+<div class="line"><span class="lineno">   39</span>        set_child(<a class="code hl_variable" href="#a28c1d656b8f2bed41e4002c9e06e567a">box</a>);</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>        <a class="code hl_variable" href="#aad6ae4fec90f6ddbb2012b856a26655a">entry</a>.set_placeholder_text(<span class="stringliteral">&quot;Enter GitHub username...&quot;</span>);</div>
+<div class="line"><span class="lineno">   42</span>        <a class="code hl_variable" href="#a28c1d656b8f2bed41e4002c9e06e567a">box</a>.append(<a class="code hl_variable" href="#aad6ae4fec90f6ddbb2012b856a26655a">entry</a>);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>        <a class="code hl_variable" href="#a575dd4dd58f2944129b288d6a3931864">button</a>.set_label(<span class="stringliteral">&quot;Fetch User&quot;</span>);</div>
+<div class="line"><span class="lineno">   45</span>        <a class="code hl_variable" href="#a28c1d656b8f2bed41e4002c9e06e567a">box</a>.append(<a class="code hl_variable" href="#a575dd4dd58f2944129b288d6a3931864">button</a>);</div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>        <a class="code hl_variable" href="#aa7ba888181d076932edb576038ab88f1">scrolled_window</a>.set_child(<a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>);</div>
+<div class="line"><span class="lineno">   48</span>        <a class="code hl_variable" href="#aa7ba888181d076932edb576038ab88f1">scrolled_window</a>.set_policy(Gtk::PolicyType::AUTOMATIC, Gtk::PolicyType::AUTOMATIC);</div>
+<div class="line"><span class="lineno">   49</span>        <a class="code hl_variable" href="#aa7ba888181d076932edb576038ab88f1">scrolled_window</a>.set_expand(<span class="keyword">true</span>);</div>
+<div class="line"><span class="lineno">   50</span>        <a class="code hl_variable" href="#a28c1d656b8f2bed41e4002c9e06e567a">box</a>.append(<a class="code hl_variable" href="#aa7ba888181d076932edb576038ab88f1">scrolled_window</a>);</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>        <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.set_editable(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   53</span>        <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.set_wrap_mode(Gtk::WrapMode::WORD);</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>        <a class="code hl_variable" href="#a575dd4dd58f2944129b288d6a3931864">button</a>.signal_clicked().connect(sigc::mem_fun(*<span class="keyword">this</span>, &amp;<a class="code hl_function" href="#a6baeddb668e9efaa290841fc8c473532">GitHubUserFetcherWindow::on_button_clicked</a>));</div>
+<div class="line"><span class="lineno">   56</span>    }</div>
+<div class="ttc" id="aclassGitHubUserFetcherWindow_html_a1a3b369e41b4064677aaa56bcbb74a51"><div class="ttname"><a href="#a1a3b369e41b4064677aaa56bcbb74a51">GitHubUserFetcherWindow::text_view</a></div><div class="ttdeci">Gtk::TextView text_view</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00063">gui.cpp:63</a></div></div>
+<div class="ttc" id="aclassGitHubUserFetcherWindow_html_a28c1d656b8f2bed41e4002c9e06e567a"><div class="ttname"><a href="#a28c1d656b8f2bed41e4002c9e06e567a">GitHubUserFetcherWindow::box</a></div><div class="ttdeci">Gtk::Box box</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00059">gui.cpp:59</a></div></div>
+<div class="ttc" id="aclassGitHubUserFetcherWindow_html_a575dd4dd58f2944129b288d6a3931864"><div class="ttname"><a href="#a575dd4dd58f2944129b288d6a3931864">GitHubUserFetcherWindow::button</a></div><div class="ttdeci">Gtk::Button button</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00061">gui.cpp:61</a></div></div>
+<div class="ttc" id="aclassGitHubUserFetcherWindow_html_a6baeddb668e9efaa290841fc8c473532"><div class="ttname"><a href="#a6baeddb668e9efaa290841fc8c473532">GitHubUserFetcherWindow::on_button_clicked</a></div><div class="ttdeci">void on_button_clicked()</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00065">gui.cpp:65</a></div></div>
+<div class="ttc" id="aclassGitHubUserFetcherWindow_html_aa7ba888181d076932edb576038ab88f1"><div class="ttname"><a href="#aa7ba888181d076932edb576038ab88f1">GitHubUserFetcherWindow::scrolled_window</a></div><div class="ttdeci">Gtk::ScrolledWindow scrolled_window</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00062">gui.cpp:62</a></div></div>
+<div class="ttc" id="aclassGitHubUserFetcherWindow_html_aad6ae4fec90f6ddbb2012b856a26655a"><div class="ttname"><a href="#aad6ae4fec90f6ddbb2012b856a26655a">GitHubUserFetcherWindow::entry</a></div><div class="ttdeci">Gtk::Entry entry</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00060">gui.cpp:60</a></div></div>
+<div class="ttc" id="agtkstyleprovider_8h_html_a3788cc2752df12487bff43c338065500"><div class="ttname"><a href="gtkstyleprovider_8h.html#a3788cc2752df12487bff43c338065500">GTK_STYLE_PROVIDER_PRIORITY_USER</a></div><div class="ttdeci">#define GTK_STYLE_PROVIDER_PRIORITY_USER</div><div class="ttdef"><b>Definition</b> <a href="gtkstyleprovider_8h_source.html#l00083">gtkstyleprovider.h:83</a></div></div>
+<div class="ttc" id="agui_8cpp_html_aa21f1e8afac4bc80b2593c72974c8c4e"><div class="ttname"><a href="gui_8cpp.html#aa21f1e8afac4bc80b2593c72974c8c4e">css_file_path</a></div><div class="ttdeci">const std::string css_file_path</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00015">gui.cpp:15</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="gui_8cpp_source.html#l00036">box</a>, <a class="el" href="gui_8cpp_source.html#l00038">button</a>, <a class="el" href="gui_8cpp_source.html#l00037">entry</a>, <a class="el" href="gui_8cpp_source.html#l00042">on_button_clicked()</a>, <a class="el" href="gui_8cpp_source.html#l00039">scrolled_window</a>, and <a class="el" href="gui_8cpp_source.html#l00040">text_view</a>.</p>
+<p class="reference">References <a class="el" href="gui_8cpp_source.html#l00059">box</a>, <a class="el" href="gui_8cpp_source.html#l00061">button</a>, <a class="el" href="gui_8cpp_source.html#l00015">css_file_path</a>, <a class="el" href="gui_8cpp_source.html#l00060">entry</a>, <a class="el" href="gtkstyleprovider_8h_source.html#l00083">GTK_STYLE_PROVIDER_PRIORITY_USER</a>, <a class="el" href="gui_8cpp_source.html#l00065">on_button_clicked()</a>, <a class="el" href="gui_8cpp_source.html#l00062">scrolled_window</a>, and <a class="el" href="gui_8cpp_source.html#l00063">text_view</a>.</p>
 
 </div>
 </div>
@@ -221,50 +236,50 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00042">42</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   42</span>                             {</div>
-<div class="line"><span class="lineno">   43</span>        std::string username = <a class="code hl_variable" href="#aad6ae4fec90f6ddbb2012b856a26655a">entry</a>.get_text();</div>
-<div class="line"><span class="lineno">   44</span>        <span class="keywordflow">if</span> (username.empty()) {</div>
-<div class="line"><span class="lineno">   45</span>            <a class="code hl_function" href="#a837b5a0032f1468339a9c342cba00c7f">show_message</a>(<span class="stringliteral">&quot;Please enter a username.&quot;</span>);</div>
-<div class="line"><span class="lineno">   46</span>            <span class="keywordflow">return</span>;</div>
-<div class="line"><span class="lineno">   47</span>        }</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>        <span class="comment">// Clear previous result</span></div>
-<div class="line"><span class="lineno">   50</span>        <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.get_buffer()-&gt;set_text(<span class="stringliteral">&quot;Fetching...&quot;</span>);</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>        <span class="comment">// Run fetch in a background thread</span></div>
-<div class="line"><span class="lineno">   53</span>        std::thread([<span class="keyword">this</span>, username]() {</div>
-<div class="line"><span class="lineno">   54</span>            <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   55</span>                <a class="code hl_struct" href="structUser.html">User</a> user = <a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(username);</div>
-<div class="line"><span class="lineno">   56</span>                nlohmann::json j = {</div>
-<div class="line"><span class="lineno">   57</span>                    {<span class="stringliteral">&quot;login&quot;</span>, user.getLogin()},</div>
-<div class="line"><span class="lineno">   58</span>                    {<span class="stringliteral">&quot;name&quot;</span>, user.getName()},</div>
-<div class="line"><span class="lineno">   59</span>                    {<span class="stringliteral">&quot;company&quot;</span>, user.getCompany()},</div>
-<div class="line"><span class="lineno">   60</span>                    {<span class="stringliteral">&quot;location&quot;</span>, user.getLocation()}</div>
-<div class="line"><span class="lineno">   61</span>                };</div>
-<div class="line"><span class="lineno">   62</span> </div>
-<div class="line"><span class="lineno">   63</span>                std::string result = j.dump(4);</div>
-<div class="line"><span class="lineno">   64</span> </div>
-<div class="line"><span class="lineno">   65</span>                <span class="comment">// Update UI in main thread</span></div>
-<div class="line"><span class="lineno">   66</span>                Glib::signal_idle().connect_once([<span class="keyword">this</span>, result]() {</div>
-<div class="line"><span class="lineno">   67</span>                    <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.get_buffer()-&gt;set_text(result);</div>
-<div class="line"><span class="lineno">   68</span>                });</div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>            } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><span class="lineno">   71</span>                std::string error_msg = std::string(<span class="stringliteral">&quot;Error: &quot;</span>) + e.what();</div>
-<div class="line"><span class="lineno">   72</span>                Glib::signal_idle().connect_once([<span class="keyword">this</span>, error_msg]() {</div>
-<div class="line"><span class="lineno">   73</span>                    <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.get_buffer()-&gt;set_text(error_msg);</div>
-<div class="line"><span class="lineno">   74</span>                });</div>
-<div class="line"><span class="lineno">   75</span>            }</div>
-<div class="line"><span class="lineno">   76</span>        }).detach();</div>
-<div class="line"><span class="lineno">   77</span>    }</div>
-<div class="ttc" id="aclassGitHubUserFetcherWindow_html_a837b5a0032f1468339a9c342cba00c7f"><div class="ttname"><a href="#a837b5a0032f1468339a9c342cba00c7f">GitHubUserFetcherWindow::show_message</a></div><div class="ttdeci">void show_message(const std::string &amp;msg)</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00079">gui.cpp:79</a></div></div>
+<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00065">65</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   65</span>                             {</div>
+<div class="line"><span class="lineno">   66</span>        std::string username = <a class="code hl_variable" href="#aad6ae4fec90f6ddbb2012b856a26655a">entry</a>.get_text();</div>
+<div class="line"><span class="lineno">   67</span>        <span class="keywordflow">if</span> (username.empty()) {</div>
+<div class="line"><span class="lineno">   68</span>            <a class="code hl_function" href="#a837b5a0032f1468339a9c342cba00c7f">show_message</a>(<span class="stringliteral">&quot;Please enter a username.&quot;</span>);</div>
+<div class="line"><span class="lineno">   69</span>            <span class="keywordflow">return</span>;</div>
+<div class="line"><span class="lineno">   70</span>        }</div>
+<div class="line"><span class="lineno">   71</span> </div>
+<div class="line"><span class="lineno">   72</span>        <span class="comment">// Clear previous result</span></div>
+<div class="line"><span class="lineno">   73</span>        <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.get_buffer()-&gt;set_text(<span class="stringliteral">&quot;Fetching...&quot;</span>);</div>
+<div class="line"><span class="lineno">   74</span> </div>
+<div class="line"><span class="lineno">   75</span>        <span class="comment">// Run fetch in a background thread</span></div>
+<div class="line"><span class="lineno">   76</span>        std::thread([<span class="keyword">this</span>, username]() {</div>
+<div class="line"><span class="lineno">   77</span>            <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   78</span>                <a class="code hl_struct" href="structUser.html">User</a> user = <a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(username);</div>
+<div class="line"><span class="lineno">   79</span>                nlohmann::json j = {</div>
+<div class="line"><span class="lineno">   80</span>                    {<span class="stringliteral">&quot;login&quot;</span>, user.getLogin()},</div>
+<div class="line"><span class="lineno">   81</span>                    {<span class="stringliteral">&quot;name&quot;</span>, user.getName()},</div>
+<div class="line"><span class="lineno">   82</span>                    {<span class="stringliteral">&quot;company&quot;</span>, user.getCompany()},</div>
+<div class="line"><span class="lineno">   83</span>                    {<span class="stringliteral">&quot;location&quot;</span>, user.getLocation()}</div>
+<div class="line"><span class="lineno">   84</span>                };</div>
+<div class="line"><span class="lineno">   85</span> </div>
+<div class="line"><span class="lineno">   86</span>                std::string result = j.dump(4);</div>
+<div class="line"><span class="lineno">   87</span> </div>
+<div class="line"><span class="lineno">   88</span>                <span class="comment">// Update UI in main thread</span></div>
+<div class="line"><span class="lineno">   89</span>                Glib::signal_idle().connect_once([<span class="keyword">this</span>, result]() {</div>
+<div class="line"><span class="lineno">   90</span>                    <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.get_buffer()-&gt;set_text(result);</div>
+<div class="line"><span class="lineno">   91</span>                });</div>
+<div class="line"><span class="lineno">   92</span> </div>
+<div class="line"><span class="lineno">   93</span>            } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">   94</span>                std::string error_msg = std::string(<span class="stringliteral">&quot;Error: &quot;</span>) + e.what();</div>
+<div class="line"><span class="lineno">   95</span>                Glib::signal_idle().connect_once([<span class="keyword">this</span>, error_msg]() {</div>
+<div class="line"><span class="lineno">   96</span>                    <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.get_buffer()-&gt;set_text(error_msg);</div>
+<div class="line"><span class="lineno">   97</span>                });</div>
+<div class="line"><span class="lineno">   98</span>            }</div>
+<div class="line"><span class="lineno">   99</span>        }).detach();</div>
+<div class="line"><span class="lineno">  100</span>    }</div>
+<div class="ttc" id="aclassGitHubUserFetcherWindow_html_a837b5a0032f1468339a9c342cba00c7f"><div class="ttname"><a href="#a837b5a0032f1468339a9c342cba00c7f">GitHubUserFetcherWindow::show_message</a></div><div class="ttdeci">void show_message(const std::string &amp;msg)</div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00102">gui.cpp:102</a></div></div>
 <div class="ttc" id="astructUser_html"><div class="ttname"><a href="structUser.html">User</a></div><div class="ttdoc">Structure representing a GitHub user.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00009">user.h:9</a></div></div>
 <div class="ttc" id="auser_8c_html_ada4edf948630b147f21f7e6aa3589b9e"><div class="ttname"><a href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a></div><div class="ttdeci">User fetch_github_user(const char *username)</div><div class="ttdoc">Fetch a GitHub user's information via the GitHub API.</div><div class="ttdef"><b>Definition</b> <a href="user_8c_source.html#l00130">user.c:130</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="gui_8cpp_source.html#l00037">entry</a>, <a class="el" href="user_8c_source.html#l00130">fetch_github_user()</a>, <a class="el" href="gui_8cpp_source.html#l00079">show_message()</a>, and <a class="el" href="gui_8cpp_source.html#l00040">text_view</a>.</p>
+<p class="reference">References <a class="el" href="gui_8cpp_source.html#l00060">entry</a>, <a class="el" href="user_8c_source.html#l00130">fetch_github_user()</a>, <a class="el" href="gui_8cpp_source.html#l00102">show_message()</a>, and <a class="el" href="gui_8cpp_source.html#l00063">text_view</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00010">GitHubUserFetcherWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00020">GitHubUserFetcherWindow()</a>.</p>
 
 </div>
 </div>
@@ -291,14 +306,14 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00079">79</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   79</span>                                            {</div>
-<div class="line"><span class="lineno">   80</span>        <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.get_buffer()-&gt;set_text(msg);</div>
-<div class="line"><span class="lineno">   81</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00102">102</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  102</span>                                            {</div>
+<div class="line"><span class="lineno">  103</span>        <a class="code hl_variable" href="#a1a3b369e41b4064677aaa56bcbb74a51">text_view</a>.get_buffer()-&gt;set_text(msg);</div>
+<div class="line"><span class="lineno">  104</span>    }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="gui_8cpp_source.html#l00040">text_view</a>.</p>
+<p class="reference">References <a class="el" href="gui_8cpp_source.html#l00063">text_view</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00042">on_button_clicked()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00065">on_button_clicked()</a>.</p>
 
 </div>
 </div>
@@ -323,9 +338,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00036">36</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00059">59</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00010">GitHubUserFetcherWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00020">GitHubUserFetcherWindow()</a>.</p>
 
 </div>
 </div>
@@ -349,9 +364,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00038">38</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00061">61</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00010">GitHubUserFetcherWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00020">GitHubUserFetcherWindow()</a>.</p>
 
 </div>
 </div>
@@ -375,9 +390,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00037">37</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00060">60</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00010">GitHubUserFetcherWindow()</a>, and <a class="el" href="gui_8cpp_source.html#l00042">on_button_clicked()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00020">GitHubUserFetcherWindow()</a>, and <a class="el" href="gui_8cpp_source.html#l00065">on_button_clicked()</a>.</p>
 
 </div>
 </div>
@@ -401,9 +416,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00039">39</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00062">62</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00010">GitHubUserFetcherWindow()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00020">GitHubUserFetcherWindow()</a>.</p>
 
 </div>
 </div>
@@ -427,9 +442,9 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00040">40</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00063">63</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00010">GitHubUserFetcherWindow()</a>, <a class="el" href="gui_8cpp_source.html#l00042">on_button_clicked()</a>, and <a class="el" href="gui_8cpp_source.html#l00079">show_message()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00020">GitHubUserFetcherWindow()</a>, <a class="el" href="gui_8cpp_source.html#l00065">on_button_clicked()</a>, and <a class="el" href="gui_8cpp_source.html#l00102">show_message()</a>.</p>
 
 </div>
 </div>

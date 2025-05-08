@@ -1,5 +1,6 @@
 var NAVTREEINDEX309 =
 {
+"sqlite3_8h.html#ac423589160db82ded3ff3dc3c85ba1d1":[6,0,7,0,0,14,629],
 "sqlite3_8h.html#ac43c9032fc6ef3b2a231dc3a9fa44b2d":[6,0,7,0,0,14,552],
 "sqlite3_8h.html#ac458a31f6d1ac77f3458747610fb05a0":[6,0,7,0,0,14,756],
 "sqlite3_8h.html#ac4ed3610be25685494fda139fe711527":[6,0,7,0,0,14,710],
@@ -248,6 +249,5 @@ var NAVTREEINDEX309 =
 "structAutoincInfo.html#af180977ee7dcc8cab862185692f57cc5":[5,0,558,3],
 "structAuxData.html":[5,0,559],
 "structAuxData.html#a148f6ff0790b7e53857bfc6f4e407bf2":[5,0,559,4],
-"structAuxData.html#a3867fd2bd1f3795b14e858daa6754825":[5,0,559,2],
-"structAuxData.html#a517c90e8831eba9134d486ff9ca57248":[5,0,559,0]
+"structAuxData.html#a3867fd2bd1f3795b14e858daa6754825":[5,0,559,2]
 };

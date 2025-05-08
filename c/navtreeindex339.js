@@ -1,5 +1,6 @@
 var NAVTREEINDEX339 =
 {
+"structVkPhysicalDeviceRayTracingInvocationReorderPropertiesNV.html#a241290ef1be208b9f5224b39ff592c05":[5,0,1831,0],
 "structVkPhysicalDeviceRayTracingInvocationReorderPropertiesNV.html#a2a3ff990c74a8940d4ea779f6757ceeb":[5,0,1831,2],
 "structVkPhysicalDeviceRayTracingInvocationReorderPropertiesNV.html#a6f07c238c315434378e4f64c66222e17":[5,0,1831,1],
 "structVkPhysicalDeviceRayTracingMaintenance1FeaturesKHR.html":[5,0,1832],
@@ -248,6 +249,5 @@ var NAVTREEINDEX339 =
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a03e9bf7b86061157b1d7277c029547af":[5,0,1874,5],
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a051523167c092a611525a7c3a200f9af":[5,0,1874,29],
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a0e62146e596d5efbf72ab0144a9a9015":[5,0,1874,21],
-"structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a168f30ede4ec137e8cf9c19ef46f3ca0":[5,0,1874,18],
-"structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a2d54ac4d1704cf863e80f40f02fa7e4f":[5,0,1874,8]
+"structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a168f30ede4ec137e8cf9c19ef46f3ca0":[5,0,1874,18]
 };

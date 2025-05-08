@@ -1,5 +1,6 @@
 var NAVTREEINDEX282 =
 {
+"pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa64df58c249b5d03e581f1897d7071194":[6,0,4,0,4,0,0,0,0,29,1],
 "pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa6757d22033e73341e1b71b9a1951b5a7":[6,0,4,0,4,0,0,0,0,29,0],
 "pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa7057703b86a9565f4f5f6d993307876e":[6,0,4,0,4,0,0,0,0,29,11],
 "pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa73597e2126ad957a7f874f737e4c5c64":[6,0,4,0,4,0,0,0,0,29,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX282 =
 "pango-engine_8h.html#aef90b07e0e2562b3cf40c86fe4c76183":[6,0,4,0,4,0,0,0,7,14],
 "pango-engine_8h.html#af6799ef7ce46f3b91e02653a112f9dcd":[6,0,4,0,4,0,0,0,7,21],
 "pango-engine_8h.html#af917f78410096b7491f2ae4e50824877":[6,0,4,0,4,0,0,0,7,32],
-"pango-engine_8h.html#afb4c420c56d8e652ac3149db38d0a20e":[6,0,4,0,4,0,0,0,7,25],
-"pango-engine_8h_source.html":[6,0,4,0,4,0,0,0,7]
+"pango-engine_8h.html#afb4c420c56d8e652ac3149db38d0a20e":[6,0,4,0,4,0,0,0,7,25]
 };

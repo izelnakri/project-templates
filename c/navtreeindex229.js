@@ -1,5 +1,6 @@
 var NAVTREEINDEX229 =
 {
+"gunicode_8h.html#afcf79789e005eba5b2764a217ba1b46a":[6,0,4,0,9,0,1,2,73,22],
 "gunicode_8h.html#afdc6dba6629aa6eaafcdd744b75afb80":[6,0,4,0,9,0,1,2,73,63],
 "gunicode_8h_source.html":[6,0,4,0,9,0,1,2,73],
 "gunixconnection_8h.html":[6,0,4,0,9,0,1,0,149],
@@ -248,6 +249,5 @@ var NAVTREEINDEX229 =
 "guri_8h.html#a9ed56f010ae5c0ce6b6c3eaf047cf693":[6,0,4,0,9,0,1,2,74,38],
 "guri_8h.html#aa0ccf7403a5205b4bb0eefb99e402df0":[6,0,4,0,9,0,1,2,74,40],
 "guri_8h.html#aa55be61c5e691146061f1f1a23a9f691":[6,0,4,0,9,0,1,2,74,19],
-"guri_8h.html#aa6030bc1f2e74d8133f9b4933f903c87":[6,0,4,0,9,0,1,2,74,7],
-"guri_8h.html#aa78c12516c7798012feeac974dec0ed8":[6,0,4,0,9,0,1,2,74,17]
+"guri_8h.html#aa6030bc1f2e74d8133f9b4933f903c87":[6,0,4,0,9,0,1,2,74,7]
 };

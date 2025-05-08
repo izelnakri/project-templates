@@ -1,5 +1,6 @@
 var NAVTREEINDEX358 =
 {
+"struct__GUnixConnectionClass.html":[5,0,466],
 "struct__GUnixConnectionClass.html#a5fb7a14e2452c2091852a01ffb470b22":[5,0,466,0],
 "struct__GUnixCredentialsMessage.html":[5,0,467],
 "struct__GUnixCredentialsMessage.html#a06a4281827dd8d0559815c2974ff21a6":[5,0,467,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX358 =
 "struct__GtkAccessibleInterface.html#a7c934f5e25e03888c24a97b2db26c808":[5,0,299,2],
 "struct__GtkAccessibleInterface.html#a9addcaabffbe17243bd5a6fab43452de":[5,0,299,4],
 "struct__GtkAccessibleInterface.html#aac7d89d9ef5b30f50c34b4e574d56e53":[5,0,299,1],
-"struct__GtkAccessibleInterface.html#ab3b3fbd639e1077dd45e9781f1a674f8":[5,0,299,0],
-"struct__GtkAccessibleRangeInterface.html":[5,0,300]
+"struct__GtkAccessibleInterface.html#ab3b3fbd639e1077dd45e9781f1a674f8":[5,0,299,0]
 };

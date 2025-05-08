@@ -1,5 +1,6 @@
 var NAVTREEINDEX331 =
 {
+"structVkImageViewUsageCreateInfo.html#a96272254b24abe0435a48db98b8092b1":[5,0,1503,1],
 "structVkImportAndroidHardwareBufferInfoANDROID.html":[5,0,1504],
 "structVkImportAndroidHardwareBufferInfoANDROID.html#a51fed20a2e91377d336cc101f9b9bf8b":[5,0,1504,0],
 "structVkImportAndroidHardwareBufferInfoANDROID.html#ab84b299f96a5592cc81cf02ac4daf8ee":[5,0,1504,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX331 =
 "structVkLayerInstanceCreateInfo.html#aacd450d8cf7fc46b3b57020a6a6236d0":[5,0,1548,8],
 "structVkLayerInstanceCreateInfo.html#ad501995081e7b4db6eaaf9f1d28fd570":[5,0,1548,4],
 "structVkLayerInstanceCreateInfo.html#aef662eecc6b19cd73f6cc566f645a67d":[5,0,1548,0],
-"structVkLayerInstanceLink__.html":[5,0,1549],
-"structVkLayerInstanceLink__.html#a5f77290312cccf4a12d6721016d38e0f":[5,0,1549,0]
+"structVkLayerInstanceLink__.html":[5,0,1549]
 };

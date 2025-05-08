@@ -1,5 +1,6 @@
 var NAVTREEINDEX349 =
 {
+"structVkVideoEncodeRateControlInfoKHR.html#acad38c6751ccf2d2da555f26de9b32e6":[5,0,2222,0],
 "structVkVideoEncodeRateControlInfoKHR.html#af100efabd05718557d6d5aed570499d2":[5,0,2222,5],
 "structVkVideoEncodeRateControlLayerInfoKHR.html":[5,0,2223],
 "structVkVideoEncodeRateControlLayerInfoKHR.html#a0b2b6a717ef0f2afa1e4396175b58120":[5,0,2223,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX349 =
 "structWalIterator.html#ad81bc9447d6043212289d127dc9fdafa":[5,0,2262,3],
 "structWalIterator_1_1WalSegment.html":[5,0,2262,0],
 "structWalIterator_1_1WalSegment.html#a329c939b196f907fe98cf762bb07d291":[5,0,2262,0,2],
-"structWalIterator_1_1WalSegment.html#a3eedec5e8e8dd94be670d50ac144a959":[5,0,2262,0,3],
-"structWalIterator_1_1WalSegment.html#a5e43273a11dc5856934834c0cdf7f198":[5,0,2262,0,1]
+"structWalIterator_1_1WalSegment.html#a3eedec5e8e8dd94be670d50ac144a959":[5,0,2262,0,3]
 };

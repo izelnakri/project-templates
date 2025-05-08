@@ -1,5 +1,6 @@
 var NAVTREEINDEX365 =
 {
+"structcurl__waitfd.html#ac8286d3f03be1a2f2d43a9516251f0f2":[5,0,636,0],
 "structcurl__waitfd.html#ae4712fac510d50249e1a430a3d160a17":[5,0,636,1],
 "structcurl__ws__frame.html":[5,0,637],
 "structcurl__ws__frame.html#a0f416a2da9864ad5c62fd611eba44ec8":[5,0,637,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX365 =
 "structduk__heap.html#ab286cadef3cce0c9d7f1760e526f5353":[5,0,673,20],
 "structduk__heap.html#ab564d681186a71065b5d36d4c61c2362":[5,0,673,14],
 "structduk__heap.html#ab812ddb1d5d41e6f77b2f4477ba9a8db":[5,0,673,0],
-"structduk__heap.html#ac4718d3e8c84c5e09cfe6e0ed7ba5856":[5,0,673,10],
-"structduk__heap.html#aed0ef6d12659275479d5618edb35caa6":[5,0,673,9]
+"structduk__heap.html#ac4718d3e8c84c5e09cfe6e0ed7ba5856":[5,0,673,10]
 };

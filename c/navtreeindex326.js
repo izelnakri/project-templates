@@ -1,5 +1,6 @@
 var NAVTREEINDEX326 =
 {
+"structVkCuLaunchInfoNVX.html#a52de50fef99bba3758f86cc6e5130543":[5,0,1286,6],
 "structVkCuLaunchInfoNVX.html#a8a3120544944321359698efd76dad5e7":[5,0,1286,1],
 "structVkCuLaunchInfoNVX.html#a8a358c0fc291cc20889690e9e2fd5096":[5,0,1286,0],
 "structVkCuLaunchInfoNVX.html#a955c21393fc04555773d41cdf11d3e31":[5,0,1286,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX326 =
 "structVkDescriptorUpdateTemplateCreateInfo.html#a99ab64e4d4ecf6cd3dc0e5715df46295":[5,0,1325,5],
 "structVkDescriptorUpdateTemplateCreateInfo.html#ac9ecb8fc467f2296e275b142676c37dd":[5,0,1325,1],
 "structVkDescriptorUpdateTemplateCreateInfo.html#ad1ab1d090360eca6605b73cd9f188fc0":[5,0,1325,3],
-"structVkDescriptorUpdateTemplateCreateInfo.html#ad373f81a6a23ce2f655f59f538f00258":[5,0,1325,0],
-"structVkDescriptorUpdateTemplateCreateInfo.html#aea950e9761276a59d230dcc1a3bb7566":[5,0,1325,9]
+"structVkDescriptorUpdateTemplateCreateInfo.html#ad373f81a6a23ce2f655f59f538f00258":[5,0,1325,0]
 };

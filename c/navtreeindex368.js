@@ -1,5 +1,6 @@
 var NAVTREEINDEX368 =
 {
+"structlfs__Lock.html#a3a7ed03fd5967fb99c2b9bcd24fca961":[5,0,867,0],
 "structluaL__Buffer.html":[5,0,881],
 "structluaL__Buffer.html#a0af2235170aa873ae30b2dab5a92d78f":[5,0,881,9],
 "structluaL__Buffer.html#a1f58d0cbbfd18e07f34d026478645371":[5,0,881,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX368 =
 "structmg__request__info.html#a383d55fab7d885a52cfa9c8a56f2a7c3":[5,0,909,17],
 "structmg__request__info.html#a5ae29523876fdcbb546165024dabc8c0":[5,0,909,8],
 "structmg__request__info.html#a70b531b329bd93e4850c2544893fa9a8":[5,0,909,14],
-"structmg__request__info.html#a73782f8b56d710c02381d000d4ac1c6a":[5,0,909,1],
-"structmg__request__info.html#a918f473c007e03c3f4ac3a35af8c22f5":[5,0,909,10]
+"structmg__request__info.html#a73782f8b56d710c02381d000d4ac1c6a":[5,0,909,1]
 };

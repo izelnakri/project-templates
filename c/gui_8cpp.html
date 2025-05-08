@@ -95,7 +95,8 @@ $(function(){initNavTree('gui_8cpp.html',''); initResizable(); });
 <div class="header">
   <div class="summary">
 <a href="#nested-classes">Data Structures</a> &#124;
-<a href="#func-members">Functions</a>  </div>
+<a href="#func-members">Functions</a> &#124;
+<a href="#var-members">Variables</a>  </div>
   <div class="headertitle"><div class="title">gui.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
@@ -103,6 +104,7 @@ $(function(){initNavTree('gui_8cpp.html',''); initResizable(); });
 <code>#include &lt;thread&gt;</code><br />
 <code>#include &lt;future&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;nlohmann/json.hpp&gt;</code><br />
 <code>#include &quot;user.hpp&quot;</code><br />
 </div>
@@ -117,6 +119,11 @@ Data Structures</h2></td></tr>
 Functions</h2></td></tr>
 <tr class="memitem:a0ddf1224851353fc92bfbff6f499fa97" id="r_a0ddf1224851353fc92bfbff6f499fa97"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ddf1224851353fc92bfbff6f499fa97">main</a> (int argc, char *argv[])</td></tr>
 <tr class="separator:a0ddf1224851353fc92bfbff6f499fa97"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
+Variables</h2></td></tr>
+<tr class="memitem:aa21f1e8afac4bc80b2593c72974c8c4e" id="r_aa21f1e8afac4bc80b2593c72974c8c4e"><td class="memItemLeft" align="right" valign="top">const std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa21f1e8afac4bc80b2593c72974c8c4e">css_file_path</a> = &quot;src/style.css&quot;</td></tr>
+<tr class="separator:aa21f1e8afac4bc80b2593c72974c8c4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="a0ddf1224851353fc92bfbff6f499fa97" name="a0ddf1224851353fc92bfbff6f499fa97"></a>
@@ -138,20 +145,39 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00084">84</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   84</span>                                 {</div>
-<div class="line"><span class="lineno">   85</span>    <span class="keyword">auto</span> app = Gtk::Application::create(<span class="stringliteral">&quot;com.example.githubuserfetcher&quot;</span>);</div>
-<div class="line"><span class="lineno">   86</span> </div>
-<div class="line"><span class="lineno">   87</span>    app-&gt;signal_activate().connect([&amp;]() {</div>
-<div class="line"><span class="lineno">   88</span>        <span class="keyword">auto</span> window = <span class="keyword">new</span> <a class="code hl_class" href="classGitHubUserFetcherWindow.html">GitHubUserFetcherWindow</a>();</div>
-<div class="line"><span class="lineno">   89</span>        app-&gt;add_window(*window);</div>
-<div class="line"><span class="lineno">   90</span>        window-&gt;present();</div>
-<div class="line"><span class="lineno">   91</span>    });</div>
-<div class="line"><span class="lineno">   92</span> </div>
-<div class="line"><span class="lineno">   93</span>    <span class="keywordflow">return</span> app-&gt;run(argc, argv);</div>
-<div class="line"><span class="lineno">   94</span>}</div>
-<div class="ttc" id="aclassGitHubUserFetcherWindow_html"><div class="ttname"><a href="classGitHubUserFetcherWindow.html">GitHubUserFetcherWindow</a></div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00008">gui.cpp:8</a></div></div>
+<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00107">107</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  107</span>                                 {</div>
+<div class="line"><span class="lineno">  108</span>    <span class="keyword">auto</span> app = Gtk::Application::create(<span class="stringliteral">&quot;com.example.githubuserfetcher&quot;</span>);</div>
+<div class="line"><span class="lineno">  109</span> </div>
+<div class="line"><span class="lineno">  110</span>    app-&gt;signal_activate().connect([&amp;]() {</div>
+<div class="line"><span class="lineno">  111</span>        <span class="keyword">auto</span> window = <span class="keyword">new</span> <a class="code hl_class" href="classGitHubUserFetcherWindow.html">GitHubUserFetcherWindow</a>();</div>
+<div class="line"><span class="lineno">  112</span>        app-&gt;add_window(*window);</div>
+<div class="line"><span class="lineno">  113</span>        window-&gt;present();</div>
+<div class="line"><span class="lineno">  114</span>    });</div>
+<div class="line"><span class="lineno">  115</span> </div>
+<div class="line"><span class="lineno">  116</span>    <span class="keywordflow">return</span> app-&gt;run(argc, argv);</div>
+<div class="line"><span class="lineno">  117</span>}</div>
+<div class="ttc" id="aclassGitHubUserFetcherWindow_html"><div class="ttname"><a href="classGitHubUserFetcherWindow.html">GitHubUserFetcherWindow</a></div><div class="ttdef"><b>Definition</b> <a href="gui_8cpp_source.html#l00018">gui.cpp:18</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Variable Documentation</h2>
+<a id="aa21f1e8afac4bc80b2593c72974c8c4e" name="aa21f1e8afac4bc80b2593c72974c8c4e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa21f1e8afac4bc80b2593c72974c8c4e">&#9670;&#160;</a></span>css_file_path</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">const std::string css_file_path = &quot;src/style.css&quot;</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="gui_8cpp_source.html#l00015">15</a> of file <a class="el" href="gui_8cpp_source.html">gui.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="gui_8cpp_source.html#l00020">GitHubUserFetcherWindow::GitHubUserFetcherWindow()</a>.</p>
+
 </div>
 </div>
 </div><!-- contents -->

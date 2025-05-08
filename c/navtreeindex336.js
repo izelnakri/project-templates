@@ -1,5 +1,6 @@
 var NAVTREEINDEX336 =
 {
+"structVkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV.html#a7d4484e90b382db31212671dca77bde4":[5,0,1715,2],
 "structVkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV.html#a87b252d1c54aaddbe4c030b837bfae53":[5,0,1715,1],
 "structVkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV.html#ab4c3e6b159f9b880216159898366be17":[5,0,1715,0],
 "structVkPhysicalDeviceFragmentShadingRateFeaturesKHR.html":[5,0,1716],
@@ -248,6 +249,5 @@ var NAVTREEINDEX336 =
 "structVkPhysicalDeviceLimits.html#a4bbbe114bb8ea0f7cb3e56d7714db6cb":[5,0,1756,85],
 "structVkPhysicalDeviceLimits.html#a4ddd25e966a1583b221e90b605ab638d":[5,0,1756,41],
 "structVkPhysicalDeviceLimits.html#a4ee35b53957071299106d2d830d1db77":[5,0,1756,16],
-"structVkPhysicalDeviceLimits.html#a55511bffb90c8b0c173a178486262371":[5,0,1756,73],
-"structVkPhysicalDeviceLimits.html#a57f8c503ed858768b7da9a95177acb89":[5,0,1756,81]
+"structVkPhysicalDeviceLimits.html#a55511bffb90c8b0c173a178486262371":[5,0,1756,73]
 };

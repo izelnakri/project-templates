@@ -1,5 +1,6 @@
 var NAVTREEINDEX412 =
 {
+"vulkan__directfb_8h.html#ae1ae70b25703e81c93beee6232c67be9":[6,0,4,0,7,0,1,7,1],
 "vulkan__directfb_8h.html#af7929ee10f36c620f2b756080f8c47cc":[6,0,4,0,7,0,1,7,6],
 "vulkan__directfb_8h.html#af8b9656a2d7aa3df21b7cd0d24fb55cc":[6,0,4,0,7,0,1,7,2],
 "vulkan__directfb_8h.html#afafb690c078c266ff4ca9941941d82d5":[6,0,4,0,7,0,1,7,7],
@@ -248,6 +249,5 @@ var NAVTREEINDEX412 =
 "vulkan__video__codec__av1std_8h.html#a638dd849e86ef0e97795f8bf46bc421a":[6,0,4,0,7,0,0,0,51],
 "vulkan__video__codec__av1std_8h.html#a66452b9507919ec3fa4406d77379d95f":[6,0,4,0,7,0,0,0,20],
 "vulkan__video__codec__av1std_8h.html#a675f2830f36a6c78c022b4e7560a925e":[6,0,4,0,7,0,0,0,29],
-"vulkan__video__codec__av1std_8h.html#a6844ba6ba25fd83e6cc18429b97b4815":[6,0,4,0,7,0,0,0,19],
-"vulkan__video__codec__av1std_8h.html#a6f2a8cca654e9033c1205798a06508c4":[6,0,4,0,7,0,0,0,74]
+"vulkan__video__codec__av1std_8h.html#a6844ba6ba25fd83e6cc18429b97b4815":[6,0,4,0,7,0,0,0,19]
 };

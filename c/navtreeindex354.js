@@ -1,5 +1,6 @@
 var NAVTREEINDEX354 =
 {
+"struct__GIOStreamClass.html#a0474cfb645608fe0d26bc977617c3d99":[5,0,137,13],
 "struct__GIOStreamClass.html#a04e170174d289f4e310cea4677181031":[5,0,137,1],
 "struct__GIOStreamClass.html#a33547a659ff088b093324d9a4e5e29d4":[5,0,137,0],
 "struct__GIOStreamClass.html#a43f5871449efa088cf807fa9a77ba8d6":[5,0,137,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX354 =
 "struct__GObjectClass.html#a668bd0033360b1480aed275964d567a2":[5,0,170,7],
 "struct__GObjectClass.html#aa276840ccad43e64cd77b520f03ee1a0":[5,0,170,3],
 "struct__GObjectClass.html#ac321e247217e035cf57f0edb3e674fa6":[5,0,170,9],
-"struct__GObjectClass.html#acb87479220a1480464e7eab86234d640":[5,0,170,0],
-"struct__GObjectClass.html#acdbe5a806ba299424bc8fa596f4cf76e":[5,0,170,2]
+"struct__GObjectClass.html#acb87479220a1480464e7eab86234d640":[5,0,170,0]
 };

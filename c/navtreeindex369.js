@@ -1,5 +1,6 @@
 var NAVTREEINDEX369 =
 {
+"structmg__request__info.html#a918f473c007e03c3f4ac3a35af8c22f5":[5,0,909,10],
 "structmg__request__info.html#aa1603acb1f2be0de643ebb1e352fdc01":[5,0,909,3],
 "structmg__request__info.html#aad3d4e3de727f7424ff7526ed085716e":[5,0,909,2],
 "structmg__request__info.html#ab758e3630f43e1bd62c66311e3bf7a50":[5,0,909,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX369 =
 "structsqlite3__api__routines.html#a292a8d9a6a16456f942b52ab6fc2c1c1":[5,0,978,248],
 "structsqlite3__api__routines.html#a2c727baa39a8cb05da310df7a2eb321c":[5,0,978,46],
 "structsqlite3__api__routines.html#a2cb97ce7512759a08f1744e24cd0294f":[5,0,978,71],
-"structsqlite3__api__routines.html#a2de354dd0030ff724bb574a4353c57e8":[5,0,978,91],
-"structsqlite3__api__routines.html#a2e84de4afd1ba42151a75df4d7480a72":[5,0,978,8]
+"structsqlite3__api__routines.html#a2de354dd0030ff724bb574a4353c57e8":[5,0,978,91]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX352 =
 {
+"struct__GDBusInterfaceInfo.html#ae3e63486c0a9940138885335f701915d":[5,0,50,3],
 "struct__GDBusInterfaceSkeleton.html":[5,0,51],
 "struct__GDBusInterfaceSkeleton.html#a9ea332e8a2278c8f85066b0816bee61b":[5,0,51,1],
 "struct__GDBusInterfaceSkeleton.html#af11d0a36efafa71a42d6e3431d3f4fd4":[5,0,51,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX352 =
 "struct__GFileIOStreamClass.html#a3a33c52be912425efefb5c6fd8fd5afc":[5,0,104,12],
 "struct__GFileIOStreamClass.html#a69275470dcb7d4c487ab94939fbc50a6":[5,0,104,4],
 "struct__GFileIOStreamClass.html#a6a90abdb0b2614cd916e0878a80ae08a":[5,0,104,6],
-"struct__GFileIOStreamClass.html#a9ed4da69f85300ee9275b8b8713c9933":[5,0,104,9],
-"struct__GFileIOStreamClass.html#ab3984aebc6abc564485197b80aafe6f1":[5,0,104,11]
+"struct__GFileIOStreamClass.html#a9ed4da69f85300ee9275b8b8713c9933":[5,0,104,9]
 };

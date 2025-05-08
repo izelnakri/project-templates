@@ -1,5 +1,6 @@
 var NAVTREEINDEX346 =
 {
+"structVkSpecializationMapEntry.html":[5,0,2105],
 "structVkSpecializationMapEntry.html#a0ba970d6c73dba05e9695a19d71c142e":[5,0,2105,1],
 "structVkSpecializationMapEntry.html#a4faac6cf7076c2a3764dbf92a6693f83":[5,0,2105,2],
 "structVkSpecializationMapEntry.html#af157209b4baaaaa8df5bbebf3c1e1ce3":[5,0,2105,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX346 =
 "structVkSwapchainPresentModeInfoEXT.html#ab153fab4caa495736d5e9c620bf43301":[5,0,2145,3],
 "structVkSwapchainPresentModesCreateInfoEXT.html":[5,0,2146],
 "structVkSwapchainPresentModesCreateInfoEXT.html#a1d5c87e9653841f0baec8aa1caa8b53a":[5,0,2146,3],
-"structVkSwapchainPresentModesCreateInfoEXT.html#a2d8d240c25ee72cdc559c0d788295472":[5,0,2146,1],
-"structVkSwapchainPresentModesCreateInfoEXT.html#aa717a0da0743e4f8a190fa4f5bcdd258":[5,0,2146,2]
+"structVkSwapchainPresentModesCreateInfoEXT.html#a2d8d240c25ee72cdc559c0d788295472":[5,0,2146,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX311 =
 {
+"structConsControl.html#a870b3f1c8296439dc09993d20d9f6caa":[5,0,594,4],
 "structConsControl.html#abb136d2c320d052e5a7dd5518f490c11":[5,0,594,0],
 "structCountCtx.html":[5,0,595],
 "structCountCtx.html#a141c718918dbfaa183f772bfd7a516f4":[5,0,595,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX311 =
 "structFT__FaceRec__.html#afd0fe7d9dc08a4afbdec0ea0eabb0198":[5,0,732,0],
 "structFT__Generic__.html":[5,0,733],
 "structFT__Generic__.html#a20fce8de90cc9e3876935817247b9ccc":[5,0,733,1],
-"structFT__Generic__.html#af0bf8b983254b662f293e9a20505e27e":[5,0,733,0],
-"structFT__GlyphRec__.html":[5,0,736]
+"structFT__Generic__.html#af0bf8b983254b662f293e9a20505e27e":[5,0,733,0]
 };

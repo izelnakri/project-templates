@@ -1,5 +1,6 @@
 var NAVTREEINDEX332 =
 {
+"structVkLayerInstanceLink__.html#a5f77290312cccf4a12d6721016d38e0f":[5,0,1549,0],
 "structVkLayerInstanceLink__.html#a960f15aec9e6a620482730afa97aada8":[5,0,1549,1],
 "structVkLayerInstanceLink__.html#ad515b6aaae1f5af9f9362e86acc06639":[5,0,1549,2],
 "structVkLayerProperties.html":[5,0,1550],
@@ -248,6 +249,5 @@ var NAVTREEINDEX332 =
 "structVkOpaqueCaptureDescriptorDataCreateInfoEXT.html#abaf1f93ff2447a26525f8289297280ec":[5,0,1598,2],
 "structVkOpticalFlowExecuteInfoNV.html":[5,0,1599],
 "structVkOpticalFlowExecuteInfoNV.html#a07c0e491e2c796027a2c431e0cf3e06a":[5,0,1599,3],
-"structVkOpticalFlowExecuteInfoNV.html#a0fc0f64d0d2fad1d019845619067dd03":[5,0,1599,2],
-"structVkOpticalFlowExecuteInfoNV.html#a1983a2502d6fe0f7446e801df19e9913":[5,0,1599,1]
+"structVkOpticalFlowExecuteInfoNV.html#a0fc0f64d0d2fad1d019845619067dd03":[5,0,1599,2]
 };

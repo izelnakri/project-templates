@@ -1,5 +1,6 @@
 var NAVTREEINDEX329 =
 {
+"structVkExternalSemaphoreProperties.html#a72655bf80514ce1386abda9b19787a45":[5,0,1427,2],
 "structVkExternalSemaphoreProperties.html#ab97821dbcea86c5704288017f5c909a6":[5,0,1427,4],
 "structVkExternalSemaphoreProperties.html#abdf388dd0fbf4580aec8432193318fb0":[5,0,1427,0],
 "structVkExternalSemaphoreProperties.html#ac75a7dc9f77d7d3d282b80c180df295d":[5,0,1427,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX329 =
 "structVkIcdSurfaceDisplay.html#a3b30b4e7ee3161f49d33f76fe2d7557d":[5,0,1461,4],
 "structVkIcdSurfaceDisplay.html#a4a82b4e6ced454964aeae42ba8db1307":[5,0,1461,6],
 "structVkIcdSurfaceDisplay.html#a52351fd978666aa3c655b2f9c071cf57":[5,0,1461,1],
-"structVkIcdSurfaceDisplay.html#a7488c4e9cd80519390705fe9ff7e0640":[5,0,1461,0],
-"structVkIcdSurfaceDisplay.html#a798eca66eb6dc5ab1058c4d8bcf5bfb3":[5,0,1461,7]
+"structVkIcdSurfaceDisplay.html#a7488c4e9cd80519390705fe9ff7e0640":[5,0,1461,0]
 };

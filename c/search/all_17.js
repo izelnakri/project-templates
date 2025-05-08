@@ -212,8 +212,8 @@ var searchData=
   ['upvaldesc_209',['upvaldesc',['../structupvaldesc.html',1,'']]],
   ['upvaldesc_210',['Upvaldesc',['../lua-5_82_84_2src_2lobject_8h.html#a8e51aa6ac9ae7599a39adc3bb297bd86',1,'Upvaldesc:&#160;lobject.h'],['../lua-5_83_86_2src_2lobject_8h.html#a8e51aa6ac9ae7599a39adc3bb297bd86',1,'Upvaldesc:&#160;lobject.h'],['../lua-5_84_83_2src_2lobject_8h.html#a8e51aa6ac9ae7599a39adc3bb297bd86',1,'Upvaldesc:&#160;lobject.h']]],
   ['upvaldesc_211',['upvaldesc',['../lua-5_81_85_2src_2lparser_8h.html#a48ecd3d164c4f7031b13db81b8b88cb4',1,'lparser.h']]],
-  ['upvalname_212',['upvalname',['../lua-5_82_84_2src_2ldebug_8c.html#af678c57b83ef861ba58033c31cff5b0c',1,'upvalname(Proto *p, int uv):&#160;ldebug.c'],['../lua-5_83_86_2src_2ldebug_8c.html#af678c57b83ef861ba58033c31cff5b0c',1,'upvalname(Proto *p, int uv):&#160;ldebug.c'],['../lua-5_84_83_2src_2ldebug_8c.html#a1f6f73c7692e0be74a46a254c8d8d741',1,'upvalname(const Proto *p, int uv):&#160;ldebug.c']]],
-  ['upvalname_213',['UPVALNAME',['../lua-5_82_84_2src_2luac_8c.html#a16edb7a847ec8518180e4cf618832587',1,'UPVALNAME:&#160;luac.c'],['../lua-5_83_86_2src_2luac_8c.html#a16edb7a847ec8518180e4cf618832587',1,'UPVALNAME:&#160;luac.c'],['../lua-5_84_83_2src_2luac_8c.html#a16edb7a847ec8518180e4cf618832587',1,'UPVALNAME:&#160;luac.c']]],
+  ['upvalname_212',['UPVALNAME',['../lua-5_82_84_2src_2luac_8c.html#a16edb7a847ec8518180e4cf618832587',1,'UPVALNAME:&#160;luac.c'],['../lua-5_83_86_2src_2luac_8c.html#a16edb7a847ec8518180e4cf618832587',1,'UPVALNAME:&#160;luac.c'],['../lua-5_84_83_2src_2luac_8c.html#a16edb7a847ec8518180e4cf618832587',1,'UPVALNAME:&#160;luac.c']]],
+  ['upvalname_213',['upvalname',['../lua-5_82_84_2src_2ldebug_8c.html#af678c57b83ef861ba58033c31cff5b0c',1,'upvalname(Proto *p, int uv):&#160;ldebug.c'],['../lua-5_83_86_2src_2ldebug_8c.html#af678c57b83ef861ba58033c31cff5b0c',1,'upvalname(Proto *p, int uv):&#160;ldebug.c'],['../lua-5_84_83_2src_2ldebug_8c.html#a1f6f73c7692e0be74a46a254c8d8d741',1,'upvalname(const Proto *p, int uv):&#160;ldebug.c']]],
   ['upvals_214',['upvals',['../structLClosure.html#a4690d5187fa8497b51816bc467bceb3c',1,'LClosure']]],
   ['upvalue_215',['upvalue',['../structCClosure.html#a086c8cba1767aa20db30ea3c02592479',1,'CClosure']]],
   ['upvalues_216',['upvalues',['../structProto.html#ac30e52e62ddc21ab8481007bc202f8ee',1,'Proto::upvalues'],['../structFuncState.html#a648af141992c079c39d3ace0db216ef3',1,'FuncState::upvalues'],['../structProto.html#a028070514796b4accbd99c59e6b83930',1,'Proto::upvalues']]],
@@ -304,8 +304,7 @@ var searchData=
   ['uudata_301',['UUdata',['../unionUUdata.html',1,'UUdata'],['../lua-5_83_86_2src_2lobject_8h.html#ac57f13d7876d612c48dbac26e6b52479',1,'UUdata:&#160;lobject.h']]],
   ['uuid_302',['uuid',['../structVkPerformanceCounterKHR.html#ab3fa6a3abe13f71afadf83bcc7fdea35',1,'VkPerformanceCounterKHR']]],
   ['uv_303',['uv',['../unionUdata.html#a133163610d62e0231b8b34eb4010792c',1,'Udata::uv'],['../unionGCObject.html#aa6b546130da6430205f25864900a4202',1,'GCObject::uv'],['../unionUdata.html#a189f3bdafaa9d011e79126a28c590b2e',1,'Udata::uv'],['../unionUUdata.html#a5baf8d56af573ad1d67674f3e4c848f1',1,'UUdata::uv'],['../unionUValue.html#afaa156bae31b8f21eb9743c2a757ce89',1,'UValue::uv'],['../unionUdata.html#abfc560a8436c8a9c238b175706beab7b',1,'Udata::uv']]],
-  ['uvalue_304',['UValue',['../unionUValue.html',1,'']]],
+  ['uvalue_304',['UValue',['../unionUValue.html',1,'UValue'],['../lua-5_84_83_2src_2lobject_8h.html#a4a9abc9c2064ec3a4620a1f1c30f18af',1,'UValue:&#160;lobject.h']]],
   ['uvalue_305',['uvalue',['../lua-5_81_85_2src_2lobject_8h.html#a1c49f55d93297e833141fb62903af3ad',1,'uvalue:&#160;lobject.h'],['../lua-5_82_84_2src_2lobject_8h.html#a1c49f55d93297e833141fb62903af3ad',1,'uvalue:&#160;lobject.h'],['../lua-5_83_86_2src_2lobject_8h.html#a1c49f55d93297e833141fb62903af3ad',1,'uvalue:&#160;lobject.h'],['../lua-5_84_83_2src_2lobject_8h.html#a1c49f55d93297e833141fb62903af3ad',1,'uvalue:&#160;lobject.h']]],
-  ['uvalue_306',['UValue',['../lua-5_84_83_2src_2lobject_8h.html#a4a9abc9c2064ec3a4620a1f1c30f18af',1,'lobject.h']]],
-  ['uvhead_307',['uvhead',['../structglobal__State.html#a640a585a8c5d8c68b1c0118010b7674f',1,'global_State']]]
+  ['uvhead_306',['uvhead',['../structglobal__State.html#a640a585a8c5d8c68b1c0118010b7674f',1,'global_State']]]
 ];

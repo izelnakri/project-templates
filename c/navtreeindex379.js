@@ -1,5 +1,6 @@
 var NAVTREEINDEX379 =
 {
+"vulkan__android_8h.html#a37ec84b45220516e0868517a3103d7ab":[6,0,4,0,7,0,1,4,35],
 "vulkan__android_8h.html#a4a7c226c4588226d8981be0a7fa4cc09":[6,0,4,0,7,0,1,4,22],
 "vulkan__android_8h.html#a52cd0eb0642e5352b19bb40344507df5":[6,0,4,0,7,0,1,4,27],
 "vulkan__android_8h.html#a6704bf20019893e7386ec652c0fa5ccb":[6,0,4,0,7,0,1,4,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX379 =
 "vulkan__core_8h.html#a08979bfc4522de15ac019d4c2b4884ef":[6,0,4,0,7,0,1,6,1274],
 "vulkan__core_8h.html#a089d8ed608998265f85d72a7c9f4e382":[6,0,4,0,7,0,1,6,1868],
 "vulkan__core_8h.html#a08aa32f467de46697140d9b3e8e3b00d":[6,0,4,0,7,0,1,6,4061],
-"vulkan__core_8h.html#a08ab542b39ebc1643924301e8fa572df":[6,0,4,0,7,0,1,6,2390],
-"vulkan__core_8h.html#a08ae18fec0be2e194f6ea9c0a5e137ce":[6,0,4,0,7,0,1,6,3902]
+"vulkan__core_8h.html#a08ab542b39ebc1643924301e8fa572df":[6,0,4,0,7,0,1,6,2390]
 };

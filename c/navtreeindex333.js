@@ -1,5 +1,6 @@
 var NAVTREEINDEX333 =
 {
+"structVkOpticalFlowExecuteInfoNV.html#a1983a2502d6fe0f7446e801df19e9913":[5,0,1599,1],
 "structVkOpticalFlowExecuteInfoNV.html#a35e83ebf1fe811040157983ce097e520":[5,0,1599,0],
 "structVkOpticalFlowExecuteInfoNV.html#af4561b5bcf478448840f82458b2b348d":[5,0,1599,4],
 "structVkOpticalFlowImageFormatInfoNV.html":[5,0,1600],
@@ -248,6 +249,5 @@ var NAVTREEINDEX333 =
 "structVkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html#a9c51cc86281e9124b20c18d07a33a72c":[5,0,1647,0],
 "structVkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html#acdc00fbf9ea8b8b8fad7e9e6d1c0285a":[5,0,1647,1],
 "structVkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html#adbd92c066bcdc1a2524b49f430b6e81e":[5,0,1647,2],
-"structVkPhysicalDeviceCornerSampledImageFeaturesNV.html":[5,0,1648],
-"structVkPhysicalDeviceCornerSampledImageFeaturesNV.html#aae7cdfe3e55b87b5b803faa30cdb65c9":[5,0,1648,1]
+"structVkPhysicalDeviceCornerSampledImageFeaturesNV.html":[5,0,1648]
 };

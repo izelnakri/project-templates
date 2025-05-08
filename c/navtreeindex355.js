@@ -1,5 +1,6 @@
 var NAVTREEINDEX355 =
 {
+"struct__GObjectClass.html#acdbe5a806ba299424bc8fa596f4cf76e":[5,0,170,2],
 "struct__GObjectClass.html#ad088d4960c1178e64a32a5fbe73f0228":[5,0,170,14],
 "struct__GObjectClass.html#ad36283110fe5f2dfca1def645771bbd4":[5,0,170,11],
 "struct__GObjectClass.html#ad9a6e2026ef0a21ba81cb14eb9864124":[5,0,170,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX355 =
 "struct__GProxyAddressEnumeratorClass.html#aa5fed21cf4c594d637bd93a79325cfd2":[5,0,218,6],
 "struct__GProxyInterface.html":[5,0,219],
 "struct__GProxyInterface.html#a1b586b4306c37a3e233fb8f32d812d1e":[5,0,219,2],
-"struct__GProxyInterface.html#a4d35ad056de487cacf0b368c414b69a5":[5,0,219,4],
-"struct__GProxyInterface.html#a67a63de64c294105508ec6ee590d77c6":[5,0,219,1]
+"struct__GProxyInterface.html#a4d35ad056de487cacf0b368c414b69a5":[5,0,219,4]
 };

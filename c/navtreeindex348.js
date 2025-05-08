@@ -1,5 +1,6 @@
 var NAVTREEINDEX348 =
 {
+"structVkVideoEncodeH264CapabilitiesKHR.html#a26da95bf5b56481db43edf09f3fa51f6":[5,0,2187,3],
 "structVkVideoEncodeH264CapabilitiesKHR.html#a2fbc11b3130402c6faabee956e735916":[5,0,2187,13],
 "structVkVideoEncodeH264CapabilitiesKHR.html#a30a8e30eceb6a3d71cf0ce65d1758a99":[5,0,2187,12],
 "structVkVideoEncodeH264CapabilitiesKHR.html#a5b4b13486fd556295da31e82f9385687":[5,0,2187,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX348 =
 "structVkVideoEncodeRateControlInfoKHR.html#a6f46b6e4482a838de62fde0a1a0bf37f":[5,0,2222,7],
 "structVkVideoEncodeRateControlInfoKHR.html#a7764d2aece6ccc0255620165b3621c18":[5,0,2222,3],
 "structVkVideoEncodeRateControlInfoKHR.html#ab50c84a8f0c4c549d8f07f1f8499f8bb":[5,0,2222,4],
-"structVkVideoEncodeRateControlInfoKHR.html#ac398096d11d3e63539469d2e3ef4bc63":[5,0,2222,2],
-"structVkVideoEncodeRateControlInfoKHR.html#acad38c6751ccf2d2da555f26de9b32e6":[5,0,2222,0]
+"structVkVideoEncodeRateControlInfoKHR.html#ac398096d11d3e63539469d2e3ef4bc63":[5,0,2222,2]
 };

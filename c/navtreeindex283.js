@@ -1,5 +1,6 @@
 var NAVTREEINDEX283 =
 {
+"pango-engine_8h_source.html":[6,0,4,0,4,0,0,0,7],
 "pango-enum-types_8h.html":[6,0,4,0,4,0,0,0,8],
 "pango-enum-types_8h.html#a0aefb4fa8478071fd87e3a6173f424a4":[6,0,4,0,4,0,0,0,8,52],
 "pango-enum-types_8h.html#a1b0ee80dd9ecd4ee99331a1d89faacb4":[6,0,4,0,4,0,0,0,8,15],
@@ -248,6 +249,5 @@ var NAVTREEINDEX283 =
 "pango-fontset-simple_8h.html#a566de32b3090841c0a7daf4826c15270":[6,0,4,0,4,0,0,0,12,8],
 "pango-fontset-simple_8h.html#a5719f3ded677ae19133e0feae7955377":[6,0,4,0,4,0,0,0,12,3],
 "pango-fontset-simple_8h.html#aa91640dafc2f79303994a61199a063b3":[6,0,4,0,4,0,0,0,12,2],
-"pango-fontset-simple_8h.html#ab934ed1cab6185b46f07f04d3222b06e":[6,0,4,0,4,0,0,0,12,6],
-"pango-fontset-simple_8h.html#ac6044b3d34bb5d9c103bc04d6d1369a7":[6,0,4,0,4,0,0,0,12,7]
+"pango-fontset-simple_8h.html#ab934ed1cab6185b46f07f04d3222b06e":[6,0,4,0,4,0,0,0,12,6]
 };

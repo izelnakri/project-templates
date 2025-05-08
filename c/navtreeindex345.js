@@ -1,5 +1,6 @@
 var NAVTREEINDEX345 =
 {
+"structVkSamplerBlockMatchWindowCreateInfoQCOM.html#a1132f79c18b3a22962b3828cc7936fbd":[5,0,2062,3],
 "structVkSamplerBlockMatchWindowCreateInfoQCOM.html#a84260ad02e5e221896a95686b643e6eb":[5,0,2062,1],
 "structVkSamplerBlockMatchWindowCreateInfoQCOM.html#aafe1993cf99e9470d4313d1e21be1460":[5,0,2062,2],
 "structVkSamplerBlockMatchWindowCreateInfoQCOM.html#aee46c3f22da79777627fa19a3ea51ee4":[5,0,2062,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX345 =
 "structVkSpecializationInfo.html#a150ae19863ed02663be085233ff70583":[5,0,2104,3],
 "structVkSpecializationInfo.html#a26842255e465754ab17c7d8a27ac09b6":[5,0,2104,2],
 "structVkSpecializationInfo.html#a44f1f7b5ab92376e3423c388f505e36c":[5,0,2104,0],
-"structVkSpecializationInfo.html#a4add10543981960e6bf8f0b12a353c69":[5,0,2104,1],
-"structVkSpecializationMapEntry.html":[5,0,2105]
+"structVkSpecializationInfo.html#a4add10543981960e6bf8f0b12a353c69":[5,0,2104,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX327 =
 {
+"structVkDescriptorUpdateTemplateCreateInfo.html#aea950e9761276a59d230dcc1a3bb7566":[5,0,1325,9],
 "structVkDescriptorUpdateTemplateCreateInfo.html#af785e4aa24e3f4a0aa1711b89070eaf3":[5,0,1325,7],
 "structVkDescriptorUpdateTemplateCreateInfo.html#afee88a9e6b5ae78ae9dd3e761c4a6526":[5,0,1325,4],
 "structVkDescriptorUpdateTemplateEntry.html":[5,0,1326],
@@ -248,6 +249,5 @@ var NAVTREEINDEX327 =
 "structVkDisplayPlaneCapabilitiesKHR.html#aea51fb702e1918f867734b0599d90cb0":[5,0,1373,6],
 "structVkDisplayPlaneInfo2KHR.html":[5,0,1374],
 "structVkDisplayPlaneInfo2KHR.html#a3e7b675481f47f95c7fc449e57a37177":[5,0,1374,1],
-"structVkDisplayPlaneInfo2KHR.html#a5957757780563d5346ca866d143a87ec":[5,0,1374,3],
-"structVkDisplayPlaneInfo2KHR.html#ac09eaf6de3eed3457506093b2a55bfc8":[5,0,1374,0]
+"structVkDisplayPlaneInfo2KHR.html#a5957757780563d5346ca866d143a87ec":[5,0,1374,3]
 };

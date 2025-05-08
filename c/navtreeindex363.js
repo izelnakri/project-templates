@@ -1,5 +1,6 @@
 var NAVTREEINDEX363 =
 {
+"struct__PangoMatrix.html#a733522f6c863e006caf6e17991793fe0":[5,0,539,1],
 "struct__PangoMatrix.html#a7a0497b1e8cb5872f96214990e64c0d8":[5,0,539,0],
 "struct__PangoMatrix.html#aba545fe0e67122b5bf87942e4b2e0c75":[5,0,539,4],
 "struct__PangoOTFeatureMap.html":[5,0,540],
@@ -248,6 +249,5 @@ var NAVTREEINDEX363 =
 "structcri__stream__data.html#a4dc0462ab7521c52b368c2c9ae2cf40c":[5,0,603,0],
 "structcri__stream__data.html#a869923f3b86e5cab8858fd27c0091da3":[5,0,603,2],
 "structcri__stream__data.html#a9f0b6fd295996d69683afe4afa436a33":[5,0,603,4],
-"structcri__stream__data.html#aa33321ef657fd380094ffc5df5c0a5c9":[5,0,603,3],
-"structcri__stream__data.html#aa4e0805ec31ba9ae2839980d2d787d7f":[5,0,603,1]
+"structcri__stream__data.html#aa33321ef657fd380094ffc5df5c0a5c9":[5,0,603,3]
 };

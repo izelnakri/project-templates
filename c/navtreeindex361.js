@@ -1,5 +1,6 @@
 var NAVTREEINDEX361 =
 {
+"struct__GtkSelectionModelInterface.html#a3da7ce8c8891043350bfd40db92283d4":[5,0,396,5],
 "struct__GtkSelectionModelInterface.html#a412fa9efb8fe6f5b5404998fe4f51b75":[5,0,396,4],
 "struct__GtkSelectionModelInterface.html#a48982e347e6edd5eea68577c9f43c841":[5,0,396,7],
 "struct__GtkSelectionModelInterface.html#a63834de6523338f5885efba5b8dcfe29":[5,0,396,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX361 =
 "struct__GtkWindow.html#a5eca13ee4c1b12fb1ae4b26958f452dc":[5,0,433,0],
 "struct__GtkWindowClass.html":[5,0,434],
 "struct__GtkWindowClass.html#a09b639f14eb4c0e5f5886d03498a9bf1":[5,0,434,1],
-"struct__GtkWindowClass.html#a5fc75e6e3a509bbb03d10c4607c2ec8a":[5,0,434,2],
-"struct__GtkWindowClass.html#a73becfdd225024ac2b3d74e4963ffadd":[5,0,434,4]
+"struct__GtkWindowClass.html#a5fc75e6e3a509bbb03d10c4607c2ec8a":[5,0,434,2]
 };
