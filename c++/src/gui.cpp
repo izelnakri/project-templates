@@ -2,16 +2,39 @@
 #include <thread>
 #include <future>
 #include <sstream>
+#include <iostream>
 #include <nlohmann/json.hpp>
 #include "user.hpp"
+
+// Path to the CSS file
+#ifdef NDEBUG
+    // If in release mode, the CSS is in the build directory
+    const std::string css_file_path = "build/style.css";
+#else
+    // If in debug mode, the CSS is in the source directory (for development)
+    const std::string css_file_path = "src/style.css";
+#endif
 
 class GitHubUserFetcherWindow : public Gtk::Window {
 public:
     GitHubUserFetcherWindow() {
+        // CSS styling
+        auto css_provider = Gtk::CssProvider::create();
+
+        try {
+            // Load CSS from the determined path
+            css_provider->load_from_path(css_file_path);
+
+            auto display = Gdk::Display::get_default();
+            Gtk::StyleContext::add_provider_for_display(display, css_provider, GTK_STYLE_PROVIDER_PRIORITY_USER);
+        } catch (const Glib::FileError& e) {
+            // Handle the case where the file doesn't exist
+            std::cerr << "Failed to load CSS file: " << e.what() << std::endl;
+        }
+
         set_title("GitHub User Fetcher");
         set_default_size(400, 300);
 
-        // Layout
         box.set_orientation(Gtk::Orientation::VERTICAL);
         set_child(box);
 

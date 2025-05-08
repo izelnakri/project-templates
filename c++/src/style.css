@@ -1,0 +1,24 @@
+window {
+    background-color: red;
+    color: #f0f0f0;
+}
+
+entry {
+    background-color: #3c3c3c;
+    color: #f0f0f0;
+    border: 1px solid #555;
+    padding: 4px;
+}
+
+button {
+    background: #5a9;
+    color: white;
+    border-radius: 4px;
+    padding: 8px;
+}
+
+textview {
+    background: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #444;
+}
