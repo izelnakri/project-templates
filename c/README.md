@@ -79,19 +79,19 @@ make install
 - **Install the built Flatpak:**
 
   ```bash
-  make install-flatpak
+  make flatpak-install
   ```
 
 - **Run the Flatpak application:**
 
   ```bash
-  make run-flatpak
+  make flatpak-run
   ```
 
 - **Run the Flatpak CLI server application:**
 
   ```bash
-  make run-flatpak-cli-server
+  make flatpak-run-cli-server
   ```
 
 ### Docker
@@ -99,31 +99,31 @@ make install
 - **Build the Docker image:**
 
   ```bash
-  make build-docker-image
+  make docker-build-image
   ```
 
 - **Run the Docker CLI application:**
 
   ```bash
-  make run-docker-cli
+  make docker-run-cli
   ```
 
 - **Run the Docker CLI application with a user:**
 
   ```bash
-  make run-docker-cli-user
+  make docker-run-cli-user
   ```
 
 - **Run the Docker CLI server application:**
 
   ```bash
-  make run-docker-cli-server
+  make docker-run-cli-server
   ```
 
 - **Run the Docker GUI application:**
 
   ```bash
-  make run-docker-gui
+  make docker-run-gui
   ```
 
 ### Testing

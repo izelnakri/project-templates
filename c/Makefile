@@ -18,27 +18,27 @@ CPP_SOURCES := $(wildcard benchmarks/*.cpp)
 H_SOURCES := $(wildcard src/*.h)
 ALL_SOURCES := $(C_SOURCES) $(CPP_SOURCES) $(H_SOURCES)
 
-clean-flatpak-build:
+flatpak-clean:
 	rm -rf .flatpak-builder build flatpak/build flatpak/nix-environment-dependencies.tar.gz
-prepare-flatpak-builder:
+flatpak-prepare-builder:
 	sh flatpak/bundle-nix-environment-dependencies.sh
 flatpak-builder: 
 	flatpak-builder flatpak/build flatpak/manifest.json --force-clean
-build-flatpak: clean-flatpak-build prepare-flatpak-builder flatpak-builder
-install-flatpak:
+flatpak-build: flatpak-clean flatpak-prepare-builder flatpak-builder
+flatpak-install:
 	flatpak build-export local-flatpak-repo flatpak/build
 	flatpak remote-add --user --no-gpg-verify local-last-exported-flatpak-remote ./local-flatpak-repo 
 	flatpak install --user local-last-exported-flatpak-remote org.example.GithubUserFetcher
-run-flatpak-cli: build-flatpak
+flatpak-run-cli: flatpak-build
 	echo "Running manifest.json CLI:"
 	flatpak-builder --run flatpak/build flatpak/manifest.json github_user_fetcher
-run-flatpak-cli-server: build-flatpak
+flatpak-run-cli-server: flatpak-build
 	echo "Running manifest.json CLI server:"
 	flatpak-builder --run flatpak/build flatpak/manifest.json github_user_fetcher --server
-run-flatpak-gui: build-flatpak
+flatpak-run-gui: flatpak-build
 	echo "Running manifest.json GUI:"
 	flatpak-builder --run flatpak/build flatpak/manifest.json github_user_fetcher_gui
-run-flatpak: run-flatpak-gui
+flatpak-run: flatpak-run-gui
 
 all: clean-all build
 
@@ -54,17 +54,17 @@ build: clean setup
 	ninja -C build
 clean:
 	rm -rf build access.log
-clean-all: clean clean-flatpak-build
+clean-all: clean flatpak-clean
 	rm -rf docs/html
 reset: clean-all build
 
 develop:
-	nix develop
+	@if [ -z "$$IS_NIX_SHELL" ]; then nix develop; else echo "Already in nix shell"; fi
 test: check-setup
 	meson compile -C build && meson test -C build
-run-cli: clean setup
+run-cli: check-setup
 	meson compile -C build && ./build/github_user_fetcher
-run-cli-server: clean setup
+run-cli-server: check-setup
 	meson compile -C build && ./build/github_user_fetcher --server
 run-server: run-cli-server
 run-gui: clean setup
@@ -103,25 +103,25 @@ format-check:
 	@echo "Checking code formatting..."
 	@find src tests benchmarks -name "*.c" -o -name "*.h" -o -name "*.cpp" | xargs -I{} bash -c 'clang-format -style=file {} | diff --color=always -u {} - || printf "\033[31m=> File {} needs formatting\033[0m\n"'
 
-build-docker-image:
+docker-build-image:
 ifeq ($(RELEASE), true)
 	nix build .#dockerProductionImage
 else
 	nix build .#dockerImage
 endif
-run-docker-cli: build-docker-image
+docker-run-cli: docker-build-image
 	sudo docker load < ./result
 	sudo docker run -it --rm github_user_fetcher github_user_fetcher
-run-docker-cli-user: build-docker-image
+docker-run-cli-user: docker-build-image
 	sudo docker load < ./result
 	sudo docker run -it --rm github_user_fetcher github_user_fetcher --user izelnakri
-run-docker-cli-server: build-docker-image
+docker-run-cli-server: docker-build-image
 	sudo docker load < ./result
 	sudo docker run -it --rm \
 		-p 1234:1234 \
 		--init \
 		github_user_fetcher github_user_fetcher --server
-run-docker-gui: build-docker-image
+docker-run-gui: docker-build-image
 	sudo docker load < ./result
 	sudo docker run -it --rm \
     --user $(shell id -u):$(shell id -g) \
@@ -136,7 +136,7 @@ run-docker-gui: build-docker-image
 		--ipc=host \
 		--net=host \
 		github_user_fetcher github_user_fetcher_gui
-debug-docker: build-docker-image
+docker-debug: docker-build-image
 	sudo docker load < ./result
 	sudo docker run -it --rm github_user_fetcher zsh
 
@@ -186,6 +186,7 @@ release:
 	make RELEASE=true build
 
 install: release
+	$(if $(PREFIX), meson configure build --prefix=$(PREFIX))
 	@echo "Installing release build"
 	sudo meson install -C build
 

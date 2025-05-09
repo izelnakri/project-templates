@@ -62,8 +62,7 @@ AppConfig parse_arguments(const std::vector<std::string>& args) {
  */
 int main(int argc, char** argv) {
     try {
-        // Convert argv to vector<string> for easier handling
-        std::vector<std::string> args(argv + 1, argv + argc);
+        std::vector<std::string> args(argv + 1, argv + argc); // Convert argv to vector<string> for easier handling
 
         AppConfig config = parse_arguments(args);
 

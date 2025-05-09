@@ -1,4 +1,3 @@
-# TODO: make devShell like my normal shell, adjust GitHub Actions to have optimized $ nix flake check
 {
   description = "GitHub User Fetcher - Example Complex C binary & library that uses external dependencies & tools";
 
