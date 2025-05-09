@@ -170,24 +170,23 @@ $(function(){initNavTree('main_8cpp_source.html',''); initResizable(); });
 <div class="foldopen" id="foldopen00063" data-start="{" data-end="}">
 <div class="line"><a id="l00063" name="l00063"></a><span class="lineno"><a class="line" href="main_8cpp.html#a3c04138a5bfe5d72780bb7e82a18e627">   63</a></span><span class="keywordtype">int</span> <a class="code hl_function" href="sanitycheckc_8c.html#a840291bc02cba5474a4cb46a9b9566fe">main</a>(<span class="keywordtype">int</span> argc, <span class="keywordtype">char</span>** argv) {</div>
 <div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        <span class="comment">// Convert argv to vector&lt;string&gt; for easier handling</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>        std::vector&lt;std::string&gt; args(argv + 1, argv + argc);</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span> </div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>        <a class="code hl_struct" href="structAppConfig.html">AppConfig</a> config = <a class="code hl_function" href="main_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>        <span class="keywordflow">if</span> (config.<a class="code hl_variable" href="structAppConfig.html#adf8c5ee33f006b255ae326a9451a6a11">run_server</a>) {</div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>            <a class="code hl_function" href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a>(config.<a class="code hl_variable" href="structAppConfig.html#a9ea1f9d0fd3e6c5a2010831439dda0a9">port</a>);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        } <span class="keywordflow">else</span> {</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            <a class="code hl_struct" href="structUser.html">User</a> user = <a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(config.<a class="code hl_variable" href="structAppConfig.html#aa9b43675425a1a0bfa3b577953e00360">username</a>);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>            user.print();</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>        }</div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>        <span class="keywordflow">return</span> 0;</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; ex) {</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Error: &quot;</span> &lt;&lt; ex.what() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>        <span class="keywordflow">return</span> 1;</div>
-<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>    }</div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>}</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>        std::vector&lt;std::string&gt; args(argv + 1, argv + argc); <span class="comment">// Convert argv to vector&lt;string&gt; for easier handling</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>        <a class="code hl_struct" href="structAppConfig.html">AppConfig</a> config = <a class="code hl_function" href="main_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>        <span class="keywordflow">if</span> (config.<a class="code hl_variable" href="structAppConfig.html#adf8c5ee33f006b255ae326a9451a6a11">run_server</a>) {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>            <a class="code hl_function" href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a>(config.<a class="code hl_variable" href="structAppConfig.html#a9ea1f9d0fd3e6c5a2010831439dda0a9">port</a>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>        } <span class="keywordflow">else</span> {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>            <a class="code hl_struct" href="structUser.html">User</a> user = <a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(config.<a class="code hl_variable" href="structAppConfig.html#aa9b43675425a1a0bfa3b577953e00360">username</a>);</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>            user.print();</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>        }</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span>        <span class="keywordflow">return</span> 0;</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; ex) {</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Error: &quot;</span> &lt;&lt; ex.what() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>        <span class="keywordflow">return</span> 1;</div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    }</div>
+<div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span>}</div>
 </div>
 <div class="ttc" id="acurl_8h_html_a7d68018e95e3d4e6b703538ac1c8c411"><div class="ttname"><a href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a></div><div class="ttdeci">CURL_EXTERN int void * arg</div><div class="ttdef"><b>Definition</b> <a href="curl_8h_source.html#l02622">curl.h:2622</a></div></div>
 <div class="ttc" id="amain_8cpp_html_acf7abda9dac6fd151892e22fdbe3ed0b"><div class="ttname"><a href="main_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a></div><div class="ttdeci">AppConfig parse_arguments(const std::vector&lt; std::string &gt; &amp;args)</div><div class="ttdoc">Parses command-line arguments into AppConfig.</div><div class="ttdef"><b>Definition</b> <a href="#l00032">main.cpp:32</a></div></div>
