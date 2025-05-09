@@ -114,7 +114,7 @@ pkgs.mkShell rec {
     if [ -z "$CI" ]; then
       export SHELL=${pkgs.zsh}/bin/zsh
       # Execute our ZSH script directly
-      exec ${zshEntryScript}/bin/enter-zsh-env
+      source ${zshEntryScript}/bin/enter-zsh-env
     fi
     set -u # Fail undefined variables only on CI environment
   '';

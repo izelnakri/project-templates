@@ -70,7 +70,7 @@ function display_jobs_count_if_needed {
 }
 
 function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\->\ \1/'
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\->\ \1/' -e 's/^[[:space:]]*//'
 }
 
 export IS_NIX_SHELL=true;
