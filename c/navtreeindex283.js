@@ -1,5 +1,6 @@
 var NAVTREEINDEX283 =
 {
+"pango-engine_8h.html#aebcab87aec3c66647f0c65c33fd777d9":[6,0,4,0,4,0,0,0,7,37],
 "pango-engine_8h.html#aef90b07e0e2562b3cf40c86fe4c76183":[6,0,4,0,4,0,0,0,7,14],
 "pango-engine_8h.html#af6799ef7ce46f3b91e02653a112f9dcd":[6,0,4,0,4,0,0,0,7,21],
 "pango-engine_8h.html#af917f78410096b7491f2ae4e50824877":[6,0,4,0,4,0,0,0,7,32],
@@ -248,6 +249,5 @@ var NAVTREEINDEX283 =
 "pango-fontmap_8h_source.html":[6,0,4,0,4,0,0,0,11],
 "pango-fontset-simple_8h.html":[6,0,4,0,4,0,0,0,12],
 "pango-fontset-simple_8h.html#a0d7a021e1bdc8124024efcb24401e8b3":[6,0,4,0,4,0,0,0,12,5],
-"pango-fontset-simple_8h.html#a2250b07d4c7dd9193d8f7240b3672b61":[6,0,4,0,4,0,0,0,12,0],
-"pango-fontset-simple_8h.html#a31d5abe176dddf3e65ff787c94838fae":[6,0,4,0,4,0,0,0,12,1]
+"pango-fontset-simple_8h.html#a2250b07d4c7dd9193d8f7240b3672b61":[6,0,4,0,4,0,0,0,12,0]
 };

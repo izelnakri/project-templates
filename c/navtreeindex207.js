@@ -1,5 +1,6 @@
 var NAVTREEINDEX207 =
 {
+"gtkfilechoosernative_8h.html#a29fab2eb684b13adbf9e4f295c46bdf1":[6,0,4,0,8,0,0,2,2,30,4],
 "gtkfilechoosernative_8h.html#a62e5035fb22a5b5e4bda34e937843fb7":[6,0,4,0,8,0,0,2,2,30,3],
 "gtkfilechoosernative_8h.html#a8c717ec2869ef5c48e5c0e5c0d16bc75":[6,0,4,0,8,0,0,2,2,30,5],
 "gtkfilechoosernative_8h.html#af1313bced82e4ead035353a241230c92":[6,0,4,0,8,0,0,2,2,30,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX207 =
 "gtkfontchooserdialog_8h.html#a102706ef49d2270393ef73edfb8fdcbb":[6,0,4,0,8,0,0,2,2,34,4],
 "gtkfontchooserdialog_8h.html#a1e5a9ae6a3bd083fc2aab150355b2380":[6,0,4,0,8,0,0,2,2,34,2],
 "gtkfontchooserdialog_8h.html#a7fff39ef5fe9276f4f7104a9273a1f4e":[6,0,4,0,8,0,0,2,2,34,3],
-"gtkfontchooserdialog_8h.html#ab1be6add52ee0a8779337493d1361f0a":[6,0,4,0,8,0,0,2,2,34,5],
-"gtkfontchooserdialog_8h.html#ab9bf63a0340d57e800133bb59a5a61a2":[6,0,4,0,8,0,0,2,2,34,0]
+"gtkfontchooserdialog_8h.html#ab1be6add52ee0a8779337493d1361f0a":[6,0,4,0,8,0,0,2,2,34,5]
 };

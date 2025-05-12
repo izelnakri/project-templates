@@ -1,5 +1,6 @@
 var NAVTREEINDEX356 =
 {
+"struct__GProxyInterface.html#a4d35ad056de487cacf0b368c414b69a5":[5,0,219,4],
 "struct__GProxyInterface.html#a67a63de64c294105508ec6ee590d77c6":[5,0,219,1],
 "struct__GProxyInterface.html#a89ebf3f2a90332e9ffba2b0f9bc8aace":[5,0,219,3],
 "struct__GProxyInterface.html#ab48e2e930885411a534c1c8b677d33f7":[5,0,219,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX356 =
 "struct__GSocketService.html#abcf7c2f71476a864e5a8f25e5c8a1b8f":[5,0,279,1],
 "struct__GSocketServiceClass.html":[5,0,280],
 "struct__GSocketServiceClass.html#a185a44f0af663795587fb11481927d4d":[5,0,280,3],
-"struct__GSocketServiceClass.html#a27f60b96b8696b99abcedb3c3beea7b2":[5,0,280,2],
-"struct__GSocketServiceClass.html#a372366817e30dad84376f15f45f84bd1":[5,0,280,4]
+"struct__GSocketServiceClass.html#a27f60b96b8696b99abcedb3c3beea7b2":[5,0,280,2]
 };

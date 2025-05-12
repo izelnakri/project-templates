@@ -1,5 +1,6 @@
 var NAVTREEINDEX322 =
 {
+"structUpvaldesc.html#a1315fb98c5f398c3f3323967cb9ec7ba":[5,0,1129,2],
 "structUpvaldesc.html#a1e5182ac7b8b72848ed71b7b4844e3d1":[5,0,1129,1],
 "structUpvaldesc.html#a8478ecca9cb593200c562a0837aedfac":[5,0,1129,0],
 "structUpvaldesc.html#a8c18c6bc58c330f2dad7cf1f64a0727a":[5,0,1129,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX322 =
 "structVkAccelerationStructureGeometryTrianglesDataKHR.html#a7079e48c935638f9df1bfb0396006b24":[5,0,1160,0],
 "structVkAccelerationStructureGeometryTrianglesDataKHR.html#a94b141c4584384753d5dbb7a77825fe8":[5,0,1160,6],
 "structVkAccelerationStructureGeometryTrianglesDataKHR.html#add0321142e920f319bdb620a1ca4515c":[5,0,1160,3],
-"structVkAccelerationStructureGeometryTrianglesDataKHR.html#af3258953707c7732a1827ef219bf1d58":[5,0,1160,4],
-"structVkAccelerationStructureInfoNV.html":[5,0,1161]
+"structVkAccelerationStructureGeometryTrianglesDataKHR.html#af3258953707c7732a1827ef219bf1d58":[5,0,1160,4]
 };

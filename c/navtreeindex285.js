@@ -1,5 +1,6 @@
 var NAVTREEINDEX285 =
 {
+"pango-layout_8h.html#af2a50dcac756c9f1aa66eae2e32ee14daea9f6e3ccd657abb3773e8eed3008152":[6,0,4,0,4,0,0,0,19,17,1],
 "pango-layout_8h.html#af542e65a787f39100bdc92588f244f68":[6,0,4,0,4,0,0,0,19,86],
 "pango-layout_8h.html#af747d1354d6dc53030e4647fdf9c79e6":[6,0,4,0,4,0,0,0,19,91],
 "pango-layout_8h.html#af8531241b77aa7e9a01c6a87d63a8a80":[6,0,4,0,4,0,0,0,19,100],
@@ -248,6 +249,5 @@ var NAVTREEINDEX285 =
 "pango-script_8h.html#ae212b75c3cc4bb7bd0ec595993a7a1a1ad5a4665a91db2e0a417057414795a7c0":[6,0,4,0,4,0,0,0,25,1,22],
 "pango-script_8h.html#ae212b75c3cc4bb7bd0ec595993a7a1a1ad823f31b98945e6056f89642dd56021a":[6,0,4,0,4,0,0,0,25,1,61],
 "pango-script_8h.html#ae212b75c3cc4bb7bd0ec595993a7a1a1ad9c1e9a49209ae81294f5d6665f4455a":[6,0,4,0,4,0,0,0,25,1,54],
-"pango-script_8h.html#ae212b75c3cc4bb7bd0ec595993a7a1a1ad9e1568d199df0b784ec825ee7f7fc19":[6,0,4,0,4,0,0,0,25,1,40],
-"pango-script_8h.html#ae212b75c3cc4bb7bd0ec595993a7a1a1ada07976b97ed435c64cd42b979980b08":[6,0,4,0,4,0,0,0,25,1,48]
+"pango-script_8h.html#ae212b75c3cc4bb7bd0ec595993a7a1a1ad9e1568d199df0b784ec825ee7f7fc19":[6,0,4,0,4,0,0,0,25,1,40]
 };

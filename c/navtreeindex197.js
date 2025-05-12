@@ -1,5 +1,6 @@
 var NAVTREEINDEX197 =
 {
+"gtkaboutdialog_8h.html#a6c382fe0996fbd2cdb20a328306331d5":[6,0,4,0,8,0,0,2,5,16],
 "gtkaboutdialog_8h.html#a6d2ebd04572dd002640d29ac1905ac18":[6,0,4,0,8,0,0,2,5,22],
 "gtkaboutdialog_8h.html#a6d3a4277a5004075bd527d5b44c7cf91":[6,0,4,0,8,0,0,2,5,14],
 "gtkaboutdialog_8h.html#a70eb8e8212cda7651433b5ef5708f112":[6,0,4,0,8,0,0,2,5,11],
@@ -248,6 +249,5 @@ var NAVTREEINDEX197 =
 "gtkappchooserdialog_8h.html":[6,0,4,0,8,0,0,2,2,2],
 "gtkappchooserdialog_8h.html#a06702c887344c9d05a393a52bb396c68":[6,0,4,0,8,0,0,2,2,2,7],
 "gtkappchooserdialog_8h.html#a0e02f57acbb8736e7584794745264992":[6,0,4,0,8,0,0,2,2,2,3],
-"gtkappchooserdialog_8h.html#a20e147b465a0d9236f1ff0141d6315df":[6,0,4,0,8,0,0,2,2,2,9],
-"gtkappchooserdialog_8h.html#a27daa48a2c61fc98515ad048148f7a51":[6,0,4,0,8,0,0,2,2,2,8]
+"gtkappchooserdialog_8h.html#a20e147b465a0d9236f1ff0141d6315df":[6,0,4,0,8,0,0,2,2,2,9]
 };

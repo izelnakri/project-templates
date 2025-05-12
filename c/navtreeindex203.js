@@ -1,5 +1,6 @@
 var NAVTREEINDEX203 =
 {
+"gtkdrawingarea_8h_source.html":[6,0,4,0,8,0,0,2,55],
 "gtkdropcontrollermotion_8h.html":[6,0,4,0,8,0,0,2,56],
 "gtkdropcontrollermotion_8h.html#a097e6971f0ecb206b338975275996f65":[6,0,4,0,8,0,0,2,56,6],
 "gtkdropcontrollermotion_8h.html#a0b2e48bd037712a74edae22b87f0d4e7":[6,0,4,0,8,0,0,2,56,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX203 =
 "gtkentrycompletion_8h.html#a23abf55b14645f1d7ee15a164ddbe4e7":[6,0,4,0,8,0,0,2,2,27,15],
 "gtkentrycompletion_8h.html#a2c60c6e0d264c95cf5c3269dfc2bbd8a":[6,0,4,0,8,0,0,2,2,27,13],
 "gtkentrycompletion_8h.html#a2e69edc6288aa1f8aa409641768c1580":[6,0,4,0,8,0,0,2,2,27,11],
-"gtkentrycompletion_8h.html#a3d0e98b249a053c4ad2fdd6d5b4f4584":[6,0,4,0,8,0,0,2,2,27,17],
-"gtkentrycompletion_8h.html#a47d0c9259a03a569d33a1a3c45ec3fd4":[6,0,4,0,8,0,0,2,2,27,28]
+"gtkentrycompletion_8h.html#a3d0e98b249a053c4ad2fdd6d5b4f4584":[6,0,4,0,8,0,0,2,2,27,17]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX216 =
 {
+"gtkscale_8h.html#a180ff5004556482b8f431b9ced202591":[6,0,4,0,8,0,0,2,152,16],
 "gtkscale_8h.html#a3ca9c919a1f060e8e8984900cde6832e":[6,0,4,0,8,0,0,2,152,25],
 "gtkscale_8h.html#a3cfc79c89f14eb0e7801df5fa2f19f92":[6,0,4,0,8,0,0,2,152,19],
 "gtkscale_8h.html#a4dde2790c0a8388fdbbbf85aaa8b5dff":[6,0,4,0,8,0,0,2,152,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX216 =
 "gtkshortcutaction_8h.html#af0025c1d73008ddba90a52830e119734":[6,0,4,0,8,0,0,2,166,18],
 "gtkshortcutaction_8h_source.html":[6,0,4,0,8,0,0,2,166],
 "gtkshortcutcontroller_8h.html":[6,0,4,0,8,0,0,2,167],
-"gtkshortcutcontroller_8h.html#a0439dabe4e6939db895ef16fba3b4a5d":[6,0,4,0,8,0,0,2,167,16],
-"gtkshortcutcontroller_8h.html#a0a5b23c1181e33260a62af5fd8af753b":[6,0,4,0,8,0,0,2,167,3]
+"gtkshortcutcontroller_8h.html#a0439dabe4e6939db895ef16fba3b4a5d":[6,0,4,0,8,0,0,2,167,16]
 };

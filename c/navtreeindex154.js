@@ -1,5 +1,6 @@
 var NAVTREEINDEX154 =
 {
+"gdkkeysyms_8h.html#ad7ed34149b07dbbaa923d481f69ddc02":[6,0,4,0,8,0,0,0,41,2042],
 "gdkkeysyms_8h.html#ad83d83f93aae1fd194c425a35de25fb4":[6,0,4,0,8,0,0,0,41,1381],
 "gdkkeysyms_8h.html#ad86c13451da1c94e1c5e2e5e5ae7aacb":[6,0,4,0,8,0,0,0,41,45],
 "gdkkeysyms_8h.html#ad87b282d35af696e969ecae3a3a64e18":[6,0,4,0,8,0,0,0,41,862],
@@ -248,6 +249,5 @@ var NAVTREEINDEX154 =
 "gdkkeysyms_8h.html#af6814d04f2ebb01a659168e54e6aacc9":[6,0,4,0,8,0,0,0,41,1087],
 "gdkkeysyms_8h.html#af6984eda87e1d4ea7675b5f0750b092f":[6,0,4,0,8,0,0,0,41,1099],
 "gdkkeysyms_8h.html#af6b17a5b3bed6432ccaba21622b08149":[6,0,4,0,8,0,0,0,41,785],
-"gdkkeysyms_8h.html#af6d32a69e8d5be79739e41cb7d63e6cc":[6,0,4,0,8,0,0,0,41,1956],
-"gdkkeysyms_8h.html#af7059ed351fcc3cf24e0e85845aa0cdb":[6,0,4,0,8,0,0,0,41,638]
+"gdkkeysyms_8h.html#af6d32a69e8d5be79739e41cb7d63e6cc":[6,0,4,0,8,0,0,0,41,1956]
 };

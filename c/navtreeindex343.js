@@ -1,5 +1,6 @@
 var NAVTREEINDEX343 =
 {
+"structVkPipelineRasterizationStateCreateInfo.html#aeddbeece787b3601842eec89ec1a433e":[5,0,1976,12],
 "structVkPipelineRasterizationStateRasterizationOrderAMD.html":[5,0,1977],
 "structVkPipelineRasterizationStateRasterizationOrderAMD.html#a68ae39727bc74521e27fad8fabb3af3c":[5,0,1977,1],
 "structVkPipelineRasterizationStateRasterizationOrderAMD.html#a8cdb77b36d282391d342e9640ef87f09":[5,0,1977,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX343 =
 "structVkQueueFamilyVideoPropertiesKHR.html#ab0f7a40a1c6b92f98d82ea6a5ed2ea6a":[5,0,2023,2],
 "structVkRayTracingPipelineCreateInfoKHR.html":[5,0,2024],
 "structVkRayTracingPipelineCreateInfoKHR.html#a0f5240ca5f8206ba5130a2e741bcb7cf":[5,0,2024,6],
-"structVkRayTracingPipelineCreateInfoKHR.html#a129d8c7a20c07d751eda346e357f6ffe":[5,0,2024,4],
-"structVkRayTracingPipelineCreateInfoKHR.html#a1ceaa2e717147492ad516c1401b788cb":[5,0,2024,1]
+"structVkRayTracingPipelineCreateInfoKHR.html#a129d8c7a20c07d751eda346e357f6ffe":[5,0,2024,4]
 };

@@ -616,5 +616,6 @@ var searchData=
   ['hexdump2string_613',['hexdump2string',['../civetweb_8c.html#a79a94c1836be39ee8d6bcbee626493c5',1,'civetweb.c']]],
   ['hexfunc_614',['hexFunc',['../sqlite3_8c.html#a2e2cd151b75b794723d7c4f30fe57c8b',1,'sqlite3.c']]],
   ['hookf_615',['hookf',['../lua-5_81_85_2src_2ldblib_8c.html#a5caaa985f31fc5cbd014f831833205e7',1,'hookf(lua_State *L, lua_Debug *ar):&#160;ldblib.c'],['../lua-5_82_84_2src_2ldblib_8c.html#a5caaa985f31fc5cbd014f831833205e7',1,'hookf(lua_State *L, lua_Debug *ar):&#160;ldblib.c'],['../lua-5_83_86_2src_2ldblib_8c.html#a5caaa985f31fc5cbd014f831833205e7',1,'hookf(lua_State *L, lua_Debug *ar):&#160;ldblib.c'],['../lua-5_84_83_2src_2ldblib_8c.html#a5caaa985f31fc5cbd014f831833205e7',1,'hookf(lua_State *L, lua_Debug *ar):&#160;ldblib.c']]],
-  ['httpsession_616',['HttpSession',['../classHttpSession.html#ace6ee24620c728a1a50549e452ef7b7e',1,'HttpSession']]]
+  ['http_5fget_616',['http_get',['../test__cli_8cpp.html#ad061726d980595161b0f70be324e96c5',1,'test_cli.cpp']]],
+  ['httpsession_617',['HttpSession',['../classHttpSession.html#ace6ee24620c728a1a50549e452ef7b7e',1,'HttpSession']]]
 ];

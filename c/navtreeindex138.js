@@ -1,5 +1,6 @@
 var NAVTREEINDEX138 =
 {
+"gdate_8h.html#a839059562d26313ad239dc2c8996d7c0":[6,0,4,0,9,0,1,2,14,41],
 "gdate_8h.html#a889359129081f3033b70eb3ddfc0b001":[6,0,4,0,9,0,1,2,14,4],
 "gdate_8h.html#a949eb6efe1bae5ff2d284a3d4e06b903":[6,0,4,0,9,0,1,2,14,17],
 "gdate_8h.html#a983d4b0fdfcb18a8f7667691d9a77fea":[6,0,4,0,9,0,1,2,14,14],
@@ -248,6 +249,5 @@ var NAVTREEINDEX138 =
 "gdbusinterfaceskeleton_8h.html#ac63766c50d91a79741ed1770f40d9a39":[6,0,4,0,9,0,1,0,28,7],
 "gdbusinterfaceskeleton_8h.html#ad47734aad83260bf59dcedcc7cba38f1":[6,0,4,0,9,0,1,0,28,6],
 "gdbusinterfaceskeleton_8h.html#adb3232db38ec87ef117b005536725e09":[6,0,4,0,9,0,1,0,28,22],
-"gdbusinterfaceskeleton_8h.html#af1e2f909bf9dff3e728202e96ad656f2":[6,0,4,0,9,0,1,0,28,18],
-"gdbusinterfaceskeleton_8h.html#af6d261ef63702aa2abf8e56300668b1c":[6,0,4,0,9,0,1,0,28,12]
+"gdbusinterfaceskeleton_8h.html#af1e2f909bf9dff3e728202e96ad656f2":[6,0,4,0,9,0,1,0,28,18]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX360 =
 {
+"struct__GtkFixedClass.html":[5,0,347],
 "struct__GtkFixedClass.html#a7fcb4b5216da73b5d6784e791dccdbac":[5,0,347,0],
 "struct__GtkFixedClass.html#abc732951e9c4760e78c67cc4ad198e6f":[5,0,347,1],
 "struct__GtkFlowBoxChild.html":[5,0,348],
@@ -248,6 +249,5 @@ var NAVTREEINDEX360 =
 "struct__GtkScrollableInterface.html#adad5da800705e229c82c353b02a45d56":[5,0,394,0],
 "struct__GtkSectionModelInterface.html":[5,0,395],
 "struct__GtkSectionModelInterface.html#a895214dc4896eea032584e135bf4e40f":[5,0,395,1],
-"struct__GtkSectionModelInterface.html#aaf1980780b0d5dc798c9614f505d4765":[5,0,395,0],
-"struct__GtkSelectionModelInterface.html":[5,0,396]
+"struct__GtkSectionModelInterface.html#aaf1980780b0d5dc798c9614f505d4765":[5,0,395,0]
 };

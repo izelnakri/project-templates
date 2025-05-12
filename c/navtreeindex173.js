@@ -1,5 +1,6 @@
 var NAVTREEINDEX173 =
 {
+"glib-visibility_8h.html#ad8094aac220f0bfae69d4468fd9cf111":[6,0,4,0,9,0,1,2,31,311],
 "glib-visibility_8h.html#ad99347ec1041bbd0e98c49069b7c0c33":[6,0,4,0,9,0,1,2,31,76],
 "glib-visibility_8h.html#ada196202d8d78ed77635da2ff71c7a01":[6,0,4,0,9,0,1,2,31,171],
 "glib-visibility_8h.html#ada6a63ba106c8c410604276e058c9d26":[6,0,4,0,9,0,1,2,31,263],
@@ -248,6 +249,5 @@ var NAVTREEINDEX173 =
 "gliststore_8h.html#ab8b1dd79c73b332b9533461766135ec5":[6,0,4,0,9,0,1,0,81,10],
 "gliststore_8h.html#abb99d569667d76cd0a009d21c8d91973":[6,0,4,0,9,0,1,0,81,1],
 "gliststore_8h.html#aeef3c1d75d7791a6d83f93594f343c7a":[6,0,4,0,9,0,1,0,81,4],
-"gliststore_8h_source.html":[6,0,4,0,9,0,1,0,81],
-"gloadableicon_8h.html":[6,0,4,0,9,0,1,0,82]
+"gliststore_8h_source.html":[6,0,4,0,9,0,1,0,81]
 };

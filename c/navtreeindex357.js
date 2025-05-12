@@ -1,5 +1,6 @@
 var NAVTREEINDEX357 =
 {
+"struct__GSocketServiceClass.html#a372366817e30dad84376f15f45f84bd1":[5,0,280,4],
 "struct__GSocketServiceClass.html#a6433cec0f8c2c76c90e07214cb518d2a":[5,0,280,5],
 "struct__GSocketServiceClass.html#a9b42b3d21a7e8b29be95e8c415bafb4a":[5,0,280,0],
 "struct__GSocketServiceClass.html#a9c1f6743d872ebdaaf2d04a0a08babbe":[5,0,280,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX357 =
 "struct__GTypeValueTable.html#aa985ba574fb13f528bf7a61548096ef9":[5,0,464,4],
 "struct__GTypeValueTable.html#ae66e02149812700d1e2f0b4943faaebe":[5,0,464,6],
 "struct__GUnixConnection.html":[5,0,465],
-"struct__GUnixConnection.html#a6192d92e07562e5ee0d1996e9aae3acc":[5,0,465,0],
-"struct__GUnixConnection.html#aada563b3c7a2b866065d345a621c6ea5":[5,0,465,1]
+"struct__GUnixConnection.html#a6192d92e07562e5ee0d1996e9aae3acc":[5,0,465,0]
 };

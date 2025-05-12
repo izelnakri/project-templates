@@ -1,5 +1,6 @@
 var NAVTREEINDEX287 =
 {
+"pangocairo_8h.html#aa38df62a3eaf30fc55d6540ba6ff416c":[6,0,4,0,4,0,0,0,31,3],
 "pangocairo_8h.html#aa3b50614f0403543109bc8d421c22fa5":[6,0,4,0,4,0,0,0,31,32],
 "pangocairo_8h.html#aa4b4530d862e7433d7eaec40ec0c2bb6":[6,0,4,0,4,0,0,0,31,6],
 "pangocairo_8h.html#aaa60e8f63a0aa03a9e08c24b8768f99e":[6,0,4,0,4,0,0,0,31,24],
@@ -248,6 +249,5 @@ var NAVTREEINDEX287 =
 "server_8h.html#a805251749f828fda7ccf3f1cc664afd1":[6,0,5,3,0],
 "server_8h_source.html":[6,0,5,3],
 "sqlite3_8c.html":[6,0,7,0,0,13],
-"sqlite3_8c.html#a001421375b25195e3f80871dcb1be172":[6,0,7,0,0,13,3308],
-"sqlite3_8c.html#a001bcb6c83dac39b83d3a95e1f6194d1":[6,0,7,0,0,13,2780]
+"sqlite3_8c.html#a001421375b25195e3f80871dcb1be172":[6,0,7,0,0,13,3308]
 };

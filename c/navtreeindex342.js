@@ -1,5 +1,6 @@
 var NAVTREEINDEX342 =
 {
+"structVkPipelineBinaryCreateInfoKHR.html#a694dd6bdd9f2bb52cf6386380380fa15":[5,0,1934,0],
 "structVkPipelineBinaryCreateInfoKHR.html#a854b7e979aea4de360fe67a2941a4e33":[5,0,1934,3],
 "structVkPipelineBinaryCreateInfoKHR.html#aedb1b86805e95a74f280a5fa72c50294":[5,0,1934,2],
 "structVkPipelineBinaryDataInfoKHR.html":[5,0,1935],
@@ -248,6 +249,5 @@ var NAVTREEINDEX342 =
 "structVkPipelineRasterizationStateCreateInfo.html#ae18edc17d4975888b18d8708b98d07e5":[5,0,1976,4],
 "structVkPipelineRasterizationStateCreateInfo.html#ae225ae723ceffb30c93f3e21416e33e6":[5,0,1976,3],
 "structVkPipelineRasterizationStateCreateInfo.html#aed7b9b9e4918e82beb91d2656f40962c":[5,0,1976,1],
-"structVkPipelineRasterizationStateCreateInfo.html#aeda5266785a2db360de210e1ccd087ec":[5,0,1976,6],
-"structVkPipelineRasterizationStateCreateInfo.html#aeddbeece787b3601842eec89ec1a433e":[5,0,1976,12]
+"structVkPipelineRasterizationStateCreateInfo.html#aeda5266785a2db360de210e1ccd087ec":[5,0,1976,6]
 };

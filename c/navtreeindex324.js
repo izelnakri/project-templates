@@ -1,5 +1,6 @@
 var NAVTREEINDEX324 =
 {
+"structVkBindDescriptorSetsInfoKHR.html#adb87c963995f5882e5317f58f6494253":[5,0,1199,7],
 "structVkBindDescriptorSetsInfoKHR.html#ade6d243c7db50e265353fb08e6405f84":[5,0,1199,3],
 "structVkBindDescriptorSetsInfoKHR.html#aede8992665afa40b12e9e21903dafb1d":[5,0,1199,4],
 "structVkBindImageMemoryDeviceGroupInfo.html":[5,0,1200],
@@ -248,6 +249,5 @@ var NAVTREEINDEX324 =
 "structVkCoarseSampleLocationNV.html#aaafbc76ff95355d0b2c3264ee4f84539":[5,0,1244,2],
 "structVkCoarseSampleOrderCustomNV.html":[5,0,1245],
 "structVkCoarseSampleOrderCustomNV.html#a3f7d509dfd2bcec873008a411eb90a74":[5,0,1245,0],
-"structVkCoarseSampleOrderCustomNV.html#a466b5989ad546330ce3b4daffc3417f6":[5,0,1245,1],
-"structVkCoarseSampleOrderCustomNV.html#a960104e587ba6219f36e28ed12142585":[5,0,1245,3]
+"structVkCoarseSampleOrderCustomNV.html#a466b5989ad546330ce3b4daffc3417f6":[5,0,1245,1]
 };

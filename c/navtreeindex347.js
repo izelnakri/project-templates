@@ -1,5 +1,6 @@
 var NAVTREEINDEX347 =
 {
+"structVkSwapchainPresentModesCreateInfoEXT.html#a2d8d240c25ee72cdc559c0d788295472":[5,0,2145,1],
 "structVkSwapchainPresentModesCreateInfoEXT.html#aa717a0da0743e4f8a190fa4f5bcdd258":[5,0,2145,2],
 "structVkSwapchainPresentModesCreateInfoEXT.html#af6dd299fdc1b5000122f1cdc41a04cf2":[5,0,2145,0],
 "structVkSwapchainPresentScalingCreateInfoEXT.html":[5,0,2146],
@@ -248,6 +249,5 @@ var NAVTREEINDEX347 =
 "structVkVideoEncodeH264CapabilitiesKHR.html":[5,0,2186],
 "structVkVideoEncodeH264CapabilitiesKHR.html#a009ac831500fb406c7956b8899f50045":[5,0,2186,6],
 "structVkVideoEncodeH264CapabilitiesKHR.html#a014a9a1dd305469b2acaa1e23ffd35db":[5,0,2186,4],
-"structVkVideoEncodeH264CapabilitiesKHR.html#a158257fc738d880342cd77560af9b787":[5,0,2186,11],
-"structVkVideoEncodeH264CapabilitiesKHR.html#a18706d7bf3d0812bc74c15ae50d11703":[5,0,2186,0]
+"structVkVideoEncodeH264CapabilitiesKHR.html#a158257fc738d880342cd77560af9b787":[5,0,2186,11]
 };

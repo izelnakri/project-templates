@@ -1,5 +1,6 @@
 var NAVTREEINDEX164 =
 {
+"ginitable_8h_source.html":[6,0,4,0,9,0,1,0,68],
 "ginputstream_8h.html":[6,0,4,0,9,0,1,0,69],
 "ginputstream_8h.html#a0574485440badb476ab2be6d5c29d309":[6,0,4,0,9,0,1,0,69,14],
 "ginputstream_8h.html#a08532080eed9302cd8901a299820edcb":[6,0,4,0,9,0,1,0,69,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX164 =
 "gio-visibility_8h.html#a8acfd7904dc5085443eada17f90b6641":[6,0,4,0,9,0,1,0,71,79],
 "gio-visibility_8h.html#a8b84a39b014c2b3178c50a5aeca5fd03":[6,0,4,0,9,0,1,0,71,130],
 "gio-visibility_8h.html#a8c294ffeb07522582b27433292d75fe4":[6,0,4,0,9,0,1,0,71,19],
-"gio-visibility_8h.html#a8c63194db1ac3865e00a8cd0941a77ab":[6,0,4,0,9,0,1,0,71,268],
-"gio-visibility_8h.html#a8efec18bd70648e3bef009a4742a2de0":[6,0,4,0,9,0,1,0,71,69]
+"gio-visibility_8h.html#a8c63194db1ac3865e00a8cd0941a77ab":[6,0,4,0,9,0,1,0,71,268]
 };

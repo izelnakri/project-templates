@@ -1,5 +1,6 @@
 var NAVTREEINDEX139 =
 {
+"gdbusinterfaceskeleton_8h.html#af6d261ef63702aa2abf8e56300668b1c":[6,0,4,0,9,0,1,0,28,12],
 "gdbusinterfaceskeleton_8h_source.html":[6,0,4,0,9,0,1,0,28],
 "gdbusintrospection_8h.html":[6,0,4,0,9,0,1,0,29],
 "gdbusintrospection_8h.html#a0d3de88aca8872229a658244a46bd5b4":[6,0,4,0,9,0,1,0,29,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX139 =
 "gdbusproxy_8h.html#a1144b04ad669d7b0143716cbf9b75574":[6,0,4,0,9,0,1,0,41,9],
 "gdbusproxy_8h.html#a135bb082c2a599ebf06339004cdc569c":[6,0,4,0,9,0,1,0,41,11],
 "gdbusproxy_8h.html#a15c2d4837210664837acafdfb0aa99f7":[6,0,4,0,9,0,1,0,41,23],
-"gdbusproxy_8h.html#a2464eb100b42c96759099341fe3bac6e":[6,0,4,0,9,0,1,0,41,27],
-"gdbusproxy_8h.html#a2e093ffc09eac8b0f8ed50da67641f80":[6,0,4,0,9,0,1,0,41,33]
+"gdbusproxy_8h.html#a2464eb100b42c96759099341fe3bac6e":[6,0,4,0,9,0,1,0,41,27]
 };

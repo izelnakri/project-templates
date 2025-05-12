@@ -1,5 +1,6 @@
 var NAVTREEINDEX217 =
 {
+"gtkshortcutcontroller_8h.html#a0a5b23c1181e33260a62af5fd8af753b":[6,0,4,0,8,0,0,2,167,3],
 "gtkshortcutcontroller_8h.html#a2330dc6d9e6ba81a3c99105538fe6249":[6,0,4,0,8,0,0,2,167,9],
 "gtkshortcutcontroller_8h.html#a52fab3dada522afb43d756fe755d2e03":[6,0,4,0,8,0,0,2,167,4],
 "gtkshortcutcontroller_8h.html#a6a1874b8337958a53998dda7b6316541":[6,0,4,0,8,0,0,2,167,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX217 =
 "gtkspinbutton_8h.html#a04caadd4491dd6131aed4d43ebb66792a8a655eaaab04f665e859182519fd303c":[6,0,4,0,8,0,0,2,183,5,0],
 "gtkspinbutton_8h.html#a091b14108279ebd961e735ffffb8ae98":[6,0,4,0,8,0,0,2,183,30],
 "gtkspinbutton_8h.html#a0bd05e0dfa1ed54fa6bb32a889486422":[6,0,4,0,8,0,0,2,183,0],
-"gtkspinbutton_8h.html#a198b099faf7b9e5d8863912129d3bd98":[6,0,4,0,8,0,0,2,183,27],
-"gtkspinbutton_8h.html#a2189fab2755aab0d099945705a80d692":[6,0,4,0,8,0,0,2,183,7]
+"gtkspinbutton_8h.html#a198b099faf7b9e5d8863912129d3bd98":[6,0,4,0,8,0,0,2,183,27]
 };

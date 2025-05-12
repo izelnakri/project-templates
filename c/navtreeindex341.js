@@ -1,5 +1,6 @@
 var NAVTREEINDEX341 =
 {
+"structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html#aacb231f46eaaf6a81c1f31ad760e79b6":[5,0,1918,0],
 "structVkPhysicalDeviceVideoEncodeQualityLevelInfoKHR.html":[5,0,1919],
 "structVkPhysicalDeviceVideoEncodeQualityLevelInfoKHR.html#a16606ae1c731ce1e2b83459b4725648a":[5,0,1919,0],
 "structVkPhysicalDeviceVideoEncodeQualityLevelInfoKHR.html#aaee20bc6a641fc284d27b11a75611419":[5,0,1919,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX341 =
 "structVkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.html#aa82b8cb48729f874add832febce1635c":[5,0,1933,1],
 "structVkPipelineBinaryCreateInfoKHR.html":[5,0,1934],
 "structVkPipelineBinaryCreateInfoKHR.html#a424a3cb372410f83858783976e3e21a2":[5,0,1934,1],
-"structVkPipelineBinaryCreateInfoKHR.html#a66201f4c07a3a6ac91eec68fbf8a934c":[5,0,1934,4],
-"structVkPipelineBinaryCreateInfoKHR.html#a694dd6bdd9f2bb52cf6386380380fa15":[5,0,1934,0]
+"structVkPipelineBinaryCreateInfoKHR.html#a66201f4c07a3a6ac91eec68fbf8a934c":[5,0,1934,4]
 };

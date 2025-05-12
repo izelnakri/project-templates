@@ -1,5 +1,6 @@
 var NAVTREEINDEX208 =
 {
+"gtkfontchooserdialog_8h.html#ab9bf63a0340d57e800133bb59a5a61a2":[6,0,4,0,8,0,0,2,2,34,0],
 "gtkfontchooserdialog_8h.html#abb2d4d408e0daae3518655adca5e9fd4":[6,0,4,0,8,0,0,2,2,34,1],
 "gtkfontchooserdialog_8h_source.html":[6,0,4,0,8,0,0,2,2,34],
 "gtkfontchooserwidget_8h.html":[6,0,4,0,8,0,0,2,2,35],
@@ -248,6 +249,5 @@ var NAVTREEINDEX208 =
 "gtkglarea_8h.html#a490b5c2f787878666e8d40d530b26e00":[6,0,4,0,8,0,0,2,96,16],
 "gtkglarea_8h.html#a662832649b5fbe985d375fd0ff1f1991":[6,0,4,0,8,0,0,2,96,4],
 "gtkglarea_8h.html#a6d4bc363863dedbf9671da82b41e8dde":[6,0,4,0,8,0,0,2,96,24],
-"gtkglarea_8h.html#a6e6d845486b8327e93b2094b4c21b2e7":[6,0,4,0,8,0,0,2,96,27],
-"gtkglarea_8h.html#a8bf746c7008b12fc2ee42ab7897a6419":[6,0,4,0,8,0,0,2,96,25]
+"gtkglarea_8h.html#a6e6d845486b8327e93b2094b4c21b2e7":[6,0,4,0,8,0,0,2,96,27]
 };

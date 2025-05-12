@@ -1,5 +1,6 @@
 var NAVTREEINDEX328 =
 {
+"structVkDisplayPlaneInfo2KHR.html#a5957757780563d5346ca866d143a87ec":[5,0,1373,3],
 "structVkDisplayPlaneInfo2KHR.html#ac09eaf6de3eed3457506093b2a55bfc8":[5,0,1373,0],
 "structVkDisplayPlaneInfo2KHR.html#aeec597f268d3e623e7a238c0eeb661b2":[5,0,1373,2],
 "structVkDisplayPlaneProperties2KHR.html":[5,0,1374],
@@ -248,6 +249,5 @@ var NAVTREEINDEX328 =
 "structVkExternalMemoryProperties.html#a389ad64bf614243de313d998c6c439b7":[5,0,1425,1],
 "structVkExternalMemoryProperties.html#a6c7fd3cfa478ae90630bd3898a407913":[5,0,1425,0],
 "structVkExternalMemoryProperties.html#ad3181f419ef96d5cd4d2de7c854c422f":[5,0,1425,2],
-"structVkExternalSemaphoreProperties.html":[5,0,1426],
-"structVkExternalSemaphoreProperties.html#a6359b93647195a6f30d6e0ab6e58724f":[5,0,1426,3]
+"structVkExternalSemaphoreProperties.html":[5,0,1426]
 };

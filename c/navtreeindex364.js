@@ -1,5 +1,6 @@
 var NAVTREEINDEX364 =
 {
+"structcri__stream__data.html#aa33321ef657fd380094ffc5df5c0a5c9":[5,0,602,3],
 "structcri__stream__data.html#aa4e0805ec31ba9ae2839980d2d787d7f":[5,0,602,1],
 "structcri__stream__data.html#ab6204589fb426af9585a2bd60512a258":[5,0,602,5],
 "structcriterion__assert__args.html":[5,0,603],
@@ -248,6 +249,5 @@ var NAVTREEINDEX364 =
 "structcurl__version__info__data.html#af732cc5f45e3df97e73160118ee7abf2":[5,0,634,22],
 "structcurl__version__info__data.html#af957e0bca22f36674d392657c32363e0":[5,0,634,15],
 "structcurl__version__info__data.html#afa8789779d0c2b3540fc2b64ef9a182e":[5,0,634,13],
-"structcurl__waitfd.html":[5,0,635],
-"structcurl__waitfd.html#a14e87b528f4a052ec65edbc14b6ab080":[5,0,635,2]
+"structcurl__waitfd.html":[5,0,635]
 };

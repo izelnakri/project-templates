@@ -1,5 +1,6 @@
 var NAVTREEINDEX215 =
 {
+"gtkprintsettings_8h.html#a97699f99c66499f46474d9a2ff9dc3d0":[6,0,4,0,8,0,0,2,3,5,5],
 "gtkprintsettings_8h.html#a9b268c6ea6cd9caed4f122bdee1a19ea":[6,0,4,0,8,0,0,2,3,5,7],
 "gtkprintsettings_8h.html#a9d63593fbeb5339af849a57a2e7543a3":[6,0,4,0,8,0,0,2,3,5,8],
 "gtkprintsettings_8h.html#a9f1359f5cad97d5ae93c5e3c7305db01":[6,0,4,0,8,0,0,2,3,5,22],
@@ -248,6 +249,5 @@ var NAVTREEINDEX215 =
 "gtkroot_8h.html#afcd8fd12843121164a8e47420694bb26":[6,0,4,0,8,0,0,2,151,0],
 "gtkroot_8h_source.html":[6,0,4,0,8,0,0,2,151],
 "gtkscale_8h.html":[6,0,4,0,8,0,0,2,152],
-"gtkscale_8h.html#a13a73a70277a05b1fd92de10eb54bf33":[6,0,4,0,8,0,0,2,152,3],
-"gtkscale_8h.html#a180ff5004556482b8f431b9ced202591":[6,0,4,0,8,0,0,2,152,16]
+"gtkscale_8h.html#a13a73a70277a05b1fd92de10eb54bf33":[6,0,4,0,8,0,0,2,152,3]
 };

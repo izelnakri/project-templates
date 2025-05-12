@@ -1,5 +1,6 @@
 var NAVTREEINDEX334 =
 {
+"structVkPhysicalDeviceCornerSampledImageFeaturesNV.html":[5,0,1647],
 "structVkPhysicalDeviceCornerSampledImageFeaturesNV.html#aae7cdfe3e55b87b5b803faa30cdb65c9":[5,0,1647,1],
 "structVkPhysicalDeviceCornerSampledImageFeaturesNV.html#ac2ed0b79593682d0f770b73e3a8202e7":[5,0,1647,0],
 "structVkPhysicalDeviceCornerSampledImageFeaturesNV.html#ae3eb61b441c653bb5a01cb35d26e5a17":[5,0,1647,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX334 =
 "structVkPhysicalDeviceDrmPropertiesEXT.html#a9003e73eedca483251c49ba44a409b35":[5,0,1680,4],
 "structVkPhysicalDeviceDrmPropertiesEXT.html#a9428d20301a641af69dbb6caa4b400e0":[5,0,1680,1],
 "structVkPhysicalDeviceDrmPropertiesEXT.html#aad8afdb713b1128f20b8946ba75690f0":[5,0,1680,7],
-"structVkPhysicalDeviceDrmPropertiesEXT.html#adbb32a4cb873ab3b59542fa5c4d53acf":[5,0,1680,2],
-"structVkPhysicalDeviceDynamicRenderingFeatures.html":[5,0,1681]
+"structVkPhysicalDeviceDrmPropertiesEXT.html#adbb32a4cb873ab3b59542fa5c4d53acf":[5,0,1680,2]
 };

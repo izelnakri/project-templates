@@ -1,5 +1,6 @@
 var NAVTREEINDEX212 =
 {
+"gtkmediastream_8h.html#aba15c6efdd1a738d13cc5e2b20dde332":[6,0,4,0,8,0,0,2,124,27],
 "gtkmediastream_8h.html#abe912758f1e021951a889a04338ac74a":[6,0,4,0,8,0,0,2,124,6],
 "gtkmediastream_8h.html#ac3365d11f2f30f6f6c865ec704a6ea2e":[6,0,4,0,8,0,0,2,124,15],
 "gtkmediastream_8h.html#ac88aed95b4bf80a9e4df4b35054e051c":[6,0,4,0,8,0,0,2,124,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX212 =
 "gtkoverlaylayout_8h.html#ae6773227a4940574617fd784e04de4c8":[6,0,4,0,8,0,0,2,137,2],
 "gtkoverlaylayout_8h_source.html":[6,0,4,0,8,0,0,2,137],
 "gtkpadcontroller_8h.html":[6,0,4,0,8,0,0,2,138],
-"gtkpadcontroller_8h.html#a1dab01c40b6b61723562161cf652ddfa":[6,0,4,0,8,0,0,2,138,1],
-"gtkpadcontroller_8h.html#a2738aff4afd92fb6620881690766224d":[6,0,4,0,8,0,0,2,138,14]
+"gtkpadcontroller_8h.html#a1dab01c40b6b61723562161cf652ddfa":[6,0,4,0,8,0,0,2,138,1]
 };

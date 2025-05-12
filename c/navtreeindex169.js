@@ -1,5 +1,6 @@
 var NAVTREEINDEX169 =
 {
+"giomodule_8h.html#aa8069c48a5b63ec664e758b42a89b735":[6,0,4,0,9,0,1,0,76,21],
 "giomodule_8h.html#aafb0ab8ea30f434fbd5c6949d456bcf8":[6,0,4,0,9,0,1,0,76,22],
 "giomodule_8h.html#ab0213af1e201ba9ad789cafaabdceda1":[6,0,4,0,9,0,1,0,76,5],
 "giomodule_8h.html#abaa44c5a0ee8787d9e58972384869ceb":[6,0,4,0,9,0,1,0,76,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX169 =
 "girepository_8h.html#ae439cc55124a5f370becfb7170de6bdd":[6,0,4,0,9,0,1,1,15,4],
 "girepository_8h.html#ae439cc55124a5f370becfb7170de6bdda96285c3280c3b6ca4160d10cbcc7d068":[6,0,4,0,9,0,1,1,15,4,0],
 "girepository_8h.html#ae439cc55124a5f370becfb7170de6bddaf078135d439a85caf5da61c6ad9605ff":[6,0,4,0,9,0,1,1,15,4,1],
-"girepository_8h.html#ae9d2aaf4e41f67eaad1e61713e8f200a":[6,0,4,0,9,0,1,1,15,24],
-"girepository_8h.html#aedb22f1ab320a8e4eb6000ace0cea5be":[6,0,4,0,9,0,1,1,15,29]
+"girepository_8h.html#ae9d2aaf4e41f67eaad1e61713e8f200a":[6,0,4,0,9,0,1,1,15,24]
 };

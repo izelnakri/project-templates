@@ -1,5 +1,6 @@
 var NAVTREEINDEX312 =
 {
+"structFT__Generic__.html#af0bf8b983254b662f293e9a20505e27e":[5,0,732,0],
 "structFT__GlyphRec__.html":[5,0,735],
 "structFT__GlyphRec__.html#a00679b5e2519affab0f3999718817f8e":[5,0,735,3],
 "structFT__GlyphRec__.html#a26b42a2610a69dcaed3e7c8b6d506211":[5,0,735,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX312 =
 "structFT__SizeRec__.html#a21b54fb07feaba8be23321054da98f5f":[5,0,778,0],
 "structFT__SizeRec__.html#a236c47ea3138e485c29b0d7baa5cf3b6":[5,0,778,2],
 "structFT__SizeRec__.html#a29a6b518d09f6cf1714d9aed01eddc01":[5,0,778,3],
-"structFT__SizeRec__.html#aa24520b093a9b4ba9ff388bfe7b9491d":[5,0,778,1],
-"structFT__Size__Metrics__.html":[5,0,776]
+"structFT__SizeRec__.html#aa24520b093a9b4ba9ff388bfe7b9491d":[5,0,778,1]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX284 =
 {
+"pango-fontset-simple_8h.html#a31d5abe176dddf3e65ff787c94838fae":[6,0,4,0,4,0,0,0,12,1],
 "pango-fontset-simple_8h.html#a566de32b3090841c0a7daf4826c15270":[6,0,4,0,4,0,0,0,12,8],
 "pango-fontset-simple_8h.html#a5719f3ded677ae19133e0feae7955377":[6,0,4,0,4,0,0,0,12,3],
 "pango-fontset-simple_8h.html#aa91640dafc2f79303994a61199a063b3":[6,0,4,0,4,0,0,0,12,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX284 =
 "pango-layout_8h.html#aef9058b34f02b50238ce1591f8b4f391":[6,0,4,0,4,0,0,0,19,77],
 "pango-layout_8h.html#af2a50dcac756c9f1aa66eae2e32ee14d":[6,0,4,0,4,0,0,0,19,17],
 "pango-layout_8h.html#af2a50dcac756c9f1aa66eae2e32ee14da1683ca03eb60546d3ebb7e00d8eb4c52":[6,0,4,0,4,0,0,0,19,17,2],
-"pango-layout_8h.html#af2a50dcac756c9f1aa66eae2e32ee14da7ebb2638066d22f0a11ecbe2b8f1d3d7":[6,0,4,0,4,0,0,0,19,17,0],
-"pango-layout_8h.html#af2a50dcac756c9f1aa66eae2e32ee14daea9f6e3ccd657abb3773e8eed3008152":[6,0,4,0,4,0,0,0,19,17,1]
+"pango-layout_8h.html#af2a50dcac756c9f1aa66eae2e32ee14da7ebb2638066d22f0a11ecbe2b8f1d3d7":[6,0,4,0,4,0,0,0,19,17,0]
 };

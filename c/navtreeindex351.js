@@ -1,5 +1,6 @@
 var NAVTREEINDEX351 =
 {
+"structWindowRewrite.html#a7c3f1a3485f37a65bf232ac0d9443f2e":[5,0,2283,0],
 "structWith.html":[5,0,2284],
 "structWith.html#a298ffbdfe6efe771b9d3ef372dff09e4":[5,0,2284,1],
 "structWith.html#a42f5ecda008d1671bb317b8219f5a6ed":[5,0,2284,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX351 =
 "struct__GDBusInterfaceInfo.html#a2b8d0815897eb51f77d544502ba2d001":[5,0,50,2],
 "struct__GDBusInterfaceInfo.html#a3acc90b84b348cf54e7089aa5ea5dc60":[5,0,50,0],
 "struct__GDBusInterfaceInfo.html#a9cd651c049cb6b8aebc343a0dd10f127":[5,0,50,4],
-"struct__GDBusInterfaceInfo.html#aca8fcc23f30365fbd320a2f6ae3f8ef8":[5,0,50,5],
-"struct__GDBusInterfaceInfo.html#adeb477976fbfde497a20a98a13c05eca":[5,0,50,1]
+"struct__GDBusInterfaceInfo.html#aca8fcc23f30365fbd320a2f6ae3f8ef8":[5,0,50,5]
 };

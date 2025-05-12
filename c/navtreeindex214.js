@@ -1,5 +1,6 @@
 var NAVTREEINDEX214 =
 {
+"gtkprintdialog_8h.html#a417b5bcb7f4dbd3fceb84bb2161b4c3f":[6,0,4,0,8,0,0,2,146,16],
 "gtkprintdialog_8h.html#a475d42496e22dc2bdbeda69440c5e2fe":[6,0,4,0,8,0,0,2,146,22],
 "gtkprintdialog_8h.html#a4b5fae235cd1c36204924a13ad43db40":[6,0,4,0,8,0,0,2,146,19],
 "gtkprintdialog_8h.html#a6ac913c1b1d243ba3cf6b51f932e2b03":[6,0,4,0,8,0,0,2,146,23],
@@ -248,6 +249,5 @@ var NAVTREEINDEX214 =
 "gtkprintsettings_8h.html#a8fbceab902bd0bf97f6823b9ee944ec9":[6,0,4,0,8,0,0,2,3,5,33],
 "gtkprintsettings_8h.html#a901570b7328cf02f049ae046ae6e52b7":[6,0,4,0,8,0,0,2,3,5,2],
 "gtkprintsettings_8h.html#a905e5c2bc0abb5c0490f47b4c93e78ff":[6,0,4,0,8,0,0,2,3,5,52],
-"gtkprintsettings_8h.html#a95540fffbca897b3a0118e8a7aafad14":[6,0,4,0,8,0,0,2,3,5,114],
-"gtkprintsettings_8h.html#a97699f99c66499f46474d9a2ff9dc3d0":[6,0,4,0,8,0,0,2,3,5,5]
+"gtkprintsettings_8h.html#a95540fffbca897b3a0118e8a7aafad14":[6,0,4,0,8,0,0,2,3,5,114]
 };

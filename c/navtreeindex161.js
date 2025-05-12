@@ -1,5 +1,6 @@
 var NAVTREEINDEX161 =
 {
+"ggettext_8h.html#a383c98f2d5ce86889b853903618aec39":[6,0,4,0,9,0,1,2,20,5],
 "ggettext_8h.html#a82f491d3eb7a128207a6734beff214d6":[6,0,4,0,9,0,1,2,20,0],
 "ggettext_8h.html#ad551ee690bdfd431ebd0c4303c3ab478":[6,0,4,0,9,0,1,2,20,3],
 "ggettext_8h.html#addf1a80b6a33c000b2c19b0aa2518621":[6,0,4,0,9,0,1,2,20,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX161 =
 "gi-visibility_8h.html#a4fc1849918afb5b8cffbdb71fb68e52b":[6,0,4,0,9,0,1,1,0,366],
 "gi-visibility_8h.html#a4fcf49a225be855aabbe59fe52606bf5":[6,0,4,0,9,0,1,1,0,42],
 "gi-visibility_8h.html#a521a053b7d5b03443a777477e8479075":[6,0,4,0,9,0,1,1,0,207],
-"gi-visibility_8h.html#a5241d9c0dc5a49b604ec79cf9fc45dec":[6,0,4,0,9,0,1,1,0,30],
-"gi-visibility_8h.html#a52e50dd0a1bcf4bad40efa9bec3fb917":[6,0,4,0,9,0,1,1,0,265]
+"gi-visibility_8h.html#a5241d9c0dc5a49b604ec79cf9fc45dec":[6,0,4,0,9,0,1,1,0,30]
 };

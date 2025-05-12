@@ -1,5 +1,6 @@
 var NAVTREEINDEX218 =
 {
+"gtkspinbutton_8h.html#a2189fab2755aab0d099945705a80d692":[6,0,4,0,8,0,0,2,183,7],
 "gtkspinbutton_8h.html#a2403eadbdb0c5f9b908ab454fad5b56f":[6,0,4,0,8,0,0,2,183,28],
 "gtkspinbutton_8h.html#a34453b4eba46ca30594618aabd290fcc":[6,0,4,0,8,0,0,2,183,14],
 "gtkspinbutton_8h.html#a37edecc3c5d9f24324b1e9a483efa5ea":[6,0,4,0,8,0,0,2,183,20],
@@ -248,6 +249,5 @@ var NAVTREEINDEX218 =
 "gtkstyleprovider_8h.html#af8686e18a49c0b6a7b4a47a4abfdf81d":[6,0,4,0,8,0,0,2,191,11],
 "gtkstyleprovider_8h_source.html":[6,0,4,0,8,0,0,2,191],
 "gtkswitch_8h.html":[6,0,4,0,8,0,0,2,192],
-"gtkswitch_8h.html#a109d7f214425e1e03068a9909a9c3370":[6,0,4,0,8,0,0,2,192,1],
-"gtkswitch_8h.html#a285473b6debdba78dbb7d2a914414d8d":[6,0,4,0,8,0,0,2,192,9]
+"gtkswitch_8h.html#a109d7f214425e1e03068a9909a9c3370":[6,0,4,0,8,0,0,2,192,1]
 };

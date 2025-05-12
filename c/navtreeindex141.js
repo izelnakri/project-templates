@@ -1,5 +1,6 @@
 var NAVTREEINDEX141 =
 {
+"gdk-pixbuf-features_8h.html#a9ab7d9b1d85c8083a66883b096030ea0":[6,0,4,0,13,0,0,0,4,8],
 "gdk-pixbuf-features_8h.html#aacb7071e7e821cbde7fafdce3b7f11af":[6,0,4,0,13,0,0,0,4,9],
 "gdk-pixbuf-features_8h.html#ab2c60de675120f4552bdcb909852a397":[6,0,4,0,13,0,0,0,4,6],
 "gdk-pixbuf-features_8h.html#ac6f19d8823081a5f7d5b2ea32bc77921":[6,0,4,0,13,0,0,0,4,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX141 =
 "gdk-visibility_8h.html#a46111baadf6c2d0a9041149bb9aeb4ef":[6,0,4,0,8,0,0,0,2,0,50],
 "gdk-visibility_8h.html#a466ea342edbb36b9b80924faab17296b":[6,0,4,0,8,0,0,0,2,0,125],
 "gdk-visibility_8h.html#a4777b0045f5fde45e1eaabd86d637b65":[6,0,4,0,8,0,0,0,2,0,87],
-"gdk-visibility_8h.html#a47b772918134e97ad3e2e9682f0b919a":[6,0,4,0,8,0,0,0,2,0,90],
-"gdk-visibility_8h.html#a49091554799c6bf98bd7679f7a72711a":[6,0,4,0,8,0,0,0,2,0,7]
+"gdk-visibility_8h.html#a47b772918134e97ad3e2e9682f0b919a":[6,0,4,0,8,0,0,0,2,0,90]
 };

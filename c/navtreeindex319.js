@@ -1,5 +1,6 @@
 var NAVTREEINDEX319 =
 {
+"structStdVideoEncodeH265ReferenceListsInfo.html#ac4310aebf9680387f88918576b211f83":[5,0,1055,2],
 "structStdVideoEncodeH265ReferenceListsInfo.html#aec15b32c5af20d5f106fd94a706c3248":[5,0,1055,3],
 "structStdVideoEncodeH265ReferenceListsInfoFlags.html":[5,0,1056],
 "structStdVideoEncodeH265ReferenceListsInfoFlags.html#a6a39e94956a143434578727c8723b574":[5,0,1056,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX319 =
 "structStdVideoH265PpsFlags.html#a75eb86a1cff467f29e46066c8df62c22":[5,0,1074,15],
 "structStdVideoH265PpsFlags.html#a7d4d7d47394e605960464acbb63c37eb":[5,0,1074,11],
 "structStdVideoH265PpsFlags.html#a82983efd22f5e0e3e20cd0baa2ff57e9":[5,0,1074,27],
-"structStdVideoH265PpsFlags.html#a90f6f615b7e11be97deed75ae1ce8622":[5,0,1074,7],
-"structStdVideoH265PpsFlags.html#a9596fb089ca43c59ff786316206d5195":[5,0,1074,8]
+"structStdVideoH265PpsFlags.html#a90f6f615b7e11be97deed75ae1ce8622":[5,0,1074,7]
 };

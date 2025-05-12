@@ -1,5 +1,6 @@
 var NAVTREEINDEX140 =
 {
+"gdbusproxy_8h.html#a2e093ffc09eac8b0f8ed50da67641f80":[6,0,4,0,9,0,1,0,41,33],
 "gdbusproxy_8h.html#a30436ba4aa3cfba3da827e68033d2a38":[6,0,4,0,9,0,1,0,41,34],
 "gdbusproxy_8h.html#a33e191dccd2664a43638d31da7ce972a":[6,0,4,0,9,0,1,0,41,24],
 "gdbusproxy_8h.html#a39022d8020097980e8ec3b8bb9c80981":[6,0,4,0,9,0,1,0,41,31],
@@ -248,6 +249,5 @@ var NAVTREEINDEX140 =
 "gdk-pixbuf-features_8h.html#a520c3d9868c05137e5ca61e473d94ed2":[6,0,4,0,13,0,0,0,4,7],
 "gdk-pixbuf-features_8h.html#a7e9bc4d2caa30faf15d4c187678cc4b0":[6,0,4,0,13,0,0,0,4,1],
 "gdk-pixbuf-features_8h.html#a8dee6a1e89f92f03285c9d89ba7a2a4c":[6,0,4,0,13,0,0,0,4,2],
-"gdk-pixbuf-features_8h.html#a8e79757e4e4bc62c4ea8ecfc9c169d28":[6,0,4,0,13,0,0,0,4,4],
-"gdk-pixbuf-features_8h.html#a9ab7d9b1d85c8083a66883b096030ea0":[6,0,4,0,13,0,0,0,4,8]
+"gdk-pixbuf-features_8h.html#a8e79757e4e4bc62c4ea8ecfc9c169d28":[6,0,4,0,13,0,0,0,4,4]
 };

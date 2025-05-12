@@ -1,5 +1,6 @@
 var NAVTREEINDEX185 =
 {
+"graphene-point3d_8h.html#ad6b70cca9cbacd01719f333271306093":[6,0,4,0,12,0,0,8,4],
 "graphene-point3d_8h.html#ad6cd66cbdd02fb0d86b150233543f7de":[6,0,4,0,12,0,0,8,11],
 "graphene-point3d_8h.html#adaf24e30a8ab5c8fa0916d8577adb783":[6,0,4,0,12,0,0,8,5],
 "graphene-point3d_8h_source.html":[6,0,4,0,12,0,0,8],
@@ -248,6 +249,5 @@ var NAVTREEINDEX185 =
 "graphene-simd4x4f_8h.html#a93673f9801afea5e900aba3f225f4228":[6,0,4,0,12,0,0,14,15],
 "graphene-simd4x4f_8h.html#a96595afd939841ba75bd009cadec1636":[6,0,4,0,12,0,0,14,26],
 "graphene-simd4x4f_8h.html#a9a0e230ce4569a9e21066ff00d48a68d":[6,0,4,0,12,0,0,14,0],
-"graphene-simd4x4f_8h.html#a9ce4d967d2f12ceab2bfa66b8e31a369":[6,0,4,0,12,0,0,14,16],
-"graphene-simd4x4f_8h.html#ab52c764d88d29b360cdc8a475ee7ccf8":[6,0,4,0,12,0,0,14,8]
+"graphene-simd4x4f_8h.html#a9ce4d967d2f12ceab2bfa66b8e31a369":[6,0,4,0,12,0,0,14,16]
 };

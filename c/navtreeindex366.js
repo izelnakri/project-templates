@@ -1,5 +1,6 @@
 var NAVTREEINDEX366 =
 {
+"structduk__heap.html#ac4718d3e8c84c5e09cfe6e0ed7ba5856":[5,0,672,10],
 "structduk__heap.html#aed0ef6d12659275479d5618edb35caa6":[5,0,672,9],
 "structduk__heaphdr.html":[5,0,673],
 "structduk__heaphdr.html#a0b3d5074e34601f7ff7579b0755c21a6":[5,0,673,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX366 =
 "structduk__tval__struct.html#acb91df3003836742d10f7cac242af884":[5,0,705,5],
 "structduk__tval__struct.html#ad57595675719c93a7b26c429ebcda3cc":[5,0,705,2],
 "structduk__tval__struct.html#adaee42c933580a3e9400d1ed09fb16bd":[5,0,705,16],
-"structduk__tval__struct.html#adedec5d21d5492f74d28e3813455760e":[5,0,705,13],
-"structduk__tval__struct.html#ae0ab0f488ebf5899ea207ebd04abf535":[5,0,705,18]
+"structduk__tval__struct.html#adedec5d21d5492f74d28e3813455760e":[5,0,705,13]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX325 =
 {
+"structVkCoarseSampleOrderCustomNV.html#a960104e587ba6219f36e28ed12142585":[5,0,1245,3],
 "structVkCoarseSampleOrderCustomNV.html#aed5f0e98810afb7ba56582ee2b7f74fb":[5,0,1245,2],
 "structVkColorBlendAdvancedEXT.html":[5,0,1246],
 "structVkColorBlendAdvancedEXT.html#a61139ced0418a4a334798427bb2fb256":[5,0,1246,4],
@@ -248,6 +249,5 @@ var NAVTREEINDEX325 =
 "structVkCuLaunchInfoNVX.html":[5,0,1285],
 "structVkCuLaunchInfoNVX.html#a0bbbcddd00a7ff18126ef9644ac0f722":[5,0,1285,8],
 "structVkCuLaunchInfoNVX.html#a2ce05e6afef268318bf5c800f6fe8ad9":[5,0,1285,10],
-"structVkCuLaunchInfoNVX.html#a3ddc4981f8e3d47abe4746d8ea4203e7":[5,0,1285,5],
-"structVkCuLaunchInfoNVX.html#a4b68a5004b66f681209c4b69647cf347":[5,0,1285,4]
+"structVkCuLaunchInfoNVX.html#a3ddc4981f8e3d47abe4746d8ea4203e7":[5,0,1285,5]
 };

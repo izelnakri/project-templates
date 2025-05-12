@@ -1,5 +1,6 @@
 var NAVTREEINDEX165 =
 {
+"gio-visibility_8h.html#a8efec18bd70648e3bef009a4742a2de0":[6,0,4,0,9,0,1,0,71,69],
 "gio-visibility_8h.html#a8f1ef0106c94182e597783dc8e011de5":[6,0,4,0,9,0,1,0,71,86],
 "gio-visibility_8h.html#a8feb6628593c5e93d7b3ab8d1c004ffe":[6,0,4,0,9,0,1,0,71,145],
 "gio-visibility_8h.html#a902badcae0343c4f8ff789a66a36b066":[6,0,4,0,9,0,1,0,71,188],
@@ -248,6 +249,5 @@ var NAVTREEINDEX165 =
 "giochannel_8h.html#a53ec350ea4a20a4af47cd848e47a1acead99cff5a4613c4660bf4f8e5a8151e84":[6,0,4,0,9,0,1,2,27,6,2],
 "giochannel_8h.html#a556f07b8e41c26a35403e7b6125d67b4":[6,0,4,0,9,0,1,2,27,24],
 "giochannel_8h.html#a5622e3de42f3e9ac6dd9edde876ff2f0":[6,0,4,0,9,0,1,2,27,17],
-"giochannel_8h.html#a5b5c92e2467e249cc142737e948d7d45":[6,0,4,0,9,0,1,2,27,43],
-"giochannel_8h.html#a601049e9e909a6fbef1e5ac434a0669c":[6,0,4,0,9,0,1,2,27,31]
+"giochannel_8h.html#a5b5c92e2467e249cc142737e948d7d45":[6,0,4,0,9,0,1,2,27,43]
 };

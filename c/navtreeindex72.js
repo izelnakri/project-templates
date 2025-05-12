@@ -1,5 +1,6 @@
 var NAVTREEINDEX72 =
 {
+"duktape-1_88_80_2examples_2hello_2hello_8c_source.html":[6,0,7,0,0,1,0,12,0],
 "duktape-1_88_80_2examples_2jxpretty_2jxpretty_8c.html":[6,0,7,0,0,1,0,13,0],
 "duktape-1_88_80_2examples_2jxpretty_2jxpretty_8c.html#a0ddf1224851353fc92bfbff6f499fa97":[6,0,7,0,0,1,0,13,0,1],
 "duktape-1_88_80_2examples_2jxpretty_2jxpretty_8c.html#afce2a5904a5c4e7be5542321b966c85d":[6,0,7,0,0,1,0,13,0,0],
@@ -59,8 +60,8 @@ var NAVTREEINDEX72 =
 "duktape-1_88_80_2src-noline_2duk__config_8h.html#a2d9821ab1135e2517d63fe2e5af3a378":[6,0,7,0,0,1,2,0,253],
 "duktape-1_88_80_2src-noline_2duk__config_8h.html#a2dd0bffd8f3aeabd99f05e0bd2f68b2a":[6,0,7,0,0,1,2,0,286],
 "duktape-1_88_80_2src-noline_2duk__config_8h.html#a2ddf8592c4c59228da9997ed1ba8e7a5":[6,0,7,0,0,1,2,0,16],
-"duktape-1_88_80_2src-noline_2duk__config_8h.html#a2e0096e9b049ab8b1670b8eac8c8dfc7":[6,0,7,0,0,1,2,0,55],
 "duktape-1_88_80_2src-noline_2duk__config_8h.html#a2e0096e9b049ab8b1670b8eac8c8dfc7":[6,0,7,0,0,1,2,0,56],
+"duktape-1_88_80_2src-noline_2duk__config_8h.html#a2e0096e9b049ab8b1670b8eac8c8dfc7":[6,0,7,0,0,1,2,0,55],
 "duktape-1_88_80_2src-noline_2duk__config_8h.html#a2ec2bea15adc98426c3a4cdc72d2aebb":[6,0,7,0,0,1,2,0,252],
 "duktape-1_88_80_2src-noline_2duk__config_8h.html#a2f56e7695042fafdaa257869cd02bf0b":[6,0,7,0,0,1,2,0,69],
 "duktape-1_88_80_2src-noline_2duk__config_8h.html#a30a59fc87dd09d3e9240e5419c37e996":[6,0,7,0,0,1,2,0,177],
@@ -248,6 +249,5 @@ var NAVTREEINDEX72 =
 "duktape-1_88_80_2src-noline_2duk__config_8h.html#abf100c75e6501bacb4cd089818e84d19":[6,0,7,0,0,1,2,0,201],
 "duktape-1_88_80_2src-noline_2duk__config_8h.html#ac11f9879b98bab44c95eeec993eaab73":[6,0,7,0,0,1,2,0,24],
 "duktape-1_88_80_2src-noline_2duk__config_8h.html#ac16281a1008253ba2e538f3238391443":[6,0,7,0,0,1,2,0,217],
-"duktape-1_88_80_2src-noline_2duk__config_8h.html#ac176f6049a9cba3519cc353c879e614b":[6,0,7,0,0,1,2,0,294],
-"duktape-1_88_80_2src-noline_2duk__config_8h.html#ac2bb14b9850e8ff45e0381fe4253d215":[6,0,7,0,0,1,2,0,70]
+"duktape-1_88_80_2src-noline_2duk__config_8h.html#ac176f6049a9cba3519cc353c879e614b":[6,0,7,0,0,1,2,0,294]
 };

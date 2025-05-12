@@ -1,5 +1,6 @@
 var NAVTREEINDEX170 =
 {
+"girepository_8h.html#aedb22f1ab320a8e4eb6000ace0cea5be":[6,0,4,0,9,0,1,1,15,29],
 "girepository_8h.html#af030bb516dc29ddf532d90abe3125b68":[6,0,4,0,9,0,1,1,15,15],
 "girepository_8h.html#af3c48adcfb4fad2a92f247e130585235":[6,0,4,0,9,0,1,1,15,11],
 "girepository_8h.html#af4f8daa6c60cf65c658b63f4f6e583df":[6,0,4,0,9,0,1,1,15,6],
@@ -248,6 +249,5 @@ var NAVTREEINDEX170 =
 "gkeyfile_8h.html#a71c2c462a5052398069d5e57cdb98052":[6,0,4,0,9,0,1,2,28,72],
 "gkeyfile_8h.html#a73fcf744d79cb23f7c468f2eb3d6681f":[6,0,4,0,9,0,1,2,28,36],
 "gkeyfile_8h.html#a74d23b9f43d70b0871832ab87e2aaf68":[6,0,4,0,9,0,1,2,28,59],
-"gkeyfile_8h.html#a75dc0a1ddb9919366357fad84d3d2bca":[6,0,4,0,9,0,1,2,28,67],
-"gkeyfile_8h.html#a779368bf9479221d343a7a5b21424521":[6,0,4,0,9,0,1,2,28,55]
+"gkeyfile_8h.html#a75dc0a1ddb9919366357fad84d3d2bca":[6,0,4,0,9,0,1,2,28,67]
 };

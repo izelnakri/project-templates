@@ -1,5 +1,6 @@
 var NAVTREEINDEX236 =
 {
+"hb-font_8h.html#aff2c8ef51477bf05b238fe7621a5848e":[6,0,4,0,2,0,0,9,87],
 "hb-font_8h_source.html":[6,0,4,0,2,0,0,9],
 "hb-ft_8h.html":[6,0,4,0,2,0,0,10],
 "hb-ft_8h.html#a04a47701cbe39467e15203db9b55fa2e":[6,0,4,0,2,0,0,10,12],
@@ -248,6 +249,5 @@ var NAVTREEINDEX236 =
 "hb-ot-layout_8h.html#a94a78b5acecf5fd9407841b5b24f8cb1":[6,0,4,0,2,0,0,20,38],
 "hb-ot-layout_8h.html#a99a5d2553f7ee764422cb1d86d3deff1":[6,0,4,0,2,0,0,20,11],
 "hb-ot-layout_8h.html#a9a352bb0c7dce2d5db1aa7706f65f746":[6,0,4,0,2,0,0,20,52],
-"hb-ot-layout_8h.html#a9f003e54c3ea728f3cab0cbcf96f783d":[6,0,4,0,2,0,0,20,50],
-"hb-ot-layout_8h.html#aab0722122e964cb8d82db1a00e9cfca8":[6,0,4,0,2,0,0,20,34]
+"hb-ot-layout_8h.html#a9f003e54c3ea728f3cab0cbcf96f783d":[6,0,4,0,2,0,0,20,50]
 };

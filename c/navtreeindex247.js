@@ -1,5 +1,6 @@
 var NAVTREEINDEX247 =
 {
+"lua-5_81_85_2src_2loslib_8c.html#a38dd90cacd77820790f203a6216c0de3":[6,0,7,0,0,2,1,30,11],
 "lua-5_81_85_2src_2loslib_8c.html#a3ec58cf7ef7bd5214b2688f74dcefb73":[6,0,7,0,0,2,1,30,0],
 "lua-5_81_85_2src_2loslib_8c.html#a4d6a2679129f7d65f34a60a6c701b782":[6,0,7,0,0,2,1,30,3],
 "lua-5_81_85_2src_2loslib_8c.html#a5dbd1fc25ad13c0f325d09f811bb6172":[6,0,7,0,0,2,1,30,2],
@@ -248,6 +249,5 @@ var NAVTREEINDEX247 =
 "lua-5_81_85_2src_2ltable_8c.html#a18a6f1b00c04ce1043c3286bac09f050":[6,0,7,0,0,2,1,38,18],
 "lua-5_81_85_2src_2ltable_8c.html#a1c12605102ac3a5e5fa890a0055a43e4":[6,0,7,0,0,2,1,38,26],
 "lua-5_81_85_2src_2ltable_8c.html#a1c2d351f8500874d4b4b10e9785eb74f":[6,0,7,0,0,2,1,38,22],
-"lua-5_81_85_2src_2ltable_8c.html#a21431126fe0cf318103085016a832cf5":[6,0,7,0,0,2,1,38,0],
-"lua-5_81_85_2src_2ltable_8c.html#a2a789ee738a448f6cc33f4f0751ea676":[6,0,7,0,0,2,1,38,29]
+"lua-5_81_85_2src_2ltable_8c.html#a21431126fe0cf318103085016a832cf5":[6,0,7,0,0,2,1,38,0]
 };

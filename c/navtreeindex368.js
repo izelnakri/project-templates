@@ -1,5 +1,6 @@
 var NAVTREEINDEX368 =
 {
+"structlfs__Lock.html":[5,0,866],
 "structlfs__Lock.html#a3a7ed03fd5967fb99c2b9bcd24fca961":[5,0,866,0],
 "structluaL__Buffer.html":[5,0,880],
 "structluaL__Buffer.html#a0af2235170aa873ae30b2dab5a92d78f":[5,0,880,9],
@@ -68,8 +69,8 @@ var NAVTREEINDEX368 =
 "structlua__State.html#ac2903d4a712ca1c2d114f541636490f5":[5,0,877,0],
 "structlua__State.html#ac388127d044b54d2e9779beb44398845":[5,0,877,21],
 "structlua__State.html#ac80e7abfd3936928a7af86ceae44c952":[5,0,877,35],
-"structlua__State.html#ad4c84ca6425b0073ab2d83f05a05e788":[5,0,877,13],
 "structlua__State.html#ad4c84ca6425b0073ab2d83f05a05e788":[5,0,877,14],
+"structlua__State.html#ad4c84ca6425b0073ab2d83f05a05e788":[5,0,877,13],
 "structlua__State.html#ad5311df12c1bfa3c4e11b7a1dbecaeda":[5,0,877,7],
 "structlua__State.html#ad9759fece8a45295d70e20555e62d2b4":[5,0,877,27],
 "structlua__State.html#adf85101a0cf71cb6eefd31c0ab8097db":[5,0,877,37],
@@ -248,6 +249,5 @@ var NAVTREEINDEX368 =
 "structmg__request__info.html#a369e379c8cb6f102ef44499989055279":[5,0,908,7],
 "structmg__request__info.html#a383d55fab7d885a52cfa9c8a56f2a7c3":[5,0,908,17],
 "structmg__request__info.html#a5ae29523876fdcbb546165024dabc8c0":[5,0,908,8],
-"structmg__request__info.html#a70b531b329bd93e4850c2544893fa9a8":[5,0,908,14],
-"structmg__request__info.html#a73782f8b56d710c02381d000d4ac1c6a":[5,0,908,1]
+"structmg__request__info.html#a70b531b329bd93e4850c2544893fa9a8":[5,0,908,14]
 };

@@ -1,5 +1,6 @@
 var NAVTREEINDEX350 =
 {
+"structWalIterator_1_1WalSegment.html#a3eedec5e8e8dd94be670d50ac144a959":[5,0,2261,0,3],
 "structWalIterator_1_1WalSegment.html#a5e43273a11dc5856934834c0cdf7f198":[5,0,2261,0,1],
 "structWalIterator_1_1WalSegment.html#ad80cf479aa670eda7aa1adee607af7d9":[5,0,2261,0,4],
 "structWalIterator_1_1WalSegment.html#adec397836a127acafcc551cb1fdcd851":[5,0,2261,0,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX350 =
 "structWindowRewrite.html#a2338999bd0afbd1d39e01ad05d65dad7":[5,0,2283,3],
 "structWindowRewrite.html#a49d7114e9421cdad9fe31ba24be67896":[5,0,2283,2],
 "structWindowRewrite.html#a4c8e30eec6912a56128646b5cdbad715":[5,0,2283,1],
-"structWindowRewrite.html#a78a4d67508a72ddabdfe5a8e9682ceb9":[5,0,2283,4],
-"structWindowRewrite.html#a7c3f1a3485f37a65bf232ac0d9443f2e":[5,0,2283,0]
+"structWindowRewrite.html#a78a4d67508a72ddabdfe5a8e9682ceb9":[5,0,2283,4]
 };

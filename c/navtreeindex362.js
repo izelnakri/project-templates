@@ -1,5 +1,6 @@
 var NAVTREEINDEX362 =
 {
+"struct__GtkWindowClass.html#a5fc75e6e3a509bbb03d10c4607c2ec8a":[5,0,434,2],
 "struct__GtkWindowClass.html#a73becfdd225024ac2b3d74e4963ffadd":[5,0,434,4],
 "struct__GtkWindowClass.html#ac133a06292857d56d460ec28ac590c59":[5,0,434,6],
 "struct__GtkWindowClass.html#ac6013edbb086efe1a4ff559b2feb3e52":[5,0,434,0],
@@ -248,6 +249,5 @@ var NAVTREEINDEX362 =
 "struct__PangoLogAttr.html#af1f904ce6f3eed2610bd5e59179cd4b7":[5,0,538,8],
 "struct__PangoMatrix.html":[5,0,539],
 "struct__PangoMatrix.html#a0de7d28a2f1e1de5d53cb64013ec6e2c":[5,0,539,5],
-"struct__PangoMatrix.html#a24e19055f3823b5aa98451f5c5aba09c":[5,0,539,2],
-"struct__PangoMatrix.html#a3847b3556c4b27586effb6cf4f1d42d4":[5,0,539,3]
+"struct__PangoMatrix.html#a24e19055f3823b5aa98451f5c5aba09c":[5,0,539,2]
 };

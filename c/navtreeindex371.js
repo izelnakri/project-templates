@@ -1,5 +1,6 @@
 var NAVTREEINDEX371 =
 {
+"structsqlite3__index__info.html#ac63f4ebfe8d9331b040fa9e0e47c9d70":[5,0,981,11],
 "structsqlite3__index__info.html#adcdf25dcf9848a6fedf539bb9c921b7f":[5,0,981,8],
 "structsqlite3__index__info.html#ae861993a30ce914a5214eab2579d935a":[5,0,981,12],
 "structsqlite3__index__info.html#afcee17707a1c147fbd55c23c807fdae3":[5,0,981,10],
@@ -248,6 +249,5 @@ var NAVTREEINDEX371 =
 "structunixShmNode.html#ad241b0a85f01110310cea91aa38fccb2":[5,0,1124,2],
 "structunixShmNode.html#ae8126f9db70a758c2f340ec06869e02b":[5,0,1124,9],
 "structunixShmNode.html#af4fbec455d2d40967cc1e67b4c244192":[5,0,1124,8],
-"structunix__syscall.html":[5,0,1119],
-"structunix__syscall.html#a203d8ab871b9baf8326eddf31cd0c954":[5,0,1119,1]
+"structunix__syscall.html":[5,0,1119]
 };

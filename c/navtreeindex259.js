@@ -1,5 +1,6 @@
 var NAVTREEINDEX259 =
 {
+"lua-5_83_86_2src_2lapi_8c.html":[6,0,7,0,0,4,0,0],
 "lua-5_83_86_2src_2lapi_8c.html#a01ac82fa494af5e7c3e10c87a8052cf7":[6,0,7,0,0,4,0,0,54],
 "lua-5_83_86_2src_2lapi_8c.html#a0667fbf88666853554967226d9a3df4d":[6,0,7,0,0,4,0,0,13],
 "lua-5_83_86_2src_2lapi_8c.html#a07952d410dfe83a8392e352125a35769":[6,0,7,0,0,4,0,0,5],
@@ -248,6 +249,5 @@ var NAVTREEINDEX259 =
 "lua-5_83_86_2src_2lauxlib_8h.html#afd30f08bd397c584ea503c124035103c":[6,0,7,0,0,4,0,3,41],
 "lua-5_83_86_2src_2lauxlib_8h.html#afda229e5f738702176f38feca764d264":[6,0,7,0,0,4,0,3,38],
 "lua-5_83_86_2src_2lauxlib_8h_source.html":[6,0,7,0,0,4,0,3],
-"lua-5_83_86_2src_2lbaselib_8c.html":[6,0,7,0,0,4,0,4],
-"lua-5_83_86_2src_2lbaselib_8c.html#a07f71966c943cc9761ab129f64d4ac80":[6,0,7,0,0,4,0,4,11]
+"lua-5_83_86_2src_2lbaselib_8c.html":[6,0,7,0,0,4,0,4]
 };

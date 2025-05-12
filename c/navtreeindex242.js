@@ -1,5 +1,6 @@
 var NAVTREEINDEX242 =
 {
+"lsqlite3_8c.html#a60f806982f4f98423be0137836761401":[6,0,7,0,0,9,89],
 "lsqlite3_8c.html#a618cb32cb70b336d3e7e6024201e1eb4":[6,0,7,0,0,9,60],
 "lsqlite3_8c.html#a61ba0dac7decf3d62fd1addd68a2c336":[6,0,7,0,0,9,50],
 "lsqlite3_8c.html#a62d133ed3de88ec9c4b69bdc87f66d82":[6,0,7,0,0,9,81],
@@ -248,6 +249,5 @@ var NAVTREEINDEX242 =
 "lua-5_81_85_2src_2lauxlib_8c.html#af127bffdee2105233437be5b33c68156":[6,0,7,0,0,2,1,2,14],
 "lua-5_81_85_2src_2lauxlib_8c.html#af748995344183a69a796f0c4cc9dbbf5":[6,0,7,0,0,2,1,2,17],
 "lua-5_81_85_2src_2lauxlib_8c.html#af7c3c76f83daf05cfc6e50965b122d88":[6,0,7,0,0,2,1,2,28],
-"lua-5_81_85_2src_2lauxlib_8c_source.html":[6,0,7,0,0,2,1,2],
-"lua-5_81_85_2src_2lauxlib_8h.html":[6,0,7,0,0,2,1,3]
+"lua-5_81_85_2src_2lauxlib_8c_source.html":[6,0,7,0,0,2,1,2]
 };

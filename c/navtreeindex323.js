@@ -1,5 +1,6 @@
 var NAVTREEINDEX323 =
 {
+"structVkAccelerationStructureInfoNV.html":[5,0,1161],
 "structVkAccelerationStructureInfoNV.html#a54a768baeb0c05eb37ce75f8f4f08df2":[5,0,1161,2],
 "structVkAccelerationStructureInfoNV.html#a7383bccf8cfea0669fe6564c3380fff2":[5,0,1161,4],
 "structVkAccelerationStructureInfoNV.html#a78c4e804fa7850595dfe25b33976bf35":[5,0,1161,3],
@@ -248,6 +249,5 @@ var NAVTREEINDEX323 =
 "structVkBindDescriptorSetsInfoKHR.html#a2c9d8e64a88ba9b3a8f57ebd6e4e51d5":[5,0,1199,8],
 "structVkBindDescriptorSetsInfoKHR.html#a49dc79f53face0638c6a7a53c817acc1":[5,0,1199,2],
 "structVkBindDescriptorSetsInfoKHR.html#a7a62dfe669922149f7930acdfead6bd8":[5,0,1199,0],
-"structVkBindDescriptorSetsInfoKHR.html#ab7e68b4ea818d5a3d5cafb83f090edda":[5,0,1199,6],
-"structVkBindDescriptorSetsInfoKHR.html#adb87c963995f5882e5317f58f6494253":[5,0,1199,7]
+"structVkBindDescriptorSetsInfoKHR.html#ab7e68b4ea818d5a3d5cafb83f090edda":[5,0,1199,6]
 };
