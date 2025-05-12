@@ -98,8 +98,8 @@ $(function(){initNavTree('c_09_09_2benchmarks_2bench__user_8cpp.html',''); initR
   <div class="headertitle"><div class="title">bench_user.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;benchmark/benchmark.h&gt;</code><br />
-<code>#include &quot;user.hpp&quot;</code><br />
+<div class="textblock"><code>#include &quot;user.hpp&quot;</code><br />
+<code>#include &lt;benchmark/benchmark.h&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;sstream&gt;</code><br />
 </div>
@@ -195,11 +195,12 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="c_09_09_2benchmarks_2bench__user_8cpp_source.html#l00008">8</a> of file <a class="el" href="c_09_09_2benchmarks_2bench__user_8cpp_source.html">c++/benchmarks/bench_user.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    8</span>                                                      {</div>
-<div class="line"><span class="lineno">    9</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_define" href="gi18n-lib_8h.html#a32a3cf3d9dd914f5aeeca5423c157934">_</a> : state) {</div>
-<div class="line"><span class="lineno">   10</span>        <span class="comment">// Prevent compiler from optimizing away the object</span></div>
-<div class="line"><span class="lineno">   11</span>        benchmark::DoNotOptimize(<a class="code hl_struct" href="structUser.html">User</a>(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>));</div>
-<div class="line"><span class="lineno">   12</span>    }</div>
-<div class="line"><span class="lineno">   13</span>}</div>
+<div class="line"><span class="lineno">    9</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_define" href="gi18n-lib_8h.html#a32a3cf3d9dd914f5aeeca5423c157934">_</a> : state) {</div>
+<div class="line"><span class="lineno">   10</span>    <span class="comment">// Prevent compiler from optimizing away the object</span></div>
+<div class="line"><span class="lineno">   11</span>    benchmark::DoNotOptimize(</div>
+<div class="line"><span class="lineno">   12</span>        <a class="code hl_struct" href="structUser.html">User</a>(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>));</div>
+<div class="line"><span class="lineno">   13</span>  }</div>
+<div class="line"><span class="lineno">   14</span>}</div>
 <div class="ttc" id="agi18n-lib_8h_html_a32a3cf3d9dd914f5aeeca5423c157934"><div class="ttname"><a href="gi18n-lib_8h.html#a32a3cf3d9dd914f5aeeca5423c157934">_</a></div><div class="ttdeci">#define _(String)</div><div class="ttdef"><b>Definition</b> <a href="gi18n-lib_8h_source.html#l00032">gi18n-lib.h:32</a></div></div>
 <div class="ttc" id="astructUser_html"><div class="ttname"><a href="structUser.html">User</a></div><div class="ttdoc">Structure representing a GitHub user.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00009">user.h:9</a></div></div>
 </div><!-- fragment -->
@@ -230,19 +231,19 @@ Functions</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="c_09_09_2benchmarks_2bench__user_8cpp_source.html#l00017">17</a> of file <a class="el" href="c_09_09_2benchmarks_2bench__user_8cpp_source.html">c++/benchmarks/bench_user.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   17</span>                                                {</div>
-<div class="line"><span class="lineno">   18</span>    <a class="code hl_struct" href="structUser.html">User</a> user(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
-<div class="line"><span class="lineno">   19</span> </div>
-<div class="line"><span class="lineno">   20</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_define" href="gi18n-lib_8h.html#a32a3cf3d9dd914f5aeeca5423c157934">_</a> : state) {</div>
-<div class="line"><span class="lineno">   21</span>        std::ostringstream oss;</div>
-<div class="line"><span class="lineno">   22</span>        std::streambuf* old = std::cout.rdbuf(oss.rdbuf());  <span class="comment">// Redirect std::cout</span></div>
-<div class="line"><span class="lineno">   23</span>        user.print();</div>
-<div class="line"><span class="lineno">   24</span>        std::cout.rdbuf(old);  <span class="comment">// Restore original buffer</span></div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>        benchmark::DoNotOptimize(oss.str());  <span class="comment">// Prevent optimization</span></div>
-<div class="line"><span class="lineno">   27</span>    }</div>
-<div class="line"><span class="lineno">   28</span>}</div>
+<p class="definition">Definition at line <a class="el" href="c_09_09_2benchmarks_2bench__user_8cpp_source.html#l00018">18</a> of file <a class="el" href="c_09_09_2benchmarks_2bench__user_8cpp_source.html">c++/benchmarks/bench_user.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   18</span>                                                {</div>
+<div class="line"><span class="lineno">   19</span>  <a class="code hl_struct" href="structUser.html">User</a> user(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
+<div class="line"><span class="lineno">   20</span> </div>
+<div class="line"><span class="lineno">   21</span>  <span class="keywordflow">for</span> (<span class="keyword">auto</span> <a class="code hl_define" href="gi18n-lib_8h.html#a32a3cf3d9dd914f5aeeca5423c157934">_</a> : state) {</div>
+<div class="line"><span class="lineno">   22</span>    std::ostringstream oss;</div>
+<div class="line"><span class="lineno">   23</span>    std::streambuf *old = std::cout.rdbuf(oss.rdbuf()); <span class="comment">// Redirect std::cout</span></div>
+<div class="line"><span class="lineno">   24</span>    user.print();</div>
+<div class="line"><span class="lineno">   25</span>    std::cout.rdbuf(old); <span class="comment">// Restore original buffer</span></div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>    benchmark::DoNotOptimize(oss.str()); <span class="comment">// Prevent optimization</span></div>
+<div class="line"><span class="lineno">   28</span>  }</div>
+<div class="line"><span class="lineno">   29</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="gi18n-lib_8h_source.html#l00032">_</a>.</p>
 

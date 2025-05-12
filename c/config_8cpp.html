@@ -129,27 +129,27 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="config_8cpp_source.html#l00008">8</a> of file <a class="el" href="config_8cpp_source.html">config.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    8</span>                                                            {</div>
-<div class="line"><span class="lineno">    9</span>    AppConfig config;</div>
+<div class="line"><span class="lineno">    9</span>  AppConfig config;</div>
 <div class="line"><span class="lineno">   10</span> </div>
-<div class="line"><span class="lineno">   11</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; args.size(); ++i) {</div>
-<div class="line"><span class="lineno">   12</span>        <span class="keyword">const</span> std::string&amp; <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> = args[i];</div>
+<div class="line"><span class="lineno">   11</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; args.size(); ++i) {</div>
+<div class="line"><span class="lineno">   12</span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> = args[i];</div>
 <div class="line"><span class="lineno">   13</span> </div>
-<div class="line"><span class="lineno">   14</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--user&quot;</span> &amp;&amp; i + 1 &lt; args.size()) {</div>
-<div class="line"><span class="lineno">   15</span>            config.username = args[++i];</div>
-<div class="line"><span class="lineno">   16</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--user=&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   17</span>            config.username = <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7);</div>
-<div class="line"><span class="lineno">   18</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--server&quot;</span>) {</div>
-<div class="line"><span class="lineno">   19</span>            config.run_server = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   20</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--port=&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   21</span>            <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   22</span>                config.port = std::stoi(<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
-<div class="line"><span class="lineno">   23</span>            } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp;) {</div>
-<div class="line"><span class="lineno">   24</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Invalid port number: &quot;</span> + <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
-<div class="line"><span class="lineno">   25</span>            }</div>
-<div class="line"><span class="lineno">   26</span>        }</div>
-<div class="line"><span class="lineno">   27</span>    }</div>
+<div class="line"><span class="lineno">   14</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--user&quot;</span> &amp;&amp; i + 1 &lt; args.size()) {</div>
+<div class="line"><span class="lineno">   15</span>      config.username = args[++i];</div>
+<div class="line"><span class="lineno">   16</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--user=&quot;</span>)) {</div>
+<div class="line"><span class="lineno">   17</span>      config.username = <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7);</div>
+<div class="line"><span class="lineno">   18</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--server&quot;</span>) {</div>
+<div class="line"><span class="lineno">   19</span>      config.run_server = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   20</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--port=&quot;</span>)) {</div>
+<div class="line"><span class="lineno">   21</span>      <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   22</span>        config.port = std::stoi(<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
+<div class="line"><span class="lineno">   23</span>      } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;) {</div>
+<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Invalid port number: &quot;</span> + <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
+<div class="line"><span class="lineno">   25</span>      }</div>
+<div class="line"><span class="lineno">   26</span>    }</div>
+<div class="line"><span class="lineno">   27</span>  }</div>
 <div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">return</span> config;</div>
+<div class="line"><span class="lineno">   29</span>  <span class="keywordflow">return</span> config;</div>
 <div class="line"><span class="lineno">   30</span>}</div>
 <div class="ttc" id="acurl_8h_html_a7d68018e95e3d4e6b703538ac1c8c411"><div class="ttname"><a href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a></div><div class="ttdeci">CURL_EXTERN int void * arg</div><div class="ttdef"><b>Definition</b> <a href="curl_8h_source.html#l02622">curl.h:2622</a></div></div>
 </div><!-- fragment -->

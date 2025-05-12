@@ -99,13 +99,13 @@ $(function(){initNavTree('test__server_8cpp.html',''); initResizable(); });
   <div class="headertitle"><div class="title">test_server.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;catch2/catch_test_macros.hpp&gt;</code><br />
-<code>#include &quot;server.hpp&quot;</code><br />
-<code>#include &lt;thread&gt;</code><br />
-<code>#include &lt;chrono&gt;</code><br />
-<code>#include &lt;boost/beast/http.hpp&gt;</code><br />
-<code>#include &lt;boost/beast/core.hpp&gt;</code><br />
+<div class="textblock"><code>#include &quot;server.hpp&quot;</code><br />
 <code>#include &lt;boost/asio.hpp&gt;</code><br />
+<code>#include &lt;boost/beast/core.hpp&gt;</code><br />
+<code>#include &lt;boost/beast/http.hpp&gt;</code><br />
+<code>#include &lt;catch2/catch_test_macros.hpp&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
 </div>
 <p><a href="test__server_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -154,41 +154,42 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="test__server_8cpp_source.html#l00014">14</a> of file <a class="el" href="test__server_8cpp_source.html">test_server.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   14</span>                                                   {</div>
-<div class="line"><span class="lineno">   15</span>    <span class="keyword">const</span> <span class="keywordtype">int</span> test_port = 8123;</div>
+<div class="line"><span class="lineno">   15</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> test_port = 8123;</div>
 <div class="line"><span class="lineno">   16</span> </div>
-<div class="line"><span class="lineno">   17</span>    std::thread server_thread([&amp;]() {</div>
-<div class="line"><span class="lineno">   18</span>        <a class="code hl_function" href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a>(test_port); <span class="comment">// will block</span></div>
-<div class="line"><span class="lineno">   19</span>    });</div>
+<div class="line"><span class="lineno">   17</span>  std::thread server_thread([&amp;]() {</div>
+<div class="line"><span class="lineno">   18</span>    <a class="code hl_function" href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a>(test_port); <span class="comment">// will block</span></div>
+<div class="line"><span class="lineno">   19</span>  });</div>
 <div class="line"><span class="lineno">   20</span> </div>
-<div class="line"><span class="lineno">   21</span>    std::this_thread::sleep_for(std::chrono::seconds(2)); <span class="comment">// wait for server to start</span></div>
-<div class="line"><span class="lineno">   22</span> </div>
-<div class="line"><span class="lineno">   23</span>    net::io_context ioc;</div>
-<div class="line"><span class="lineno">   24</span>    tcp::resolver resolver(ioc);</div>
-<div class="line"><span class="lineno">   25</span>    <span class="keyword">auto</span> <span class="keyword">const</span> results = resolver.resolve(<span class="stringliteral">&quot;127.0.0.1&quot;</span>, std::to_string(test_port));</div>
-<div class="line"><span class="lineno">   26</span> </div>
-<div class="line"><span class="lineno">   27</span>    beast::tcp_stream stream(ioc);</div>
-<div class="line"><span class="lineno">   28</span>    stream.connect(results);</div>
-<div class="line"><span class="lineno">   29</span> </div>
-<div class="line"><span class="lineno">   30</span>    http::request&lt;http::string_body&gt; req(http::verb::get, <span class="stringliteral">&quot;/octocat&quot;</span>, 11);</div>
-<div class="line"><span class="lineno">   31</span>    req.set(http::field::host, <span class="stringliteral">&quot;127.0.0.1&quot;</span>);</div>
-<div class="line"><span class="lineno">   32</span>    req.set(http::field::user_agent, <span class="stringliteral">&quot;test-client&quot;</span>);</div>
-<div class="line"><span class="lineno">   33</span> </div>
-<div class="line"><span class="lineno">   34</span>    http::write(stream, req);</div>
-<div class="line"><span class="lineno">   35</span> </div>
-<div class="line"><span class="lineno">   36</span>    beast::flat_buffer buffer;</div>
-<div class="line"><span class="lineno">   37</span>    http::response&lt;http::string_body&gt; res;</div>
-<div class="line"><span class="lineno">   38</span>    http::read(stream, buffer, res);</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    REQUIRE(res.result() == http::status::ok);</div>
-<div class="line"><span class="lineno">   41</span>    REQUIRE(res.body().find(<span class="stringliteral">&quot;octocat&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   42</span> </div>
-<div class="line"><span class="lineno">   43</span>    beast::error_code ec;</div>
-<div class="line"><span class="lineno">   44</span>    stream.socket().shutdown(tcp::socket::shutdown_both, ec);</div>
-<div class="line"><span class="lineno">   45</span> </div>
-<div class="line"><span class="lineno">   46</span>    <span class="comment">// Kill server (not ideal, better to make server stop externally)</span></div>
-<div class="line"><span class="lineno">   47</span>    std::raise(SIGINT);</div>
-<div class="line"><span class="lineno">   48</span>    server_thread.join();</div>
-<div class="line"><span class="lineno">   49</span>}</div>
+<div class="line"><span class="lineno">   21</span>  std::this_thread::sleep_for(</div>
+<div class="line"><span class="lineno">   22</span>      std::chrono::seconds(2)); <span class="comment">// wait for server to start</span></div>
+<div class="line"><span class="lineno">   23</span> </div>
+<div class="line"><span class="lineno">   24</span>  net::io_context ioc;</div>
+<div class="line"><span class="lineno">   25</span>  tcp::resolver resolver(ioc);</div>
+<div class="line"><span class="lineno">   26</span>  <span class="keyword">auto</span> <span class="keyword">const</span> results = resolver.resolve(<span class="stringliteral">&quot;127.0.0.1&quot;</span>, std::to_string(test_port));</div>
+<div class="line"><span class="lineno">   27</span> </div>
+<div class="line"><span class="lineno">   28</span>  beast::tcp_stream stream(ioc);</div>
+<div class="line"><span class="lineno">   29</span>  stream.connect(results);</div>
+<div class="line"><span class="lineno">   30</span> </div>
+<div class="line"><span class="lineno">   31</span>  http::request&lt;http::string_body&gt; req(http::verb::get, <span class="stringliteral">&quot;/octocat&quot;</span>, 11);</div>
+<div class="line"><span class="lineno">   32</span>  req.set(http::field::host, <span class="stringliteral">&quot;127.0.0.1&quot;</span>);</div>
+<div class="line"><span class="lineno">   33</span>  req.set(http::field::user_agent, <span class="stringliteral">&quot;test-client&quot;</span>);</div>
+<div class="line"><span class="lineno">   34</span> </div>
+<div class="line"><span class="lineno">   35</span>  http::write(stream, req);</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>  beast::flat_buffer buffer;</div>
+<div class="line"><span class="lineno">   38</span>  http::response&lt;http::string_body&gt; res;</div>
+<div class="line"><span class="lineno">   39</span>  http::read(stream, buffer, res);</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>  REQUIRE(res.result() == http::status::ok);</div>
+<div class="line"><span class="lineno">   42</span>  REQUIRE(res.body().find(<span class="stringliteral">&quot;octocat&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   43</span> </div>
+<div class="line"><span class="lineno">   44</span>  beast::error_code ec;</div>
+<div class="line"><span class="lineno">   45</span>  stream.socket().shutdown(tcp::socket::shutdown_both, ec);</div>
+<div class="line"><span class="lineno">   46</span> </div>
+<div class="line"><span class="lineno">   47</span>  <span class="comment">// Kill server (not ideal, better to make server stop externally)</span></div>
+<div class="line"><span class="lineno">   48</span>  std::raise(SIGINT);</div>
+<div class="line"><span class="lineno">   49</span>  server_thread.join();</div>
+<div class="line"><span class="lineno">   50</span>}</div>
 <div class="ttc" id="aserver_8c_html_a805251749f828fda7ccf3f1cc664afd1"><div class="ttname"><a href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a></div><div class="ttdeci">void start_http_server(int port)</div><div class="ttdoc">Starts an HTTP server on the specified port.</div><div class="ttdef"><b>Definition</b> <a href="server_8c_source.html#l00059">server.c:59</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="server_8c_source.html#l00059">start_http_server()</a>.</p>

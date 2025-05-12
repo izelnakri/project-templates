@@ -98,9 +98,9 @@ $(function(){initNavTree('test__user_8cpp.html',''); initResizable(); });
   <div class="headertitle"><div class="title">test_user.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;catch2/catch_test_macros.hpp&gt;</code><br />
+<div class="textblock"><code>#include &quot;user.hpp&quot;</code><br />
+<code>#include &lt;catch2/catch_test_macros.hpp&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &quot;user.hpp&quot;</code><br />
 </div>
 <p><a href="test__user_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -136,16 +136,16 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00035">35</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   35</span>                                                                                                  {</div>
-<div class="line"><span class="lineno">   36</span>    <a class="code hl_struct" href="structUser.html">User</a> user = <a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(<span class="stringliteral">&quot;octocat&quot;</span>);</div>
-<div class="line"><span class="lineno">   37</span> </div>
-<div class="line"><span class="lineno">   38</span>    REQUIRE(user.getLogin() == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
-<div class="line"><span class="lineno">   39</span> </div>
-<div class="line"><span class="lineno">   40</span>    <span class="comment">// These fields can change, so we check they are not empty instead</span></div>
-<div class="line"><span class="lineno">   41</span>    REQUIRE_FALSE(user.getName().empty());</div>
-<div class="line"><span class="lineno">   42</span>    REQUIRE_FALSE(user.getCompany().empty());</div>
-<div class="line"><span class="lineno">   43</span>    REQUIRE_FALSE(user.getLocation().empty());</div>
-<div class="line"><span class="lineno">   44</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                                 {</div>
+<div class="line"><span class="lineno">   37</span>  <a class="code hl_struct" href="structUser.html">User</a> user = <a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(<span class="stringliteral">&quot;octocat&quot;</span>);</div>
+<div class="line"><span class="lineno">   38</span> </div>
+<div class="line"><span class="lineno">   39</span>  REQUIRE(user.getLogin() == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
+<div class="line"><span class="lineno">   40</span> </div>
+<div class="line"><span class="lineno">   41</span>  <span class="comment">// These fields can change, so we check they are not empty instead</span></div>
+<div class="line"><span class="lineno">   42</span>  REQUIRE_FALSE(user.getName().empty());</div>
+<div class="line"><span class="lineno">   43</span>  REQUIRE_FALSE(user.getCompany().empty());</div>
+<div class="line"><span class="lineno">   44</span>  REQUIRE_FALSE(user.getLocation().empty());</div>
+<div class="line"><span class="lineno">   45</span>}</div>
 <div class="ttc" id="astructUser_html"><div class="ttname"><a href="structUser.html">User</a></div><div class="ttdoc">Structure representing a GitHub user.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00009">user.h:9</a></div></div>
 <div class="ttc" id="auser_8c_html_ada4edf948630b147f21f7e6aa3589b9e"><div class="ttname"><a href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a></div><div class="ttdeci">User fetch_github_user(const char *username)</div><div class="ttdoc">Fetch a GitHub user's information via the GitHub API.</div><div class="ttdef"><b>Definition</b> <a href="user_8c_source.html#l00130">user.c:130</a></div></div>
 </div><!-- fragment -->
@@ -172,12 +172,12 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00046">46</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   46</span>                                                                                      {</div>
-<div class="line"><span class="lineno">   47</span>    std::string invalid_username = <span class="stringliteral">&quot;this_user_should_not_exist_123456789&quot;</span>;</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    REQUIRE_THROWS_AS(<a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(invalid_username), std::runtime_error);</div>
-<div class="line"><span class="lineno">   50</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00047">47</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   48</span>                                 {</div>
+<div class="line"><span class="lineno">   49</span>  std::string invalid_username = <span class="stringliteral">&quot;this_user_should_not_exist_123456789&quot;</span>;</div>
+<div class="line"><span class="lineno">   50</span> </div>
+<div class="line"><span class="lineno">   51</span>  REQUIRE_THROWS_AS(<a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(invalid_username), std::runtime_error);</div>
+<div class="line"><span class="lineno">   52</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="user_8c_source.html#l00130">fetch_github_user()</a>.</p>
 
@@ -204,12 +204,12 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00007">7</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">    7</span>                                                           {</div>
-<div class="line"><span class="lineno">    8</span>    <a class="code hl_struct" href="structUser.html">User</a> user(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
+<div class="line"><span class="lineno">    8</span>  <a class="code hl_struct" href="structUser.html">User</a> user(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
 <div class="line"><span class="lineno">    9</span> </div>
-<div class="line"><span class="lineno">   10</span>    REQUIRE(user.getLogin() == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
-<div class="line"><span class="lineno">   11</span>    REQUIRE(user.getName() == <span class="stringliteral">&quot;The Octocat&quot;</span>);</div>
-<div class="line"><span class="lineno">   12</span>    REQUIRE(user.getCompany() == <span class="stringliteral">&quot;GitHub&quot;</span>);</div>
-<div class="line"><span class="lineno">   13</span>    REQUIRE(user.getLocation() == <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
+<div class="line"><span class="lineno">   10</span>  REQUIRE(user.getLogin() == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
+<div class="line"><span class="lineno">   11</span>  REQUIRE(user.getName() == <span class="stringliteral">&quot;The Octocat&quot;</span>);</div>
+<div class="line"><span class="lineno">   12</span>  REQUIRE(user.getCompany() == <span class="stringliteral">&quot;GitHub&quot;</span>);</div>
+<div class="line"><span class="lineno">   13</span>  REQUIRE(user.getLocation() == <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
 <div class="line"><span class="lineno">   14</span>}</div>
 </div><!-- fragment -->
 </div>
@@ -235,20 +235,20 @@ Functions</h2></td></tr>
 
 <p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00016">16</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   16</span>                                                                 {</div>
-<div class="line"><span class="lineno">   17</span>    <a class="code hl_struct" href="structUser.html">User</a> user(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
+<div class="line"><span class="lineno">   17</span>  <a class="code hl_struct" href="structUser.html">User</a> user(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
 <div class="line"><span class="lineno">   18</span> </div>
-<div class="line"><span class="lineno">   19</span>    std::ostringstream <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>;</div>
-<div class="line"><span class="lineno">   20</span>    std::streambuf* old_cout_buf = std::cout.rdbuf(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.rdbuf());</div>
+<div class="line"><span class="lineno">   19</span>  std::ostringstream <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>;</div>
+<div class="line"><span class="lineno">   20</span>  std::streambuf *old_cout_buf = std::cout.rdbuf(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.rdbuf());</div>
 <div class="line"><span class="lineno">   21</span> </div>
-<div class="line"><span class="lineno">   22</span>    user.print();</div>
+<div class="line"><span class="lineno">   22</span>  user.print();</div>
 <div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>    std::cout.rdbuf(old_cout_buf); <span class="comment">// restore std::cout</span></div>
+<div class="line"><span class="lineno">   24</span>  std::cout.rdbuf(old_cout_buf); <span class="comment">// restore std::cout</span></div>
 <div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>    std::string result = <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.str();</div>
-<div class="line"><span class="lineno">   27</span>    REQUIRE(result.find(<span class="stringliteral">&quot;Login: octocat&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   28</span>    REQUIRE(result.find(<span class="stringliteral">&quot;Name: The Octocat&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   29</span>    REQUIRE(result.find(<span class="stringliteral">&quot;Company: GitHub&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   30</span>    REQUIRE(result.find(<span class="stringliteral">&quot;Location: San Francisco&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   26</span>  std::string result = <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.str();</div>
+<div class="line"><span class="lineno">   27</span>  REQUIRE(result.find(<span class="stringliteral">&quot;Login: octocat&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   28</span>  REQUIRE(result.find(<span class="stringliteral">&quot;Name: The Octocat&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   29</span>  REQUIRE(result.find(<span class="stringliteral">&quot;Company: GitHub&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   30</span>  REQUIRE(result.find(<span class="stringliteral">&quot;Location: San Francisco&quot;</span>) != std::string::npos);</div>
 <div class="line"><span class="lineno">   31</span>}</div>
 <div class="ttc" id="alua-5_81_85_2src_2luac_8c_html_a5a832fe6e2412dfabb93a2adae30e745"><div class="ttname"><a href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a></div><div class="ttdeci">static const char * output</div><div class="ttdef"><b>Definition</b> <a href="lua-5_81_85_2src_2luac_8c_source.html#l00033">lua-5.1.5/src/luac.c:33</a></div></div>
 </div><!-- fragment -->

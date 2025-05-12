@@ -109,28 +109,28 @@ $(function(){initNavTree('config_8cpp_source.html',''); initResizable(); });
 <div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span><span class="comment"> * @brief Parses command-line arguments into AppConfig.</span></div>
 <div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span><span class="comment"> */</span></div>
 <div class="foldopen" id="foldopen00008" data-start="{" data-end="}">
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">    8</a></span>AppConfig <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; args) {</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>    AppConfig config;</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno"><a class="line" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">    8</a></span>AppConfig <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt; &amp;args) {</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  AppConfig config;</div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>    <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; args.size(); ++i) {</div>
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>        <span class="keyword">const</span> std::string&amp; <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> = args[i];</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; args.size(); ++i) {</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> = args[i];</div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>        <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--user&quot;</span> &amp;&amp; i + 1 &lt; args.size()) {</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>            config.username = args[++i];</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--user=&quot;</span>)) {</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>            config.username = <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7);</div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--server&quot;</span>) {</div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>            config.run_server = <span class="keyword">true</span>;</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>        } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--port=&quot;</span>)) {</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>            <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>                config.port = std::stoi(<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>            } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp;) {</div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>                <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Invalid port number: &quot;</span> + <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>            }</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>        }</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>    }</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--user&quot;</span> &amp;&amp; i + 1 &lt; args.size()) {</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>      config.username = args[++i];</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--user=&quot;</span>)) {</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>      config.username = <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--server&quot;</span>) {</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span>      config.run_server = <span class="keyword">true</span>;</div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--port=&quot;</span>)) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>      <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>        config.port = std::stoi(<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>      } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;) {</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Invalid port number: &quot;</span> + <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span>      }</div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>    }</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  }</div>
 <div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>    <span class="keywordflow">return</span> config;</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>  <span class="keywordflow">return</span> config;</div>
 <div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span>}</div>
 </div>
 <div class="ttc" id="aconfig_8cpp_html_acf7abda9dac6fd151892e22fdbe3ed0b"><div class="ttname"><a href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a></div><div class="ttdeci">AppConfig parse_arguments(const std::vector&lt; std::string &gt; &amp;args)</div><div class="ttdoc">Parses command-line arguments into AppConfig.</div><div class="ttdef"><b>Definition</b> <a href="#l00008">config.cpp:8</a></div></div>

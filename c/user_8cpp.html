@@ -100,17 +100,17 @@ $(function(){initNavTree('user_8cpp.html',''); initResizable(); });
 </div><!--header-->
 <div class="contents">
 <div class="textblock"><code>#include &quot;user.hpp&quot;</code><br />
-<code>#include &lt;boost/beast/core.hpp&gt;</code><br />
-<code>#include &lt;boost/beast/http.hpp&gt;</code><br />
-<code>#include &lt;boost/beast/version.hpp&gt;</code><br />
-<code>#include &lt;boost/beast/ssl.hpp&gt;</code><br />
 <code>#include &lt;boost/asio/connect.hpp&gt;</code><br />
 <code>#include &lt;boost/asio/ip/tcp.hpp&gt;</code><br />
 <code>#include &lt;boost/asio/ssl/stream.hpp&gt;</code><br />
+<code>#include &lt;boost/beast/core.hpp&gt;</code><br />
+<code>#include &lt;boost/beast/http.hpp&gt;</code><br />
+<code>#include &lt;boost/beast/ssl.hpp&gt;</code><br />
+<code>#include &lt;boost/beast/version.hpp&gt;</code><br />
 <code>#include &lt;nlohmann/json.hpp&gt;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
-<code>#include &lt;string&gt;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
 </div>
 <p><a href="user_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
@@ -157,65 +157,66 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="user_8cpp_source.html#l00045">45</a> of file <a class="el" href="user_8cpp_source.html">user.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   45</span>                                                  {</div>
-<div class="line"><span class="lineno">   46</span>    <span class="keyword">const</span> std::string host = <span class="stringliteral">&quot;api.github.com&quot;</span>;</div>
-<div class="line"><span class="lineno">   47</span>    <span class="keyword">const</span> std::string port = <span class="stringliteral">&quot;443&quot;</span>;</div>
-<div class="line"><span class="lineno">   48</span>    <span class="keyword">const</span> std::string target = <span class="stringliteral">&quot;/users/&quot;</span> + username;</div>
-<div class="line"><span class="lineno">   49</span> </div>
-<div class="line"><span class="lineno">   50</span>    net::io_context ioc;</div>
-<div class="line"><span class="lineno">   51</span>    ssl::context ctx(ssl::context::sslv23_client);</div>
-<div class="line"><span class="lineno">   52</span>    ctx.set_default_verify_paths();</div>
-<div class="line"><span class="lineno">   53</span> </div>
-<div class="line"><span class="lineno">   54</span>    beast::ssl_stream&lt;beast::tcp_stream&gt; stream(ioc, ctx);</div>
-<div class="line"><span class="lineno">   55</span> </div>
-<div class="line"><span class="lineno">   56</span>    <span class="comment">// Resolve DNS</span></div>
-<div class="line"><span class="lineno">   57</span>    tcp::resolver resolver(ioc);</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keyword">auto</span> <span class="keyword">const</span> results = resolver.resolve(host, port);</div>
-<div class="line"><span class="lineno">   59</span> </div>
-<div class="line"><span class="lineno">   60</span>    <span class="comment">// Connect and perform TLS handshake</span></div>
-<div class="line"><span class="lineno">   61</span>    beast::get_lowest_layer(stream).connect(results);</div>
-<div class="line"><span class="lineno">   62</span>    stream.handshake(ssl::stream_base::client);</div>
-<div class="line"><span class="lineno">   63</span> </div>
-<div class="line"><span class="lineno">   64</span>    <span class="comment">// Prepare HTTP GET request</span></div>
-<div class="line"><span class="lineno">   65</span>    http::request&lt;http::string_body&gt; req{http::verb::get, target, 11};</div>
-<div class="line"><span class="lineno">   66</span>    req.set(http::field::host, host);</div>
-<div class="line"><span class="lineno">   67</span>    req.set(http::field::user_agent, <span class="stringliteral">&quot;github_user_fetcher&quot;</span>);</div>
-<div class="line"><span class="lineno">   68</span> </div>
-<div class="line"><span class="lineno">   69</span>    <span class="comment">// Send request</span></div>
-<div class="line"><span class="lineno">   70</span>    http::write(stream, req);</div>
-<div class="line"><span class="lineno">   71</span> </div>
-<div class="line"><span class="lineno">   72</span>    <span class="comment">// Receive response</span></div>
-<div class="line"><span class="lineno">   73</span>    beast::flat_buffer buffer;</div>
-<div class="line"><span class="lineno">   74</span>    http::response&lt;http::string_body&gt; res;</div>
-<div class="line"><span class="lineno">   75</span>    http::read(stream, buffer, res);</div>
-<div class="line"><span class="lineno">   76</span> </div>
-<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">if</span> (res.result() != http::status::ok) {</div>
-<div class="line"><span class="lineno">   78</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to fetch user: HTTP &quot;</span> + std::to_string(res.result_int()));</div>
-<div class="line"><span class="lineno">   79</span>    }</div>
+<p class="definition">Definition at line <a class="el" href="user_8cpp_source.html#l00044">44</a> of file <a class="el" href="user_8cpp_source.html">user.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   44</span>                                                  {</div>
+<div class="line"><span class="lineno">   45</span>  <span class="keyword">const</span> std::string host = <span class="stringliteral">&quot;api.github.com&quot;</span>;</div>
+<div class="line"><span class="lineno">   46</span>  <span class="keyword">const</span> std::string port = <span class="stringliteral">&quot;443&quot;</span>;</div>
+<div class="line"><span class="lineno">   47</span>  <span class="keyword">const</span> std::string target = <span class="stringliteral">&quot;/users/&quot;</span> + username;</div>
+<div class="line"><span class="lineno">   48</span> </div>
+<div class="line"><span class="lineno">   49</span>  net::io_context ioc;</div>
+<div class="line"><span class="lineno">   50</span>  ssl::context ctx(ssl::context::sslv23_client);</div>
+<div class="line"><span class="lineno">   51</span>  ctx.set_default_verify_paths();</div>
+<div class="line"><span class="lineno">   52</span> </div>
+<div class="line"><span class="lineno">   53</span>  beast::ssl_stream&lt;beast::tcp_stream&gt; stream(ioc, ctx);</div>
+<div class="line"><span class="lineno">   54</span> </div>
+<div class="line"><span class="lineno">   55</span>  <span class="comment">// Resolve DNS</span></div>
+<div class="line"><span class="lineno">   56</span>  tcp::resolver resolver(ioc);</div>
+<div class="line"><span class="lineno">   57</span>  <span class="keyword">auto</span> <span class="keyword">const</span> results = resolver.resolve(host, port);</div>
+<div class="line"><span class="lineno">   58</span> </div>
+<div class="line"><span class="lineno">   59</span>  <span class="comment">// Connect and perform TLS handshake</span></div>
+<div class="line"><span class="lineno">   60</span>  beast::get_lowest_layer(stream).connect(results);</div>
+<div class="line"><span class="lineno">   61</span>  stream.handshake(ssl::stream_base::client);</div>
+<div class="line"><span class="lineno">   62</span> </div>
+<div class="line"><span class="lineno">   63</span>  <span class="comment">// Prepare HTTP GET request</span></div>
+<div class="line"><span class="lineno">   64</span>  http::request&lt;http::string_body&gt; req{http::verb::get, target, 11};</div>
+<div class="line"><span class="lineno">   65</span>  req.set(http::field::host, host);</div>
+<div class="line"><span class="lineno">   66</span>  req.set(http::field::user_agent, <span class="stringliteral">&quot;github_user_fetcher&quot;</span>);</div>
+<div class="line"><span class="lineno">   67</span> </div>
+<div class="line"><span class="lineno">   68</span>  <span class="comment">// Send request</span></div>
+<div class="line"><span class="lineno">   69</span>  http::write(stream, req);</div>
+<div class="line"><span class="lineno">   70</span> </div>
+<div class="line"><span class="lineno">   71</span>  <span class="comment">// Receive response</span></div>
+<div class="line"><span class="lineno">   72</span>  beast::flat_buffer buffer;</div>
+<div class="line"><span class="lineno">   73</span>  http::response&lt;http::string_body&gt; res;</div>
+<div class="line"><span class="lineno">   74</span>  http::read(stream, buffer, res);</div>
+<div class="line"><span class="lineno">   75</span> </div>
+<div class="line"><span class="lineno">   76</span>  <span class="keywordflow">if</span> (res.result() != http::status::ok) {</div>
+<div class="line"><span class="lineno">   77</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to fetch user: HTTP &quot;</span> +</div>
+<div class="line"><span class="lineno">   78</span>                             std::to_string(res.result_int()));</div>
+<div class="line"><span class="lineno">   79</span>  }</div>
 <div class="line"><span class="lineno">   80</span> </div>
-<div class="line"><span class="lineno">   81</span>    <span class="comment">// Parse JSON response</span></div>
-<div class="line"><span class="lineno">   82</span>    <span class="keyword">const</span> <span class="keyword">auto</span> json = nlohmann::json::parse(res.body(), <span class="keyword">nullptr</span>, <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   83</span>    <span class="keywordflow">if</span> (json.is_discarded()) {</div>
-<div class="line"><span class="lineno">   84</span>        <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to parse JSON response&quot;</span>);</div>
-<div class="line"><span class="lineno">   85</span>    }</div>
+<div class="line"><span class="lineno">   81</span>  <span class="comment">// Parse JSON response</span></div>
+<div class="line"><span class="lineno">   82</span>  <span class="keyword">const</span> <span class="keyword">auto</span> json = nlohmann::json::parse(res.body(), <span class="keyword">nullptr</span>, <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   83</span>  <span class="keywordflow">if</span> (json.is_discarded()) {</div>
+<div class="line"><span class="lineno">   84</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to parse JSON response&quot;</span>);</div>
+<div class="line"><span class="lineno">   85</span>  }</div>
 <div class="line"><span class="lineno">   86</span> </div>
-<div class="line"><span class="lineno">   87</span>    <span class="keyword">const</span> std::string login = json.value(<span class="stringliteral">&quot;login&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">   88</span>    <span class="keyword">const</span> std::string <a class="code hl_variable" href="lsqlite3_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> = json.value(<span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">   89</span>    <span class="keyword">const</span> std::string company = json.value(<span class="stringliteral">&quot;company&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
-<div class="line"><span class="lineno">   90</span>    <span class="keyword">const</span> std::string location = json.value(<span class="stringliteral">&quot;location&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">   87</span>  <span class="keyword">const</span> std::string login = json.value(<span class="stringliteral">&quot;login&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">   88</span>  <span class="keyword">const</span> std::string <a class="code hl_variable" href="lsqlite3_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a> = json.value(<span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">   89</span>  <span class="keyword">const</span> std::string company = json.value(<span class="stringliteral">&quot;company&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
+<div class="line"><span class="lineno">   90</span>  <span class="keyword">const</span> std::string location = json.value(<span class="stringliteral">&quot;location&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>    <span class="comment">// Shutdown SSL</span></div>
-<div class="line"><span class="lineno">   93</span>    beast::error_code ec;</div>
-<div class="line"><span class="lineno">   94</span>    stream.shutdown(ec);</div>
-<div class="line"><span class="lineno">   95</span>    <span class="keywordflow">if</span> (ec == net::error::eof) {</div>
-<div class="line"><span class="lineno">   96</span>        ec = {}; <span class="comment">// Ignore EOF on shutdown</span></div>
-<div class="line"><span class="lineno">   97</span>    }</div>
-<div class="line"><span class="lineno">   98</span>    <span class="keywordflow">if</span> (ec) {</div>
-<div class="line"><span class="lineno">   99</span>        <span class="keywordflow">throw</span> beast::system_error{ec};</div>
-<div class="line"><span class="lineno">  100</span>    }</div>
+<div class="line"><span class="lineno">   92</span>  <span class="comment">// Shutdown SSL</span></div>
+<div class="line"><span class="lineno">   93</span>  beast::error_code ec;</div>
+<div class="line"><span class="lineno">   94</span>  stream.shutdown(ec);</div>
+<div class="line"><span class="lineno">   95</span>  <span class="keywordflow">if</span> (ec == net::error::eof) {</div>
+<div class="line"><span class="lineno">   96</span>    ec = {}; <span class="comment">// Ignore EOF on shutdown</span></div>
+<div class="line"><span class="lineno">   97</span>  }</div>
+<div class="line"><span class="lineno">   98</span>  <span class="keywordflow">if</span> (ec) {</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">throw</span> beast::system_error{ec};</div>
+<div class="line"><span class="lineno">  100</span>  }</div>
 <div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> <a class="code hl_struct" href="structUser.html">User</a>{login, <a class="code hl_variable" href="lsqlite3_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, company, location};</div>
+<div class="line"><span class="lineno">  102</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="structUser.html">User</a>{login, <a class="code hl_variable" href="lsqlite3_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, company, location};</div>
 <div class="line"><span class="lineno">  103</span>}</div>
 <div class="ttc" id="alsqlite3_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="lsqlite3_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> <a href="lsqlite3_8c_source.html#l02154">lsqlite3.c:2154</a></div></div>
 <div class="ttc" id="astructUser_html"><div class="ttname"><a href="structUser.html">User</a></div><div class="ttdoc">Structure representing a GitHub user.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00009">user.h:9</a></div></div>
