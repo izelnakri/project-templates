@@ -66,6 +66,13 @@ develop:
 	@if [ -z "$$IS_NIX_SHELL" ]; then nix develop; else echo "Already in nix shell"; fi
 test: check-setup
 	meson compile -C build && meson test -C build
+test-unit: check-setup
+	meson test -C build --suite unit # maybe add --verbose # NOTE: Maybe add make build or smt before
+test-api: check-setup
+	meson test -C build --suite api # NOTE: Maybe add make build or smt before
+test-cli: check-setup
+	meson test -C build --suite cli # NOTE: Maybe add make build or smt before
+
 run-cli: check-setup
 	meson compile -C build && ./build/github_user_fetcher
 run-cli-server: check-setup

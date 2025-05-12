@@ -70,14 +70,6 @@ executable('github_user_fetcher_gui',
 
 install_data('src/style.css', install_dir: 'share/github_user_fetcher') # NOTE: maybe change the code to load this dynamically in future
 
-# Testing setup
-# tests_opt = get_option('tests')
-# build_tests = not tests_opt.disabled()
-
-# if build_tests
-#   test_dependencies = [
-#     dependency('catch2', required: true),  # Using Catch2 for C++ tests
-#   ]
 # NOTE: Below made redundant:
 # configure_file(input: 'src/style.css', output: 'style.css')
 # custom_target('copy_style_css',
@@ -85,15 +77,33 @@ install_data('src/style.css', install_dir: 'share/github_user_fetcher') # NOTE: 
 #   output: 'style.css'
 # )
 
-#   test_executable = executable('test_user', 
-#     files('tests/test_user.cpp'),
-#     include_directories: headers,
-#     dependencies: [boost_dep, nlohmann_json_dep] + test_dependencies,  # Added nlohmann_json dependency
-#     link_with: github_user_fetcher_static,
-#     cpp_args: warning_flags + ['-DTESTING']
-#   )
-#   test('user_tests', test_executable)
-# endif
+tests_opt = get_option('tests')
+build_tests = not tests_opt.disabled()
+
+if build_tests
+  test_dependencies = [
+    dependency('catch2-with-main', required: true),
+  ]
+
+  test_sources = {
+    'unit': files('tests/unit/test_user.cpp', 'tests/unit/test_main.cpp' ),
+    'api': files('tests/api/test_server.cpp'),
+    'cli': files('tests/cli/test_cli.cpp'),
+  }
+
+  foreach suite, sources : test_sources
+    test_exe = executable(
+      'test_' + suite,
+      sources,
+      include_directories: [headers],
+      dependencies: dependencies + test_dependencies,
+      link_with: github_user_fetcher_static,
+      cpp_args: warning_flags + ['-DTESTING']
+    )
+
+    test(suite + '_tests', test_exe, suite: suite, args: ['--verbose']) # Should I add args: ?
+  endforeach
+endif
 
 # Benchmark setup
 # if get_option('benchmarks').enabled()
