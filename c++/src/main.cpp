@@ -5,53 +5,11 @@
  * user.
  */
 
+#include "config.hpp"
 #include "server.hpp"
 #include "user.hpp"
 
 #include <iostream>
-#include <string>
-#include <vector>
-#include <stdexcept>
-
-/**
- * @brief Struct holding parsed command-line configuration.
- */
-struct AppConfig {
-    std::string username = "izelnakri";
-    int port = 1234;
-    bool run_server = false;
-};
-
-/**
- * @brief Parses command-line arguments into AppConfig.
- *
- * @param args Vector of arguments (excluding program name).
- * @return Parsed AppConfig.
- * @throws std::invalid_argument if port parsing fails.
- */
-AppConfig parse_arguments(const std::vector<std::string>& args) {
-    AppConfig config;
-
-    for (size_t i = 0; i < args.size(); ++i) {
-        const std::string& arg = args[i];
-
-        if (arg == "--user" && i + 1 < args.size()) {
-            config.username = args[++i];
-        } else if (arg.starts_with("--user=")) {
-            config.username = arg.substr(7);
-        } else if (arg == "--server") {
-            config.run_server = true;
-        } else if (arg.starts_with("--port=")) {
-            try {
-                config.port = std::stoi(arg.substr(7));
-            } catch (const std::exception& e) {
-                throw std::invalid_argument("Invalid port number: " + arg.substr(7));
-            }
-        }
-    }
-
-    return config;
-}
 
 /**
  * @brief Main function that initializes and runs the application.

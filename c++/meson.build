@@ -12,14 +12,14 @@ dependencies = [
 # NOTE: Old one: headers = include_directories('src', 'vendor/civetweb')
 headers = include_directories('src')
 
-executable('github_user_fetcher', files('src/main.cpp', 'src/user.cpp', 'src/server.cpp'),
+executable('github_user_fetcher', files('src/config.cpp', 'src/main.cpp', 'src/user.cpp', 'src/server.cpp'),
   dependencies: dependencies,
   include_directories: headers,
   cpp_args: warning_flags,
   install: true,
 )
 
-lib_src = files('src/user.cpp')
+lib_src = files('src/user.cpp', 'src/server.cpp')
 
 github_user_fetcher_shared = shared_library('github_user_fetcher', lib_src,
   dependencies: dependencies,
@@ -56,11 +56,6 @@ css_header = custom_target('style_css_hpp', # Generate header from CSS file
   ]
 )
 
-configure_file(input: 'src/style.css', output: 'style.css')
-custom_target('copy_style_css',
-  command: ['cp', 'src/style.css', join_paths(get_option('builddir'), 'style.css')],
-  output: 'style.css'
-)
 executable('github_user_fetcher_gui',
   ['src/gui.cpp', css_header],
   dependencies: [
@@ -83,6 +78,12 @@ install_data('src/style.css', install_dir: 'share/github_user_fetcher') # NOTE: 
 #   test_dependencies = [
 #     dependency('catch2', required: true),  # Using Catch2 for C++ tests
 #   ]
+# NOTE: Below made redundant:
+# configure_file(input: 'src/style.css', output: 'style.css')
+# custom_target('copy_style_css',
+#   command: ['cp', 'src/style.css', join_paths(get_option('builddir'), 'style.css')],
+#   output: 'style.css'
+# )
 
 #   test_executable = executable('test_user', 
 #     files('tests/test_user.cpp'),
