@@ -1,5 +1,11 @@
 var NAVTREEINDEX218 =
 {
+"gtkspinbutton_8h.html#a2403eadbdb0c5f9b908ab454fad5b56f":[6,0,4,0,8,0,0,2,183,28],
+"gtkspinbutton_8h.html#a34453b4eba46ca30594618aabd290fcc":[6,0,4,0,8,0,0,2,183,14],
+"gtkspinbutton_8h.html#a37edecc3c5d9f24324b1e9a483efa5ea":[6,0,4,0,8,0,0,2,183,20],
+"gtkspinbutton_8h.html#a490e0d7526195c2f3639cde595b33746":[6,0,4,0,8,0,0,2,183,31],
+"gtkspinbutton_8h.html#a494b624b2c7ec5bd94020fc8047c23e5":[6,0,4,0,8,0,0,2,183,32],
+"gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27":[6,0,4,0,8,0,0,2,183,6],
 "gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27a0eacdd1772642b831b41ccb791ca4021":[6,0,4,0,8,0,0,2,183,6,4],
 "gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27a1e133ab0688a7996714519e8ee3f7c1b":[6,0,4,0,8,0,0,2,183,6,3],
 "gtkspinbutton_8h.html#a55170eb5047c280f11706da51e551b27a1fd267fd4ba013075f9af3a7d298cbb7":[6,0,4,0,8,0,0,2,183,6,1],
@@ -243,11 +249,5 @@ var NAVTREEINDEX218 =
 "gtkstyleprovider_8h_source.html":[6,0,4,0,8,0,0,2,191],
 "gtkswitch_8h.html":[6,0,4,0,8,0,0,2,192],
 "gtkswitch_8h.html#a109d7f214425e1e03068a9909a9c3370":[6,0,4,0,8,0,0,2,192,1],
-"gtkswitch_8h.html#a285473b6debdba78dbb7d2a914414d8d":[6,0,4,0,8,0,0,2,192,9],
-"gtkswitch_8h.html#a34b17064f8a1497733cc4d3f73e9564f":[6,0,4,0,8,0,0,2,192,7],
-"gtkswitch_8h.html#a632e60258a1ca43d97b249a9550292ed":[6,0,4,0,8,0,0,2,192,0],
-"gtkswitch_8h.html#a8b721e57c6d1378fdd6fe8fd1b602156":[6,0,4,0,8,0,0,2,192,6],
-"gtkswitch_8h.html#a8dca53908d57fd8091a96fd6437cbced":[6,0,4,0,8,0,0,2,192,3],
-"gtkswitch_8h.html#aad373c0e237b797315cd4a2472530ebe":[6,0,4,0,8,0,0,2,192,5],
-"gtkswitch_8h.html#abbc9b784b453361e38ce01cc988312da":[6,0,4,0,8,0,0,2,192,2]
+"gtkswitch_8h.html#a285473b6debdba78dbb7d2a914414d8d":[6,0,4,0,8,0,0,2,192,9]
 };

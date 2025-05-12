@@ -1,5 +1,11 @@
 var NAVTREEINDEX213 =
 {
+"gtkpadcontroller_8h.html#a4fcfd08ef03a102aafc1fc58ce61d192":[6,0,4,0,8,0,0,2,138,10],
+"gtkpadcontroller_8h.html#a4fcfd08ef03a102aafc1fc58ce61d192a0f8b5fab53f0cb7c4e14d370b6531466":[6,0,4,0,8,0,0,2,138,10,0],
+"gtkpadcontroller_8h.html#a4fcfd08ef03a102aafc1fc58ce61d192a6d578513767e33df4311cc757ef0713c":[6,0,4,0,8,0,0,2,138,10,1],
+"gtkpadcontroller_8h.html#a4fcfd08ef03a102aafc1fc58ce61d192a95c1d74b75f8e2b51ecb4a19affb83eb":[6,0,4,0,8,0,0,2,138,10,2],
+"gtkpadcontroller_8h.html#a5515c061ab620b759cbf276ae9c983bc":[6,0,4,0,8,0,0,2,138,7],
+"gtkpadcontroller_8h.html#a560e33073b6e0c55ba1932b278d10194":[6,0,4,0,8,0,0,2,138,2],
 "gtkpadcontroller_8h.html#a6571b0b1f3b36dc4781ba879f5e32daf":[6,0,4,0,8,0,0,2,138,4],
 "gtkpadcontroller_8h.html#a6a068b58bca0f92d953121f7ffc9fa1f":[6,0,4,0,8,0,0,2,138,3],
 "gtkpadcontroller_8h.html#a8b9fb370b6d794139141934e710f3e8a":[6,0,4,0,8,0,0,2,138,13],
@@ -243,11 +249,5 @@ var NAVTREEINDEX213 =
 "gtkprintdialog_8h.html#a16366a63c64e6f57408720f887f201d8":[6,0,4,0,8,0,0,2,146,14],
 "gtkprintdialog_8h.html#a3866d980a799903bb8e71afbf5aa3636":[6,0,4,0,8,0,0,2,146,8],
 "gtkprintdialog_8h.html#a40b66592b45822263b48f465d27c88ec":[6,0,4,0,8,0,0,2,146,21],
-"gtkprintdialog_8h.html#a417b5bcb7f4dbd3fceb84bb2161b4c3f":[6,0,4,0,8,0,0,2,146,16],
-"gtkprintdialog_8h.html#a475d42496e22dc2bdbeda69440c5e2fe":[6,0,4,0,8,0,0,2,146,22],
-"gtkprintdialog_8h.html#a4b5fae235cd1c36204924a13ad43db40":[6,0,4,0,8,0,0,2,146,19],
-"gtkprintdialog_8h.html#a6ac913c1b1d243ba3cf6b51f932e2b03":[6,0,4,0,8,0,0,2,146,23],
-"gtkprintdialog_8h.html#a6edea96ed0aa73f1a63576212a38e696":[6,0,4,0,8,0,0,2,146,2],
-"gtkprintdialog_8h.html#a6f3bdcba49bcc6ed381302257ed60065":[6,0,4,0,8,0,0,2,146,20],
-"gtkprintdialog_8h.html#a772798ad7694377ba945ff3ae629c2ef":[6,0,4,0,8,0,0,2,146,3]
+"gtkprintdialog_8h.html#a417b5bcb7f4dbd3fceb84bb2161b4c3f":[6,0,4,0,8,0,0,2,146,16]
 };

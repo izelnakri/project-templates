@@ -1,5 +1,11 @@
 var NAVTREEINDEX194 =
 {
+"gsocketlistener_8h_source.html":[6,0,4,0,9,0,1,0,129],
+"gsocketservice_8h.html":[6,0,4,0,9,0,1,0,130],
+"gsocketservice_8h.html#a31f116f606a497602a9f939ab08ea73a":[6,0,4,0,9,0,1,0,130,3],
+"gsocketservice_8h.html#a4751b9f7a06841e7964bbe98c7ddfa89":[6,0,4,0,9,0,1,0,130,8],
+"gsocketservice_8h.html#a4cd5ee89a9ae2022fc4978647ea5ca46":[6,0,4,0,9,0,1,0,130,4],
+"gsocketservice_8h.html#a50787db2cf4f31df4c4328698f8fd51f":[6,0,4,0,9,0,1,0,130,6],
 "gsocketservice_8h.html#a5bca670336ab5835af127d9065d57cb7":[6,0,4,0,9,0,1,0,130,5],
 "gsocketservice_8h.html#a999b3c08bc06223fadb9322936dd4583":[6,0,4,0,9,0,1,0,130,10],
 "gsocketservice_8h.html#aa9d830b465553f1787bde2f4e6917df8":[6,0,4,0,9,0,1,0,130,7],
@@ -243,11 +249,5 @@ var NAVTREEINDEX194 =
 "gstring_8h.html#af6c870270adc6f73db49c42c727c0293":[6,0,4,0,9,0,1,2,62,37],
 "gstring_8h.html#afcc4aac887f18a3cb5ebee073eb6ff9d":[6,0,4,0,9,0,1,2,62,4],
 "gstring_8h_source.html":[6,0,4,0,9,0,1,2,62],
-"gstringchunk_8h.html":[6,0,4,0,9,0,1,2,63],
-"gstringchunk_8h.html#a28e7735069954f7f535c561ed8a10a2a":[6,0,4,0,9,0,1,2,63,6],
-"gstringchunk_8h.html#a3ed8813b1d4bbf25f9d9104b6e10a6c0":[6,0,4,0,9,0,1,2,63,3],
-"gstringchunk_8h.html#a3f187586ca55a96b032a5d0f3eefb79a":[6,0,4,0,9,0,1,2,63,1],
-"gstringchunk_8h.html#a84add04e8ff9a101d5703c031b7c8adb":[6,0,4,0,9,0,1,2,63,4],
-"gstringchunk_8h.html#aab7d894390e79a55c21c66f8498bb56b":[6,0,4,0,9,0,1,2,63,5],
-"gstringchunk_8h.html#ae3a74ff15e2ad1e958c9160d4b0af447":[6,0,4,0,9,0,1,2,63,0]
+"gstringchunk_8h.html":[6,0,4,0,9,0,1,2,63]
 };

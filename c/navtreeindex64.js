@@ -1,5 +1,11 @@
 var NAVTREEINDEX64 =
 {
+"duktape-1_85_82_2src_2duktape_8c.html#ab00543e396f1712fb3eeee79f75272bf":[6,0,7,0,0,0,1,1,999],
+"duktape-1_85_82_2src_2duktape_8c.html#ab0119a8c56a3c2eb39025289bd72b226":[6,0,7,0,0,0,1,1,3291],
+"duktape-1_85_82_2src_2duktape_8c.html#ab01286cf716e36b9089bd434841ed9eb":[6,0,7,0,0,0,1,1,477],
+"duktape-1_85_82_2src_2duktape_8c.html#ab02dfb1f1c8a82017e4fb2a64a4f2c1d":[6,0,7,0,0,0,1,1,3474],
+"duktape-1_85_82_2src_2duktape_8c.html#ab0325deeccd9c61338aa3324deafe2b1":[6,0,7,0,0,0,1,1,238],
+"duktape-1_85_82_2src_2duktape_8c.html#ab03c78b0b148b8a9977cb5cc31d7257e":[6,0,7,0,0,0,1,1,1762],
 "duktape-1_85_82_2src_2duktape_8c.html#ab05f4cfabf8ccf44578039ee4770d661":[6,0,7,0,0,0,1,1,2819],
 "duktape-1_85_82_2src_2duktape_8c.html#ab066dc4f2344692eb602d68b1ffb48b6":[6,0,7,0,0,0,1,1,849],
 "duktape-1_85_82_2src_2duktape_8c.html#ab089a46b813e6ac063df1739fd8478ab":[6,0,7,0,0,0,1,1,646],
@@ -243,11 +249,5 @@ var NAVTREEINDEX64 =
 "duktape-1_85_82_2src_2duktape_8c.html#ac0a2419cd17510d718537242daa0b960":[6,0,7,0,0,0,1,1,1622],
 "duktape-1_85_82_2src_2duktape_8c.html#ac0a346795d4b3373a0b0a0860b6e1e8f":[6,0,7,0,0,0,1,1,2792],
 "duktape-1_85_82_2src_2duktape_8c.html#ac0a61f6845dc03b9df299d78280e5dd6":[6,0,7,0,0,0,1,1,228],
-"duktape-1_85_82_2src_2duktape_8c.html#ac0b69ae0be0b216a3716f3813b58f53f":[6,0,7,0,0,0,1,1,2437],
-"duktape-1_85_82_2src_2duktape_8c.html#ac0f46cdd47f58adb3a3c6c2ab1de3e35":[6,0,7,0,0,0,1,1,1987],
-"duktape-1_85_82_2src_2duktape_8c.html#ac12424d73adb54b2bafa8a63f0d344cb":[6,0,7,0,0,0,1,1,1433],
-"duktape-1_85_82_2src_2duktape_8c.html#ac139eaafefa7ab51f25913a189c2e1ed":[6,0,7,0,0,0,1,1,967],
-"duktape-1_85_82_2src_2duktape_8c.html#ac16067215e0a1726623ac61ac3795460":[6,0,7,0,0,0,1,1,2138],
-"duktape-1_85_82_2src_2duktape_8c.html#ac181100fcad15454f6a0ca1cd9430893":[6,0,7,0,0,0,1,1,1152],
-"duktape-1_85_82_2src_2duktape_8c.html#ac1b14ec6cd5aaeb2023400f9690be1e7":[6,0,7,0,0,0,1,1,3535]
+"duktape-1_85_82_2src_2duktape_8c.html#ac0b69ae0be0b216a3716f3813b58f53f":[6,0,7,0,0,0,1,1,2437]
 };

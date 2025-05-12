@@ -1,5 +1,11 @@
 var NAVTREEINDEX71 =
 {
+"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a35db4a595d098c90cb216c864397326e":[6,0,7,0,0,1,0,6,0,14],
+"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a36a5aef9b0b7d216de6df6f0c0c8e018":[6,0,7,0,0,1,0,6,0,20],
+"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a3828807987c03c9f8c9524b0055e2e6b":[6,0,7,0,0,1,0,6,0,10],
+"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a3e9449b8c2e9bf51690cd23b87949c3c":[6,0,7,0,0,1,0,6,0,18],
+"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a44bf78d646133e49c0846fdb1e8b1c99":[6,0,7,0,0,1,0,6,0,52],
+"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a44dbe02317073e08c968fa3f84a7456a":[6,0,7,0,0,1,0,6,0,42],
 "duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a469619b7c8b37c14d8b2de1cf4d61028":[6,0,7,0,0,1,0,6,0,54],
 "duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a488aab8bbde9fc7f474c4dda611837c8":[6,0,7,0,0,1,0,6,0,39],
 "duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a4c625c9fa397ea04185f9204e4d9c4b7":[6,0,7,0,0,1,0,6,0,13],
@@ -243,11 +249,5 @@ var NAVTREEINDEX71 =
 "duktape-1_88_80_2examples_2hello_2hello_8c.html":[6,0,7,0,0,1,0,12,0],
 "duktape-1_88_80_2examples_2hello_2hello_8c.html#a0ddf1224851353fc92bfbff6f499fa97":[6,0,7,0,0,1,0,12,0,1],
 "duktape-1_88_80_2examples_2hello_2hello_8c.html#af36523c8edc55e6cf2fdd147f6af680b":[6,0,7,0,0,1,0,12,0,0],
-"duktape-1_88_80_2examples_2hello_2hello_8c_source.html":[6,0,7,0,0,1,0,12,0],
-"duktape-1_88_80_2examples_2jxpretty_2jxpretty_8c.html":[6,0,7,0,0,1,0,13,0],
-"duktape-1_88_80_2examples_2jxpretty_2jxpretty_8c.html#a0ddf1224851353fc92bfbff6f499fa97":[6,0,7,0,0,1,0,13,0,1],
-"duktape-1_88_80_2examples_2jxpretty_2jxpretty_8c.html#afce2a5904a5c4e7be5542321b966c85d":[6,0,7,0,0,1,0,13,0,0],
-"duktape-1_88_80_2examples_2jxpretty_2jxpretty_8c_source.html":[6,0,7,0,0,1,0,13,0],
-"duktape-1_88_80_2examples_2sandbox_2sandbox_8c.html":[6,0,7,0,0,1,0,14,0],
-"duktape-1_88_80_2examples_2sandbox_2sandbox_8c.html#a0ddf1224851353fc92bfbff6f499fa97":[6,0,7,0,0,1,0,14,0,2]
+"duktape-1_88_80_2examples_2hello_2hello_8c_source.html":[6,0,7,0,0,1,0,12,0]
 };

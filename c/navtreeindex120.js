@@ -1,5 +1,11 @@
 var NAVTREEINDEX120 =
 {
+"duktape-1_88_80_2src_2duktape_8c.html#a87d715d854c11e12248013b962586a5e":[6,0,7,0,0,1,1,1,713],
+"duktape-1_88_80_2src_2duktape_8c.html#a87ee7b28288b91278c02f3cc027ff73d":[6,0,7,0,0,1,1,1,2427],
+"duktape-1_88_80_2src_2duktape_8c.html#a880462f45929869de1f36ebf1f632246":[6,0,7,0,0,1,1,1,3558],
+"duktape-1_88_80_2src_2duktape_8c.html#a880b05040ce0fa7820fa080e66ba8645":[6,0,7,0,0,1,1,1,1657],
+"duktape-1_88_80_2src_2duktape_8c.html#a881816585d3b00a2bcad102ec4c70442":[6,0,7,0,0,1,1,1,2721],
+"duktape-1_88_80_2src_2duktape_8c.html#a8824224efa8c375f1b872c09711e1113":[6,0,7,0,0,1,1,1,847],
 "duktape-1_88_80_2src_2duktape_8c.html#a8851e9e7063e9d4a9b62f259c3cb6f2d":[6,0,7,0,0,1,1,1,3388],
 "duktape-1_88_80_2src_2duktape_8c.html#a8865239eccf8719fa04e310d89e41d10":[6,0,7,0,0,1,1,1,3383],
 "duktape-1_88_80_2src_2duktape_8c.html#a887898ba18c5185f4c3f78e1eaf34627":[6,0,7,0,0,1,1,1,3140],
@@ -243,11 +249,5 @@ var NAVTREEINDEX120 =
 "duktape-1_88_80_2src_2duktape_8c.html#a972269e16fec4ed5b31a49a1f9378eaf":[6,0,7,0,0,1,1,1,1662],
 "duktape-1_88_80_2src_2duktape_8c.html#a9723e6b3f052e756c3c1b8e004ecafab":[6,0,7,0,0,1,1,1,2962],
 "duktape-1_88_80_2src_2duktape_8c.html#a97574e08a5058cf515a1872fd8ab7987":[6,0,7,0,0,1,1,1,2917],
-"duktape-1_88_80_2src_2duktape_8c.html#a9763bd3f25f14e636290cc46d11ae69a":[6,0,7,0,0,1,1,1,3433],
-"duktape-1_88_80_2src_2duktape_8c.html#a9766caa85ee9e87087ecfba12ae1d6de":[6,0,7,0,0,1,1,1,624],
-"duktape-1_88_80_2src_2duktape_8c.html#a976c5b8267f00c6034aed8ca87a6adf4":[6,0,7,0,0,1,1,1,679],
-"duktape-1_88_80_2src_2duktape_8c.html#a9771f4142f68951cba50b8dda8290fd3":[6,0,7,0,0,1,1,1,3682],
-"duktape-1_88_80_2src_2duktape_8c.html#a9777c0bc7d4d088bfd549e4fccf0bbb2":[6,0,7,0,0,1,1,1,1500],
-"duktape-1_88_80_2src_2duktape_8c.html#a977818911fedc36645d3b3167a4a83f7":[6,0,7,0,0,1,1,1,1231],
-"duktape-1_88_80_2src_2duktape_8c.html#a9778f142eacf2b3dc986f894ab9b9f45":[6,0,7,0,0,1,1,1,177]
+"duktape-1_88_80_2src_2duktape_8c.html#a9763bd3f25f14e636290cc46d11ae69a":[6,0,7,0,0,1,1,1,3433]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX56 =
 {
+"duktape-1_85_82_2src_2duktape_8c.html#a28070e0081b929ebaf0a1ebd241a75a2":[6,0,7,0,0,0,1,1,327],
+"duktape-1_85_82_2src_2duktape_8c.html#a28159f890cc7110a0c030500478ab8ec":[6,0,7,0,0,0,1,1,1443],
+"duktape-1_85_82_2src_2duktape_8c.html#a28357b013aefba69faba31f829cf4634":[6,0,7,0,0,0,1,1,2091],
+"duktape-1_85_82_2src_2duktape_8c.html#a283afb383bd33394ad60cf6c3807fe75":[6,0,7,0,0,0,1,1,2077],
+"duktape-1_85_82_2src_2duktape_8c.html#a283eec4a08f47534dfc58c1d6b968ed1":[6,0,7,0,0,0,1,1,589],
+"duktape-1_85_82_2src_2duktape_8c.html#a283f5f36b276769caf5ec414b9ee2c6c":[6,0,7,0,0,0,1,1,1614],
 "duktape-1_85_82_2src_2duktape_8c.html#a28497a33da5217959aebc22602926df6":[6,0,7,0,0,0,1,1,2890],
 "duktape-1_85_82_2src_2duktape_8c.html#a284f51a84b6f594ba07b1b55a8311a25":[6,0,7,0,0,0,1,1,1674],
 "duktape-1_85_82_2src_2duktape_8c.html#a28599fea90c32e057b1fcb05610ba892":[6,0,7,0,0,0,1,1,348],
@@ -243,11 +249,5 @@ var NAVTREEINDEX56 =
 "duktape-1_85_82_2src_2duktape_8c.html#a383ce4f62d18b8dae3c5feaedc89d7fe":[6,0,7,0,0,0,1,1,3319],
 "duktape-1_85_82_2src_2duktape_8c.html#a38432104727071d8f62fda0cec94eaf4":[6,0,7,0,0,0,1,1,2064],
 "duktape-1_85_82_2src_2duktape_8c.html#a38679a2bdda10b26be8b081866d00040":[6,0,7,0,0,0,1,1,186],
-"duktape-1_85_82_2src_2duktape_8c.html#a3868e51f01ec9e3269812c5374716fa9":[6,0,7,0,0,0,1,1,1011],
-"duktape-1_85_82_2src_2duktape_8c.html#a3884e6073e87ecb186fa619eca68fd56":[6,0,7,0,0,0,1,1,591],
-"duktape-1_85_82_2src_2duktape_8c.html#a389a479f909160af9f2308d0e6f674db":[6,0,7,0,0,0,1,1,3135],
-"duktape-1_85_82_2src_2duktape_8c.html#a38a4aa3a2264a2d7e0bfc063e15723dc":[6,0,7,0,0,0,1,1,2524],
-"duktape-1_85_82_2src_2duktape_8c.html#a38a6225ad4626f7de5e40dcfaec58e04":[6,0,7,0,0,0,1,1,584],
-"duktape-1_85_82_2src_2duktape_8c.html#a38aba1ee53c5ee23d274ce8b996814e2":[6,0,7,0,0,0,1,1,2408],
-"duktape-1_85_82_2src_2duktape_8c.html#a38b19a691fed346bbf14651c969ac85d":[6,0,7,0,0,0,1,1,1703]
+"duktape-1_85_82_2src_2duktape_8c.html#a3868e51f01ec9e3269812c5374716fa9":[6,0,7,0,0,0,1,1,1011]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX60 =
 {
+"duktape-1_85_82_2src_2duktape_8c.html#a6bfd15b1b43fafaf1239cc603675d8f3":[6,0,7,0,0,0,1,1,1201],
+"duktape-1_85_82_2src_2duktape_8c.html#a6c12b4e6085d241b584e120f59b51e6c":[6,0,7,0,0,0,1,1,2313],
+"duktape-1_85_82_2src_2duktape_8c.html#a6c190ab014f82dce64115c09e7933f5c":[6,0,7,0,0,0,1,1,1612],
+"duktape-1_85_82_2src_2duktape_8c.html#a6c2b8d6ee2a0562ac37680285ce543c3":[6,0,7,0,0,0,1,1,2744],
+"duktape-1_85_82_2src_2duktape_8c.html#a6c3a2adb6e09294c7e65f69821e5e81a":[6,0,7,0,0,0,1,1,750],
+"duktape-1_85_82_2src_2duktape_8c.html#a6c69af82f6e2dfca457492c26590ccdc":[6,0,7,0,0,0,1,1,2587],
 "duktape-1_85_82_2src_2duktape_8c.html#a6c6fb2d3379f79c8d5e3dfaf4d631b2e":[6,0,7,0,0,0,1,1,3574],
 "duktape-1_85_82_2src_2duktape_8c.html#a6c7658e9b47ff42793a66bcf75afa98c":[6,0,7,0,0,0,1,1,1384],
 "duktape-1_85_82_2src_2duktape_8c.html#a6c98324d6f7b2dd6bb313088c2e1ff01":[6,0,7,0,0,0,1,1,1794],
@@ -243,11 +249,5 @@ var NAVTREEINDEX60 =
 "duktape-1_85_82_2src_2duktape_8c.html#a7d4c73b0dd0c099279c855c03339f5c9":[6,0,7,0,0,0,1,1,1559],
 "duktape-1_85_82_2src_2duktape_8c.html#a7d514f55b4c262f2461982ee95d9d1e0":[6,0,7,0,0,0,1,1,3189],
 "duktape-1_85_82_2src_2duktape_8c.html#a7d6c55e80edd91b7a3dd7505cdeb83d9":[6,0,7,0,0,0,1,1,2342],
-"duktape-1_85_82_2src_2duktape_8c.html#a7d8e86c394bb67f00dea3665d419c890":[6,0,7,0,0,0,1,1,3620],
-"duktape-1_85_82_2src_2duktape_8c.html#a7d94ff6e11a5c5672282040e01ec1458":[6,0,7,0,0,0,1,1,1627],
-"duktape-1_85_82_2src_2duktape_8c.html#a7d968f05923b11ee14610e5dd970cf09":[6,0,7,0,0,0,1,1,1099],
-"duktape-1_85_82_2src_2duktape_8c.html#a7db85ec75492eaaad5f2f8c4f1e79539":[6,0,7,0,0,0,1,1,3443],
-"duktape-1_85_82_2src_2duktape_8c.html#a7dc3b9e8ef570a05cf95f483cfcbb2ba":[6,0,7,0,0,0,1,1,2570],
-"duktape-1_85_82_2src_2duktape_8c.html#a7e0f7939b70eb28afa73d2677203b2dd":[6,0,7,0,0,0,1,1,665],
-"duktape-1_85_82_2src_2duktape_8c.html#a7e13449a1fa6ce0222bffa275480bdaa":[6,0,7,0,0,0,1,1,2573]
+"duktape-1_85_82_2src_2duktape_8c.html#a7d8e86c394bb67f00dea3665d419c890":[6,0,7,0,0,0,1,1,3620]
 };

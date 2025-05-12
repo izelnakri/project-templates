@@ -1,5 +1,11 @@
 var NAVTREEINDEX59 =
 {
+"duktape-1_85_82_2src_2duktape_8c.html#a5c638331c57f6feff1c1193ffc6ed082":[6,0,7,0,0,0,1,1,476],
+"duktape-1_85_82_2src_2duktape_8c.html#a5c705ee65dbc261bc36e94b6f55e2848":[6,0,7,0,0,0,1,1,3302],
+"duktape-1_85_82_2src_2duktape_8c.html#a5c788098e8c5fa83148a991361471ab6":[6,0,7,0,0,0,1,1,2800],
+"duktape-1_85_82_2src_2duktape_8c.html#a5c797aa2d24eb9d118b53ad5c198626a":[6,0,7,0,0,0,1,1,3080],
+"duktape-1_85_82_2src_2duktape_8c.html#a5c9cbb2029fd73cfb9dafbc5cb382463":[6,0,7,0,0,0,1,1,2866],
+"duktape-1_85_82_2src_2duktape_8c.html#a5ca681ec14862f1f365b2e93fc050fa2":[6,0,7,0,0,0,1,1,3490],
 "duktape-1_85_82_2src_2duktape_8c.html#a5caac89af4a6e271a0029503711c6964":[6,0,7,0,0,0,1,1,2030],
 "duktape-1_85_82_2src_2duktape_8c.html#a5cb18928dd011b9dcf79b5b91e95fe24":[6,0,7,0,0,0,1,1,1189],
 "duktape-1_85_82_2src_2duktape_8c.html#a5cd519f2ef17be7a3b5ab50ebfbfb3f4":[6,0,7,0,0,0,1,1,1883],
@@ -243,11 +249,5 @@ var NAVTREEINDEX59 =
 "duktape-1_85_82_2src_2duktape_8c.html#a6bb0412b9619218fa6cc54fd5ffb0dcd":[6,0,7,0,0,0,1,1,2833],
 "duktape-1_85_82_2src_2duktape_8c.html#a6bb7a32ff6269d3619c935d50519ed99":[6,0,7,0,0,0,1,1,538],
 "duktape-1_85_82_2src_2duktape_8c.html#a6bd9b2c4c51f61bf8c9af043eb8c958b":[6,0,7,0,0,0,1,1,3496],
-"duktape-1_85_82_2src_2duktape_8c.html#a6be3191361a369188e2cf9bc22e9c678":[6,0,7,0,0,0,1,1,1425],
-"duktape-1_85_82_2src_2duktape_8c.html#a6bfd15b1b43fafaf1239cc603675d8f3":[6,0,7,0,0,0,1,1,1201],
-"duktape-1_85_82_2src_2duktape_8c.html#a6c12b4e6085d241b584e120f59b51e6c":[6,0,7,0,0,0,1,1,2313],
-"duktape-1_85_82_2src_2duktape_8c.html#a6c190ab014f82dce64115c09e7933f5c":[6,0,7,0,0,0,1,1,1612],
-"duktape-1_85_82_2src_2duktape_8c.html#a6c2b8d6ee2a0562ac37680285ce543c3":[6,0,7,0,0,0,1,1,2744],
-"duktape-1_85_82_2src_2duktape_8c.html#a6c3a2adb6e09294c7e65f69821e5e81a":[6,0,7,0,0,0,1,1,750],
-"duktape-1_85_82_2src_2duktape_8c.html#a6c69af82f6e2dfca457492c26590ccdc":[6,0,7,0,0,0,1,1,2587]
+"duktape-1_85_82_2src_2duktape_8c.html#a6be3191361a369188e2cf9bc22e9c678":[6,0,7,0,0,0,1,1,1425]
 };

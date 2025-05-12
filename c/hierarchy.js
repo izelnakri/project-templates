@@ -558,7 +558,6 @@ var hierarchy =
     [ "ah", "structah.html", null ],
     [ "alloc_hdr", "structalloc__hdr.html", null ],
     [ "analysisInfo", "structanalysisInfo.html", null ],
-    [ "AppConfig", "structAppConfig.html", null ],
     [ "AppWidgets", "structAppWidgets.html", null ],
     [ "AuthContext", "structAuthContext.html", null ],
     [ "AutoincInfo", "structAutoincInfo.html", null ],

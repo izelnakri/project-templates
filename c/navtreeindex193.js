@@ -1,5 +1,11 @@
 var NAVTREEINDEX193 =
 {
+"gslice_8h.html#ad49671616ddb78cc61090274a0fe475aaf37f7061c088742bfb1e51ca0ffc1b1b":[6,0,4,0,9,0,1,2,57,5,4],
+"gslice_8h.html#ae6e4321033748efa6c7fb94f2a5cf3a7":[6,0,4,0,9,0,1,2,57,11],
+"gslice_8h_source.html":[6,0,4,0,9,0,1,2,57],
+"gslist_8h.html":[6,0,4,0,9,0,1,2,58],
+"gslist_8h.html#a110b889fef4fe32545a7d2967963631b":[6,0,4,0,9,0,1,2,58,2],
+"gslist_8h.html#a165a7428cc65836d0516be5f19605176":[6,0,4,0,9,0,1,2,58,18],
 "gslist_8h.html#a17dc2dcbf73199aee06037eadd02b66c":[6,0,4,0,9,0,1,2,58,16],
 "gslist_8h.html#a1c0e445f6a7406376a05ce9938c34697":[6,0,4,0,9,0,1,2,58,26],
 "gslist_8h.html#a1c3cb72bb3b1be650f064abfab01bb7f":[6,0,4,0,9,0,1,2,58,10],
@@ -243,11 +249,5 @@ var NAVTREEINDEX193 =
 "gsocketlistener_8h.html#aec84b3aa2ce9ccac8d9ee000e0956d6b":[6,0,4,0,9,0,1,0,129,17],
 "gsocketlistener_8h.html#aed7235caef7bfd1232b2b11ca924cf60":[6,0,4,0,9,0,1,0,129,10],
 "gsocketlistener_8h.html#af227073de7bd119463afc97fd0d87edf":[6,0,4,0,9,0,1,0,129,23],
-"gsocketlistener_8h.html#afa9b1eb7b1652dac9471ca97a862ce4c":[6,0,4,0,9,0,1,0,129,12],
-"gsocketlistener_8h_source.html":[6,0,4,0,9,0,1,0,129],
-"gsocketservice_8h.html":[6,0,4,0,9,0,1,0,130],
-"gsocketservice_8h.html#a31f116f606a497602a9f939ab08ea73a":[6,0,4,0,9,0,1,0,130,3],
-"gsocketservice_8h.html#a4751b9f7a06841e7964bbe98c7ddfa89":[6,0,4,0,9,0,1,0,130,8],
-"gsocketservice_8h.html#a4cd5ee89a9ae2022fc4978647ea5ca46":[6,0,4,0,9,0,1,0,130,4],
-"gsocketservice_8h.html#a50787db2cf4f31df4c4328698f8fd51f":[6,0,4,0,9,0,1,0,130,6]
+"gsocketlistener_8h.html#afa9b1eb7b1652dac9471ca97a862ce4c":[6,0,4,0,9,0,1,0,129,12]
 };

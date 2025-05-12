@@ -1,5 +1,9 @@
 var NAVTREEINDEX283 =
 {
+"pango-engine_8h.html#aef90b07e0e2562b3cf40c86fe4c76183":[6,0,4,0,4,0,0,0,7,14],
+"pango-engine_8h.html#af6799ef7ce46f3b91e02653a112f9dcd":[6,0,4,0,4,0,0,0,7,21],
+"pango-engine_8h.html#af917f78410096b7491f2ae4e50824877":[6,0,4,0,4,0,0,0,7,32],
+"pango-engine_8h.html#afb4c420c56d8e652ac3149db38d0a20e":[6,0,4,0,4,0,0,0,7,25],
 "pango-engine_8h_source.html":[6,0,4,0,4,0,0,0,7],
 "pango-enum-types_8h.html":[6,0,4,0,4,0,0,0,8],
 "pango-enum-types_8h.html#a0aefb4fa8478071fd87e3a6173f424a4":[6,0,4,0,4,0,0,0,8,52],
@@ -245,9 +249,5 @@ var NAVTREEINDEX283 =
 "pango-fontset-simple_8h.html":[6,0,4,0,4,0,0,0,12],
 "pango-fontset-simple_8h.html#a0d7a021e1bdc8124024efcb24401e8b3":[6,0,4,0,4,0,0,0,12,5],
 "pango-fontset-simple_8h.html#a2250b07d4c7dd9193d8f7240b3672b61":[6,0,4,0,4,0,0,0,12,0],
-"pango-fontset-simple_8h.html#a31d5abe176dddf3e65ff787c94838fae":[6,0,4,0,4,0,0,0,12,1],
-"pango-fontset-simple_8h.html#a566de32b3090841c0a7daf4826c15270":[6,0,4,0,4,0,0,0,12,8],
-"pango-fontset-simple_8h.html#a5719f3ded677ae19133e0feae7955377":[6,0,4,0,4,0,0,0,12,3],
-"pango-fontset-simple_8h.html#aa91640dafc2f79303994a61199a063b3":[6,0,4,0,4,0,0,0,12,2],
-"pango-fontset-simple_8h.html#ab934ed1cab6185b46f07f04d3222b06e":[6,0,4,0,4,0,0,0,12,6]
+"pango-fontset-simple_8h.html#a31d5abe176dddf3e65ff787c94838fae":[6,0,4,0,4,0,0,0,12,1]
 };

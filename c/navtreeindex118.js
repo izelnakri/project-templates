@@ -1,5 +1,11 @@
 var NAVTREEINDEX118 =
 {
+"duktape-1_88_80_2src_2duktape_8c.html#a6514e727396c663d9559d4e479f7b8ad":[6,0,7,0,0,1,1,1,3448],
+"duktape-1_88_80_2src_2duktape_8c.html#a652683b185200478e136389ddb8ec6bb":[6,0,7,0,0,1,1,1,1788],
+"duktape-1_88_80_2src_2duktape_8c.html#a6526cde778d78585aac750c6f73952a9":[6,0,7,0,0,1,1,1,196],
+"duktape-1_88_80_2src_2duktape_8c.html#a652ca5b5e92f72cf5bfccf39611eca11":[6,0,7,0,0,1,1,1,1759],
+"duktape-1_88_80_2src_2duktape_8c.html#a653c96b70ca0b6ef1e3b802e254e98c9":[6,0,7,0,0,1,1,1,1032],
+"duktape-1_88_80_2src_2duktape_8c.html#a65693b4c7b5965640fc0b81ba2290ac3":[6,0,7,0,0,1,1,1,1173],
 "duktape-1_88_80_2src_2duktape_8c.html#a656992b93183a85caefa902660779252":[6,0,7,0,0,1,1,1,2363],
 "duktape-1_88_80_2src_2duktape_8c.html#a657928c162b97c04fa4627b0da7076a7":[6,0,7,0,0,1,1,1,1868],
 "duktape-1_88_80_2src_2duktape_8c.html#a658a28af8c82150122466c0c6533774b":[6,0,7,0,0,1,1,1,408],
@@ -243,11 +249,5 @@ var NAVTREEINDEX118 =
 "duktape-1_88_80_2src_2duktape_8c.html#a7684b9849ba04b3f6c6066aab823d78d":[6,0,7,0,0,1,1,1,3654],
 "duktape-1_88_80_2src_2duktape_8c.html#a768a8fb484ad2db508114924900d9450":[6,0,7,0,0,1,1,1,3642],
 "duktape-1_88_80_2src_2duktape_8c.html#a76960920ae6b2b89b19ce2e431fd862e":[6,0,7,0,0,1,1,1,1246],
-"duktape-1_88_80_2src_2duktape_8c.html#a76b26adb27e6c64e13dedde1252492a1":[6,0,7,0,0,1,1,1,537],
-"duktape-1_88_80_2src_2duktape_8c.html#a76b347611a7db4b40fe9772a8849eb08":[6,0,7,0,0,1,1,1,1273],
-"duktape-1_88_80_2src_2duktape_8c.html#a76b4f458c65292749c17198ff67e2bff":[6,0,7,0,0,1,1,1,638],
-"duktape-1_88_80_2src_2duktape_8c.html#a76b4f70ffcee1f3a18c666544b77b449":[6,0,7,0,0,1,1,1,604],
-"duktape-1_88_80_2src_2duktape_8c.html#a76bf6e9ef11331bc4112a8db1b135442":[6,0,7,0,0,1,1,1,3617],
-"duktape-1_88_80_2src_2duktape_8c.html#a76ce2988ae2706e63090b9e04b9555f8":[6,0,7,0,0,1,1,1,454],
-"duktape-1_88_80_2src_2duktape_8c.html#a76d3b505e419ec1a4a7430ae807e6fc0":[6,0,7,0,0,1,1,1,2885]
+"duktape-1_88_80_2src_2duktape_8c.html#a76b26adb27e6c64e13dedde1252492a1":[6,0,7,0,0,1,1,1,537]
 };

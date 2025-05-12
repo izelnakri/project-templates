@@ -1,5 +1,10 @@
 var NAVTREEINDEX12 =
 {
+"dir_7f614ff35160bc3cc05184bfd58a911d.html":[6,0,4,0,6,0,0,0],
+"dir_80d2628b2909a6fe4d93566619d64d2d.html":[6,0,4,0,1,0,0],
+"dir_8366e6a520fc7563347ef0d503df72f8.html":[6,0,4,0,12],
+"dir_836d91f0b868d3529db6b5b267275ac2.html":[6,0,7,0,0,0,0,9],
+"dir_84591d08937a968859b7757c3b203700.html":[6,0,7,0],
 "dir_868b367afc30200093f407405fdcab55.html":[6,0,4,0,13,0],
 "dir_87b42e2af0e4115c1a216c52c04ad6e2.html":[6,0,4,0,8,0,0,2],
 "dir_87d7c9263774914cb13bfd1b1f952222.html":[6,0,2,0],
@@ -31,6 +36,7 @@ var NAVTREEINDEX12 =
 "dir_c16d156a3fe57960a4dc020e6ea2441c.html":[6,0,4,0,8,0,0,3],
 "dir_c3322c925e99f92ac4a62054c9b1a239.html":[6,0,4,0,4,0],
 "dir_c3ebc2c13dae0a02444de2cf71dc6e5a.html":[6,0,2],
+"dir_c47c399fc9f1546a684052540cc408aa.html":[6,0,2,1,0],
 "dir_c5ed3eaf936df07fd49b228b29894c3e.html":[6,0,4,0,10],
 "dir_c8cb32ea5dd8e5cd55b992d014032242.html":[6,0,4,0,9,0,1,0],
 "dir_cfa1ff4ce7995ccc368f2517b0695277.html":[6,0,7,0,0,1,0,12],
@@ -243,11 +249,5 @@ var NAVTREEINDEX12 =
 "duktape-1_85_82_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8h.html#a5aa0c93357093c9b0a380c3c972129cb":[6,0,7,0,0,0,0,6,1,14],
 "duktape-1_85_82_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8h.html#a5caf15f6e3824a6ff3053635b2a07a1c":[6,0,7,0,0,0,0,6,1,40],
 "duktape-1_85_82_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8h.html#a5e9186877196cc538a0335fe6a4ae5b5":[6,0,7,0,0,0,0,6,1,32],
-"duktape-1_85_82_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8h.html#a612e2608d53c97fd23dbb58724c0c289":[6,0,7,0,0,0,0,6,1,3],
-"duktape-1_85_82_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8h.html#a634820dfb57baf144db808408004a72a":[6,0,7,0,0,0,0,6,1,64],
-"duktape-1_85_82_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8h.html#a634ea8b67ad1128f9fe2a51c13ff5c8c":[6,0,7,0,0,0,0,6,1,20],
-"duktape-1_85_82_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8h.html#a66a01eeeb2083238bb14697265f1d7cc":[6,0,7,0,0,0,0,6,1,8],
-"duktape-1_85_82_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8h.html#a69e063e29dc16a2591d5bf8c511a9dcd":[6,0,7,0,0,0,0,6,1,36],
-"duktape-1_85_82_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8h.html#a6a9d403612b00f7606abbe40bd6017e8":[6,0,7,0,0,0,0,6,1,52],
-"duktape-1_85_82_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8h.html#a6b31a1842e42a6d1643b8bf44b642ce8":[6,0,7,0,0,0,0,6,1,33]
+"duktape-1_85_82_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8h.html#a612e2608d53c97fd23dbb58724c0c289":[6,0,7,0,0,0,0,6,1,3]
 };

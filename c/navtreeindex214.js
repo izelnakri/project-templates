@@ -1,5 +1,11 @@
 var NAVTREEINDEX214 =
 {
+"gtkprintdialog_8h.html#a475d42496e22dc2bdbeda69440c5e2fe":[6,0,4,0,8,0,0,2,146,22],
+"gtkprintdialog_8h.html#a4b5fae235cd1c36204924a13ad43db40":[6,0,4,0,8,0,0,2,146,19],
+"gtkprintdialog_8h.html#a6ac913c1b1d243ba3cf6b51f932e2b03":[6,0,4,0,8,0,0,2,146,23],
+"gtkprintdialog_8h.html#a6edea96ed0aa73f1a63576212a38e696":[6,0,4,0,8,0,0,2,146,2],
+"gtkprintdialog_8h.html#a6f3bdcba49bcc6ed381302257ed60065":[6,0,4,0,8,0,0,2,146,20],
+"gtkprintdialog_8h.html#a772798ad7694377ba945ff3ae629c2ef":[6,0,4,0,8,0,0,2,146,3],
 "gtkprintdialog_8h.html#a7db7c787922e0d51eccabb2c88776442":[6,0,4,0,8,0,0,2,146,11],
 "gtkprintdialog_8h.html#a7de778402b28598e1276856193bc811f":[6,0,4,0,8,0,0,2,146,15],
 "gtkprintdialog_8h.html#a9d9f7cd9cf80398f5bac41aadba49a35":[6,0,4,0,8,0,0,2,146,6],
@@ -243,11 +249,5 @@ var NAVTREEINDEX214 =
 "gtkprintsettings_8h.html#a901570b7328cf02f049ae046ae6e52b7":[6,0,4,0,8,0,0,2,3,5,2],
 "gtkprintsettings_8h.html#a905e5c2bc0abb5c0490f47b4c93e78ff":[6,0,4,0,8,0,0,2,3,5,52],
 "gtkprintsettings_8h.html#a95540fffbca897b3a0118e8a7aafad14":[6,0,4,0,8,0,0,2,3,5,114],
-"gtkprintsettings_8h.html#a97699f99c66499f46474d9a2ff9dc3d0":[6,0,4,0,8,0,0,2,3,5,5],
-"gtkprintsettings_8h.html#a9b268c6ea6cd9caed4f122bdee1a19ea":[6,0,4,0,8,0,0,2,3,5,7],
-"gtkprintsettings_8h.html#a9d63593fbeb5339af849a57a2e7543a3":[6,0,4,0,8,0,0,2,3,5,8],
-"gtkprintsettings_8h.html#a9f1359f5cad97d5ae93c5e3c7305db01":[6,0,4,0,8,0,0,2,3,5,22],
-"gtkprintsettings_8h.html#aa06c266dfe9012a1eefc20d5a7332bc7":[6,0,4,0,8,0,0,2,3,5,13],
-"gtkprintsettings_8h.html#aa0e385dd317ad62aeaee9209f5b742b1":[6,0,4,0,8,0,0,2,3,5,35],
-"gtkprintsettings_8h.html#aa2d372eecac59d45c2e685774bab3ed1":[6,0,4,0,8,0,0,2,3,5,91]
+"gtkprintsettings_8h.html#a97699f99c66499f46474d9a2ff9dc3d0":[6,0,4,0,8,0,0,2,3,5,5]
 };

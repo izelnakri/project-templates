@@ -1,5 +1,6 @@
 var dir_87d7c9263774914cb13bfd1b1f952222 =
 [
+    [ "config.cpp", "config_8cpp.html", "config_8cpp" ],
     [ "gui.cpp", "gui_8cpp.html", "gui_8cpp" ],
     [ "main.cpp", "main_8cpp.html", "main_8cpp" ],
     [ "server.cpp", "server_8cpp.html", "server_8cpp" ],

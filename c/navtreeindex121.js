@@ -1,5 +1,11 @@
 var NAVTREEINDEX121 =
 {
+"duktape-1_88_80_2src_2duktape_8c.html#a9766caa85ee9e87087ecfba12ae1d6de":[6,0,7,0,0,1,1,1,624],
+"duktape-1_88_80_2src_2duktape_8c.html#a976c5b8267f00c6034aed8ca87a6adf4":[6,0,7,0,0,1,1,1,679],
+"duktape-1_88_80_2src_2duktape_8c.html#a9771f4142f68951cba50b8dda8290fd3":[6,0,7,0,0,1,1,1,3682],
+"duktape-1_88_80_2src_2duktape_8c.html#a9777c0bc7d4d088bfd549e4fccf0bbb2":[6,0,7,0,0,1,1,1,1500],
+"duktape-1_88_80_2src_2duktape_8c.html#a977818911fedc36645d3b3167a4a83f7":[6,0,7,0,0,1,1,1,1231],
+"duktape-1_88_80_2src_2duktape_8c.html#a9778f142eacf2b3dc986f894ab9b9f45":[6,0,7,0,0,1,1,1,177],
 "duktape-1_88_80_2src_2duktape_8c.html#a9793735a13359704391f0d5cef2025bb":[6,0,7,0,0,1,1,1,2651],
 "duktape-1_88_80_2src_2duktape_8c.html#a97a6adfc8eb4c12296d3c2a4f8dab0a6":[6,0,7,0,0,1,1,1,3514],
 "duktape-1_88_80_2src_2duktape_8c.html#a97bb7890ac89fce429d42bcfd22f0959":[6,0,7,0,0,1,1,1,1564],
@@ -243,11 +249,5 @@ var NAVTREEINDEX121 =
 "duktape-1_88_80_2src_2duktape_8c.html#aa8aed6bc1646ce5b11d15e9156772300":[6,0,7,0,0,1,1,1,1546],
 "duktape-1_88_80_2src_2duktape_8c.html#aa8b654fca7a777b0ddb3c65ad042cd80":[6,0,7,0,0,1,1,1,1085],
 "duktape-1_88_80_2src_2duktape_8c.html#aa8c3fa89037ab6f7477932331370a5fe":[6,0,7,0,0,1,1,1,274],
-"duktape-1_88_80_2src_2duktape_8c.html#aa8eee7f09c98e5633cec43f3f8b9142c":[6,0,7,0,0,1,1,1,962],
-"duktape-1_88_80_2src_2duktape_8c.html#aa8f756b08cbd06f66561ee59a090dd0a":[6,0,7,0,0,1,1,1,959],
-"duktape-1_88_80_2src_2duktape_8c.html#aa8fad9e680dc86df8ebbdee70f01e48c":[6,0,7,0,0,1,1,1,351],
-"duktape-1_88_80_2src_2duktape_8c.html#aa952e169a7f58766bcb1d99a39ad63d1":[6,0,7,0,0,1,1,1,1725],
-"duktape-1_88_80_2src_2duktape_8c.html#aa9636437a560779088d2773510c57c42":[6,0,7,0,0,1,1,1,2110],
-"duktape-1_88_80_2src_2duktape_8c.html#aa986a0319ed2f828a61f5850e435d3ad":[6,0,7,0,0,1,1,1,2874],
-"duktape-1_88_80_2src_2duktape_8c.html#aa9a0d107cfc9ba79b9422f52d37215f5":[6,0,7,0,0,1,1,1,2861]
+"duktape-1_88_80_2src_2duktape_8c.html#aa8eee7f09c98e5633cec43f3f8b9142c":[6,0,7,0,0,1,1,1,962]
 };

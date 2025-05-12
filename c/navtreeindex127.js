@@ -1,5 +1,11 @@
 var NAVTREEINDEX127 =
 {
+"duktape-1_88_80_2src_2duktape_8c.html#afec92d8413a0718170195ec476ef063f":[6,0,7,0,0,1,1,1,1084],
+"duktape-1_88_80_2src_2duktape_8c.html#afec95cc413c0ce14f4af34529efc35b3":[6,0,7,0,0,1,1,1,2243],
+"duktape-1_88_80_2src_2duktape_8c.html#afef5a32ff73de149980f3d1d0e157cd4":[6,0,7,0,0,1,1,1,3252],
+"duktape-1_88_80_2src_2duktape_8c.html#afefd7afc67f6cdf48b21c3d8b94d4078":[6,0,7,0,0,1,1,1,3079],
+"duktape-1_88_80_2src_2duktape_8c.html#aff0ab20765109449a5f22a232236ab64":[6,0,7,0,0,1,1,1,1823],
+"duktape-1_88_80_2src_2duktape_8c.html#aff352dae1eba461c67ec41bc0db88f02":[6,0,7,0,0,1,1,1,3144],
 "duktape-1_88_80_2src_2duktape_8c.html#aff37e12d95b5a6fef31c26211817995e":[6,0,7,0,0,1,1,1,1276],
 "duktape-1_88_80_2src_2duktape_8c.html#aff3de5b8d3d89b6a86c8aaceb96f5338":[6,0,7,0,0,1,1,1,2712],
 "duktape-1_88_80_2src_2duktape_8c.html#aff5ab7b84bcd97f2edfe74afa5678d1b":[6,0,7,0,0,1,1,1,1297],
@@ -243,11 +249,5 @@ var NAVTREEINDEX127 =
 "duktape-1_88_80_2src_2duktape_8h.html#a7c7723a3f4eb73bd1e5e0690d5c2d702":[6,0,7,0,0,1,1,2,312],
 "duktape-1_88_80_2src_2duktape_8h.html#a7cf93bfed3029be231b74ca7ad6c7e7d":[6,0,7,0,0,1,1,2,364],
 "duktape-1_88_80_2src_2duktape_8h.html#a7d6ffa1bfb0c24eff6eaec4f4f0525f0":[6,0,7,0,0,1,1,2,234],
-"duktape-1_88_80_2src_2duktape_8h.html#a7d71ae54be4b37d9b6d1141a51636a38":[6,0,7,0,0,1,1,2,124],
-"duktape-1_88_80_2src_2duktape_8h.html#a7d88ff873ce50f2ca82850dc9e4655c4":[6,0,7,0,0,1,1,2,227],
-"duktape-1_88_80_2src_2duktape_8h.html#a7d925624cfa1c3806718be95be7fb1fb":[6,0,7,0,0,1,1,2,306],
-"duktape-1_88_80_2src_2duktape_8h.html#a7e072131b36a54621e1e28f5210eb944":[6,0,7,0,0,1,1,2,375],
-"duktape-1_88_80_2src_2duktape_8h.html#a7edb5ad118774cfbf1f88d761ac7f547":[6,0,7,0,0,1,1,2,207],
-"duktape-1_88_80_2src_2duktape_8h.html#a7f6319085e87a6e87609838a0870c6af":[6,0,7,0,0,1,1,2,362],
-"duktape-1_88_80_2src_2duktape_8h.html#a805ca08d7b2e3b641a7d1c2e6dc14856":[6,0,7,0,0,1,1,2,288]
+"duktape-1_88_80_2src_2duktape_8h.html#a7d71ae54be4b37d9b6d1141a51636a38":[6,0,7,0,0,1,1,2,124]
 };

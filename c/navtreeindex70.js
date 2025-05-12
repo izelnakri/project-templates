@@ -1,5 +1,11 @@
 var NAVTREEINDEX70 =
 {
+"duktape-1_85_82_2src_2duktape_8h.html#ab2a7cbeb476a47b1df9cb65a95ee558c":[6,0,7,0,0,0,1,2,34],
+"duktape-1_85_82_2src_2duktape_8h.html#ab31d1dcf59ac9d46f25c0d91372a7f64":[6,0,7,0,0,0,1,2,385],
+"duktape-1_85_82_2src_2duktape_8h.html#ab33e2d57ae405a4f0b1eb8010e20d8bb":[6,0,7,0,0,0,1,2,48],
+"duktape-1_85_82_2src_2duktape_8h.html#ab5009d7430c602c1e928fa52a3ce9868":[6,0,7,0,0,0,1,2,355],
+"duktape-1_85_82_2src_2duktape_8h.html#ab696aeffbb3bb91744a935ee1e8010e5":[6,0,7,0,0,0,1,2,192],
+"duktape-1_85_82_2src_2duktape_8h.html#ab7785e8961408268673ff72e3859d490":[6,0,7,0,0,0,1,2,397],
 "duktape-1_85_82_2src_2duktape_8h.html#ab78347382186c262f9d56e0a2f58b4a9":[6,0,7,0,0,0,1,2,238],
 "duktape-1_85_82_2src_2duktape_8h.html#ab7bde87ff7512af818651eeb4530365f":[6,0,7,0,0,0,1,2,381],
 "duktape-1_85_82_2src_2duktape_8h.html#ab88a830b3c4acebb60a61c453be51519":[6,0,7,0,0,0,1,2,8],
@@ -243,11 +249,5 @@ var NAVTREEINDEX70 =
 "duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a1f80e2e6a02d7761fcfc5b1b89143d8d":[6,0,7,0,0,1,0,6,0,33],
 "duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a221d82cae9a94073e00d40f22c36613a":[6,0,7,0,0,1,0,6,0,30],
 "duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a28365393c42aa5cb3a29e6dd9fa4ca25":[6,0,7,0,0,1,0,6,0,11],
-"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a33f2f931edd7c6d9aee9828787cadbe2":[6,0,7,0,0,1,0,6,0,12],
-"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a35db4a595d098c90cb216c864397326e":[6,0,7,0,0,1,0,6,0,14],
-"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a36a5aef9b0b7d216de6df6f0c0c8e018":[6,0,7,0,0,1,0,6,0,20],
-"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a3828807987c03c9f8c9524b0055e2e6b":[6,0,7,0,0,1,0,6,0,10],
-"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a3e9449b8c2e9bf51690cd23b87949c3c":[6,0,7,0,0,1,0,6,0,18],
-"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a44bf78d646133e49c0846fdb1e8b1c99":[6,0,7,0,0,1,0,6,0,52],
-"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a44dbe02317073e08c968fa3f84a7456a":[6,0,7,0,0,1,0,6,0,42]
+"duktape-1_88_80_2examples_2debug-trans-dvalue_2duk__trans__dvalue_8c.html#a33f2f931edd7c6d9aee9828787cadbe2":[6,0,7,0,0,1,0,6,0,12]
 };

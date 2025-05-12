@@ -555,7 +555,6 @@ var annotated_dup =
     [ "ah", "structah.html", "structah" ],
     [ "alloc_hdr", "structalloc__hdr.html", "structalloc__hdr" ],
     [ "analysisInfo", "structanalysisInfo.html", "structanalysisInfo" ],
-    [ "AppConfig", "structAppConfig.html", "structAppConfig" ],
     [ "AppWidgets", "structAppWidgets.html", "structAppWidgets" ],
     [ "AuthContext", "structAuthContext.html", "structAuthContext" ],
     [ "AutoincInfo", "structAutoincInfo.html", "structAutoincInfo" ],

@@ -1,5 +1,11 @@
 var NAVTREEINDEX53 =
 {
+"duktape-1_85_82_2src_2duk__config_8h.html#a6615c9d227b3ed8f7a543fd8e3c5e4c9":[6,0,7,0,0,0,1,0,163],
+"duktape-1_85_82_2src_2duk__config_8h.html#a66a83b11b322fb452d3677f28ee7067f":[6,0,7,0,0,0,1,0,284],
+"duktape-1_85_82_2src_2duk__config_8h.html#a67a9b6b3f1725059ebb7321ecd0b0222":[6,0,7,0,0,0,1,0,214],
+"duktape-1_85_82_2src_2duk__config_8h.html#a683464c88171312361fede5cef6badc7":[6,0,7,0,0,0,1,0,139],
+"duktape-1_85_82_2src_2duk__config_8h.html#a6936a14456ed8292d143dc69976aaf72":[6,0,7,0,0,0,1,0,197],
+"duktape-1_85_82_2src_2duk__config_8h.html#a695e8221425f021bf9385c59229ce2fc":[6,0,7,0,0,0,1,0,88],
 "duktape-1_85_82_2src_2duk__config_8h.html#a699eec0cd76e9c48d8578eff598958e9":[6,0,7,0,0,0,1,0,191],
 "duktape-1_85_82_2src_2duk__config_8h.html#a6a8d6f1a363bc8f18af9be01d2701354":[6,0,7,0,0,0,1,0,162],
 "duktape-1_85_82_2src_2duk__config_8h.html#a6ab5b9e04e1c5911d8b3ab0443686b71":[6,0,7,0,0,0,1,0,84],
@@ -243,11 +249,5 @@ var NAVTREEINDEX53 =
 "duktape-1_85_82_2src_2duktape_8c.html#a0468c73fae258ddd0a211f21a153821e":[6,0,7,0,0,0,1,1,1197],
 "duktape-1_85_82_2src_2duktape_8c.html#a04824f14dd0664b547b200683d26f81f":[6,0,7,0,0,0,1,1,917],
 "duktape-1_85_82_2src_2duktape_8c.html#a049926c530cb68f568604ebc27d9ddbd":[6,0,7,0,0,0,1,1,2959],
-"duktape-1_85_82_2src_2duktape_8c.html#a04d0fbf185399c740c7a207abd4ddc04":[6,0,7,0,0,0,1,1,3314],
-"duktape-1_85_82_2src_2duktape_8c.html#a04d1a7831f8884ddf63a6134b3385c0f":[6,0,7,0,0,0,1,1,2127],
-"duktape-1_85_82_2src_2duktape_8c.html#a04d50dc811aac652c3240cf4d9d37fa8":[6,0,7,0,0,0,1,1,72],
-"duktape-1_85_82_2src_2duktape_8c.html#a04ff20dec8ac63c2010d16bcfd823d15":[6,0,7,0,0,0,1,1,2466],
-"duktape-1_85_82_2src_2duktape_8c.html#a050470caeea5c68b4913c520a166383d":[6,0,7,0,0,0,1,1,578],
-"duktape-1_85_82_2src_2duktape_8c.html#a0507d326f7a17367def91d1c3a9a79dc":[6,0,7,0,0,0,1,1,3425],
-"duktape-1_85_82_2src_2duktape_8c.html#a050960ef6e59ec5595d5e68c8cad2c74":[6,0,7,0,0,0,1,1,198]
+"duktape-1_85_82_2src_2duktape_8c.html#a04d0fbf185399c740c7a207abd4ddc04":[6,0,7,0,0,0,1,1,3314]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX76 =
 {
+"duktape-1_88_80_2src-noline_2duktape_8c.html#a2fa78c2e889aafb46846e89bba449c5f":[6,0,7,0,0,1,2,1,3046],
+"duktape-1_88_80_2src-noline_2duktape_8c.html#a2fa8303f5c6b48c4ea65a88bc53516ee":[6,0,7,0,0,1,2,1,3770],
+"duktape-1_88_80_2src-noline_2duktape_8c.html#a2fac050ee1bed14be873907b753bb7ee":[6,0,7,0,0,1,2,1,1838],
+"duktape-1_88_80_2src-noline_2duktape_8c.html#a2fc23d0abbcb7de80830da06cdec45fe":[6,0,7,0,0,1,2,1,2519],
+"duktape-1_88_80_2src-noline_2duktape_8c.html#a2fe74922c29d7e347674fa2aad169fb0":[6,0,7,0,0,1,2,1,1690],
+"duktape-1_88_80_2src-noline_2duktape_8c.html#a2fef5b1b8a87164e0c2d7df4b5c0d6ea":[6,0,7,0,0,1,2,1,3612],
 "duktape-1_88_80_2src-noline_2duktape_8c.html#a2ff85cd89ea1baf8ab0f8bb7e010d9a5":[6,0,7,0,0,1,2,1,1996],
 "duktape-1_88_80_2src-noline_2duktape_8c.html#a30031b34a632fb96cd7fef08ac81eed1":[6,0,7,0,0,1,2,1,554],
 "duktape-1_88_80_2src-noline_2duktape_8c.html#a30037f999e73bc435679e78af352c039":[6,0,7,0,0,1,2,1,2055],
@@ -243,11 +249,5 @@ var NAVTREEINDEX76 =
 "duktape-1_88_80_2src-noline_2duktape_8c.html#a4070852569008e23912442e1bb18a03c":[6,0,7,0,0,1,2,1,1734],
 "duktape-1_88_80_2src-noline_2duktape_8c.html#a407856839741dfe602609274909204d5":[6,0,7,0,0,1,2,1,1055],
 "duktape-1_88_80_2src-noline_2duktape_8c.html#a408c988718a8fe378a3782ce1c08238a":[6,0,7,0,0,1,2,1,1456],
-"duktape-1_88_80_2src-noline_2duktape_8c.html#a409ce2cf2444c47a3ce3b1483a6b2242":[6,0,7,0,0,1,2,1,1604],
-"duktape-1_88_80_2src-noline_2duktape_8c.html#a409cfa2b0c383ec715ce5fecff997b81":[6,0,7,0,0,1,2,1,3683],
-"duktape-1_88_80_2src-noline_2duktape_8c.html#a40b537afbaf0f851986a35bad8d411b8":[6,0,7,0,0,1,2,1,3666],
-"duktape-1_88_80_2src-noline_2duktape_8c.html#a40b6c9eaa716e08e7003a3aa2a4ec380":[6,0,7,0,0,1,2,1,3225],
-"duktape-1_88_80_2src-noline_2duktape_8c.html#a40d43806d47aaf2471c949af9c496443":[6,0,7,0,0,1,2,1,3626],
-"duktape-1_88_80_2src-noline_2duktape_8c.html#a40d6b4b752b4c5bbb68e931e419eba51":[6,0,7,0,0,1,2,1,797],
-"duktape-1_88_80_2src-noline_2duktape_8c.html#a40eeeaeab734ffe77321771a504bbb16":[6,0,7,0,0,1,2,1,1679]
+"duktape-1_88_80_2src-noline_2duktape_8c.html#a409ce2cf2444c47a3ce3b1483a6b2242":[6,0,7,0,0,1,2,1,1604]
 };

@@ -1,5 +1,11 @@
 var NAVTREEINDEX57 =
 {
+"duktape-1_85_82_2src_2duktape_8c.html#a3884e6073e87ecb186fa619eca68fd56":[6,0,7,0,0,0,1,1,591],
+"duktape-1_85_82_2src_2duktape_8c.html#a389a479f909160af9f2308d0e6f674db":[6,0,7,0,0,0,1,1,3135],
+"duktape-1_85_82_2src_2duktape_8c.html#a38a4aa3a2264a2d7e0bfc063e15723dc":[6,0,7,0,0,0,1,1,2524],
+"duktape-1_85_82_2src_2duktape_8c.html#a38a6225ad4626f7de5e40dcfaec58e04":[6,0,7,0,0,0,1,1,584],
+"duktape-1_85_82_2src_2duktape_8c.html#a38aba1ee53c5ee23d274ce8b996814e2":[6,0,7,0,0,0,1,1,2408],
+"duktape-1_85_82_2src_2duktape_8c.html#a38b19a691fed346bbf14651c969ac85d":[6,0,7,0,0,0,1,1,1703],
 "duktape-1_85_82_2src_2duktape_8c.html#a38b2f497936ae2c0b7bab70ea6df9981":[6,0,7,0,0,0,1,1,3589],
 "duktape-1_85_82_2src_2duktape_8c.html#a38b449149918d6e2c0ba954fb170ff84":[6,0,7,0,0,0,1,1,2976],
 "duktape-1_85_82_2src_2duktape_8c.html#a38b462298877464d71c0b2fbee677c49":[6,0,7,0,0,0,1,1,1285],
@@ -243,11 +249,5 @@ var NAVTREEINDEX57 =
 "duktape-1_85_82_2src_2duktape_8c.html#a49cc43a190c1f9f6a297fa7d6112d830":[6,0,7,0,0,0,1,1,1188],
 "duktape-1_85_82_2src_2duktape_8c.html#a49ce4e66736053012cbd14d6fe98485f":[6,0,7,0,0,0,1,1,2283],
 "duktape-1_85_82_2src_2duktape_8c.html#a49e751d47fa67143221165d29161cac8":[6,0,7,0,0,0,1,1,2592],
-"duktape-1_85_82_2src_2duktape_8c.html#a4a0c9a347beee47b0610e6c87e9515d2":[6,0,7,0,0,0,1,1,1644],
-"duktape-1_85_82_2src_2duktape_8c.html#a4a5456d628992ecc1075eaf902052bd7":[6,0,7,0,0,0,1,1,1473],
-"duktape-1_85_82_2src_2duktape_8c.html#a4a56ba6867193e5b84939adf9afc8379":[6,0,7,0,0,0,1,1,424],
-"duktape-1_85_82_2src_2duktape_8c.html#a4a6eb64e7211fb41d6da6de7da0d18fc":[6,0,7,0,0,0,1,1,307],
-"duktape-1_85_82_2src_2duktape_8c.html#a4a7bb70e7c63c585d48fca6a02c88e96":[6,0,7,0,0,0,1,1,3229],
-"duktape-1_85_82_2src_2duktape_8c.html#a4a7c12c187567b72485522191bb41654":[6,0,7,0,0,0,1,1,3439],
-"duktape-1_85_82_2src_2duktape_8c.html#a4a884638c57dcc4bb8593064718a55ce":[6,0,7,0,0,0,1,1,3652]
+"duktape-1_85_82_2src_2duktape_8c.html#a4a0c9a347beee47b0610e6c87e9515d2":[6,0,7,0,0,0,1,1,1644]
 };
