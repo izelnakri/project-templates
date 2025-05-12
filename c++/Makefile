@@ -165,7 +165,7 @@ doc:
 
 bench: clean 
 	meson setup build --buildtype=$(BUILD_TYPE) -Dbenchmarks=enabled
-	meson compile -C build && meson test -C build --suite benchmark
+	meson test -C build -i --suite benchmark
 
 bench-user:
 	meson compile -C build && ./build/bench_user

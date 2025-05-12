@@ -2,6 +2,11 @@ project('github_user_fetcher', 'cpp', version : '1.0.0')
 
 cpp = meson.get_compiler('cpp')
 cpp_args = ['-Wall', '-Wextra', '-std=c++20'] # TODO: in future move it to c++23(+)
+lib_src = files('src/user.cpp', 'src/server.cpp')
+main_src = lib_src + files('src/main.cpp', 'src/config.cpp')
+
+# NOTE: Old one: headers = include_directories('src', 'vendor/civetweb')
+headers = include_directories('src')
 
 dependencies = [
   dependency('boost', modules : ['system'], required : true),
@@ -9,17 +14,12 @@ dependencies = [
   dependency('nlohmann_json', required: true),
 ]
 
-# NOTE: Old one: headers = include_directories('src', 'vendor/civetweb')
-headers = include_directories('src')
-
-github_user_fetcher = executable('github_user_fetcher', files('src/config.cpp', 'src/main.cpp', 'src/user.cpp', 'src/server.cpp'),
+github_user_fetcher = executable('github_user_fetcher', main_src,
   dependencies: dependencies,
   include_directories: headers,
   cpp_args: cpp_args,
   install: true,
 )
-
-lib_src = files('src/user.cpp', 'src/server.cpp')
 
 github_user_fetcher_shared = shared_library('github_user_fetcher', lib_src,
   dependencies: dependencies,
@@ -106,21 +106,23 @@ if build_tests
   endforeach
 endif
 
-# Benchmark setup
-# if get_option('benchmarks').enabled()
-#   benchmark_dependencies = [
-#     dependency('benchmark', required: true),
-#   ]
-#
-#   benchmark_executable = executable('bench_user',
-#     files('benchmarks/bench_user.cpp'), 
-#     include_directories: headers,
-#     dependencies: [boost_dep, nlohmann_json_dep] + benchmark_dependencies,  # Added nlohmann_json dependency
-#     link_with: github_user_fetcher_static,
-#     cpp_args: cpp_args + ['-DBENCHMARKING']
-#   )
-#   test('user_benchmarks', benchmark_executable, is_parallel: false, suite: ['benchmark'])
-# endif
+if get_option('benchmarks').enabled()
+  benchmark_src = files('benchmarks/bench_user.cpp')
+
+  benchmark_dependencies = [
+    dependency('benchmark', required: true), # or: # dependency('catch2-with-main', required: true),
+  ]
+
+  benchmark_executable = executable('benchmarks',
+    benchmark_src,
+    include_directories: headers,
+    dependencies: dependencies + benchmark_dependencies,
+    link_with: github_user_fetcher_static,
+    cpp_args: cpp_args
+  )
+
+  test('benchmarks', benchmark_executable, is_parallel: false, suite: ['benchmark'])
+endif
 
 pkg = import('pkgconfig')
 pkg.generate(
