@@ -35,14 +35,24 @@ github_user_fetcher_static = static_library('github_user_fetcher_static', lib_sr
   install: true
 )
 
-install_headers('src/user.hpp', subdir: 'github_user_fetcher') # ?!Does it instal to /{prefix}/include/github_user_fetcher/user
+install_headers('src/user.hpp', subdir: 'github_user_fetcher') # ?!Does it install to /{prefix}/include/github_user_fetcher/user
 
-css_header = custom_target('style_css',
+css_header = custom_target('style_css_hpp', # Generate header from CSS file
   input: 'src/style.css',
+  build_always_stale: true,
+  build_by_default: true,
   output: 'style_css.hpp',
   command: [
     'sh', '-c',
-    'echo "#pragma once\n\ninline const char* css_data = \"$(cat @INPUT@ | sed \'s/\"/\\\\\"/g\')\";" > @OUTPUT@'
+    '''
+    {
+      echo '#pragma once'
+      echo ''
+      echo 'inline const char* css_data = R"CSS_CONTENT('
+      cat @INPUT@
+      echo ')CSS_CONTENT";'
+    } > "$2"
+    ''', 'sh', '@INPUT@', '@OUTPUT@'
   ]
 )
 
@@ -51,8 +61,8 @@ custom_target('copy_style_css',
   command: ['cp', 'src/style.css', join_paths(get_option('builddir'), 'style.css')],
   output: 'style.css'
 )
-
-executable('github_user_fetcher_gui', ['src/gui.cpp'],
+executable('github_user_fetcher_gui',
+  ['src/gui.cpp', css_header],
   dependencies: [
     dependency('gtkmm-4.0', required: true),
     # In future: If using webkit, add dependencies here.
@@ -63,7 +73,7 @@ executable('github_user_fetcher_gui', ['src/gui.cpp'],
   install: true,
 )
 
-install_data('src/style.css', install_dir: 'share/github_user_fetcher')
+install_data('src/style.css', install_dir: 'share/github_user_fetcher') # NOTE: maybe change the code to load this dynamically in future
 
 # Testing setup
 # tests_opt = get_option('tests')
