@@ -162,84 +162,98 @@ $(function(){initNavTree('test__cli_8cpp_source.html',''); initResizable(); });
 </div>
 <div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span> </div>
 <div class="foldopen" id="foldopen00057" data-start="{" data-end="}">
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="test__cli_8cpp.html#a1ac817bfeed2cc83598aa74059dd7aef">   57</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="test__cli_8cpp.html#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a>() {</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordtype">int</span> ret = system(<span class="stringliteral">&quot;pkill -f &#39;github_user_fetcher --server&#39;&quot;</span>);</div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <span class="keywordflow">if</span> (ret != 0) {</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Warning: Failed to stop server process\n&quot;</span>;</div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    }</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>}</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="test__cli_8cpp.html#aac765fdcd11cc2a5648677bce5bc52cc">   57</a></span><span class="keywordtype">bool</span> <a class="code hl_function" href="test__cli_8cpp.html#aac765fdcd11cc2a5648677bce5bc52cc">wait_for_server</a>(<span class="keywordtype">int</span> max_retries = 10) {</div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; max_retries; ++i) {</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>            std::string res = <a class="code hl_function" href="test__cli_8cpp.html#ad061726d980595161b0f70be324e96c5">http_get</a>(<span class="stringliteral">&quot;http://localhost:1234/wycats&quot;</span>);</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>            <span class="keywordflow">return</span> !res.empty();</div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>        } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>            std::this_thread::sleep_for(std::chrono::milliseconds(300));</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>        }</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>}</div>
 </div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="foldopen" id="foldopen00064" data-start="{" data-end="}">
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno"><a class="line" href="test__cli_8cpp.html#a0ce7c029860d44287b887f4a89e1a496">   64</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;Default user fetch&quot;</span>, <span class="stringliteral">&quot;[cli]&quot;</span>) {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    std::string <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> = <a class="code hl_function" href="test__cli_8cpp.html#a4132301e90db11a4fa1cd621ba351c60">run_command</a>(<span class="stringliteral">&quot;./github_user_fetcher&quot;</span>);</div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    <span class="comment">// Print the output for debugging purposes</span></div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output for default user fetch:\n&quot;</span> &lt;&lt; <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span> </div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="comment">// Check if other specific information is in the output</span></div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Login: izelnakri&quot;</span>) != std::string::npos);</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Name: Izel Nakri&quot;</span>) != std::string::npos);</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Company: Ruby, JavaScript&quot;</span>) != std::string::npos);</div>
-<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Location: Madrid&quot;</span>) != std::string::npos);</div>
-<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span>}</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span> </div>
+<div class="foldopen" id="foldopen00069" data-start="{" data-end="}">
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno"><a class="line" href="test__cli_8cpp.html#a1ac817bfeed2cc83598aa74059dd7aef">   69</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="test__cli_8cpp.html#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a>() {</div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span>    <span class="keywordtype">int</span> ret = system(<span class="stringliteral">&quot;pkill -f &#39;github_user_fetcher --server&#39;&quot;</span>);</div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">if</span> (ret != 0) {</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Warning: Failed to stop server process\n&quot;</span>;</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
 </div>
-<div class="line"><a id="l00076" name="l00076"></a><span class="lineno">   76</span> </div>
-<div class="foldopen" id="foldopen00077" data-start="{" data-end="}">
-<div class="line"><a id="l00077" name="l00077"></a><span class="lineno"><a class="line" href="test__cli_8cpp.html#aa70f237bc0b1d49f57bd3a2d8f9c988b">   77</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;Custom user fetch (wycats)&quot;</span>, <span class="stringliteral">&quot;[cli]&quot;</span>) {</div>
-<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span>    std::string <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> = <a class="code hl_function" href="test__cli_8cpp.html#a4132301e90db11a4fa1cd621ba351c60">run_command</a>(<span class="stringliteral">&quot;./github_user_fetcher --user wycats&quot;</span>);</div>
-<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span> </div>
-<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output for custom user fetch (wycats):\n&quot;</span> &lt;&lt; <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00075" name="l00075"></a><span class="lineno">   75</span> </div>
+<div class="foldopen" id="foldopen00076" data-start="{" data-end="}">
+<div class="line"><a id="l00076" name="l00076"></a><span class="lineno"><a class="line" href="test__cli_8cpp.html#a0ce7c029860d44287b887f4a89e1a496">   76</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;Default user fetch&quot;</span>, <span class="stringliteral">&quot;[cli]&quot;</span>) {</div>
+<div class="line"><a id="l00077" name="l00077"></a><span class="lineno">   77</span>    std::string <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> = <a class="code hl_function" href="test__cli_8cpp.html#a4132301e90db11a4fa1cd621ba351c60">run_command</a>(<span class="stringliteral">&quot;./github_user_fetcher&quot;</span>);</div>
+<div class="line"><a id="l00078" name="l00078"></a><span class="lineno">   78</span> </div>
+<div class="line"><a id="l00079" name="l00079"></a><span class="lineno">   79</span>    <span class="comment">// Print the output for debugging purposes</span></div>
+<div class="line"><a id="l00080" name="l00080"></a><span class="lineno">   80</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output for default user fetch:\n&quot;</span> &lt;&lt; <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00081" name="l00081"></a><span class="lineno">   81</span> </div>
-<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Login: wycats&quot;</span>) != std::string::npos);</div>
-<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>}</div>
+<div class="line"><a id="l00082" name="l00082"></a><span class="lineno">   82</span>    <span class="comment">// Check if other specific information is in the output</span></div>
+<div class="line"><a id="l00083" name="l00083"></a><span class="lineno">   83</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Login: izelnakri&quot;</span>) != std::string::npos);</div>
+<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Name: Izel Nakri&quot;</span>) != std::string::npos);</div>
+<div class="line"><a id="l00085" name="l00085"></a><span class="lineno">   85</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Company: Ruby, JavaScript&quot;</span>) != std::string::npos);</div>
+<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Location: Madrid&quot;</span>) != std::string::npos);</div>
+<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>}</div>
 </div>
-<div class="line"><a id="l00084" name="l00084"></a><span class="lineno">   84</span> </div>
-<div class="foldopen" id="foldopen00085" data-start="{" data-end="}">
-<div class="line"><a id="l00085" name="l00085"></a><span class="lineno"><a class="line" href="test__cli_8cpp.html#aca283c48b67f44a0f7ac6b2747a4496d">   85</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;Run server mode and fetch user data&quot;</span>, <span class="stringliteral">&quot;[cli]&quot;</span>) {</div>
-<div class="line"><a id="l00086" name="l00086"></a><span class="lineno">   86</span>    <span class="comment">// Run the server in a background thread</span></div>
-<div class="line"><a id="l00087" name="l00087"></a><span class="lineno">   87</span>    std::thread server_thread([]() {</div>
-<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span>        <span class="keywordtype">int</span> ret = system(<span class="stringliteral">&quot;./github_user_fetcher --server&quot;</span>);</div>
-<div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>        <span class="keywordflow">if</span> (ret != 0) {</div>
-<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Server exited with code: &quot;</span> &lt;&lt; ret &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>        }</div>
-<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    });</div>
+<div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
+<div class="foldopen" id="foldopen00089" data-start="{" data-end="}">
+<div class="line"><a id="l00089" name="l00089"></a><span class="lineno"><a class="line" href="test__cli_8cpp.html#aa70f237bc0b1d49f57bd3a2d8f9c988b">   89</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;Custom user fetch (wycats)&quot;</span>, <span class="stringliteral">&quot;[cli]&quot;</span>) {</div>
+<div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>    std::string <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> = <a class="code hl_function" href="test__cli_8cpp.html#a4132301e90db11a4fa1cd621ba351c60">run_command</a>(<span class="stringliteral">&quot;./github_user_fetcher --user wycats&quot;</span>);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span> </div>
+<div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output for custom user fetch (wycats):\n&quot;</span> &lt;&lt; <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> &lt;&lt; std::endl;</div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span> </div>
-<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="comment">// Allow the server some time to start</span></div>
-<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>    std::this_thread::sleep_for(std::chrono::seconds(2));</div>
+<div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Login: wycats&quot;</span>) != std::string::npos);</div>
+<div class="line"><a id="l00095" name="l00095"></a><span class="lineno">   95</span>}</div>
+</div>
 <div class="line"><a id="l00096" name="l00096"></a><span class="lineno">   96</span> </div>
-<div class="line"><a id="l00097" name="l00097"></a><span class="lineno">   97</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>        <span class="comment">// Make the HTTP request to the server for the `izelnakri` user</span></div>
-<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>        std::string url = <span class="stringliteral">&quot;http://localhost:1234/izelnakri&quot;</span>;</div>
-<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        std::string json_response = <a class="code hl_function" href="test__cli_8cpp.html#ad061726d980595161b0f70be324e96c5">http_get</a>(url);</div>
-<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span> </div>
-<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>        <span class="comment">// Parse the JSON response</span></div>
-<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        <span class="keyword">auto</span> json = nlohmann::json::parse(json_response);</div>
-<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span> </div>
-<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span>        <span class="comment">// Check that the response contains the expected fields</span></div>
-<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>        REQUIRE(json[<span class="stringliteral">&quot;login&quot;</span>] == <span class="stringliteral">&quot;izelnakri&quot;</span>);</div>
-<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>        REQUIRE(json[<span class="stringliteral">&quot;name&quot;</span>] == <span class="stringliteral">&quot;Izel Nakri | izelnakri.eth&quot;</span>);</div>
-<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span>        REQUIRE(json[<span class="stringliteral">&quot;company&quot;</span>] == <span class="stringliteral">&quot;Ruby, JavaScript, TS, elixir, rust, k8s, lua, nix, pkl, android&quot;</span>);</div>
-<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>        REQUIRE(json[<span class="stringliteral">&quot;location&quot;</span>] == <span class="stringliteral">&quot;Madrid | Amsterdam&quot;</span>);</div>
-<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span> </div>
-<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        json_response = <a class="code hl_function" href="test__cli_8cpp.html#ad061726d980595161b0f70be324e96c5">http_get</a>(<span class="stringliteral">&quot;http://localhost:1234/wycats&quot;</span>);</div>
-<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        json = nlohmann::json::parse(json_response);</div>
+<div class="foldopen" id="foldopen00097" data-start="{" data-end="}">
+<div class="line"><a id="l00097" name="l00097"></a><span class="lineno"><a class="line" href="test__cli_8cpp.html#aca283c48b67f44a0f7ac6b2747a4496d">   97</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;Run server mode and fetch user data&quot;</span>, <span class="stringliteral">&quot;[cli]&quot;</span>) {</div>
+<div class="line"><a id="l00098" name="l00098"></a><span class="lineno">   98</span>    <span class="comment">// Run the server in a background thread</span></div>
+<div class="line"><a id="l00099" name="l00099"></a><span class="lineno">   99</span>    std::thread server_thread([]() {</div>
+<div class="line"><a id="l00100" name="l00100"></a><span class="lineno">  100</span>        <span class="keywordtype">int</span> ret = system(<span class="stringliteral">&quot;./github_user_fetcher --server&quot;</span>);</div>
+<div class="line"><a id="l00101" name="l00101"></a><span class="lineno">  101</span>        <span class="keywordflow">if</span> (ret != 0) {</div>
+<div class="line"><a id="l00102" name="l00102"></a><span class="lineno">  102</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Server exited with code: &quot;</span> &lt;&lt; ret &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00103" name="l00103"></a><span class="lineno">  103</span>        }</div>
+<div class="line"><a id="l00104" name="l00104"></a><span class="lineno">  104</span>    });</div>
+<div class="line"><a id="l00105" name="l00105"></a><span class="lineno">  105</span> </div>
+<div class="line"><a id="l00106" name="l00106"></a><span class="lineno">  106</span>    <span class="comment">// Allow the server some time to start</span></div>
+<div class="line"><a id="l00107" name="l00107"></a><span class="lineno">  107</span>    <a class="code hl_function" href="test__cli_8cpp.html#aac765fdcd11cc2a5648677bce5bc52cc">wait_for_server</a>();</div>
+<div class="line"><a id="l00108" name="l00108"></a><span class="lineno">  108</span> </div>
+<div class="line"><a id="l00109" name="l00109"></a><span class="lineno">  109</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><a id="l00110" name="l00110"></a><span class="lineno">  110</span>        <span class="comment">// Make the HTTP request to the server for the `izelnakri` user</span></div>
+<div class="line"><a id="l00111" name="l00111"></a><span class="lineno">  111</span>        std::string url = <span class="stringliteral">&quot;http://localhost:1234/izelnakri&quot;</span>;</div>
+<div class="line"><a id="l00112" name="l00112"></a><span class="lineno">  112</span>        std::string json_response = <a class="code hl_function" href="test__cli_8cpp.html#ad061726d980595161b0f70be324e96c5">http_get</a>(url);</div>
 <div class="line"><a id="l00113" name="l00113"></a><span class="lineno">  113</span> </div>
-<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="comment">// Check that the response contains the expected fields for `wycats`</span></div>
-<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        REQUIRE(json[<span class="stringliteral">&quot;login&quot;</span>] == <span class="stringliteral">&quot;wycats&quot;</span>);</div>
-<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="comment">// If there was an error in any of the steps, make sure the server is stopped</span></div>
-<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Test failed: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
-<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        <a class="code hl_function" href="test__cli_8cpp.html#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a>();</div>
-<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        FAIL(<span class="stringliteral">&quot;Test failed: &quot;</span> + std::string(e.what()));</div>
-<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>    }</div>
+<div class="line"><a id="l00114" name="l00114"></a><span class="lineno">  114</span>        <span class="comment">// Parse the JSON response</span></div>
+<div class="line"><a id="l00115" name="l00115"></a><span class="lineno">  115</span>        <span class="keyword">auto</span> json = nlohmann::json::parse(json_response);</div>
+<div class="line"><a id="l00116" name="l00116"></a><span class="lineno">  116</span> </div>
+<div class="line"><a id="l00117" name="l00117"></a><span class="lineno">  117</span>        <span class="comment">// Check that the response contains the expected fields</span></div>
+<div class="line"><a id="l00118" name="l00118"></a><span class="lineno">  118</span>        REQUIRE(json[<span class="stringliteral">&quot;login&quot;</span>] == <span class="stringliteral">&quot;izelnakri&quot;</span>);</div>
+<div class="line"><a id="l00119" name="l00119"></a><span class="lineno">  119</span>        REQUIRE(json[<span class="stringliteral">&quot;name&quot;</span>] == <span class="stringliteral">&quot;Izel Nakri | izelnakri.eth&quot;</span>);</div>
+<div class="line"><a id="l00120" name="l00120"></a><span class="lineno">  120</span>        REQUIRE(json[<span class="stringliteral">&quot;company&quot;</span>] == <span class="stringliteral">&quot;Ruby, JavaScript, TS, elixir, rust, k8s, lua, nix, pkl, android&quot;</span>);</div>
+<div class="line"><a id="l00121" name="l00121"></a><span class="lineno">  121</span>        REQUIRE(json[<span class="stringliteral">&quot;location&quot;</span>] == <span class="stringliteral">&quot;Madrid | Amsterdam&quot;</span>);</div>
 <div class="line"><a id="l00122" name="l00122"></a><span class="lineno">  122</span> </div>
-<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>    <span class="comment">// Ensure the server is stopped after the test</span></div>
-<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>    <a class="code hl_function" href="test__cli_8cpp.html#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a>();</div>
+<div class="line"><a id="l00123" name="l00123"></a><span class="lineno">  123</span>        json_response = <a class="code hl_function" href="test__cli_8cpp.html#ad061726d980595161b0f70be324e96c5">http_get</a>(<span class="stringliteral">&quot;http://localhost:1234/wycats&quot;</span>);</div>
+<div class="line"><a id="l00124" name="l00124"></a><span class="lineno">  124</span>        json = nlohmann::json::parse(json_response);</div>
 <div class="line"><a id="l00125" name="l00125"></a><span class="lineno">  125</span> </div>
-<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>    <span class="keywordflow">if</span> (server_thread.joinable())</div>
-<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        server_thread.detach(); <span class="comment">// Don&#39;t join, since we already stopped it</span></div>
-<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>}</div>
+<div class="line"><a id="l00126" name="l00126"></a><span class="lineno">  126</span>        <span class="comment">// Check that the response contains the expected fields for `wycats`</span></div>
+<div class="line"><a id="l00127" name="l00127"></a><span class="lineno">  127</span>        REQUIRE(json[<span class="stringliteral">&quot;login&quot;</span>] == <span class="stringliteral">&quot;wycats&quot;</span>);</div>
+<div class="line"><a id="l00128" name="l00128"></a><span class="lineno">  128</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><a id="l00129" name="l00129"></a><span class="lineno">  129</span>        <span class="comment">// If there was an error in any of the steps, make sure the server is stopped</span></div>
+<div class="line"><a id="l00130" name="l00130"></a><span class="lineno">  130</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Test failed: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><a id="l00131" name="l00131"></a><span class="lineno">  131</span>        <a class="code hl_function" href="test__cli_8cpp.html#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a>();</div>
+<div class="line"><a id="l00132" name="l00132"></a><span class="lineno">  132</span>        FAIL(<span class="stringliteral">&quot;Test failed: &quot;</span> + std::string(e.what()));</div>
+<div class="line"><a id="l00133" name="l00133"></a><span class="lineno">  133</span>    }</div>
+<div class="line"><a id="l00134" name="l00134"></a><span class="lineno">  134</span> </div>
+<div class="line"><a id="l00135" name="l00135"></a><span class="lineno">  135</span>    <span class="comment">// Ensure the server is stopped after the test</span></div>
+<div class="line"><a id="l00136" name="l00136"></a><span class="lineno">  136</span>    <a class="code hl_function" href="test__cli_8cpp.html#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a>();</div>
+<div class="line"><a id="l00137" name="l00137"></a><span class="lineno">  137</span> </div>
+<div class="line"><a id="l00138" name="l00138"></a><span class="lineno">  138</span>    <span class="keywordflow">if</span> (server_thread.joinable())</div>
+<div class="line"><a id="l00139" name="l00139"></a><span class="lineno">  139</span>        server_thread.detach(); <span class="comment">// Don&#39;t join, since we already stopped it</span></div>
+<div class="line"><a id="l00140" name="l00140"></a><span class="lineno">  140</span>}</div>
 </div>
 <div class="ttc" id="acurl_8h_html"><div class="ttname"><a href="curl_8h.html">curl.h</a></div></div>
 <div class="ttc" id="acurl_8h_html_ace655e3633b6533591283994d6b5cdda"><div class="ttname"><a href="curl_8h.html#ace655e3633b6533591283994d6b5cdda">CURL</a></div><div class="ttdeci">void CURL</div><div class="ttdef"><b>Definition</b> <a href="curl_8h_source.html#l00117">curl.h:117</a></div></div>
@@ -250,8 +264,9 @@ $(function(){initNavTree('test__cli_8cpp_source.html',''); initResizable(); });
 <div class="ttc" id="aeasy_8h_html_a8126b918a6e44facb451ce6c78658506"><div class="ttname"><a href="easy_8h.html#a8126b918a6e44facb451ce6c78658506">curl_easy_perform</a></div><div class="ttdeci">CURL_EXTERN CURLcode curl_easy_perform(CURL *curl)</div></div>
 <div class="ttc" id="aeasy_8h_html_ac535922c83d0818303047eaf850fe19b"><div class="ttname"><a href="easy_8h.html#ac535922c83d0818303047eaf850fe19b">curl_easy_init</a></div><div class="ttdeci">CURL_EXTERN CURL * curl_easy_init(void)</div></div>
 <div class="ttc" id="alua-5_81_85_2src_2luac_8c_html_a5a832fe6e2412dfabb93a2adae30e745"><div class="ttname"><a href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a></div><div class="ttdeci">static const char * output</div><div class="ttdef"><b>Definition</b> <a href="lua-5_81_85_2src_2luac_8c_source.html#l00033">lua-5.1.5/src/luac.c:33</a></div></div>
-<div class="ttc" id="atest__cli_8cpp_html_a1ac817bfeed2cc83598aa74059dd7aef"><div class="ttname"><a href="test__cli_8cpp.html#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a></div><div class="ttdeci">void stop_server()</div><div class="ttdef"><b>Definition</b> <a href="#l00057">test_cli.cpp:57</a></div></div>
+<div class="ttc" id="atest__cli_8cpp_html_a1ac817bfeed2cc83598aa74059dd7aef"><div class="ttname"><a href="test__cli_8cpp.html#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a></div><div class="ttdeci">void stop_server()</div><div class="ttdef"><b>Definition</b> <a href="#l00069">test_cli.cpp:69</a></div></div>
 <div class="ttc" id="atest__cli_8cpp_html_a4132301e90db11a4fa1cd621ba351c60"><div class="ttname"><a href="test__cli_8cpp.html#a4132301e90db11a4fa1cd621ba351c60">run_command</a></div><div class="ttdeci">std::string run_command(const std::string &amp;cmd)</div><div class="ttdef"><b>Definition</b> <a href="#l00015">test_cli.cpp:15</a></div></div>
+<div class="ttc" id="atest__cli_8cpp_html_aac765fdcd11cc2a5648677bce5bc52cc"><div class="ttname"><a href="test__cli_8cpp.html#aac765fdcd11cc2a5648677bce5bc52cc">wait_for_server</a></div><div class="ttdeci">bool wait_for_server(int max_retries=10)</div><div class="ttdef"><b>Definition</b> <a href="#l00057">test_cli.cpp:57</a></div></div>
 <div class="ttc" id="atest__cli_8cpp_html_ad061726d980595161b0f70be324e96c5"><div class="ttname"><a href="test__cli_8cpp.html#ad061726d980595161b0f70be324e96c5">http_get</a></div><div class="ttdeci">std::string http_get(const std::string &amp;url)</div><div class="ttdef"><b>Definition</b> <a href="#l00032">test_cli.cpp:32</a></div></div>
 <div class="ttc" id="atest__main_8cpp_html_a66f0c5d4aa2f9f804c4721217170694b"><div class="ttname"><a href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a></div><div class="ttdeci">TEST_CASE(&quot;parse_arguments parses --user=value form&quot;)</div><div class="ttdef"><b>Definition</b> <a href="test__main_8cpp_source.html#l00019">test_main.cpp:19</a></div></div>
 <div class="ttc" id="atypecheck-gcc_8h_html_af8d527555aeac344caa3754445c6ecba"><div class="ttname"><a href="typecheck-gcc_8h.html#af8d527555aeac344caa3754445c6ecba">curl_easy_setopt</a></div><div class="ttdeci">#define curl_easy_setopt(handle, option, value)</div><div class="ttdef"><b>Definition</b> <a href="typecheck-gcc_8h_source.html#l00043">typecheck-gcc.h:43</a></div></div>

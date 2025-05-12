@@ -119,6 +119,8 @@ Functions</h2></td></tr>
 <tr class="separator:a4132301e90db11a4fa1cd621ba351c60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad061726d980595161b0f70be324e96c5" id="r_ad061726d980595161b0f70be324e96c5"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ad061726d980595161b0f70be324e96c5">http_get</a> (const std::string &amp;url)</td></tr>
 <tr class="separator:ad061726d980595161b0f70be324e96c5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac765fdcd11cc2a5648677bce5bc52cc" id="r_aac765fdcd11cc2a5648677bce5bc52cc"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aac765fdcd11cc2a5648677bce5bc52cc">wait_for_server</a> (int max_retries=10)</td></tr>
+<tr class="separator:aac765fdcd11cc2a5648677bce5bc52cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ac817bfeed2cc83598aa74059dd7aef" id="r_a1ac817bfeed2cc83598aa74059dd7aef"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a> ()</td></tr>
 <tr class="separator:a1ac817bfeed2cc83598aa74059dd7aef"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ce7c029860d44287b887f4a89e1a496" id="r_a0ce7c029860d44287b887f4a89e1a496"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a0ce7c029860d44287b887f4a89e1a496">TEST_CASE</a> (&quot;Default user fetch&quot;, &quot;[cli]&quot;)</td></tr>
@@ -180,7 +182,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="easy_8h.html#a7acd7812b672df9e378050fab7c732aa">curl_easy_cleanup()</a>, <a class="el" href="easy_8h.html#ac535922c83d0818303047eaf850fe19b">curl_easy_init()</a>, <a class="el" href="easy_8h.html#a8126b918a6e44facb451ce6c78658506">curl_easy_perform()</a>, <a class="el" href="typecheck-gcc_8h_source.html#l00043">curl_easy_setopt</a>, <a class="el" href="curl_8h.html#af4ab14d0ff4adda88ed38b319a47466b">curl_easy_strerror()</a>, and <a class="el" href="curl_8h_source.html#l00510">CURLE_OK</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="test__cli_8cpp_source.html#l00085">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="test__cli_8cpp_source.html#l00097">TEST_CASE()</a>, and <a class="el" href="test__cli_8cpp_source.html#l00057">wait_for_server()</a>.</p>
 
 </div>
 </div>
@@ -216,7 +218,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   28</span>    <span class="keywordflow">return</span> result;</div>
 <div class="line"><span class="lineno">   29</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="test__cli_8cpp_source.html#l00077">TEST_CASE()</a>, and <a class="el" href="test__cli_8cpp_source.html#l00064">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="test__cli_8cpp_source.html#l00089">TEST_CASE()</a>, and <a class="el" href="test__cli_8cpp_source.html#l00076">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -235,15 +237,15 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__cli_8cpp_source.html#l00057">57</a> of file <a class="el" href="test__cli_8cpp_source.html">test_cli.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   57</span>                   {</div>
-<div class="line"><span class="lineno">   58</span>    <span class="keywordtype">int</span> ret = system(<span class="stringliteral">&quot;pkill -f &#39;github_user_fetcher --server&#39;&quot;</span>);</div>
-<div class="line"><span class="lineno">   59</span>    <span class="keywordflow">if</span> (ret != 0) {</div>
-<div class="line"><span class="lineno">   60</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Warning: Failed to stop server process\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   61</span>    }</div>
-<div class="line"><span class="lineno">   62</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test__cli_8cpp_source.html#l00069">69</a> of file <a class="el" href="test__cli_8cpp_source.html">test_cli.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   69</span>                   {</div>
+<div class="line"><span class="lineno">   70</span>    <span class="keywordtype">int</span> ret = system(<span class="stringliteral">&quot;pkill -f &#39;github_user_fetcher --server&#39;&quot;</span>);</div>
+<div class="line"><span class="lineno">   71</span>    <span class="keywordflow">if</span> (ret != 0) {</div>
+<div class="line"><span class="lineno">   72</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Warning: Failed to stop server process\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   73</span>    }</div>
+<div class="line"><span class="lineno">   74</span>}</div>
 </div><!-- fragment -->
-<p class="reference">Referenced by <a class="el" href="test__cli_8cpp_source.html#l00085">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="test__cli_8cpp_source.html#l00097">TEST_CASE()</a>.</p>
 
 </div>
 </div>
@@ -266,14 +268,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__cli_8cpp_source.html#l00077">77</a> of file <a class="el" href="test__cli_8cpp_source.html">test_cli.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   77</span>                                                 {</div>
-<div class="line"><span class="lineno">   78</span>    std::string <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> = <a class="code hl_function" href="#a4132301e90db11a4fa1cd621ba351c60">run_command</a>(<span class="stringliteral">&quot;./github_user_fetcher --user wycats&quot;</span>);</div>
-<div class="line"><span class="lineno">   79</span> </div>
-<div class="line"><span class="lineno">   80</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output for custom user fetch (wycats):\n&quot;</span> &lt;&lt; <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   81</span> </div>
-<div class="line"><span class="lineno">   82</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Login: wycats&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   83</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test__cli_8cpp_source.html#l00089">89</a> of file <a class="el" href="test__cli_8cpp_source.html">test_cli.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   89</span>                                                 {</div>
+<div class="line"><span class="lineno">   90</span>    std::string <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> = <a class="code hl_function" href="#a4132301e90db11a4fa1cd621ba351c60">run_command</a>(<span class="stringliteral">&quot;./github_user_fetcher --user wycats&quot;</span>);</div>
+<div class="line"><span class="lineno">   91</span> </div>
+<div class="line"><span class="lineno">   92</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output for custom user fetch (wycats):\n&quot;</span> &lt;&lt; <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   93</span> </div>
+<div class="line"><span class="lineno">   94</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Login: wycats&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   95</span>}</div>
 <div class="ttc" id="alua-5_81_85_2src_2luac_8c_html_a5a832fe6e2412dfabb93a2adae30e745"><div class="ttname"><a href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a></div><div class="ttdeci">static const char * output</div><div class="ttdef"><b>Definition</b> <a href="lua-5_81_85_2src_2luac_8c_source.html#l00033">lua-5.1.5/src/luac.c:33</a></div></div>
 <div class="ttc" id="atest__cli_8cpp_html_a4132301e90db11a4fa1cd621ba351c60"><div class="ttname"><a href="#a4132301e90db11a4fa1cd621ba351c60">run_command</a></div><div class="ttdeci">std::string run_command(const std::string &amp;cmd)</div><div class="ttdef"><b>Definition</b> <a href="test__cli_8cpp_source.html#l00015">test_cli.cpp:15</a></div></div>
 </div><!-- fragment -->
@@ -300,19 +302,19 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__cli_8cpp_source.html#l00064">64</a> of file <a class="el" href="test__cli_8cpp_source.html">test_cli.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   64</span>                                         {</div>
-<div class="line"><span class="lineno">   65</span>    std::string <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> = <a class="code hl_function" href="#a4132301e90db11a4fa1cd621ba351c60">run_command</a>(<span class="stringliteral">&quot;./github_user_fetcher&quot;</span>);</div>
-<div class="line"><span class="lineno">   66</span> </div>
-<div class="line"><span class="lineno">   67</span>    <span class="comment">// Print the output for debugging purposes</span></div>
-<div class="line"><span class="lineno">   68</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output for default user fetch:\n&quot;</span> &lt;&lt; <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   69</span> </div>
-<div class="line"><span class="lineno">   70</span>    <span class="comment">// Check if other specific information is in the output</span></div>
-<div class="line"><span class="lineno">   71</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Login: izelnakri&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   72</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Name: Izel Nakri&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   73</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Company: Ruby, JavaScript&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   74</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Location: Madrid&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   75</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test__cli_8cpp_source.html#l00076">76</a> of file <a class="el" href="test__cli_8cpp_source.html">test_cli.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   76</span>                                         {</div>
+<div class="line"><span class="lineno">   77</span>    std::string <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> = <a class="code hl_function" href="#a4132301e90db11a4fa1cd621ba351c60">run_command</a>(<span class="stringliteral">&quot;./github_user_fetcher&quot;</span>);</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    <span class="comment">// Print the output for debugging purposes</span></div>
+<div class="line"><span class="lineno">   80</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Output for default user fetch:\n&quot;</span> &lt;&lt; <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a> &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>    <span class="comment">// Check if other specific information is in the output</span></div>
+<div class="line"><span class="lineno">   83</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Login: izelnakri&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   84</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Name: Izel Nakri&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   85</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Company: Ruby, JavaScript&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   86</span>    REQUIRE(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.find(<span class="stringliteral">&quot;Location: Madrid&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   87</span>}</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="lua-5_81_85_2src_2luac_8c_source.html#l00033">output</a>, and <a class="el" href="test__cli_8cpp_source.html#l00015">run_command()</a>.</p>
 
@@ -337,55 +339,90 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__cli_8cpp_source.html#l00085">85</a> of file <a class="el" href="test__cli_8cpp_source.html">test_cli.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   85</span>                                                          {</div>
-<div class="line"><span class="lineno">   86</span>    <span class="comment">// Run the server in a background thread</span></div>
-<div class="line"><span class="lineno">   87</span>    std::thread server_thread([]() {</div>
-<div class="line"><span class="lineno">   88</span>        <span class="keywordtype">int</span> ret = system(<span class="stringliteral">&quot;./github_user_fetcher --server&quot;</span>);</div>
-<div class="line"><span class="lineno">   89</span>        <span class="keywordflow">if</span> (ret != 0) {</div>
-<div class="line"><span class="lineno">   90</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Server exited with code: &quot;</span> &lt;&lt; ret &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">   91</span>        }</div>
-<div class="line"><span class="lineno">   92</span>    });</div>
-<div class="line"><span class="lineno">   93</span> </div>
-<div class="line"><span class="lineno">   94</span>    <span class="comment">// Allow the server some time to start</span></div>
-<div class="line"><span class="lineno">   95</span>    std::this_thread::sleep_for(std::chrono::seconds(2));</div>
-<div class="line"><span class="lineno">   96</span> </div>
-<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   98</span>        <span class="comment">// Make the HTTP request to the server for the `izelnakri` user</span></div>
-<div class="line"><span class="lineno">   99</span>        std::string url = <span class="stringliteral">&quot;http://localhost:1234/izelnakri&quot;</span>;</div>
-<div class="line"><span class="lineno">  100</span>        std::string json_response = <a class="code hl_function" href="#ad061726d980595161b0f70be324e96c5">http_get</a>(url);</div>
-<div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>        <span class="comment">// Parse the JSON response</span></div>
-<div class="line"><span class="lineno">  103</span>        <span class="keyword">auto</span> json = nlohmann::json::parse(json_response);</div>
-<div class="line"><span class="lineno">  104</span> </div>
-<div class="line"><span class="lineno">  105</span>        <span class="comment">// Check that the response contains the expected fields</span></div>
-<div class="line"><span class="lineno">  106</span>        REQUIRE(json[<span class="stringliteral">&quot;login&quot;</span>] == <span class="stringliteral">&quot;izelnakri&quot;</span>);</div>
-<div class="line"><span class="lineno">  107</span>        REQUIRE(json[<span class="stringliteral">&quot;name&quot;</span>] == <span class="stringliteral">&quot;Izel Nakri | izelnakri.eth&quot;</span>);</div>
-<div class="line"><span class="lineno">  108</span>        REQUIRE(json[<span class="stringliteral">&quot;company&quot;</span>] == <span class="stringliteral">&quot;Ruby, JavaScript, TS, elixir, rust, k8s, lua, nix, pkl, android&quot;</span>);</div>
-<div class="line"><span class="lineno">  109</span>        REQUIRE(json[<span class="stringliteral">&quot;location&quot;</span>] == <span class="stringliteral">&quot;Madrid | Amsterdam&quot;</span>);</div>
-<div class="line"><span class="lineno">  110</span> </div>
-<div class="line"><span class="lineno">  111</span>        json_response = <a class="code hl_function" href="#ad061726d980595161b0f70be324e96c5">http_get</a>(<span class="stringliteral">&quot;http://localhost:1234/wycats&quot;</span>);</div>
-<div class="line"><span class="lineno">  112</span>        json = nlohmann::json::parse(json_response);</div>
+<p class="definition">Definition at line <a class="el" href="test__cli_8cpp_source.html#l00097">97</a> of file <a class="el" href="test__cli_8cpp_source.html">test_cli.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   97</span>                                                          {</div>
+<div class="line"><span class="lineno">   98</span>    <span class="comment">// Run the server in a background thread</span></div>
+<div class="line"><span class="lineno">   99</span>    std::thread server_thread([]() {</div>
+<div class="line"><span class="lineno">  100</span>        <span class="keywordtype">int</span> ret = system(<span class="stringliteral">&quot;./github_user_fetcher --server&quot;</span>);</div>
+<div class="line"><span class="lineno">  101</span>        <span class="keywordflow">if</span> (ret != 0) {</div>
+<div class="line"><span class="lineno">  102</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Server exited with code: &quot;</span> &lt;&lt; ret &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  103</span>        }</div>
+<div class="line"><span class="lineno">  104</span>    });</div>
+<div class="line"><span class="lineno">  105</span> </div>
+<div class="line"><span class="lineno">  106</span>    <span class="comment">// Allow the server some time to start</span></div>
+<div class="line"><span class="lineno">  107</span>    <a class="code hl_function" href="#aac765fdcd11cc2a5648677bce5bc52cc">wait_for_server</a>();</div>
+<div class="line"><span class="lineno">  108</span> </div>
+<div class="line"><span class="lineno">  109</span>    <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  110</span>        <span class="comment">// Make the HTTP request to the server for the `izelnakri` user</span></div>
+<div class="line"><span class="lineno">  111</span>        std::string url = <span class="stringliteral">&quot;http://localhost:1234/izelnakri&quot;</span>;</div>
+<div class="line"><span class="lineno">  112</span>        std::string json_response = <a class="code hl_function" href="#ad061726d980595161b0f70be324e96c5">http_get</a>(url);</div>
 <div class="line"><span class="lineno">  113</span> </div>
-<div class="line"><span class="lineno">  114</span>        <span class="comment">// Check that the response contains the expected fields for `wycats`</span></div>
-<div class="line"><span class="lineno">  115</span>        REQUIRE(json[<span class="stringliteral">&quot;login&quot;</span>] == <span class="stringliteral">&quot;wycats&quot;</span>);</div>
-<div class="line"><span class="lineno">  116</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
-<div class="line"><span class="lineno">  117</span>        <span class="comment">// If there was an error in any of the steps, make sure the server is stopped</span></div>
-<div class="line"><span class="lineno">  118</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Test failed: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
-<div class="line"><span class="lineno">  119</span>        <a class="code hl_function" href="#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a>();</div>
-<div class="line"><span class="lineno">  120</span>        FAIL(<span class="stringliteral">&quot;Test failed: &quot;</span> + std::string(e.what()));</div>
-<div class="line"><span class="lineno">  121</span>    }</div>
+<div class="line"><span class="lineno">  114</span>        <span class="comment">// Parse the JSON response</span></div>
+<div class="line"><span class="lineno">  115</span>        <span class="keyword">auto</span> json = nlohmann::json::parse(json_response);</div>
+<div class="line"><span class="lineno">  116</span> </div>
+<div class="line"><span class="lineno">  117</span>        <span class="comment">// Check that the response contains the expected fields</span></div>
+<div class="line"><span class="lineno">  118</span>        REQUIRE(json[<span class="stringliteral">&quot;login&quot;</span>] == <span class="stringliteral">&quot;izelnakri&quot;</span>);</div>
+<div class="line"><span class="lineno">  119</span>        REQUIRE(json[<span class="stringliteral">&quot;name&quot;</span>] == <span class="stringliteral">&quot;Izel Nakri | izelnakri.eth&quot;</span>);</div>
+<div class="line"><span class="lineno">  120</span>        REQUIRE(json[<span class="stringliteral">&quot;company&quot;</span>] == <span class="stringliteral">&quot;Ruby, JavaScript, TS, elixir, rust, k8s, lua, nix, pkl, android&quot;</span>);</div>
+<div class="line"><span class="lineno">  121</span>        REQUIRE(json[<span class="stringliteral">&quot;location&quot;</span>] == <span class="stringliteral">&quot;Madrid | Amsterdam&quot;</span>);</div>
 <div class="line"><span class="lineno">  122</span> </div>
-<div class="line"><span class="lineno">  123</span>    <span class="comment">// Ensure the server is stopped after the test</span></div>
-<div class="line"><span class="lineno">  124</span>    <a class="code hl_function" href="#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a>();</div>
+<div class="line"><span class="lineno">  123</span>        json_response = <a class="code hl_function" href="#ad061726d980595161b0f70be324e96c5">http_get</a>(<span class="stringliteral">&quot;http://localhost:1234/wycats&quot;</span>);</div>
+<div class="line"><span class="lineno">  124</span>        json = nlohmann::json::parse(json_response);</div>
 <div class="line"><span class="lineno">  125</span> </div>
-<div class="line"><span class="lineno">  126</span>    <span class="keywordflow">if</span> (server_thread.joinable())</div>
-<div class="line"><span class="lineno">  127</span>        server_thread.detach(); <span class="comment">// Don&#39;t join, since we already stopped it</span></div>
-<div class="line"><span class="lineno">  128</span>}</div>
-<div class="ttc" id="atest__cli_8cpp_html_a1ac817bfeed2cc83598aa74059dd7aef"><div class="ttname"><a href="#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a></div><div class="ttdeci">void stop_server()</div><div class="ttdef"><b>Definition</b> <a href="test__cli_8cpp_source.html#l00057">test_cli.cpp:57</a></div></div>
+<div class="line"><span class="lineno">  126</span>        <span class="comment">// Check that the response contains the expected fields for `wycats`</span></div>
+<div class="line"><span class="lineno">  127</span>        REQUIRE(json[<span class="stringliteral">&quot;login&quot;</span>] == <span class="stringliteral">&quot;wycats&quot;</span>);</div>
+<div class="line"><span class="lineno">  128</span>    } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception&amp; e) {</div>
+<div class="line"><span class="lineno">  129</span>        <span class="comment">// If there was an error in any of the steps, make sure the server is stopped</span></div>
+<div class="line"><span class="lineno">  130</span>        std::cerr &lt;&lt; <span class="stringliteral">&quot;Test failed: &quot;</span> &lt;&lt; e.what() &lt;&lt; std::endl;</div>
+<div class="line"><span class="lineno">  131</span>        <a class="code hl_function" href="#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a>();</div>
+<div class="line"><span class="lineno">  132</span>        FAIL(<span class="stringliteral">&quot;Test failed: &quot;</span> + std::string(e.what()));</div>
+<div class="line"><span class="lineno">  133</span>    }</div>
+<div class="line"><span class="lineno">  134</span> </div>
+<div class="line"><span class="lineno">  135</span>    <span class="comment">// Ensure the server is stopped after the test</span></div>
+<div class="line"><span class="lineno">  136</span>    <a class="code hl_function" href="#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a>();</div>
+<div class="line"><span class="lineno">  137</span> </div>
+<div class="line"><span class="lineno">  138</span>    <span class="keywordflow">if</span> (server_thread.joinable())</div>
+<div class="line"><span class="lineno">  139</span>        server_thread.detach(); <span class="comment">// Don&#39;t join, since we already stopped it</span></div>
+<div class="line"><span class="lineno">  140</span>}</div>
+<div class="ttc" id="atest__cli_8cpp_html_a1ac817bfeed2cc83598aa74059dd7aef"><div class="ttname"><a href="#a1ac817bfeed2cc83598aa74059dd7aef">stop_server</a></div><div class="ttdeci">void stop_server()</div><div class="ttdef"><b>Definition</b> <a href="test__cli_8cpp_source.html#l00069">test_cli.cpp:69</a></div></div>
+<div class="ttc" id="atest__cli_8cpp_html_aac765fdcd11cc2a5648677bce5bc52cc"><div class="ttname"><a href="#aac765fdcd11cc2a5648677bce5bc52cc">wait_for_server</a></div><div class="ttdeci">bool wait_for_server(int max_retries=10)</div><div class="ttdef"><b>Definition</b> <a href="test__cli_8cpp_source.html#l00057">test_cli.cpp:57</a></div></div>
 <div class="ttc" id="atest__cli_8cpp_html_ad061726d980595161b0f70be324e96c5"><div class="ttname"><a href="#ad061726d980595161b0f70be324e96c5">http_get</a></div><div class="ttdeci">std::string http_get(const std::string &amp;url)</div><div class="ttdef"><b>Definition</b> <a href="test__cli_8cpp_source.html#l00032">test_cli.cpp:32</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="test__cli_8cpp_source.html#l00032">http_get()</a>, and <a class="el" href="test__cli_8cpp_source.html#l00057">stop_server()</a>.</p>
+<p class="reference">References <a class="el" href="test__cli_8cpp_source.html#l00032">http_get()</a>, <a class="el" href="test__cli_8cpp_source.html#l00069">stop_server()</a>, and <a class="el" href="test__cli_8cpp_source.html#l00057">wait_for_server()</a>.</p>
+
+</div>
+</div>
+<a id="aac765fdcd11cc2a5648677bce5bc52cc" name="aac765fdcd11cc2a5648677bce5bc52cc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aac765fdcd11cc2a5648677bce5bc52cc">&#9670;&#160;</a></span>wait_for_server()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool wait_for_server </td>
+          <td>(</td>
+          <td class="paramtype">int</td>          <td class="paramname"><span class="paramname"><em>max_retries</em><span class="paramdefsep"> = </span><span class="paramdefval">10</span></span></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test__cli_8cpp_source.html#l00057">57</a> of file <a class="el" href="test__cli_8cpp_source.html">test_cli.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                                           {</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; max_retries; ++i) {</div>
+<div class="line"><span class="lineno">   59</span>        <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   60</span>            std::string res = <a class="code hl_function" href="#ad061726d980595161b0f70be324e96c5">http_get</a>(<span class="stringliteral">&quot;http://localhost:1234/wycats&quot;</span>);</div>
+<div class="line"><span class="lineno">   61</span>            <span class="keywordflow">return</span> !res.empty();</div>
+<div class="line"><span class="lineno">   62</span>        } <span class="keywordflow">catch</span> (...) {</div>
+<div class="line"><span class="lineno">   63</span>            std::this_thread::sleep_for(std::chrono::milliseconds(300));</div>
+<div class="line"><span class="lineno">   64</span>        }</div>
+<div class="line"><span class="lineno">   65</span>    }</div>
+<div class="line"><span class="lineno">   66</span>    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
+<div class="line"><span class="lineno">   67</span>}</div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="test__cli_8cpp_source.html#l00032">http_get()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="test__cli_8cpp_source.html#l00097">TEST_CASE()</a>.</p>
 
 </div>
 </div>
