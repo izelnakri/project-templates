@@ -12,7 +12,7 @@ dependencies = [
 # NOTE: Old one: headers = include_directories('src', 'vendor/civetweb')
 headers = include_directories('src')
 
-executable('github_user_fetcher', files('src/config.cpp', 'src/main.cpp', 'src/user.cpp', 'src/server.cpp'),
+github_user_fetcher = executable('github_user_fetcher', files('src/config.cpp', 'src/main.cpp', 'src/user.cpp', 'src/server.cpp'),
   dependencies: dependencies,
   include_directories: headers,
   cpp_args: cpp_args,
@@ -83,6 +83,7 @@ build_tests = not tests_opt.disabled()
 if build_tests
   test_dependencies = [
     dependency('catch2-with-main', required: true),
+    dependency('libcurl', required: true),
   ]
 
   test_sources = {
@@ -101,7 +102,7 @@ if build_tests
       cpp_args: cpp_args
     )
 
-    test(suite + '_tests', test_exe, suite: suite)
+    test(suite + '_tests', test_exe, suite: suite, depends: suite == 'cli' ? [github_user_fetcher] : [])
   endforeach
 endif
 

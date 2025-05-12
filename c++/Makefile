@@ -65,7 +65,7 @@ reset: clean-all build
 develop:
 	@if [ -z "$$IS_NIX_SHELL" ]; then nix develop; else echo "Already in nix shell"; fi
 test: check-setup
-	meson compile -C build && meson test -C build
+	meson test -C build -i
 test-unit: check-setup
 	meson test -C build -i --suite unit
 test-api: check-setup
