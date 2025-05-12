@@ -67,11 +67,11 @@ develop:
 test: check-setup
 	meson compile -C build && meson test -C build
 test-unit: check-setup
-	meson test -C build --suite unit # maybe add --verbose # NOTE: Maybe add make build or smt before
+	meson test -C build -i --suite unit
 test-api: check-setup
-	meson test -C build --suite api # NOTE: Maybe add make build or smt before
+	meson test -C build -i --suite api
 test-cli: check-setup
-	meson test -C build --suite cli # NOTE: Maybe add make build or smt before
+	meson test -C build -i --suite cli
 
 run-cli: check-setup
 	meson compile -C build && ./build/github_user_fetcher

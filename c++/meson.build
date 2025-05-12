@@ -1,7 +1,7 @@
 project('github_user_fetcher', 'cpp', version : '1.0.0')
 
 cpp = meson.get_compiler('cpp')
-warning_flags = ['-Wall', '-Wextra', '-std=c++20'] # TODO: in future move it to c++23(+)
+cpp_args = ['-Wall', '-Wextra', '-std=c++20'] # TODO: in future move it to c++23(+)
 
 dependencies = [
   dependency('boost', modules : ['system'], required : true),
@@ -15,7 +15,7 @@ headers = include_directories('src')
 executable('github_user_fetcher', files('src/config.cpp', 'src/main.cpp', 'src/user.cpp', 'src/server.cpp'),
   dependencies: dependencies,
   include_directories: headers,
-  cpp_args: warning_flags,
+  cpp_args: cpp_args,
   install: true,
 )
 
@@ -24,14 +24,14 @@ lib_src = files('src/user.cpp', 'src/server.cpp')
 github_user_fetcher_shared = shared_library('github_user_fetcher', lib_src,
   dependencies: dependencies,
   include_directories: headers,
-  cpp_args: warning_flags,
+  cpp_args: cpp_args,
   install: true,
 )
 
 github_user_fetcher_static = static_library('github_user_fetcher_static', lib_src,
   dependencies: dependencies,
   include_directories: headers,
-  cpp_args: warning_flags,
+  cpp_args: cpp_args,
   install: true
 )
 
@@ -64,7 +64,7 @@ executable('github_user_fetcher_gui',
   ],
   include_directories: headers,
   link_with: github_user_fetcher_static,
-  cpp_args: warning_flags,
+  cpp_args: cpp_args,
   install: true,
 )
 
@@ -98,10 +98,10 @@ if build_tests
       include_directories: [headers],
       dependencies: dependencies + test_dependencies,
       link_with: github_user_fetcher_static,
-      cpp_args: warning_flags + ['-DTESTING']
+      cpp_args: cpp_args
     )
 
-    test(suite + '_tests', test_exe, suite: suite, args: ['--verbose']) # Should I add args: ?
+    test(suite + '_tests', test_exe, suite: suite)
   endforeach
 endif
 
@@ -116,7 +116,7 @@ endif
 #     include_directories: headers,
 #     dependencies: [boost_dep, nlohmann_json_dep] + benchmark_dependencies,  # Added nlohmann_json dependency
 #     link_with: github_user_fetcher_static,
-#     cpp_args: warning_flags + ['-DBENCHMARKING']
+#     cpp_args: cpp_args + ['-DBENCHMARKING']
 #   )
 #   test('user_benchmarks', benchmark_executable, is_parallel: false, suite: ['benchmark'])
 # endif

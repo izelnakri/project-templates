@@ -109,7 +109,7 @@
             name = "github_user_fetcher";
             src = ./.;
             nativeBuildInputs = [ pkgs.meson pkgs.ninja pkgs.pkg-config ];
-            buildInputs = [ pkgs.boost pkgs.asio pkgs.nlohmann_json ]; # NOTE: maybe remove pkgs.asio
+            buildInputs = [ pkgs.boost ]; # NOTE: maybe remove pkgs.asio
             # nativeBuildInputs = [ pkgs.meson pkgs.ninja pkgs.pkg-config ];
             # buildInputs = [ pkgs.curl.dev pkgs.jansson pkgs.criterion pkgs.gtk4 ];
 
