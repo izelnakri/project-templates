@@ -1,30 +1,31 @@
-#include <benchmark/benchmark.h>
 #include "user.hpp"
+#include <benchmark/benchmark.h>
 
 #include <iostream>
 #include <sstream>
 
 // Benchmark for User constructor
-static void BM_UserConstructor(benchmark::State& state) {
-    for (auto _ : state) {
-        // Prevent compiler from optimizing away the object
-        benchmark::DoNotOptimize(User("octocat", "The Octocat", "GitHub", "San Francisco"));
-    }
+static void BM_UserConstructor(benchmark::State &state) {
+  for (auto _ : state) {
+    // Prevent compiler from optimizing away the object
+    benchmark::DoNotOptimize(
+        User("octocat", "The Octocat", "GitHub", "San Francisco"));
+  }
 }
 BENCHMARK(BM_UserConstructor);
 
 // Benchmark for User::print()
-static void BM_UserPrint(benchmark::State& state) {
-    User user("octocat", "The Octocat", "GitHub", "San Francisco");
+static void BM_UserPrint(benchmark::State &state) {
+  User user("octocat", "The Octocat", "GitHub", "San Francisco");
 
-    for (auto _ : state) {
-        std::ostringstream oss;
-        std::streambuf* old = std::cout.rdbuf(oss.rdbuf());  // Redirect std::cout
-        user.print();
-        std::cout.rdbuf(old);  // Restore original buffer
+  for (auto _ : state) {
+    std::ostringstream oss;
+    std::streambuf *old = std::cout.rdbuf(oss.rdbuf()); // Redirect std::cout
+    user.print();
+    std::cout.rdbuf(old); // Restore original buffer
 
-        benchmark::DoNotOptimize(oss.str());  // Prevent optimization
-    }
+    benchmark::DoNotOptimize(oss.str()); // Prevent optimization
+  }
 }
 BENCHMARK(BM_UserPrint);
 

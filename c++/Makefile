@@ -108,11 +108,11 @@ lint-fix:
 
 format:
 	@echo "Formatting code with clang-format..."
-	@find src tests benchmarks -name "*.c" -o -name "*.h" -o -name "*.cpp" | xargs clang-format -i -style=file
+	@find src tests benchmarks -name "*.c" -o -name "*.h" -o -name "*.cpp" -o -name "*.hpp" | xargs clang-format -i -style=file
 	@echo "Code formatting complete."
 format-check:
 	@echo "Checking code formatting..."
-	@find src tests benchmarks -name "*.c" -o -name "*.h" -o -name "*.cpp" | xargs -I{} bash -c 'clang-format -style=file {} | diff --color=always -u {} - || printf "\033[31m=> File {} needs formatting\033[0m\n"'
+	@find src tests benchmarks -name "*.c" -o -name "*.h" -o -name "*.cpp" -o -name "*.hpp" | xargs -I{} bash -c 'clang-format -style=file {} | diff --color=always -u {} - || printf "\033[31m=> File {} needs formatting\033[0m\n"'
 
 docker-build-image:
 ifeq ($(RELEASE), true)

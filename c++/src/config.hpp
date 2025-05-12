@@ -7,9 +7,9 @@
  * @brief Struct holding parsed command-line configuration.
  */
 struct AppConfig {
-    std::string username = "izelnakri";
-    int port = 1234;
-    bool run_server = false;
+  std::string username = "izelnakri";
+  int port = 1234;
+  bool run_server = false;
 };
 
 /**
@@ -19,4 +19,4 @@ struct AppConfig {
  * @return Parsed AppConfig.
  * @throws std::invalid_argument if port parsing fails.
  */
-AppConfig parse_arguments(const std::vector<std::string>& args);
+AppConfig parse_arguments(const std::vector<std::string> &args);
