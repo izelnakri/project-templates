@@ -1,5 +1,13 @@
 var NAVTREEINDEX356 =
 {
+"struct__GProxyAddressEnumeratorClass.html#a36325150f013db901cefeb4b7df9568b":[5,0,218,2],
+"struct__GProxyAddressEnumeratorClass.html#a5c8236584d429499a183fbaa56c21e7a":[5,0,218,0],
+"struct__GProxyAddressEnumeratorClass.html#a5db9fad66c8eafa23e4d45707ff5f5a8":[5,0,218,4],
+"struct__GProxyAddressEnumeratorClass.html#a780c3f1922fe344e46f484988c14fd50":[5,0,218,3],
+"struct__GProxyAddressEnumeratorClass.html#a922060dcc107f0dfc84133a3aa5c9144":[5,0,218,1],
+"struct__GProxyAddressEnumeratorClass.html#aa5fed21cf4c594d637bd93a79325cfd2":[5,0,218,6],
+"struct__GProxyInterface.html":[5,0,219],
+"struct__GProxyInterface.html#a1b586b4306c37a3e233fb8f32d812d1e":[5,0,219,2],
 "struct__GProxyInterface.html#a4d35ad056de487cacf0b368c414b69a5":[5,0,219,4],
 "struct__GProxyInterface.html#a67a63de64c294105508ec6ee590d77c6":[5,0,219,1],
 "struct__GProxyInterface.html#a89ebf3f2a90332e9ffba2b0f9bc8aace":[5,0,219,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX356 =
 "struct__GSocketListenerClass.html#a60abbe6ce69b223a4b537cdd09644b15":[5,0,278,3],
 "struct__GSocketListenerClass.html#a654bf61d11abc148e6cfc2a3df93a349":[5,0,278,0],
 "struct__GSocketListenerClass.html#a7454d9bc54927ddadc6273f0980a59e7":[5,0,278,1],
-"struct__GSocketListenerClass.html#ab3caa6a510182b899e631129b71454b2":[5,0,278,5],
-"struct__GSocketListenerClass.html#abb55bc37bdb458ed3241ea32b8e70f6e":[5,0,278,4],
-"struct__GSocketListenerClass.html#aef98725715669634302d742bff4fe12e":[5,0,278,6],
-"struct__GSocketService.html":[5,0,279],
-"struct__GSocketService.html#a07bd718164e9b9682c19612f94ac06f4":[5,0,279,0],
-"struct__GSocketService.html#abcf7c2f71476a864e5a8f25e5c8a1b8f":[5,0,279,1],
-"struct__GSocketServiceClass.html":[5,0,280],
-"struct__GSocketServiceClass.html#a185a44f0af663795587fb11481927d4d":[5,0,280,3],
-"struct__GSocketServiceClass.html#a27f60b96b8696b99abcedb3c3beea7b2":[5,0,280,2]
+"struct__GSocketListenerClass.html#ab3caa6a510182b899e631129b71454b2":[5,0,278,5]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX342 =
 {
+"structVkPhysicalDeviceYcbcrImageArraysFeaturesEXT.html#a6f36e391036defe7576b2ca6ce5f6501":[5,0,1932,0],
+"structVkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.html":[5,0,1933],
+"structVkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.html#a15cf42813899e09926f9f1fdf24c7d58":[5,0,1933,0],
+"structVkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.html#a67ad38bba0a17bd21a88d97f5fb48e54":[5,0,1933,2],
+"structVkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.html#aa82b8cb48729f874add832febce1635c":[5,0,1933,1],
+"structVkPipelineBinaryCreateInfoKHR.html":[5,0,1934],
+"structVkPipelineBinaryCreateInfoKHR.html#a424a3cb372410f83858783976e3e21a2":[5,0,1934,1],
+"structVkPipelineBinaryCreateInfoKHR.html#a66201f4c07a3a6ac91eec68fbf8a934c":[5,0,1934,4],
 "structVkPipelineBinaryCreateInfoKHR.html#a694dd6bdd9f2bb52cf6386380380fa15":[5,0,1934,0],
 "structVkPipelineBinaryCreateInfoKHR.html#a854b7e979aea4de360fe67a2941a4e33":[5,0,1934,3],
 "structVkPipelineBinaryCreateInfoKHR.html#aedb1b86805e95a74f280a5fa72c50294":[5,0,1934,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX342 =
 "structVkPipelineRasterizationStateCreateInfo.html#a059aa1f1cfe44fbf434491dafb811a2d":[5,0,1976,11],
 "structVkPipelineRasterizationStateCreateInfo.html#a0e9203bd52b493d47dacf4d9e4ca492f":[5,0,1976,2],
 "structVkPipelineRasterizationStateCreateInfo.html#a4a4cce947d80d4e68bd5d329d281780b":[5,0,1976,9],
-"structVkPipelineRasterizationStateCreateInfo.html#a6f32e87491e0a6c05db249edf9cea731":[5,0,1976,0],
-"structVkPipelineRasterizationStateCreateInfo.html#aabb795513d4331b707fdb6b782f870bb":[5,0,1976,8],
-"structVkPipelineRasterizationStateCreateInfo.html#aac3e8642db47ecef442ae62e2a68c2d4":[5,0,1976,7],
-"structVkPipelineRasterizationStateCreateInfo.html#ad9160c0abae1951ef48cede9ef42eeb4":[5,0,1976,5],
-"structVkPipelineRasterizationStateCreateInfo.html#ad9d93d1b7bb8af057cdcabd136fd20df":[5,0,1976,10],
-"structVkPipelineRasterizationStateCreateInfo.html#ae18edc17d4975888b18d8708b98d07e5":[5,0,1976,4],
-"structVkPipelineRasterizationStateCreateInfo.html#ae225ae723ceffb30c93f3e21416e33e6":[5,0,1976,3],
-"structVkPipelineRasterizationStateCreateInfo.html#aed7b9b9e4918e82beb91d2656f40962c":[5,0,1976,1],
-"structVkPipelineRasterizationStateCreateInfo.html#aeda5266785a2db360de210e1ccd087ec":[5,0,1976,6]
+"structVkPipelineRasterizationStateCreateInfo.html#a6f32e87491e0a6c05db249edf9cea731":[5,0,1976,0]
 };

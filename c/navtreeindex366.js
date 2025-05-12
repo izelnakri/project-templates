@@ -1,5 +1,13 @@
 var NAVTREEINDEX366 =
 {
+"structduk__heap.html#a89db382cb4b6ca71f72a13d6da83bf98":[5,0,672,7],
+"structduk__heap.html#a8cd44c7c29e875c9213b3b97fe49d1e3":[5,0,672,25],
+"structduk__heap.html#a9fc4beb12dc721c9b315116be73afa23":[5,0,672,21],
+"structduk__heap.html#aa249660205399aec495d86034217c9ee":[5,0,672,22],
+"structduk__heap.html#ab229eef9c6b0d7fcd267527a4b107fe5":[5,0,672,1],
+"structduk__heap.html#ab286cadef3cce0c9d7f1760e526f5353":[5,0,672,20],
+"structduk__heap.html#ab564d681186a71065b5d36d4c61c2362":[5,0,672,14],
+"structduk__heap.html#ab812ddb1d5d41e6f77b2f4477ba9a8db":[5,0,672,0],
 "structduk__heap.html#ac4718d3e8c84c5e09cfe6e0ed7ba5856":[5,0,672,10],
 "structduk__heap.html#aed0ef6d12659275479d5618edb35caa6":[5,0,672,9],
 "structduk__heaphdr.html":[5,0,673],
@@ -241,13 +249,5 @@ var NAVTREEINDEX366 =
 "structduk__tval__struct.html#a5a878ca619bac289a0f42162ba456aff":[5,0,705,3],
 "structduk__tval__struct.html#a791e776bc0f82c0a7987ebae0e9f56f0":[5,0,705,8],
 "structduk__tval__struct.html#a8392254d1bf06fced2eff5ccf8115b52":[5,0,705,1],
-"structduk__tval__struct.html#a88ffe1300c2b5356701b530d3aaaa45f":[5,0,705,10],
-"structduk__tval__struct.html#aa1055ca7054528fa0f558559b427b2d7":[5,0,705,14],
-"structduk__tval__struct.html#aa132bd82118c1fb7b7e85717914378f2":[5,0,705,9],
-"structduk__tval__struct.html#aa7c567160a5f49a71cdc3750385702a4":[5,0,705,15],
-"structduk__tval__struct.html#aafe54832429b3598021e3709862fb56e":[5,0,705,17],
-"structduk__tval__struct.html#acb91df3003836742d10f7cac242af884":[5,0,705,5],
-"structduk__tval__struct.html#ad57595675719c93a7b26c429ebcda3cc":[5,0,705,2],
-"structduk__tval__struct.html#adaee42c933580a3e9400d1ed09fb16bd":[5,0,705,16],
-"structduk__tval__struct.html#adedec5d21d5492f74d28e3813455760e":[5,0,705,13]
+"structduk__tval__struct.html#a88ffe1300c2b5356701b530d3aaaa45f":[5,0,705,10]
 };

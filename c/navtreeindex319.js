@@ -1,5 +1,13 @@
 var NAVTREEINDEX319 =
 {
+"structStdVideoEncodeH265ReferenceInfoFlags.html#ae335342cb7c850bd204e63e7e7959296":[5,0,1054,0],
+"structStdVideoEncodeH265ReferenceInfoFlags.html#ae4e733f1c2e09ffeea91715a99138d6c":[5,0,1054,2],
+"structStdVideoEncodeH265ReferenceListsInfo.html":[5,0,1055],
+"structStdVideoEncodeH265ReferenceListsInfo.html#a0b9646197b1c9bdd45d864ba49d444b5":[5,0,1055,5],
+"structStdVideoEncodeH265ReferenceListsInfo.html#a680406143be2ac2abaf499694c1e3244":[5,0,1055,6],
+"structStdVideoEncodeH265ReferenceListsInfo.html#a6814beffef56d252cfe2d5642a4a63ad":[5,0,1055,4],
+"structStdVideoEncodeH265ReferenceListsInfo.html#a827d9e1ce435e32b8f2c89f54fb5f6b0":[5,0,1055,1],
+"structStdVideoEncodeH265ReferenceListsInfo.html#ac102dfa67237cc8db83ec7778984dc49":[5,0,1055,0],
 "structStdVideoEncodeH265ReferenceListsInfo.html#ac4310aebf9680387f88918576b211f83":[5,0,1055,2],
 "structStdVideoEncodeH265ReferenceListsInfo.html#aec15b32c5af20d5f106fd94a706c3248":[5,0,1055,3],
 "structStdVideoEncodeH265ReferenceListsInfoFlags.html":[5,0,1056],
@@ -241,13 +249,5 @@ var NAVTREEINDEX319 =
 "structStdVideoH265PpsFlags.html#a22172a2000a42725ed138b04b799dc2d":[5,0,1074,10],
 "structStdVideoH265PpsFlags.html#a232fd717ffb139c9ee84b121157a6f9e":[5,0,1074,19],
 "structStdVideoH265PpsFlags.html#a2bfd0537e6fecb62ea22074296b43da9":[5,0,1074,13],
-"structStdVideoH265PpsFlags.html#a31d1a305086283c617cbb6b5f9b29f5f":[5,0,1074,22],
-"structStdVideoH265PpsFlags.html#a45858a55cd17d322ac3dafcd16894666":[5,0,1074,4],
-"structStdVideoH265PpsFlags.html#a5fd71c85e8d5cbe6b516ea3280069578":[5,0,1074,17],
-"structStdVideoH265PpsFlags.html#a6aa1021e09e541e0debfa4db05c01677":[5,0,1074,28],
-"structStdVideoH265PpsFlags.html#a6f8ca2279d7a7e31c440dc3bbf72b27c":[5,0,1074,1],
-"structStdVideoH265PpsFlags.html#a75eb86a1cff467f29e46066c8df62c22":[5,0,1074,15],
-"structStdVideoH265PpsFlags.html#a7d4d7d47394e605960464acbb63c37eb":[5,0,1074,11],
-"structStdVideoH265PpsFlags.html#a82983efd22f5e0e3e20cd0baa2ff57e9":[5,0,1074,27],
-"structStdVideoH265PpsFlags.html#a90f6f615b7e11be97deed75ae1ce8622":[5,0,1074,7]
+"structStdVideoH265PpsFlags.html#a31d1a305086283c617cbb6b5f9b29f5f":[5,0,1074,22]
 };

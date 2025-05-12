@@ -1,5 +1,13 @@
 var NAVTREEINDEX236 =
 {
+"hb-font_8h.html#af441fbdf4ef2c3e80fe0a6b2bfdd7711":[6,0,4,0,2,0,0,9,47],
+"hb-font_8h.html#af656d3b2f5899ac8ac1e747c5b81d707":[6,0,4,0,2,0,0,9,70],
+"hb-font_8h.html#af749873803a27927320c8b47ff4e80ec":[6,0,4,0,2,0,0,9,45],
+"hb-font_8h.html#af815eec3869bc8ddb6d1fc685be34cfc":[6,0,4,0,2,0,0,9,28],
+"hb-font_8h.html#af8e082b34bd41afd7361c3fe55cd9eab":[6,0,4,0,2,0,0,9,21],
+"hb-font_8h.html#afc2231e00da5b287d884850a4f1b2d06":[6,0,4,0,2,0,0,9,42],
+"hb-font_8h.html#afcdfc4b71d7519ca870a371963a18d9f":[6,0,4,0,2,0,0,9,107],
+"hb-font_8h.html#afce55b93334578e02ad1d5381bb8d63d":[6,0,4,0,2,0,0,9,101],
 "hb-font_8h.html#aff2c8ef51477bf05b238fe7621a5848e":[6,0,4,0,2,0,0,9,87],
 "hb-font_8h_source.html":[6,0,4,0,2,0,0,9],
 "hb-ft_8h.html":[6,0,4,0,2,0,0,10],
@@ -241,13 +249,5 @@ var NAVTREEINDEX236 =
 "hb-ot-layout_8h.html#a8ee179dfeda0f7ee1dcbe2331fd56c80aa5f65d468a501329fd529d4e1fa5930b":[6,0,4,0,2,0,0,20,13,6],
 "hb-ot-layout_8h.html#a8ee179dfeda0f7ee1dcbe2331fd56c80aa7afe222dc8db63389e9a25a47c51721":[6,0,4,0,2,0,0,20,13,0],
 "hb-ot-layout_8h.html#a8ee179dfeda0f7ee1dcbe2331fd56c80abc8df7f9de96961d21204382211d11d1":[6,0,4,0,2,0,0,20,13,4],
-"hb-ot-layout_8h.html#a8ee179dfeda0f7ee1dcbe2331fd56c80abd37072481f16e8978712d5c68e9fb17":[6,0,4,0,2,0,0,20,13,8],
-"hb-ot-layout_8h.html#a8ee179dfeda0f7ee1dcbe2331fd56c80ac09a9a595ffce951eb628014b890d3eb":[6,0,4,0,2,0,0,20,13,1],
-"hb-ot-layout_8h.html#a8ee179dfeda0f7ee1dcbe2331fd56c80aea9998c63edc8f0b62df930a34960067":[6,0,4,0,2,0,0,20,13,5],
-"hb-ot-layout_8h.html#a8f9106c00c451b36bcbc39775a20f252":[6,0,4,0,2,0,0,20,5],
-"hb-ot-layout_8h.html#a93de80b44e5044d9d5327985b2863f99":[6,0,4,0,2,0,0,20,37],
-"hb-ot-layout_8h.html#a94a78b5acecf5fd9407841b5b24f8cb1":[6,0,4,0,2,0,0,20,38],
-"hb-ot-layout_8h.html#a99a5d2553f7ee764422cb1d86d3deff1":[6,0,4,0,2,0,0,20,11],
-"hb-ot-layout_8h.html#a9a352bb0c7dce2d5db1aa7706f65f746":[6,0,4,0,2,0,0,20,52],
-"hb-ot-layout_8h.html#a9f003e54c3ea728f3cab0cbcf96f783d":[6,0,4,0,2,0,0,20,50]
+"hb-ot-layout_8h.html#a8ee179dfeda0f7ee1dcbe2331fd56c80abd37072481f16e8978712d5c68e9fb17":[6,0,4,0,2,0,0,20,13,8]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX331 =
 {
+"structVkImageViewSampleWeightCreateInfoQCOM.html#adda4120fbc2ea49ce7fc9c9826f847a2":[5,0,1500,1],
+"structVkImageViewSlicedCreateInfoEXT.html":[5,0,1501],
+"structVkImageViewSlicedCreateInfoEXT.html#a03f48b2db71450e97e608418f0bcc125":[5,0,1501,1],
+"structVkImageViewSlicedCreateInfoEXT.html#a39422344c4ec163cb00e6fbe8887e879":[5,0,1501,3],
+"structVkImageViewSlicedCreateInfoEXT.html#a6353db33fc753f37e7e2b8a120679a5e":[5,0,1501,2],
+"structVkImageViewSlicedCreateInfoEXT.html#af72737caec4862fad15ff22db0441415":[5,0,1501,0],
+"structVkImageViewUsageCreateInfo.html":[5,0,1502],
+"structVkImageViewUsageCreateInfo.html#a5cb0a3663e2596b26b35c24484a67160":[5,0,1502,2],
 "structVkImageViewUsageCreateInfo.html#a851c699d709b10df1bf3d9c95945a460":[5,0,1502,0],
 "structVkImageViewUsageCreateInfo.html#a96272254b24abe0435a48db98b8092b1":[5,0,1502,1],
 "structVkImportAndroidHardwareBufferInfoANDROID.html":[5,0,1503],
@@ -241,13 +249,5 @@ var NAVTREEINDEX331 =
 "structVkLayerDeviceLink__.html#abf08a090508d476ab14d20dc7f783469":[5,0,1546,2],
 "structVkLayerInstanceCreateInfo.html":[5,0,1547],
 "structVkLayerInstanceCreateInfo.html#a164a8a1e9f0324808ed3028f3ef2cf38":[5,0,1547,7],
-"structVkLayerInstanceCreateInfo.html#a3a0e89b7f9d0b58a052233492201484e":[5,0,1547,6],
-"structVkLayerInstanceCreateInfo.html#a3c675b9a55e72e869d70f8c8dcf16127":[5,0,1547,1],
-"structVkLayerInstanceCreateInfo.html#a62e80bfc72b126a4a5299c03638e69ab":[5,0,1547,9],
-"structVkLayerInstanceCreateInfo.html#a76817879c5d947c0ddbc8445290f4d96":[5,0,1547,5],
-"structVkLayerInstanceCreateInfo.html#a873e7ebad277543c30df6b8df7509783":[5,0,1547,3],
-"structVkLayerInstanceCreateInfo.html#a9ef12ae8cb86f1885510f3b61bd0793d":[5,0,1547,2],
-"structVkLayerInstanceCreateInfo.html#aacd450d8cf7fc46b3b57020a6a6236d0":[5,0,1547,8],
-"structVkLayerInstanceCreateInfo.html#ad501995081e7b4db6eaaf9f1d28fd570":[5,0,1547,4],
-"structVkLayerInstanceCreateInfo.html#aef662eecc6b19cd73f6cc566f645a67d":[5,0,1547,0]
+"structVkLayerInstanceCreateInfo.html#a3a0e89b7f9d0b58a052233492201484e":[5,0,1547,6]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX341 =
 {
+"structVkPhysicalDeviceVertexAttributeDivisorPropertiesKHR.html":[5,0,1917],
+"structVkPhysicalDeviceVertexAttributeDivisorPropertiesKHR.html#a0972dc2bc2a1e0b14c1074b448c90461":[5,0,1917,2],
+"structVkPhysicalDeviceVertexAttributeDivisorPropertiesKHR.html#a5d32d0f34a132103467b7ef6dd4f7935":[5,0,1917,3],
+"structVkPhysicalDeviceVertexAttributeDivisorPropertiesKHR.html#a8b56470a48bacf21ac01956885c642f7":[5,0,1917,0],
+"structVkPhysicalDeviceVertexAttributeDivisorPropertiesKHR.html#aa26d11fc01df58181d683549f8205412":[5,0,1917,1],
+"structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html":[5,0,1918],
+"structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html#a24ca0c47da5e8664231da0bb397f2400":[5,0,1918,1],
+"structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html#a2fd03a0d08d62ef717fddedcaa063340":[5,0,1918,2],
 "structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html#aacb231f46eaaf6a81c1f31ad760e79b6":[5,0,1918,0],
 "structVkPhysicalDeviceVideoEncodeQualityLevelInfoKHR.html":[5,0,1919],
 "structVkPhysicalDeviceVideoEncodeQualityLevelInfoKHR.html#a16606ae1c731ce1e2b83459b4725648a":[5,0,1919,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX341 =
 "structVkPhysicalDeviceYcbcrDegammaFeaturesQCOM.html#ae744c2877310cb21549a5b18508410e5":[5,0,1931,0],
 "structVkPhysicalDeviceYcbcrImageArraysFeaturesEXT.html":[5,0,1932],
 "structVkPhysicalDeviceYcbcrImageArraysFeaturesEXT.html#a62bf721086e5d6acb20205b1d31be079":[5,0,1932,1],
-"structVkPhysicalDeviceYcbcrImageArraysFeaturesEXT.html#a696dfb0b0e6e97e48d20b57551989c53":[5,0,1932,2],
-"structVkPhysicalDeviceYcbcrImageArraysFeaturesEXT.html#a6f36e391036defe7576b2ca6ce5f6501":[5,0,1932,0],
-"structVkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.html":[5,0,1933],
-"structVkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.html#a15cf42813899e09926f9f1fdf24c7d58":[5,0,1933,0],
-"structVkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.html#a67ad38bba0a17bd21a88d97f5fb48e54":[5,0,1933,2],
-"structVkPhysicalDeviceZeroInitializeWorkgroupMemoryFeatures.html#aa82b8cb48729f874add832febce1635c":[5,0,1933,1],
-"structVkPipelineBinaryCreateInfoKHR.html":[5,0,1934],
-"structVkPipelineBinaryCreateInfoKHR.html#a424a3cb372410f83858783976e3e21a2":[5,0,1934,1],
-"structVkPipelineBinaryCreateInfoKHR.html#a66201f4c07a3a6ac91eec68fbf8a934c":[5,0,1934,4]
+"structVkPhysicalDeviceYcbcrImageArraysFeaturesEXT.html#a696dfb0b0e6e97e48d20b57551989c53":[5,0,1932,2]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX322 =
 {
+"structUpsert.html#a67a83b82a792661bf71e166233371bf6":[5,0,1127,3],
+"structUpsert.html#a85cde42e4ea925d0f7ec3bde6302d0d6":[5,0,1127,4],
+"structUpsert.html#a8650f83a9c55c609980deffed8c3ced8":[5,0,1127,0],
+"structUpsert.html#a9524aa52c709d36baff2fed94a814cc9":[5,0,1127,2],
+"structUpsert.html#a961b481398a4c9ff4fe2de2b4c91de60":[5,0,1127,7],
+"structUpsert.html#ae04e06c0d34138e9f77c8d1a56322aa9":[5,0,1127,8],
+"structUpsert.html#afa03ce78400b1f607648bb2739df88ec":[5,0,1127,1],
+"structUpvaldesc.html":[5,0,1129],
 "structUpvaldesc.html#a1315fb98c5f398c3f3323967cb9ec7ba":[5,0,1129,2],
 "structUpvaldesc.html#a1e5182ac7b8b72848ed71b7b4844e3d1":[5,0,1129,1],
 "structUpvaldesc.html#a8478ecca9cb593200c562a0837aedfac":[5,0,1129,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX322 =
 "structVkAccelerationStructureGeometryMotionTrianglesDataNV.html#aeefb0feefd7a2406d61955511ed81734":[5,0,1159,1],
 "structVkAccelerationStructureGeometryMotionTrianglesDataNV.html#af354102958ffdcd51e8983038aacf36e":[5,0,1159,0],
 "structVkAccelerationStructureGeometryTrianglesDataKHR.html":[5,0,1160],
-"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a043b038bfb682fcea9b40ceaa254daa7":[5,0,1160,8],
-"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a0512c0fc7f2cfed359c8f0b473598199":[5,0,1160,5],
-"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a19f8d94b7673a2ce494751486451d69a":[5,0,1160,7],
-"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a2b95bf18078c70a8bc57bdf5b7d7140d":[5,0,1160,1],
-"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a33f44c7c10e300b4ee5b35bf5f402f97":[5,0,1160,2],
-"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a7079e48c935638f9df1bfb0396006b24":[5,0,1160,0],
-"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a94b141c4584384753d5dbb7a77825fe8":[5,0,1160,6],
-"structVkAccelerationStructureGeometryTrianglesDataKHR.html#add0321142e920f319bdb620a1ca4515c":[5,0,1160,3],
-"structVkAccelerationStructureGeometryTrianglesDataKHR.html#af3258953707c7732a1827ef219bf1d58":[5,0,1160,4]
+"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a043b038bfb682fcea9b40ceaa254daa7":[5,0,1160,8]
 };

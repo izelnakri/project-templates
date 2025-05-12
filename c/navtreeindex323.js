@@ -1,5 +1,13 @@
 var NAVTREEINDEX323 =
 {
+"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a0512c0fc7f2cfed359c8f0b473598199":[5,0,1160,5],
+"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a19f8d94b7673a2ce494751486451d69a":[5,0,1160,7],
+"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a2b95bf18078c70a8bc57bdf5b7d7140d":[5,0,1160,1],
+"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a33f44c7c10e300b4ee5b35bf5f402f97":[5,0,1160,2],
+"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a7079e48c935638f9df1bfb0396006b24":[5,0,1160,0],
+"structVkAccelerationStructureGeometryTrianglesDataKHR.html#a94b141c4584384753d5dbb7a77825fe8":[5,0,1160,6],
+"structVkAccelerationStructureGeometryTrianglesDataKHR.html#add0321142e920f319bdb620a1ca4515c":[5,0,1160,3],
+"structVkAccelerationStructureGeometryTrianglesDataKHR.html#af3258953707c7732a1827ef219bf1d58":[5,0,1160,4],
 "structVkAccelerationStructureInfoNV.html":[5,0,1161],
 "structVkAccelerationStructureInfoNV.html#a54a768baeb0c05eb37ce75f8f4f08df2":[5,0,1161,2],
 "structVkAccelerationStructureInfoNV.html#a7383bccf8cfea0669fe6564c3380fff2":[5,0,1161,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX323 =
 "structVkBindDescriptorBufferEmbeddedSamplersInfoEXT.html#a007a839fa987e118eaee0506277815c4":[5,0,1198,0],
 "structVkBindDescriptorBufferEmbeddedSamplersInfoEXT.html#a0e5e2c808d70fd56bd4aef1aa3a0fcf2":[5,0,1198,1],
 "structVkBindDescriptorBufferEmbeddedSamplersInfoEXT.html#a5e1c83131b8941702c3031d58f112327":[5,0,1198,2],
-"structVkBindDescriptorBufferEmbeddedSamplersInfoEXT.html#a6a3488e4078746147fec4e4b00259e76":[5,0,1198,4],
-"structVkBindDescriptorBufferEmbeddedSamplersInfoEXT.html#ab7a7343cc42a681d105d016d569230af":[5,0,1198,3],
-"structVkBindDescriptorSetsInfoKHR.html":[5,0,1199],
-"structVkBindDescriptorSetsInfoKHR.html#a069cbeb9472ce8fee2ec5946f1493976":[5,0,1199,1],
-"structVkBindDescriptorSetsInfoKHR.html#a075491125657d37332182f58ed13a404":[5,0,1199,5],
-"structVkBindDescriptorSetsInfoKHR.html#a2c9d8e64a88ba9b3a8f57ebd6e4e51d5":[5,0,1199,8],
-"structVkBindDescriptorSetsInfoKHR.html#a49dc79f53face0638c6a7a53c817acc1":[5,0,1199,2],
-"structVkBindDescriptorSetsInfoKHR.html#a7a62dfe669922149f7930acdfead6bd8":[5,0,1199,0],
-"structVkBindDescriptorSetsInfoKHR.html#ab7e68b4ea818d5a3d5cafb83f090edda":[5,0,1199,6]
+"structVkBindDescriptorBufferEmbeddedSamplersInfoEXT.html#a6a3488e4078746147fec4e4b00259e76":[5,0,1198,4]
 };

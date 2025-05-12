@@ -1,5 +1,13 @@
 var NAVTREEINDEX350 =
 {
+"structWalIndexHdr.html#ae4ca33947cd629feb9dce2b1f976c364":[5,0,2260,8],
+"structWalIndexHdr.html#af99b92f673fd7ba1e4e4f9feb955453f":[5,0,2260,2],
+"structWalIterator.html":[5,0,2261],
+"structWalIterator.html#a3fcdbc24694c27146f9303310462a359":[5,0,2261,1],
+"structWalIterator.html#accc32feabc4acfea6d6de915225f15a7":[5,0,2261,2],
+"structWalIterator.html#ad81bc9447d6043212289d127dc9fdafa":[5,0,2261,3],
+"structWalIterator_1_1WalSegment.html":[5,0,2261,0],
+"structWalIterator_1_1WalSegment.html#a329c939b196f907fe98cf762bb07d291":[5,0,2261,0,2],
 "structWalIterator_1_1WalSegment.html#a3eedec5e8e8dd94be670d50ac144a959":[5,0,2261,0,3],
 "structWalIterator_1_1WalSegment.html#a5e43273a11dc5856934834c0cdf7f198":[5,0,2261,0,1],
 "structWalIterator_1_1WalSegment.html#ad80cf479aa670eda7aa1adee607af7d9":[5,0,2261,0,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX350 =
 "structWindowCodeArg.html#a9029999dec79eca4ed59e32d119e71d0":[5,0,2281,4],
 "structWindowCodeArg.html#a9e1fcb47f387bc87c984818aabd27f75":[5,0,2281,8],
 "structWindowCodeArg.html#a9e550ac49054e0725d4e023986e851ba":[5,0,2281,0],
-"structWindowCodeArg.html#aa32d653ecb6287d85dcea925b9d71ec3":[5,0,2281,3],
-"structWindowCsrAndReg.html":[5,0,2282],
-"structWindowCsrAndReg.html#a810dbc91fd827522bb68b9dcdcc20af6":[5,0,2282,0],
-"structWindowCsrAndReg.html#af29ec22a6773e3a4773df9491e32b57e":[5,0,2282,1],
-"structWindowRewrite.html":[5,0,2283],
-"structWindowRewrite.html#a2338999bd0afbd1d39e01ad05d65dad7":[5,0,2283,3],
-"structWindowRewrite.html#a49d7114e9421cdad9fe31ba24be67896":[5,0,2283,2],
-"structWindowRewrite.html#a4c8e30eec6912a56128646b5cdbad715":[5,0,2283,1],
-"structWindowRewrite.html#a78a4d67508a72ddabdfe5a8e9682ceb9":[5,0,2283,4]
+"structWindowCodeArg.html#aa32d653ecb6287d85dcea925b9d71ec3":[5,0,2281,3]
 };

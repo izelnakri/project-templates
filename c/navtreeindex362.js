@@ -1,5 +1,13 @@
 var NAVTREEINDEX362 =
 {
+"struct__GtkWidgetClass.html#adcc89460b8b550508640dce443b61378":[5,0,432,14],
+"struct__GtkWidgetClass.html#af24d14f715bebf3abcdb35cf8b070edd":[5,0,432,12],
+"struct__GtkWidgetClass.html#af598b7f6a36083433deaa20de4e091fd":[5,0,432,23],
+"struct__GtkWidgetClass.html#af6935ec1b6492c515a7fb5020836bd54":[5,0,432,5],
+"struct__GtkWindow.html":[5,0,433],
+"struct__GtkWindow.html#a5eca13ee4c1b12fb1ae4b26958f452dc":[5,0,433,0],
+"struct__GtkWindowClass.html":[5,0,434],
+"struct__GtkWindowClass.html#a09b639f14eb4c0e5f5886d03498a9bf1":[5,0,434,1],
 "struct__GtkWindowClass.html#a5fc75e6e3a509bbb03d10c4607c2ec8a":[5,0,434,2],
 "struct__GtkWindowClass.html#a73becfdd225024ac2b3d74e4963ffadd":[5,0,434,4],
 "struct__GtkWindowClass.html#ac133a06292857d56d460ec28ac590c59":[5,0,434,6],
@@ -241,13 +249,5 @@ var NAVTREEINDEX362 =
 "struct__PangoLogAttr.html#a7aed686d7a90689349129409206fc8e8":[5,0,538,3],
 "struct__PangoLogAttr.html#a7e91cbadd07ccd3387dd25b80ceb0871":[5,0,538,0],
 "struct__PangoLogAttr.html#a8964d839d957fafc5c2622107d5ef1ed":[5,0,538,6],
-"struct__PangoLogAttr.html#a938e106c7c7fcca0fc047816c668d88e":[5,0,538,7],
-"struct__PangoLogAttr.html#ab54418aa86cea3dfc2de7c1973c18d0d":[5,0,538,10],
-"struct__PangoLogAttr.html#ac869cc83008d5cdb3bf9f5d4ba711880":[5,0,538,12],
-"struct__PangoLogAttr.html#ad665472a45d02c9b5e39e4bde88af732":[5,0,538,11],
-"struct__PangoLogAttr.html#ae26d19d56ec7e08fc3354ca7fc1a5d7c":[5,0,538,9],
-"struct__PangoLogAttr.html#af1f904ce6f3eed2610bd5e59179cd4b7":[5,0,538,8],
-"struct__PangoMatrix.html":[5,0,539],
-"struct__PangoMatrix.html#a0de7d28a2f1e1de5d53cb64013ec6e2c":[5,0,539,5],
-"struct__PangoMatrix.html#a24e19055f3823b5aa98451f5c5aba09c":[5,0,539,2]
+"struct__PangoLogAttr.html#a938e106c7c7fcca0fc047816c668d88e":[5,0,538,7]
 };

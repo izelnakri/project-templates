@@ -1,5 +1,13 @@
 var NAVTREEINDEX208 =
 {
+"gtkfontchooser_8h.html#af0bb714c384c2c1d1389929a3e80100c":[6,0,4,0,8,0,0,2,2,33,2],
+"gtkfontchooser_8h.html#af995f8ad8f4b6dea0721c5491ab9a645":[6,0,4,0,8,0,0,2,2,33,26],
+"gtkfontchooser_8h_source.html":[6,0,4,0,8,0,0,2,2,33],
+"gtkfontchooserdialog_8h.html":[6,0,4,0,8,0,0,2,2,34],
+"gtkfontchooserdialog_8h.html#a102706ef49d2270393ef73edfb8fdcbb":[6,0,4,0,8,0,0,2,2,34,4],
+"gtkfontchooserdialog_8h.html#a1e5a9ae6a3bd083fc2aab150355b2380":[6,0,4,0,8,0,0,2,2,34,2],
+"gtkfontchooserdialog_8h.html#a7fff39ef5fe9276f4f7104a9273a1f4e":[6,0,4,0,8,0,0,2,2,34,3],
+"gtkfontchooserdialog_8h.html#ab1be6add52ee0a8779337493d1361f0a":[6,0,4,0,8,0,0,2,2,34,5],
 "gtkfontchooserdialog_8h.html#ab9bf63a0340d57e800133bb59a5a61a2":[6,0,4,0,8,0,0,2,2,34,0],
 "gtkfontchooserdialog_8h.html#abb2d4d408e0daae3518655adca5e9fd4":[6,0,4,0,8,0,0,2,2,34,1],
 "gtkfontchooserdialog_8h_source.html":[6,0,4,0,8,0,0,2,2,34],
@@ -241,13 +249,5 @@ var NAVTREEINDEX208 =
 "gtkglarea_8h.html#a2bc8c24374f699e4fff83d26696a1d31":[6,0,4,0,8,0,0,2,96,23],
 "gtkglarea_8h.html#a2eb2798de9c3addf32e31d0f44b8d9aa":[6,0,4,0,8,0,0,2,96,8],
 "gtkglarea_8h.html#a2eb61098c41043c6bc7879a1550889e5":[6,0,4,0,8,0,0,2,96,2],
-"gtkglarea_8h.html#a34189aa873734e6a1ef7a13be764ba6d":[6,0,4,0,8,0,0,2,96,15],
-"gtkglarea_8h.html#a34707715c806c8c62f38822f0ad2ec3a":[6,0,4,0,8,0,0,2,96,10],
-"gtkglarea_8h.html#a359d910eefdd20331a958fa88bd1f3ab":[6,0,4,0,8,0,0,2,96,3],
-"gtkglarea_8h.html#a37ba4bbec757b67eb23e904635e20993":[6,0,4,0,8,0,0,2,96,14],
-"gtkglarea_8h.html#a41bfd36ede430a281c4c58bcf058d962":[6,0,4,0,8,0,0,2,96,11],
-"gtkglarea_8h.html#a490b5c2f787878666e8d40d530b26e00":[6,0,4,0,8,0,0,2,96,16],
-"gtkglarea_8h.html#a662832649b5fbe985d375fd0ff1f1991":[6,0,4,0,8,0,0,2,96,4],
-"gtkglarea_8h.html#a6d4bc363863dedbf9671da82b41e8dde":[6,0,4,0,8,0,0,2,96,24],
-"gtkglarea_8h.html#a6e6d845486b8327e93b2094b4c21b2e7":[6,0,4,0,8,0,0,2,96,27]
+"gtkglarea_8h.html#a34189aa873734e6a1ef7a13be764ba6d":[6,0,4,0,8,0,0,2,96,15]
 };

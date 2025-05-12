@@ -1,5 +1,13 @@
 var NAVTREEINDEX348 =
 {
+"structVkVideoEncodeCapabilitiesKHR.html#ad6f7dd0a35c205b2f21e1b011d8447f8":[5,0,2185,1],
+"structVkVideoEncodeCapabilitiesKHR.html#adb29e22848172da68bc613eeed8591bf":[5,0,2185,4],
+"structVkVideoEncodeCapabilitiesKHR.html#adc39293882d924169a4e268c81ae29dd":[5,0,2185,8],
+"structVkVideoEncodeCapabilitiesKHR.html#ae70b31ff21433bb0226bd282278cb36a":[5,0,2185,6],
+"structVkVideoEncodeH264CapabilitiesKHR.html":[5,0,2186],
+"structVkVideoEncodeH264CapabilitiesKHR.html#a009ac831500fb406c7956b8899f50045":[5,0,2186,6],
+"structVkVideoEncodeH264CapabilitiesKHR.html#a014a9a1dd305469b2acaa1e23ffd35db":[5,0,2186,4],
+"structVkVideoEncodeH264CapabilitiesKHR.html#a158257fc738d880342cd77560af9b787":[5,0,2186,11],
 "structVkVideoEncodeH264CapabilitiesKHR.html#a18706d7bf3d0812bc74c15ae50d11703":[5,0,2186,0],
 "structVkVideoEncodeH264CapabilitiesKHR.html#a26da95bf5b56481db43edf09f3fa51f6":[5,0,2186,3],
 "structVkVideoEncodeH264CapabilitiesKHR.html#a2fbc11b3130402c6faabee956e735916":[5,0,2186,13],
@@ -241,13 +249,5 @@ var NAVTREEINDEX348 =
 "structVkVideoEncodeQualityLevelInfoKHR.html#aeab76c52ed1e0f14d73e416751a280e7":[5,0,2219,1],
 "structVkVideoEncodeQualityLevelPropertiesKHR.html":[5,0,2220],
 "structVkVideoEncodeQualityLevelPropertiesKHR.html#a3a21897f495a09207d8c35c1a261fc89":[5,0,2220,2],
-"structVkVideoEncodeQualityLevelPropertiesKHR.html#a5705649bcf92730cbeefb120e8123709":[5,0,2220,3],
-"structVkVideoEncodeQualityLevelPropertiesKHR.html#ab7afcd0ba69a78f371be45c07fef9580":[5,0,2220,1],
-"structVkVideoEncodeQualityLevelPropertiesKHR.html#af3c2801c81fdb7b7bde4ec6824f1234a":[5,0,2220,0],
-"structVkVideoEncodeRateControlInfoKHR.html":[5,0,2221],
-"structVkVideoEncodeRateControlInfoKHR.html#a0f3e6e0de458d9b73dcdc7cc71f86ad8":[5,0,2221,1],
-"structVkVideoEncodeRateControlInfoKHR.html#a47ba96b6f1a130223ee9be1f61284fdf":[5,0,2221,6],
-"structVkVideoEncodeRateControlInfoKHR.html#a6f46b6e4482a838de62fde0a1a0bf37f":[5,0,2221,7],
-"structVkVideoEncodeRateControlInfoKHR.html#a7764d2aece6ccc0255620165b3621c18":[5,0,2221,3],
-"structVkVideoEncodeRateControlInfoKHR.html#ab50c84a8f0c4c549d8f07f1f8499f8bb":[5,0,2221,4]
+"structVkVideoEncodeQualityLevelPropertiesKHR.html#a5705649bcf92730cbeefb120e8123709":[5,0,2220,3]
 };

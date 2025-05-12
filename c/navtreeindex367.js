@@ -1,5 +1,13 @@
 var NAVTREEINDEX367 =
 {
+"structduk__tval__struct.html#aa1055ca7054528fa0f558559b427b2d7":[5,0,705,14],
+"structduk__tval__struct.html#aa132bd82118c1fb7b7e85717914378f2":[5,0,705,9],
+"structduk__tval__struct.html#aa7c567160a5f49a71cdc3750385702a4":[5,0,705,15],
+"structduk__tval__struct.html#aafe54832429b3598021e3709862fb56e":[5,0,705,17],
+"structduk__tval__struct.html#acb91df3003836742d10f7cac242af884":[5,0,705,5],
+"structduk__tval__struct.html#ad57595675719c93a7b26c429ebcda3cc":[5,0,705,2],
+"structduk__tval__struct.html#adaee42c933580a3e9400d1ed09fb16bd":[5,0,705,16],
+"structduk__tval__struct.html#adedec5d21d5492f74d28e3813455760e":[5,0,705,13],
 "structduk__tval__struct.html#ae0ab0f488ebf5899ea207ebd04abf535":[5,0,705,18],
 "structduk__tval__struct.html#af0bdb8139d66f5c96b13babc8ff2c0ca":[5,0,705,6],
 "structduk__tval__struct.html#af360bd671ef15677eaf603bb893c2856":[5,0,705,12],
@@ -241,13 +249,5 @@ var NAVTREEINDEX367 =
 "structjson__error__t.html":[5,0,856],
 "structjson__error__t.html#a34dd5c793fe180f28a4118923e6eee88":[5,0,856,1],
 "structjson__error__t.html#a5bd5aafae0627612e111ad4293724979":[5,0,856,3],
-"structjson__error__t.html#adb7bd6594503b086f24df63b5abbeaff":[5,0,856,4],
-"structjson__error__t.html#aed5f8ad3ca9c4264c3260b5a8d28c1c8":[5,0,856,0],
-"structjson__error__t.html#afb98376039b3a734a81fd098c886a64d":[5,0,856,2],
-"structjson__t.html":[5,0,857],
-"structjson__t.html#a83c4015bb5093ca46f1855efb336bcc0":[5,0,857,1],
-"structjson__t.html#aef408229dc8cd36eb21343abb0512c77":[5,0,857,0],
-"structlcontext.html":[5,0,864],
-"structlcontext.html#a02655772c21033bdca0e952cb59faf2a":[5,0,864,0],
-"structlcontext.html#a4d9ce2cfd8f3f76609ee83b92dc76de7":[5,0,864,1]
+"structjson__error__t.html#adb7bd6594503b086f24df63b5abbeaff":[5,0,856,4]
 };

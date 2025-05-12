@@ -1,5 +1,13 @@
 var NAVTREEINDEX228 =
 {
+"gunicode_8h.html#a82838e52ef11374f46a4e98b20474dcd":[6,0,4,0,9,0,1,2,73,29],
+"gunicode_8h.html#a82fa2044e2982ba3967efe8e49a904f5":[6,0,4,0,9,0,1,2,73,16],
+"gunicode_8h.html#a84152d276d4b5be1222dd5e159cc93b6":[6,0,4,0,9,0,1,2,73,55],
+"gunicode_8h.html#a869d4b76dd9278cc174ead040933d9f4":[6,0,4,0,9,0,1,2,73,17],
+"gunicode_8h.html#a873739597b30a0c56760c352454d6e14":[6,0,4,0,9,0,1,2,73,50],
+"gunicode_8h.html#a89e345e5b05f3e1a8bceb4b120a8854e":[6,0,4,0,9,0,1,2,73,11],
+"gunicode_8h.html#a9114e634f19f4c0ebbf93ced963878c2":[6,0,4,0,9,0,1,2,73,20],
+"gunicode_8h.html#a930c692688b4c7f02fa826b359b1ea11":[6,0,4,0,9,0,1,2,73,21],
 "gunicode_8h.html#a936501fd80fc0a20e9bfa3dcf43e85f8":[6,0,4,0,9,0,1,2,73,72],
 "gunicode_8h.html#a9407ceafbc332f8a66374aacb4e2fb94":[6,0,4,0,9,0,1,2,73,67],
 "gunicode_8h.html#a9a5bcfd94072835d0dde112e72ba166f":[6,0,4,0,9,0,1,2,73,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX228 =
 "gunicode_8h.html#afad33f34d7efca3d112227ccd5765466adda7878da289225aee4b987810369ade":[6,0,4,0,9,0,1,2,73,6,55],
 "gunicode_8h.html#afad33f34d7efca3d112227ccd5765466ade2aa31a8981b882b0dc4faf005f2e66":[6,0,4,0,9,0,1,2,73,6,1],
 "gunicode_8h.html#afad33f34d7efca3d112227ccd5765466adfaab12a8c9d30fd390a45524c295d4a":[6,0,4,0,9,0,1,2,73,6,16],
-"gunicode_8h.html#afad33f34d7efca3d112227ccd5765466ae3ddedacd8450eb7a7bf70c70249eddc":[6,0,4,0,9,0,1,2,73,6,150],
-"gunicode_8h.html#afad33f34d7efca3d112227ccd5765466ae7681ff16b0afb758e1f88c10eeb36da":[6,0,4,0,9,0,1,2,73,6,41],
-"gunicode_8h.html#afad33f34d7efca3d112227ccd5765466aec400ffecbea0a7deb66f842f144bf5c":[6,0,4,0,9,0,1,2,73,6,159],
-"gunicode_8h.html#afad33f34d7efca3d112227ccd5765466aeeabac6fedb3579a584e14c21fafaf8e":[6,0,4,0,9,0,1,2,73,6,56],
-"gunicode_8h.html#afad33f34d7efca3d112227ccd5765466af1078da4bad2862ca158d418cac8999f":[6,0,4,0,9,0,1,2,73,6,80],
-"gunicode_8h.html#afad33f34d7efca3d112227ccd5765466af280f513e4ce617c927a6f828f2758aa":[6,0,4,0,9,0,1,2,73,6,66],
-"gunicode_8h.html#afad33f34d7efca3d112227ccd5765466af34d8104ad23878108dc78468372e195":[6,0,4,0,9,0,1,2,73,6,134],
-"gunicode_8h.html#afad33f34d7efca3d112227ccd5765466af4ae76e5055b0f2382e32aec51b3aac8":[6,0,4,0,9,0,1,2,73,6,116],
-"gunicode_8h.html#afad33f34d7efca3d112227ccd5765466af4b04f67cb92264f9ae4d2d4c929598f":[6,0,4,0,9,0,1,2,73,6,77]
+"gunicode_8h.html#afad33f34d7efca3d112227ccd5765466ae3ddedacd8450eb7a7bf70c70249eddc":[6,0,4,0,9,0,1,2,73,6,150]
 };

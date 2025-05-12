@@ -1,5 +1,13 @@
 var NAVTREEINDEX355 =
 {
+"struct__GObjectClass.html#a13ecf3d990ff1b1bf3d430cf0ad41b3d":[5,0,170,6],
+"struct__GObjectClass.html#a1fa4a57bf4c09ea1cba4969c21eeb3c4":[5,0,170,10],
+"struct__GObjectClass.html#a30c4f3e21aa53d950c2b920e9c82d5ec":[5,0,170,5],
+"struct__GObjectClass.html#a3149837a2245469cfa8ac8dfe050e365":[5,0,170,12],
+"struct__GObjectClass.html#a340e2f10e91f60358e1c5d71a00c7f46":[5,0,170,1],
+"struct__GObjectClass.html#a668bd0033360b1480aed275964d567a2":[5,0,170,7],
+"struct__GObjectClass.html#aa276840ccad43e64cd77b520f03ee1a0":[5,0,170,3],
+"struct__GObjectClass.html#ac321e247217e035cf57f0edb3e674fa6":[5,0,170,9],
 "struct__GObjectClass.html#acb87479220a1480464e7eab86234d640":[5,0,170,0],
 "struct__GObjectClass.html#acdbe5a806ba299424bc8fa596f4cf76e":[5,0,170,2],
 "struct__GObjectClass.html#ad088d4960c1178e64a32a5fbe73f0228":[5,0,170,14],
@@ -241,13 +249,5 @@ var NAVTREEINDEX355 =
 "struct__GProxyAddressEnumerator.html#ad7d6018a2060bcd33d41680e65ab4213":[5,0,217,0],
 "struct__GProxyAddressEnumeratorClass.html":[5,0,218],
 "struct__GProxyAddressEnumeratorClass.html#a19dfe13e6032fee0569076af0464b9b8":[5,0,218,5],
-"struct__GProxyAddressEnumeratorClass.html#a344d0b348d5f5af07fbede0fd843a94c":[5,0,218,7],
-"struct__GProxyAddressEnumeratorClass.html#a36325150f013db901cefeb4b7df9568b":[5,0,218,2],
-"struct__GProxyAddressEnumeratorClass.html#a5c8236584d429499a183fbaa56c21e7a":[5,0,218,0],
-"struct__GProxyAddressEnumeratorClass.html#a5db9fad66c8eafa23e4d45707ff5f5a8":[5,0,218,4],
-"struct__GProxyAddressEnumeratorClass.html#a780c3f1922fe344e46f484988c14fd50":[5,0,218,3],
-"struct__GProxyAddressEnumeratorClass.html#a922060dcc107f0dfc84133a3aa5c9144":[5,0,218,1],
-"struct__GProxyAddressEnumeratorClass.html#aa5fed21cf4c594d637bd93a79325cfd2":[5,0,218,6],
-"struct__GProxyInterface.html":[5,0,219],
-"struct__GProxyInterface.html#a1b586b4306c37a3e233fb8f32d812d1e":[5,0,219,2]
+"struct__GProxyAddressEnumeratorClass.html#a344d0b348d5f5af07fbede0fd843a94c":[5,0,218,7]
 };

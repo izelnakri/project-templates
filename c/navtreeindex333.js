@@ -1,5 +1,13 @@
 var NAVTREEINDEX333 =
 {
+"structVkOffset3D.html#a1345b61583f053b27c832061d46f581b":[5,0,1596,1],
+"structVkOffset3D.html#a8a783767cc2cf53f2f3ae0c632f6e707":[5,0,1596,2],
+"structVkOpaqueCaptureDescriptorDataCreateInfoEXT.html":[5,0,1597],
+"structVkOpaqueCaptureDescriptorDataCreateInfoEXT.html#a01597fbfffc18bc60c8afadab12fba8a":[5,0,1597,1],
+"structVkOpaqueCaptureDescriptorDataCreateInfoEXT.html#a11ea21fb6edf2ba1dc83ead92ea39f52":[5,0,1597,0],
+"structVkOpaqueCaptureDescriptorDataCreateInfoEXT.html#abaf1f93ff2447a26525f8289297280ec":[5,0,1597,2],
+"structVkOpticalFlowExecuteInfoNV.html":[5,0,1598],
+"structVkOpticalFlowExecuteInfoNV.html#a07c0e491e2c796027a2c431e0cf3e06a":[5,0,1598,3],
 "structVkOpticalFlowExecuteInfoNV.html#a0fc0f64d0d2fad1d019845619067dd03":[5,0,1598,2],
 "structVkOpticalFlowExecuteInfoNV.html#a1983a2502d6fe0f7446e801df19e9913":[5,0,1598,1],
 "structVkOpticalFlowExecuteInfoNV.html#a35e83ebf1fe811040157983ce097e520":[5,0,1598,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX333 =
 "structVkPhysicalDeviceCooperativeMatrixPropertiesNV.html":[5,0,1644],
 "structVkPhysicalDeviceCooperativeMatrixPropertiesNV.html#a4beb60392ff2c254e0820d191867e7dd":[5,0,1644,2],
 "structVkPhysicalDeviceCooperativeMatrixPropertiesNV.html#a8004735855b8b731a8ea1bce1e183778":[5,0,1644,1],
-"structVkPhysicalDeviceCooperativeMatrixPropertiesNV.html#af7b973021800b177c2fca2b3d8e78a15":[5,0,1644,0],
-"structVkPhysicalDeviceCopyMemoryIndirectFeaturesNV.html":[5,0,1645],
-"structVkPhysicalDeviceCopyMemoryIndirectFeaturesNV.html#a288e19dd956da78fc7643fd4599ed75c":[5,0,1645,0],
-"structVkPhysicalDeviceCopyMemoryIndirectFeaturesNV.html#a4df94659c0ac472890d6976e9aa75775":[5,0,1645,2],
-"structVkPhysicalDeviceCopyMemoryIndirectFeaturesNV.html#a5b5f9b2a39821e072a3e1afd1c4347d0":[5,0,1645,1],
-"structVkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html":[5,0,1646],
-"structVkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html#a9c51cc86281e9124b20c18d07a33a72c":[5,0,1646,0],
-"structVkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html#acdc00fbf9ea8b8b8fad7e9e6d1c0285a":[5,0,1646,1],
-"structVkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html#adbd92c066bcdc1a2524b49f430b6e81e":[5,0,1646,2]
+"structVkPhysicalDeviceCooperativeMatrixPropertiesNV.html#af7b973021800b177c2fca2b3d8e78a15":[5,0,1644,0]
 };

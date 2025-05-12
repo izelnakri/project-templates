@@ -1,5 +1,13 @@
 var NAVTREEINDEX328 =
 {
+"structVkDisplayPlaneCapabilitiesKHR.html#a4fe82fe0a2dc8452b2ca5e62d5d13c34":[5,0,1372,8],
+"structVkDisplayPlaneCapabilitiesKHR.html#a50ac0c51401b5444223c8f434a406317":[5,0,1372,0],
+"structVkDisplayPlaneCapabilitiesKHR.html#a65d34420437183e7e1d6845d98c1a687":[5,0,1372,4],
+"structVkDisplayPlaneCapabilitiesKHR.html#a97fe5c5b6070e0ad178293f450b79f7b":[5,0,1372,3],
+"structVkDisplayPlaneCapabilitiesKHR.html#acf30e2f0f4d1418e4647c82635fa9b77":[5,0,1372,5],
+"structVkDisplayPlaneCapabilitiesKHR.html#aea51fb702e1918f867734b0599d90cb0":[5,0,1372,6],
+"structVkDisplayPlaneInfo2KHR.html":[5,0,1373],
+"structVkDisplayPlaneInfo2KHR.html#a3e7b675481f47f95c7fc449e57a37177":[5,0,1373,1],
 "structVkDisplayPlaneInfo2KHR.html#a5957757780563d5346ca866d143a87ec":[5,0,1373,3],
 "structVkDisplayPlaneInfo2KHR.html#ac09eaf6de3eed3457506093b2a55bfc8":[5,0,1373,0],
 "structVkDisplayPlaneInfo2KHR.html#aeec597f268d3e623e7a238c0eeb661b2":[5,0,1373,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX328 =
 "structVkExternalMemoryImageCreateInfo.html#a2f383116d99a67e2aa944cc76b572efd":[5,0,1423,1],
 "structVkExternalMemoryImageCreateInfo.html#a3e5bd4580ee762d1d7e3faf5e7e357d9":[5,0,1423,2],
 "structVkExternalMemoryImageCreateInfo.html#a988a5832e7d1f5cfbf927d8ab21c5fa7":[5,0,1423,0],
-"structVkExternalMemoryImageCreateInfoNV.html":[5,0,1424],
-"structVkExternalMemoryImageCreateInfoNV.html#a7e27d95accfd57b7d8c1e638b7a01ec5":[5,0,1424,1],
-"structVkExternalMemoryImageCreateInfoNV.html#aceb9aee9fa2e26830e20aa69269e5470":[5,0,1424,0],
-"structVkExternalMemoryImageCreateInfoNV.html#af119ef03da4089d6a2333cfef9854303":[5,0,1424,2],
-"structVkExternalMemoryProperties.html":[5,0,1425],
-"structVkExternalMemoryProperties.html#a389ad64bf614243de313d998c6c439b7":[5,0,1425,1],
-"structVkExternalMemoryProperties.html#a6c7fd3cfa478ae90630bd3898a407913":[5,0,1425,0],
-"structVkExternalMemoryProperties.html#ad3181f419ef96d5cd4d2de7c854c422f":[5,0,1425,2],
-"structVkExternalSemaphoreProperties.html":[5,0,1426]
+"structVkExternalMemoryImageCreateInfoNV.html":[5,0,1424]
 };

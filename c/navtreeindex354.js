@@ -1,5 +1,13 @@
 var NAVTREEINDEX354 =
 {
+"struct__GIOFuncs.html#a8d95be39fe68ce9fa38c3ffa1ba2fd51":[5,0,135,1],
+"struct__GIOFuncs.html#ab6aff0a6cc9b7155003f2b614f2f91c0":[5,0,135,2],
+"struct__GIOFuncs.html#ad87b19ed7dd356397bc9a0b21cbea06e":[5,0,135,5],
+"struct__GIOFuncs.html#afc053db07d32fe6523e38ae9d28a32ae":[5,0,135,3],
+"struct__GIOStream.html":[5,0,136],
+"struct__GIOStream.html#a279483d11f52a10cf813c6f79f6d04b1":[5,0,136,1],
+"struct__GIOStream.html#a63f0bb47a7a26cee38c98a47cc71a5bb":[5,0,136,0],
+"struct__GIOStreamClass.html":[5,0,137],
 "struct__GIOStreamClass.html#a0410e86bdb50eebe49102b1feefa9c99":[5,0,137,4],
 "struct__GIOStreamClass.html#a0474cfb645608fe0d26bc977617c3d99":[5,0,137,13],
 "struct__GIOStreamClass.html#a04e170174d289f4e310cea4677181031":[5,0,137,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX354 =
 "struct__GObject.html#a1832f6cb389008f34d5c8e887045434a":[5,0,169,1],
 "struct__GObject.html#ac76579fc95be2c072e15a07cf953d75b":[5,0,169,0],
 "struct__GObject.html#aedfe41b44b45774d5ce1ec633b1f00cf":[5,0,169,2],
-"struct__GObjectClass.html":[5,0,170],
-"struct__GObjectClass.html#a13ecf3d990ff1b1bf3d430cf0ad41b3d":[5,0,170,6],
-"struct__GObjectClass.html#a1fa4a57bf4c09ea1cba4969c21eeb3c4":[5,0,170,10],
-"struct__GObjectClass.html#a30c4f3e21aa53d950c2b920e9c82d5ec":[5,0,170,5],
-"struct__GObjectClass.html#a3149837a2245469cfa8ac8dfe050e365":[5,0,170,12],
-"struct__GObjectClass.html#a340e2f10e91f60358e1c5d71a00c7f46":[5,0,170,1],
-"struct__GObjectClass.html#a668bd0033360b1480aed275964d567a2":[5,0,170,7],
-"struct__GObjectClass.html#aa276840ccad43e64cd77b520f03ee1a0":[5,0,170,3],
-"struct__GObjectClass.html#ac321e247217e035cf57f0edb3e674fa6":[5,0,170,9]
+"struct__GObjectClass.html":[5,0,170]
 };

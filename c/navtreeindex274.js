@@ -1,5 +1,13 @@
 var NAVTREEINDEX274 =
 {
+"lua-5_84_83_2src_2loadlib_8c.html#a8c34f770d4f7748069b3b26c070e2473":[6,0,7,0,0,5,0,29,35],
+"lua-5_84_83_2src_2loadlib_8c.html#a8fc66c8b852ee2960dc20797521d1d9e":[6,0,7,0,0,5,0,29,20],
+"lua-5_84_83_2src_2loadlib_8c.html#a91ac5b5231cf039af46226806dcc3884":[6,0,7,0,0,5,0,29,28],
+"lua-5_84_83_2src_2loadlib_8c.html#a9a915ea950c831cee2f1e7b0a3bd9005":[6,0,7,0,0,5,0,29,37],
+"lua-5_84_83_2src_2loadlib_8c.html#a9b689efbe48eb3d0b26d6d5520ecc036":[6,0,7,0,0,5,0,29,41],
+"lua-5_84_83_2src_2loadlib_8c.html#aac7e69bc5b4403e49e2609425f0fb7b0":[6,0,7,0,0,5,0,29,25],
+"lua-5_84_83_2src_2loadlib_8c.html#aaf2f653c673bdd616a05f1643e1784ab":[6,0,7,0,0,5,0,29,14],
+"lua-5_84_83_2src_2loadlib_8c.html#aafc06e5218aa84669dd7d3a2c6a94046":[6,0,7,0,0,5,0,29,12],
 "lua-5_84_83_2src_2loadlib_8c.html#ab732e1ec253c9b8dc0c2ce4d74cb0083":[6,0,7,0,0,5,0,29,33],
 "lua-5_84_83_2src_2loadlib_8c.html#abe3af664b33d2158ef6526094c84bb17":[6,0,7,0,0,5,0,29,18],
 "lua-5_84_83_2src_2loadlib_8c.html#ac0600b0f7e00d52a90c3ff67a6b4c114":[6,0,7,0,0,5,0,29,17],
@@ -241,13 +249,5 @@ var NAVTREEINDEX274 =
 "lua-5_84_83_2src_2lopcodes_8h.html#a01900876b9281238c6dbb4d7bc59ca66":[6,0,7,0,0,5,0,33,49],
 "lua-5_84_83_2src_2lopcodes_8h.html#a0746f1da0d525504790943f2b79b2856":[6,0,7,0,0,5,0,33,63],
 "lua-5_84_83_2src_2lopcodes_8h.html#a085f9af93bc2386ddb0b9fb53d5ff0b8":[6,0,7,0,0,5,0,33,53],
-"lua-5_84_83_2src_2lopcodes_8h.html#a0888e2bcb54f6e603f09208763aadfe9":[6,0,7,0,0,5,0,33,22],
-"lua-5_84_83_2src_2lopcodes_8h.html#a0c476ba8d647ec398f25bb6374a0c088":[6,0,7,0,0,5,0,33,52],
-"lua-5_84_83_2src_2lopcodes_8h.html#a0d5c4bc6c8c7a22a6591c65a93d9c908":[6,0,7,0,0,5,0,33,68],
-"lua-5_84_83_2src_2lopcodes_8h.html#a128c04f70b43fb82ed2eadb2b255cc81":[6,0,7,0,0,5,0,33,67],
-"lua-5_84_83_2src_2lopcodes_8h.html#a15a7daf14e4640990519e4e7f627900f":[6,0,7,0,0,5,0,33,29],
-"lua-5_84_83_2src_2lopcodes_8h.html#a1618fbbbf634a1b231240cfd6f3a3e5f":[6,0,7,0,0,5,0,33,36],
-"lua-5_84_83_2src_2lopcodes_8h.html#a1918af9b0bd50d9a0e6b3a4e243bbaad":[6,0,7,0,0,5,0,33,18],
-"lua-5_84_83_2src_2lopcodes_8h.html#a1d504abc1e2246548f89977210dce0b9":[6,0,7,0,0,5,0,33,7],
-"lua-5_84_83_2src_2lopcodes_8h.html#a1df1ba0f129f8e4691da2c5e6d1ecc39":[6,0,7,0,0,5,0,33,39]
+"lua-5_84_83_2src_2lopcodes_8h.html#a0888e2bcb54f6e603f09208763aadfe9":[6,0,7,0,0,5,0,33,22]
 };

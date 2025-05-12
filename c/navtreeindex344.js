@@ -1,5 +1,13 @@
 var NAVTREEINDEX344 =
 {
+"structVkQueueFamilyQueryResultStatusPropertiesKHR.html#aef82dac649f043c08d917562eb2330ca":[5,0,2022,0],
+"structVkQueueFamilyVideoPropertiesKHR.html":[5,0,2023],
+"structVkQueueFamilyVideoPropertiesKHR.html#a02f00276985e38bae5d5eb79d9c978cb":[5,0,2023,0],
+"structVkQueueFamilyVideoPropertiesKHR.html#aaf3e7eb2663ec47071deebd836446cb0":[5,0,2023,1],
+"structVkQueueFamilyVideoPropertiesKHR.html#ab0f7a40a1c6b92f98d82ea6a5ed2ea6a":[5,0,2023,2],
+"structVkRayTracingPipelineCreateInfoKHR.html":[5,0,2024],
+"structVkRayTracingPipelineCreateInfoKHR.html#a0f5240ca5f8206ba5130a2e741bcb7cf":[5,0,2024,6],
+"structVkRayTracingPipelineCreateInfoKHR.html#a129d8c7a20c07d751eda346e357f6ffe":[5,0,2024,4],
 "structVkRayTracingPipelineCreateInfoKHR.html#a1ceaa2e717147492ad516c1401b788cb":[5,0,2024,1],
 "structVkRayTracingPipelineCreateInfoKHR.html#a3923782a0d3a7bcb0d1eefd6740f3ce0":[5,0,2024,7],
 "structVkRayTracingPipelineCreateInfoKHR.html#a56cf4c1fe04f10992d7eaffe2cb48b34":[5,0,2024,8],
@@ -241,13 +249,5 @@ var NAVTREEINDEX344 =
 "structVkSRTDataNV.html#afbe722295fb11c7958bcc759209b00a9":[5,0,2105,14],
 "structVkSRTDataNV.html#afbeb049932e1b98df5c3d652d9d94e1d":[5,0,2105,12],
 "structVkSampleLocationEXT.html":[5,0,2059],
-"structVkSampleLocationEXT.html#a542beaaee302f31d350e5f847d61226f":[5,0,2059,0],
-"structVkSampleLocationEXT.html#a84fbfba1bccbd29deaa15285c9ffbf98":[5,0,2059,1],
-"structVkSampleLocationsInfoEXT.html":[5,0,2060],
-"structVkSampleLocationsInfoEXT.html#a6cdab4244077138d1b41f8ff6cfe7a8a":[5,0,2060,4],
-"structVkSampleLocationsInfoEXT.html#a72f1f632459bd714903435daa21908a5":[5,0,2060,3],
-"structVkSampleLocationsInfoEXT.html#aa0ed24fece08ba7f8fdfc54b48b86264":[5,0,2060,2],
-"structVkSampleLocationsInfoEXT.html#ab284a3f36be5d44dcbfdf9b30c4ed578":[5,0,2060,5],
-"structVkSampleLocationsInfoEXT.html#ab46e44d99dafa4bedf5cc4c3c20dfa77":[5,0,2060,1],
-"structVkSampleLocationsInfoEXT.html#aee74fe71c7b6d4bea4824988219d8dd9":[5,0,2060,0]
+"structVkSampleLocationEXT.html#a542beaaee302f31d350e5f847d61226f":[5,0,2059,0]
 };

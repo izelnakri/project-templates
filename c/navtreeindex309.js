@@ -1,5 +1,13 @@
 var NAVTREEINDEX309 =
 {
+"sqlite3_8h.html#ac113dc67efbc9aecbbb9441faf41584a":[6,0,7,0,0,14,411],
+"sqlite3_8h.html#ac1a7ec690c15c45d4df900864c677fcf":[6,0,7,0,0,14,709],
+"sqlite3_8h.html#ac1ad9cfc7aa33ed22005bc02bfe947ad":[6,0,7,0,0,14,317],
+"sqlite3_8h.html#ac1c2da392b14a7bba8cc7605d56438d0":[6,0,7,0,0,14,591],
+"sqlite3_8h.html#ac1e491ce36b7471eb28387f7d3c74334":[6,0,7,0,0,14,720],
+"sqlite3_8h.html#ac285cb102ca0ced83ce8eaf34de49f2c":[6,0,7,0,0,14,161],
+"sqlite3_8h.html#ac29025cd2b000dd0ee3d2da4dc9f74bd":[6,0,7,0,0,14,255],
+"sqlite3_8h.html#ac2be1f21295735080e8676eaa74b2b96":[6,0,7,0,0,14,300],
 "sqlite3_8h.html#ac2fa1ecdb2290d9af6010edbd1cbc83c":[6,0,7,0,0,14,511],
 "sqlite3_8h.html#ac33f4064ae6690cada7bdc89e8153ffc":[6,0,7,0,0,14,677],
 "sqlite3_8h.html#ac36215481c9c7551905f03710f541d2c":[6,0,7,0,0,14,700],
@@ -241,13 +249,5 @@ var NAVTREEINDEX309 =
 "structAppWidgets.html#a3d91c88e6ff645416e318a210987ee45":[5,0,555,0],
 "structAppWidgets.html#a4e65206bc34901d9d77ba5d30d7f6cb5":[5,0,555,1],
 "structAuthContext.html":[5,0,556],
-"structAuthContext.html#a1b095b152b72326476ac3f7edcaee78a":[5,0,556,1],
-"structAuthContext.html#a8df2931d8f4facf59073c92315b00bfa":[5,0,556,0],
-"structAutoincInfo.html":[5,0,557],
-"structAutoincInfo.html#a0cf785b0cbaddb4215a8408f8e13075e":[5,0,557,2],
-"structAutoincInfo.html#aa77fb076beea013c25df4e49dba4b6f6":[5,0,557,1],
-"structAutoincInfo.html#ae7234e0916b11ef97377bdfd6c7c4568":[5,0,557,0],
-"structAutoincInfo.html#af180977ee7dcc8cab862185692f57cc5":[5,0,557,3],
-"structAuxData.html":[5,0,558],
-"structAuxData.html#a148f6ff0790b7e53857bfc6f4e407bf2":[5,0,558,4]
+"structAuthContext.html#a1b095b152b72326476ac3f7edcaee78a":[5,0,556,1]
 };

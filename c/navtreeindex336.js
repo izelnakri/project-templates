@@ -1,5 +1,13 @@
 var NAVTREEINDEX336 =
 {
+"structVkPhysicalDeviceFragmentShaderInterlockFeaturesEXT.html#ac2d76977e3277bb7cc4209e1dbe9500a":[5,0,1712,1],
+"structVkPhysicalDeviceFragmentShaderInterlockFeaturesEXT.html#acfea4abc01cd384c275578024f0f9545":[5,0,1712,4],
+"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html":[5,0,1713],
+"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html#a02aca133fe048bf47ea26517ea5d5409":[5,0,1713,2],
+"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html#a12219989b30d254bd5f489d48fef82ca":[5,0,1713,1],
+"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html#a3f87ec7ad1a24ab034dc54f04879299e":[5,0,1713,0],
+"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html#a3fc73fa078dc9911bcfca7472c6cceaa":[5,0,1713,4],
+"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html#a768ff1ef6a3b08c64e77b40068dc62f4":[5,0,1713,3],
 "structVkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV.html":[5,0,1714],
 "structVkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV.html#a7d4484e90b382db31212671dca77bde4":[5,0,1714,2],
 "structVkPhysicalDeviceFragmentShadingRateEnumsPropertiesNV.html#a87b252d1c54aaddbe4c030b837bfae53":[5,0,1714,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX336 =
 "structVkPhysicalDeviceLimits.html#a274f214c9bae5d9611891dde99495e98":[5,0,1755,102],
 "structVkPhysicalDeviceLimits.html#a27ffebf0bf82fd3a290b8da46001efae":[5,0,1755,11],
 "structVkPhysicalDeviceLimits.html#a2827d68803be32e60aaf7c6356c7de50":[5,0,1755,36],
-"structVkPhysicalDeviceLimits.html#a2b49932b20dad02dca835f0d0e94fe05":[5,0,1755,0],
-"structVkPhysicalDeviceLimits.html#a35ed84e1e477b108ee75d30f6464d622":[5,0,1755,53],
-"structVkPhysicalDeviceLimits.html#a376f5b4ae5e51bcf12e86c07f80242dc":[5,0,1755,75],
-"structVkPhysicalDeviceLimits.html#a3f20d89e4cf84533c0d858f2e627e255":[5,0,1755,25],
-"structVkPhysicalDeviceLimits.html#a403b9650a5ebed5b5761f68a51b27cb9":[5,0,1755,79],
-"structVkPhysicalDeviceLimits.html#a4813f36686a7cb4675938ea4e3f9bd56":[5,0,1755,58],
-"structVkPhysicalDeviceLimits.html#a4bbbe114bb8ea0f7cb3e56d7714db6cb":[5,0,1755,85],
-"structVkPhysicalDeviceLimits.html#a4ddd25e966a1583b221e90b605ab638d":[5,0,1755,41],
-"structVkPhysicalDeviceLimits.html#a4ee35b53957071299106d2d830d1db77":[5,0,1755,16]
+"structVkPhysicalDeviceLimits.html#a2b49932b20dad02dca835f0d0e94fe05":[5,0,1755,0]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX329 =
 {
+"structVkExternalMemoryImageCreateInfoNV.html#a7e27d95accfd57b7d8c1e638b7a01ec5":[5,0,1424,1],
+"structVkExternalMemoryImageCreateInfoNV.html#aceb9aee9fa2e26830e20aa69269e5470":[5,0,1424,0],
+"structVkExternalMemoryImageCreateInfoNV.html#af119ef03da4089d6a2333cfef9854303":[5,0,1424,2],
+"structVkExternalMemoryProperties.html":[5,0,1425],
+"structVkExternalMemoryProperties.html#a389ad64bf614243de313d998c6c439b7":[5,0,1425,1],
+"structVkExternalMemoryProperties.html#a6c7fd3cfa478ae90630bd3898a407913":[5,0,1425,0],
+"structVkExternalMemoryProperties.html#ad3181f419ef96d5cd4d2de7c854c422f":[5,0,1425,2],
+"structVkExternalSemaphoreProperties.html":[5,0,1426],
 "structVkExternalSemaphoreProperties.html#a6359b93647195a6f30d6e0ab6e58724f":[5,0,1426,3],
 "structVkExternalSemaphoreProperties.html#a72655bf80514ce1386abda9b19787a45":[5,0,1426,2],
 "structVkExternalSemaphoreProperties.html#ab97821dbcea86c5704288017f5c909a6":[5,0,1426,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX329 =
 "structVkHostImageLayoutTransitionInfoEXT.html#ac9ddf2cfc5a5d43e766c76681b7b3e46":[5,0,1458,0],
 "structVkIOSSurfaceCreateInfoMVK.html":[5,0,1538],
 "structVkIOSSurfaceCreateInfoMVK.html#a612cf751f078a5a509d25fb7f0ebddd3":[5,0,1538,0],
-"structVkIOSSurfaceCreateInfoMVK.html#ab80c283b4bedc9969c5bcd053bea294d":[5,0,1538,3],
-"structVkIOSSurfaceCreateInfoMVK.html#ac0455e627d00292772b7cae503024f52":[5,0,1538,2],
-"structVkIOSSurfaceCreateInfoMVK.html#ac86c9b6aa25aa12415ddcf9f1f51434d":[5,0,1538,1],
-"structVkIcdSurfaceBase.html":[5,0,1459],
-"structVkIcdSurfaceBase.html#afe8fcdc5022727645967b3771a480515":[5,0,1459,0],
-"structVkIcdSurfaceDisplay.html":[5,0,1460],
-"structVkIcdSurfaceDisplay.html#a3b30b4e7ee3161f49d33f76fe2d7557d":[5,0,1460,4],
-"structVkIcdSurfaceDisplay.html#a4a82b4e6ced454964aeae42ba8db1307":[5,0,1460,6],
-"structVkIcdSurfaceDisplay.html#a52351fd978666aa3c655b2f9c071cf57":[5,0,1460,1]
+"structVkIOSSurfaceCreateInfoMVK.html#ab80c283b4bedc9969c5bcd053bea294d":[5,0,1538,3]
 };

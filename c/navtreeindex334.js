@@ -1,5 +1,13 @@
 var NAVTREEINDEX334 =
 {
+"structVkPhysicalDeviceCopyMemoryIndirectFeaturesNV.html":[5,0,1645],
+"structVkPhysicalDeviceCopyMemoryIndirectFeaturesNV.html#a288e19dd956da78fc7643fd4599ed75c":[5,0,1645,0],
+"structVkPhysicalDeviceCopyMemoryIndirectFeaturesNV.html#a4df94659c0ac472890d6976e9aa75775":[5,0,1645,2],
+"structVkPhysicalDeviceCopyMemoryIndirectFeaturesNV.html#a5b5f9b2a39821e072a3e1afd1c4347d0":[5,0,1645,1],
+"structVkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html":[5,0,1646],
+"structVkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html#a9c51cc86281e9124b20c18d07a33a72c":[5,0,1646,0],
+"structVkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html#acdc00fbf9ea8b8b8fad7e9e6d1c0285a":[5,0,1646,1],
+"structVkPhysicalDeviceCopyMemoryIndirectPropertiesNV.html#adbd92c066bcdc1a2524b49f430b6e81e":[5,0,1646,2],
 "structVkPhysicalDeviceCornerSampledImageFeaturesNV.html":[5,0,1647],
 "structVkPhysicalDeviceCornerSampledImageFeaturesNV.html#aae7cdfe3e55b87b5b803faa30cdb65c9":[5,0,1647,1],
 "structVkPhysicalDeviceCornerSampledImageFeaturesNV.html#ac2ed0b79593682d0f770b73e3a8202e7":[5,0,1647,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX334 =
 "structVkPhysicalDeviceDriverProperties.html#ab0b640de0a82b625f7a42fbba8c64741":[5,0,1679,3],
 "structVkPhysicalDeviceDriverProperties.html#adaf143ce0a2166a0913106e7060c9f63":[5,0,1679,4],
 "structVkPhysicalDeviceDriverProperties.html#ae8193b360816d7f60b9e015b36c3e08c":[5,0,1679,5],
-"structVkPhysicalDeviceDrmPropertiesEXT.html":[5,0,1680],
-"structVkPhysicalDeviceDrmPropertiesEXT.html#a1bf2119307923b5e1b2aabe359dd57b6":[5,0,1680,3],
-"structVkPhysicalDeviceDrmPropertiesEXT.html#a2a5b62337e995b56d370968679c5d790":[5,0,1680,0],
-"structVkPhysicalDeviceDrmPropertiesEXT.html#a585de92d3961a0afc1f9e0b9d3934873":[5,0,1680,6],
-"structVkPhysicalDeviceDrmPropertiesEXT.html#a8d4e08aabcc49feb1b38cdc807e21437":[5,0,1680,5],
-"structVkPhysicalDeviceDrmPropertiesEXT.html#a9003e73eedca483251c49ba44a409b35":[5,0,1680,4],
-"structVkPhysicalDeviceDrmPropertiesEXT.html#a9428d20301a641af69dbb6caa4b400e0":[5,0,1680,1],
-"structVkPhysicalDeviceDrmPropertiesEXT.html#aad8afdb713b1128f20b8946ba75690f0":[5,0,1680,7],
-"structVkPhysicalDeviceDrmPropertiesEXT.html#adbb32a4cb873ab3b59542fa5c4d53acf":[5,0,1680,2]
+"structVkPhysicalDeviceDrmPropertiesEXT.html":[5,0,1680]
 };

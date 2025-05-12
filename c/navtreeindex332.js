@@ -1,5 +1,13 @@
 var NAVTREEINDEX332 =
 {
+"structVkLayerInstanceCreateInfo.html#a3c675b9a55e72e869d70f8c8dcf16127":[5,0,1547,1],
+"structVkLayerInstanceCreateInfo.html#a62e80bfc72b126a4a5299c03638e69ab":[5,0,1547,9],
+"structVkLayerInstanceCreateInfo.html#a76817879c5d947c0ddbc8445290f4d96":[5,0,1547,5],
+"structVkLayerInstanceCreateInfo.html#a873e7ebad277543c30df6b8df7509783":[5,0,1547,3],
+"structVkLayerInstanceCreateInfo.html#a9ef12ae8cb86f1885510f3b61bd0793d":[5,0,1547,2],
+"structVkLayerInstanceCreateInfo.html#aacd450d8cf7fc46b3b57020a6a6236d0":[5,0,1547,8],
+"structVkLayerInstanceCreateInfo.html#ad501995081e7b4db6eaaf9f1d28fd570":[5,0,1547,4],
+"structVkLayerInstanceCreateInfo.html#aef662eecc6b19cd73f6cc566f645a67d":[5,0,1547,0],
 "structVkLayerInstanceLink__.html":[5,0,1548],
 "structVkLayerInstanceLink__.html#a5f77290312cccf4a12d6721016d38e0f":[5,0,1548,0],
 "structVkLayerInstanceLink__.html#a960f15aec9e6a620482730afa97aada8":[5,0,1548,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX332 =
 "structVkOffset2D.html#a0eecd08aee23a2435816444a1ff4266e":[5,0,1595,0],
 "structVkOffset2D.html#a80302c2be139b0831a50453419b73a8b":[5,0,1595,1],
 "structVkOffset3D.html":[5,0,1596],
-"structVkOffset3D.html#a0eed125a4543afe4cedfe146d0582684":[5,0,1596,0],
-"structVkOffset3D.html#a1345b61583f053b27c832061d46f581b":[5,0,1596,1],
-"structVkOffset3D.html#a8a783767cc2cf53f2f3ae0c632f6e707":[5,0,1596,2],
-"structVkOpaqueCaptureDescriptorDataCreateInfoEXT.html":[5,0,1597],
-"structVkOpaqueCaptureDescriptorDataCreateInfoEXT.html#a01597fbfffc18bc60c8afadab12fba8a":[5,0,1597,1],
-"structVkOpaqueCaptureDescriptorDataCreateInfoEXT.html#a11ea21fb6edf2ba1dc83ead92ea39f52":[5,0,1597,0],
-"structVkOpaqueCaptureDescriptorDataCreateInfoEXT.html#abaf1f93ff2447a26525f8289297280ec":[5,0,1597,2],
-"structVkOpticalFlowExecuteInfoNV.html":[5,0,1598],
-"structVkOpticalFlowExecuteInfoNV.html#a07c0e491e2c796027a2c431e0cf3e06a":[5,0,1598,3]
+"structVkOffset3D.html#a0eed125a4543afe4cedfe146d0582684":[5,0,1596,0]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX326 =
 {
+"structVkCuFunctionCreateInfoNVX.html":[5,0,1284],
+"structVkCuFunctionCreateInfoNVX.html#a12f5f3eadf5ad19f4acfa9b339ef9091":[5,0,1284,2],
+"structVkCuFunctionCreateInfoNVX.html#a75c84b5f31e63c7e45120a9172fee679":[5,0,1284,1],
+"structVkCuFunctionCreateInfoNVX.html#ad5b2587a536a8883fb134e607d2750df":[5,0,1284,0],
+"structVkCuLaunchInfoNVX.html":[5,0,1285],
+"structVkCuLaunchInfoNVX.html#a0bbbcddd00a7ff18126ef9644ac0f722":[5,0,1285,8],
+"structVkCuLaunchInfoNVX.html#a2ce05e6afef268318bf5c800f6fe8ad9":[5,0,1285,10],
+"structVkCuLaunchInfoNVX.html#a3ddc4981f8e3d47abe4746d8ea4203e7":[5,0,1285,5],
 "structVkCuLaunchInfoNVX.html#a4b68a5004b66f681209c4b69647cf347":[5,0,1285,4],
 "structVkCuLaunchInfoNVX.html#a52de50fef99bba3758f86cc6e5130543":[5,0,1285,6],
 "structVkCuLaunchInfoNVX.html#a8a3120544944321359698efd76dad5e7":[5,0,1285,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX326 =
 "structVkDescriptorSetVariableDescriptorCountAllocateInfo.html#ae27b5db37018f3a84cd5e15db05238f2":[5,0,1322,2],
 "structVkDescriptorSetVariableDescriptorCountLayoutSupport.html":[5,0,1323],
 "structVkDescriptorSetVariableDescriptorCountLayoutSupport.html#a14239c957403311ecf2c0eaae5889e0e":[5,0,1323,2],
-"structVkDescriptorSetVariableDescriptorCountLayoutSupport.html#a854b2e17c1becce3c7d445d96cec9d89":[5,0,1323,0],
-"structVkDescriptorSetVariableDescriptorCountLayoutSupport.html#abc7d1d71c9f05e2b0cbd4be2390cdc88":[5,0,1323,1],
-"structVkDescriptorUpdateTemplateCreateInfo.html":[5,0,1324],
-"structVkDescriptorUpdateTemplateCreateInfo.html#a1d0056557f04ccf3c570b7e79cb525b1":[5,0,1324,8],
-"structVkDescriptorUpdateTemplateCreateInfo.html#a53c90a2fe46640d3c2bde52ab91e35d1":[5,0,1324,2],
-"structVkDescriptorUpdateTemplateCreateInfo.html#a6c69b43e0814aaa1d3bb5250c34da076":[5,0,1324,6],
-"structVkDescriptorUpdateTemplateCreateInfo.html#a99ab64e4d4ecf6cd3dc0e5715df46295":[5,0,1324,5],
-"structVkDescriptorUpdateTemplateCreateInfo.html#ac9ecb8fc467f2296e275b142676c37dd":[5,0,1324,1],
-"structVkDescriptorUpdateTemplateCreateInfo.html#ad1ab1d090360eca6605b73cd9f188fc0":[5,0,1324,3]
+"structVkDescriptorSetVariableDescriptorCountLayoutSupport.html#a854b2e17c1becce3c7d445d96cec9d89":[5,0,1323,0]
 };

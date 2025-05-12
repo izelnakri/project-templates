@@ -1,5 +1,13 @@
 var NAVTREEINDEX244 =
 {
+"lua-5_81_85_2src_2ldblib_8c.html#a3595aee1af712c0ba9c586feb763bffc":[6,0,7,0,0,2,1,7,17],
+"lua-5_81_85_2src_2ldblib_8c.html#a45fbab86b0d9d4fa0676f993eba4bacf":[6,0,7,0,0,2,1,7,0],
+"lua-5_81_85_2src_2ldblib_8c.html#a477e68a26d23d4063e2546ba682d4330":[6,0,7,0,0,2,1,7,19],
+"lua-5_81_85_2src_2ldblib_8c.html#a4e775110474c9b082c8d65b2c2a4f5e3":[6,0,7,0,0,2,1,7,6],
+"lua-5_81_85_2src_2ldblib_8c.html#a4eb57e66c2efb2d31c9b9e1b01d27e13":[6,0,7,0,0,2,1,7,9],
+"lua-5_81_85_2src_2ldblib_8c.html#a565f59065c4ab878c3d49097a7f2c471":[6,0,7,0,0,2,1,7,23],
+"lua-5_81_85_2src_2ldblib_8c.html#a5caaa985f31fc5cbd014f831833205e7":[6,0,7,0,0,2,1,7,21],
+"lua-5_81_85_2src_2ldblib_8c.html#a5f9e9ae6eacbd733a346ecdb14f0e69c":[6,0,7,0,0,2,1,7,2],
 "lua-5_81_85_2src_2ldblib_8c.html#a6269322ee4ae931654d7442fe2be6a46":[6,0,7,0,0,2,1,7,26],
 "lua-5_81_85_2src_2ldblib_8c.html#a6a624ae8d8ff673e72a317b280ed008d":[6,0,7,0,0,2,1,7,8],
 "lua-5_81_85_2src_2ldblib_8c.html#a6e3d7fb82b885f522e902bcb0386a626":[6,0,7,0,0,2,1,7,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX244 =
 "lua-5_81_85_2src_2lgc_8h.html#a4c0ce78d476460d2e54914301f4a4bf7":[6,0,7,0,0,2,1,16,15],
 "lua-5_81_85_2src_2lgc_8h.html#a631a021cec501addf77027ac3390f9db":[6,0,7,0,0,2,1,16,39],
 "lua-5_81_85_2src_2lgc_8h.html#a6753bc0cfa5484b060d845bc02fd4d4f":[6,0,7,0,0,2,1,16,45],
-"lua-5_81_85_2src_2lgc_8h.html#a67c15c86307cc3d1eb009cee0aab855f":[6,0,7,0,0,2,1,16,5],
-"lua-5_81_85_2src_2lgc_8h.html#a6c71cc4b9e503c0e96c0c4ffcff93900":[6,0,7,0,0,2,1,16,47],
-"lua-5_81_85_2src_2lgc_8h.html#a6c742071a99df1a3c8b40055f08cf43b":[6,0,7,0,0,2,1,16,44],
-"lua-5_81_85_2src_2lgc_8h.html#a7612bc83b764b507e12e08417a053854":[6,0,7,0,0,2,1,16,33],
-"lua-5_81_85_2src_2lgc_8h.html#a79c71f30e4e3374ced9c1f801beb32a4":[6,0,7,0,0,2,1,16,30],
-"lua-5_81_85_2src_2lgc_8h.html#a7de7885f3d09155a2c530154ec045d72":[6,0,7,0,0,2,1,16,37],
-"lua-5_81_85_2src_2lgc_8h.html#a817a4e8112a8db55bb9a87659b53661a":[6,0,7,0,0,2,1,16,28],
-"lua-5_81_85_2src_2lgc_8h.html#a821e1c3d82d93b13d584f9af33d8c296":[6,0,7,0,0,2,1,16,22],
-"lua-5_81_85_2src_2lgc_8h.html#a84251731518ce7f66d49363eb9f0f594":[6,0,7,0,0,2,1,16,34]
+"lua-5_81_85_2src_2lgc_8h.html#a67c15c86307cc3d1eb009cee0aab855f":[6,0,7,0,0,2,1,16,5]
 };

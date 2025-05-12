@@ -1,5 +1,13 @@
 var NAVTREEINDEX394 =
 {
+"vulkan__core_8h.html#a88d7742460acfc995e941abedc4c8453":[6,0,4,0,7,0,1,6,4188],
+"vulkan__core_8h.html#a88d9c2c0dc24fa82afef0a74195be60c":[6,0,4,0,7,0,1,6,5447],
+"vulkan__core_8h.html#a88f6e0902bb7a6827c285f5a1e8b829a":[6,0,4,0,7,0,1,6,3552],
+"vulkan__core_8h.html#a89146b994214e60ef0e21e5f4a3dcda9":[6,0,4,0,7,0,1,6,3142],
+"vulkan__core_8h.html#a8944c4a150debd24e1977cbb75d904af":[6,0,4,0,7,0,1,6,5496],
+"vulkan__core_8h.html#a89528c307bd2aaf53a622c336a00b681":[6,0,4,0,7,0,1,6,2378],
+"vulkan__core_8h.html#a895b0a449ff48f7ac9a3d7608e8a4911":[6,0,4,0,7,0,1,6,1493],
+"vulkan__core_8h.html#a896512488487a86727782f4761ce6eda":[6,0,4,0,7,0,1,6,1904],
 "vulkan__core_8h.html#a897479e544b788002ed1a35baaf35567":[6,0,4,0,7,0,1,6,2484],
 "vulkan__core_8h.html#a899fae36eb90441dc48bafbae44be2be":[6,0,4,0,7,0,1,6,3755],
 "vulkan__core_8h.html#a899fb2778b2fa6ee3365ae6a40c663fd":[6,0,4,0,7,0,1,6,3395],
@@ -241,13 +249,5 @@ var NAVTREEINDEX394 =
 "vulkan__core_8h.html#a909d3d3d35860682a914754cff185d52a0051720075058336cfcc136f470ae614":[6,0,4,0,7,0,1,6,4598,0],
 "vulkan__core_8h.html#a909d3d3d35860682a914754cff185d52aeb1f38fb86540c686d73f98ee6159ba9":[6,0,4,0,7,0,1,6,4598,1],
 "vulkan__core_8h.html#a90ba251272974a7688957fcb5ec5a19e":[6,0,4,0,7,0,1,6,4339],
-"vulkan__core_8h.html#a90bed485a7c9aaf39ee93157c3c7e889":[6,0,4,0,7,0,1,6,1685],
-"vulkan__core_8h.html#a90dc9c68888f3262b0b2fbb4fbd883eb":[6,0,4,0,7,0,1,6,1112],
-"vulkan__core_8h.html#a90f38c762bd6ecc549826a51095d248d":[6,0,4,0,7,0,1,6,3840],
-"vulkan__core_8h.html#a90ff89b5e9c8bc92e1a815b4434a97b6":[6,0,4,0,7,0,1,6,3171],
-"vulkan__core_8h.html#a910baaf0a9c1e2813077d8c24353c1b8":[6,0,4,0,7,0,1,6,3172],
-"vulkan__core_8h.html#a910eaf1681dc216e35c82f5592cc3c8a":[6,0,4,0,7,0,1,6,2243],
-"vulkan__core_8h.html#a9114ed283a517e172c712fe2ecb3db6b":[6,0,4,0,7,0,1,6,4630],
-"vulkan__core_8h.html#a9114ed283a517e172c712fe2ecb3db6ba82c41596bafbeb0559b49ac3076de564":[6,0,4,0,7,0,1,6,4630,0],
-"vulkan__core_8h.html#a9114ed283a517e172c712fe2ecb3db6ba9e226859e4786ba7cf10c3a2e072f4f2":[6,0,4,0,7,0,1,6,4630,2]
+"vulkan__core_8h.html#a90bed485a7c9aaf39ee93157c3c7e889":[6,0,4,0,7,0,1,6,1685]
 };

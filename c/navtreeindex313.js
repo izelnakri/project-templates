@@ -1,5 +1,13 @@
 var NAVTREEINDEX313 =
 {
+"structFT__SfntName__.html#ab369e2c3d8dc9662f69c53e4d3158067":[5,0,775,4],
+"structFT__SfntName__.html#ac07be3e852408990fe0a910f00b68f4e":[5,0,775,2],
+"structFT__SfntName__.html#ae92450a058eb4737df85f66226d69f43":[5,0,775,3],
+"structFT__SizeRec__.html":[5,0,778],
+"structFT__SizeRec__.html#a21b54fb07feaba8be23321054da98f5f":[5,0,778,0],
+"structFT__SizeRec__.html#a236c47ea3138e485c29b0d7baa5cf3b6":[5,0,778,2],
+"structFT__SizeRec__.html#a29a6b518d09f6cf1714d9aed01eddc01":[5,0,778,3],
+"structFT__SizeRec__.html#aa24520b093a9b4ba9ff388bfe7b9491d":[5,0,778,1],
 "structFT__Size__Metrics__.html":[5,0,776],
 "structFT__Size__Metrics__.html#a1f8b1cb3538b9920127f721dd061379d":[5,0,776,7],
 "structFT__Size__Metrics__.html#a5e92028bb9881e107a6fb75d557eaff1":[5,0,776,5],
@@ -165,8 +173,8 @@ var NAVTREEINDEX313 =
 "structFuncState.html#a707d74ea43d2e0230e840236fbfb3c02":[5,0,800,15],
 "structFuncState.html#a7357e446fded54ea3d2f4cfe529a3648":[5,0,800,4],
 "structFuncState.html#a785a3676856d95092e2148dc1799b362":[5,0,800,0],
-"structFuncState.html#a99e672543fbe771557b576b69f54e551":[5,0,800,6],
 "structFuncState.html#a99e672543fbe771557b576b69f54e551":[5,0,800,5],
+"structFuncState.html#a99e672543fbe771557b576b69f54e551":[5,0,800,6],
 "structFuncState.html#aa6595513c43642ce3b506131d847dd7b":[5,0,800,20],
 "structFuncState.html#aa6952cddc83bd271703e1458d012d67d":[5,0,800,19],
 "structFuncState.html#ab2fe1df83ece8a6ca9e5cd70859a7b14":[5,0,800,21],
@@ -241,13 +249,5 @@ var NAVTREEINDEX313 =
 "structHash_1_1__ht.html":[5,0,822,0],
 "structHash_1_1__ht.html#a00801bb2f06442cad5818e31ec6a7416":[5,0,822,0,1],
 "structHash_1_1__ht.html#a56fc145e7d38d9440d85ab2ea63a48ac":[5,0,822,0,0],
-"structHeader.html":[5,0,843],
-"structHeader.html#a1a5d1260922db266ba336c3e828d8cc2":[5,0,843,3],
-"structHeader.html#a1c89d6cc8837906a46c8e75bcd555068":[5,0,843,0],
-"structHeader.html#ab700f7decdc27164d1d0cf76585032f4":[5,0,843,4],
-"structHeader.html#abf580577b27ac36c8c26b86131a01b2b":[5,0,843,2],
-"structHeader.html#ad9da51d4e9046e1c2dc719ad95c0c44d":[5,0,843,1],
-"structHiddenIndexInfo.html":[5,0,844],
-"structHiddenIndexInfo.html#a2a9e6e808d13c30cfba3e97e3729e8f5":[5,0,844,0],
-"structHiddenIndexInfo.html#adb5370f1011f7a754e8cd88913147f24":[5,0,844,1]
+"structHeader.html":[5,0,843]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX327 =
 {
+"structVkDescriptorSetVariableDescriptorCountLayoutSupport.html#abc7d1d71c9f05e2b0cbd4be2390cdc88":[5,0,1323,1],
+"structVkDescriptorUpdateTemplateCreateInfo.html":[5,0,1324],
+"structVkDescriptorUpdateTemplateCreateInfo.html#a1d0056557f04ccf3c570b7e79cb525b1":[5,0,1324,8],
+"structVkDescriptorUpdateTemplateCreateInfo.html#a53c90a2fe46640d3c2bde52ab91e35d1":[5,0,1324,2],
+"structVkDescriptorUpdateTemplateCreateInfo.html#a6c69b43e0814aaa1d3bb5250c34da076":[5,0,1324,6],
+"structVkDescriptorUpdateTemplateCreateInfo.html#a99ab64e4d4ecf6cd3dc0e5715df46295":[5,0,1324,5],
+"structVkDescriptorUpdateTemplateCreateInfo.html#ac9ecb8fc467f2296e275b142676c37dd":[5,0,1324,1],
+"structVkDescriptorUpdateTemplateCreateInfo.html#ad1ab1d090360eca6605b73cd9f188fc0":[5,0,1324,3],
 "structVkDescriptorUpdateTemplateCreateInfo.html#ad373f81a6a23ce2f655f59f538f00258":[5,0,1324,0],
 "structVkDescriptorUpdateTemplateCreateInfo.html#aea950e9761276a59d230dcc1a3bb7566":[5,0,1324,9],
 "structVkDescriptorUpdateTemplateCreateInfo.html#af785e4aa24e3f4a0aa1711b89070eaf3":[5,0,1324,7],
@@ -241,13 +249,5 @@ var NAVTREEINDEX327 =
 "structVkDisplayPlaneCapabilitiesKHR.html":[5,0,1372],
 "structVkDisplayPlaneCapabilitiesKHR.html#a0dc86527dbd1d399d5f35f8a4b03b1b4":[5,0,1372,1],
 "structVkDisplayPlaneCapabilitiesKHR.html#a11c16b0668a2f474d51f6f0920e500bd":[5,0,1372,2],
-"structVkDisplayPlaneCapabilitiesKHR.html#a24d3193a5e9ab84746b33d21dffe1703":[5,0,1372,7],
-"structVkDisplayPlaneCapabilitiesKHR.html#a4fe82fe0a2dc8452b2ca5e62d5d13c34":[5,0,1372,8],
-"structVkDisplayPlaneCapabilitiesKHR.html#a50ac0c51401b5444223c8f434a406317":[5,0,1372,0],
-"structVkDisplayPlaneCapabilitiesKHR.html#a65d34420437183e7e1d6845d98c1a687":[5,0,1372,4],
-"structVkDisplayPlaneCapabilitiesKHR.html#a97fe5c5b6070e0ad178293f450b79f7b":[5,0,1372,3],
-"structVkDisplayPlaneCapabilitiesKHR.html#acf30e2f0f4d1418e4647c82635fa9b77":[5,0,1372,5],
-"structVkDisplayPlaneCapabilitiesKHR.html#aea51fb702e1918f867734b0599d90cb0":[5,0,1372,6],
-"structVkDisplayPlaneInfo2KHR.html":[5,0,1373],
-"structVkDisplayPlaneInfo2KHR.html#a3e7b675481f47f95c7fc449e57a37177":[5,0,1373,1]
+"structVkDisplayPlaneCapabilitiesKHR.html#a24d3193a5e9ab84746b33d21dffe1703":[5,0,1372,7]
 };

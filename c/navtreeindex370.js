@@ -1,5 +1,13 @@
 var NAVTREEINDEX370 =
 {
+"structsqlite3__api__routines.html#a21f713ea350396f9948d7d39dd910762":[5,0,977,240],
+"structsqlite3__api__routines.html#a24165d35071a5193aa5f9b22409fb5e9":[5,0,977,144],
+"structsqlite3__api__routines.html#a24c683c3f17fcefa215f8196c667a485":[5,0,977,235],
+"structsqlite3__api__routines.html#a27cfd29e44574a9b10f0a7cb3a7c9ada":[5,0,977,227],
+"structsqlite3__api__routines.html#a291611a46db5991857ec5e0893194818":[5,0,977,228],
+"structsqlite3__api__routines.html#a292a8d9a6a16456f942b52ab6fc2c1c1":[5,0,977,248],
+"structsqlite3__api__routines.html#a2c727baa39a8cb05da310df7a2eb321c":[5,0,977,46],
+"structsqlite3__api__routines.html#a2cb97ce7512759a08f1744e24cd0294f":[5,0,977,71],
 "structsqlite3__api__routines.html#a2de354dd0030ff724bb574a4353c57e8":[5,0,977,91],
 "structsqlite3__api__routines.html#a2e84de4afd1ba42151a75df4d7480a72":[5,0,977,8],
 "structsqlite3__api__routines.html#a2fbb90e95d2849a4ac1ed2fdcd2a796d":[5,0,977,113],
@@ -241,13 +249,5 @@ var NAVTREEINDEX370 =
 "structsqlite3__file.html":[5,0,980],
 "structsqlite3__file.html#afbe27b40382393e63784a4d4b43f3ad7":[5,0,980,0],
 "structsqlite3__index__info.html":[5,0,981],
-"structsqlite3__index__info.html#a3ef850fdc57eddbc8189fe84d0a9044e":[5,0,981,14],
-"structsqlite3__index__info.html#a5410066c067c3891cdf165c70cc4d6b1":[5,0,981,13],
-"structsqlite3__index__info.html#a5515d9de0f37f68d7e0930c20a668b29":[5,0,981,15],
-"structsqlite3__index__info.html#a634aa93834e2b47acf34454746c0f248":[5,0,981,3],
-"structsqlite3__index__info.html#a6823a68979e19d8e332389361e920ef9":[5,0,981,5],
-"structsqlite3__index__info.html#a79b8a969dd7d582fc2ea3c0fbc5adb56":[5,0,981,4],
-"structsqlite3__index__info.html#a8acf2a7efbc3e193cf01d2afbd44fdbb":[5,0,981,9],
-"structsqlite3__index__info.html#a99787169e2f78c0728bdb339c4107a2e":[5,0,981,6],
-"structsqlite3__index__info.html#aa8b4fe1d2ee38aab57ba5e1da00d7830":[5,0,981,7]
+"structsqlite3__index__info.html#a3ef850fdc57eddbc8189fe84d0a9044e":[5,0,981,14]
 };

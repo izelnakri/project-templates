@@ -13,7 +13,7 @@ var searchData=
   ['fail_5ffast_10',['fail_fast',['../structcriterion__options.html#a77a94026be82450d6e125372f4946616',1,'criterion_options']]],
   ['failed_5fasserts_11',['failed_asserts',['../structcriterion__test__stats.html#aeca1f146a814ab79b8d697fb121c520d',1,'criterion_test_stats']]],
   ['failop_12',['failOp',['../structVkStencilOpState.html#a59463ad8bac1b0040c6d9c482c483272',1,'VkStencilOpState']]],
-  ['fake_5focto_5fuser_13',['fake_octo_user',['../bench__user_8cpp.html#aaa2cc1140165d08b24bcb8784d5e20b8',1,'bench_user.cpp']]],
+  ['fake_5focto_5fuser_13',['fake_octo_user',['../c_2benchmarks_2bench__user_8cpp.html#aaa2cc1140165d08b24bcb8784d5e20b8',1,'bench_user.cpp']]],
   ['family_14',['family',['../structcurl__sockaddr.html#ad5406982faaa070b7c928686ed31fdae',1,'curl_sockaddr']]],
   ['family_5fblues_15',['family_blues',['../structPS__PrivateRec__.html#aa6645b5810e4e8b7d1a8b57300cdf406',1,'PS_PrivateRec_']]],
   ['family_5fname_16',['family_name',['../structFT__FaceRec__.html#ae07b64a64466aa7ae2b9066e9336ac8b',1,'FT_FaceRec_::family_name'],['../structPS__FontInfoRec__.html#ac54d883f153a495f9a20dc043ed434cf',1,'PS_FontInfoRec_::family_name']]],

@@ -1,5 +1,13 @@
 var NAVTREEINDEX217 =
 {
+"gtkshortcutaction_8h.html#acfdf0e2dfbf63cdd6ead210670e43d35":[6,0,4,0,8,0,0,2,166,10],
+"gtkshortcutaction_8h.html#ad2cf93b3f1125a5532596d79c1d9501b":[6,0,4,0,8,0,0,2,166,12],
+"gtkshortcutaction_8h.html#ad7a525cdb5ca5cf38220d94b5ff8ceb9":[6,0,4,0,8,0,0,2,166,0],
+"gtkshortcutaction_8h.html#ae55df7dd1e870fa29f72ea2507db001a":[6,0,4,0,8,0,0,2,166,1],
+"gtkshortcutaction_8h.html#af0025c1d73008ddba90a52830e119734":[6,0,4,0,8,0,0,2,166,18],
+"gtkshortcutaction_8h_source.html":[6,0,4,0,8,0,0,2,166],
+"gtkshortcutcontroller_8h.html":[6,0,4,0,8,0,0,2,167],
+"gtkshortcutcontroller_8h.html#a0439dabe4e6939db895ef16fba3b4a5d":[6,0,4,0,8,0,0,2,167,16],
 "gtkshortcutcontroller_8h.html#a0a5b23c1181e33260a62af5fd8af753b":[6,0,4,0,8,0,0,2,167,3],
 "gtkshortcutcontroller_8h.html#a2330dc6d9e6ba81a3c99105538fe6249":[6,0,4,0,8,0,0,2,167,9],
 "gtkshortcutcontroller_8h.html#a52fab3dada522afb43d756fe755d2e03":[6,0,4,0,8,0,0,2,167,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX217 =
 "gtksortlistmodel_8h.html#acd15df3facc2ab8b67149bceb843bfc4":[6,0,4,0,8,0,0,2,182,7],
 "gtksortlistmodel_8h.html#ae23fe0676b8ecaa3122f10b0ee1ff862":[6,0,4,0,8,0,0,2,182,1],
 "gtksortlistmodel_8h.html#aeee178f87d042a1c9b9eb0e38b6a3b16":[6,0,4,0,8,0,0,2,182,5],
-"gtksortlistmodel_8h.html#af96c27691e53b8789270fd15f08a8e4a":[6,0,4,0,8,0,0,2,182,6],
-"gtksortlistmodel_8h_source.html":[6,0,4,0,8,0,0,2,182],
-"gtkspinbutton_8h.html":[6,0,4,0,8,0,0,2,183],
-"gtkspinbutton_8h.html#a04caadd4491dd6131aed4d43ebb66792":[6,0,4,0,8,0,0,2,183,5],
-"gtkspinbutton_8h.html#a04caadd4491dd6131aed4d43ebb66792a09ef8303df68a78b942a355a13d5af1f":[6,0,4,0,8,0,0,2,183,5,1],
-"gtkspinbutton_8h.html#a04caadd4491dd6131aed4d43ebb66792a8a655eaaab04f665e859182519fd303c":[6,0,4,0,8,0,0,2,183,5,0],
-"gtkspinbutton_8h.html#a091b14108279ebd961e735ffffb8ae98":[6,0,4,0,8,0,0,2,183,30],
-"gtkspinbutton_8h.html#a0bd05e0dfa1ed54fa6bb32a889486422":[6,0,4,0,8,0,0,2,183,0],
-"gtkspinbutton_8h.html#a198b099faf7b9e5d8863912129d3bd98":[6,0,4,0,8,0,0,2,183,27]
+"gtksortlistmodel_8h.html#af96c27691e53b8789270fd15f08a8e4a":[6,0,4,0,8,0,0,2,182,6]
 };

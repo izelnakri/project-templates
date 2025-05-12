@@ -1,5 +1,13 @@
 var NAVTREEINDEX338 =
 {
+"structVkPhysicalDeviceMultiDrawFeaturesEXT.html#a5834f1e8ea5015f34d3fda78f383d8eb":[5,0,1780,2],
+"structVkPhysicalDeviceMultiDrawPropertiesEXT.html":[5,0,1781],
+"structVkPhysicalDeviceMultiDrawPropertiesEXT.html#ab6694e01a7282a72936b1f470e1cc541":[5,0,1781,1],
+"structVkPhysicalDeviceMultiDrawPropertiesEXT.html#ac324ec52ac7116875594752500c6a3a4":[5,0,1781,2],
+"structVkPhysicalDeviceMultiDrawPropertiesEXT.html#ad21edd1b5c67efa6247c2e402c3f8901":[5,0,1781,0],
+"structVkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT.html":[5,0,1782],
+"structVkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT.html#a276ffbe96c47257d94a2f825b76f58c2":[5,0,1782,1],
+"structVkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT.html#a42a904434828a44b5a5ea67cc0dd6f34":[5,0,1782,0],
 "structVkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT.html#aa27edab3e693d2813716ff2d9ef5cdc9":[5,0,1782,2],
 "structVkPhysicalDeviceMultiviewFeatures.html":[5,0,1783],
 "structVkPhysicalDeviceMultiviewFeatures.html#a05a305a9f3536f3c06735aba17418798":[5,0,1783,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX338 =
 "structVkPhysicalDeviceRawAccessChainsFeaturesNV.html":[5,0,1827],
 "structVkPhysicalDeviceRawAccessChainsFeaturesNV.html#a7d93b97791954472b5ee347b22428f64":[5,0,1827,2],
 "structVkPhysicalDeviceRawAccessChainsFeaturesNV.html#a8b9b1aa9edcee9803f6da1b7d613acfb":[5,0,1827,1],
-"structVkPhysicalDeviceRawAccessChainsFeaturesNV.html#a921ce7866c3a92c6c501b77a22e68ea9":[5,0,1827,0],
-"structVkPhysicalDeviceRayQueryFeaturesKHR.html":[5,0,1828],
-"structVkPhysicalDeviceRayQueryFeaturesKHR.html#a06088cf054983320cdffc4a11b06732e":[5,0,1828,1],
-"structVkPhysicalDeviceRayQueryFeaturesKHR.html#a64e987fed8d22eefad26f916f339d817":[5,0,1828,0],
-"structVkPhysicalDeviceRayQueryFeaturesKHR.html#aac3a73f0901d1912d0a67cce80bab5e6":[5,0,1828,2],
-"structVkPhysicalDeviceRayTracingInvocationReorderFeaturesNV.html":[5,0,1829],
-"structVkPhysicalDeviceRayTracingInvocationReorderFeaturesNV.html#a827e3fc1564e7e8da7d7658d51325979":[5,0,1829,2],
-"structVkPhysicalDeviceRayTracingInvocationReorderFeaturesNV.html#a82c57b1a9300fc4610060f3cc8e2bd54":[5,0,1829,0],
-"structVkPhysicalDeviceRayTracingInvocationReorderFeaturesNV.html#a96aa278ff2c04a63f2d18ac72f82be71":[5,0,1829,1]
+"structVkPhysicalDeviceRawAccessChainsFeaturesNV.html#a921ce7866c3a92c6c501b77a22e68ea9":[5,0,1827,0]
 };

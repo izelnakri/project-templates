@@ -1,5 +1,13 @@
 var NAVTREEINDEX358 =
 {
+"struct__GTypeValueTable.html#a5f046322d15460c510a94a41b36a83dd":[5,0,464,0],
+"struct__GTypeValueTable.html#a88a757d20ebd21189d2b8e16ac46393a":[5,0,464,1],
+"struct__GTypeValueTable.html#a8c2d94242239bff887f3f414f6611975":[5,0,464,3],
+"struct__GTypeValueTable.html#a94e65d0e4602114325705b426f4697a0":[5,0,464,2],
+"struct__GTypeValueTable.html#aa985ba574fb13f528bf7a61548096ef9":[5,0,464,4],
+"struct__GTypeValueTable.html#ae66e02149812700d1e2f0b4943faaebe":[5,0,464,6],
+"struct__GUnixConnection.html":[5,0,465],
+"struct__GUnixConnection.html#a6192d92e07562e5ee0d1996e9aae3acc":[5,0,465,0],
 "struct__GUnixConnection.html#aada563b3c7a2b866065d345a621c6ea5":[5,0,465,1],
 "struct__GUnixConnectionClass.html":[5,0,466],
 "struct__GUnixConnectionClass.html#a5fb7a14e2452c2091852a01ffb470b22":[5,0,466,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX358 =
 "struct__GskShadow.html":[5,0,262],
 "struct__GskShadow.html#a29ff871a7bed652caf0824d685d11f22":[5,0,262,2],
 "struct__GskShadow.html#a4ccbc4d68732993d0134c626390d1560":[5,0,262,0],
-"struct__GskShadow.html#a838d7a59c359c5b9cfdda601ce0b6777":[5,0,262,1],
-"struct__GskShadow.html#af8f4eac08636ab2d272a7a8d361a56d3":[5,0,262,3],
-"struct__GtkAccessibleInterface.html":[5,0,299],
-"struct__GtkAccessibleInterface.html#a1f6d3733b1b420b410eab1befd239552":[5,0,299,6],
-"struct__GtkAccessibleInterface.html#a2b97ecd19964e91361b274c1b06a8e80":[5,0,299,5],
-"struct__GtkAccessibleInterface.html#a5694923f2e2090e001dd9f4cad6860c7":[5,0,299,3],
-"struct__GtkAccessibleInterface.html#a7c934f5e25e03888c24a97b2db26c808":[5,0,299,2],
-"struct__GtkAccessibleInterface.html#a9addcaabffbe17243bd5a6fab43452de":[5,0,299,4],
-"struct__GtkAccessibleInterface.html#aac7d89d9ef5b30f50c34b4e574d56e53":[5,0,299,1]
+"struct__GskShadow.html#a838d7a59c359c5b9cfdda601ce0b6777":[5,0,262,1]
 };

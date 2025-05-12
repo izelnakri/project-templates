@@ -1,5 +1,13 @@
 var NAVTREEINDEX361 =
 {
+"struct__GtkScaleClass.html#ab7986202d7057f8f528b4da0f820e5e6":[5,0,393,2],
+"struct__GtkScaleClass.html#aff00a2f112e296041fed67e4787c9a01":[5,0,393,0],
+"struct__GtkScrollableInterface.html":[5,0,394],
+"struct__GtkScrollableInterface.html#ab40faf341004f4fafde1c1ad1077e095":[5,0,394,1],
+"struct__GtkScrollableInterface.html#adad5da800705e229c82c353b02a45d56":[5,0,394,0],
+"struct__GtkSectionModelInterface.html":[5,0,395],
+"struct__GtkSectionModelInterface.html#a895214dc4896eea032584e135bf4e40f":[5,0,395,1],
+"struct__GtkSectionModelInterface.html#aaf1980780b0d5dc798c9614f505d4765":[5,0,395,0],
 "struct__GtkSelectionModelInterface.html":[5,0,396],
 "struct__GtkSelectionModelInterface.html#a3da7ce8c8891043350bfd40db92283d4":[5,0,396,5],
 "struct__GtkSelectionModelInterface.html#a412fa9efb8fe6f5b5404998fe4f51b75":[5,0,396,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX361 =
 "struct__GtkWidgetClass.html#ab53d1a985b332056853744ca03187987":[5,0,432,9],
 "struct__GtkWidgetClass.html#abf20a6283d59d5ec44d960328489a2e7":[5,0,432,18],
 "struct__GtkWidgetClass.html#ac953ee847562e2d878438cbbdaef7385":[5,0,432,10],
-"struct__GtkWidgetClass.html#ad58dad23e2d1262507eae2a9428d1115":[5,0,432,24],
-"struct__GtkWidgetClass.html#adcc89460b8b550508640dce443b61378":[5,0,432,14],
-"struct__GtkWidgetClass.html#af24d14f715bebf3abcdb35cf8b070edd":[5,0,432,12],
-"struct__GtkWidgetClass.html#af598b7f6a36083433deaa20de4e091fd":[5,0,432,23],
-"struct__GtkWidgetClass.html#af6935ec1b6492c515a7fb5020836bd54":[5,0,432,5],
-"struct__GtkWindow.html":[5,0,433],
-"struct__GtkWindow.html#a5eca13ee4c1b12fb1ae4b26958f452dc":[5,0,433,0],
-"struct__GtkWindowClass.html":[5,0,434],
-"struct__GtkWindowClass.html#a09b639f14eb4c0e5f5886d03498a9bf1":[5,0,434,1]
+"struct__GtkWidgetClass.html#ad58dad23e2d1262507eae2a9428d1115":[5,0,432,24]
 };

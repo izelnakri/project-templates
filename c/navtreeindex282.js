@@ -1,5 +1,13 @@
 var NAVTREEINDEX282 =
 {
+"pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa0cce637e6ac53081230e4615387e952d":[6,0,4,0,4,0,0,0,0,29,27],
+"pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa0d7c31659e80c808e451b4b14361940d":[6,0,4,0,4,0,0,0,0,29,34],
+"pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa0eb6b1a974df1937f5967654db2d9b95":[6,0,4,0,4,0,0,0,0,29,21],
+"pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa13ced36cb8d27edb49f531cb15c59b94":[6,0,4,0,4,0,0,0,0,29,5],
+"pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa2748ee43dd2240fe2b3b740a64d04547":[6,0,4,0,4,0,0,0,0,29,33],
+"pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa29f51248b5382aa2e109d15f2353f3fc":[6,0,4,0,4,0,0,0,0,29,8],
+"pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa2e7d37202aade8bc3fde3707d76daa13":[6,0,4,0,4,0,0,0,0,29,18],
+"pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa36e0804dda12485d552beb003afa7fe7":[6,0,4,0,4,0,0,0,0,29,6],
 "pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa3a5bbf6d9ccab318c68e391b435f55e9":[6,0,4,0,4,0,0,0,0,29,37],
 "pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa4ac74cc498f23b4163ee759ce87b6052":[6,0,4,0,4,0,0,0,0,29,7],
 "pango-attributes_8h.html#a6578fc5b6a7072ca6c6858c0db58616fa516189f1862d139a9e021b9eadeecea2":[6,0,4,0,4,0,0,0,0,29,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX282 =
 "pango-engine_8h.html#a8d790589d44220afa4e6f28870b9f6e0":[6,0,4,0,4,0,0,0,7,12],
 "pango-engine_8h.html#a8e4b733b638352921248c3805ed4c7ec":[6,0,4,0,4,0,0,0,7,38],
 "pango-engine_8h.html#a9164677b6e6389ae5806dd30b9075fd5":[6,0,4,0,4,0,0,0,7,10],
-"pango-engine_8h.html#a943ba3fb2d94035361b18b11f6390e69":[6,0,4,0,4,0,0,0,7,17],
-"pango-engine_8h.html#a9e09634d0a5e44b3a6c3719f593fc11c":[6,0,4,0,4,0,0,0,7,44],
-"pango-engine_8h.html#aacd00c4e6ee4feec3dbb5c96d0ba83ac":[6,0,4,0,4,0,0,0,7,33],
-"pango-engine_8h.html#aaf2c2809832ed6743a9bc239e2b25294":[6,0,4,0,4,0,0,0,7,29],
-"pango-engine_8h.html#ab36ff924c3ae5e90a75ea348361ed34d":[6,0,4,0,4,0,0,0,7,35],
-"pango-engine_8h.html#ab90923e267fcdb3baf34bf1758afb39b":[6,0,4,0,4,0,0,0,7,39],
-"pango-engine_8h.html#ac576ea931956e256d8bdc04194eba932":[6,0,4,0,4,0,0,0,7,11],
-"pango-engine_8h.html#acdd89df032e5c87009079c9cdb54c9a8":[6,0,4,0,4,0,0,0,7,19],
-"pango-engine_8h.html#ae361b32aeeb9889a9cf21d68b4fc2c6e":[6,0,4,0,4,0,0,0,7,22]
+"pango-engine_8h.html#a943ba3fb2d94035361b18b11f6390e69":[6,0,4,0,4,0,0,0,7,17]
 };

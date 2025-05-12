@@ -1,5 +1,13 @@
 var NAVTREEINDEX347 =
 {
+"structVkSwapchainPresentFenceInfoEXT.html#af975d3b46695d9027cf639bd86f579f8":[5,0,2143,2],
+"structVkSwapchainPresentModeInfoEXT.html":[5,0,2144],
+"structVkSwapchainPresentModeInfoEXT.html#a486a3e412d81fb308932e66db1fd2515":[5,0,2144,1],
+"structVkSwapchainPresentModeInfoEXT.html#a7020d0da0272f72b3929ef7de041f730":[5,0,2144,0],
+"structVkSwapchainPresentModeInfoEXT.html#a943bf7f309c50307bb3ef49ffa8e67ee":[5,0,2144,2],
+"structVkSwapchainPresentModeInfoEXT.html#ab153fab4caa495736d5e9c620bf43301":[5,0,2144,3],
+"structVkSwapchainPresentModesCreateInfoEXT.html":[5,0,2145],
+"structVkSwapchainPresentModesCreateInfoEXT.html#a1d5c87e9653841f0baec8aa1caa8b53a":[5,0,2145,3],
 "structVkSwapchainPresentModesCreateInfoEXT.html#a2d8d240c25ee72cdc559c0d788295472":[5,0,2145,1],
 "structVkSwapchainPresentModesCreateInfoEXT.html#aa717a0da0743e4f8a190fa4f5bcdd258":[5,0,2145,2],
 "structVkSwapchainPresentModesCreateInfoEXT.html#af6dd299fdc1b5000122f1cdc41a04cf2":[5,0,2145,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX347 =
 "structVkVideoEncodeCapabilitiesKHR.html#a13359adea75cb23eed747504775c8486":[5,0,2185,3],
 "structVkVideoEncodeCapabilitiesKHR.html#a9cf46e441c503dbc4bb86a2ddad34899":[5,0,2185,7],
 "structVkVideoEncodeCapabilitiesKHR.html#ac09d220ba139cbc3da3d444deb44e605":[5,0,2185,0],
-"structVkVideoEncodeCapabilitiesKHR.html#ad14ebb0b0ff158d45384d1e9e06764da":[5,0,2185,5],
-"structVkVideoEncodeCapabilitiesKHR.html#ad6f7dd0a35c205b2f21e1b011d8447f8":[5,0,2185,1],
-"structVkVideoEncodeCapabilitiesKHR.html#adb29e22848172da68bc613eeed8591bf":[5,0,2185,4],
-"structVkVideoEncodeCapabilitiesKHR.html#adc39293882d924169a4e268c81ae29dd":[5,0,2185,8],
-"structVkVideoEncodeCapabilitiesKHR.html#ae70b31ff21433bb0226bd282278cb36a":[5,0,2185,6],
-"structVkVideoEncodeH264CapabilitiesKHR.html":[5,0,2186],
-"structVkVideoEncodeH264CapabilitiesKHR.html#a009ac831500fb406c7956b8899f50045":[5,0,2186,6],
-"structVkVideoEncodeH264CapabilitiesKHR.html#a014a9a1dd305469b2acaa1e23ffd35db":[5,0,2186,4],
-"structVkVideoEncodeH264CapabilitiesKHR.html#a158257fc738d880342cd77560af9b787":[5,0,2186,11]
+"structVkVideoEncodeCapabilitiesKHR.html#ad14ebb0b0ff158d45384d1e9e06764da":[5,0,2185,5]
 };

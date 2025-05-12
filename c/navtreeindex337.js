@@ -1,5 +1,13 @@
 var NAVTREEINDEX337 =
 {
+"structVkPhysicalDeviceLimits.html#a35ed84e1e477b108ee75d30f6464d622":[5,0,1755,53],
+"structVkPhysicalDeviceLimits.html#a376f5b4ae5e51bcf12e86c07f80242dc":[5,0,1755,75],
+"structVkPhysicalDeviceLimits.html#a3f20d89e4cf84533c0d858f2e627e255":[5,0,1755,25],
+"structVkPhysicalDeviceLimits.html#a403b9650a5ebed5b5761f68a51b27cb9":[5,0,1755,79],
+"structVkPhysicalDeviceLimits.html#a4813f36686a7cb4675938ea4e3f9bd56":[5,0,1755,58],
+"structVkPhysicalDeviceLimits.html#a4bbbe114bb8ea0f7cb3e56d7714db6cb":[5,0,1755,85],
+"structVkPhysicalDeviceLimits.html#a4ddd25e966a1583b221e90b605ab638d":[5,0,1755,41],
+"structVkPhysicalDeviceLimits.html#a4ee35b53957071299106d2d830d1db77":[5,0,1755,16],
 "structVkPhysicalDeviceLimits.html#a55511bffb90c8b0c173a178486262371":[5,0,1755,73],
 "structVkPhysicalDeviceLimits.html#a57f8c503ed858768b7da9a95177acb89":[5,0,1755,81],
 "structVkPhysicalDeviceLimits.html#a59e6e9d2f946f889e8fd283516872594":[5,0,1755,71],
@@ -241,13 +249,5 @@ var NAVTREEINDEX337 =
 "structVkPhysicalDeviceMeshShaderPropertiesNV.html#af943df64ec640f44906279829ce37042":[5,0,1779,10],
 "structVkPhysicalDeviceMultiDrawFeaturesEXT.html":[5,0,1780],
 "structVkPhysicalDeviceMultiDrawFeaturesEXT.html#a056d6c21d86f2fa94d2c462df27704cb":[5,0,1780,0],
-"structVkPhysicalDeviceMultiDrawFeaturesEXT.html#a2a13859597cb4758175e44f4580c9cd8":[5,0,1780,1],
-"structVkPhysicalDeviceMultiDrawFeaturesEXT.html#a5834f1e8ea5015f34d3fda78f383d8eb":[5,0,1780,2],
-"structVkPhysicalDeviceMultiDrawPropertiesEXT.html":[5,0,1781],
-"structVkPhysicalDeviceMultiDrawPropertiesEXT.html#ab6694e01a7282a72936b1f470e1cc541":[5,0,1781,1],
-"structVkPhysicalDeviceMultiDrawPropertiesEXT.html#ac324ec52ac7116875594752500c6a3a4":[5,0,1781,2],
-"structVkPhysicalDeviceMultiDrawPropertiesEXT.html#ad21edd1b5c67efa6247c2e402c3f8901":[5,0,1781,0],
-"structVkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT.html":[5,0,1782],
-"structVkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT.html#a276ffbe96c47257d94a2f825b76f58c2":[5,0,1782,1],
-"structVkPhysicalDeviceMultisampledRenderToSingleSampledFeaturesEXT.html#a42a904434828a44b5a5ea67cc0dd6f34":[5,0,1782,0]
+"structVkPhysicalDeviceMultiDrawFeaturesEXT.html#a2a13859597cb4758175e44f4580c9cd8":[5,0,1780,1]
 };

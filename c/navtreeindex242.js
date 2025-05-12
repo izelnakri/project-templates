@@ -1,5 +1,13 @@
 var NAVTREEINDEX242 =
 {
+"lsqlite3_8c.html#a4c2d04eca3e8e59c84c6e7cc5883c2e8":[6,0,7,0,0,9,92],
+"lsqlite3_8c.html#a4dfc7ce10ac7bb76bf57c12b070b043c":[6,0,7,0,0,9,11],
+"lsqlite3_8c.html#a521c724072f06d2320e46fcd52107adf":[6,0,7,0,0,9,48],
+"lsqlite3_8c.html#a5224970b586841594d2952c4f3aaa71a":[6,0,7,0,0,9,118],
+"lsqlite3_8c.html#a53b39409655a51bd05d63a5a4eb39758":[6,0,7,0,0,9,64],
+"lsqlite3_8c.html#a57ffa1f56be83d85f2380b6c774f380e":[6,0,7,0,0,9,115],
+"lsqlite3_8c.html#a59c57de504c712610d71fd96001c00a4":[6,0,7,0,0,9,52],
+"lsqlite3_8c.html#a5a2b76433c242dfe7b095509a743bbc9":[6,0,7,0,0,9,106],
 "lsqlite3_8c.html#a60f806982f4f98423be0137836761401":[6,0,7,0,0,9,89],
 "lsqlite3_8c.html#a618cb32cb70b336d3e7e6024201e1eb4":[6,0,7,0,0,9,60],
 "lsqlite3_8c.html#a61ba0dac7decf3d62fd1addd68a2c336":[6,0,7,0,0,9,50],
@@ -241,13 +249,5 @@ var NAVTREEINDEX242 =
 "lua-5_81_85_2src_2lauxlib_8c.html#ac1503e3f7db09148f426164834c37a57":[6,0,7,0,0,2,1,2,39],
 "lua-5_81_85_2src_2lauxlib_8c.html#ac3eedb8425d056c08d479393ff14ad89":[6,0,7,0,0,2,1,2,36],
 "lua-5_81_85_2src_2lauxlib_8c.html#aced031f9a3f68375e9f80315933d9a88":[6,0,7,0,0,2,1,2,20],
-"lua-5_81_85_2src_2lauxlib_8c.html#ad55b4b5fa169573bd0becaa38d7254c4":[6,0,7,0,0,2,1,2,22],
-"lua-5_81_85_2src_2lauxlib_8c.html#ad5e8303f3809d26c336c3e18879b7f4e":[6,0,7,0,0,2,1,2,50],
-"lua-5_81_85_2src_2lauxlib_8c.html#add331502636620b3f3ecdda212f0a06c":[6,0,7,0,0,2,1,2,16],
-"lua-5_81_85_2src_2lauxlib_8c.html#add7cea31816ff3f61014031248e0daa6":[6,0,7,0,0,2,1,2,35],
-"lua-5_81_85_2src_2lauxlib_8c.html#ae6178daabdaa9add07880dec1cca6ce2":[6,0,7,0,0,2,1,2,3],
-"lua-5_81_85_2src_2lauxlib_8c.html#af127bffdee2105233437be5b33c68156":[6,0,7,0,0,2,1,2,14],
-"lua-5_81_85_2src_2lauxlib_8c.html#af748995344183a69a796f0c4cc9dbbf5":[6,0,7,0,0,2,1,2,17],
-"lua-5_81_85_2src_2lauxlib_8c.html#af7c3c76f83daf05cfc6e50965b122d88":[6,0,7,0,0,2,1,2,28],
-"lua-5_81_85_2src_2lauxlib_8c_source.html":[6,0,7,0,0,2,1,2]
+"lua-5_81_85_2src_2lauxlib_8c.html#ad55b4b5fa169573bd0becaa38d7254c4":[6,0,7,0,0,2,1,2,22]
 };

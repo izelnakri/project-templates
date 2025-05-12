@@ -1,5 +1,13 @@
 var NAVTREEINDEX335 =
 {
+"structVkPhysicalDeviceDrmPropertiesEXT.html#a1bf2119307923b5e1b2aabe359dd57b6":[5,0,1680,3],
+"structVkPhysicalDeviceDrmPropertiesEXT.html#a2a5b62337e995b56d370968679c5d790":[5,0,1680,0],
+"structVkPhysicalDeviceDrmPropertiesEXT.html#a585de92d3961a0afc1f9e0b9d3934873":[5,0,1680,6],
+"structVkPhysicalDeviceDrmPropertiesEXT.html#a8d4e08aabcc49feb1b38cdc807e21437":[5,0,1680,5],
+"structVkPhysicalDeviceDrmPropertiesEXT.html#a9003e73eedca483251c49ba44a409b35":[5,0,1680,4],
+"structVkPhysicalDeviceDrmPropertiesEXT.html#a9428d20301a641af69dbb6caa4b400e0":[5,0,1680,1],
+"structVkPhysicalDeviceDrmPropertiesEXT.html#aad8afdb713b1128f20b8946ba75690f0":[5,0,1680,7],
+"structVkPhysicalDeviceDrmPropertiesEXT.html#adbb32a4cb873ab3b59542fa5c4d53acf":[5,0,1680,2],
 "structVkPhysicalDeviceDynamicRenderingFeatures.html":[5,0,1681],
 "structVkPhysicalDeviceDynamicRenderingFeatures.html#a05798978a52731202375d866b3cbbc6c":[5,0,1681,2],
 "structVkPhysicalDeviceDynamicRenderingFeatures.html#a076d02e94a9aa784cf75cc6de04a4bd0":[5,0,1681,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX335 =
 "structVkPhysicalDeviceFragmentShaderInterlockFeaturesEXT.html":[5,0,1712],
 "structVkPhysicalDeviceFragmentShaderInterlockFeaturesEXT.html#a8ceab613f8548751ba46c03e42775f83":[5,0,1712,0],
 "structVkPhysicalDeviceFragmentShaderInterlockFeaturesEXT.html#a925f697e45d4dc0bbbe20989e015d68a":[5,0,1712,3],
-"structVkPhysicalDeviceFragmentShaderInterlockFeaturesEXT.html#abffa09af5cf15f8d2a2f8c24782ee5c5":[5,0,1712,2],
-"structVkPhysicalDeviceFragmentShaderInterlockFeaturesEXT.html#ac2d76977e3277bb7cc4209e1dbe9500a":[5,0,1712,1],
-"structVkPhysicalDeviceFragmentShaderInterlockFeaturesEXT.html#acfea4abc01cd384c275578024f0f9545":[5,0,1712,4],
-"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html":[5,0,1713],
-"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html#a02aca133fe048bf47ea26517ea5d5409":[5,0,1713,2],
-"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html#a12219989b30d254bd5f489d48fef82ca":[5,0,1713,1],
-"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html#a3f87ec7ad1a24ab034dc54f04879299e":[5,0,1713,0],
-"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html#a3fc73fa078dc9911bcfca7472c6cceaa":[5,0,1713,4],
-"structVkPhysicalDeviceFragmentShadingRateEnumsFeaturesNV.html#a768ff1ef6a3b08c64e77b40068dc62f4":[5,0,1713,3]
+"structVkPhysicalDeviceFragmentShaderInterlockFeaturesEXT.html#abffa09af5cf15f8d2a2f8c24782ee5c5":[5,0,1712,2]
 };

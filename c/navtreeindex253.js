@@ -1,5 +1,13 @@
 var NAVTREEINDEX253 =
 {
+"lua-5_82_84_2src_2lgc_8h.html#a1bc84781fdee2795ff3e245514c5ec95":[6,0,7,0,0,3,0,20,55],
+"lua-5_82_84_2src_2lgc_8h.html#a1da32357417ce5766ed5e3ada033c32f":[6,0,7,0,0,3,0,20,56],
+"lua-5_82_84_2src_2lgc_8h.html#a21660a316c42bc1aad10f115e2261bca":[6,0,7,0,0,3,0,20,25],
+"lua-5_82_84_2src_2lgc_8h.html#a25c19ff3161e2a2395ba69fdef49915f":[6,0,7,0,0,3,0,20,40],
+"lua-5_82_84_2src_2lgc_8h.html#a28e94f77147fd242f514b98a1b251486":[6,0,7,0,0,3,0,20,3],
+"lua-5_82_84_2src_2lgc_8h.html#a2ed301793747f3a2d0a7fc7d64d482fd":[6,0,7,0,0,3,0,20,8],
+"lua-5_82_84_2src_2lgc_8h.html#a3396f37021e6f155dff7d2b8384af376":[6,0,7,0,0,3,0,20,9],
+"lua-5_82_84_2src_2lgc_8h.html#a39293d5e5fbd7bb9a24556b3e2f15d43":[6,0,7,0,0,3,0,20,0],
 "lua-5_82_84_2src_2lgc_8h.html#a40b40242e96f45f8d04dcf4feb1475ae":[6,0,7,0,0,3,0,20,22],
 "lua-5_82_84_2src_2lgc_8h.html#a46642ce181b85a75a4b0eb5a4cd0d0f6":[6,0,7,0,0,3,0,20,37],
 "lua-5_82_84_2src_2lgc_8h.html#a486033531260010debe876a076dd2a41":[6,0,7,0,0,3,0,20,36],
@@ -241,13 +249,5 @@ var NAVTREEINDEX253 =
 "lua-5_82_84_2src_2llimits_8h.html#ae1fe9ac10d9803bd1d7bdf30b18bad68":[6,0,7,0,0,3,0,25,47],
 "lua-5_82_84_2src_2llimits_8h.html#ae269d75893fce50868b37c32214648e5":[6,0,7,0,0,3,0,25,29],
 "lua-5_82_84_2src_2llimits_8h.html#aec7eb7707072318be7c6894d77b0d44a":[6,0,7,0,0,3,0,25,46],
-"lua-5_82_84_2src_2llimits_8h.html#aefeef022fc6888ae597ff77b56040a88":[6,0,7,0,0,3,0,25,8],
-"lua-5_82_84_2src_2llimits_8h.html#af110e056a602175437e5cda45dd7db5e":[6,0,7,0,0,3,0,25,32],
-"lua-5_82_84_2src_2llimits_8h.html#af17d62ec9e237a7644de6b9b34a48a34":[6,0,7,0,0,3,0,25,2],
-"lua-5_82_84_2src_2llimits_8h.html#afac1404af62451f8653440ecb6e773fc":[6,0,7,0,0,3,0,25,7],
-"lua-5_82_84_2src_2llimits_8h_source.html":[6,0,7,0,0,3,0,25],
-"lua-5_82_84_2src_2lmathlib_8c.html":[6,0,7,0,0,3,0,26],
-"lua-5_82_84_2src_2lmathlib_8c.html#a03e3b76e515f5535122c2026a9e8f445":[6,0,7,0,0,3,0,26,20],
-"lua-5_82_84_2src_2lmathlib_8c.html#a06bc9b8c610e00759bb99c3db6128f18":[6,0,7,0,0,3,0,26,30],
-"lua-5_82_84_2src_2lmathlib_8c.html#a13d5e8c418a554d9e4604b97a4b67b83":[6,0,7,0,0,3,0,26,17]
+"lua-5_82_84_2src_2llimits_8h.html#aefeef022fc6888ae597ff77b56040a88":[6,0,7,0,0,3,0,25,8]
 };

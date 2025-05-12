@@ -1,5 +1,13 @@
 var NAVTREEINDEX259 =
 {
+"lua-5_82_84_2src_2lzio_8h.html#a53c928283083a162c79e0152048affe2":[6,0,7,0,0,3,0,57,7],
+"lua-5_82_84_2src_2lzio_8h.html#a549577e88246e83e4578cabd2ea030ca":[6,0,7,0,0,3,0,57,5],
+"lua-5_82_84_2src_2lzio_8h.html#a8341bdc72db5a2f045e18440f9523008":[6,0,7,0,0,3,0,57,2],
+"lua-5_82_84_2src_2lzio_8h.html#aa51f632cb0519368a65ada80b71ea1e3":[6,0,7,0,0,3,0,57,3],
+"lua-5_82_84_2src_2lzio_8h.html#ab158420acf019b3a45e8ae6e65b51fdb":[6,0,7,0,0,3,0,57,8],
+"lua-5_82_84_2src_2lzio_8h.html#ac6a758c14683671c7fc0a8bd10b34680":[6,0,7,0,0,3,0,57,15],
+"lua-5_82_84_2src_2lzio_8h.html#aecca8ea1e6dc0c97b458f77c0e3491de":[6,0,7,0,0,3,0,57,10],
+"lua-5_82_84_2src_2lzio_8h_source.html":[6,0,7,0,0,3,0,57],
 "lua-5_83_86_2src_2lapi_8c.html":[6,0,7,0,0,4,0,0],
 "lua-5_83_86_2src_2lapi_8c.html#a01ac82fa494af5e7c3e10c87a8052cf7":[6,0,7,0,0,4,0,0,54],
 "lua-5_83_86_2src_2lapi_8c.html#a0667fbf88666853554967226d9a3df4d":[6,0,7,0,0,4,0,0,13],
@@ -241,13 +249,5 @@ var NAVTREEINDEX259 =
 "lua-5_83_86_2src_2lauxlib_8h.html#ad575a4fd1f53fa454b5d9745fedecdc4":[6,0,7,0,0,4,0,3,23],
 "lua-5_83_86_2src_2lauxlib_8h.html#ad5e8303f3809d26c336c3e18879b7f4e":[6,0,7,0,0,4,0,3,73],
 "lua-5_83_86_2src_2lauxlib_8h.html#ad9917d22c79651fdd73d42c146b5056f":[6,0,7,0,0,4,0,3,15],
-"lua-5_83_86_2src_2lauxlib_8h.html#ae01c86cfe3518580b473e089ba15b621":[6,0,7,0,0,4,0,3,51],
-"lua-5_83_86_2src_2lauxlib_8h.html#ae210c8b2a9a27ee62b2e846e93ae876f":[6,0,7,0,0,4,0,3,20],
-"lua-5_83_86_2src_2lauxlib_8h.html#ae3907fc11c3e2af69f00ab4a37872cae":[6,0,7,0,0,4,0,3,69],
-"lua-5_83_86_2src_2lauxlib_8h.html#ae6c79b83e1d493d4ab680e74e5a85a6a":[6,0,7,0,0,4,0,3,24],
-"lua-5_83_86_2src_2lauxlib_8h.html#afa696696945ee6215c0033656ee64e97":[6,0,7,0,0,4,0,3,62],
-"lua-5_83_86_2src_2lauxlib_8h.html#afd30f08bd397c584ea503c124035103c":[6,0,7,0,0,4,0,3,41],
-"lua-5_83_86_2src_2lauxlib_8h.html#afda229e5f738702176f38feca764d264":[6,0,7,0,0,4,0,3,38],
-"lua-5_83_86_2src_2lauxlib_8h_source.html":[6,0,7,0,0,4,0,3],
-"lua-5_83_86_2src_2lbaselib_8c.html":[6,0,7,0,0,4,0,4]
+"lua-5_83_86_2src_2lauxlib_8h.html#ae01c86cfe3518580b473e089ba15b621":[6,0,7,0,0,4,0,3,51]
 };

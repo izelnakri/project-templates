@@ -1,5 +1,13 @@
 var NAVTREEINDEX193 =
 {
+"gslice_8h.html#ac0720ffbd2cd72746ca77da604b10720":[6,0,4,0,9,0,1,2,57,12],
+"gslice_8h.html#acd426161205b06b713e969125dd99319":[6,0,4,0,9,0,1,2,57,9],
+"gslice_8h.html#acef9ba21cfd5e1814a172ca6afd16c79":[6,0,4,0,9,0,1,2,57,8],
+"gslice_8h.html#ad49671616ddb78cc61090274a0fe475a":[6,0,4,0,9,0,1,2,57,5],
+"gslice_8h.html#ad49671616ddb78cc61090274a0fe475aa54ac348121d3323a92fa30e72bbcf2b4":[6,0,4,0,9,0,1,2,57,5,2],
+"gslice_8h.html#ad49671616ddb78cc61090274a0fe475aa54b7af9b44c718ddf19e5b9dde07fc38":[6,0,4,0,9,0,1,2,57,5,1],
+"gslice_8h.html#ad49671616ddb78cc61090274a0fe475aa5cb413f114e5e4ed38b2b5598e62de7c":[6,0,4,0,9,0,1,2,57,5,5],
+"gslice_8h.html#ad49671616ddb78cc61090274a0fe475aa9c31c58cb093cb35b6e2258414627cb0":[6,0,4,0,9,0,1,2,57,5,0],
 "gslice_8h.html#ad49671616ddb78cc61090274a0fe475aadb0f85c98bf8de2bcaddd08a757ae7fa":[6,0,4,0,9,0,1,2,57,5,3],
 "gslice_8h.html#ad49671616ddb78cc61090274a0fe475aaf37f7061c088742bfb1e51ca0ffc1b1b":[6,0,4,0,9,0,1,2,57,5,4],
 "gslice_8h.html#ae6e4321033748efa6c7fb94f2a5cf3a7":[6,0,4,0,9,0,1,2,57,11],
@@ -241,13 +249,5 @@ var NAVTREEINDEX193 =
 "gsocketlistener_8h.html#a7a0dce344edc0dcab3f6b1c079a811da":[6,0,4,0,9,0,1,0,129,21],
 "gsocketlistener_8h.html#a93285cc4772ae30bf14309328af00516":[6,0,4,0,9,0,1,0,129,6],
 "gsocketlistener_8h.html#aa2bd2f73d97167d440165d9102fec4a7":[6,0,4,0,9,0,1,0,129,8],
-"gsocketlistener_8h.html#aa5e8a20e9d0bc4c5d4bfd8d26429d69e":[6,0,4,0,9,0,1,0,129,9],
-"gsocketlistener_8h.html#ac130621b24ee38f95987051165b7e98d":[6,0,4,0,9,0,1,0,129,16],
-"gsocketlistener_8h.html#ac4c6d5444e2139bd0618ae27c55c8708":[6,0,4,0,9,0,1,0,129,13],
-"gsocketlistener_8h.html#acda2c5767b462eb1c7042c3494c89bc1":[6,0,4,0,9,0,1,0,129,7],
-"gsocketlistener_8h.html#ad5ceb6e2ff2ae2665e2c49323db84004":[6,0,4,0,9,0,1,0,129,15],
-"gsocketlistener_8h.html#aea8f6265fdaae196b71d2cd3433b7ac3":[6,0,4,0,9,0,1,0,129,3],
-"gsocketlistener_8h.html#aec84b3aa2ce9ccac8d9ee000e0956d6b":[6,0,4,0,9,0,1,0,129,17],
-"gsocketlistener_8h.html#aed7235caef7bfd1232b2b11ca924cf60":[6,0,4,0,9,0,1,0,129,10],
-"gsocketlistener_8h.html#af227073de7bd119463afc97fd0d87edf":[6,0,4,0,9,0,1,0,129,23]
+"gsocketlistener_8h.html#aa5e8a20e9d0bc4c5d4bfd8d26429d69e":[6,0,4,0,9,0,1,0,129,9]
 };

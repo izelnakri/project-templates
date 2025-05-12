@@ -1,5 +1,13 @@
 var NAVTREEINDEX325 =
 {
+"structVkClearRect.html#ad8eb083eb7d6ae3609091816c51c5dff":[5,0,1242,0],
+"structVkCoarseSampleLocationNV.html":[5,0,1244],
+"structVkCoarseSampleLocationNV.html#a2aab742a62f62858c2a6433fbdafb1b3":[5,0,1244,0],
+"structVkCoarseSampleLocationNV.html#a34809952d7d0c35dcba8cc661492fd38":[5,0,1244,1],
+"structVkCoarseSampleLocationNV.html#aaafbc76ff95355d0b2c3264ee4f84539":[5,0,1244,2],
+"structVkCoarseSampleOrderCustomNV.html":[5,0,1245],
+"structVkCoarseSampleOrderCustomNV.html#a3f7d509dfd2bcec873008a411eb90a74":[5,0,1245,0],
+"structVkCoarseSampleOrderCustomNV.html#a466b5989ad546330ce3b4daffc3417f6":[5,0,1245,1],
 "structVkCoarseSampleOrderCustomNV.html#a960104e587ba6219f36e28ed12142585":[5,0,1245,3],
 "structVkCoarseSampleOrderCustomNV.html#aed5f0e98810afb7ba56582ee2b7f74fb":[5,0,1245,2],
 "structVkColorBlendAdvancedEXT.html":[5,0,1246],
@@ -241,13 +249,5 @@ var NAVTREEINDEX325 =
 "structVkCopyMicromapToMemoryInfoEXT.html#abba8d1a4822c6f8e390905245bdf2853":[5,0,1280,3],
 "structVkCopyMicromapToMemoryInfoEXT.html#adf31e1c2a64d1142ecd07b9b742c7b4e":[5,0,1280,1],
 "structVkCopyMicromapToMemoryInfoEXT.html#af51a7a4fc7ac06cf9ca746d0bfa18aec":[5,0,1280,4],
-"structVkCopyMicromapToMemoryInfoEXT.html#af5ab579aa332c9447bea5b7ccb53cbab":[5,0,1280,2],
-"structVkCuFunctionCreateInfoNVX.html":[5,0,1284],
-"structVkCuFunctionCreateInfoNVX.html#a12f5f3eadf5ad19f4acfa9b339ef9091":[5,0,1284,2],
-"structVkCuFunctionCreateInfoNVX.html#a75c84b5f31e63c7e45120a9172fee679":[5,0,1284,1],
-"structVkCuFunctionCreateInfoNVX.html#ad5b2587a536a8883fb134e607d2750df":[5,0,1284,0],
-"structVkCuLaunchInfoNVX.html":[5,0,1285],
-"structVkCuLaunchInfoNVX.html#a0bbbcddd00a7ff18126ef9644ac0f722":[5,0,1285,8],
-"structVkCuLaunchInfoNVX.html#a2ce05e6afef268318bf5c800f6fe8ad9":[5,0,1285,10],
-"structVkCuLaunchInfoNVX.html#a3ddc4981f8e3d47abe4746d8ea4203e7":[5,0,1285,5]
+"structVkCopyMicromapToMemoryInfoEXT.html#af5ab579aa332c9447bea5b7ccb53cbab":[5,0,1280,2]
 };

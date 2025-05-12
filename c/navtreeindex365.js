@@ -1,5 +1,13 @@
 var NAVTREEINDEX365 =
 {
+"structcurl__version__info__data.html#ac44ab02c734e3808b46ebdba1febf16b":[5,0,634,21],
+"structcurl__version__info__data.html#acda9eccafea00bc717c53236d14b826e":[5,0,634,19],
+"structcurl__version__info__data.html#ad99ab123ae1d98cbf46228297001fe58":[5,0,634,1],
+"structcurl__version__info__data.html#adfe72a24d6f7ab569ea8d5cdc354f5b1":[5,0,634,0],
+"structcurl__version__info__data.html#af732cc5f45e3df97e73160118ee7abf2":[5,0,634,22],
+"structcurl__version__info__data.html#af957e0bca22f36674d392657c32363e0":[5,0,634,15],
+"structcurl__version__info__data.html#afa8789779d0c2b3540fc2b64ef9a182e":[5,0,634,13],
+"structcurl__waitfd.html":[5,0,635],
 "structcurl__waitfd.html#a14e87b528f4a052ec65edbc14b6ab080":[5,0,635,2],
 "structcurl__waitfd.html#ac8286d3f03be1a2f2d43a9516251f0f2":[5,0,635,0],
 "structcurl__waitfd.html#ae4712fac510d50249e1a430a3d160a17":[5,0,635,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX365 =
 "structduk__heap.html#a65b2b1533ae745a2436a6740ea3cc144":[5,0,672,8],
 "structduk__heap.html#a6e176bfba7eee4c2986a33bc29387328":[5,0,672,13],
 "structduk__heap.html#a7a87c08de7b8e78f276558f447220229":[5,0,672,15],
-"structduk__heap.html#a84af6d7adac87b0025ef5fe5dd25e484":[5,0,672,11],
-"structduk__heap.html#a89db382cb4b6ca71f72a13d6da83bf98":[5,0,672,7],
-"structduk__heap.html#a8cd44c7c29e875c9213b3b97fe49d1e3":[5,0,672,25],
-"structduk__heap.html#a9fc4beb12dc721c9b315116be73afa23":[5,0,672,21],
-"structduk__heap.html#aa249660205399aec495d86034217c9ee":[5,0,672,22],
-"structduk__heap.html#ab229eef9c6b0d7fcd267527a4b107fe5":[5,0,672,1],
-"structduk__heap.html#ab286cadef3cce0c9d7f1760e526f5353":[5,0,672,20],
-"structduk__heap.html#ab564d681186a71065b5d36d4c61c2362":[5,0,672,14],
-"structduk__heap.html#ab812ddb1d5d41e6f77b2f4477ba9a8db":[5,0,672,0]
+"structduk__heap.html#a84af6d7adac87b0025ef5fe5dd25e484":[5,0,672,11]
 };

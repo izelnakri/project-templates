@@ -1,5 +1,13 @@
 var NAVTREEINDEX346 =
 {
+"structVkSparseMemoryBind.html#a737a6041db20fd064d4e0c59a49e266c":[5,0,2102,1],
+"structVkSparseMemoryBind.html#a784c20bcb04d44e598408ba4c0f9474d":[5,0,2102,4],
+"structVkSparseMemoryBind.html#aafc2ecd374d418e9d4afbb1a746864dd":[5,0,2102,0],
+"structVkSparseMemoryBind.html#afe34d7e3d24221f66d95946badc23e67":[5,0,2102,2],
+"structVkSpecializationInfo.html":[5,0,2103],
+"structVkSpecializationInfo.html#a150ae19863ed02663be085233ff70583":[5,0,2103,3],
+"structVkSpecializationInfo.html#a26842255e465754ab17c7d8a27ac09b6":[5,0,2103,2],
+"structVkSpecializationInfo.html#a44f1f7b5ab92376e3423c388f505e36c":[5,0,2103,0],
 "structVkSpecializationInfo.html#a4add10543981960e6bf8f0b12a353c69":[5,0,2103,1],
 "structVkSpecializationMapEntry.html":[5,0,2104],
 "structVkSpecializationMapEntry.html#a0ba970d6c73dba05e9695a19d71c142e":[5,0,2104,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX346 =
 "structVkSwapchainPresentFenceInfoEXT.html":[5,0,2143],
 "structVkSwapchainPresentFenceInfoEXT.html#a3f417efcc3af543924c3c1153d8497d0":[5,0,2143,3],
 "structVkSwapchainPresentFenceInfoEXT.html#abc2fab52c5cae6667c87fb5305d780a2":[5,0,2143,1],
-"structVkSwapchainPresentFenceInfoEXT.html#af738ace2e41aa94782fc90b93d62463b":[5,0,2143,0],
-"structVkSwapchainPresentFenceInfoEXT.html#af975d3b46695d9027cf639bd86f579f8":[5,0,2143,2],
-"structVkSwapchainPresentModeInfoEXT.html":[5,0,2144],
-"structVkSwapchainPresentModeInfoEXT.html#a486a3e412d81fb308932e66db1fd2515":[5,0,2144,1],
-"structVkSwapchainPresentModeInfoEXT.html#a7020d0da0272f72b3929ef7de041f730":[5,0,2144,0],
-"structVkSwapchainPresentModeInfoEXT.html#a943bf7f309c50307bb3ef49ffa8e67ee":[5,0,2144,2],
-"structVkSwapchainPresentModeInfoEXT.html#ab153fab4caa495736d5e9c620bf43301":[5,0,2144,3],
-"structVkSwapchainPresentModesCreateInfoEXT.html":[5,0,2145],
-"structVkSwapchainPresentModesCreateInfoEXT.html#a1d5c87e9653841f0baec8aa1caa8b53a":[5,0,2145,3]
+"structVkSwapchainPresentFenceInfoEXT.html#af738ace2e41aa94782fc90b93d62463b":[5,0,2143,0]
 };

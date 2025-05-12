@@ -1,5 +1,13 @@
 var NAVTREEINDEX351 =
 {
+"structWindowCsrAndReg.html":[5,0,2282],
+"structWindowCsrAndReg.html#a810dbc91fd827522bb68b9dcdcc20af6":[5,0,2282,0],
+"structWindowCsrAndReg.html#af29ec22a6773e3a4773df9491e32b57e":[5,0,2282,1],
+"structWindowRewrite.html":[5,0,2283],
+"structWindowRewrite.html#a2338999bd0afbd1d39e01ad05d65dad7":[5,0,2283,3],
+"structWindowRewrite.html#a49d7114e9421cdad9fe31ba24be67896":[5,0,2283,2],
+"structWindowRewrite.html#a4c8e30eec6912a56128646b5cdbad715":[5,0,2283,1],
+"structWindowRewrite.html#a78a4d67508a72ddabdfe5a8e9682ceb9":[5,0,2283,4],
 "structWindowRewrite.html#a7c3f1a3485f37a65bf232ac0d9443f2e":[5,0,2283,0],
 "structWith.html":[5,0,2284],
 "structWith.html#a298ffbdfe6efe771b9d3ef372dff09e4":[5,0,2284,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX351 =
 "struct__GDBusErrorEntry.html#af4804ceec8f3a8242683f0d1f558843c":[5,0,48,1],
 "struct__GDBusInterfaceIface.html":[5,0,49],
 "struct__GDBusInterfaceIface.html#a1b9d3d0006fc02215679af5714880855":[5,0,49,2],
-"struct__GDBusInterfaceIface.html#a49d4a6783268a3747c28aaf9addcba01":[5,0,49,3],
-"struct__GDBusInterfaceIface.html#a6217314c7013ef276d3e9b79535c80b0":[5,0,49,0],
-"struct__GDBusInterfaceIface.html#aa243cbcec50c79dc0349cc0041039bb6":[5,0,49,4],
-"struct__GDBusInterfaceIface.html#abcdc474defab4979a80eefc5970c22e1":[5,0,49,1],
-"struct__GDBusInterfaceInfo.html":[5,0,50],
-"struct__GDBusInterfaceInfo.html#a2b8d0815897eb51f77d544502ba2d001":[5,0,50,2],
-"struct__GDBusInterfaceInfo.html#a3acc90b84b348cf54e7089aa5ea5dc60":[5,0,50,0],
-"struct__GDBusInterfaceInfo.html#a9cd651c049cb6b8aebc343a0dd10f127":[5,0,50,4],
-"struct__GDBusInterfaceInfo.html#aca8fcc23f30365fbd320a2f6ae3f8ef8":[5,0,50,5]
+"struct__GDBusInterfaceIface.html#a49d4a6783268a3747c28aaf9addcba01":[5,0,49,3]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX349 =
 {
+"structVkVideoEncodeQualityLevelPropertiesKHR.html#ab7afcd0ba69a78f371be45c07fef9580":[5,0,2220,1],
+"structVkVideoEncodeQualityLevelPropertiesKHR.html#af3c2801c81fdb7b7bde4ec6824f1234a":[5,0,2220,0],
+"structVkVideoEncodeRateControlInfoKHR.html":[5,0,2221],
+"structVkVideoEncodeRateControlInfoKHR.html#a0f3e6e0de458d9b73dcdc7cc71f86ad8":[5,0,2221,1],
+"structVkVideoEncodeRateControlInfoKHR.html#a47ba96b6f1a130223ee9be1f61284fdf":[5,0,2221,6],
+"structVkVideoEncodeRateControlInfoKHR.html#a6f46b6e4482a838de62fde0a1a0bf37f":[5,0,2221,7],
+"structVkVideoEncodeRateControlInfoKHR.html#a7764d2aece6ccc0255620165b3621c18":[5,0,2221,3],
+"structVkVideoEncodeRateControlInfoKHR.html#ab50c84a8f0c4c549d8f07f1f8499f8bb":[5,0,2221,4],
 "structVkVideoEncodeRateControlInfoKHR.html#ac398096d11d3e63539469d2e3ef4bc63":[5,0,2221,2],
 "structVkVideoEncodeRateControlInfoKHR.html#acad38c6751ccf2d2da555f26de9b32e6":[5,0,2221,0],
 "structVkVideoEncodeRateControlInfoKHR.html#af100efabd05718557d6d5aed570499d2":[5,0,2221,5],
@@ -241,13 +249,5 @@ var NAVTREEINDEX349 =
 "structWalIndexHdr.html#aa00596b4ad38dce7f97261a49ce64d74":[5,0,2260,10],
 "structWalIndexHdr.html#aa202339b02766d088717bfce9e3a9c0e":[5,0,2260,0],
 "structWalIndexHdr.html#aa697dbe8134daf3d02dce07feb897f41":[5,0,2260,7],
-"structWalIndexHdr.html#aa6be53a6a60ea0b2a97a245b5ca68d61":[5,0,2260,3],
-"structWalIndexHdr.html#ae4ca33947cd629feb9dce2b1f976c364":[5,0,2260,8],
-"structWalIndexHdr.html#af99b92f673fd7ba1e4e4f9feb955453f":[5,0,2260,2],
-"structWalIterator.html":[5,0,2261],
-"structWalIterator.html#a3fcdbc24694c27146f9303310462a359":[5,0,2261,1],
-"structWalIterator.html#accc32feabc4acfea6d6de915225f15a7":[5,0,2261,2],
-"structWalIterator.html#ad81bc9447d6043212289d127dc9fdafa":[5,0,2261,3],
-"structWalIterator_1_1WalSegment.html":[5,0,2261,0],
-"structWalIterator_1_1WalSegment.html#a329c939b196f907fe98cf762bb07d291":[5,0,2261,0,2]
+"structWalIndexHdr.html#aa6be53a6a60ea0b2a97a245b5ca68d61":[5,0,2260,3]
 };

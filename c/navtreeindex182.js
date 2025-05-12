@@ -1,5 +1,13 @@
 var NAVTREEINDEX182 =
 {
+"goption_8h.html#ad099e129e5f068795c41c4a4d74149bf":[6,0,4,0,9,0,1,2,40,27],
+"goption_8h.html#adca4b3eeb6f7b186547ede4013e8379d":[6,0,4,0,9,0,1,2,40,32],
+"goption_8h.html#ade4e1688b2ebfa4d2e2abcf710a0f658":[6,0,4,0,9,0,1,2,40,7],
+"goption_8h.html#ae4fbf59caf665e55e91a9c245be0e27a":[6,0,4,0,9,0,1,2,40,10],
+"goption_8h.html#ae4fbf59caf665e55e91a9c245be0e27aa02843dd152b6502d91539548c2869e3f":[6,0,4,0,9,0,1,2,40,10,6],
+"goption_8h.html#ae4fbf59caf665e55e91a9c245be0e27aa0b013a5d21a148428d4cf8a3555126b8":[6,0,4,0,9,0,1,2,40,10,0],
+"goption_8h.html#ae4fbf59caf665e55e91a9c245be0e27aa0dac89601afca686cbe8614238d3bba0":[6,0,4,0,9,0,1,2,40,10,8],
+"goption_8h.html#ae4fbf59caf665e55e91a9c245be0e27aa395e0854cbc91ff7dc22227689e1f5f9":[6,0,4,0,9,0,1,2,40,10,5],
 "goption_8h.html#ae4fbf59caf665e55e91a9c245be0e27aa4edb9459aa7c378e211f6b8e69c3ea3f":[6,0,4,0,9,0,1,2,40,10,4],
 "goption_8h.html#ae4fbf59caf665e55e91a9c245be0e27aa6633480e8f53e1b2f8c41aa0a4b624cc":[6,0,4,0,9,0,1,2,40,10,2],
 "goption_8h.html#ae4fbf59caf665e55e91a9c245be0e27aaac90ade80645448fe7220d5d83e18630":[6,0,4,0,9,0,1,2,40,10,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX182 =
 "gpathbuf_8h.html#a0f1d229659af1b5d90127d3bf3e14709":[6,0,4,0,9,0,1,2,41,7],
 "gpathbuf_8h.html#a0f9c6132469a69105b04ece31659aa2d":[6,0,4,0,9,0,1,2,41,3],
 "gpathbuf_8h.html#a136693720e5270e2daf2bcc5028b1726":[6,0,4,0,9,0,1,2,41,13],
-"gpathbuf_8h.html#a249cda0fb9d658c33fef4f8662fbbe0d":[6,0,4,0,9,0,1,2,41,14],
-"gpathbuf_8h.html#a2500f47d654b0e5e545ccf18dc8da3f3":[6,0,4,0,9,0,1,2,41,8],
-"gpathbuf_8h.html#a379915556b8b68327064b97a312cf773":[6,0,4,0,9,0,1,2,41,12],
-"gpathbuf_8h.html#a4f3fc256e55c4b863baa93afd1aa6e1d":[6,0,4,0,9,0,1,2,41,5],
-"gpathbuf_8h.html#a6ec32be7a546e7bfcfc594ea571d5509":[6,0,4,0,9,0,1,2,41,17],
-"gpathbuf_8h.html#a7489e6c2818675903fe131ae15fd36f9":[6,0,4,0,9,0,1,2,41,10],
-"gpathbuf_8h.html#a81dc3482b25c97be4d38e657165db8ef":[6,0,4,0,9,0,1,2,41,9],
-"gpathbuf_8h.html#a8e8eb9a67c9c9731ca4e474f60debbeb":[6,0,4,0,9,0,1,2,41,11],
-"gpathbuf_8h.html#a9516b8004bd32678ad4b88d8588697f4":[6,0,4,0,9,0,1,2,41,16]
+"gpathbuf_8h.html#a249cda0fb9d658c33fef4f8662fbbe0d":[6,0,4,0,9,0,1,2,41,14]
 };

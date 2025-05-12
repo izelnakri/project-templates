@@ -1,5 +1,13 @@
 var NAVTREEINDEX340 =
 {
+"structVkPhysicalDeviceShaderIntegerDotProductFeatures.html#a7a255bae521ab411042359e1384472ae":[5,0,1872,0],
+"structVkPhysicalDeviceShaderIntegerDotProductFeatures.html#ac55889dfee8339ccd364030c2d0e7e93":[5,0,1872,1],
+"structVkPhysicalDeviceShaderIntegerDotProductFeatures.html#afd781b2a722199eb22838f5491fcc957":[5,0,1872,2],
+"structVkPhysicalDeviceShaderIntegerDotProductProperties.html":[5,0,1873],
+"structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a0394efb4b3c97225f18ac5d67442f7c1":[5,0,1873,23],
+"structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a03e9bf7b86061157b1d7277c029547af":[5,0,1873,5],
+"structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a051523167c092a611525a7c3a200f9af":[5,0,1873,29],
+"structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a0e62146e596d5efbf72ab0144a9a9015":[5,0,1873,21],
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a168f30ede4ec137e8cf9c19ef46f3ca0":[5,0,1873,18],
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a2d54ac4d1704cf863e80f40f02fa7e4f":[5,0,1873,8],
 "structVkPhysicalDeviceShaderIntegerDotProductProperties.html#a3b2c3093ab700310884a8b20002b57ec":[5,0,1873,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX340 =
 "structVkPhysicalDeviceVertexAttributeDivisorPropertiesEXT.html":[5,0,1916],
 "structVkPhysicalDeviceVertexAttributeDivisorPropertiesEXT.html#aac350d322ebdcd686db21546c793a0da":[5,0,1916,2],
 "structVkPhysicalDeviceVertexAttributeDivisorPropertiesEXT.html#ae0d4d21af136fb12a33423e3e97dfac1":[5,0,1916,1],
-"structVkPhysicalDeviceVertexAttributeDivisorPropertiesEXT.html#aed41fbca10d89b7713f4d8290c16f00b":[5,0,1916,0],
-"structVkPhysicalDeviceVertexAttributeDivisorPropertiesKHR.html":[5,0,1917],
-"structVkPhysicalDeviceVertexAttributeDivisorPropertiesKHR.html#a0972dc2bc2a1e0b14c1074b448c90461":[5,0,1917,2],
-"structVkPhysicalDeviceVertexAttributeDivisorPropertiesKHR.html#a5d32d0f34a132103467b7ef6dd4f7935":[5,0,1917,3],
-"structVkPhysicalDeviceVertexAttributeDivisorPropertiesKHR.html#a8b56470a48bacf21ac01956885c642f7":[5,0,1917,0],
-"structVkPhysicalDeviceVertexAttributeDivisorPropertiesKHR.html#aa26d11fc01df58181d683549f8205412":[5,0,1917,1],
-"structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html":[5,0,1918],
-"structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html#a24ca0c47da5e8664231da0bb397f2400":[5,0,1918,1],
-"structVkPhysicalDeviceVertexInputDynamicStateFeaturesEXT.html#a2fd03a0d08d62ef717fddedcaa063340":[5,0,1918,2]
+"structVkPhysicalDeviceVertexAttributeDivisorPropertiesEXT.html#aed41fbca10d89b7713f4d8290c16f00b":[5,0,1916,0]
 };

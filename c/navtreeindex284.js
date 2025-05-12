@@ -1,5 +1,13 @@
 var NAVTREEINDEX284 =
 {
+"pango-fontmap_8h.html#acac40d955ea1d89f28280182a5caa80a":[6,0,4,0,4,0,0,0,11,4],
+"pango-fontmap_8h.html#ace8ae6b60eb40792d5dff3cc7aa7a05a":[6,0,4,0,4,0,0,0,11,11],
+"pango-fontmap_8h.html#ae6fa9c7f737dd5ac70e2ca79863b9efb":[6,0,4,0,4,0,0,0,11,5],
+"pango-fontmap_8h.html#aecb16e3e86c2dfb418ae352232c5103f":[6,0,4,0,4,0,0,0,11,13],
+"pango-fontmap_8h_source.html":[6,0,4,0,4,0,0,0,11],
+"pango-fontset-simple_8h.html":[6,0,4,0,4,0,0,0,12],
+"pango-fontset-simple_8h.html#a0d7a021e1bdc8124024efcb24401e8b3":[6,0,4,0,4,0,0,0,12,5],
+"pango-fontset-simple_8h.html#a2250b07d4c7dd9193d8f7240b3672b61":[6,0,4,0,4,0,0,0,12,0],
 "pango-fontset-simple_8h.html#a31d5abe176dddf3e65ff787c94838fae":[6,0,4,0,4,0,0,0,12,1],
 "pango-fontset-simple_8h.html#a566de32b3090841c0a7daf4826c15270":[6,0,4,0,4,0,0,0,12,8],
 "pango-fontset-simple_8h.html#a5719f3ded677ae19133e0feae7955377":[6,0,4,0,4,0,0,0,12,3],
@@ -241,13 +249,5 @@ var NAVTREEINDEX284 =
 "pango-layout_8h.html#adf6ba9725bae4dec962f7d280ee7f77e":[6,0,4,0,4,0,0,0,19,36],
 "pango-layout_8h.html#adfbc75ef1c0f14e2898b387068c971f7":[6,0,4,0,4,0,0,0,19,20],
 "pango-layout_8h.html#adfbc75ef1c0f14e2898b387068c971f7a37f31bbe110f774dba97f1211f11ed1c":[6,0,4,0,4,0,0,0,19,20,0],
-"pango-layout_8h.html#adfbc75ef1c0f14e2898b387068c971f7a61c1681b022b9bf0ed7f97c1994dd601":[6,0,4,0,4,0,0,0,19,20,1],
-"pango-layout_8h.html#adfbc75ef1c0f14e2898b387068c971f7ae95762886849850575fe6a956dbb26dd":[6,0,4,0,4,0,0,0,19,20,2],
-"pango-layout_8h.html#ae7cc0929a88633f1e1c9b3a43b614e45":[6,0,4,0,4,0,0,0,19,33],
-"pango-layout_8h.html#ae8a10a651b4344b3413152849d8e6580":[6,0,4,0,4,0,0,0,19,122],
-"pango-layout_8h.html#aeca74ee6eccb1f76bcb5480b3e5b20f2":[6,0,4,0,4,0,0,0,19,99],
-"pango-layout_8h.html#aef9058b34f02b50238ce1591f8b4f391":[6,0,4,0,4,0,0,0,19,77],
-"pango-layout_8h.html#af2a50dcac756c9f1aa66eae2e32ee14d":[6,0,4,0,4,0,0,0,19,17],
-"pango-layout_8h.html#af2a50dcac756c9f1aa66eae2e32ee14da1683ca03eb60546d3ebb7e00d8eb4c52":[6,0,4,0,4,0,0,0,19,17,2],
-"pango-layout_8h.html#af2a50dcac756c9f1aa66eae2e32ee14da7ebb2638066d22f0a11ecbe2b8f1d3d7":[6,0,4,0,4,0,0,0,19,17,0]
+"pango-layout_8h.html#adfbc75ef1c0f14e2898b387068c971f7a61c1681b022b9bf0ed7f97c1994dd601":[6,0,4,0,4,0,0,0,19,20,1]
 };

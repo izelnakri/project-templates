@@ -1,5 +1,13 @@
 var NAVTREEINDEX330 =
 {
+"structVkIOSSurfaceCreateInfoMVK.html#ac0455e627d00292772b7cae503024f52":[5,0,1538,2],
+"structVkIOSSurfaceCreateInfoMVK.html#ac86c9b6aa25aa12415ddcf9f1f51434d":[5,0,1538,1],
+"structVkIcdSurfaceBase.html":[5,0,1459],
+"structVkIcdSurfaceBase.html#afe8fcdc5022727645967b3771a480515":[5,0,1459,0],
+"structVkIcdSurfaceDisplay.html":[5,0,1460],
+"structVkIcdSurfaceDisplay.html#a3b30b4e7ee3161f49d33f76fe2d7557d":[5,0,1460,4],
+"structVkIcdSurfaceDisplay.html#a4a82b4e6ced454964aeae42ba8db1307":[5,0,1460,6],
+"structVkIcdSurfaceDisplay.html#a52351fd978666aa3c655b2f9c071cf57":[5,0,1460,1],
 "structVkIcdSurfaceDisplay.html#a7488c4e9cd80519390705fe9ff7e0640":[5,0,1460,0],
 "structVkIcdSurfaceDisplay.html#a798eca66eb6dc5ab1058c4d8bcf5bfb3":[5,0,1460,7],
 "structVkIcdSurfaceDisplay.html#a8b8ae1661dd974c1522e411aa81724b6":[5,0,1460,2],
@@ -241,13 +249,5 @@ var NAVTREEINDEX330 =
 "structVkImageViewSampleWeightCreateInfoQCOM.html#a42d4ddd45460410885a4f62928377253":[5,0,1500,2],
 "structVkImageViewSampleWeightCreateInfoQCOM.html#a8eee4d4670f9d0640a36f2a10535ce15":[5,0,1500,0],
 "structVkImageViewSampleWeightCreateInfoQCOM.html#a933141275f1b1856b6fd0ebbe59cbc33":[5,0,1500,4],
-"structVkImageViewSampleWeightCreateInfoQCOM.html#a9925ad36cc27eaf7ed6b0b881311e346":[5,0,1500,3],
-"structVkImageViewSampleWeightCreateInfoQCOM.html#adda4120fbc2ea49ce7fc9c9826f847a2":[5,0,1500,1],
-"structVkImageViewSlicedCreateInfoEXT.html":[5,0,1501],
-"structVkImageViewSlicedCreateInfoEXT.html#a03f48b2db71450e97e608418f0bcc125":[5,0,1501,1],
-"structVkImageViewSlicedCreateInfoEXT.html#a39422344c4ec163cb00e6fbe8887e879":[5,0,1501,3],
-"structVkImageViewSlicedCreateInfoEXT.html#a6353db33fc753f37e7e2b8a120679a5e":[5,0,1501,2],
-"structVkImageViewSlicedCreateInfoEXT.html#af72737caec4862fad15ff22db0441415":[5,0,1501,0],
-"structVkImageViewUsageCreateInfo.html":[5,0,1502],
-"structVkImageViewUsageCreateInfo.html#a5cb0a3663e2596b26b35c24484a67160":[5,0,1502,2]
+"structVkImageViewSampleWeightCreateInfoQCOM.html#a9925ad36cc27eaf7ed6b0b881311e346":[5,0,1500,3]
 };

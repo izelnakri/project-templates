@@ -1,5 +1,13 @@
 var NAVTREEINDEX324 =
 {
+"structVkBindDescriptorBufferEmbeddedSamplersInfoEXT.html#ab7a7343cc42a681d105d016d569230af":[5,0,1198,3],
+"structVkBindDescriptorSetsInfoKHR.html":[5,0,1199],
+"structVkBindDescriptorSetsInfoKHR.html#a069cbeb9472ce8fee2ec5946f1493976":[5,0,1199,1],
+"structVkBindDescriptorSetsInfoKHR.html#a075491125657d37332182f58ed13a404":[5,0,1199,5],
+"structVkBindDescriptorSetsInfoKHR.html#a2c9d8e64a88ba9b3a8f57ebd6e4e51d5":[5,0,1199,8],
+"structVkBindDescriptorSetsInfoKHR.html#a49dc79f53face0638c6a7a53c817acc1":[5,0,1199,2],
+"structVkBindDescriptorSetsInfoKHR.html#a7a62dfe669922149f7930acdfead6bd8":[5,0,1199,0],
+"structVkBindDescriptorSetsInfoKHR.html#ab7e68b4ea818d5a3d5cafb83f090edda":[5,0,1199,6],
 "structVkBindDescriptorSetsInfoKHR.html#adb87c963995f5882e5317f58f6494253":[5,0,1199,7],
 "structVkBindDescriptorSetsInfoKHR.html#ade6d243c7db50e265353fb08e6405f84":[5,0,1199,3],
 "structVkBindDescriptorSetsInfoKHR.html#aede8992665afa40b12e9e21903dafb1d":[5,0,1199,4],
@@ -241,13 +249,5 @@ var NAVTREEINDEX324 =
 "structVkClearDepthStencilValue.html#a8d331122372147ef1d19201488457f6c":[5,0,1241,0],
 "structVkClearRect.html":[5,0,1242],
 "structVkClearRect.html#a64234948e35c29adca91bdf9a8f9d06f":[5,0,1242,2],
-"structVkClearRect.html#aa82d839c9b8a5f6ebec96d714da18d70":[5,0,1242,1],
-"structVkClearRect.html#ad8eb083eb7d6ae3609091816c51c5dff":[5,0,1242,0],
-"structVkCoarseSampleLocationNV.html":[5,0,1244],
-"structVkCoarseSampleLocationNV.html#a2aab742a62f62858c2a6433fbdafb1b3":[5,0,1244,0],
-"structVkCoarseSampleLocationNV.html#a34809952d7d0c35dcba8cc661492fd38":[5,0,1244,1],
-"structVkCoarseSampleLocationNV.html#aaafbc76ff95355d0b2c3264ee4f84539":[5,0,1244,2],
-"structVkCoarseSampleOrderCustomNV.html":[5,0,1245],
-"structVkCoarseSampleOrderCustomNV.html#a3f7d509dfd2bcec873008a411eb90a74":[5,0,1245,0],
-"structVkCoarseSampleOrderCustomNV.html#a466b5989ad546330ce3b4daffc3417f6":[5,0,1245,1]
+"structVkClearRect.html#aa82d839c9b8a5f6ebec96d714da18d70":[5,0,1242,1]
 };

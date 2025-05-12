@@ -1,5 +1,13 @@
 var NAVTREEINDEX352 =
 {
+"struct__GDBusInterfaceIface.html#a6217314c7013ef276d3e9b79535c80b0":[5,0,49,0],
+"struct__GDBusInterfaceIface.html#aa243cbcec50c79dc0349cc0041039bb6":[5,0,49,4],
+"struct__GDBusInterfaceIface.html#abcdc474defab4979a80eefc5970c22e1":[5,0,49,1],
+"struct__GDBusInterfaceInfo.html":[5,0,50],
+"struct__GDBusInterfaceInfo.html#a2b8d0815897eb51f77d544502ba2d001":[5,0,50,2],
+"struct__GDBusInterfaceInfo.html#a3acc90b84b348cf54e7089aa5ea5dc60":[5,0,50,0],
+"struct__GDBusInterfaceInfo.html#a9cd651c049cb6b8aebc343a0dd10f127":[5,0,50,4],
+"struct__GDBusInterfaceInfo.html#aca8fcc23f30365fbd320a2f6ae3f8ef8":[5,0,50,5],
 "struct__GDBusInterfaceInfo.html#adeb477976fbfde497a20a98a13c05eca":[5,0,50,1],
 "struct__GDBusInterfaceInfo.html#ae3e63486c0a9940138885335f701915d":[5,0,50,3],
 "struct__GDBusInterfaceSkeleton.html":[5,0,51],
@@ -241,13 +249,5 @@ var NAVTREEINDEX352 =
 "struct__GFileEnumeratorClass.html#afe0fc0e769d31cb08ff4439ff0f527e8":[5,0,99,8],
 "struct__GFileEnumeratorClass.html#afeb593b899ec2bf92e2fa4a6a9e1e690":[5,0,99,13],
 "struct__GFileIOStream.html":[5,0,103],
-"struct__GFileIOStream.html#a599565b9f30679556d6a5ffd62e98266":[5,0,103,1],
-"struct__GFileIOStream.html#ab7cb4c8626eae0ad54a6a714144256a8":[5,0,103,0],
-"struct__GFileIOStreamClass.html":[5,0,104],
-"struct__GFileIOStreamClass.html#a07448c219e40fa5fe72f791069b9923a":[5,0,104,0],
-"struct__GFileIOStreamClass.html#a16fd19c5d656d8e59b6af9d45de04b26":[5,0,104,8],
-"struct__GFileIOStreamClass.html#a1e8323a28100b829df6cdea57bd1d7c9":[5,0,104,3],
-"struct__GFileIOStreamClass.html#a3a33c52be912425efefb5c6fd8fd5afc":[5,0,104,12],
-"struct__GFileIOStreamClass.html#a69275470dcb7d4c487ab94939fbc50a6":[5,0,104,4],
-"struct__GFileIOStreamClass.html#a6a90abdb0b2614cd916e0878a80ae08a":[5,0,104,6]
+"struct__GFileIOStream.html#a599565b9f30679556d6a5ffd62e98266":[5,0,103,1]
 };

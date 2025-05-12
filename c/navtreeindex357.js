@@ -1,5 +1,13 @@
 var NAVTREEINDEX357 =
 {
+"struct__GSocketListenerClass.html#abb55bc37bdb458ed3241ea32b8e70f6e":[5,0,278,4],
+"struct__GSocketListenerClass.html#aef98725715669634302d742bff4fe12e":[5,0,278,6],
+"struct__GSocketService.html":[5,0,279],
+"struct__GSocketService.html#a07bd718164e9b9682c19612f94ac06f4":[5,0,279,0],
+"struct__GSocketService.html#abcf7c2f71476a864e5a8f25e5c8a1b8f":[5,0,279,1],
+"struct__GSocketServiceClass.html":[5,0,280],
+"struct__GSocketServiceClass.html#a185a44f0af663795587fb11481927d4d":[5,0,280,3],
+"struct__GSocketServiceClass.html#a27f60b96b8696b99abcedb3c3beea7b2":[5,0,280,2],
 "struct__GSocketServiceClass.html#a372366817e30dad84376f15f45f84bd1":[5,0,280,4],
 "struct__GSocketServiceClass.html#a6433cec0f8c2c76c90e07214cb518d2a":[5,0,280,5],
 "struct__GSocketServiceClass.html#a9b42b3d21a7e8b29be95e8c415bafb4a":[5,0,280,0],
@@ -241,13 +249,5 @@ var NAVTREEINDEX357 =
 "struct__GTypeQuery.html#ab80027e21ab4ffbd4bcb3c5bcb835a6f":[5,0,463,1],
 "struct__GTypeValueTable.html":[5,0,464],
 "struct__GTypeValueTable.html#a043d5ae896efabbeb4dec17a14522ece":[5,0,464,7],
-"struct__GTypeValueTable.html#a0cf5bf7dd257454bda58dbf209ae43b7":[5,0,464,5],
-"struct__GTypeValueTable.html#a5f046322d15460c510a94a41b36a83dd":[5,0,464,0],
-"struct__GTypeValueTable.html#a88a757d20ebd21189d2b8e16ac46393a":[5,0,464,1],
-"struct__GTypeValueTable.html#a8c2d94242239bff887f3f414f6611975":[5,0,464,3],
-"struct__GTypeValueTable.html#a94e65d0e4602114325705b426f4697a0":[5,0,464,2],
-"struct__GTypeValueTable.html#aa985ba574fb13f528bf7a61548096ef9":[5,0,464,4],
-"struct__GTypeValueTable.html#ae66e02149812700d1e2f0b4943faaebe":[5,0,464,6],
-"struct__GUnixConnection.html":[5,0,465],
-"struct__GUnixConnection.html#a6192d92e07562e5ee0d1996e9aae3acc":[5,0,465,0]
+"struct__GTypeValueTable.html#a0cf5bf7dd257454bda58dbf209ae43b7":[5,0,464,5]
 };

@@ -1,5 +1,13 @@
 var NAVTREEINDEX345 =
 {
+"structVkSampleLocationEXT.html#a84fbfba1bccbd29deaa15285c9ffbf98":[5,0,2059,1],
+"structVkSampleLocationsInfoEXT.html":[5,0,2060],
+"structVkSampleLocationsInfoEXT.html#a6cdab4244077138d1b41f8ff6cfe7a8a":[5,0,2060,4],
+"structVkSampleLocationsInfoEXT.html#a72f1f632459bd714903435daa21908a5":[5,0,2060,3],
+"structVkSampleLocationsInfoEXT.html#aa0ed24fece08ba7f8fdfc54b48b86264":[5,0,2060,2],
+"structVkSampleLocationsInfoEXT.html#ab284a3f36be5d44dcbfdf9b30c4ed578":[5,0,2060,5],
+"structVkSampleLocationsInfoEXT.html#ab46e44d99dafa4bedf5cc4c3c20dfa77":[5,0,2060,1],
+"structVkSampleLocationsInfoEXT.html#aee74fe71c7b6d4bea4824988219d8dd9":[5,0,2060,0],
 "structVkSamplerBlockMatchWindowCreateInfoQCOM.html":[5,0,2061],
 "structVkSamplerBlockMatchWindowCreateInfoQCOM.html#a1132f79c18b3a22962b3828cc7936fbd":[5,0,2061,3],
 "structVkSamplerBlockMatchWindowCreateInfoQCOM.html#a84260ad02e5e221896a95686b643e6eb":[5,0,2061,1],
@@ -241,13 +249,5 @@ var NAVTREEINDEX345 =
 "structVkSparseImageOpaqueMemoryBindInfo.html#a7eb2126a4205a6d14383bc42f38fa5db":[5,0,2101,2],
 "structVkSparseImageOpaqueMemoryBindInfo.html#ad193f6d9093db47bfbed87d0b28628a7":[5,0,2101,0],
 "structVkSparseMemoryBind.html":[5,0,2102],
-"structVkSparseMemoryBind.html#a2abea1b403e86538e052e2f583d7476c":[5,0,2102,3],
-"structVkSparseMemoryBind.html#a737a6041db20fd064d4e0c59a49e266c":[5,0,2102,1],
-"structVkSparseMemoryBind.html#a784c20bcb04d44e598408ba4c0f9474d":[5,0,2102,4],
-"structVkSparseMemoryBind.html#aafc2ecd374d418e9d4afbb1a746864dd":[5,0,2102,0],
-"structVkSparseMemoryBind.html#afe34d7e3d24221f66d95946badc23e67":[5,0,2102,2],
-"structVkSpecializationInfo.html":[5,0,2103],
-"structVkSpecializationInfo.html#a150ae19863ed02663be085233ff70583":[5,0,2103,3],
-"structVkSpecializationInfo.html#a26842255e465754ab17c7d8a27ac09b6":[5,0,2103,2],
-"structVkSpecializationInfo.html#a44f1f7b5ab92376e3423c388f505e36c":[5,0,2103,0]
+"structVkSparseMemoryBind.html#a2abea1b403e86538e052e2f583d7476c":[5,0,2102,3]
 };
