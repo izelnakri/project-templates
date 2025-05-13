@@ -188,7 +188,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   71</span>  <span class="comment">// Receive response</span></div>
 <div class="line"><span class="lineno">   72</span>  beast::flat_buffer buffer;</div>
 <div class="line"><span class="lineno">   73</span>  http::response&lt;http::string_body&gt; res;</div>
-<div class="line"><span class="lineno">   74</span>  http::read(stream, buffer, res);</div>
+<div class="line"><span class="lineno">   74</span>  http::read(stream, buffer, res); <span class="comment">// flawfinder: ignore</span></div>
 <div class="line"><span class="lineno">   75</span> </div>
 <div class="line"><span class="lineno">   76</span>  <span class="keywordflow">if</span> (res.result() != http::status::ok) {</div>
 <div class="line"><span class="lineno">   77</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;Failed to fetch user: HTTP &quot;</span> +</div>
@@ -207,13 +207,13 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   90</span>  <span class="keyword">const</span> std::string location = json.value(<span class="stringliteral">&quot;location&quot;</span>, <span class="stringliteral">&quot;&quot;</span>);</div>
 <div class="line"><span class="lineno">   91</span> </div>
 <div class="line"><span class="lineno">   92</span>  <span class="comment">// Shutdown SSL</span></div>
-<div class="line"><span class="lineno">   93</span>  beast::error_code ec;</div>
-<div class="line"><span class="lineno">   94</span>  stream.shutdown(ec);</div>
-<div class="line"><span class="lineno">   95</span>  <span class="keywordflow">if</span> (ec == net::error::eof) {</div>
-<div class="line"><span class="lineno">   96</span>    ec = {}; <span class="comment">// Ignore EOF on shutdown</span></div>
+<div class="line"><span class="lineno">   93</span>  beast::error_code error_code;</div>
+<div class="line"><span class="lineno">   94</span>  stream.shutdown(error_code);</div>
+<div class="line"><span class="lineno">   95</span>  <span class="keywordflow">if</span> (error_code == net::error::eof) {</div>
+<div class="line"><span class="lineno">   96</span>    error_code = {}; <span class="comment">// Ignore EOF on shutdown</span></div>
 <div class="line"><span class="lineno">   97</span>  }</div>
-<div class="line"><span class="lineno">   98</span>  <span class="keywordflow">if</span> (ec) {</div>
-<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">throw</span> beast::system_error{ec};</div>
+<div class="line"><span class="lineno">   98</span>  <span class="keywordflow">if</span> (error_code) {</div>
+<div class="line"><span class="lineno">   99</span>    <span class="keywordflow">throw</span> beast::system_error{error_code};</div>
 <div class="line"><span class="lineno">  100</span>  }</div>
 <div class="line"><span class="lineno">  101</span> </div>
 <div class="line"><span class="lineno">  102</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="structUser.html">User</a>{login, <a class="code hl_variable" href="lsqlite3_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a>, company, location};</div>
