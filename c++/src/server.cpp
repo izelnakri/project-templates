@@ -34,9 +34,10 @@ private:
   void read_request() {
     auto self = shared_from_this();
     http::async_read(socket_, buffer_, req_,
-                     [self](beast::error_code ec, std::size_t) {
-                       if (!ec)
+                     [self](beast::error_code error_code, std::size_t) {
+                       if (!error_code) {
                          self->handle_request();
+                       }
                      });
   }
 
@@ -55,13 +56,13 @@ private:
     } else {
       try {
         User user = fetch_github_user(username);
-        nlohmann::json j = {{"login", user.getLogin()},
-                            {"name", user.getName()},
-                            {"company", user.getCompany()},
-                            {"location", user.getLocation()}};
+        nlohmann::json json = {{"login", user.getLogin()},
+                               {"name", user.getName()},
+                               {"company", user.getCompany()},
+                               {"location", user.getLocation()}};
         res->result(http::status::ok);
         res->set(http::field::content_type, "application/json");
-        res->body() = j.dump();
+        res->body() = json.dump();
       } catch (const std::exception &e) {
         res->result(http::status::not_found);
         res->set(http::field::content_type, "text/plain");
@@ -72,10 +73,15 @@ private:
     res->prepare_payload();
 
     auto self = shared_from_this();
-    http::async_write(socket_, *res,
-                      [self, res](beast::error_code ec, std::size_t) {
-                        self->socket_.shutdown(tcp::socket::shutdown_send, ec);
-                      });
+    http::async_write(
+        socket_, *res,
+        [self, res](beast::error_code /*error_code*/, std::size_t) {
+          try {
+            self->socket_.shutdown(tcp::socket::shutdown_send);
+          } catch (const boost::system::system_error &system_error) {
+            std::cerr << "Shutdown error: " << system_error.what() << '\n';
+          }
+        });
   }
 };
 
@@ -93,13 +99,15 @@ void start_http_server(int port) {
     tcp::acceptor acceptor{ioc, {tcp::v4(), static_cast<unsigned short>(port)}};
 
     auto do_accept = [&](auto &&self) -> void {
-      acceptor.async_accept([&](beast::error_code ec, tcp::socket socket) {
-        if (!ec) {
-          std::make_shared<HttpSession>(std::move(socket))->start();
-        }
-        if (!ioc.stopped())
-          self(self); // accept next connection
-      });
+      acceptor.async_accept(
+          [&](beast::error_code error_code, tcp::socket socket) {
+            if (!error_code) {
+              std::make_shared<HttpSession>(std::move(socket))->start();
+            }
+            if (!ioc.stopped()) {
+              self(self); // accept next connection
+            }
+          });
     };
 
     do_accept(do_accept);
@@ -109,17 +117,19 @@ void start_http_server(int port) {
     std::cout << "Press Ctrl+C to quit.\n";
 
     // Run io_context on multiple threads
-    const auto num_threads = std::max(1u, std::thread::hardware_concurrency());
+    const auto num_threads = std::max(1U, std::thread::hardware_concurrency());
     std::vector<std::thread> threads;
     threads.reserve(num_threads - 1);
 
-    for (unsigned i = 0; i < num_threads - 1; ++i)
+    for (unsigned i = 0; i < num_threads - 1; ++i) {
       threads.emplace_back([&ioc]() { ioc.run(); });
+    }
 
     ioc.run();
 
-    for (auto &t : threads)
-      t.join();
+    for (auto &thread : threads) {
+      thread.join();
+    }
   } catch (const std::exception &e) {
     std::cerr << "Server error: " << e.what() << "\n";
   }

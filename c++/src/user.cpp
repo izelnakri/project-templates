@@ -36,7 +36,7 @@ void User::print() const {
   std::cout << "Login: " << login_ << "\n"
             << "Name: " << name_ << "\n"
             << "Company: " << company_ << "\n"
-            << "Location: " << location_ << std::endl;
+            << "Location: " << location_ << '\n';
 }
 
 // -- fetch_github_user implementation --
@@ -71,7 +71,7 @@ User fetch_github_user(const std::string &username) {
   // Receive response
   beast::flat_buffer buffer;
   http::response<http::string_body> res;
-  http::read(stream, buffer, res);
+  http::read(stream, buffer, res); // flawfinder: ignore
 
   if (res.result() != http::status::ok) {
     throw std::runtime_error("Failed to fetch user: HTTP " +
@@ -90,13 +90,13 @@ User fetch_github_user(const std::string &username) {
   const std::string location = json.value("location", "");
 
   // Shutdown SSL
-  beast::error_code ec;
-  stream.shutdown(ec);
-  if (ec == net::error::eof) {
-    ec = {}; // Ignore EOF on shutdown
+  beast::error_code error_code;
+  stream.shutdown(error_code);
+  if (error_code == net::error::eof) {
+    error_code = {}; // Ignore EOF on shutdown
   }
-  if (ec) {
-    throw beast::system_error{ec};
+  if (error_code) {
+    throw beast::system_error{error_code};
   }
 
   return User{login, name, company, location};

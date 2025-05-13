@@ -5,7 +5,7 @@
 #include <sstream>
 
 // Benchmark for User constructor
-static void BM_UserConstructor(benchmark::State &state) {
+static void BM_UserConstructor(const benchmark::State &state) {
   for (auto _ : state) {
     // Prevent compiler from optimizing away the object
     benchmark::DoNotOptimize(
@@ -15,7 +15,7 @@ static void BM_UserConstructor(benchmark::State &state) {
 BENCHMARK(BM_UserConstructor);
 
 // Benchmark for User::print()
-static void BM_UserPrint(benchmark::State &state) {
+static void BM_UserPrint(const benchmark::State &state) {
   User user("octocat", "The Octocat", "GitHub", "San Francisco");
 
   for (auto _ : state) {
