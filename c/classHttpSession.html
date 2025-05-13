@@ -226,10 +226,10 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   76</span>    http::async_write(</div>
 <div class="line"><span class="lineno">   77</span>        <a class="code hl_variable" href="#ab78fa6a6b461971139fcc4890e7a6784">socket_</a>, *res,</div>
 <div class="line"><span class="lineno">   78</span>        [self, res](beast::error_code <span class="comment">/*error_code*/</span>, std::size_t) {</div>
-<div class="line"><span class="lineno">   79</span>          boost::system::error_code error_code =</div>
-<div class="line"><span class="lineno">   80</span>              self-&gt;socket_.shutdown(tcp::socket::shutdown_send);</div>
-<div class="line"><span class="lineno">   81</span>          <span class="keywordflow">if</span> (error_code) {</div>
-<div class="line"><span class="lineno">   82</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Shutdown error: &quot;</span> &lt;&lt; error_code.message() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">   79</span>          <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   80</span>            self-&gt;socket_.shutdown(tcp::socket::shutdown_send);</div>
+<div class="line"><span class="lineno">   81</span>          } <span class="keywordflow">catch</span> (<span class="keyword">const</span> boost::system::system_error &amp;system_error) {</div>
+<div class="line"><span class="lineno">   82</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Shutdown error: &quot;</span> &lt;&lt; system_error.what() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
 <div class="line"><span class="lineno">   83</span>          }</div>
 <div class="line"><span class="lineno">   84</span>        });</div>
 <div class="line"><span class="lineno">   85</span>  }</div>
