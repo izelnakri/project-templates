@@ -35,7 +35,7 @@ if(NOT Boost_FOUND)
     add_library(Boost::system ALIAS PkgConfig::BOOST)
 endif()
 
-find_package(OpenSSL REQUIRED)
+find_package(OpenSSL REQUIRED) # NOTE: doesnt check from pkg-config most likely
 
 find_package(nlohmann_json QUIET)
 if(NOT nlohmann_json_FOUND)
@@ -78,38 +78,32 @@ add_custom_command(
 )
 add_custom_target(css_header DEPENDS ${CMAKE_CURRENT_BINARY_DIR}/style_css.hpp)
 
-# TODO: Improve sysprof stuff via pkg-config
-pkg_check_modules(GTKMM REQUIRED gtkmm-4.0)
-# Try to find sysprof but don't require it
-pkg_check_modules(SYSPROF sysprof-capture-4)
-include_directories(${GTKMM_INCLUDE_DIRS})
-link_directories(${GTKMM_LIBRARY_DIRS})
+pkg_check_modules(GTKMM REQUIRED IMPORTED_TARGET gtkmm-4.0) # NOTE: naming of the first parameter is optional
+add_library(gtkmm ALIAS PkgConfig::GTKMM) # NOTE: this eventually results in -lgtkmm, 
+
+set(GUI_DEPENDENCIES
+  gtkmm
+)
 
 add_executable(github_user_fetcher_gui src/gui.cpp ${CMAKE_CURRENT_BINARY_DIR}/style_css.hpp)
 add_dependencies(github_user_fetcher_gui css_header)
 target_include_directories(github_user_fetcher_gui PRIVATE ${CMAKE_CURRENT_BINARY_DIR})
-target_link_libraries(github_user_fetcher_gui PRIVATE github_user_fetcher_static ${GTKMM_LIBRARIES})
+target_link_libraries(github_user_fetcher_gui PRIVATE github_user_fetcher_static ${GUI_DEPENDENCIES})
 
-# Create directory for cmake files and pc.in file
-file(MAKE_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/cmake)
-
-# Create the pkg-config template file if it doesn't exist
-if(NOT EXISTS "${CMAKE_CURRENT_SOURCE_DIR}/cmake/github_user_fetcher.pc.in")
-    file(WRITE "${CMAKE_CURRENT_SOURCE_DIR}/cmake/github_user_fetcher.pc.in"
-"prefix=@CMAKE_INSTALL_PREFIX@
-exec_prefix=${prefix}
-libdir=${exec_prefix}/lib
-includedir=${prefix}/include
+file(GENERATE OUTPUT ${CMAKE_CURRENT_BINARY_DIR}/github_user_fetcher.pc CONTENT 
+"prefix=${CMAKE_INSTALL_PREFIX}
+exec_prefix=\${prefix}
+libdir=\${exec_prefix}/lib
+includedir=\${prefix}/include
 
 Name: github_user_fetcher
 Description: My github_user_fetcher library
-Version: @PROJECT_VERSION@
-Libs: -L${libdir} -lgithub_user_fetcher
-Cflags: -I${includedir}
-")
-endif()
+Version: ${PROJECT_VERSION}
+Libs: -L\${libdir} -lgithub_user_fetcher
+Cflags: -I\${includedir}
+"
+)
 
-# Install targets
 install(TARGETS github_user_fetcher github_user_fetcher_gui github_user_fetcher_shared github_user_fetcher_static
         RUNTIME DESTINATION bin
         LIBRARY DESTINATION lib
@@ -118,12 +112,6 @@ install(TARGETS github_user_fetcher github_user_fetcher_gui github_user_fetcher_
 install(FILES src/user.hpp DESTINATION include/github_user_fetcher)
 install(FILES src/style.css DESTINATION share/github_user_fetcher)
 
-# Generate and install pkg-config file
-configure_file(
-    ${CMAKE_CURRENT_SOURCE_DIR}/cmake/github_user_fetcher.pc.in
-    ${CMAKE_CURRENT_BINARY_DIR}/github_user_fetcher.pc
-    @ONLY
-)
 install(FILES ${CMAKE_CURRENT_BINARY_DIR}/github_user_fetcher.pc
         DESTINATION lib/pkgconfig)
 
@@ -131,7 +119,6 @@ option(BUILD_TESTS "Build the tests" ON)
 if(BUILD_TESTS)
     enable_testing()
     
-    # Find test dependencies with fallback to pkg-config
     find_package(Catch2 QUIET)
     if(NOT Catch2_FOUND)
         pkg_check_modules(CATCH2 REQUIRED IMPORTED_TARGET catch2-with-main)
@@ -140,7 +127,6 @@ if(BUILD_TESTS)
     
     find_package(CURL REQUIRED)
     
-    # Define test suites and sources
     set(TEST_SUITES
         unit
         api
@@ -160,7 +146,6 @@ if(BUILD_TESTS)
         tests/cli/test_cli.cpp
     )
     
-    # Build tests
     foreach(SUITE ${TEST_SUITES})
         add_executable(test_${SUITE} ${TEST_SOURCES_${SUITE}})
         target_link_libraries(test_${SUITE} PRIVATE
