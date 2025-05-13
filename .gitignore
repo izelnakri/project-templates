@@ -5,3 +5,9 @@ c/build
 c/access.log
 c/compile_commands.json
 c/docs/html
+
+c++/flatpak/build
+c++/flatpak/nix-deps.tar.gz
+c++/build
+c++/compile_commands.json
+c++/docs/html

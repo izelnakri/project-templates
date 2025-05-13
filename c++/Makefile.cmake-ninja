@@ -2,7 +2,7 @@
 
 BUILD_TYPE ?= Debug
 CMAKE_FLAGS ?=
-PARALLEL_JOBS = $(shell nproc || echo 2)
+CMAKE_BUILD_DIR = build
 
 ifeq ($(DEBUG), true)
   BUILD_TYPE := Debug
@@ -14,19 +14,19 @@ endif
 all: clean-all build
 
 setup:
-	cmake -B build -DCMAKE_BUILD_TYPE=$(BUILD_TYPE) $(CMAKE_FLAGS)
+	cmake -B $(CMAKE_BUILD_DIR) -G Ninja -DCMAKE_BUILD_TYPE=$(BUILD_TYPE) $(CMAKE_FLAGS)
 
 check-setup:
-	@if [ ! -d build ]; then \
-		echo "Run 'cmake -B build' first!"; \
-		make -f Makefile.cmake setup; \
+	@if [ ! -d $(CMAKE_BUILD_DIR) ]; then \
+		echo "Setting up build directory with Ninja..."; \
+		make -f "Makefile.cmake-ninja" setup; \
 	fi
 
 build: check-setup
-	cmake --build build -j$(PARALLEL_JOBS)
+	cmake --build $(CMAKE_BUILD_DIR)
 
 clean:
-	rm -rf build access.log
+	rm -rf $(CMAKE_BUILD_DIR) access.log
 
 clean-all: clean flatpak-clean
 	rm -rf docs/html
@@ -37,39 +37,36 @@ develop:
 	@if [ -z "$$IS_NIX_SHELL" ]; then nix develop; else echo "Already in nix shell"; fi
 
 test: check-setup
-	cmake --build build -j$(PARALLEL_JOBS) && cd build && ctest --output-on-failure
+	cmake --build $(CMAKE_BUILD_DIR) && cd build && ctest --output-on-failure
 
 test-unit: check-setup
-	cmake --build build --target test_unit -j$(PARALLEL_JOBS) && cd build && ctest -L unit --output-on-failure
+	cmake --build $(CMAKE_BUILD_DIR) --target test_unit && cd build && ctest -L unit --output-on-failure
 
 test-api: check-setup
-	cmake --build build --target test_api -j$(PARALLEL_JOBS) && cd build && ctest -L api --output-on-failure
+	cmake --build $(CMAKE_BUILD_DIR) --target test_api  & cd build && ctest -L api --output-on-failure
 
 test-cli: check-setup
-	cmake --build build -j$(PARALLEL_JOBS) && cd build && ctest -L cli --output-on-failure
+	cmake --build $(CMAKE_BUILD_DIR) && cd build && ctest -L cli --output-on-failure
 
-run-cli: check-setup
-	cmake --build build -j$(PARALLEL_JOBS) && ./build/github_user_fetcher
+run-cli: build
+	./$(CMAKE_BUILD_DIR)/github_user_fetcher
 
-run-cli-server: check-setup
-	cmake --build build -j$(PARALLEL_JOBS) && ./build/github_user_fetcher --server
+run-cli-server: build
+	./$(CMAKE_BUILD_DIR)/github_user_fetcher --server
 
 run-server: run-cli-server
 
-run-gui: check-setup
-	cmake --build build --target github_user_fetcher_gui -j$(PARALLEL_JOBS) && ./build/github_user_fetcher_gui
+run-gui: build
+	cmake --build $(CMAKE_BUILD_DIR) --target github_user_fetcher_gui && ./$(CMAKE_BUILD_DIR)/github_user_fetcher_gui
 
 cli: run-cli
-
 cli-server: run-cli-server
-
 server: cli-server
-
 gui: run-gui
 
 compile-commands:
-	@if [ ! -d build ]; then cmake -B build -DCMAKE_BUILD_TYPE=$(BUILD_TYPE) -DCMAKE_EXPORT_COMPILE_COMMANDS=ON; else cmake -B build -DCMAKE_EXPORT_COMPILE_COMMANDS=ON; fi
-	cp build/compile_commands.json .
+	@cmake -B $(CMAKE_BUILD_DIR) -G Ninja -DCMAKE_BUILD_TYPE=$(BUILD_TYPE) -DCMAKE_EXPORT_COMPILE_COMMANDS=ON $(CMAKE_FLAGS)
+	cp $(CMAKE_BUILD_DIR)/compile_commands.json .
 
 lint: lint-clang-tidy lint-cppcheck lint-flawfinder
 
@@ -79,23 +76,23 @@ lint-clang-tidy: compile-commands
 
 lint-cppcheck:
 	@echo "Running cppcheck..."
-	cppcheck --enable=all --error-exitcode=1 --suppress=unusedStructMember --suppress=missingIncludeSystem --inline-suppr --quiet --check-level=exhaustive -I./src $(wildcard src/*.c src/*.cpp src/*.h src/*.hpp)
+	cppcheck --enable=all --error-exitcode=1 --suppress=unusedStructMember --suppress=missingIncludeSystem --inline-suppr --quiet --check-level=exhaustive -I./src $(wildcard src/*.[ch]pp src/*.[ch])
 
 lint-flawfinder:
 	@echo "Running flawfinder (security check)..."
-	flawfinder --minlevel=1 $(wildcard src/*.c src/*.cpp src/*.h src/*.hpp benchmarks/*.cpp benchmarks/*.hpp)
+	flawfinder --minlevel=1 $(wildcard src/*.[ch]pp src/*.[ch] benchmarks/*.[ch]pp)
 
 lint-fix:
-	@find src -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" | xargs -r clang-tidy -fix -fix-errors -p .
+	find src -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" | xargs -r clang-tidy -fix -fix-errors -p .
 
 format:
 	@echo "Formatting code with clang-format..."
-	@find src tests benchmarks -name "*.c" -o -name "*.h" -o -name "*.cpp" -o -name "*.hpp" | xargs clang-format -i -style=file
+	find src tests benchmarks -name "*.[ch]pp" -o -name "*.[ch]" | xargs clang-format -i -style=file
 	@echo "Code formatting complete."
 
 format-check:
 	@echo "Checking code formatting..."
-	@find src tests benchmarks -name "*.c" -o -name "*.h" -o -name "*.cpp" -o -name "*.hpp" | xargs -I{} bash -c 'clang-format -style=file {} | diff --color=always -u {} - || printf "\033[31m=> File {} needs formatting\033[0m\n"'
+	find src tests benchmarks -name "*.[ch]pp" -o -name "*.[ch]" | xargs -I{} bash -c 'clang-format -style=file {} | diff --color=always -u {} - || printf "\033[31m=> File {} needs formatting\033[0m\n"'
 
 docker-build-image:
 ifeq ($(RELEASE), true)
@@ -114,17 +111,14 @@ docker-run-cli-user: docker-build-image
 
 docker-run-cli-server: docker-build-image
 	sudo docker load < ./result
-	sudo docker run -it --rm \
-		-p 1234:1234 \
-		--init \
-		github_user_fetcher github_user_fetcher --server
+	sudo docker run -it --rm -p 1234:1234 --init github_user_fetcher github_user_fetcher --server
 
 docker-run-gui: docker-build-image
 	sudo docker load < ./result
 	sudo docker run -it --rm \
-    --user $(shell id -u):$(shell id -g) \
+		--user $(shell id -u):$(shell id -g) \
 		-e DISPLAY=$(DISPLAY) \
-    -e DBUS_SESSION_BUS_ADDRESS=$(DBUS_SESSION_BUS_ADDRESS) \
+		-e DBUS_SESSION_BUS_ADDRESS=$(DBUS_SESSION_BUS_ADDRESS) \
 		-v /etc/machine-id:/etc/machine-id:ro \
 		-v /run/user/1000/bus:/run/user/1000/bus \
 		-v /etc/fonts:/etc/fonts:ro \
@@ -151,56 +145,55 @@ doc:
 	@brave docs/html/index.html || echo "Failed to open documentation in Brave"
 
 bench: clean
-	cmake -B build -DCMAKE_BUILD_TYPE=$(BUILD_TYPE) -DBUILD_BENCHMARKS=ON
-	cmake --build build --target benchmarks -j$(PARALLEL_JOBS)
-	cd build && ctest -L benchmark
+	cmake -B $(CMAKE_BUILD_DIR) -G Ninja -DCMAKE_BUILD_TYPE=$(BUILD_TYPE) -DBUILD_BENCHMARKS=ON
+	cmake --build $(CMAKE_BUILD_DIR) --target benchmarks
+	cd $(CMAKE_BUILD_DIR) && ctest -L benchmark
 
 bench-user:
-	cmake --build build -j$(PARALLEL_JOBS) && ./build/benchmarks
+	cmake --build $(CMAKE_BUILD_DIR) --target benchmarks
+	./$(CMAKE_BUILD_DIR)/benchmarks
 
 valgrind-cli: build
-	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose ./build/github_user_fetcher
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose ./$(CMAKE_BUILD_DIR)/github_user_fetcher
 
 valgrind-cli-server: build
-	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose ./build/github_user_fetcher --server
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose ./$(CMAKE_BUILD_DIR)/github_user_fetcher --server
 
 valgrind-gui: build
-	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose ./build/github_user_fetcher_gui
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes --verbose ./$(CMAKE_BUILD_DIR)/github_user_fetcher_gui
 
 valgrind-callgrind: build
-	valgrind --tool=callgrind ./build/github_user_fetcher
+	valgrind --tool=callgrind ./$(CMAKE_BUILD_DIR)/github_user_fetcher
 	@echo "Use 'kcachegrind callgrind.out.*' to visualize the call graph"
 
 valgrind-cachegrind: build
-	valgrind --tool=cachegrind ./build/github_user_fetcher
+	valgrind --tool=cachegrind ./$(CMAKE_BUILD_DIR)/github_user_fetcher
 	@echo "Use 'kcachegrind cachegrind.out.*' to visualize the cache profile"
 
 valgrind-massif: build
-	valgrind --tool=massif ./build/github_user_fetcher
+	valgrind --tool=massif ./$(CMAKE_BUILD_DIR)/github_user_fetcher
 	@echo "Use 'ms_print massif.out.*' to view heap profile"
 
 heaptrack: build
-	heaptrack ./build/github_user_fetcher --user izelnakri
+	heaptrack ./$(CMAKE_BUILD_DIR)/github_user_fetcher --user izelnakri
 
 release:
-	@echo "Building in RELEASE mode"
-	make BUILD_TYPE=Release -f Makefile.cmake setup
-	make BUILD_TYPE=Release -f Makefile.cmake build
+	@echo "Building in RELEASE mode with Ninja"
+	make -f "Makefile.cmake-ninja" BUILD_TYPE=Release setup
+	make -f "Makefile.cmake-ninja" build
 
 install: release
-	@echo "Installing release build"
-	cd build && sudo cmake --install .
+	cd $(CMAKE_BUILD_DIR) && sudo cmake --install .
 
 uninstall:
-	@echo "Removing installed release build"
-	@if [ -f build/install_manifest.txt ]; then \
-		sudo xargs rm -f < build/install_manifest.txt; \
+	@if [ -f $(CMAKE_BUILD_DIR)/install_manifest.txt ]; then \
+		sudo xargs rm -f < $(CMAKE_BUILD_DIR)/install_manifest.txt; \
 	else \
 		echo "No install manifest found. Cannot uninstall."; \
 	fi
 
 flatpak-clean:
-	rm -rf .flatpak-builder build flatpak/build flatpak/nix-environment-dependencies.tar.gz
+	rm -rf .flatpak-builder $(CMAKE_BUILD_DIR) flatpak/build flatpak/nix-environment-dependencies.tar.gz
 
 flatpak-prepare-build:
 	sh flatpak/bundle-nix-environment-dependencies.sh
