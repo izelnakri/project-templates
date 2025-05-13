@@ -70,7 +70,6 @@ let
     unstable.vcpkg
     appstream
     clang-tools
-    catch2_3
     cppcheck
     flawfinder
     valgrind

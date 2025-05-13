@@ -81,8 +81,9 @@ tests_opt = get_option('tests')
 build_tests = not tests_opt.disabled()
 
 if build_tests
+  doctest_headers = include_directories('vendor/doctest-2.4.12')
+
   test_dependencies = [
-    dependency('catch2-with-main', required: true),
     dependency('libcurl', required: true),
   ]
 
@@ -96,7 +97,7 @@ if build_tests
     test_exe = executable(
       'test_' + suite,
       sources,
-      include_directories: [headers],
+      include_directories: [headers, doctest_headers],
       dependencies: dependencies + test_dependencies,
       link_with: github_user_fetcher_static,
       cpp_args: cpp_args

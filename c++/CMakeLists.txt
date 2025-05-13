@@ -119,11 +119,8 @@ option(BUILD_TESTS "Build the tests" ON)
 if(BUILD_TESTS)
     enable_testing()
     
-    find_package(Catch2 QUIET)
-    if(NOT Catch2_FOUND)
-        pkg_check_modules(CATCH2 REQUIRED IMPORTED_TARGET catch2-with-main)
-        add_library(Catch2::Catch2WithMain ALIAS PkgConfig::CATCH2)
-    endif()
+    add_library(doctest INTERFACE)
+    target_include_directories(doctest INTERFACE ${CMAKE_CURRENT_SOURCE_DIR}/vendor/doctest-2.4.12)
     
     find_package(CURL REQUIRED)
     
@@ -149,8 +146,8 @@ if(BUILD_TESTS)
     foreach(SUITE ${TEST_SUITES})
         add_executable(test_${SUITE} ${TEST_SOURCES_${SUITE}})
         target_link_libraries(test_${SUITE} PRIVATE
+            doctest
             github_user_fetcher_static
-            Catch2::Catch2WithMain
             CURL::libcurl
             ${DEPENDENCIES}
         )

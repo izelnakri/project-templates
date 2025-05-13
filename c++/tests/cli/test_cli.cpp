@@ -1,5 +1,6 @@
+#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#include <doctest.h>
 #include <array>
-#include <catch2/catch_test_macros.hpp>
 #include <chrono>
 #include <cstdio>
 #include <curl/curl.h>
@@ -78,29 +79,29 @@ void stop_server() {
   }
 }
 
-TEST_CASE("Default user fetch", "[cli]") {
+TEST_CASE("Default user fetch") {
   std::string output = run_command("./github_user_fetcher");
 
   // Print the output for debugging purposes
   std::cout << "Output for default user fetch:\n" << output << std::endl;
 
   // Check if other specific information is in the output
-  REQUIRE(output.find("Login: izelnakri") != std::string::npos);
-  REQUIRE(output.find("Name: Izel Nakri") != std::string::npos);
-  REQUIRE(output.find("Company: Ruby, JavaScript") != std::string::npos);
-  REQUIRE(output.find("Location: Madrid") != std::string::npos);
+  CHECK(output.find("Login: izelnakri") != std::string::npos);
+  CHECK(output.find("Name: Izel Nakri") != std::string::npos);
+  CHECK(output.find("Company: Ruby, JavaScript") != std::string::npos);
+  CHECK(output.find("Location: Madrid") != std::string::npos);
 }
 
-TEST_CASE("Custom user fetch (wycats)", "[cli]") {
+TEST_CASE("Custom user fetch (wycats)") {
   std::string output = run_command("./github_user_fetcher --user wycats");
 
   std::cout << "Output for custom user fetch (wycats):\n"
             << output << std::endl;
 
-  REQUIRE(output.find("Login: wycats") != std::string::npos);
+  CHECK(output.find("Login: wycats") != std::string::npos);
 }
 
-TEST_CASE("Run server mode and fetch user data", "[cli]") {
+TEST_CASE("Run server mode and fetch user data") {
   // Run the server in a background thread
   std::thread server_thread([]() {
     int ret = system("./github_user_fetcher --server");
@@ -121,23 +122,24 @@ TEST_CASE("Run server mode and fetch user data", "[cli]") {
     auto json = nlohmann::json::parse(json_response);
 
     // Check that the response contains the expected fields
-    REQUIRE(json["login"] == "izelnakri");
-    REQUIRE(json["name"] == "Izel Nakri | izelnakri.eth");
-    REQUIRE(json["company"] ==
+    CHECK(json["login"] == "izelnakri");
+    CHECK(json["name"] == "Izel Nakri | izelnakri.eth");
+    CHECK(json["company"] ==
             "Ruby, JavaScript, TS, elixir, rust, k8s, lua, nix, pkl, android");
-    REQUIRE(json["location"] == "Madrid | Amsterdam");
+    CHECK(json["location"] == "Madrid | Amsterdam");
 
     json_response = http_get("http://localhost:1234/wycats");
     json = nlohmann::json::parse(json_response);
 
     // Check that the response contains the expected fields for `wycats`
-    REQUIRE(json["login"] == "wycats");
+    CHECK(json["login"] == "wycats");
   } catch (const std::exception &e) {
     // If there was an error in any of the steps, make sure the server is
     // stopped
     std::cerr << "Test failed: " << e.what() << std::endl;
     stop_server();
-    FAIL("Test failed: " + std::string(e.what()));
+    MESSAGE("Test failed: ", e.what());
+    FAIL_CHECK("Exception was thrown");
   }
 
   // Ensure the server is stopped after the test
