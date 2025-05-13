@@ -96,7 +96,7 @@ compile-commands:
 lint: lint-clang-tidy lint-cppcheck lint-flawfinder
 lint-clang-tidy: compile-commands
 	@echo "Running clang-tidy..."
-	@find src -name "*.c" -o -name "*.h" | xargs -r clang-tidy -p .
+	@find src -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" | xargs -r clang-tidy -p .
 lint-cppcheck:
 	@echo "Running cppcheck..."
 	cppcheck --enable=all --error-exitcode=1 --suppress=unusedStructMember --suppress=missingIncludeSystem --inline-suppr --quiet --check-level=exhaustive $(INCLUDE_DIRS) $(ALL_SOURCES)
@@ -104,7 +104,7 @@ lint-flawfinder:
 	@echo "Running flawfinder (security check)..."
 	flawfinder --minlevel=1 $(ALL_SOURCES)
 lint-fix:
-	@find src -name "*.c" -o -name "*.h" | xargs -r clang-tidy -fix -fix-errors -p .
+	@find src -name "*.c" -o -name "*.cpp" -o -name "*.h" -o -name "*.hpp" | xargs -r clang-tidy -fix -fix-errors -p .
 
 format:
 	@echo "Formatting code with clang-format..."
@@ -190,6 +190,9 @@ valgrind-cachegrind: build
 valgrind-massif: build
 	valgrind --tool=massif ./build/github_user_fetcher
 	@echo "Use 'ms_print massif.out.*' to view heap profile"
+
+heaptrack: build
+	heaptrack ./build/github_user_fetcher --user izelnakri
 
 release:
 	@echo "Building in RELEASE mode"
