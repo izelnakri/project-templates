@@ -225,7 +225,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   75</span>    <span class="keyword">auto</span> self = shared_from_this();</div>
 <div class="line"><span class="lineno">   76</span>    http::async_write(</div>
 <div class="line"><span class="lineno">   77</span>        <a class="code hl_variable" href="#ab78fa6a6b461971139fcc4890e7a6784">socket_</a>, *res,</div>
-<div class="line"><span class="lineno">   78</span>        [self, res](beast::error_code <span class="comment">/*error_code*/</span>, std::size_t) {</div>
+<div class="line"><span class="lineno">   78</span>        [self, res](beast::error_code <span class="comment">/*error_code*/</span>, <a class="code hl_typedef" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">std::size_t</a>) {</div>
 <div class="line"><span class="lineno">   79</span>          <span class="keywordflow">try</span> {</div>
 <div class="line"><span class="lineno">   80</span>            self-&gt;socket_.shutdown(tcp::socket::shutdown_send);</div>
 <div class="line"><span class="lineno">   81</span>          } <span class="keywordflow">catch</span> (<span class="keyword">const</span> boost::system::system_error &amp;system_error) {</div>
@@ -234,6 +234,7 @@ Private Attributes</h2></td></tr>
 <div class="line"><span class="lineno">   84</span>        });</div>
 <div class="line"><span class="lineno">   85</span>  }</div>
 <div class="ttc" id="aclassHttpSession_html_aab67f0484c58ae6370dfc4972616aea3"><div class="ttname"><a href="#aab67f0484c58ae6370dfc4972616aea3">HttpSession::req_</a></div><div class="ttdeci">http::request&lt; http::string_body &gt; req_</div><div class="ttdef"><b>Definition</b> <a href="server_8cpp_source.html#l00032">server.cpp:32</a></div></div>
+<div class="ttc" id="anamespacestd_html_a2a88bc267d8fe2228f9ef18e79d79268"><div class="ttname"><a href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">std::size_t</a></div><div class="ttdeci">decltype(sizeof(void *)) size_t</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l00524">doctest.h:524</a></div></div>
 <div class="ttc" id="astructUser_html"><div class="ttname"><a href="structUser.html">User</a></div><div class="ttdoc">Structure representing a GitHub user.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00009">user.h:9</a></div></div>
 <div class="ttc" id="auser_8c_html_ada4edf948630b147f21f7e6aa3589b9e"><div class="ttname"><a href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a></div><div class="ttdeci">User fetch_github_user(const char *username)</div><div class="ttdoc">Fetch a GitHub user's information via the GitHub API.</div><div class="ttdef"><b>Definition</b> <a href="user_8c_source.html#l00130">user.c:130</a></div></div>
 </div><!-- fragment -->
@@ -268,7 +269,7 @@ Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><span class="lineno">   34</span>                      {</div>
 <div class="line"><span class="lineno">   35</span>    <span class="keyword">auto</span> self = shared_from_this();</div>
 <div class="line"><span class="lineno">   36</span>    http::async_read(<a class="code hl_variable" href="#ab78fa6a6b461971139fcc4890e7a6784">socket_</a>, <a class="code hl_variable" href="#ac1d79be318d36dab051a4067e5ca896b">buffer_</a>, <a class="code hl_variable" href="#aab67f0484c58ae6370dfc4972616aea3">req_</a>,</div>
-<div class="line"><span class="lineno">   37</span>                     [self](beast::error_code error_code, std::size_t) {</div>
+<div class="line"><span class="lineno">   37</span>                     [self](beast::error_code error_code, <a class="code hl_typedef" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">std::size_t</a>) {</div>
 <div class="line"><span class="lineno">   38</span>                       <span class="keywordflow">if</span> (!error_code) {</div>
 <div class="line"><span class="lineno">   39</span>                         self-&gt;handle_request();</div>
 <div class="line"><span class="lineno">   40</span>                       }</div>

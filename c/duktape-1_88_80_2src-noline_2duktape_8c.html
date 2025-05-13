@@ -3917,7 +3917,7 @@ Macros</h2></td></tr>
 <tr class="separator:a7d054b2ad0dbc14a670de5155de3b4a4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab5963891ac1765f6dc8fc4bbe6b9019b" id="r_ab5963891ac1765f6dc8fc4bbe6b9019b"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab5963891ac1765f6dc8fc4bbe6b9019b">DUK_HEAP_CLEAR_FINALIZER_NORESCUE</a>(heap)&#160;&#160;&#160;<a class="el" href="duktape-1_85_82_2src-noline_2duktape_8c.html#aa32a1849a605af813cde5ad9e80176d0">DUK__HEAP_CLEAR_FLAGS</a>((heap), <a class="el" href="duktape-1_85_82_2src-noline_2duktape_8c.html#a813488d3963659dd203a03741bb502f0">DUK_HEAP_FLAG_FINALIZER_NORESCUE</a>)</td></tr>
 <tr class="separator:ab5963891ac1765f6dc8fc4bbe6b9019b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6af5993d9334f7a01bbc1219671ca5ea" id="r_a6af5993d9334f7a01bbc1219671ca5ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6af5993d9334f7a01bbc1219671ca5ea">DUK_LJ_TYPE_UNKNOWN</a>&#160;&#160;&#160;0    /* <a class="el" href="deprecated_2gthread_8h.html#a3b1ec5f7cc9d987b6be118edd3d26e60">unused</a> */</td></tr>
+<tr class="memitem:a6af5993d9334f7a01bbc1219671ca5ea" id="r_a6af5993d9334f7a01bbc1219671ca5ea"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a6af5993d9334f7a01bbc1219671ca5ea">DUK_LJ_TYPE_UNKNOWN</a>&#160;&#160;&#160;0    /* <a class="el" href="deprecated_2gthread_8h.html#acea79312180ca0eead67acba711c5e02">unused</a> */</td></tr>
 <tr class="separator:a6af5993d9334f7a01bbc1219671ca5ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a01491eeb67c7b39eb79b036bc1e17c16" id="r_a01491eeb67c7b39eb79b036bc1e17c16"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a01491eeb67c7b39eb79b036bc1e17c16">DUK_LJ_TYPE_THROW</a>&#160;&#160;&#160;1    /* value1 -&gt; <a class="el" href="lua-5_81_85_2src_2lundump_8c.html#a6776ffdd5e2abf4119b1d45731e9e668">error</a> object */</td></tr>
 <tr class="separator:a01491eeb67c7b39eb79b036bc1e17c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -42841,7 +42841,7 @@ Variables</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define DUK_LJ_TYPE_UNKNOWN&#160;&#160;&#160;0    /* <a class="el" href="deprecated_2gthread_8h.html#a3b1ec5f7cc9d987b6be118edd3d26e60">unused</a> */</td>
+          <td class="memname">#define DUK_LJ_TYPE_UNKNOWN&#160;&#160;&#160;0    /* <a class="el" href="deprecated_2gthread_8h.html#acea79312180ca0eead67acba711c5e02">unused</a> */</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -73448,7 +73448,7 @@ Variables</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l49288">49288</a> of file <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html">duktape-1.8.0/src-noline/duktape.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">49291</span>                                                                :</div>
 <div class="line"><span class="lineno">49292</span> *    - Object has array part, <a class="code hl_variable" href="deprecated_2gthread_8h.html#ac9be6c0781aab4af4c0d61c77a938911">index</a> <a class="code hl_class" href="classis.html">is</a> within array allocation, and</div>
-<div class="line"><span class="lineno">49293</span> *      <a class="code hl_variable" href="lsqlite3_8c.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a> <a class="code hl_class" href="classis.html">is</a> not <a class="code hl_variable" href="deprecated_2gthread_8h.html#a3b1ec5f7cc9d987b6be118edd3d26e60">unused</a> (= key exists)</div>
+<div class="line"><span class="lineno">49293</span> *      <a class="code hl_variable" href="lsqlite3_8c.html#ac4f474c82e82cbb89ca7c36dd52be0ed">value</a> <a class="code hl_class" href="classis.html">is</a> not <a class="code hl_variable" href="deprecated_2gthread_8h.html#acea79312180ca0eead67acba711c5e02">unused</a> (= key exists)</div>
 <div class="line"><span class="lineno">49294</span> *    - Object has no interfering exotic behavior (e.g. arguments or</div>
 <div class="line"><span class="lineno">49295</span> *      <span class="keywordtype">string</span> <span class="keywordtype">object</span> exotic behaviors interfere, array exotic</div>
 <div class="line"><span class="lineno">49296</span> *      behavior does not).</div>
@@ -73504,7 +73504,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">49346</span>        <a class="code hl_define" href="#a2db20d2d3b36d8491ed171cf503488bb">DUK_DDD</a>(<a class="code hl_define" href="#aa6e5d41ceaba6832e5ede737f0a35fb9">DUK_DDDPRINT</a>(<span class="stringliteral">&quot;key is not an array index or outside array part&quot;</span>));</div>
 <div class="line"><span class="lineno">49347</span>        <span class="keywordflow">return</span> <a class="code hl_define" href="gmacros_8h.html#a070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
 <div class="line"><span class="lineno">49348</span>    }</div>
-<div class="ttc" id="adeprecated_2gthread_8h_html_a3b1ec5f7cc9d987b6be118edd3d26e60"><div class="ttname"><a href="deprecated_2gthread_8h.html#a3b1ec5f7cc9d987b6be118edd3d26e60">unused</a></div><div class="ttdeci">union @137 unused</div></div>
+<div class="ttc" id="adeprecated_2gthread_8h_html_acea79312180ca0eead67acba711c5e02"><div class="ttname"><a href="deprecated_2gthread_8h.html#acea79312180ca0eead67acba711c5e02">unused</a></div><div class="ttdeci">union @139 unused</div></div>
 <div class="ttc" id="aduktape-1_88_80_2src-noline_2duktape_8c_html_a3406041a565e860ecee0ed4ba946e7c1"><div class="ttname"><a href="#a3406041a565e860ecee0ed4ba946e7c1">duk__getprop_shallow_fastpath_array_tval</a></div><div class="ttdeci">DUK_LOCAL duk_tval * duk__getprop_shallow_fastpath_array_tval(duk_hthread *thr, duk_hobject *obj, duk_tval *tv_key)</div><div class="ttdef"><b>Definition</b> <a href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l49288">duktape-1.8.0/src-noline/duktape.c:49288</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l47417">duk__tval_number_to_arr_idx()</a>, <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l07760">DUK_ASSERT</a>, <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l07502">DUK_DDD</a>, <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l07514">DUK_DDDPRINT</a>, <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l05185">DUK_HOBJECT_GET_ASIZE</a>, <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l04815">DUK_HOBJECT_HAS_ARRAY_PART</a>, <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l04824">DUK_HOBJECT_HAS_EXOTIC_ARGUMENTS</a>, <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l04826">DUK_HOBJECT_HAS_EXOTIC_PROXYOBJ</a>, <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l04823">DUK_HOBJECT_HAS_EXOTIC_STRINGOBJ</a>, <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l04781">DUK_HOBJECT_IS_BUFFEROBJECT</a>, <a class="el" href="duktape-1_88_80_2src-noline_2duktape_8c_source.html#l00806">DUK_TVAL_IS_DOUBLE</a>, <a class="el" href="duktape-1_85_82_2src-noline_2duk__config_8h_source.html#l02494">DUK_UNREF</a>, and <a class="el" href="gmacros_8h_source.html#l00924">NULL</a>.</p>
@@ -106083,7 +106083,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">20056</span><span class="stringliteral">                         (const void *) q_start, (const void *) q_end));</span></div>
 <div class="line"><span class="lineno">20057</span><span class="stringliteral"></span> </div>
 <div class="line"><span class="lineno">20058</span><span class="stringliteral">    if (q_start == p_start &amp;&amp; q_end == p_end) {</span></div>
-<div class="line"><span class="lineno">20059</span><span class="stringliteral">        DUK_DDD(DUK_DDDPRINT(&quot;</span>nothing was trimmed: avoid interning (hashing etc)<span class="stringliteral">&quot;));</span></div>
+<div class="line"><span class="lineno">20059</span><span class="stringliteral">        DUK_DDD(DUK_DDDPRINT(&quot;</span><a class="code hl_enumvalue" href="namespacedoctest_1_1detail_1_1assertAction.html#a38ba820518d42da988fab24b2f3d0548aad8b44f340e17ab74bf8386e63b25191">nothing</a> was trimmed: avoid interning (hashing etc)<span class="stringliteral">&quot;));</span></div>
 <div class="line"><span class="lineno">20060</span><span class="stringliteral">        return;</span></div>
 <div class="line"><span class="lineno">20061</span><span class="stringliteral">    }</span></div>
 <div class="line"><span class="lineno">20062</span><span class="stringliteral"></span> </div>
@@ -106093,6 +106093,7 @@ Variables</h2></td></tr>
 <div class="line"><span class="lineno">20066</span><span class="stringliteral"></span> </div>
 <div class="line"><span class="lineno">20067</span><span class="stringliteral">DUK_EXTERNAL duk_codepoint_t duk_char_code_at(duk_context *ctx, duk_idx_t index, duk_size_t char_offset) {</span></div>
 <div class="line"><span class="lineno">20068</span><span class="stringliteral">    duk_hthread *thr = (duk_hthread *) ctx;</span></div>
+<div class="ttc" id="anamespacedoctest_1_1detail_1_1assertAction_html_a38ba820518d42da988fab24b2f3d0548aad8b44f340e17ab74bf8386e63b25191"><div class="ttname"><a href="namespacedoctest_1_1detail_1_1assertAction.html#a38ba820518d42da988fab24b2f3d0548aad8b44f340e17ab74bf8386e63b25191">doctest::detail::assertAction::nothing</a></div><div class="ttdeci">@ nothing</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l01726">doctest.h:1726</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

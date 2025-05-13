@@ -98,26 +98,27 @@ $(function(){initNavTree('test__user_8cpp.html',''); initResizable(); });
   <div class="headertitle"><div class="title">test_user.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;user.hpp&quot;</code><br />
-<code>#include &lt;catch2/catch_test_macros.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="doctest_8h_source.html">doctest.h</a>&gt;</code><br />
+<code>#include &quot;user.hpp&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
 </div>
 <p><a href="test__user_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a9547e37747bae50a74860ef24f5fc8a6" id="r_a9547e37747bae50a74860ef24f5fc8a6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9547e37747bae50a74860ef24f5fc8a6">TEST_CASE</a> (&quot;User <a class="el" href="lua-5_81_85_2src_2lparser_8c.html#afd4901e9e6b1ba046efc1a5932cd664c">constructor</a> initializes fields&quot;, &quot;[User]&quot;)</td></tr>
-<tr class="separator:a9547e37747bae50a74860ef24f5fc8a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a73d7026a76ff3b792eed1c185c79361d" id="r_a73d7026a76ff3b792eed1c185c79361d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a73d7026a76ff3b792eed1c185c79361d">TEST_CASE</a> (&quot;User::print() outputs correct format&quot;, &quot;[User][<a class="el" href="min_8c.html#a0787586c52cbcc082909b5f3a63a0f8b">print</a>]&quot;)</td></tr>
-<tr class="separator:a73d7026a76ff3b792eed1c185c79361d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a909ada6a57d3fe2ef69f859b8630edaf" id="r_a909ada6a57d3fe2ef69f859b8630edaf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a909ada6a57d3fe2ef69f859b8630edaf">TEST_CASE</a> (&quot;fetch_github_user returns valid user for known GitHub account&quot;, &quot;[fetch_github_user]&quot;)</td></tr>
-<tr class="separator:a909ada6a57d3fe2ef69f859b8630edaf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4e26291a5d206c39c4b2e082267a190b" id="r_a4e26291a5d206c39c4b2e082267a190b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a4e26291a5d206c39c4b2e082267a190b">TEST_CASE</a> (&quot;fetch_github_user throws for nonexistent username&quot;, &quot;[fetch_github_user]&quot;)</td></tr>
-<tr class="separator:a4e26291a5d206c39c4b2e082267a190b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7a7f693558efa52a7c8adea12a8951bc" id="r_a7a7f693558efa52a7c8adea12a8951bc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a7a7f693558efa52a7c8adea12a8951bc">TEST_CASE</a> (&quot;User <a class="el" href="lua-5_81_85_2src_2lparser_8c.html#afd4901e9e6b1ba046efc1a5932cd664c">constructor</a> initializes fields&quot;)</td></tr>
+<tr class="separator:a7a7f693558efa52a7c8adea12a8951bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a313f8c21d4bb5aca931a9a08a4370e32" id="r_a313f8c21d4bb5aca931a9a08a4370e32"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a313f8c21d4bb5aca931a9a08a4370e32">TEST_CASE</a> (&quot;User::print() outputs correct format&quot;)</td></tr>
+<tr class="separator:a313f8c21d4bb5aca931a9a08a4370e32"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a388c275a029072daa5b2b5a7771087ef" id="r_a388c275a029072daa5b2b5a7771087ef"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a388c275a029072daa5b2b5a7771087ef">TEST_CASE</a> (&quot;fetch_github_user returns valid user for known GitHub account&quot;)</td></tr>
+<tr class="separator:a388c275a029072daa5b2b5a7771087ef"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ade96382a3dd206050110a84972b68ae5" id="r_ade96382a3dd206050110a84972b68ae5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ade96382a3dd206050110a84972b68ae5">TEST_CASE</a> (&quot;fetch_github_user throws for nonexistent username&quot;)</td></tr>
+<tr class="separator:ade96382a3dd206050110a84972b68ae5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Function Documentation</h2>
-<a id="a909ada6a57d3fe2ef69f859b8630edaf" name="a909ada6a57d3fe2ef69f859b8630edaf"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a909ada6a57d3fe2ef69f859b8630edaf">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[1/4]</span></h2>
+<a id="a388c275a029072daa5b2b5a7771087ef" name="a388c275a029072daa5b2b5a7771087ef"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a388c275a029072daa5b2b5a7771087ef">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[1/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -125,36 +126,34 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">&quot;fetch_github_user returns valid user for known GitHub account&quot;</td>          <td class="paramname"><span class="paramname">, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">&quot;fetch_github_user returns valid user for known GitHub account&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">&quot;&quot;</td>          <td class="paramname"><span class="paramname">[fetch_github_user]</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00035">35</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   36</span>                                 {</div>
+<p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00036">36</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   36</span>                                                                           {</div>
 <div class="line"><span class="lineno">   37</span>  <a class="code hl_struct" href="structUser.html">User</a> user = <a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(<span class="stringliteral">&quot;octocat&quot;</span>);</div>
 <div class="line"><span class="lineno">   38</span> </div>
-<div class="line"><span class="lineno">   39</span>  REQUIRE(user.getLogin() == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
+<div class="line"><span class="lineno">   39</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(user.getLogin() == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
 <div class="line"><span class="lineno">   40</span> </div>
 <div class="line"><span class="lineno">   41</span>  <span class="comment">// These fields can change, so we check they are not empty instead</span></div>
-<div class="line"><span class="lineno">   42</span>  REQUIRE_FALSE(user.getName().empty());</div>
-<div class="line"><span class="lineno">   43</span>  REQUIRE_FALSE(user.getCompany().empty());</div>
-<div class="line"><span class="lineno">   44</span>  REQUIRE_FALSE(user.getLocation().empty());</div>
+<div class="line"><span class="lineno">   42</span>  <a class="code hl_define" href="doctest_8h.html#a7bf095d8512cb180f8ff3a2258a6eaac">CHECK_FALSE</a>(user.getName().empty());</div>
+<div class="line"><span class="lineno">   43</span>  <a class="code hl_define" href="doctest_8h.html#a7bf095d8512cb180f8ff3a2258a6eaac">CHECK_FALSE</a>(user.getCompany().empty());</div>
+<div class="line"><span class="lineno">   44</span>  <a class="code hl_define" href="doctest_8h.html#a7bf095d8512cb180f8ff3a2258a6eaac">CHECK_FALSE</a>(user.getLocation().empty());</div>
 <div class="line"><span class="lineno">   45</span>}</div>
+<div class="ttc" id="adoctest_8h_html_a7bf095d8512cb180f8ff3a2258a6eaac"><div class="ttname"><a href="doctest_8h.html#a7bf095d8512cb180f8ff3a2258a6eaac">CHECK_FALSE</a></div><div class="ttdeci">#define CHECK_FALSE(...)</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l02971">doctest.h:2971</a></div></div>
+<div class="ttc" id="adoctest_8h_html_a836cca6b6ed3a1706353f6d1bca0935f"><div class="ttname"><a href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a></div><div class="ttdeci">#define CHECK(...)</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l02970">doctest.h:2970</a></div></div>
 <div class="ttc" id="astructUser_html"><div class="ttname"><a href="structUser.html">User</a></div><div class="ttdoc">Structure representing a GitHub user.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00009">user.h:9</a></div></div>
 <div class="ttc" id="auser_8c_html_ada4edf948630b147f21f7e6aa3589b9e"><div class="ttname"><a href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a></div><div class="ttdeci">User fetch_github_user(const char *username)</div><div class="ttdoc">Fetch a GitHub user's information via the GitHub API.</div><div class="ttdef"><b>Definition</b> <a href="user_8c_source.html#l00130">user.c:130</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="user_8c_source.html#l00130">fetch_github_user()</a>.</p>
+<p class="reference">References <a class="el" href="doctest_8h_source.html#l02970">CHECK</a>, <a class="el" href="doctest_8h_source.html#l02971">CHECK_FALSE</a>, and <a class="el" href="user_8c_source.html#l00130">fetch_github_user()</a>.</p>
 
 </div>
 </div>
-<a id="a4e26291a5d206c39c4b2e082267a190b" name="a4e26291a5d206c39c4b2e082267a190b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4e26291a5d206c39c4b2e082267a190b">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[2/4]</span></h2>
+<a id="ade96382a3dd206050110a84972b68ae5" name="ade96382a3dd206050110a84972b68ae5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ade96382a3dd206050110a84972b68ae5">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[2/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -162,29 +161,26 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">&quot;fetch_github_user throws for nonexistent username&quot;</td>          <td class="paramname"><span class="paramname">, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">&quot;fetch_github_user throws for nonexistent username&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">&quot;&quot;</td>          <td class="paramname"><span class="paramname">[fetch_github_user]</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00047">47</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   48</span>                                 {</div>
-<div class="line"><span class="lineno">   49</span>  std::string invalid_username = <span class="stringliteral">&quot;this_user_should_not_exist_123456789&quot;</span>;</div>
-<div class="line"><span class="lineno">   50</span> </div>
-<div class="line"><span class="lineno">   51</span>  REQUIRE_THROWS_AS(<a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(invalid_username), std::runtime_error);</div>
-<div class="line"><span class="lineno">   52</span>}</div>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>                                                               {</div>
+<div class="line"><span class="lineno">   48</span>  std::string invalid_username = <span class="stringliteral">&quot;this_user_should_not_exist_123456789&quot;</span>;</div>
+<div class="line"><span class="lineno">   49</span> </div>
+<div class="line"><span class="lineno">   50</span>  <a class="code hl_define" href="doctest_8h.html#aabaaa591d46f29cf307dbed1a5abba83">CHECK_THROWS_AS</a>(<a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(invalid_username), std::runtime_error);</div>
+<div class="line"><span class="lineno">   51</span>}</div>
+<div class="ttc" id="adoctest_8h_html_aabaaa591d46f29cf307dbed1a5abba83"><div class="ttname"><a href="doctest_8h.html#aabaaa591d46f29cf307dbed1a5abba83">CHECK_THROWS_AS</a></div><div class="ttdeci">#define CHECK_THROWS_AS(expr,...)</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l02973">doctest.h:2973</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="user_8c_source.html#l00130">fetch_github_user()</a>.</p>
+<p class="reference">References <a class="el" href="doctest_8h_source.html#l02973">CHECK_THROWS_AS</a>, and <a class="el" href="user_8c_source.html#l00130">fetch_github_user()</a>.</p>
 
 </div>
 </div>
-<a id="a9547e37747bae50a74860ef24f5fc8a6" name="a9547e37747bae50a74860ef24f5fc8a6"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9547e37747bae50a74860ef24f5fc8a6">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[3/4]</span></h2>
+<a id="a7a7f693558efa52a7c8adea12a8951bc" name="a7a7f693558efa52a7c8adea12a8951bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a7f693558efa52a7c8adea12a8951bc">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[3/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -192,30 +188,28 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">&quot;User <a class="el" href="lua-5_81_85_2src_2lparser_8c.html#afd4901e9e6b1ba046efc1a5932cd664c">constructor</a> initializes fields&quot;</td>          <td class="paramname"><span class="paramname">, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">&quot;User <a class="el" href="lua-5_81_85_2src_2lparser_8c.html#afd4901e9e6b1ba046efc1a5932cd664c">constructor</a> initializes fields&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">&quot;&quot;</td>          <td class="paramname"><span class="paramname">[User]</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00007">7</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    7</span>                                                           {</div>
-<div class="line"><span class="lineno">    8</span>  <a class="code hl_struct" href="structUser.html">User</a> user(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
-<div class="line"><span class="lineno">    9</span> </div>
-<div class="line"><span class="lineno">   10</span>  REQUIRE(user.getLogin() == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
-<div class="line"><span class="lineno">   11</span>  REQUIRE(user.getName() == <span class="stringliteral">&quot;The Octocat&quot;</span>);</div>
-<div class="line"><span class="lineno">   12</span>  REQUIRE(user.getCompany() == <span class="stringliteral">&quot;GitHub&quot;</span>);</div>
-<div class="line"><span class="lineno">   13</span>  REQUIRE(user.getLocation() == <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
-<div class="line"><span class="lineno">   14</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00008">8</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    8</span>                                                 {</div>
+<div class="line"><span class="lineno">    9</span>  <a class="code hl_struct" href="structUser.html">User</a> user(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
+<div class="line"><span class="lineno">   10</span> </div>
+<div class="line"><span class="lineno">   11</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(user.getLogin() == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
+<div class="line"><span class="lineno">   12</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(user.getName() == <span class="stringliteral">&quot;The Octocat&quot;</span>);</div>
+<div class="line"><span class="lineno">   13</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(user.getCompany() == <span class="stringliteral">&quot;GitHub&quot;</span>);</div>
+<div class="line"><span class="lineno">   14</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(user.getLocation() == <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
+<div class="line"><span class="lineno">   15</span>}</div>
 </div><!-- fragment -->
+<p class="reference">References <a class="el" href="doctest_8h_source.html#l02970">CHECK</a>.</p>
+
 </div>
 </div>
-<a id="a73d7026a76ff3b792eed1c185c79361d" name="a73d7026a76ff3b792eed1c185c79361d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a73d7026a76ff3b792eed1c185c79361d">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[4/4]</span></h2>
+<a id="a313f8c21d4bb5aca931a9a08a4370e32" name="a313f8c21d4bb5aca931a9a08a4370e32"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a313f8c21d4bb5aca931a9a08a4370e32">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[4/4]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -223,36 +217,32 @@ Functions</h2></td></tr>
         <tr>
           <td class="memname">TEST_CASE </td>
           <td>(</td>
-          <td class="paramtype">&quot;User::print() outputs correct format&quot;</td>          <td class="paramname"><span class="paramname">, </span></td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">&quot;User::print() outputs correct format&quot;</td>          <td class="paramname"><span class="paramname"></span></td><td>)</td>
           <td></td>
-          <td class="paramtype">&quot;&quot;</td>          <td class="paramname"><span class="paramname">[User][print]</span>&#160;)</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00016">16</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   16</span>                                                                 {</div>
-<div class="line"><span class="lineno">   17</span>  <a class="code hl_struct" href="structUser.html">User</a> user(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
-<div class="line"><span class="lineno">   18</span> </div>
-<div class="line"><span class="lineno">   19</span>  std::ostringstream <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>;</div>
-<div class="line"><span class="lineno">   20</span>  std::streambuf *old_cout_buf = std::cout.rdbuf(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.rdbuf());</div>
-<div class="line"><span class="lineno">   21</span> </div>
-<div class="line"><span class="lineno">   22</span>  user.print();</div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>  std::cout.rdbuf(old_cout_buf); <span class="comment">// restore std::cout</span></div>
-<div class="line"><span class="lineno">   25</span> </div>
-<div class="line"><span class="lineno">   26</span>  std::string result = <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.str();</div>
-<div class="line"><span class="lineno">   27</span>  REQUIRE(result.find(<span class="stringliteral">&quot;Login: octocat&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   28</span>  REQUIRE(result.find(<span class="stringliteral">&quot;Name: The Octocat&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   29</span>  REQUIRE(result.find(<span class="stringliteral">&quot;Company: GitHub&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   30</span>  REQUIRE(result.find(<span class="stringliteral">&quot;Location: San Francisco&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   31</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test__user_8cpp_source.html#l00017">17</a> of file <a class="el" href="test__user_8cpp_source.html">test_user.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   17</span>                                                {</div>
+<div class="line"><span class="lineno">   18</span>  <a class="code hl_struct" href="structUser.html">User</a> user(<span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;The Octocat&quot;</span>, <span class="stringliteral">&quot;GitHub&quot;</span>, <span class="stringliteral">&quot;San Francisco&quot;</span>);</div>
+<div class="line"><span class="lineno">   19</span> </div>
+<div class="line"><span class="lineno">   20</span>  std::ostringstream <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>;</div>
+<div class="line"><span class="lineno">   21</span>  std::streambuf *old_cout_buf = std::cout.rdbuf(<a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.rdbuf());</div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>  user.print();</div>
+<div class="line"><span class="lineno">   24</span> </div>
+<div class="line"><span class="lineno">   25</span>  std::cout.rdbuf(old_cout_buf); <span class="comment">// restore std::cout</span></div>
+<div class="line"><span class="lineno">   26</span> </div>
+<div class="line"><span class="lineno">   27</span>  std::string result = <a class="code hl_variable" href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a>.str();</div>
+<div class="line"><span class="lineno">   28</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(result.find(<span class="stringliteral">&quot;Login: octocat&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   29</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(result.find(<span class="stringliteral">&quot;Name: The Octocat&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   30</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(result.find(<span class="stringliteral">&quot;Company: GitHub&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   31</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(result.find(<span class="stringliteral">&quot;Location: San Francisco&quot;</span>) != std::string::npos);</div>
+<div class="line"><span class="lineno">   32</span>}</div>
 <div class="ttc" id="alua-5_81_85_2src_2luac_8c_html_a5a832fe6e2412dfabb93a2adae30e745"><div class="ttname"><a href="lua-5_81_85_2src_2luac_8c.html#a5a832fe6e2412dfabb93a2adae30e745">output</a></div><div class="ttdeci">static const char * output</div><div class="ttdef"><b>Definition</b> <a href="lua-5_81_85_2src_2luac_8c_source.html#l00033">lua-5.1.5/src/luac.c:33</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="lua-5_81_85_2src_2luac_8c_source.html#l00033">output</a>.</p>
+<p class="reference">References <a class="el" href="doctest_8h_source.html#l02970">CHECK</a>, and <a class="el" href="lua-5_81_85_2src_2luac_8c_source.html#l00033">output</a>.</p>
 
 </div>
 </div>

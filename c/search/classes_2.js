@@ -8,9 +8,11 @@ var searchData=
   ['ah_5',['ah',['../structah.html',1,'']]],
   ['alloc_5fhdr_6',['alloc_hdr',['../structalloc__hdr.html',1,'']]],
   ['analysisinfo_7',['analysisInfo',['../structanalysisInfo.html',1,'']]],
-  ['appwidgets_8',['AppWidgets',['../structAppWidgets.html',1,'']]],
-  ['authcontext_9',['AuthContext',['../structAuthContext.html',1,'']]],
-  ['autoincinfo_10',['AutoincInfo',['../structAutoincInfo.html',1,'']]],
-  ['auxdata_11',['AuxData',['../structAuxData.html',1,'']]],
-  ['auxsetnodet_12',['AuxsetnodeT',['../structAuxsetnodeT.html',1,'']]]
+  ['approx_8',['Approx',['../structdoctest_1_1Approx.html',1,'doctest']]],
+  ['appwidgets_9',['AppWidgets',['../structAppWidgets.html',1,'']]],
+  ['assertdata_10',['AssertData',['../structdoctest_1_1AssertData.html',1,'doctest']]],
+  ['authcontext_11',['AuthContext',['../structAuthContext.html',1,'']]],
+  ['autoincinfo_12',['AutoincInfo',['../structAutoincInfo.html',1,'']]],
+  ['auxdata_13',['AuxData',['../structAuxData.html',1,'']]],
+  ['auxsetnodet_14',['AuxsetnodeT',['../structAuxsetnodeT.html',1,'']]]
 ];

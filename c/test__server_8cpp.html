@@ -94,21 +94,27 @@ $(function(){initNavTree('test__server_8cpp.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#typedef-members">Typedefs</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">test_server.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;server.hpp&quot;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="doctest_8h_source.html">doctest.h</a>&gt;</code><br />
+<code>#include &quot;server.hpp&quot;</code><br />
 <code>#include &lt;boost/asio.hpp&gt;</code><br />
 <code>#include &lt;boost/beast/core.hpp&gt;</code><br />
 <code>#include &lt;boost/beast/http.hpp&gt;</code><br />
-<code>#include &lt;catch2/catch_test_macros.hpp&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
 </div>
 <p><a href="test__server_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a623b8690a262536536a43eab2d7df03d" id="r_a623b8690a262536536a43eab2d7df03d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a623b8690a262536536a43eab2d7df03d">DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</a></td></tr>
+<tr class="separator:a623b8690a262536536a43eab2d7df03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
 <tr class="memitem:a60a92ea513bd2f25705cdd673983c5a8" id="r_a60a92ea513bd2f25705cdd673983c5a8"><td class="memItemLeft" align="right" valign="top">using&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a60a92ea513bd2f25705cdd673983c5a8">tcp</a> = net::ip::tcp</td></tr>
@@ -119,6 +125,23 @@ Functions</h2></td></tr>
 <tr class="memitem:afedd9374cecbfafe6e07a356530c5632" id="r_afedd9374cecbfafe6e07a356530c5632"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afedd9374cecbfafe6e07a356530c5632">TEST_CASE</a> (&quot;HTTP server responds with GitHub user&quot;)</td></tr>
 <tr class="separator:afedd9374cecbfafe6e07a356530c5632"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a623b8690a262536536a43eab2d7df03d" name="a623b8690a262536536a43eab2d7df03d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a623b8690a262536536a43eab2d7df03d">&#9670;&#160;</a></span>DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test__server_8cpp_source.html#l00001">1</a> of file <a class="el" href="test__server_8cpp_source.html">test_server.cpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Typedef Documentation</h2>
 <a id="a60a92ea513bd2f25705cdd673983c5a8" name="a60a92ea513bd2f25705cdd673983c5a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60a92ea513bd2f25705cdd673983c5a8">&#9670;&#160;</a></span>tcp</h2>
@@ -132,7 +155,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__server_8cpp_source.html#l00012">12</a> of file <a class="el" href="test__server_8cpp_source.html">test_server.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="test__server_8cpp_source.html#l00013">13</a> of file <a class="el" href="test__server_8cpp_source.html">test_server.cpp</a>.</p>
 
 </div>
 </div>
@@ -152,47 +175,44 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__server_8cpp_source.html#l00014">14</a> of file <a class="el" href="test__server_8cpp_source.html">test_server.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   14</span>                                                   {</div>
-<div class="line"><span class="lineno">   15</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> test_port = 8123;</div>
-<div class="line"><span class="lineno">   16</span> </div>
+<p class="definition">Definition at line <a class="el" href="test__server_8cpp_source.html#l00015">15</a> of file <a class="el" href="test__server_8cpp_source.html">test_server.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   15</span>                                                   {</div>
+<div class="line"><span class="lineno">   16</span>  <span class="keyword">const</span> <span class="keywordtype">int</span> test_port = 8123;</div>
 <div class="line"><span class="lineno">   17</span>  std::thread server_thread([&amp;]() {</div>
 <div class="line"><span class="lineno">   18</span>    <a class="code hl_function" href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a>(test_port); <span class="comment">// will block</span></div>
 <div class="line"><span class="lineno">   19</span>  });</div>
-<div class="line"><span class="lineno">   20</span> </div>
-<div class="line"><span class="lineno">   21</span>  std::this_thread::sleep_for(</div>
-<div class="line"><span class="lineno">   22</span>      std::chrono::seconds(2)); <span class="comment">// wait for server to start</span></div>
-<div class="line"><span class="lineno">   23</span> </div>
-<div class="line"><span class="lineno">   24</span>  net::io_context ioc;</div>
-<div class="line"><span class="lineno">   25</span>  tcp::resolver resolver(ioc);</div>
-<div class="line"><span class="lineno">   26</span>  <span class="keyword">auto</span> <span class="keyword">const</span> results = resolver.resolve(<span class="stringliteral">&quot;127.0.0.1&quot;</span>, std::to_string(test_port));</div>
-<div class="line"><span class="lineno">   27</span> </div>
-<div class="line"><span class="lineno">   28</span>  beast::tcp_stream stream(ioc);</div>
-<div class="line"><span class="lineno">   29</span>  stream.connect(results);</div>
-<div class="line"><span class="lineno">   30</span> </div>
-<div class="line"><span class="lineno">   31</span>  http::request&lt;http::string_body&gt; req(http::verb::get, <span class="stringliteral">&quot;/octocat&quot;</span>, 11);</div>
-<div class="line"><span class="lineno">   32</span>  req.set(http::field::host, <span class="stringliteral">&quot;127.0.0.1&quot;</span>);</div>
-<div class="line"><span class="lineno">   33</span>  req.set(http::field::user_agent, <span class="stringliteral">&quot;test-client&quot;</span>);</div>
-<div class="line"><span class="lineno">   34</span> </div>
-<div class="line"><span class="lineno">   35</span>  http::write(stream, req);</div>
-<div class="line"><span class="lineno">   36</span> </div>
-<div class="line"><span class="lineno">   37</span>  beast::flat_buffer buffer;</div>
-<div class="line"><span class="lineno">   38</span>  http::response&lt;http::string_body&gt; res;</div>
-<div class="line"><span class="lineno">   39</span>  http::read(stream, buffer, res);</div>
+<div class="line"><span class="lineno">   20</span>  std::this_thread::sleep_for(</div>
+<div class="line"><span class="lineno">   21</span>      std::chrono::seconds(2)); <span class="comment">// wait for server to start</span></div>
+<div class="line"><span class="lineno">   22</span> </div>
+<div class="line"><span class="lineno">   23</span>  net::io_context ioc;</div>
+<div class="line"><span class="lineno">   24</span>  tcp::resolver resolver(ioc);</div>
+<div class="line"><span class="lineno">   25</span>  <span class="keyword">auto</span> <span class="keyword">const</span> results = resolver.resolve(<span class="stringliteral">&quot;127.0.0.1&quot;</span>, std::to_string(test_port));</div>
+<div class="line"><span class="lineno">   26</span>  beast::tcp_stream stream(ioc);</div>
+<div class="line"><span class="lineno">   27</span>  stream.connect(results);</div>
+<div class="line"><span class="lineno">   28</span> </div>
+<div class="line"><span class="lineno">   29</span>  http::request&lt;http::string_body&gt; req(http::verb::get, <span class="stringliteral">&quot;/octocat&quot;</span>, 11);</div>
+<div class="line"><span class="lineno">   30</span>  req.set(http::field::host, <span class="stringliteral">&quot;127.0.0.1&quot;</span>);</div>
+<div class="line"><span class="lineno">   31</span>  req.set(http::field::user_agent, <span class="stringliteral">&quot;test-client&quot;</span>);</div>
+<div class="line"><span class="lineno">   32</span>  http::write(stream, req);</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>  beast::flat_buffer buffer;</div>
+<div class="line"><span class="lineno">   35</span>  http::response&lt;http::string_body&gt; res;</div>
+<div class="line"><span class="lineno">   36</span>  http::read(stream, buffer, res);</div>
+<div class="line"><span class="lineno">   37</span> </div>
+<div class="line"><span class="lineno">   38</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(res.result() == http::status::ok);</div>
+<div class="line"><span class="lineno">   39</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(res.body().find(<span class="stringliteral">&quot;octocat&quot;</span>) != std::string::npos);</div>
 <div class="line"><span class="lineno">   40</span> </div>
-<div class="line"><span class="lineno">   41</span>  REQUIRE(res.result() == http::status::ok);</div>
-<div class="line"><span class="lineno">   42</span>  REQUIRE(res.body().find(<span class="stringliteral">&quot;octocat&quot;</span>) != std::string::npos);</div>
-<div class="line"><span class="lineno">   43</span> </div>
-<div class="line"><span class="lineno">   44</span>  beast::error_code ec;</div>
-<div class="line"><span class="lineno">   45</span>  stream.socket().shutdown(tcp::socket::shutdown_both, ec);</div>
-<div class="line"><span class="lineno">   46</span> </div>
-<div class="line"><span class="lineno">   47</span>  <span class="comment">// Kill server (not ideal, better to make server stop externally)</span></div>
-<div class="line"><span class="lineno">   48</span>  std::raise(SIGINT);</div>
-<div class="line"><span class="lineno">   49</span>  server_thread.join();</div>
-<div class="line"><span class="lineno">   50</span>}</div>
+<div class="line"><span class="lineno">   41</span>  beast::error_code ec;</div>
+<div class="line"><span class="lineno">   42</span>  stream.socket().shutdown(tcp::socket::shutdown_both, ec);</div>
+<div class="line"><span class="lineno">   43</span>  </div>
+<div class="line"><span class="lineno">   44</span>  <span class="comment">// Kill server (not ideal, better to make server stop externally)</span></div>
+<div class="line"><span class="lineno">   45</span>  std::raise(SIGINT);</div>
+<div class="line"><span class="lineno">   46</span>  server_thread.join();</div>
+<div class="line"><span class="lineno">   47</span>}</div>
+<div class="ttc" id="adoctest_8h_html_a836cca6b6ed3a1706353f6d1bca0935f"><div class="ttname"><a href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a></div><div class="ttdeci">#define CHECK(...)</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l02970">doctest.h:2970</a></div></div>
 <div class="ttc" id="aserver_8c_html_a805251749f828fda7ccf3f1cc664afd1"><div class="ttname"><a href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a></div><div class="ttdeci">void start_http_server(int port)</div><div class="ttdoc">Starts an HTTP server on the specified port.</div><div class="ttdef"><b>Definition</b> <a href="server_8c_source.html#l00059">server.c:59</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="server_8c_source.html#l00059">start_http_server()</a>.</p>
+<p class="reference">References <a class="el" href="doctest_8h_source.html#l02970">CHECK</a>, and <a class="el" href="server_8c_source.html#l00059">start_http_server()</a>.</p>
 
 </div>
 </div>

@@ -101,45 +101,49 @@ $(function(){initNavTree('test__main_8cpp_source.html',''); initResizable(); });
   <div class="headertitle"><div class="title">test_main.cpp</div></div>
 </div><!--header-->
 <div class="contents">
-<a href="test__main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span><span class="preprocessor">#include &quot;<a class="code" href="config_8cpp.html">config.cpp</a>&quot;</span> <span class="comment">// Include for access to parse_arguments</span></div>
-<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;catch2/catch_test_macros.hpp&gt;</span></div>
-<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span> </div>
-<div class="foldopen" id="foldopen00004" data-start="{" data-end="}">
-<div class="line"><a id="l00004" name="l00004"></a><span class="lineno"><a class="line" href="test__main_8cpp.html#afcf2a07ce6091991037458d60c41ec49">    4</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;parse_arguments parses default correctly&quot;</span>) {</div>
-<div class="line"><a id="l00005" name="l00005"></a><span class="lineno">    5</span>  std::vector&lt;std::string&gt; args = {};</div>
-<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
-<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  REQUIRE(config.username == <span class="stringliteral">&quot;izelnakri&quot;</span>);</div>
-<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  REQUIRE(config.port == 1234);</div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  REQUIRE(config.run_server == <span class="keyword">false</span>);</div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>}</div>
+<a href="test__main_8cpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno"><a class="line" href="test__main_8cpp.html#a623b8690a262536536a43eab2d7df03d">    1</a></span><span class="preprocessor">#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</span></div>
+<div class="line"><a id="l00002" name="l00002"></a><span class="lineno">    2</span><span class="preprocessor">#include &lt;<a class="code" href="doctest_8h.html">doctest.h</a>&gt;</span></div>
+<div class="line"><a id="l00003" name="l00003"></a><span class="lineno">    3</span><span class="preprocessor">#include &quot;<a class="code" href="config_8cpp.html">config.cpp</a>&quot;</span></div>
+<div class="line"><a id="l00004" name="l00004"></a><span class="lineno">    4</span> </div>
+<div class="foldopen" id="foldopen00005" data-start="{" data-end="}">
+<div class="line"><a id="l00005" name="l00005"></a><span class="lineno"><a class="line" href="test__main_8cpp.html#afcf2a07ce6091991037458d60c41ec49">    5</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;parse_arguments parses default correctly&quot;</span>) {</div>
+<div class="line"><a id="l00006" name="l00006"></a><span class="lineno">    6</span>  std::vector&lt;std::string&gt; args = {};</div>
+<div class="line"><a id="l00007" name="l00007"></a><span class="lineno">    7</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
+<div class="line"><a id="l00008" name="l00008"></a><span class="lineno">    8</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.username == <span class="stringliteral">&quot;izelnakri&quot;</span>);</div>
+<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.port == 1234);</div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.run_server == <span class="keyword">false</span>);</div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span>}</div>
 </div>
-<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="foldopen" id="foldopen00012" data-start="{" data-end="}">
-<div class="line"><a id="l00012" name="l00012"></a><span class="lineno"><a class="line" href="test__main_8cpp.html#aaca099bbeef0a9b11556bcbcde6c09ae">   12</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;parse_arguments parses --user and --port&quot;</span>) {</div>
-<div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--user&quot;</span>, <span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;--port=8080&quot;</span>};</div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  REQUIRE(config.username == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  REQUIRE(config.port == 8080);</div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>}</div>
+<div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span> </div>
+<div class="foldopen" id="foldopen00013" data-start="{" data-end="}">
+<div class="line"><a id="l00013" name="l00013"></a><span class="lineno"><a class="line" href="test__main_8cpp.html#aaca099bbeef0a9b11556bcbcde6c09ae">   13</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;parse_arguments parses --user and --port&quot;</span>) {</div>
+<div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--user&quot;</span>, <span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;--port=8080&quot;</span>};</div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.username == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.port == 8080);</div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span>}</div>
 </div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span> </div>
-<div class="foldopen" id="foldopen00019" data-start="{" data-end="}">
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno"><a class="line" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">   19</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;parse_arguments parses --user=value form&quot;</span>) {</div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--user=hubber&quot;</span>};</div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  REQUIRE(config.username == <span class="stringliteral">&quot;hubber&quot;</span>);</div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>}</div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span> </div>
+<div class="foldopen" id="foldopen00020" data-start="{" data-end="}">
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno"><a class="line" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">   20</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;parse_arguments parses --user=value form&quot;</span>) {</div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--user=hubber&quot;</span>};</div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.username == <span class="stringliteral">&quot;hubber&quot;</span>);</div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span>}</div>
 </div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span> </div>
-<div class="foldopen" id="foldopen00025" data-start="{" data-end="}">
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="test__main_8cpp.html#aa988fd35bc4a35130b571a07c990458c">   25</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;parse_arguments throws on invalid port&quot;</span>) {</div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--port=notanumber&quot;</span>};</div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  REQUIRE_THROWS_AS(<a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args), std::invalid_argument);</div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>}</div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span> </div>
+<div class="foldopen" id="foldopen00026" data-start="{" data-end="}">
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno"><a class="line" href="test__main_8cpp.html#aa988fd35bc4a35130b571a07c990458c">   26</a></span><a class="code hl_function" href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a>(<span class="stringliteral">&quot;parse_arguments throws on invalid port&quot;</span>) {</div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--port=notanumber&quot;</span>};</div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span>  <a class="code hl_define" href="doctest_8h.html#aabaaa591d46f29cf307dbed1a5abba83">CHECK_THROWS_AS</a>(<a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args), std::invalid_argument);</div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span>}</div>
 </div>
 <div class="ttc" id="aconfig_8cpp_html"><div class="ttname"><a href="config_8cpp.html">config.cpp</a></div></div>
 <div class="ttc" id="aconfig_8cpp_html_acf7abda9dac6fd151892e22fdbe3ed0b"><div class="ttname"><a href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a></div><div class="ttdeci">AppConfig parse_arguments(const std::vector&lt; std::string &gt; &amp;args)</div><div class="ttdoc">Parses command-line arguments into AppConfig.</div><div class="ttdef"><b>Definition</b> <a href="config_8cpp_source.html#l00008">config.cpp:8</a></div></div>
-<div class="ttc" id="atest__main_8cpp_html_a66f0c5d4aa2f9f804c4721217170694b"><div class="ttname"><a href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a></div><div class="ttdeci">TEST_CASE(&quot;parse_arguments parses --user=value form&quot;)</div><div class="ttdef"><b>Definition</b> <a href="#l00019">test_main.cpp:19</a></div></div>
+<div class="ttc" id="adoctest_8h_html"><div class="ttname"><a href="doctest_8h.html">doctest.h</a></div></div>
+<div class="ttc" id="adoctest_8h_html_a836cca6b6ed3a1706353f6d1bca0935f"><div class="ttname"><a href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a></div><div class="ttdeci">#define CHECK(...)</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l02970">doctest.h:2970</a></div></div>
+<div class="ttc" id="adoctest_8h_html_aabaaa591d46f29cf307dbed1a5abba83"><div class="ttname"><a href="doctest_8h.html#aabaaa591d46f29cf307dbed1a5abba83">CHECK_THROWS_AS</a></div><div class="ttdeci">#define CHECK_THROWS_AS(expr,...)</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l02973">doctest.h:2973</a></div></div>
+<div class="ttc" id="atest__main_8cpp_html_a66f0c5d4aa2f9f804c4721217170694b"><div class="ttname"><a href="test__main_8cpp.html#a66f0c5d4aa2f9f804c4721217170694b">TEST_CASE</a></div><div class="ttdeci">TEST_CASE(&quot;parse_arguments parses --user=value form&quot;)</div><div class="ttdef"><b>Definition</b> <a href="#l00020">test_main.cpp:20</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

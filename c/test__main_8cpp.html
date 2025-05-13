@@ -94,15 +94,21 @@ $(function(){initNavTree('test__main_8cpp.html',''); initResizable(); });
 
 <div class="header">
   <div class="summary">
+<a href="#define-members">Macros</a> &#124;
 <a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">test_main.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &quot;<a class="el" href="config_8cpp_source.html">config.cpp</a>&quot;</code><br />
-<code>#include &lt;catch2/catch_test_macros.hpp&gt;</code><br />
+<div class="textblock"><code>#include &lt;<a class="el" href="doctest_8h_source.html">doctest.h</a>&gt;</code><br />
+<code>#include &quot;<a class="el" href="config_8cpp_source.html">config.cpp</a>&quot;</code><br />
 </div>
 <p><a href="test__main_8cpp_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
+Macros</h2></td></tr>
+<tr class="memitem:a623b8690a262536536a43eab2d7df03d" id="r_a623b8690a262536536a43eab2d7df03d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a623b8690a262536536a43eab2d7df03d">DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</a></td></tr>
+<tr class="separator:a623b8690a262536536a43eab2d7df03d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:afcf2a07ce6091991037458d60c41ec49" id="r_afcf2a07ce6091991037458d60c41ec49"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#afcf2a07ce6091991037458d60c41ec49">TEST_CASE</a> (&quot;parse_arguments parses default correctly&quot;)</td></tr>
@@ -114,6 +120,23 @@ Functions</h2></td></tr>
 <tr class="memitem:aa988fd35bc4a35130b571a07c990458c" id="r_aa988fd35bc4a35130b571a07c990458c"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aa988fd35bc4a35130b571a07c990458c">TEST_CASE</a> (&quot;parse_arguments throws on invalid port&quot;)</td></tr>
 <tr class="separator:aa988fd35bc4a35130b571a07c990458c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<h2 class="groupheader">Macro Definition Documentation</h2>
+<a id="a623b8690a262536536a43eab2d7df03d" name="a623b8690a262536536a43eab2d7df03d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a623b8690a262536536a43eab2d7df03d">&#9670;&#160;</a></span>DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p class="definition">Definition at line <a class="el" href="test__main_8cpp_source.html#l00001">1</a> of file <a class="el" href="test__main_8cpp_source.html">test_main.cpp</a>.</p>
+
+</div>
+</div>
 <h2 class="groupheader">Function Documentation</h2>
 <a id="aaca099bbeef0a9b11556bcbcde6c09ae" name="aaca099bbeef0a9b11556bcbcde6c09ae"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#aaca099bbeef0a9b11556bcbcde6c09ae">&#9670;&#160;</a></span>TEST_CASE() <span class="overload">[1/4]</span></h2>
@@ -130,16 +153,17 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__main_8cpp_source.html#l00012">12</a> of file <a class="el" href="test__main_8cpp_source.html">test_main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   12</span>                                                      {</div>
-<div class="line"><span class="lineno">   13</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--user&quot;</span>, <span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;--port=8080&quot;</span>};</div>
-<div class="line"><span class="lineno">   14</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
-<div class="line"><span class="lineno">   15</span>  REQUIRE(config.username == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
-<div class="line"><span class="lineno">   16</span>  REQUIRE(config.port == 8080);</div>
-<div class="line"><span class="lineno">   17</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test__main_8cpp_source.html#l00013">13</a> of file <a class="el" href="test__main_8cpp_source.html">test_main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   13</span>                                                      {</div>
+<div class="line"><span class="lineno">   14</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--user&quot;</span>, <span class="stringliteral">&quot;octocat&quot;</span>, <span class="stringliteral">&quot;--port=8080&quot;</span>};</div>
+<div class="line"><span class="lineno">   15</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
+<div class="line"><span class="lineno">   16</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.username == <span class="stringliteral">&quot;octocat&quot;</span>);</div>
+<div class="line"><span class="lineno">   17</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.port == 8080);</div>
+<div class="line"><span class="lineno">   18</span>}</div>
 <div class="ttc" id="aconfig_8cpp_html_acf7abda9dac6fd151892e22fdbe3ed0b"><div class="ttname"><a href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a></div><div class="ttdeci">AppConfig parse_arguments(const std::vector&lt; std::string &gt; &amp;args)</div><div class="ttdoc">Parses command-line arguments into AppConfig.</div><div class="ttdef"><b>Definition</b> <a href="config_8cpp_source.html#l00008">config.cpp:8</a></div></div>
+<div class="ttc" id="adoctest_8h_html_a836cca6b6ed3a1706353f6d1bca0935f"><div class="ttname"><a href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a></div><div class="ttdeci">#define CHECK(...)</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l02970">doctest.h:2970</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="config_8cpp_source.html#l00008">parse_arguments()</a>.</p>
+<p class="reference">References <a class="el" href="doctest_8h_source.html#l02970">CHECK</a>, and <a class="el" href="config_8cpp_source.html#l00008">parse_arguments()</a>.</p>
 
 </div>
 </div>
@@ -158,14 +182,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__main_8cpp_source.html#l00019">19</a> of file <a class="el" href="test__main_8cpp_source.html">test_main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   19</span>                                                      {</div>
-<div class="line"><span class="lineno">   20</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--user=hubber&quot;</span>};</div>
-<div class="line"><span class="lineno">   21</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
-<div class="line"><span class="lineno">   22</span>  REQUIRE(config.username == <span class="stringliteral">&quot;hubber&quot;</span>);</div>
-<div class="line"><span class="lineno">   23</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test__main_8cpp_source.html#l00020">20</a> of file <a class="el" href="test__main_8cpp_source.html">test_main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   20</span>                                                      {</div>
+<div class="line"><span class="lineno">   21</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--user=hubber&quot;</span>};</div>
+<div class="line"><span class="lineno">   22</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
+<div class="line"><span class="lineno">   23</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.username == <span class="stringliteral">&quot;hubber&quot;</span>);</div>
+<div class="line"><span class="lineno">   24</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="config_8cpp_source.html#l00008">parse_arguments()</a>.</p>
+<p class="reference">References <a class="el" href="doctest_8h_source.html#l02970">CHECK</a>, and <a class="el" href="config_8cpp_source.html#l00008">parse_arguments()</a>.</p>
 
 </div>
 </div>
@@ -184,16 +208,16 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__main_8cpp_source.html#l00004">4</a> of file <a class="el" href="test__main_8cpp_source.html">test_main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    4</span>                                                      {</div>
-<div class="line"><span class="lineno">    5</span>  std::vector&lt;std::string&gt; args = {};</div>
-<div class="line"><span class="lineno">    6</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
-<div class="line"><span class="lineno">    7</span>  REQUIRE(config.username == <span class="stringliteral">&quot;izelnakri&quot;</span>);</div>
-<div class="line"><span class="lineno">    8</span>  REQUIRE(config.port == 1234);</div>
-<div class="line"><span class="lineno">    9</span>  REQUIRE(config.run_server == <span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   10</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test__main_8cpp_source.html#l00005">5</a> of file <a class="el" href="test__main_8cpp_source.html">test_main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">    5</span>                                                      {</div>
+<div class="line"><span class="lineno">    6</span>  std::vector&lt;std::string&gt; args = {};</div>
+<div class="line"><span class="lineno">    7</span>  AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
+<div class="line"><span class="lineno">    8</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.username == <span class="stringliteral">&quot;izelnakri&quot;</span>);</div>
+<div class="line"><span class="lineno">    9</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.port == 1234);</div>
+<div class="line"><span class="lineno">   10</span>  <a class="code hl_define" href="doctest_8h.html#a836cca6b6ed3a1706353f6d1bca0935f">CHECK</a>(config.run_server == <span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   11</span>}</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="config_8cpp_source.html#l00008">parse_arguments()</a>.</p>
+<p class="reference">References <a class="el" href="doctest_8h_source.html#l02970">CHECK</a>, and <a class="el" href="config_8cpp_source.html#l00008">parse_arguments()</a>.</p>
 
 </div>
 </div>
@@ -212,13 +236,14 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="test__main_8cpp_source.html#l00025">25</a> of file <a class="el" href="test__main_8cpp_source.html">test_main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>                                                    {</div>
-<div class="line"><span class="lineno">   26</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--port=notanumber&quot;</span>};</div>
-<div class="line"><span class="lineno">   27</span>  REQUIRE_THROWS_AS(<a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args), std::invalid_argument);</div>
-<div class="line"><span class="lineno">   28</span>}</div>
+<p class="definition">Definition at line <a class="el" href="test__main_8cpp_source.html#l00026">26</a> of file <a class="el" href="test__main_8cpp_source.html">test_main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   26</span>                                                    {</div>
+<div class="line"><span class="lineno">   27</span>  std::vector&lt;std::string&gt; args = {<span class="stringliteral">&quot;--port=notanumber&quot;</span>};</div>
+<div class="line"><span class="lineno">   28</span>  <a class="code hl_define" href="doctest_8h.html#aabaaa591d46f29cf307dbed1a5abba83">CHECK_THROWS_AS</a>(<a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args), std::invalid_argument);</div>
+<div class="line"><span class="lineno">   29</span>}</div>
+<div class="ttc" id="adoctest_8h_html_aabaaa591d46f29cf307dbed1a5abba83"><div class="ttname"><a href="doctest_8h.html#aabaaa591d46f29cf307dbed1a5abba83">CHECK_THROWS_AS</a></div><div class="ttdeci">#define CHECK_THROWS_AS(expr,...)</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l02973">doctest.h:2973</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="config_8cpp_source.html#l00008">parse_arguments()</a>.</p>
+<p class="reference">References <a class="el" href="doctest_8h_source.html#l02973">CHECK_THROWS_AS</a>, and <a class="el" href="config_8cpp_source.html#l00008">parse_arguments()</a>.</p>
 
 </div>
 </div>

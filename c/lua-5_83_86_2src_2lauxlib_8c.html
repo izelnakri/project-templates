@@ -853,18 +853,19 @@ Functions</h2></td></tr>
 <p class="definition">Definition at line <a class="el" href="lua-5_83_86_2src_2lauxlib_8c_source.html#l00110">110</a> of file <a class="el" href="lua-5_83_86_2src_2lauxlib_8c_source.html">lua-5.3.6/src/lauxlib.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  110</span>                                    {</div>
 <div class="line"><span class="lineno">  111</span>  <a class="code hl_struct" href="structlua__Debug.html">lua_Debug</a> ar;</div>
-<div class="line"><span class="lineno">  112</span>  <span class="keywordtype">int</span> li = 1, le = 1;</div>
+<div class="line"><span class="lineno">  112</span>  <span class="keywordtype">int</span> li = 1, <a class="code hl_enumvalue" href="namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569a58efccb94f787a00914adc6db077347b">le</a> = 1;</div>
 <div class="line"><span class="lineno">  113</span>  <span class="comment">/* find an upper bound */</span></div>
-<div class="line"><span class="lineno">  114</span>  <span class="keywordflow">while</span> (<a class="code hl_function" href="lua-5_81_85_2src_2ldebug_8c.html#ac1fc03c27ee46caa4037df2d70f22110">lua_getstack</a>(L, le, &amp;ar)) { li = le; le *= 2; }</div>
+<div class="line"><span class="lineno">  114</span>  <span class="keywordflow">while</span> (<a class="code hl_function" href="lua-5_81_85_2src_2ldebug_8c.html#ac1fc03c27ee46caa4037df2d70f22110">lua_getstack</a>(L, le, &amp;ar)) { li = <a class="code hl_enumvalue" href="namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569a58efccb94f787a00914adc6db077347b">le</a>; <a class="code hl_enumvalue" href="namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569a58efccb94f787a00914adc6db077347b">le</a> *= 2; }</div>
 <div class="line"><span class="lineno">  115</span>  <span class="comment">/* do a binary search */</span></div>
 <div class="line"><span class="lineno">  116</span>  <span class="keywordflow">while</span> (li &lt; le) {</div>
-<div class="line"><span class="lineno">  117</span>    <span class="keywordtype">int</span> m = (li + le)/2;</div>
+<div class="line"><span class="lineno">  117</span>    <span class="keywordtype">int</span> m = (li + <a class="code hl_enumvalue" href="namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569a58efccb94f787a00914adc6db077347b">le</a>)/2;</div>
 <div class="line"><span class="lineno">  118</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="lua-5_81_85_2src_2ldebug_8c.html#ac1fc03c27ee46caa4037df2d70f22110">lua_getstack</a>(L, m, &amp;ar)) li = m + 1;</div>
-<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">else</span> le = m;</div>
+<div class="line"><span class="lineno">  119</span>    <span class="keywordflow">else</span> <a class="code hl_enumvalue" href="namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569a58efccb94f787a00914adc6db077347b">le</a> = m;</div>
 <div class="line"><span class="lineno">  120</span>  }</div>
-<div class="line"><span class="lineno">  121</span>  <span class="keywordflow">return</span> le - 1;</div>
+<div class="line"><span class="lineno">  121</span>  <span class="keywordflow">return</span> <a class="code hl_enumvalue" href="namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569a58efccb94f787a00914adc6db077347b">le</a> - 1;</div>
 <div class="line"><span class="lineno">  122</span>}</div>
 <div class="ttc" id="alua-5_81_85_2src_2ldebug_8c_html_ac1fc03c27ee46caa4037df2d70f22110"><div class="ttname"><a href="lua-5_81_85_2src_2ldebug_8c.html#ac1fc03c27ee46caa4037df2d70f22110">lua_getstack</a></div><div class="ttdeci">LUA_API int lua_getstack(lua_State *L, int level, lua_Debug *ar)</div><div class="ttdef"><b>Definition</b> <a href="lua-5_81_85_2src_2ldebug_8c_source.html#l00084">lua-5.1.5/src/ldebug.c:84</a></div></div>
+<div class="ttc" id="anamespacedoctest_1_1detail_1_1binaryAssertComparison_html_a2117cafa5b007d26f2e0988f3a081569a58efccb94f787a00914adc6db077347b"><div class="ttname"><a href="namespacedoctest_1_1detail_1_1binaryAssertComparison.html#a2117cafa5b007d26f2e0988f3a081569a58efccb94f787a00914adc6db077347b">doctest::detail::binaryAssertComparison::le</a></div><div class="ttdeci">@ le</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l01665">doctest.h:1664</a></div></div>
 <div class="ttc" id="astructlua__Debug_html"><div class="ttname"><a href="structlua__Debug.html">lua_Debug</a></div><div class="ttdef"><b>Definition</b> <a href="lua-5_81_85_2src_2lua_8h_source.html#l00346">lua-5.1.5/src/lua.h:346</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="lua-5_81_85_2src_2ldebug_8c_source.html#l00084">lua_getstack()</a>.</p>

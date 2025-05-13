@@ -73,7 +73,7 @@ var deprecated_2gthread_8h =
     [ "owner", "deprecated_2gthread_8h.html#ada6969800b942e9ae1ebcce4bbf97535", null ],
     [ "read_cond", "deprecated_2gthread_8h.html#abbf521936c68f65b76900df053dfb4b3", null ],
     [ "read_counter", "deprecated_2gthread_8h.html#ae1eeb50763b7a762c0c5e3040540f36d", null ],
-    [ "unused", "deprecated_2gthread_8h.html#a3b1ec5f7cc9d987b6be118edd3d26e60", null ],
+    [ "unused", "deprecated_2gthread_8h.html#acea79312180ca0eead67acba711c5e02", null ],
     [ "want_to_read", "deprecated_2gthread_8h.html#af1d8725336c9c9d032906359f9547735", null ],
     [ "want_to_write", "deprecated_2gthread_8h.html#ad200d3775edc152daa311180ec42eaad", null ],
     [ "write_cond", "deprecated_2gthread_8h.html#a8a924763c758eef2bbba15b3a4fb05f6", null ]

@@ -134,7 +134,7 @@ $(function(){initNavTree('alloc_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#ifdef __cplusplus</span></div>
 <div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor"># include &lt;memory&gt;</span></div>
 <div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor"># include &lt;cstddef&gt;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">using </span>std::size_t;</div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="keyword">using </span><a class="code hl_typedef" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">std::size_t</a>;</div>
 <div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#else</span></div>
 <div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor"># include &lt;stddef.h&gt;</span></div>
 <div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#endif</span></div>
@@ -354,7 +354,7 @@ $(function(){initNavTree('alloc_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00251" name="l00251"></a><span class="lineno">  251</span>    <span class="keyword">typedef</span> <span class="keyword">const</span> value_type *const_pointer;</div>
 <div class="line"><a id="l00252" name="l00252"></a><span class="lineno">  252</span>    <span class="keyword">typedef</span> value_type &amp;reference;</div>
 <div class="line"><a id="l00253" name="l00253"></a><span class="lineno">  253</span>    <span class="keyword">typedef</span> <span class="keyword">const</span> value_type &amp;const_reference;</div>
-<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="keyword">typedef</span> std::size_t size_type;</div>
+<div class="line"><a id="l00254" name="l00254"></a><span class="lineno">  254</span>    <span class="keyword">typedef</span> <a class="code hl_typedef" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">std::size_t</a> size_type;</div>
 <div class="line"><a id="l00255" name="l00255"></a><span class="lineno">  255</span>    <span class="keyword">typedef</span> std::ptrdiff_t difference_type;</div>
 <div class="line"><a id="l00256" name="l00256"></a><span class="lineno">  256</span> </div>
 <div class="line"><a id="l00257" name="l00257"></a><span class="lineno">  257</span>    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> U&gt;</div>
@@ -387,18 +387,18 @@ $(function(){initNavTree('alloc_8h_source.html',''); initResizable(); });
 <div class="line"><a id="l00284" name="l00284"></a><span class="lineno">  284</span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> construct(pointer p, T &amp;&amp;t) { <span class="keyword">new</span> (p) T(std::move(t)); }</div>
 <div class="line"><a id="l00285" name="l00285"></a><span class="lineno">  285</span>    <span class="keyword">inline</span> <span class="keywordtype">void</span> destroy(pointer p) { p-&gt;~T(); }</div>
 <div class="line"><a id="l00286" name="l00286"></a><span class="lineno">  286</span> </div>
-<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> operator==(allocator <span class="keyword">const</span> &amp;) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
-<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> operator!=(allocator <span class="keyword">const</span> &amp;<a class="code hl_class" href="classa.html">a</a>) { <span class="keywordflow">return</span> !operator==(<a class="code hl_class" href="classa.html">a</a>); }</div>
+<div class="line"><a id="l00287" name="l00287"></a><span class="lineno">  287</span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacedoctest.html#ae332e5e775f83a532884303780f79f9f">operator==</a>(allocator <span class="keyword">const</span> &amp;) { <span class="keywordflow">return</span> <span class="keyword">true</span>; }</div>
+<div class="line"><a id="l00288" name="l00288"></a><span class="lineno">  288</span>    <span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code hl_function" href="namespacedoctest.html#ab9a88e4c19857cd86a0f037d27bcad72">operator!=</a>(allocator <span class="keyword">const</span> &amp;<a class="code hl_class" href="classa.html">a</a>) { <span class="keywordflow">return</span> !<a class="code hl_function" href="namespacedoctest.html#ae332e5e775f83a532884303780f79f9f">operator==</a>(<a class="code hl_class" href="classa.html">a</a>); }</div>
 <div class="line"><a id="l00289" name="l00289"></a><span class="lineno">  289</span>};</div>
 <div class="line"><a id="l00290" name="l00290"></a><span class="lineno">  290</span> </div>
 <div class="line"><a id="l00291" name="l00291"></a><span class="lineno">  291</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="keywordtype">bool</span> operator==(allocator&lt;T&gt; <span class="keyword">const</span>&amp; lhs, allocator&lt;U&gt; <span class="keyword">const</span>&amp; rhs)</div>
+<div class="line"><a id="l00292" name="l00292"></a><span class="lineno">  292</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacedoctest.html#ae332e5e775f83a532884303780f79f9f">operator==</a>(allocator&lt;T&gt; <span class="keyword">const</span>&amp; lhs, allocator&lt;U&gt; <span class="keyword">const</span>&amp; rhs)</div>
 <div class="line"><a id="l00293" name="l00293"></a><span class="lineno">  293</span>{</div>
 <div class="line"><a id="l00294" name="l00294"></a><span class="lineno">  294</span>   <span class="keywordflow">return</span> <span class="keyword">false</span>;</div>
 <div class="line"><a id="l00295" name="l00295"></a><span class="lineno">  295</span>}</div>
 <div class="line"><a id="l00296" name="l00296"></a><span class="lineno">  296</span> </div>
 <div class="line"><a id="l00297" name="l00297"></a><span class="lineno">  297</span><span class="keyword">template</span>&lt;<span class="keyword">typename</span> T, <span class="keyword">typename</span> U&gt;</div>
-<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="keywordtype">bool</span> operator!=(allocator&lt;T&gt; <span class="keyword">const</span>&amp; lhs, allocator&lt;U&gt; <span class="keyword">const</span>&amp; rhs)</div>
+<div class="line"><a id="l00298" name="l00298"></a><span class="lineno">  298</span><span class="keywordtype">bool</span> <a class="code hl_function" href="namespacedoctest.html#ab9a88e4c19857cd86a0f037d27bcad72">operator!=</a>(allocator&lt;T&gt; <span class="keyword">const</span>&amp; lhs, allocator&lt;U&gt; <span class="keyword">const</span>&amp; rhs)</div>
 <div class="line"><a id="l00299" name="l00299"></a><span class="lineno">  299</span>{</div>
 <div class="line"><a id="l00300" name="l00300"></a><span class="lineno">  300</span>   <span class="keywordflow">return</span> !(lhs == rhs);</div>
 <div class="line"><a id="l00301" name="l00301"></a><span class="lineno">  301</span>}</div>
@@ -420,6 +420,9 @@ $(function(){initNavTree('alloc_8h_source.html',''); initResizable(); });
 <div class="ttc" id="acommon_8h_html_a10839256770d290a06c6e04ba68e272a"><div class="ttname"><a href="common_8h.html#a10839256770d290a06c6e04ba68e272a">CR_API</a></div><div class="ttdeci">#define CR_API</div><div class="ttdef"><b>Definition</b> <a href="common_8h_source.html#l00128">common.h:128</a></div></div>
 <div class="ttc" id="acommon_8h_html_a73f2ac90b638ed28f0833d9102d9cd1e"><div class="ttname"><a href="common_8h.html#a73f2ac90b638ed28f0833d9102d9cd1e">CR_END_C_API</a></div><div class="ttdeci">#define CR_END_C_API</div><div class="ttdef"><b>Definition</b> <a href="common_8h_source.html#l00055">common.h:55</a></div></div>
 <div class="ttc" id="aduktape-1_85_82_2src-noline_2duk__config_8h_html_a3c75bb398badb69c7577b21486f9963f"><div class="ttname"><a href="duktape-1_85_82_2src-noline_2duk__config_8h.html#a3c75bb398badb69c7577b21486f9963f">SIZE_MAX</a></div><div class="ttdeci">#define SIZE_MAX</div><div class="ttdef"><b>Definition</b> <a href="duktape-1_85_82_2src-noline_2duk__config_8h_source.html#l01762">duktape-1.5.2/src-noline/duk_config.h:1762</a></div></div>
+<div class="ttc" id="anamespacedoctest_html_ab9a88e4c19857cd86a0f037d27bcad72"><div class="ttname"><a href="namespacedoctest.html#ab9a88e4c19857cd86a0f037d27bcad72">doctest::operator!=</a></div><div class="ttdeci">DOCTEST_INTERFACE bool operator!=(const String &amp;lhs, const String &amp;rhs)</div></div>
+<div class="ttc" id="anamespacedoctest_html_ae332e5e775f83a532884303780f79f9f"><div class="ttname"><a href="namespacedoctest.html#ae332e5e775f83a532884303780f79f9f">doctest::operator==</a></div><div class="ttdeci">DOCTEST_INTERFACE bool operator==(const String &amp;lhs, const String &amp;rhs)</div></div>
+<div class="ttc" id="anamespacestd_html_a2a88bc267d8fe2228f9ef18e79d79268"><div class="ttname"><a href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">std::size_t</a></div><div class="ttdeci">decltype(sizeof(void *)) size_t</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l00524">doctest.h:524</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

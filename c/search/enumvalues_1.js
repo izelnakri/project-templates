@@ -8,6 +8,7 @@ var searchData=
   ['additional_5fheader_5',['ADDITIONAL_HEADER',['../civetweb_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba154fd2c7788b97dd4ea040e669a4cd1d',1,'civetweb.c']]],
   ['allow_5findex_5fscript_5fsub_5fres_6',['ALLOW_INDEX_SCRIPT_SUB_RES',['../civetweb_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba2b3396fe44b8e2601349457d7357f6cc',1,'civetweb.c']]],
   ['assert_7',['ASSERT',['../hooks_8h.html#a9172e7af650b04cb03b58cabe667991aa61d9e0e93eb9635173764c5ba45666f1',1,'hooks.h']]],
-  ['auth_5fhandler_8',['AUTH_HANDLER',['../civetweb_8c.html#adf764cbdea00d65edcd07bb9953ad2b7a8617f4f76318f5c524016c5bc6fa864c',1,'civetweb.c']]],
-  ['authentication_5fdomain_9',['AUTHENTICATION_DOMAIN',['../civetweb_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba43a1f307bb484b11e37518539af13ed2',1,'civetweb.c']]]
+  ['assertfailure_8',['AssertFailure',['../namespacedoctest_1_1TestCaseFailureReason.html#aecb2ca1f80416d60f0d6b96f65859d3ca06ab32ff93cacaa65c6a2667ddde64e9',1,'doctest::TestCaseFailureReason']]],
+  ['auth_5fhandler_9',['AUTH_HANDLER',['../civetweb_8c.html#adf764cbdea00d65edcd07bb9953ad2b7a8617f4f76318f5c524016c5bc6fa864c',1,'civetweb.c']]],
+  ['authentication_5fdomain_10',['AUTHENTICATION_DOMAIN',['../civetweb_8c.html#a06fc87d81c62e9abb8790b6e5713c55ba43a1f307bb484b11e37518539af13ed2',1,'civetweb.c']]]
 ];

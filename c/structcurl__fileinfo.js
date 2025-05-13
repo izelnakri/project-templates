@@ -12,7 +12,7 @@ var structcurl__fileinfo =
     [ "perm", "structcurl__fileinfo.html#a48e688d2b2feee03da8ae21924f3b97b", null ],
     [ "perm", "structcurl__fileinfo.html#a356964c606c7a4167cc468bffb2dcec9", null ],
     [ "size", "structcurl__fileinfo.html#a23e38e1ca497cb7a140d9aff92f33fc0", null ],
-    [ "strings", "structcurl__fileinfo.html#ac2f1f9929c22dd50cd54ea61581683fe", null ],
+    [ "strings", "structcurl__fileinfo.html#a0fab28ee888ab5f49a92d4655eee5463", null ],
     [ "target", "structcurl__fileinfo.html#a68e8fc68544920dc452306a79bea8907", null ],
     [ "time", "structcurl__fileinfo.html#a5136db1360519440e97f481a9a05da0f", null ],
     [ "time", "structcurl__fileinfo.html#ab25d86f3b4f3c89fb924c6af136b350c", null ],
