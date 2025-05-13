@@ -1,7 +1,7 @@
 project('github_user_fetcher', 'cpp', version : '1.0.0')
 
 cpp = meson.get_compiler('cpp')
-cpp_args = ['-Wall', '-Wextra', '-std=c++20'] # TODO: in future move it to c++23(+)
+cpp_args = ['-Wall', '-Wextra', '-std=c++23']
 lib_src = files('src/user.cpp', 'src/server.cpp')
 main_src = lib_src + files('src/main.cpp', 'src/config.cpp')
 
