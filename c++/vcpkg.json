@@ -1,0 +1,17 @@
+{
+  "name": "c-project",
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "",
+  "license": "MIT",
+  "dependencies": [
+    "benchmark"
+  ],
+  "builtin-baseline": "ce613c41372b23b1f51333815feb3edd87ef8a8b",
+  "overrides": [
+    {
+      "name": "benchmark",
+      "version": "1.9.2"
+    }
+  ]
+}

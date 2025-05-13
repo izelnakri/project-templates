@@ -56,33 +56,33 @@
             text = "make test";
           };
 
-          # output = pkgs.nixosTest {
-          #   # NOTE: running this in python with: $ nix run '.#checks.x86_64-linux.output.driverInteractive' # inside python shell: run_tests()
-          #   name = "output-test"; # NOTE: run this on nix flake check or $ nix run .#checks.x86_64-linux.output
-          #   nodes.machine = { config, pkgs, ... }: {
-          #     environment.systemPackages = [
-          #       pkgs.pkg-config-unwrapped
-          #       self.packages.${system}.default
-          #     ];
-          #     environment.variables = {
-          #       PKG_CONFIG_PATH = "$PKG_CONFIG_PATH:${self.packages.${system}.default}/lib/pkgconfig";
-          #     };
-          #     system.stateVersion = pkgs.lib.versions.majorMinor pkgs.lib.version;
-          #   };
-          #
-          #   testScript = ''
-          #     machine.wait_for_unit("default.target")
-          #     machine.succeed("github_user_fetcher | grep -o \"GitHub User:\"")
-          #
-          #     machine.succeed("systemd-run --unit=github_user_fetcher github_user_fetcher --server")
-          #     machine.wait_for_open_port(1234)
-          #
-          #     machine.succeed("systemd-run --unit=github_user_fetcher_gui github_user_fetcher_gui")
-          #
-          #     machine.succeed("pkg-config --exists github_user_fetcher")
-          #     machine.succeed("pkg-config --modversion github_user_fetcher")
-          #   '';
-          # };
+          output = pkgs.nixosTest {
+            # NOTE: running this in python with: $ nix run '.#checks.x86_64-linux.output.driverInteractive' # inside python shell: run_tests()
+            name = "output-test"; # NOTE: run this on nix flake check or $ nix run .#checks.x86_64-linux.output
+            nodes.machine = { config, pkgs, ... }: {
+              environment.systemPackages = [
+                pkgs.pkg-config-unwrapped
+                self.packages.${system}.default
+              ];
+              environment.variables = {
+                PKG_CONFIG_PATH = "$PKG_CONFIG_PATH:${self.packages.${system}.default}/lib/pkgconfig";
+              };
+              system.stateVersion = pkgs.lib.versions.majorMinor pkgs.lib.version;
+            };
+
+            testScript = ''
+              machine.wait_for_unit("default.target")
+              machine.succeed("github_user_fetcher | grep -o \"GitHub User:\"")
+              
+              machine.succeed("systemd-run --unit=github_user_fetcher github_user_fetcher --server")
+              machine.wait_for_open_port(1234)
+
+              machine.succeed("systemd-run --unit=github_user_fetcher_gui github_user_fetcher_gui")
+
+              machine.succeed("pkg-config --exists github_user_fetcher")
+              machine.succeed("pkg-config --modversion github_user_fetcher")
+            '';
+          };
         };
 
         devShells.default = import ./nix/devShells/default.nix {
@@ -109,15 +109,13 @@
             name = "github_user_fetcher";
             src = ./.;
             nativeBuildInputs = [ pkgs.meson pkgs.ninja pkgs.pkg-config ];
-            buildInputs = [ pkgs.boost ]; # NOTE: maybe remove pkgs.asio
-            # nativeBuildInputs = [ pkgs.meson pkgs.ninja pkgs.pkg-config ];
-            # buildInputs = [ pkgs.curl.dev pkgs.jansson pkgs.criterion pkgs.gtk4 ];
+            buildInputs = [ pkgs.boost pkgs.nlohmann_json pkgs.openssl pkgs.gtkmm4 pkgs.curl.dev ];
 
-            # installPhase = ''
-            #   runHook preInstall
-            #   ninja -C . install
-            #   runHook postInstall
-            # '';
+            installPhase = ''
+              runHook preInstall
+              ninja -C . install
+              runHook postInstall
+            '';
 
             setupHook = pkgs.writeText "setup-hook.sh" ''
               export PKG_CONFIG_PATH="''${PKG_CONFIG_PATH-}''${PKG_CONFIG_PATH:+:}$out/lib/pkgconfig"
@@ -132,56 +130,56 @@
             mesonBuildType = "release";
           });
 
-        #   dockerImage = pkgs.dockerTools.buildLayeredImage {
-        #     # this can be the production image, probably make streamedPaths?
-        #     name = "github_user_fetcher";
-        #     tag = "dev";
-        #     created = "now";
-        #
-        #     contents = [
-        #       pkgs.zsh
-        #       pkgs.coreutils
-        #       pkgs.pkg-config-unwrapped
-        #       pkgs.cacert
-        #       pkgs.fontconfig
-        #       pkgs.dejavu_fonts
-        #       self.packages.${system}.default
-        #     ];
-        #
-        #     config = {
-        #       Env = [
-        #         "SSL_CERT_FILE=${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
-        #         "XDG_DATA_DIRS=${pkgs.gtk4}/share"
-        #         "PKG_CONFIG_PATH=/lib/pkgconfig"
-        #       ];
-        #       Cmd = [ "/bin/github_user_fetcher" ];
-        #     };
-        #   };
-        #
-        #   dockerProductionImage = pkgs.dockerTools.buildLayeredImage {
-        #     name = "github_user_fetcher";
-        #     tag = "prod";
-        #     created = "now";
-        #
-        #     contents = [
-        #       pkgs.zsh
-        #       pkgs.coreutils
-        #       pkgs.pkg-config-unwrapped
-        #       pkgs.cacert
-        #       pkgs.fontconfig
-        #       pkgs.dejavu_fonts
-        #       self.packages.${system}.production
-        #     ];
-        #
-        #     config = {
-        #       Env = [
-        #         "SSL_CERT_FILE=${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
-        #         "XDG_DATA_DIRS=${pkgs.gtk4}/share"
-        #         "PKG_CONFIG_PATH=/lib/pkgconfig"
-        #       ];
-        #       Cmd = [ "/bin/github_user_fetcher" ];
-        #     };
-        #   };
+          dockerImage = pkgs.dockerTools.buildLayeredImage {
+            # this can be the production image, probably make streamedPaths?
+            name = "github_user_fetcher";
+            tag = "dev";
+            created = "now";
+
+            contents = [
+              pkgs.zsh
+              pkgs.coreutils
+              pkgs.pkg-config-unwrapped
+              pkgs.cacert
+              pkgs.fontconfig
+              pkgs.dejavu_fonts
+              self.packages.${system}.default
+            ];
+
+            config = {
+              Env = [
+                "SSL_CERT_FILE=${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
+                "XDG_DATA_DIRS=${pkgs.gtk4}/share"
+                "PKG_CONFIG_PATH=/lib/pkgconfig"
+              ];
+              Cmd = [ "/bin/github_user_fetcher" ];
+            };
+          };
+
+          dockerProductionImage = pkgs.dockerTools.buildLayeredImage {
+            name = "github_user_fetcher";
+            tag = "prod";
+            created = "now";
+
+            contents = [
+              pkgs.zsh
+              pkgs.coreutils
+              pkgs.pkg-config-unwrapped
+              pkgs.cacert
+              pkgs.fontconfig
+              pkgs.dejavu_fonts
+              self.packages.${system}.production
+            ];
+
+            config = {
+              Env = [
+                "SSL_CERT_FILE=${pkgs.cacert}/etc/ssl/certs/ca-bundle.crt"
+                "XDG_DATA_DIRS=${pkgs.gtk4}/share"
+                "PKG_CONFIG_PATH=/lib/pkgconfig"
+              ];
+              Cmd = [ "/bin/github_user_fetcher" ];
+            };
+          };
         };
       }
     );

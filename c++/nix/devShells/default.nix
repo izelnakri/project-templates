@@ -78,6 +78,7 @@ let
     gdb
     flatpak-builder
     doxygen
+    graphviz
   ];
   
   shellTools = with pkgs; [
@@ -94,17 +95,12 @@ let
   
 in
 pkgs.mkShell rec {
-  # inputsFrom = [ self.packages.${system}.default ]; # TODO: This was before, in the C project
+  inputsFrom = [ self.packages.${system}.default ];
 
-  # Split build inputs into logical groups
   nativeBuildInputs = devTools ++ shellTools;
-  
-  # TODO: Ideally move there:
-  # buildInputs = [ self.packages.${system}.default ]; # TODO: This was before, in the C project
-  buildInputs = [ pkgs.meson pkgs.ninja pkgs.boost pkgs.nlohmann_json pkgs.openssl pkgs.gtkmm4 pkgs.curl.dev ];
+  buildInputs = [ self.packages.${system}.default ];
 
-  # PKG_CONFIG_PATH = getAllPkgConfigPaths pkgs (inputsFrom ++ buildInputs ++ nativeBuildInputs); # TODO: This was before, in the C project
-  PKG_CONFIG_PATH = getAllPkgConfigPaths pkgs (buildInputs ++ nativeBuildInputs);
+  PKG_CONFIG_PATH = getAllPkgConfigPaths pkgs (inputsFrom ++ buildInputs ++ nativeBuildInputs);
 
   shellHook = with pkgs; ''
     set -eo pipefail;
