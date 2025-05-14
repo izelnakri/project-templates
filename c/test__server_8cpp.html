@@ -100,12 +100,12 @@ $(function(){initNavTree('test__server_8cpp.html',''); initResizable(); });
   <div class="headertitle"><div class="title">test_server.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
-<div class="textblock"><code>#include &lt;<a class="el" href="doctest_8h_source.html">doctest.h</a>&gt;</code><br />
-<code>#include &quot;server.hpp&quot;</code><br />
+<div class="textblock"><code>#include &quot;server.hpp&quot;</code><br />
 <code>#include &lt;boost/asio.hpp&gt;</code><br />
 <code>#include &lt;boost/beast/core.hpp&gt;</code><br />
 <code>#include &lt;boost/beast/http.hpp&gt;</code><br />
 <code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;<a class="el" href="doctest_8h_source.html">doctest.h</a>&gt;</code><br />
 <code>#include &lt;thread&gt;</code><br />
 </div>
 <p><a href="test__server_8cpp_source.html">Go to the source code of this file.</a></p>
@@ -204,7 +204,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   40</span> </div>
 <div class="line"><span class="lineno">   41</span>  beast::error_code ec;</div>
 <div class="line"><span class="lineno">   42</span>  stream.socket().shutdown(tcp::socket::shutdown_both, ec);</div>
-<div class="line"><span class="lineno">   43</span>  </div>
+<div class="line"><span class="lineno">   43</span> </div>
 <div class="line"><span class="lineno">   44</span>  <span class="comment">// Kill server (not ideal, better to make server stop externally)</span></div>
 <div class="line"><span class="lineno">   45</span>  std::raise(SIGINT);</div>
 <div class="line"><span class="lineno">   46</span>  server_thread.join();</div>

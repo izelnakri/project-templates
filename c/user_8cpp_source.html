@@ -163,17 +163,13 @@ $(function(){initNavTree('user_8cpp_source.html',''); initResizable(); });
 <div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>  }</div>
 <div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span> </div>
 <div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>  beast::error_code error_code;</div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  stream.shutdown(error_code);</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>  <span class="keywordflow">if</span> (error_code == net::error::eof) {</div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>    error_code = {}; <span class="comment">// Ignore EOF on shutdown</span></div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>  }</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">if</span> (error_code) {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <span class="keywordflow">throw</span> beast::system_error{error_code};</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>  }</div>
-<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
-<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="structUser.html">User</a>{json.value(<span class="stringliteral">&quot;login&quot;</span>, <span class="stringliteral">&quot;&quot;</span>), json.value(<span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;&quot;</span>),</div>
-<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>              json.value(<span class="stringliteral">&quot;company&quot;</span>, <span class="stringliteral">&quot;&quot;</span>), json.value(<span class="stringliteral">&quot;location&quot;</span>, <span class="stringliteral">&quot;&quot;</span>)};</div>
-<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>}</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>  <span class="keywordflow">if</span> (stream.shutdown(error_code)) {</div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <span class="keywordflow">throw</span> beast::system_error{error_code};</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span>  }</div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span> </div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>  <span class="keywordflow">return</span> <a class="code hl_struct" href="structUser.html">User</a>{json.value(<span class="stringliteral">&quot;login&quot;</span>, <span class="stringliteral">&quot;&quot;</span>), json.value(<span class="stringliteral">&quot;name&quot;</span>, <span class="stringliteral">&quot;&quot;</span>),</div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>              json.value(<span class="stringliteral">&quot;company&quot;</span>, <span class="stringliteral">&quot;&quot;</span>), json.value(<span class="stringliteral">&quot;location&quot;</span>, <span class="stringliteral">&quot;&quot;</span>)};</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
 <div class="ttc" id="alsqlite3_8c_html_a8f8f80d37794cde9472343e4487ba3eb"><div class="ttname"><a href="lsqlite3_8c.html#a8f8f80d37794cde9472343e4487ba3eb">name</a></div><div class="ttdeci">const char * name</div><div class="ttdef"><b>Definition</b> <a href="lsqlite3_8c_source.html#l02154">lsqlite3.c:2154</a></div></div>
 <div class="ttc" id="anamespacestd_html"><div class="ttname"><a href="namespacestd.html">std</a></div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l00522">doctest.h:522</a></div></div>
 <div class="ttc" id="aserver_8cpp_html_a60a92ea513bd2f25705cdd673983c5a8"><div class="ttname"><a href="server_8cpp.html#a60a92ea513bd2f25705cdd673983c5a8">tcp</a></div><div class="ttdeci">net::ip::tcp tcp</div><div class="ttdef"><b>Definition</b> <a href="server_8cpp_source.html#l00020">server.cpp:20</a></div></div>
