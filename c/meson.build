@@ -82,6 +82,6 @@ endif
 pkg = import('pkgconfig')
 pkg.generate(
   name : 'github_user_fetcher',
-  description : 'My github_user_fetcher library',
+  description : 'GitHub user fetcher library',
   libraries : github_user_fetcher_shared,
   version : '0.1.0')

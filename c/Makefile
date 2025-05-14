@@ -180,6 +180,9 @@ valgrind-massif: build
 	valgrind --tool=massif ./build/github_user_fetcher
 	@echo "Use 'ms_print massif.out.*' to view heap profile"
 
+heaptrack: build
+	heaptrack ./build/github_user_fetcher --user izelnakri
+
 release:
 	@echo "Building in RELEASE mode"
 	make RELEASE=true setup

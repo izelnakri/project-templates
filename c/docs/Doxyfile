@@ -2,7 +2,7 @@
 
 # Project basics
 PROJECT_NAME           = "Github User Fetcher"
-PROJECT_BRIEF          = "C/C++ Application with Server and GUI"
+PROJECT_BRIEF          = "C Application with Server and GUI"
 PROJECT_NUMBER         = 1.0.0
 
 # GitHub link (you can change this)

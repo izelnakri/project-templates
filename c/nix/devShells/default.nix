@@ -78,6 +78,7 @@ let
     gdb
     flatpak-builder
     doxygen
+    graphviz
   ];
   
   shellTools = with pkgs; [
