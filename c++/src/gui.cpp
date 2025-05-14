@@ -77,11 +77,11 @@ private:
     // Run fetch in a background thread
     std::thread([this, username]() {
       try {
-        User user = fetch_github_user(username);
-        nlohmann::json json = {{"login", user.getLogin()},
-                               {"name", user.getName()},
-                               {"company", user.getCompany()},
-                               {"location", user.getLocation()}};
+        User user = User::fetch_github_user(username);
+        nlohmann::json json = {{"login", user.login},
+                               {"name", user.name},
+                               {"company", user.company},
+                               {"location", user.location}};
 
         std::string result = json.dump(4);
 

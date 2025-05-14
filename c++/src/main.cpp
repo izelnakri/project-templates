@@ -29,7 +29,7 @@ int main(int argc, char **argv) {
     if (config.run_server) {
       start_http_server(config.port);
     } else {
-      User user = fetch_github_user(config.username);
+      User user = User::fetch_github_user(config.username);
       user.print();
     }
 

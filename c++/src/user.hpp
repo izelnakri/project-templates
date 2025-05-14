@@ -2,49 +2,36 @@
 #define USER_HPP
 
 #include <string>
+#include <iostream>
+#include <nlohmann/json.hpp>
+#include <boost/beast.hpp>
+#include <boost/asio.hpp>
+#include <boost/asio/ssl.hpp>
 
-/**
- * @brief Represents a GitHub user.
- */
+namespace net = boost::asio;
+namespace ssl = net::ssl;
+namespace beast = boost::beast;
+namespace http = beast::http;
+using tcp = net::ip::tcp;
+
 class User {
 public:
-  /**
-   * @brief Constructs a User with given properties.
-   *
-   * @param login The user's login name.
-   * @param name The user's full name.
-   * @param company The user's company.
-   * @param location The user's location.
-   */
-  User(std::string login, std::string name, std::string company,
-       std::string location);
+  // Member variables
+  std::string login;
+  std::string name;
+  std::string company;
+  std::string location;
 
-  const std::string &getLogin() const;
-  const std::string &getName() const;
-  const std::string &getCompany() const;
-  const std::string &getLocation() const;
+  // Constructor
+  User(std::string login, std::string name, std::string company, std::string location);
 
-  /**
-   * @brief Prints user information to stdout.
-   */
+  // Print user info
   void print() const;
 
-private:
-  std::string login_;
-  std::string name_;
-  std::string company_;
-  std::string location_;
-};
+  // Static method to fetch GitHub user data
+  static User fetch_github_user(const std::string& username);
 
-/**
- * @brief Fetches GitHub user information for the given username.
- *
- * Makes an HTTPS GET request to https://api.github.com/users/{username}.
- *
- * @param username The GitHub username.
- * @return User object with parsed user data.
- * @throws std::runtime_error if the request fails or the user does not exist.
- */
-User fetch_github_user(const std::string &username);
+  // Optional: other utility methods (e.g., setters, comparison operators) could be added here
+};
 
 #endif // USER_HPP

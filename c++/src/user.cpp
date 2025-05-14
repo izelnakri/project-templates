@@ -1,95 +1,64 @@
-#include "user.hpp"
-
-#include <boost/asio/connect.hpp>
-#include <boost/asio/ip/tcp.hpp>
-#include <boost/asio/ssl/stream.hpp>
-#include <boost/beast/core.hpp>
-#include <boost/beast/http.hpp>
-#include <boost/beast/ssl.hpp> // maybe optional
-#include <boost/beast/version.hpp>
-
-#include <nlohmann/json.hpp>
-
+#include <boost/asio.hpp>
+#include <boost/asio/ssl.hpp>
+#include <boost/beast.hpp>
 #include <iostream>
-#include <stdexcept>
+#include <nlohmann/json.hpp>
 #include <string>
 
-namespace beast = boost::beast;
-namespace http = beast::http;
 namespace net = boost::asio;
 namespace ssl = net::ssl;
+namespace beast = boost::beast;
+namespace http = beast::http;
 using tcp = net::ip::tcp;
 
-// -- User class implementation --
+#include "user.hpp"
 
 User::User(std::string login, std::string name, std::string company,
            std::string location)
-    : login_(std::move(login)), name_(std::move(name)),
-      company_(std::move(company)), location_(std::move(location)) {}
-
-const std::string &User::getLogin() const { return login_; }
-const std::string &User::getName() const { return name_; }
-const std::string &User::getCompany() const { return company_; }
-const std::string &User::getLocation() const { return location_; }
+    : login(std::move(login)), name(std::move(name)),
+      company(std::move(company)), location(std::move(location)) {}
 
 void User::print() const {
-  std::cout << "Login: " << login_ << "\n"
-            << "Name: " << name_ << "\n"
-            << "Company: " << company_ << "\n"
-            << "Location: " << location_ << '\n';
+  std::cout << "Login: " << login << "\n"
+            << "Name: " << name << "\n"
+            << "Company: " << company << "\n"
+            << "Location: " << location << "\n";
 }
 
-// -- fetch_github_user implementation --
-
-User fetch_github_user(const std::string &username) {
+User User::fetch_github_user(const std::string &username) {
   const std::string host = "api.github.com";
-  const std::string port = "443";
   const std::string target = "/users/" + username;
 
   net::io_context ioc;
   ssl::context ctx(ssl::context::sslv23_client);
   ctx.set_default_verify_paths();
 
-  beast::ssl_stream<beast::tcp_stream> stream(ioc, ctx);
-
-  // Resolve DNS
+  ssl::stream<tcp::socket> stream(ioc, ctx);
   tcp::resolver resolver(ioc);
-  auto const results = resolver.resolve(host, port);
 
-  // Connect and perform TLS handshake
-  beast::get_lowest_layer(stream).connect(results);
+  beast::get_lowest_layer(stream).connect(
+      *resolver.resolve(host, "443").begin());
   stream.handshake(ssl::stream_base::client);
 
-  // Prepare HTTP GET request
   http::request<http::string_body> req{http::verb::get, target, 11};
   req.set(http::field::host, host);
   req.set(http::field::user_agent, "github_user_fetcher");
-
-  // Send request
   http::write(stream, req);
 
-  // Receive response
   beast::flat_buffer buffer;
   http::response<http::string_body> res;
-  http::read(stream, buffer, res); // flawfinder: ignore
+  http::read(stream, buffer, res);
 
   if (res.result() != http::status::ok) {
-    throw std::runtime_error("Failed to fetch user: HTTP " +
+    throw std::runtime_error("GitHub request failed: HTTP " +
                              std::to_string(res.result_int()));
   }
 
-  // Parse JSON response
   const auto json = nlohmann::json::parse(res.body(), nullptr, false);
   if (json.is_discarded()) {
-    throw std::runtime_error("Failed to parse JSON response");
+    throw std::runtime_error("Failed to parse JSON");
   }
 
-  const std::string login = json.value("login", "");
-  const std::string name = json.value("name", "");
-  const std::string company = json.value("company", "");
-  const std::string location = json.value("location", "");
-
-  // Shutdown SSL
   beast::error_code error_code;
   stream.shutdown(error_code);
   if (error_code == net::error::eof) {
@@ -99,5 +68,6 @@ User fetch_github_user(const std::string &username) {
     throw beast::system_error{error_code};
   }
 
-  return User{login, name, company, location};
+  return User{json.value("login", ""), json.value("name", ""),
+              json.value("company", ""), json.value("location", "")};
 }

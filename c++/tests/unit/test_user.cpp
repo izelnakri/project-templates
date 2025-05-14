@@ -1,17 +1,17 @@
-#include <doctest.h>
 #include "user.hpp"
+#include <doctest.h>
 #include <iostream>
-#include <sstream> 
+#include <sstream>
 
 // --- User class unit tests ---
 
 TEST_CASE("User constructor initializes fields") {
   User user("octocat", "The Octocat", "GitHub", "San Francisco");
 
-  CHECK(user.getLogin() == "octocat");
-  CHECK(user.getName() == "The Octocat");
-  CHECK(user.getCompany() == "GitHub");
-  CHECK(user.getLocation() == "San Francisco");
+  CHECK(user.login == "octocat");
+  CHECK(user.name == "The Octocat");
+  CHECK(user.company == "GitHub");
+  CHECK(user.location == "San Francisco");
 }
 
 TEST_CASE("User::print() outputs correct format") {
@@ -34,18 +34,19 @@ TEST_CASE("User::print() outputs correct format") {
 // --- fetch_github_user integration tests ---
 
 TEST_CASE("fetch_github_user returns valid user for known GitHub account") {
-  User user = fetch_github_user("octocat");
+  User user = User::fetch_github_user("octocat");
 
-  CHECK(user.getLogin() == "octocat");
+  CHECK(user.login == "octocat");
 
   // These fields can change, so we check they are not empty instead
-  CHECK_FALSE(user.getName().empty());
-  CHECK_FALSE(user.getCompany().empty());
-  CHECK_FALSE(user.getLocation().empty());
+  CHECK_FALSE(user.name.empty());
+  CHECK_FALSE(user.company.empty());
+  CHECK_FALSE(user.location.empty());
 }
 
 TEST_CASE("fetch_github_user throws for nonexistent username") {
   std::string invalid_username = "this_user_should_not_exist_123456789";
 
-  CHECK_THROWS_AS(fetch_github_user(invalid_username), std::runtime_error);
+  CHECK_THROWS_AS(User::fetch_github_user(invalid_username),
+                  std::runtime_error);
 }
