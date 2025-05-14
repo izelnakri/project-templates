@@ -1,0 +1,8 @@
+[Desktop Entry]
+Name=GitHub User Fetcher
+Comment=Fetches GitHub user information via curl
+Exec=github_user_fetcher
+Icon=org.example.GithubUserFetcher
+Terminal=true
+Type=Application
+Categories=Utility;

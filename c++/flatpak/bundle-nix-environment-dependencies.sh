@@ -1,8 +1,9 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# INITIAL_PACKAGES=("jansson" "gtk4" "glib" "lerc") # Add packages as needed
-INITIAL_PACKAGES=("jansson") # NOTE: this doesnt need gtk4, glib on gnome sdk & runtime
+# Define packages - add gtkmm-specific dependencies
+INITIAL_PACKAGES=("boost" "nlohmann_json" "gtkmm4" "lerc")
+
 TEMP_DIR=$(mktemp -d)
 FINAL_STAGE="$TEMP_DIR/final"
 PC_TEMP="$TEMP_DIR/pcfiles"
