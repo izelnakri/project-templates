@@ -154,10 +154,56 @@ for STORE_PATH in "${ALL_PATHS[@]}"; do
   fi
 done
 
-# STEP 4: Patch all pkg-config files
+# STEP 4: Patch all pkg-config files on /lib
 for pc_file in "$FINAL_STAGE/lib/pkgconfig/"*.pc; do
   [ -f "$pc_file" ] || continue
-  sed -i 's|^prefix=.*|prefix=/app|g' "$pc_file"
+  # If prefix is present, replace it; if not, add it to the top
+  if grep -q '^prefix=' "$pc_file"; then
+    sed -i 's|^prefix=.*|prefix=/app|' "$pc_file"
+  else
+    sed -i '1i prefix=/app' "$pc_file"
+  fi
+
+  # NOTE: just added block, maybe I also need includeddir, also debug/check
+  if grep -q '^libdir=' "$pc_file"; then
+    sed -i 's|^libdir=.*|libdir=/app/lib|' "$pc_file"
+  else
+    sed -i '2i libdir=/app/lib' "$pc_file"
+  fi
+
+  if grep -q '^includedir=' "$pc_file"; then
+    sed -i 's|^includedir=.*|includedir=/app/include|' "$pc_file"
+  else
+    sed -i '3i includedir=/app/include' "$pc_file"
+  fi
+
+  # Remove problematic dependencies
+  sed -i '/sysprof-capture-4/d' "$pc_file"
+done
+
+# STEP 4: Patch all pkg-config files on /share
+for pc_file in "$FINAL_STAGE/share/pkgconfig/"*.pc; do
+  [ -f "$pc_file" ] || continue
+  # If prefix is present, replace it; if not, add it to the top
+  if grep -q '^prefix=' "$pc_file"; then
+    sed -i 's|^prefix=.*|prefix=/app|' "$pc_file"
+  else
+    sed -i '1i prefix=/app' "$pc_file"
+  fi
+
+  # NOTE: just added block, maybe I also need includeddir, also debug/check
+  if grep -q '^libdir=' "$pc_file"; then
+    sed -i 's|^libdir=.*|libdir=/app/lib|' "$pc_file"
+  else
+    sed -i '2i libdir=/app/lib' "$pc_file"
+  fi
+
+  if grep -q '^includedir=' "$pc_file"; then
+    sed -i 's|^includedir=.*|includedir=/app/include|' "$pc_file"
+  else
+    sed -i '3i includedir=/app/include' "$pc_file"
+  fi
+
   # Remove problematic dependencies
   sed -i '/sysprof-capture-4/d' "$pc_file"
 done
