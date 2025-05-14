@@ -1,10 +1,10 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include <doctest.h>
 #include "server.hpp"
 #include <boost/asio.hpp>
 #include <boost/beast/core.hpp>
 #include <boost/beast/http.hpp>
 #include <chrono>
+#include <doctest.h>
 #include <thread>
 
 namespace beast = boost::beast;
@@ -40,7 +40,7 @@ TEST_CASE("HTTP server responds with GitHub user") {
 
   beast::error_code ec;
   stream.socket().shutdown(tcp::socket::shutdown_both, ec);
-  
+
   // Kill server (not ideal, better to make server stop externally)
   std::raise(SIGINT);
   server_thread.join();

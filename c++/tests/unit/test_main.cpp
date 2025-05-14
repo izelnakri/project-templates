@@ -1,6 +1,6 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include <doctest.h>
 #include "config.cpp"
+#include <doctest.h>
 
 TEST_CASE("parse_arguments parses default correctly") {
   std::vector<std::string> args = {};

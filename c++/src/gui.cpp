@@ -1,4 +1,3 @@
-#include "style_css.hpp" // cppcheck-suppress missingInclude
 #include "user.hpp"
 #include <future>
 #include <gtkmm.h>
@@ -6,6 +5,8 @@
 #include <nlohmann/json.hpp>
 #include <sstream>
 #include <thread>
+
+#include "style_css.hpp" // cppcheck-suppress missingInclude // NOLINT(clang-diagnostic-error)
 
 // Path to the CSS file
 /*#ifdef NDEBUG*/
@@ -22,14 +23,14 @@ public:
   GitHubUserFetcherWindow() {
     auto css_provider = Gtk::CssProvider::create();
     try {
-      css_provider->load_from_data(
-          css_data); // or Load CSS from the determined path: //
-                     // css_provider->load_from_path(css_file_path);
+      css_provider->load_from_data(css_data);
       auto display = Gdk::Display::get_default();
       Gtk::StyleContext::add_provider_for_display(
           display, css_provider, GTK_STYLE_PROVIDER_PRIORITY_USER);
     } catch (const Glib::FileError &e) {
-      std::cerr << "Failed to load CSS file: " << e.what() << '\n';
+      std::cerr << "Failed to load CSS data: " << e.what() << '\n';
+    } catch (...) {
+      std::cerr << "Unknown error occurred while loading CSS.\n";
     }
 
     set_title("GitHub User Fetcher");
@@ -71,10 +72,8 @@ private:
       return;
     }
 
-    // Clear previous result
     text_view.get_buffer()->set_text("Fetching...");
 
-    // Run fetch in a background thread
     std::thread([this, username]() {
       try {
         User user = User::fetch_github_user(username);
@@ -85,7 +84,6 @@ private:
 
         std::string result = json.dump(4);
 
-        // Update UI in main thread
         Glib::signal_idle().connect_once(
             [this, result]() { text_view.get_buffer()->set_text(result); });
 
@@ -103,7 +101,7 @@ private:
   }
 };
 
-int main(int argc, char *argv[]) {
+int main(int argc, char *argv[]) { // NOLINT(cppcoreguidelines-avoid-c-arrays)
   auto app = Gtk::Application::create("com.example.githubuserfetcher");
 
   app->signal_activate().connect([&]() {

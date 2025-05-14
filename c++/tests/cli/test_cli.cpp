@@ -1,9 +1,9 @@
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
-#include <doctest.h>
 #include <array>
 #include <chrono>
 #include <cstdio>
 #include <curl/curl.h>
+#include <doctest.h>
 #include <functional>
 #include <iostream>
 #include <memory>
@@ -125,7 +125,7 @@ TEST_CASE("Run server mode and fetch user data") {
     CHECK(json["login"] == "izelnakri");
     CHECK(json["name"] == "Izel Nakri | izelnakri.eth");
     CHECK(json["company"] ==
-            "Ruby, JavaScript, TS, elixir, rust, k8s, lua, nix, pkl, android");
+          "Ruby, JavaScript, TS, elixir, rust, k8s, lua, nix, pkl, android");
     CHECK(json["location"] == "Madrid | Amsterdam");
 
     json_response = http_get("http://localhost:1234/wycats");

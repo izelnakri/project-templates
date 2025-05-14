@@ -60,11 +60,7 @@ User User::fetch_github_user(const std::string &username) {
   }
 
   beast::error_code error_code;
-  stream.shutdown(error_code);
-  if (error_code == net::error::eof) {
-    error_code = {}; // Ignore EOF on shutdown
-  }
-  if (error_code) {
+  if (stream.shutdown(error_code)) {
     throw beast::system_error{error_code};
   }
 
