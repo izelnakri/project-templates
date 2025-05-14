@@ -30,7 +30,7 @@
   <td id="projectalign">
    <div id="projectname">Github User Fetcher<span id="projectnumber">&#160;1.0.0</span>
    </div>
-   <div id="projectbrief">C/C++ Application with Server and GUI</div>
+   <div id="projectbrief">C Application with Server and GUI</div>
   </td>
  </tr>
  </tbody>
@@ -160,7 +160,7 @@ Functions</h2></td></tr>
 <div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (config.run_server) {</div>
 <div class="line"><span class="lineno">   30</span>      <a class="code hl_function" href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a>(config.port);</div>
 <div class="line"><span class="lineno">   31</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   32</span>      <a class="code hl_struct" href="structUser.html">User</a> user = <a class="code hl_function" href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a>(config.username);</div>
+<div class="line"><span class="lineno">   32</span>      <a class="code hl_struct" href="structUser.html">User</a> user = User::fetch_github_user(config.username);</div>
 <div class="line"><span class="lineno">   33</span>      user.print();</div>
 <div class="line"><span class="lineno">   34</span>    }</div>
 <div class="line"><span class="lineno">   35</span> </div>
@@ -173,9 +173,8 @@ Functions</h2></td></tr>
 <div class="ttc" id="aconfig_8cpp_html_acf7abda9dac6fd151892e22fdbe3ed0b"><div class="ttname"><a href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a></div><div class="ttdeci">AppConfig parse_arguments(const std::vector&lt; std::string &gt; &amp;args)</div><div class="ttdoc">Parses command-line arguments into AppConfig.</div><div class="ttdef"><b>Definition</b> <a href="config_8cpp_source.html#l00008">config.cpp:8</a></div></div>
 <div class="ttc" id="aserver_8c_html_a805251749f828fda7ccf3f1cc664afd1"><div class="ttname"><a href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a></div><div class="ttdeci">void start_http_server(int port)</div><div class="ttdoc">Starts an HTTP server on the specified port.</div><div class="ttdef"><b>Definition</b> <a href="server_8c_source.html#l00059">server.c:59</a></div></div>
 <div class="ttc" id="astructUser_html"><div class="ttname"><a href="structUser.html">User</a></div><div class="ttdoc">Structure representing a GitHub user.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00009">user.h:9</a></div></div>
-<div class="ttc" id="auser_8c_html_ada4edf948630b147f21f7e6aa3589b9e"><div class="ttname"><a href="user_8c.html#ada4edf948630b147f21f7e6aa3589b9e">fetch_github_user</a></div><div class="ttdeci">User fetch_github_user(const char *username)</div><div class="ttdoc">Fetch a GitHub user's information via the GitHub API.</div><div class="ttdef"><b>Definition</b> <a href="user_8c_source.html#l00130">user.c:130</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="user_8c_source.html#l00130">fetch_github_user()</a>, <a class="el" href="config_8cpp_source.html#l00008">parse_arguments()</a>, and <a class="el" href="server_8c_source.html#l00059">start_http_server()</a>.</p>
+<p class="reference">References <a class="el" href="config_8cpp_source.html#l00008">parse_arguments()</a>, and <a class="el" href="server_8c_source.html#l00059">start_http_server()</a>.</p>
 
 </div>
 </div>
