@@ -191,7 +191,7 @@ $(function(){initNavTree('user_8cpp_source.html',''); initResizable(); });
 <div class="line"><a id="l00088" name="l00088"></a><span class="lineno">   88</span> </div>
 <div class="line"><a id="l00089" name="l00089"></a><span class="lineno">   89</span>  beast::flat_buffer buffer;</div>
 <div class="line"><a id="l00090" name="l00090"></a><span class="lineno">   90</span>  http::response&lt;http::string_body&gt; res;</div>
-<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  http::read(stream, buffer, res);</div>
+<div class="line"><a id="l00091" name="l00091"></a><span class="lineno">   91</span>  http::read(stream, buffer, res); <span class="comment">// Flawfinder: ignore</span></div>
 <div class="line"><a id="l00092" name="l00092"></a><span class="lineno">   92</span> </div>
 <div class="line"><a id="l00093" name="l00093"></a><span class="lineno">   93</span>  <span class="keywordflow">if</span> (res.result() != http::status::ok) {</div>
 <div class="line"><a id="l00094" name="l00094"></a><span class="lineno">   94</span>    <span class="keywordflow">throw</span> std::runtime_error(<span class="stringliteral">&quot;GitHub request failed: HTTP &quot;</span> +</div>
