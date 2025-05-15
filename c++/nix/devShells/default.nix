@@ -69,7 +69,7 @@ let
     pkg-config-unwrapped
     unstable.vcpkg
     appstream
-    clang-tools
+    pkgs.clang-tools
     cppcheck
     flawfinder
     valgrind

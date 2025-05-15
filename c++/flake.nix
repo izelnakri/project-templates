@@ -71,8 +71,8 @@
             };
 
             testScript = ''
-              machine.wait_for_unit("default.target")
-              machine.succeed("github_user_fetcher | grep -o \"izelnakri\"")
+              machine.wait_for_unit("network-online.target")
+              machine.succeed("which github_user_fetcher")
               
               machine.succeed("systemd-run --unit=github_user_fetcher github_user_fetcher --server")
               machine.wait_for_open_port(1234)

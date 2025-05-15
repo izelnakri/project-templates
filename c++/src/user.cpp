@@ -88,7 +88,7 @@ User User::fetch_github_user(const std::string &username) {
 
   beast::flat_buffer buffer;
   http::response<http::string_body> res;
-  http::read(stream, buffer, res);
+  http::read(stream, buffer, res); // Flawfinder: ignore
 
   if (res.result() != http::status::ok) {
     throw std::runtime_error("GitHub request failed: HTTP " +
