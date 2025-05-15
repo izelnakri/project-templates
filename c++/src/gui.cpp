@@ -15,7 +15,8 @@
 #include <sstream>
 #include <thread>
 
-#include "style_css.hpp" // cppcheck-suppress missingInclude // NOLINT(clang-diagnostic-error)
+// NOLINTNEXTLINE(clang-diagnostic-error)  // for clang-tidy
+#include "style_css.hpp" // cppcheck-suppress missingInclude
 
 // Path to the CSS file
 /*#ifdef NDEBUG*/
