@@ -1,0 +1,8 @@
+<map id="hb&#45;shape&#45;plan.h" name="hb&#45;shape&#45;plan.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,132,33"/>
+<area shape="rect" id="Node000002" href="$hb-common_8h.html" title=" " alt="" coords="13,157,124,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="67,34,58,81,58,108,64,141,59,142,53,109,53,81,62,33"/>
+<area shape="rect" id="Node000004" href="$hb-font_8h.html" title=" " alt="" coords="67,81,147,109"/>
+<area shape="poly" id="edge2_Node000001_Node000004" title=" " alt="" coords="78,32,96,66,91,68,73,35"/>
+<area shape="poly" id="edge3_Node000004_Node000002" title=" " alt="" coords="103,110,85,144,80,142,98,108"/>
+</map>

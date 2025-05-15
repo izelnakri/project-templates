@@ -1,0 +1,10 @@
+<map id="doctest::ContextOptions" name="doctest::ContextOptions">
+<area shape="rect" id="Node000001" title="OCLINT too many fields." alt="" coords="68,248,246,276"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,135,109,163"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="73,175,108,222,137,245,134,250,104,226,69,178"/>
+<area shape="rect" id="Node000006" href="$classdoctest_1_1String.html" title=" " alt="" coords="121,5,236,33"/>
+<area shape="poly" id="edge2_Node000001_Node000006" title=" " alt="" coords="178,49,171,115,161,248,155,247,166,115,173,48"/>
+<area shape="rect" id="Node000008" href="$structdoctest_1_1detail_1_1TestCase.html" title=" " alt="" coords="295,135,475,163"/>
+<area shape="poly" id="edge4_Node000008_Node000006" title=" " alt="" coords="214,39,365,133,363,137,211,44"/>
+<area shape="poly" id="edge3_Node000001_Node000008" title=" " alt="" coords="346,172,185,250,183,245,343,167"/>
+</map>

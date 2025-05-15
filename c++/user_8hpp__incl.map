@@ -1,0 +1,15 @@
+<map id="user.hpp" name="user.hpp">
+<area shape="rect" id="Node000001" title="Defines the User class for representing and retrieving GitHub user data." alt="" coords="396,5,472,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,81,122,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="396,31,138,82,136,76,395,25"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="146,81,285,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="396,36,270,78,268,73,395,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="309,81,434,109"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="425,35,394,71,390,67,421,32"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="458,81,538,109"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="448,32,479,67,475,71,444,35"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="562,81,707,109"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="471,31,585,73,583,78,469,36"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="730,81,789,109"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="473,25,579,46,716,78,715,83,578,51,472,30"/>
+</map>

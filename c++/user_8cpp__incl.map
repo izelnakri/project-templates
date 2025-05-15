@@ -1,0 +1,23 @@
+<map id="user.cpp" name="user.cpp">
+<area shape="rect" id="Node000001" title="Implements the User class for representing and retrieving GitHub user data." alt="" coords="396,5,472,33"/>
+<area shape="rect" id="Node000002" title=" " alt="" coords="5,157,122,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="403,36,111,153,109,148,401,31"/>
+<area shape="rect" id="Node000003" title=" " alt="" coords="146,157,285,184"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="417,36,249,150,246,145,414,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="309,157,434,184"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="422,35,402,56,386,82,377,112,374,141,369,141,372,111,381,80,398,53,418,32"/>
+<area shape="rect" id="Node000005" title=" " alt="" coords="458,157,538,184"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="451,32,470,53,487,80,497,111,500,141,495,142,491,112,482,82,466,56,447,35"/>
+<area shape="rect" id="Node000006" title=" " alt="" coords="562,157,707,184"/>
+<area shape="poly" id="edge5_Node000001_Node000006" title=" " alt="" coords="453,31,606,145,603,149,450,36"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="730,157,789,184"/>
+<area shape="poly" id="edge6_Node000001_Node000007" title=" " alt="" coords="464,31,718,147,716,152,461,36"/>
+<area shape="rect" id="Node000008" href="$user_8hpp.html" title="Defines the User class for representing and retrieving GitHub user data." alt="" coords="396,81,472,109"/>
+<area shape="poly" id="edge7_Node000001_Node000008" title=" " alt="" coords="437,34,437,65,432,65,432,34"/>
+<area shape="poly" id="edge8_Node000008_Node000002" title=" " alt="" coords="396,106,138,157,136,152,395,101"/>
+<area shape="poly" id="edge9_Node000008_Node000003" title=" " alt="" coords="396,112,270,154,268,149,395,107"/>
+<area shape="poly" id="edge10_Node000008_Node000004" title=" " alt="" coords="425,111,394,147,390,143,421,107"/>
+<area shape="poly" id="edge11_Node000008_Node000005" title=" " alt="" coords="448,107,479,143,475,147,444,111"/>
+<area shape="poly" id="edge12_Node000008_Node000006" title=" " alt="" coords="471,107,585,148,583,154,469,112"/>
+<area shape="poly" id="edge13_Node000008_Node000007" title=" " alt="" coords="473,101,579,122,716,153,715,158,578,127,472,106"/>
+</map>

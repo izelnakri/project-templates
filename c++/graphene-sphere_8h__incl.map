@@ -1,0 +1,8 @@
+<map id="graphene&#45;sphere.h" name="graphene&#45;sphere.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,149,33"/>
+<area shape="rect" id="Node000002" href="$graphene-types_8h.html" title=" " alt="" coords="9,157,145,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="72,35,62,56,54,81,54,108,66,142,61,143,49,109,49,81,57,54,67,32"/>
+<area shape="rect" id="Node000008" href="$graphene-vec3_8h.html" title=" " alt="" coords="64,81,194,109"/>
+<area shape="poly" id="edge2_Node000001_Node000008" title=" " alt="" coords="88,32,113,67,109,70,84,35"/>
+<area shape="poly" id="edge3_Node000008_Node000002" title=" " alt="" coords="122,111,97,146,93,142,118,108"/>
+</map>

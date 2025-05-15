@@ -1,0 +1,33 @@
+<map id="server.cpp" name="server.cpp">
+<area shape="rect" id="Node000001" title="Implements an HTTP server using Boost.Beast and Boost.Asio to serve GitHub user data." alt="" coords="472,5,561,33"/>
+<area shape="rect" id="Node000002" href="$server_8hpp.html" title="Declares the interface for starting a simple HTTP server." alt="" coords="5,81,95,109"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="472,29,114,84,110,84,109,79,114,78,471,24"/>
+<area shape="rect" id="Node000003" href="$user_8hpp.html" title="Defines the User class for representing and retrieving GitHub user data." alt="" coords="221,81,298,109"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="473,36,313,81,312,76,471,31"/>
+<area shape="rect" id="Node000004" title=" " alt="" coords="12,157,128,184"/>
+<area shape="poly" id="edge7_Node000001_Node000004" title=" " alt="" coords="473,25,414,30,343,40,265,57,190,83,138,114,96,148,92,144,135,110,188,79,263,52,342,35,414,25,472,20"/>
+<area shape="rect" id="Node000007" title=" " alt="" coords="152,157,231,184"/>
+<area shape="poly" id="edge13_Node000001_Node000007" title=" " alt="" coords="472,26,404,32,326,43,255,60,229,71,211,83,201,95,196,110,192,141,187,141,191,109,197,93,207,79,226,66,254,55,325,38,403,27,472,21"/>
+<area shape="rect" id="Node000008" title=" " alt="" coords="255,157,400,184"/>
+<area shape="poly" id="edge12_Node000001_Node000008" title=" " alt="" coords="486,36,445,56,404,83,372,114,347,146,342,142,368,110,400,79,442,51,483,31"/>
+<area shape="rect" id="Node000009" title=" " alt="" coords="424,157,482,184"/>
+<area shape="poly" id="edge15_Node000001_Node000009" title=" " alt="" coords="475,36,440,54,425,67,414,82,409,97,412,113,431,144,426,146,407,115,404,97,409,80,422,63,437,50,472,31"/>
+<area shape="rect" id="Node000010" title=" " alt="" coords="424,81,610,109"/>
+<area shape="poly" id="edge8_Node000001_Node000010" title=" " alt="" coords="519,34,519,65,514,65,514,34"/>
+<area shape="rect" id="Node000011" title=" " alt="" coords="634,81,791,109"/>
+<area shape="poly" id="edge9_Node000001_Node000011" title=" " alt="" coords="553,31,665,73,663,78,551,36"/>
+<area shape="rect" id="Node000012" title=" " alt="" coords="815,81,970,109"/>
+<area shape="poly" id="edge10_Node000001_Node000012" title=" " alt="" coords="562,27,811,75,810,80,561,32"/>
+<area shape="rect" id="Node000013" title=" " alt="" coords="995,81,1172,109"/>
+<area shape="poly" id="edge11_Node000001_Node000013" title=" " alt="" coords="561,24,979,77,979,83,561,29"/>
+<area shape="rect" id="Node000014" title=" " alt="" coords="1196,81,1272,109"/>
+<area shape="poly" id="edge14_Node000001_Node000014" title=" " alt="" coords="561,19,821,35,998,53,1181,78,1180,83,997,58,820,41,561,25"/>
+<area shape="rect" id="Node000015" title=" " alt="" coords="1296,81,1359,109"/>
+<area shape="poly" id="edge16_Node000001_Node000015" title=" " alt="" coords="561,18,684,21,860,30,1067,48,1281,78,1280,83,1066,53,860,35,683,26,561,23"/>
+<area shape="rect" id="Node000016" title=" " alt="" coords="1383,81,1445,109"/>
+<area shape="poly" id="edge17_Node000001_Node000016" title=" " alt="" coords="561,18,696,19,894,27,1127,45,1248,60,1368,78,1367,83,1247,65,1126,51,893,33,696,25,561,23"/>
+<area shape="poly" id="edge3_Node000003_Node000004" title=" " alt="" coords="226,112,119,153,117,148,225,107"/>
+<area shape="poly" id="edge4_Node000003_Node000007" title=" " alt="" coords="249,111,216,147,212,143,245,107"/>
+<area shape="poly" id="edge5_Node000003_Node000008" title=" " alt="" coords="273,107,307,143,303,147,270,111"/>
+<area shape="poly" id="edge6_Node000003_Node000009" title=" " alt="" coords="295,107,410,150,408,155,293,112"/>
+</map>

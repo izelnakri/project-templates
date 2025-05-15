@@ -1,0 +1,8 @@
+<map id="graphene&#45;triangle.h" name="graphene&#45;triangle.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,155,33"/>
+<area shape="rect" id="Node000002" href="$graphene-types_8h.html" title=" " alt="" coords="12,157,148,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="75,35,65,56,57,81,57,108,69,142,64,143,52,109,52,81,60,54,70,32"/>
+<area shape="rect" id="Node000008" href="$graphene-vec3_8h.html" title=" " alt="" coords="67,81,197,109"/>
+<area shape="poly" id="edge2_Node000001_Node000008" title=" " alt="" coords="91,32,116,67,112,70,87,35"/>
+<area shape="poly" id="edge3_Node000008_Node000002" title=" " alt="" coords="125,111,100,146,96,142,121,108"/>
+</map>

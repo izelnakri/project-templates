@@ -1,0 +1,21 @@
+var searchData=
+[
+  ['capacity_0',['capacity',['../structdoctest_1_1String_1_1view.html#a8959fca28b32505b62b535634a369de3',1,'doctest::String::view']]],
+  ['case_5fsensitive_1',['case_sensitive',['../structdoctest_1_1ContextOptions.html#a08571475229452c2eb933da314a74dff',1,'doctest::ContextOptions']]],
+  ['closure_2',['closure',['../struct__cairo__script__interpreter__hooks.html#a5d65a07cdfc0d25716bd3890c4739ed9',1,'_cairo_script_interpreter_hooks']]],
+  ['cluster_3',['cluster',['../structhb__glyph__info__t.html#aced991035fa36abd3d95b7f768da8b53',1,'hb_glyph_info_t']]],
+  ['codepoint_4',['codepoint',['../structhb__glyph__info__t.html#a08b705368584e9d79413eb514682d4eb',1,'hb_glyph_info_t']]],
+  ['color_5',['color',['../structhb__color__stop__t.html#a048738d54f203c80e08fc7333ee779a8',1,'hb_color_stop_t']]],
+  ['color_5findex_6',['color_index',['../structhb__ot__color__layer__t.html#a4f0d7564cd2262fdc228dc6e11301130',1,'hb_ot_color_layer_t']]],
+  ['company_7',['company',['../classUser.html#a946ddf714a392acd5b6bc65a23a5e85c',1,'User']]],
+  ['content_8',['content',['../classdoctest_1_1AssertData_1_1StringContains.html#a3a2d3db7290d877d30d7cfb609d521bc',1,'doctest::AssertData::StringContains']]],
+  ['context_5fcreate_9',['context_create',['../struct__cairo__script__interpreter__hooks.html#a5e9a65067a99b21aabe724a2de7c4a2d',1,'_cairo_script_interpreter_hooks']]],
+  ['context_5fdestroy_10',['context_destroy',['../struct__cairo__script__interpreter__hooks.html#a8d218cbefe0de43b9947cf4deb1b1b33',1,'_cairo_script_interpreter_hooks']]],
+  ['copy_5fpage_11',['copy_page',['../struct__cairo__script__interpreter__hooks.html#a59b7346bad1d04892f9506b7daa6237b',1,'_cairo_script_interpreter_hooks']]],
+  ['count_12',['count',['../structdoctest_1_1ContextOptions.html#a4651b5efbaf2ffc03d60fb4140d21dd3',1,'doctest::ContextOptions']]],
+  ['cout_13',['cout',['../structdoctest_1_1ContextOptions.html#a1ee59adf440880ebd7b31516471ddcab',1,'doctest::ContextOptions']]],
+  ['create_5fsource_5fimage_14',['create_source_image',['../struct__cairo__script__interpreter__hooks.html#a55e61d16d235f6d1b06d25cfb8f02f9b',1,'_cairo_script_interpreter_hooks']]],
+  ['current_5fx_15',['current_x',['../structhb__draw__state__t.html#af32dbf02f422414956ae0d3e5dba292f',1,'hb_draw_state_t']]],
+  ['current_5fy_16',['current_y',['../structhb__draw__state__t.html#ac316c3b72f1da83fab328af4f32d0bb4',1,'hb_draw_state_t']]],
+  ['currenttest_17',['currentTest',['../structdoctest_1_1ContextOptions.html#a11af202a87045ba03482bf65c0a7f0bb',1,'doctest::ContextOptions']]]
+];

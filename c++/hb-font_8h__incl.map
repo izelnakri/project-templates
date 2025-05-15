@@ -1,0 +1,13 @@
+<map id="hb&#45;font.h" name="hb&#45;font.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="76,5,157,33"/>
+<area shape="rect" id="Node000002" href="$hb-common_8h.html" title=" " alt="" coords="8,157,119,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="77,34,41,53,25,66,12,82,8,98,13,114,23,130,36,144,32,148,18,133,8,116,3,98,7,80,21,62,38,49,75,30"/>
+<area shape="rect" id="Node000004" href="$hb-face_8h.html" title=" " alt="" coords="22,81,104,109"/>
+<area shape="poly" id="edge2_Node000001_Node000004" title=" " alt="" coords="109,35,84,70,79,67,105,32"/>
+<area shape="rect" id="Node000008" href="$hb-draw_8h.html" title=" " alt="" coords="129,81,214,109"/>
+<area shape="poly" id="edge4_Node000001_Node000008" title=" " alt="" coords="128,32,154,67,150,70,124,35"/>
+<area shape="rect" id="Node000013" href="$hb-paint_8h.html" title=" " alt="" coords="238,81,326,109"/>
+<area shape="poly" id="edge5_Node000001_Node000013" title=" " alt="" coords="147,31,240,72,238,77,145,36"/>
+<area shape="poly" id="edge3_Node000004_Node000002" title=" " alt="" coords="66,109,66,141,61,141,61,109"/>
+<area shape="poly" id="edge6_Node000013_Node000002" title=" " alt="" coords="244,112,117,154,116,149,242,107"/>
+</map>

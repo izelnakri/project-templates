@@ -1,0 +1,7 @@
+<map id="doctest::QueryData" name="doctest::QueryData">
+<area shape="rect" id="Node000001" title=" " alt="" coords="106,98,253,126"/>
+<area shape="rect" id="Node000002" href="$structdoctest_1_1TestRunStats.html" title=" " alt="" coords="5,5,167,33"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="112,42,168,96,164,100,108,46"/>
+<area shape="rect" id="Node000003" href="$structdoctest_1_1TestCaseData.html" title=" " alt="" coords="191,5,357,33"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="251,46,195,100,191,96,248,42"/>
+</map>

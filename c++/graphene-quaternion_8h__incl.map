@@ -1,0 +1,8 @@
+<map id="graphene&#45;quaternion.h" name="graphene&#45;quaternion.h">
+<area shape="rect" id="Node000001" title=" " alt="" coords="5,5,175,33"/>
+<area shape="rect" id="Node000002" href="$graphene-types_8h.html" title=" " alt="" coords="22,157,158,184"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,35,75,56,67,81,67,108,79,142,74,143,62,109,62,81,70,54,80,32"/>
+<area shape="rect" id="Node000008" href="$graphene-vec4_8h.html" title=" " alt="" coords="77,81,207,109"/>
+<area shape="poly" id="edge2_Node000001_Node000008" title=" " alt="" coords="101,32,126,67,122,70,97,35"/>
+<area shape="poly" id="edge3_Node000008_Node000002" title=" " alt="" coords="135,111,110,146,106,142,131,108"/>
+</map>

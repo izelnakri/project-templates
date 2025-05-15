@@ -1,0 +1,13 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="Node000000" href="$structdoctest_1_1detail_1_1types_1_1false__type.html" title=" " alt="" coords="5,160,164,205"/>
+<area shape="rect" id="Node000001" href="$structdoctest_1_1detail_1_1deferred__false.html" title=" " alt="" coords="221,5,398,50"/>
+<area shape="poly" id="edge4_Node000000_Node000001" title=" " alt="" coords="113,146,156,102,210,60,233,48,236,53,213,65,160,106,116,150"/>
+<area shape="rect" id="Node000002" href="$structdoctest_1_1detail_1_1has__insertion__operator.html" title=" " alt="" coords="230,74,388,136"/>
+<area shape="poly" id="edge5_Node000000_Node000002" title=" " alt="" coords="165,152,229,130,231,135,167,157"/>
+<area shape="rect" id="Node000003" href="$structdoctest_1_1detail_1_1types_1_1is__array.html" title=" " alt="" coords="230,160,388,205"/>
+<area shape="poly" id="edge6_Node000000_Node000003" title=" " alt="" coords="179,180,230,180,230,185,179,185"/>
+<area shape="rect" id="Node000004" href="$structdoctest_1_1detail_1_1types_1_1is__pointer.html" title=" " alt="" coords="230,229,388,274"/>
+<area shape="poly" id="edge7_Node000000_Node000004" title=" " alt="" coords="174,207,235,226,234,231,173,212"/>
+<area shape="rect" id="Node000005" href="$structdoctest_1_1detail_1_1types_1_1is__rvalue__reference.html" title=" " alt="" coords="212,299,407,343"/>
+<area shape="poly" id="edge8_Node000000_Node000005" title=" " alt="" coords="121,213,163,250,213,284,237,296,235,301,210,289,160,254,117,217"/>
+</map>
