@@ -100,6 +100,9 @@ $(function(){initNavTree('classHttpSession.html',''); initResizable(); });
   <div class="headertitle"><div class="title">HttpSession Class Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Manages a single HTTP session with a client.  
+ <a href="#details">More...</a></p>
 <div id="dynsection-0" onclick="return dynsection.toggleVisibility(this)" class="dynheader closed" style="cursor:pointer;">
   <img id="dynsection-0-trigger" src="closed.png" alt="+"/> Inheritance diagram for HttpSession:</div>
 <div id="dynsection-0-summary" class="dynsummary" style="display:block;">
@@ -112,29 +115,38 @@ $(function(){initNavTree('classHttpSession.html',''); initResizable(); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ace6ee24620c728a1a50549e452ef7b7e" id="r_ace6ee24620c728a1a50549e452ef7b7e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ace6ee24620c728a1a50549e452ef7b7e">HttpSession</a> (tcp::socket <a class="el" href="structsocket.html">socket</a>)</td></tr>
+<tr class="memdesc:ace6ee24620c728a1a50549e452ef7b7e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an <a class="el" href="classHttpSession.html" title="Manages a single HTTP session with a client.">HttpSession</a> with the given socket.  <br /></td></tr>
 <tr class="separator:ace6ee24620c728a1a50549e452ef7b7e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1828e6911d44275ffce8923052f441f7" id="r_a1828e6911d44275ffce8923052f441f7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a1828e6911d44275ffce8923052f441f7">start</a> ()</td></tr>
+<tr class="memdesc:a1828e6911d44275ffce8923052f441f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts processing the HTTP session.  <br /></td></tr>
 <tr class="separator:a1828e6911d44275ffce8923052f441f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-methods" name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:a9a0d9c3bf1ccdffa4aa40356989fbd07" id="r_a9a0d9c3bf1ccdffa4aa40356989fbd07"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a9a0d9c3bf1ccdffa4aa40356989fbd07">read_request</a> ()</td></tr>
+<tr class="memdesc:a9a0d9c3bf1ccdffa4aa40356989fbd07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initiates asynchronous read of the HTTP request from the client.  <br /></td></tr>
 <tr class="separator:a9a0d9c3bf1ccdffa4aa40356989fbd07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acff7d7c28c4fa5000075d3fe49420427" id="r_acff7d7c28c4fa5000075d3fe49420427"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acff7d7c28c4fa5000075d3fe49420427">handle_request</a> ()</td></tr>
+<tr class="memdesc:acff7d7c28c4fa5000075d3fe49420427"><td class="mdescLeft">&#160;</td><td class="mdescRight">Processes the HTTP request and sends a corresponding response.  <br /></td></tr>
 <tr class="separator:acff7d7c28c4fa5000075d3fe49420427"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pri-attribs" name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ab78fa6a6b461971139fcc4890e7a6784" id="r_ab78fa6a6b461971139fcc4890e7a6784"><td class="memItemLeft" align="right" valign="top">tcp::socket&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ab78fa6a6b461971139fcc4890e7a6784">socket_</a></td></tr>
+<tr class="memdesc:ab78fa6a6b461971139fcc4890e7a6784"><td class="mdescLeft">&#160;</td><td class="mdescRight">The socket used for communication with the client.  <br /></td></tr>
 <tr class="separator:ab78fa6a6b461971139fcc4890e7a6784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1d79be318d36dab051a4067e5ca896b" id="r_ac1d79be318d36dab051a4067e5ca896b"><td class="memItemLeft" align="right" valign="top">beast::flat_buffer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#ac1d79be318d36dab051a4067e5ca896b">buffer_</a></td></tr>
+<tr class="memdesc:ac1d79be318d36dab051a4067e5ca896b"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="structBuffer.html" title="Buffer structure to hold incoming HTTP response data.">Buffer</a> for reading data from the socket.  <br /></td></tr>
 <tr class="separator:ac1d79be318d36dab051a4067e5ca896b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aab67f0484c58ae6370dfc4972616aea3" id="r_aab67f0484c58ae6370dfc4972616aea3"><td class="memItemLeft" align="right" valign="top">http::request&lt; http::string_body &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#aab67f0484c58ae6370dfc4972616aea3">req_</a></td></tr>
+<tr class="memdesc:aab67f0484c58ae6370dfc4972616aea3"><td class="mdescLeft">&#160;</td><td class="mdescRight">HTTP request object.  <br /></td></tr>
 <tr class="separator:aab67f0484c58ae6370dfc4972616aea3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00023">23</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+<div class="textblock"><p>Manages a single HTTP session with a client. </p>
+<p>This class handles reading an HTTP request, processing it by fetching a GitHub user's data, and sending an appropriate HTTP response. Each client connection is handled in its own instance. </p>
+
+<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00036">36</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ace6ee24620c728a1a50549e452ef7b7e" name="ace6ee24620c728a1a50549e452ef7b7e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ace6ee24620c728a1a50549e452ef7b7e">&#9670;&#160;</a></span>HttpSession()</h2>
@@ -159,9 +171,17 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00025">25</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   25</span>: <a class="code hl_variable" href="#ab78fa6a6b461971139fcc4890e7a6784">socket_</a>(std::move(<a class="code hl_struct" href="structsocket.html">socket</a>)) {}</div>
-<div class="ttc" id="aclassHttpSession_html_ab78fa6a6b461971139fcc4890e7a6784"><div class="ttname"><a href="#ab78fa6a6b461971139fcc4890e7a6784">HttpSession::socket_</a></div><div class="ttdeci">tcp::socket socket_</div><div class="ttdef"><b>Definition</b> <a href="server_8cpp_source.html#l00030">server.cpp:30</a></div></div>
+<p>Constructs an <a class="el" href="classHttpSession.html" title="Manages a single HTTP session with a client.">HttpSession</a> with the given socket. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">socket</td><td>The TCP socket associated with the client connection. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00042">42</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   42</span>: <a class="code hl_variable" href="#ab78fa6a6b461971139fcc4890e7a6784">socket_</a>(std::move(<a class="code hl_struct" href="structsocket.html">socket</a>)) {}</div>
+<div class="ttc" id="aclassHttpSession_html_ab78fa6a6b461971139fcc4890e7a6784"><div class="ttname"><a href="#ab78fa6a6b461971139fcc4890e7a6784">HttpSession::socket_</a></div><div class="ttdeci">tcp::socket socket_</div><div class="ttdoc">The socket used for communication with the client.</div><div class="ttdef"><b>Definition</b> <a href="server_8cpp_source.html#l00050">server.cpp:50</a></div></div>
 <div class="ttc" id="astructsocket_html"><div class="ttname"><a href="structsocket.html">socket</a></div><div class="ttdef"><b>Definition</b> <a href="civetweb_8c_source.html#l01902">civetweb.c:1902</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -190,50 +210,53 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00044">44</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   44</span>                        {</div>
-<div class="line"><span class="lineno">   45</span>    <span class="keyword">auto</span> res = std::make_shared&lt;http::response&lt;http::string_body&gt;&gt;();</div>
-<div class="line"><span class="lineno">   46</span>    res-&gt;version(<a class="code hl_variable" href="#aab67f0484c58ae6370dfc4972616aea3">req_</a>.version());</div>
-<div class="line"><span class="lineno">   47</span>    res-&gt;keep_alive(<span class="keyword">false</span>);</div>
-<div class="line"><span class="lineno">   48</span> </div>
-<div class="line"><span class="lineno">   49</span>    std::string target(<a class="code hl_variable" href="#aab67f0484c58ae6370dfc4972616aea3">req_</a>.target());</div>
-<div class="line"><span class="lineno">   50</span>    std::string username = target.length() &gt; 1 ? target.substr(1) : <span class="stringliteral">&quot;&quot;</span>;</div>
-<div class="line"><span class="lineno">   51</span> </div>
-<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">if</span> (username.empty()) {</div>
-<div class="line"><span class="lineno">   53</span>      res-&gt;result(http::status::bad_request);</div>
-<div class="line"><span class="lineno">   54</span>      res-&gt;set(http::field::content_type, <span class="stringliteral">&quot;text/plain&quot;</span>);</div>
-<div class="line"><span class="lineno">   55</span>      res-&gt;body() = <span class="stringliteral">&quot;Missing username in request URI.&quot;</span>;</div>
-<div class="line"><span class="lineno">   56</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   57</span>      <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   58</span>        <a class="code hl_struct" href="structUser.html">User</a> user = User::fetch_github_user(username);</div>
-<div class="line"><span class="lineno">   59</span>        nlohmann::json json = {{<span class="stringliteral">&quot;login&quot;</span>, user.<a class="code hl_variable" href="structUser.html#ace5c64cc49288a570477ce48a425d4f6">login</a>},</div>
-<div class="line"><span class="lineno">   60</span>                               {<span class="stringliteral">&quot;name&quot;</span>, user.<a class="code hl_variable" href="structUser.html#a82691adf94c2b132218faa2a8cd01472">name</a>},</div>
-<div class="line"><span class="lineno">   61</span>                               {<span class="stringliteral">&quot;company&quot;</span>, user.<a class="code hl_variable" href="structUser.html#afc5e88ec1012cddb219ab19d742e7f97">company</a>},</div>
-<div class="line"><span class="lineno">   62</span>                               {<span class="stringliteral">&quot;location&quot;</span>, user.<a class="code hl_variable" href="structUser.html#acf22b5fa078b472ba5c93e4c566f113a">location</a>}};</div>
-<div class="line"><span class="lineno">   63</span>        res-&gt;result(http::status::ok);</div>
-<div class="line"><span class="lineno">   64</span>        res-&gt;set(http::field::content_type, <span class="stringliteral">&quot;application/json&quot;</span>);</div>
-<div class="line"><span class="lineno">   65</span>        res-&gt;body() = json.dump();</div>
-<div class="line"><span class="lineno">   66</span>      } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
-<div class="line"><span class="lineno">   67</span>        res-&gt;result(http::status::not_found);</div>
-<div class="line"><span class="lineno">   68</span>        res-&gt;set(http::field::content_type, <span class="stringliteral">&quot;text/plain&quot;</span>);</div>
-<div class="line"><span class="lineno">   69</span>        res-&gt;body() = std::string(<span class="stringliteral">&quot;Error fetching user: &quot;</span>) + e.what();</div>
-<div class="line"><span class="lineno">   70</span>      }</div>
-<div class="line"><span class="lineno">   71</span>    }</div>
-<div class="line"><span class="lineno">   72</span> </div>
-<div class="line"><span class="lineno">   73</span>    res-&gt;prepare_payload();</div>
-<div class="line"><span class="lineno">   74</span> </div>
-<div class="line"><span class="lineno">   75</span>    <span class="keyword">auto</span> self = shared_from_this();</div>
-<div class="line"><span class="lineno">   76</span>    http::async_write(</div>
-<div class="line"><span class="lineno">   77</span>        <a class="code hl_variable" href="#ab78fa6a6b461971139fcc4890e7a6784">socket_</a>, *res,</div>
-<div class="line"><span class="lineno">   78</span>        [self, res](beast::error_code <span class="comment">/*error_code*/</span>, <a class="code hl_typedef" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">std::size_t</a>) {</div>
-<div class="line"><span class="lineno">   79</span>          <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   80</span>            self-&gt;socket_.shutdown(tcp::socket::shutdown_send);</div>
-<div class="line"><span class="lineno">   81</span>          } <span class="keywordflow">catch</span> (<span class="keyword">const</span> boost::system::system_error &amp;system_error) {</div>
-<div class="line"><span class="lineno">   82</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Shutdown error: &quot;</span> &lt;&lt; system_error.what() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
-<div class="line"><span class="lineno">   83</span>          }</div>
-<div class="line"><span class="lineno">   84</span>        });</div>
-<div class="line"><span class="lineno">   85</span>  }</div>
-<div class="ttc" id="aclassHttpSession_html_aab67f0484c58ae6370dfc4972616aea3"><div class="ttname"><a href="#aab67f0484c58ae6370dfc4972616aea3">HttpSession::req_</a></div><div class="ttdeci">http::request&lt; http::string_body &gt; req_</div><div class="ttdef"><b>Definition</b> <a href="server_8cpp_source.html#l00032">server.cpp:32</a></div></div>
+<p>Processes the HTTP request and sends a corresponding response. </p>
+<p>If the request target contains a valid GitHub username, it fetches the user's data and returns it as JSON. Otherwise, it responds with an error message. </p>
+
+<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00074">74</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   74</span>                        {</div>
+<div class="line"><span class="lineno">   75</span>    <span class="keyword">auto</span> res = std::make_shared&lt;http::response&lt;http::string_body&gt;&gt;();</div>
+<div class="line"><span class="lineno">   76</span>    res-&gt;version(<a class="code hl_variable" href="#aab67f0484c58ae6370dfc4972616aea3">req_</a>.version());</div>
+<div class="line"><span class="lineno">   77</span>    res-&gt;keep_alive(<span class="keyword">false</span>);</div>
+<div class="line"><span class="lineno">   78</span> </div>
+<div class="line"><span class="lineno">   79</span>    std::string target(<a class="code hl_variable" href="#aab67f0484c58ae6370dfc4972616aea3">req_</a>.target());</div>
+<div class="line"><span class="lineno">   80</span>    std::string username = target.length() &gt; 1 ? target.substr(1) : <span class="stringliteral">&quot;&quot;</span>;</div>
+<div class="line"><span class="lineno">   81</span> </div>
+<div class="line"><span class="lineno">   82</span>    <span class="keywordflow">if</span> (username.empty()) {</div>
+<div class="line"><span class="lineno">   83</span>      res-&gt;result(http::status::bad_request);</div>
+<div class="line"><span class="lineno">   84</span>      res-&gt;set(http::field::content_type, <span class="stringliteral">&quot;text/plain&quot;</span>);</div>
+<div class="line"><span class="lineno">   85</span>      res-&gt;body() = <span class="stringliteral">&quot;Missing username in request URI.&quot;</span>;</div>
+<div class="line"><span class="lineno">   86</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   87</span>      <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   88</span>        <a class="code hl_struct" href="structUser.html">User</a> user = User::fetch_github_user(username);</div>
+<div class="line"><span class="lineno">   89</span>        nlohmann::json json = {{<span class="stringliteral">&quot;login&quot;</span>, user.<a class="code hl_variable" href="structUser.html#ace5c64cc49288a570477ce48a425d4f6">login</a>},</div>
+<div class="line"><span class="lineno">   90</span>                               {<span class="stringliteral">&quot;name&quot;</span>, user.<a class="code hl_variable" href="structUser.html#a82691adf94c2b132218faa2a8cd01472">name</a>},</div>
+<div class="line"><span class="lineno">   91</span>                               {<span class="stringliteral">&quot;company&quot;</span>, user.<a class="code hl_variable" href="structUser.html#afc5e88ec1012cddb219ab19d742e7f97">company</a>},</div>
+<div class="line"><span class="lineno">   92</span>                               {<span class="stringliteral">&quot;location&quot;</span>, user.<a class="code hl_variable" href="structUser.html#acf22b5fa078b472ba5c93e4c566f113a">location</a>}};</div>
+<div class="line"><span class="lineno">   93</span>        res-&gt;result(http::status::ok);</div>
+<div class="line"><span class="lineno">   94</span>        res-&gt;set(http::field::content_type, <span class="stringliteral">&quot;application/json&quot;</span>);</div>
+<div class="line"><span class="lineno">   95</span>        res-&gt;body() = json.dump();</div>
+<div class="line"><span class="lineno">   96</span>      } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
+<div class="line"><span class="lineno">   97</span>        res-&gt;result(http::status::not_found);</div>
+<div class="line"><span class="lineno">   98</span>        res-&gt;set(http::field::content_type, <span class="stringliteral">&quot;text/plain&quot;</span>);</div>
+<div class="line"><span class="lineno">   99</span>        res-&gt;body() = std::string(<span class="stringliteral">&quot;Error fetching user: &quot;</span>) + e.what();</div>
+<div class="line"><span class="lineno">  100</span>      }</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span> </div>
+<div class="line"><span class="lineno">  103</span>    res-&gt;prepare_payload();</div>
+<div class="line"><span class="lineno">  104</span> </div>
+<div class="line"><span class="lineno">  105</span>    <span class="keyword">auto</span> self = shared_from_this();</div>
+<div class="line"><span class="lineno">  106</span>    http::async_write(</div>
+<div class="line"><span class="lineno">  107</span>        <a class="code hl_variable" href="#ab78fa6a6b461971139fcc4890e7a6784">socket_</a>, *res,</div>
+<div class="line"><span class="lineno">  108</span>        [self, res](beast::error_code <span class="comment">/*error_code*/</span>, <a class="code hl_typedef" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">std::size_t</a>) {</div>
+<div class="line"><span class="lineno">  109</span>          <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  110</span>            self-&gt;socket_.shutdown(tcp::socket::shutdown_send);</div>
+<div class="line"><span class="lineno">  111</span>          } <span class="keywordflow">catch</span> (<span class="keyword">const</span> boost::system::system_error &amp;system_error) {</div>
+<div class="line"><span class="lineno">  112</span>            std::cerr &lt;&lt; <span class="stringliteral">&quot;Shutdown error: &quot;</span> &lt;&lt; system_error.what() &lt;&lt; <span class="charliteral">&#39;\n&#39;</span>;</div>
+<div class="line"><span class="lineno">  113</span>          }</div>
+<div class="line"><span class="lineno">  114</span>        });</div>
+<div class="line"><span class="lineno">  115</span>  }</div>
+<div class="ttc" id="aclassHttpSession_html_aab67f0484c58ae6370dfc4972616aea3"><div class="ttname"><a href="#aab67f0484c58ae6370dfc4972616aea3">HttpSession::req_</a></div><div class="ttdeci">http::request&lt; http::string_body &gt; req_</div><div class="ttdoc">HTTP request object.</div><div class="ttdef"><b>Definition</b> <a href="server_8cpp_source.html#l00052">server.cpp:52</a></div></div>
 <div class="ttc" id="anamespacestd_html_a2a88bc267d8fe2228f9ef18e79d79268"><div class="ttname"><a href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">std::size_t</a></div><div class="ttdeci">decltype(sizeof(void *)) size_t</div><div class="ttdef"><b>Definition</b> <a href="doctest_8h_source.html#l00524">doctest.h:524</a></div></div>
 <div class="ttc" id="astructUser_html"><div class="ttname"><a href="structUser.html">User</a></div><div class="ttdoc">Structure representing a GitHub user.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00009">user.h:9</a></div></div>
 <div class="ttc" id="astructUser_html_a82691adf94c2b132218faa2a8cd01472"><div class="ttname"><a href="structUser.html#a82691adf94c2b132218faa2a8cd01472">User::name</a></div><div class="ttdeci">const char * name</div><div class="ttdoc">Full name.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00011">user.h:11</a></div></div>
@@ -241,7 +264,7 @@ Private Attributes</h2></td></tr>
 <div class="ttc" id="astructUser_html_acf22b5fa078b472ba5c93e4c566f113a"><div class="ttname"><a href="structUser.html#acf22b5fa078b472ba5c93e4c566f113a">User::location</a></div><div class="ttdeci">const char * location</div><div class="ttdoc">User's location.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00013">user.h:13</a></div></div>
 <div class="ttc" id="astructUser_html_afc5e88ec1012cddb219ab19d742e7f97"><div class="ttname"><a href="structUser.html#afc5e88ec1012cddb219ab19d742e7f97">User::company</a></div><div class="ttdeci">const char * company</div><div class="ttdoc">Company name.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00012">user.h:12</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="user_8h_source.html#l00012">User::company</a>, <a class="el" href="user_8h_source.html#l00013">User::location</a>, <a class="el" href="user_8h_source.html#l00010">User::login</a>, <a class="el" href="user_8h_source.html#l00011">User::name</a>, <a class="el" href="server_8cpp_source.html#l00032">req_</a>, and <a class="el" href="server_8cpp_source.html#l00030">socket_</a>.</p>
+<p class="reference">References <a class="el" href="user_8h_source.html#l00012">User::company</a>, <a class="el" href="user_8h_source.html#l00013">User::location</a>, <a class="el" href="user_8h_source.html#l00010">User::login</a>, <a class="el" href="user_8h_source.html#l00011">User::name</a>, <a class="el" href="server_8cpp_source.html#l00052">req_</a>, and <a class="el" href="server_8cpp_source.html#l00050">socket_</a>.</p>
 
 </div>
 </div>
@@ -268,21 +291,23 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00034">34</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   34</span>                      {</div>
-<div class="line"><span class="lineno">   35</span>    <span class="keyword">auto</span> self = shared_from_this();</div>
-<div class="line"><span class="lineno">   36</span>    http::async_read(<a class="code hl_variable" href="#ab78fa6a6b461971139fcc4890e7a6784">socket_</a>, <a class="code hl_variable" href="#ac1d79be318d36dab051a4067e5ca896b">buffer_</a>, <a class="code hl_variable" href="#aab67f0484c58ae6370dfc4972616aea3">req_</a>,</div>
-<div class="line"><span class="lineno">   37</span>                     [self](beast::error_code error_code, <a class="code hl_typedef" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">std::size_t</a>) {</div>
-<div class="line"><span class="lineno">   38</span>                       <span class="keywordflow">if</span> (!error_code) {</div>
-<div class="line"><span class="lineno">   39</span>                         self-&gt;handle_request();</div>
-<div class="line"><span class="lineno">   40</span>                       }</div>
-<div class="line"><span class="lineno">   41</span>                     });</div>
-<div class="line"><span class="lineno">   42</span>  }</div>
-<div class="ttc" id="aclassHttpSession_html_ac1d79be318d36dab051a4067e5ca896b"><div class="ttname"><a href="#ac1d79be318d36dab051a4067e5ca896b">HttpSession::buffer_</a></div><div class="ttdeci">beast::flat_buffer buffer_</div><div class="ttdef"><b>Definition</b> <a href="server_8cpp_source.html#l00031">server.cpp:31</a></div></div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="server_8cpp_source.html#l00031">buffer_</a>, <a class="el" href="server_8cpp_source.html#l00032">req_</a>, and <a class="el" href="server_8cpp_source.html#l00030">socket_</a>.</p>
+<p>Initiates asynchronous read of the HTTP request from the client. </p>
 
-<p class="reference">Referenced by <a class="el" href="server_8cpp_source.html#l00027">start()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00057">57</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   57</span>                      {</div>
+<div class="line"><span class="lineno">   58</span>    <span class="keyword">auto</span> self = shared_from_this();</div>
+<div class="line"><span class="lineno">   59</span>    http::async_read(<a class="code hl_variable" href="#ab78fa6a6b461971139fcc4890e7a6784">socket_</a>, <a class="code hl_variable" href="#ac1d79be318d36dab051a4067e5ca896b">buffer_</a>, <a class="code hl_variable" href="#aab67f0484c58ae6370dfc4972616aea3">req_</a>,</div>
+<div class="line"><span class="lineno">   60</span>                     [self](beast::error_code error_code, <a class="code hl_typedef" href="namespacestd.html#a2a88bc267d8fe2228f9ef18e79d79268">std::size_t</a>) {</div>
+<div class="line"><span class="lineno">   61</span>                       <span class="keywordflow">if</span> (!error_code) {</div>
+<div class="line"><span class="lineno">   62</span>                         self-&gt;handle_request();</div>
+<div class="line"><span class="lineno">   63</span>                       }</div>
+<div class="line"><span class="lineno">   64</span>                     });</div>
+<div class="line"><span class="lineno">   65</span>  }</div>
+<div class="ttc" id="aclassHttpSession_html_ac1d79be318d36dab051a4067e5ca896b"><div class="ttname"><a href="#ac1d79be318d36dab051a4067e5ca896b">HttpSession::buffer_</a></div><div class="ttdeci">beast::flat_buffer buffer_</div><div class="ttdoc">Buffer for reading data from the socket.</div><div class="ttdef"><b>Definition</b> <a href="server_8cpp_source.html#l00051">server.cpp:51</a></div></div>
+</div><!-- fragment -->
+<p class="reference">References <a class="el" href="server_8cpp_source.html#l00051">buffer_</a>, <a class="el" href="server_8cpp_source.html#l00052">req_</a>, and <a class="el" href="server_8cpp_source.html#l00050">socket_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="server_8cpp_source.html#l00047">start()</a>.</p>
 
 </div>
 </div>
@@ -309,11 +334,13 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00027">27</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   27</span>{ <a class="code hl_function" href="#a9a0d9c3bf1ccdffa4aa40356989fbd07">read_request</a>(); }</div>
-<div class="ttc" id="aclassHttpSession_html_a9a0d9c3bf1ccdffa4aa40356989fbd07"><div class="ttname"><a href="#a9a0d9c3bf1ccdffa4aa40356989fbd07">HttpSession::read_request</a></div><div class="ttdeci">void read_request()</div><div class="ttdef"><b>Definition</b> <a href="server_8cpp_source.html#l00034">server.cpp:34</a></div></div>
+<p>Starts processing the HTTP session. </p>
+
+<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00047">47</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   47</span>{ <a class="code hl_function" href="#a9a0d9c3bf1ccdffa4aa40356989fbd07">read_request</a>(); }</div>
+<div class="ttc" id="aclassHttpSession_html_a9a0d9c3bf1ccdffa4aa40356989fbd07"><div class="ttname"><a href="#a9a0d9c3bf1ccdffa4aa40356989fbd07">HttpSession::read_request</a></div><div class="ttdeci">void read_request()</div><div class="ttdoc">Initiates asynchronous read of the HTTP request from the client.</div><div class="ttdef"><b>Definition</b> <a href="server_8cpp_source.html#l00057">server.cpp:57</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="server_8cpp_source.html#l00034">read_request()</a>.</p>
+<p class="reference">References <a class="el" href="server_8cpp_source.html#l00057">read_request()</a>.</p>
 
 </div>
 </div>
@@ -338,9 +365,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00031">31</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+<p><a class="el" href="structBuffer.html" title="Buffer structure to hold incoming HTTP response data.">Buffer</a> for reading data from the socket. </p>
 
-<p class="reference">Referenced by <a class="el" href="server_8cpp_source.html#l00034">read_request()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00051">51</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="server_8cpp_source.html#l00057">read_request()</a>.</p>
 
 </div>
 </div>
@@ -364,9 +393,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00032">32</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+<p>HTTP request object. </p>
 
-<p class="reference">Referenced by <a class="el" href="server_8cpp_source.html#l00044">handle_request()</a>, and <a class="el" href="server_8cpp_source.html#l00034">read_request()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00052">52</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="server_8cpp_source.html#l00074">handle_request()</a>, and <a class="el" href="server_8cpp_source.html#l00057">read_request()</a>.</p>
 
 </div>
 </div>
@@ -390,9 +421,11 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00030">30</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+<p>The socket used for communication with the client. </p>
 
-<p class="reference">Referenced by <a class="el" href="server_8cpp_source.html#l00044">handle_request()</a>, and <a class="el" href="server_8cpp_source.html#l00034">read_request()</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00050">50</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="server_8cpp_source.html#l00074">handle_request()</a>, and <a class="el" href="server_8cpp_source.html#l00057">read_request()</a>.</p>
 
 </div>
 </div>

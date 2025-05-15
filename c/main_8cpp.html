@@ -116,6 +116,7 @@ Functions</h2></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Entry point for the application. Parses command-line arguments and either starts the HTTP server or fetches and displays a GitHub user. </p>
+<p>This file contains the main function which acts as the orchestrator of the program. It interprets the configuration from the user, and based on that configuration, it either launches a local HTTP server or performs a GitHub API request to fetch user data, then displays it to stdout. </p>
 
 <p class="definition">Definition in file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
 </div><h2 class="groupheader">Function Documentation</h2>
@@ -139,6 +140,15 @@ Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Main function that initializes and runs the application. </p>
+<p>This function performs the following steps:</p><ul>
+<li>Parses command-line arguments into an AppConfig object.</li>
+<li>Based on the parsed configuration:<ul>
+<li>If <code>run_server</code> is true, launches the HTTP server on the specified port.</li>
+<li>Otherwise, fetches a GitHub user and prints the result.</li>
+</ul>
+</li>
+</ul>
+<p>Any exceptions thrown during the execution are caught and logged to <code>stderr</code>, with a non-zero return code indicating failure.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">argc</td><td>Argument count. </td></tr>
@@ -146,35 +156,37 @@ Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>int Exit status code (0 for success, nonzero for failure). </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>int Exit status code (0 for success, non-zero for failure). </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00021">21</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   21</span>                                {</div>
-<div class="line"><span class="lineno">   22</span>  <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   23</span>    std::vector&lt;std::string&gt; args(</div>
-<div class="line"><span class="lineno">   24</span>        argv + 1,</div>
-<div class="line"><span class="lineno">   25</span>        argv + argc); <span class="comment">// Convert argv to vector&lt;string&gt; for easier handling</span></div>
-<div class="line"><span class="lineno">   26</span> </div>
-<div class="line"><span class="lineno">   27</span>    AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>    <span class="keywordflow">if</span> (config.run_server) {</div>
-<div class="line"><span class="lineno">   30</span>      <a class="code hl_function" href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a>(config.port);</div>
-<div class="line"><span class="lineno">   31</span>    } <span class="keywordflow">else</span> {</div>
-<div class="line"><span class="lineno">   32</span>      <a class="code hl_struct" href="structUser.html">User</a> user = User::fetch_github_user(config.username);</div>
-<div class="line"><span class="lineno">   33</span>      user.print();</div>
-<div class="line"><span class="lineno">   34</span>    }</div>
-<div class="line"><span class="lineno">   35</span> </div>
-<div class="line"><span class="lineno">   36</span>    <span class="keywordflow">return</span> 0;</div>
-<div class="line"><span class="lineno">   37</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;ex) {</div>
-<div class="line"><span class="lineno">   38</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;Error: &quot;</span> &lt;&lt; ex.what() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   39</span>    <span class="keywordflow">return</span> 1;</div>
-<div class="line"><span class="lineno">   40</span>  }</div>
-<div class="line"><span class="lineno">   41</span>}</div>
-<div class="ttc" id="aconfig_8cpp_html_acf7abda9dac6fd151892e22fdbe3ed0b"><div class="ttname"><a href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a></div><div class="ttdeci">AppConfig parse_arguments(const std::vector&lt; std::string &gt; &amp;args)</div><div class="ttdoc">Parses command-line arguments into AppConfig.</div><div class="ttdef"><b>Definition</b> <a href="config_8cpp_source.html#l00008">config.cpp:8</a></div></div>
+<p class="definition">Definition at line <a class="el" href="main_8cpp_source.html#l00035">35</a> of file <a class="el" href="main_8cpp_source.html">main.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   35</span>                                {</div>
+<div class="line"><span class="lineno">   36</span>  <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   37</span>    <span class="comment">// Convert argv to vector&lt;string&gt; for easier handling</span></div>
+<div class="line"><span class="lineno">   38</span>    std::vector&lt;std::string&gt; args(argv + 1, argv + argc);</div>
+<div class="line"><span class="lineno">   39</span> </div>
+<div class="line"><span class="lineno">   40</span>    <span class="comment">// Parse arguments into configuration</span></div>
+<div class="line"><span class="lineno">   41</span>    AppConfig config = <a class="code hl_function" href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a>(args);</div>
+<div class="line"><span class="lineno">   42</span> </div>
+<div class="line"><span class="lineno">   43</span>    <span class="keywordflow">if</span> (config.run_server) {</div>
+<div class="line"><span class="lineno">   44</span>      <span class="comment">// Start HTTP server if --server option is set</span></div>
+<div class="line"><span class="lineno">   45</span>      <a class="code hl_function" href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a>(config.port);</div>
+<div class="line"><span class="lineno">   46</span>    } <span class="keywordflow">else</span> {</div>
+<div class="line"><span class="lineno">   47</span>      <span class="comment">// Otherwise fetch and display GitHub user info</span></div>
+<div class="line"><span class="lineno">   48</span>      <a class="code hl_struct" href="structUser.html">User</a> user = User::fetch_github_user(config.username);</div>
+<div class="line"><span class="lineno">   49</span>      user.print();</div>
+<div class="line"><span class="lineno">   50</span>    }</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>    <span class="keywordflow">return</span> 0;</div>
+<div class="line"><span class="lineno">   53</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;ex) {</div>
+<div class="line"><span class="lineno">   54</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;Error: &quot;</span> &lt;&lt; ex.what() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">   55</span>    <span class="keywordflow">return</span> 1;</div>
+<div class="line"><span class="lineno">   56</span>  }</div>
+<div class="line"><span class="lineno">   57</span>}</div>
+<div class="ttc" id="aconfig_8cpp_html_acf7abda9dac6fd151892e22fdbe3ed0b"><div class="ttname"><a href="config_8cpp.html#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a></div><div class="ttdeci">AppConfig parse_arguments(const std::vector&lt; std::string &gt; &amp;args)</div><div class="ttdoc">Parses command-line arguments into an AppConfig structure.</div><div class="ttdef"><b>Definition</b> <a href="config_8cpp_source.html#l00031">config.cpp:31</a></div></div>
 <div class="ttc" id="aserver_8c_html_a805251749f828fda7ccf3f1cc664afd1"><div class="ttname"><a href="server_8c.html#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a></div><div class="ttdeci">void start_http_server(int port)</div><div class="ttdoc">Starts an HTTP server on the specified port.</div><div class="ttdef"><b>Definition</b> <a href="server_8c_source.html#l00059">server.c:59</a></div></div>
 <div class="ttc" id="astructUser_html"><div class="ttname"><a href="structUser.html">User</a></div><div class="ttdoc">Structure representing a GitHub user.</div><div class="ttdef"><b>Definition</b> <a href="user_8h_source.html#l00009">user.h:9</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="config_8cpp_source.html#l00008">parse_arguments()</a>, and <a class="el" href="server_8c_source.html#l00059">start_http_server()</a>.</p>
+<p class="reference">References <a class="el" href="config_8cpp_source.html#l00031">parse_arguments()</a>, and <a class="el" href="server_8c_source.html#l00059">start_http_server()</a>.</p>
 
 </div>
 </div>

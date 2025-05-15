@@ -100,6 +100,9 @@ $(function(){initNavTree('server_8cpp.html',''); initResizable(); });
   <div class="headertitle"><div class="title">server.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Implements an HTTP server using Boost.Beast and Boost.Asio to serve GitHub user data.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;server.hpp&quot;</code><br />
 <code>#include &quot;user.hpp&quot;</code><br />
 <code>#include &lt;boost/asio.hpp&gt;</code><br />
@@ -119,6 +122,7 @@ $(function(){initNavTree('server_8cpp.html',''); initResizable(); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Data Structures</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classHttpSession.html">HttpSession</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Manages a single HTTP session with a client.  <a href="classHttpSession.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
@@ -129,10 +133,14 @@ Typedefs</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:a805251749f828fda7ccf3f1cc664afd1" id="r_a805251749f828fda7ccf3f1cc664afd1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#a805251749f828fda7ccf3f1cc664afd1">start_http_server</a> (int port)</td></tr>
-<tr class="memdesc:a805251749f828fda7ccf3f1cc664afd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the HTTP server.  <br /></td></tr>
+<tr class="memdesc:a805251749f828fda7ccf3f1cc664afd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the HTTP server on the specified port.  <br /></td></tr>
 <tr class="separator:a805251749f828fda7ccf3f1cc664afd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Typedef Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Implements an HTTP server using Boost.Beast and Boost.Asio to serve GitHub user data. </p>
+
+<p class="definition">Definition in file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+</div><h2 class="groupheader">Typedef Documentation</h2>
 <a id="a60a92ea513bd2f25705cdd673983c5a8" name="a60a92ea513bd2f25705cdd673983c5a8"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a60a92ea513bd2f25705cdd673983c5a8">&#9670;&#160;</a></span>tcp</h2>
 
@@ -145,7 +153,7 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00020">20</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00026">26</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
 
 </div>
 </div>
@@ -165,73 +173,75 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Starts the HTTP server. </p>
-<p>Initializes and runs the Civetweb server on the specified port.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">port</td><td>TCP port number to listen on.</td></tr>
-  </table>
-  </dd>
-</dl>
+<p>Starts the HTTP server on the specified port. </p>
 <p>Starts the HTTP server.</p>
-<p>Configures Civetweb with basic options and handles incoming user requests. The server runs indefinitely until manually interrupted.</p>
+<p>Sets up an <code>io_context</code>, signal handlers for graceful shutdown, and an asynchronous TCP acceptor to listen for and handle incoming HTTP connections using <code><a class="el" href="classHttpSession.html" title="Manages a single HTTP session with a client.">HttpSession</a></code>.</p>
+<p>The server runs in a multi-threaded fashion, utilizing all available hardware threads.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The TCP port to listen on. </td></tr>
+    <tr><td class="paramname">port</td><td>The port number on which the HTTP server should listen. </td></tr>
   </table>
   </dd>
 </dl>
+<p>Lambda for accepting incoming connections recursively.</p>
+<p>This lambda captures itself and re-issues accept calls until the server is stopped.</p>
 
-<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00088">88</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>                                 {</div>
-<div class="line"><span class="lineno">   89</span>  <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   90</span>    net::io_context ioc{};</div>
-<div class="line"><span class="lineno">   91</span> </div>
-<div class="line"><span class="lineno">   92</span>    <span class="comment">// Set up signal handling for clean shutdown</span></div>
-<div class="line"><span class="lineno">   93</span>    net::signal_set signals(ioc, SIGINT, SIGTERM);</div>
-<div class="line"><span class="lineno">   94</span>    signals.async_wait([&amp;](<span class="keyword">auto</span>, <span class="keyword">auto</span>) {</div>
-<div class="line"><span class="lineno">   95</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;\nShutting down server...\n&quot;</span>;</div>
-<div class="line"><span class="lineno">   96</span>      ioc.stop();</div>
-<div class="line"><span class="lineno">   97</span>    });</div>
-<div class="line"><span class="lineno">   98</span> </div>
-<div class="line"><span class="lineno">   99</span>    tcp::acceptor acceptor{ioc, {tcp::v4(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span><span class="keyword">&gt;</span>(port)}};</div>
-<div class="line"><span class="lineno">  100</span> </div>
-<div class="line"><span class="lineno">  101</span>    <span class="keyword">auto</span> do_accept = [&amp;](<span class="keyword">auto</span> &amp;&amp;self) -&gt; <span class="keywordtype">void</span> {</div>
-<div class="line"><span class="lineno">  102</span>      acceptor.async_accept(</div>
-<div class="line"><span class="lineno">  103</span>          [&amp;](beast::error_code error_code, tcp::socket <a class="code hl_struct" href="structsocket.html">socket</a>) {</div>
-<div class="line"><span class="lineno">  104</span>            <span class="keywordflow">if</span> (!error_code) {</div>
-<div class="line"><span class="lineno">  105</span>              std::make_shared&lt;HttpSession&gt;(std::move(<a class="code hl_struct" href="structsocket.html">socket</a>))-&gt;start();</div>
-<div class="line"><span class="lineno">  106</span>            }</div>
-<div class="line"><span class="lineno">  107</span>            <span class="keywordflow">if</span> (!ioc.stopped()) {</div>
-<div class="line"><span class="lineno">  108</span>              self(self); <span class="comment">// accept next connection</span></div>
-<div class="line"><span class="lineno">  109</span>            }</div>
-<div class="line"><span class="lineno">  110</span>          });</div>
-<div class="line"><span class="lineno">  111</span>    };</div>
-<div class="line"><span class="lineno">  112</span> </div>
-<div class="line"><span class="lineno">  113</span>    do_accept(do_accept);</div>
-<div class="line"><span class="lineno">  114</span> </div>
-<div class="line"><span class="lineno">  115</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Server started on port &quot;</span> &lt;&lt; port</div>
-<div class="line"><span class="lineno">  116</span>              &lt;&lt; <span class="stringliteral">&quot;. Visit http://localhost:&quot;</span> &lt;&lt; port &lt;&lt; <span class="stringliteral">&quot;/USERNAME\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  117</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Press Ctrl+C to quit.\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  118</span> </div>
-<div class="line"><span class="lineno">  119</span>    <span class="comment">// Run io_context on multiple threads</span></div>
-<div class="line"><span class="lineno">  120</span>    <span class="keyword">const</span> <span class="keyword">auto</span> num_threads = std::max(1U, std::thread::hardware_concurrency());</div>
-<div class="line"><span class="lineno">  121</span>    std::vector&lt;std::thread&gt; threads;</div>
-<div class="line"><span class="lineno">  122</span>    threads.reserve(num_threads - 1);</div>
-<div class="line"><span class="lineno">  123</span> </div>
-<div class="line"><span class="lineno">  124</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; num_threads - 1; ++i) {</div>
-<div class="line"><span class="lineno">  125</span>      threads.emplace_back([&amp;ioc]() { ioc.run(); });</div>
-<div class="line"><span class="lineno">  126</span>    }</div>
-<div class="line"><span class="lineno">  127</span> </div>
-<div class="line"><span class="lineno">  128</span>    ioc.run();</div>
-<div class="line"><span class="lineno">  129</span> </div>
-<div class="line"><span class="lineno">  130</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;thread : threads) {</div>
-<div class="line"><span class="lineno">  131</span>      thread.join();</div>
-<div class="line"><span class="lineno">  132</span>    }</div>
-<div class="line"><span class="lineno">  133</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
-<div class="line"><span class="lineno">  134</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;Server error: &quot;</span> &lt;&lt; e.what() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><span class="lineno">  135</span>  }</div>
-<div class="line"><span class="lineno">  136</span>}</div>
+<p class="definition">Definition at line <a class="el" href="server_8cpp_source.html#l00130">130</a> of file <a class="el" href="server_8cpp_source.html">server.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  130</span>                                 {</div>
+<div class="line"><span class="lineno">  131</span>  <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">  132</span>    net::io_context ioc{};</div>
+<div class="line"><span class="lineno">  133</span> </div>
+<div class="line"><span class="lineno">  134</span>    <span class="comment">// Set up signal handling for clean shutdown</span></div>
+<div class="line"><span class="lineno">  135</span>    net::signal_set signals(ioc, SIGINT, SIGTERM);</div>
+<div class="line"><span class="lineno">  136</span>    signals.async_wait([&amp;](<span class="keyword">auto</span>, <span class="keyword">auto</span>) {</div>
+<div class="line"><span class="lineno">  137</span>      std::cout &lt;&lt; <span class="stringliteral">&quot;\nShutting down server...\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  138</span>      ioc.stop();</div>
+<div class="line"><span class="lineno">  139</span>    });</div>
+<div class="line"><span class="lineno">  140</span> </div>
+<div class="line"><span class="lineno">  141</span>    tcp::acceptor acceptor{ioc, {tcp::v4(), <span class="keyword">static_cast&lt;</span><span class="keywordtype">unsigned</span> <span class="keywordtype">short</span><span class="keyword">&gt;</span>(port)}};</div>
+<div class="line"><span class="lineno">  142</span><span class="comment"></span> </div>
+<div class="line"><span class="lineno">  143</span><span class="comment">    /**</span></div>
+<div class="line"><span class="lineno">  144</span><span class="comment">     * @brief Lambda for accepting incoming connections recursively.</span></div>
+<div class="line"><span class="lineno">  145</span><span class="comment">     *</span></div>
+<div class="line"><span class="lineno">  146</span><span class="comment">     * This lambda captures itself and re-issues accept calls until the server</span></div>
+<div class="line"><span class="lineno">  147</span><span class="comment">     * is stopped.</span></div>
+<div class="line"><span class="lineno">  148</span><span class="comment">     */</span></div>
+<div class="line"><span class="lineno">  149</span>    <span class="keyword">auto</span> do_accept = [&amp;](<span class="keyword">auto</span> &amp;&amp;self) -&gt; <span class="keywordtype">void</span> {</div>
+<div class="line"><span class="lineno">  150</span>      acceptor.async_accept(</div>
+<div class="line"><span class="lineno">  151</span>          [&amp;](beast::error_code error_code, tcp::socket <a class="code hl_struct" href="structsocket.html">socket</a>) {</div>
+<div class="line"><span class="lineno">  152</span>            <span class="keywordflow">if</span> (!error_code) {</div>
+<div class="line"><span class="lineno">  153</span>              std::make_shared&lt;HttpSession&gt;(std::move(<a class="code hl_struct" href="structsocket.html">socket</a>))-&gt;start();</div>
+<div class="line"><span class="lineno">  154</span>            }</div>
+<div class="line"><span class="lineno">  155</span>            <span class="keywordflow">if</span> (!ioc.stopped()) {</div>
+<div class="line"><span class="lineno">  156</span>              self(self); <span class="comment">// Accept next connection</span></div>
+<div class="line"><span class="lineno">  157</span>            }</div>
+<div class="line"><span class="lineno">  158</span>          });</div>
+<div class="line"><span class="lineno">  159</span>    };</div>
+<div class="line"><span class="lineno">  160</span> </div>
+<div class="line"><span class="lineno">  161</span>    do_accept(do_accept);</div>
+<div class="line"><span class="lineno">  162</span> </div>
+<div class="line"><span class="lineno">  163</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Server started on port &quot;</span> &lt;&lt; port</div>
+<div class="line"><span class="lineno">  164</span>              &lt;&lt; <span class="stringliteral">&quot;. Visit http://localhost:&quot;</span> &lt;&lt; port &lt;&lt; <span class="stringliteral">&quot;/USERNAME\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  165</span>    std::cout &lt;&lt; <span class="stringliteral">&quot;Press Ctrl+C to quit.\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  166</span> </div>
+<div class="line"><span class="lineno">  167</span>    <span class="comment">// Run io_context on multiple threads</span></div>
+<div class="line"><span class="lineno">  168</span>    <span class="keyword">const</span> <span class="keyword">auto</span> num_threads = std::max(1U, std::thread::hardware_concurrency());</div>
+<div class="line"><span class="lineno">  169</span>    std::vector&lt;std::thread&gt; threads;</div>
+<div class="line"><span class="lineno">  170</span>    threads.reserve(num_threads - 1);</div>
+<div class="line"><span class="lineno">  171</span> </div>
+<div class="line"><span class="lineno">  172</span>    <span class="keywordflow">for</span> (<span class="keywordtype">unsigned</span> i = 0; i &lt; num_threads - 1; ++i) {</div>
+<div class="line"><span class="lineno">  173</span>      threads.emplace_back([&amp;ioc]() { ioc.run(); });</div>
+<div class="line"><span class="lineno">  174</span>    }</div>
+<div class="line"><span class="lineno">  175</span> </div>
+<div class="line"><span class="lineno">  176</span>    ioc.run();</div>
+<div class="line"><span class="lineno">  177</span> </div>
+<div class="line"><span class="lineno">  178</span>    <span class="keywordflow">for</span> (<span class="keyword">auto</span> &amp;thread : threads) {</div>
+<div class="line"><span class="lineno">  179</span>      thread.join();</div>
+<div class="line"><span class="lineno">  180</span>    }</div>
+<div class="line"><span class="lineno">  181</span>  } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;e) {</div>
+<div class="line"><span class="lineno">  182</span>    std::cerr &lt;&lt; <span class="stringliteral">&quot;Server error: &quot;</span> &lt;&lt; e.what() &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><span class="lineno">  183</span>  }</div>
+<div class="line"><span class="lineno">  184</span>}</div>
 <div class="ttc" id="astructsocket_html"><div class="ttname"><a href="structsocket.html">socket</a></div><div class="ttdef"><b>Definition</b> <a href="civetweb_8c_source.html#l01902">civetweb.c:1902</a></div></div>
 </div><!-- fragment -->
 </div>

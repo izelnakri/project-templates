@@ -98,6 +98,9 @@ $(function(){initNavTree('config_8cpp.html',''); initResizable(); });
   <div class="headertitle"><div class="title">config.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
+
+<p>Contains logic for parsing command-line arguments into an AppConfig object.  
+<a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;config.hpp&quot;</code><br />
 <code>#include &lt;stdexcept&gt;</code><br />
 </div>
@@ -106,10 +109,15 @@ $(function(){initNavTree('config_8cpp.html',''); initResizable(); });
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
 <tr class="memitem:acf7abda9dac6fd151892e22fdbe3ed0b" id="r_acf7abda9dac6fd151892e22fdbe3ed0b"><td class="memItemLeft" align="right" valign="top">AppConfig&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="#acf7abda9dac6fd151892e22fdbe3ed0b">parse_arguments</a> (const std::vector&lt; std::string &gt; &amp;args)</td></tr>
-<tr class="memdesc:acf7abda9dac6fd151892e22fdbe3ed0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses command-line arguments into AppConfig.  <br /></td></tr>
+<tr class="memdesc:acf7abda9dac6fd151892e22fdbe3ed0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses command-line arguments into an AppConfig structure.  <br /></td></tr>
 <tr class="separator:acf7abda9dac6fd151892e22fdbe3ed0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Function Documentation</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains logic for parsing command-line arguments into an AppConfig object. </p>
+<p>This file provides the implementation of a utility function that translates raw command-line input into structured configuration for the application. </p>
+
+<p class="definition">Definition in file <a class="el" href="config_8cpp_source.html">config.cpp</a>.</p>
+</div><h2 class="groupheader">Function Documentation</h2>
 <a id="acf7abda9dac6fd151892e22fdbe3ed0b" name="acf7abda9dac6fd151892e22fdbe3ed0b"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acf7abda9dac6fd151892e22fdbe3ed0b">&#9670;&#160;</a></span>parse_arguments()</h2>
 
@@ -125,37 +133,56 @@ Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Parses command-line arguments into AppConfig. </p>
+<p>Parses command-line arguments into an AppConfig structure. </p>
+<p>This function iterates over the provided command-line arguments and looks for:</p><ul>
+<li><code>--user &lt;username&gt;</code> or <code>--user=&lt;username&gt;</code>: Sets the GitHub username to fetch.</li>
+<li><code>--server</code>: Indicates that the HTTP server should be started.</li>
+<li><code>--port=&lt;number&gt;</code>: Sets the port number for the HTTP server.</li>
+</ul>
+<p>Invalid port values will cause an exception to be thrown.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">args</td><td>A list of command-line arguments, excluding the program name. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>AppConfig A structure populated with the extracted configuration.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">std::invalid_argument</td><td>If the port value is not a valid integer. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="definition">Definition at line <a class="el" href="config_8cpp_source.html#l00008">8</a> of file <a class="el" href="config_8cpp_source.html">config.cpp</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">    8</span>                                                            {</div>
-<div class="line"><span class="lineno">    9</span>  AppConfig config;</div>
-<div class="line"><span class="lineno">   10</span> </div>
-<div class="line"><span class="lineno">   11</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; args.size(); ++i) {</div>
-<div class="line"><span class="lineno">   12</span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> = args[i];</div>
-<div class="line"><span class="lineno">   13</span> </div>
-<div class="line"><span class="lineno">   14</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--user&quot;</span> &amp;&amp; i + 1 &lt; args.size()) {</div>
-<div class="line"><span class="lineno">   15</span>      config.username = args[++i];</div>
-<div class="line"><span class="lineno">   16</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--user=&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   17</span>      config.username = <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7);</div>
-<div class="line"><span class="lineno">   18</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--server&quot;</span>) {</div>
-<div class="line"><span class="lineno">   19</span>      config.run_server = <span class="keyword">true</span>;</div>
-<div class="line"><span class="lineno">   20</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--port=&quot;</span>)) {</div>
-<div class="line"><span class="lineno">   21</span>      <span class="keywordflow">try</span> {</div>
-<div class="line"><span class="lineno">   22</span>        config.port = std::stoi(<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
-<div class="line"><span class="lineno">   23</span>      } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;) {</div>
-<div class="line"><span class="lineno">   24</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Invalid port number: &quot;</span> + <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
-<div class="line"><span class="lineno">   25</span>      }</div>
-<div class="line"><span class="lineno">   26</span>    }</div>
-<div class="line"><span class="lineno">   27</span>  }</div>
-<div class="line"><span class="lineno">   28</span> </div>
-<div class="line"><span class="lineno">   29</span>  <span class="keywordflow">return</span> config;</div>
-<div class="line"><span class="lineno">   30</span>}</div>
+<p class="definition">Definition at line <a class="el" href="config_8cpp_source.html#l00031">31</a> of file <a class="el" href="config_8cpp_source.html">config.cpp</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   31</span>                                                            {</div>
+<div class="line"><span class="lineno">   32</span>  AppConfig config;</div>
+<div class="line"><span class="lineno">   33</span> </div>
+<div class="line"><span class="lineno">   34</span>  <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; args.size(); ++i) {</div>
+<div class="line"><span class="lineno">   35</span>    <span class="keyword">const</span> std::string &amp;<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> = args[i];</div>
+<div class="line"><span class="lineno">   36</span> </div>
+<div class="line"><span class="lineno">   37</span>    <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--user&quot;</span> &amp;&amp; i + 1 &lt; args.size()) {</div>
+<div class="line"><span class="lineno">   38</span>      config.username = args[++i];</div>
+<div class="line"><span class="lineno">   39</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--user=&quot;</span>)) {</div>
+<div class="line"><span class="lineno">   40</span>      config.username = <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7);</div>
+<div class="line"><span class="lineno">   41</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a> == <span class="stringliteral">&quot;--server&quot;</span>) {</div>
+<div class="line"><span class="lineno">   42</span>      config.run_server = <span class="keyword">true</span>;</div>
+<div class="line"><span class="lineno">   43</span>    } <span class="keywordflow">else</span> <span class="keywordflow">if</span> (<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.starts_with(<span class="stringliteral">&quot;--port=&quot;</span>)) {</div>
+<div class="line"><span class="lineno">   44</span>      <span class="keywordflow">try</span> {</div>
+<div class="line"><span class="lineno">   45</span>        config.port = std::stoi(<a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
+<div class="line"><span class="lineno">   46</span>      } <span class="keywordflow">catch</span> (<span class="keyword">const</span> std::exception &amp;) {</div>
+<div class="line"><span class="lineno">   47</span>        <span class="keywordflow">throw</span> std::invalid_argument(<span class="stringliteral">&quot;Invalid port number: &quot;</span> + <a class="code hl_variable" href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a>.substr(7));</div>
+<div class="line"><span class="lineno">   48</span>      }</div>
+<div class="line"><span class="lineno">   49</span>    }</div>
+<div class="line"><span class="lineno">   50</span>  }</div>
+<div class="line"><span class="lineno">   51</span> </div>
+<div class="line"><span class="lineno">   52</span>  <span class="keywordflow">return</span> config;</div>
+<div class="line"><span class="lineno">   53</span>}</div>
 <div class="ttc" id="acurl_8h_html_a7d68018e95e3d4e6b703538ac1c8c411"><div class="ttname"><a href="curl_8h.html#a7d68018e95e3d4e6b703538ac1c8c411">arg</a></div><div class="ttdeci">CURL_EXTERN int void * arg</div><div class="ttdef"><b>Definition</b> <a href="curl_8h_source.html#l02622">curl.h:2622</a></div></div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="curl_8h_source.html#l02622">arg</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main_8cpp_source.html#l00021">main()</a>, <a class="el" href="test__main_8cpp_source.html#l00013">TEST_CASE()</a>, <a class="el" href="test__main_8cpp_source.html#l00020">TEST_CASE()</a>, <a class="el" href="test__main_8cpp_source.html#l00005">TEST_CASE()</a>, and <a class="el" href="test__main_8cpp_source.html#l00026">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main_8cpp_source.html#l00035">main()</a>, <a class="el" href="test__main_8cpp_source.html#l00013">TEST_CASE()</a>, <a class="el" href="test__main_8cpp_source.html#l00020">TEST_CASE()</a>, <a class="el" href="test__main_8cpp_source.html#l00005">TEST_CASE()</a>, and <a class="el" href="test__main_8cpp_source.html#l00026">TEST_CASE()</a>.</p>
 
 </div>
 </div>

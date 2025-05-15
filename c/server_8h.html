@@ -142,10 +142,21 @@ Functions</h2></td></tr>
 <p>Configures Civetweb with basic options and handles incoming user requests. The server runs indefinitely until manually interrupted.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">port</td><td>The TCP port to listen on. </td></tr>
+    <tr><td class="paramname">port</td><td>The TCP port to listen on.</td></tr>
   </table>
   </dd>
 </dl>
+<p>Starts the HTTP server.</p>
+<p>Sets up an <code>io_context</code>, signal handlers for graceful shutdown, and an asynchronous TCP acceptor to listen for and handle incoming HTTP connections using <code><a class="el" href="classHttpSession.html" title="Manages a single HTTP session with a client.">HttpSession</a></code>.</p>
+<p>The server runs in a multi-threaded fashion, utilizing all available hardware threads.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">port</td><td>The port number on which the HTTP server should listen. </td></tr>
+  </table>
+  </dd>
+</dl>
+<p>Lambda for accepting incoming connections recursively.</p>
+<p>This lambda captures itself and re-issues accept calls until the server is stopped.</p>
 
 <p class="definition">Definition at line <a class="el" href="server_8c_source.html#l00059">59</a> of file <a class="el" href="server_8c_source.html">server.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   59</span>                                 {</div>
@@ -198,7 +209,7 @@ Functions</h2></td></tr>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="civetweb_8c_source.html#l02432">mg_context::callbacks</a>, <a class="el" href="civetweb_8c_source.html#l01542">free</a>, <a class="el" href="civetweb_8c_source.html#l14466">mg_set_request_handler()</a>, <a class="el" href="civetweb_8c_source.html#l21205">mg_start()</a>, <a class="el" href="civetweb_8c_source.html#l20346">mg_stop()</a>, <a class="el" href="gmacros_8h_source.html#l00924">NULL</a>, <a class="el" href="vendor_2civetweb_2main_8c_source.html#l00104">printf</a>, and <a class="el" href="server_8c_source.html#l00026">user_handler()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="main_8cpp_source.html#l00021">main()</a>, and <a class="el" href="test__server_8cpp_source.html#l00015">TEST_CASE()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="main_8cpp_source.html#l00035">main()</a>, and <a class="el" href="test__server_8cpp_source.html#l00015">TEST_CASE()</a>.</p>
 
 </div>
 </div>

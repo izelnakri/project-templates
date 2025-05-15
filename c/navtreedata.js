@@ -27,37 +27,37 @@ var NAVTREE =
   [ "Github User Fetcher", "index.html", [
     [ "My C Project Template - GitHub User Fetcher", "index.html", "index" ],
     [ "Customization", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html", [
-      [ "CSS-Variables", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md15", [
-        [ "Setup", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md16", null ],
-        [ "Available variables", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md17", null ]
+      [ "CSS-Variables", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md31", [
+        [ "Setup", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md32", null ],
+        [ "Available variables", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md33", null ]
       ] ],
-      [ "Doxygen generator", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md18", null ],
-      [ "Share your customizations", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md19", null ]
+      [ "Doxygen generator", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md34", null ],
+      [ "Share your customizations", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2customization.html#autotoc_md35", null ]
     ] ],
     [ "Extensions", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html", [
       [ "Dark Mode Toggle", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#extension-dark-mode-toggle", [
-        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md21", null ],
-        [ "Customizing", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md22", null ]
+        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md37", null ],
+        [ "Customizing", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md38", null ]
       ] ],
       [ "Fragment Copy Button", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#extension-copy-button", [
-        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md23", null ],
-        [ "Customizing", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md24", null ]
+        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md39", null ],
+        [ "Customizing", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md40", null ]
       ] ],
       [ "Paragraph Linking", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#extension-para", [
-        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md25", null ],
-        [ "Customizing", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md26", null ]
+        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md41", null ],
+        [ "Customizing", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md42", null ]
       ] ],
       [ "Interactive TOC", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#extension-toc", [
-        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md27", null ],
-        [ "Customizing", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md28", null ]
+        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md43", null ],
+        [ "Customizing", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md44", null ]
       ] ],
       [ "Tabs", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#extension-tabs", [
-        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md29", null ],
-        [ "Usage", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md30", null ]
+        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md45", null ],
+        [ "Usage", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md46", null ]
       ] ],
       [ "Page Navigation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#extension-page-navigation", [
-        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md31", null ],
-        [ "Usage", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md32", null ]
+        [ "Installation", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md47", null ],
+        [ "Usage", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2extensions.html#autotoc_md48", null ]
       ] ]
     ] ],
     [ "Tips & Tricks", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2tricks.html", [
@@ -65,8 +65,8 @@ var NAVTREE =
       [ "Disable Dark Mode", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2tricks.html#tricks-darkmode", null ],
       [ "Choosing Sidebar Width", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2tricks.html#tricks-sidebar", null ],
       [ "Formatting Tables", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2tricks.html#tricks-tables", [
-        [ "Centering", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2tricks.html#autotoc_md34", null ],
-        [ "Full Width", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2tricks.html#autotoc_md35", null ]
+        [ "Centering", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2tricks.html#autotoc_md50", null ],
+        [ "Full Width", "md__2home_2runner_2work_2project-templates_2project-templates_2doxygen-awesome-css_2docs_2tricks.html#autotoc_md51", null ]
       ] ]
     ] ],
     [ "Topics", "topics.html", "topics" ],
