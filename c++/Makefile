@@ -1,5 +1,3 @@
-# TODO: Adjust it for cpp+ further
-# TODO: run & refactor $ make format
 .DEFAULT_GOAL := all
 
 BUILD_TYPE ?= debugoptimized

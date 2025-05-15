@@ -1,0 +1,98 @@
+# Doxyfile
+
+# Project basics
+PROJECT_NAME           = "Github User Fetcher"
+PROJECT_BRIEF          = "C++ Application with Server and GUI"
+PROJECT_NUMBER         = 1.0.0
+
+# GitHub link (you can change this)
+PROJECT_LOGO           =  # logo.png # Optional. Put a logo.png inside docs/
+HTML_FOOTER            = 
+HTML_HEADER            = 
+HTML_EXTRA_STYLESHEET  = doxygen-awesome-css/doxygen-awesome.css
+
+# Repository link
+HTML_DYNAMIC_SECTIONS  = YES
+GENERATE_TREEVIEW      = YES
+GENERATE_HTML          = YES
+GENERATE_LATEX         = NO
+
+# Source locations
+
+# Markdown support
+MARKDOWN_SUPPORT       = YES
+
+# Output directory
+OUTPUT_DIRECTORY       = docs
+HTML_OUTPUT            = html
+
+# Extract settings
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+OPTIMIZE_OUTPUT_FOR_C  = YES
+SORT_MEMBER_DOCS       = YES
+HIDE_UNDOC_MEMBERS     = NO
+
+# Warnings
+WARN_NO_PARAMDOC       = YES
+
+# Syntax highlighting
+STRIP_CODE_COMMENTS    = NO
+
+# Doxygen Awesome needed theme configuration
+DISABLE_INDEX = NO
+FULL_SIDEBAR = NO
+HTML_EXTRA_STYLESHEET  = ../doxygen-awesome-css/doxygen-awesome.css
+HTML_COLORSTYLE        = LIGHT # required with Doxygen >= 1.9.5
+
+# Look & Feel
+# HTML_COLORSTYLE_HUE    = 220
+# HTML_COLORSTYLE_SAT    = 100
+# HTML_COLORSTYLE_GAMMA  = 80
+FULL_PATH_NAMES        = NO
+
+# GitHub integration (change this URL to yours)
+HTML_EXTRA_FILES       =
+HTML_EXTRA_FILES       =
+PROJECT_LOGO           = # logo.png
+HTML_DYNAMIC_MENUS     = YES
+
+# Advanced
+SEARCHENGINE           = YES
+REFERENCED_BY_RELATION = YES
+REFERENCES_RELATION    = YES
+
+# Quiet mode (less spammy output)
+                         */build/* */build-*/* \
+                         */\.git/* */\.svn/* */CMakeFiles/* \
+                         */\.vscode/* */\.idea/* \
+                         */.*/private/* */.*/Private/* */.*/detail/* */.*_detail/* \
+                         *moc_* qrc_* ui_*
+                         */build/* */build-*/* \
+                         */\.git/* */\.svn/* */CMakeFiles/* \
+                         */\.vscode/* */\.idea/* \
+                         */.*/private/* */.*/Private/* */.*/detail/* */.*_detail/* \
+                         *moc_* qrc_* ui_*
+INPUT = /home/izelnakri/Github/project-templates/c++/README.md /home/izelnakri/Github/project-templates/c++/src 
+INCLUDE_PATH = /home/izelnakri/Github/project-templates/c++/src 
+USE_MDFILE_AS_MAINPAGE = README.md
+RECURSIVE = YES
+SOURCE_BROWSER = YES
+BUILTIN_STL_SUPPORT = YES
+EXTRACT_STATIC = NO
+EXTRACT_LOCAL_CLASSES = NO
+INLINE_SOURCES = NO
+FILE_PATTERNS = *.c *.cc *.cpp *.cxx *.h *.hh *.hpp *.hxx
+HAVE_DOT = NO
+MAX_DOT_GRAPH_DEPTH = 1
+QUIET = YES
+WARNINGS = YES
+WARN_IF_DOC_ERROR = YES
+WARN_IF_UNDOCUMENTED = NO
+WARN_LOGFILE = /home/izelnakri/Github/project-templates/c++//home/izelnakri/Github/project-templates/c++/build/docs_temp/doxygen_warnings.log
+EXCLUDE_PATTERNS = */test/* */tests/* */example/* */examples/* \
+                         */build/* */build-*/* \
+                         */\.git/* */\.svn/* */CMakeFiles/* \
+                         */\.vscode/* */\.idea/* \
+                         */.*/private/* */.*/Private/* */.*/detail/* */.*_detail/* \
+                         *moc_* qrc_* ui_*
