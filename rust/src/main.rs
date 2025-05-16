@@ -3,8 +3,8 @@ mod server;
 mod user;
 
 use config::{Config, Mode};
-use server::run_server;
 use reqwest::Client;
+use server::run_server;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {

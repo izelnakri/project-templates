@@ -20,17 +20,24 @@ impl Config {
     pub fn from_args() -> Self {
         let matches = Command::new("ghfetch-rs")
             .about("Fetch GitHub user info or run an HTTP server")
-            .arg(Arg::new("server")
-                .long("server")
-                .help("Run as HTTP server")
-                .action(ArgAction::SetTrue))
-            .arg(Arg::new("port")
-                .long("port")
-                .value_parser(clap::value_parser!(u16))
-                .help("Port for HTTP server (default: 1234)"))
-            .arg(Arg::new("user")
-                .index(1)
-                .help("GitHub username to fetch (default: izelnakri)"))
+            .arg(
+                Arg::new("server")
+                    .long("server")
+                    .help("Run as HTTP server")
+                    .action(ArgAction::SetTrue),
+            )
+            .arg(
+                Arg::new("port")
+                    .long("port")
+                    .value_parser(clap::value_parser!(u16))
+                    .help("Port for HTTP server (default: 1234)"),
+            )
+            .arg(
+                Arg::new("user")
+                    .long("user")
+                    .value_parser(clap::value_parser!(String))
+                    .help("GitHub username to fetch (default: izelnakri)"),
+            )
             .get_matches();
 
         if matches.get_flag("server") {

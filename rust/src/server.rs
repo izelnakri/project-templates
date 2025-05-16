@@ -1,11 +1,13 @@
-use poem::{
-    handler, listener::TcpListener, Route, Server,
-    web::{Json, Path},
-    error::Error as PoemError,
-};
-use serde::Serialize;
 use crate::user;
+use poem::{
+    Route, Server,
+    error::Error as PoemError,
+    handler,
+    listener::TcpListener,
+    web::{Json, Path},
+};
 use reqwest::Client;
+use serde::Serialize;
 use std::error::Error;
 
 #[derive(Serialize)]
@@ -21,9 +23,12 @@ async fn user_handler(Path(username): Path<String>) -> Result<Json<UserResponse>
     let client = Client::builder()
         .user_agent("rust-poem-github-server")
         .build()
-        .map_err(|e| PoemError::from_string(e.to_string(), poem::http::StatusCode::INTERNAL_SERVER_ERROR))?;
+        .map_err(|e| {
+            PoemError::from_string(e.to_string(), poem::http::StatusCode::INTERNAL_SERVER_ERROR)
+        })?;
 
-    let user = user::fetch_github_user(&client, &username).await
+    let user = user::fetch_github_user(&client, &username)
+        .await
         .map_err(|e| PoemError::from_string(e.to_string(), poem::http::StatusCode::NOT_FOUND))?;
 
     Ok(Json(UserResponse {

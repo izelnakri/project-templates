@@ -1,10 +1,10 @@
 use reqwest::Client;
-use serde::Deserialize;
+use serde::{Deserialize, Serialize};
 use std::error::Error;
 
 const DEFAULT_API_BASE: &str = "https://api.github.com";
 
-#[derive(Deserialize, Debug)]
+#[derive(Deserialize, Serialize, Debug)]
 pub struct User {
     pub login: String,
     pub name: Option<String>,
@@ -21,14 +21,23 @@ impl User {
     }
 }
 
-pub async fn fetch_github_user(client: &Client, username: &str) -> Result<User, Box<dyn Error + Send + Sync>> {
+pub async fn fetch_github_user(
+    client: &Client,
+    username: &str,
+) -> Result<User, Box<dyn Error + Send + Sync>> {
+    println!("Fetching user: {}", username);  // Debug print
     let url = format!("{}/users/{}", DEFAULT_API_BASE, username);
-    let user = client.get(&url)
+    let response = client
+        .get(&url)
         .send()
-        .await?
-        .error_for_status()? // return error if status is not 2xx
-        .json::<User>()
         .await?;
 
+    if !response.status().is_success() {
+        return Err(format!("Request failed with status: {}", response.status()).into());
+    }
+
+    let user = response.error_for_status()? // return error if status is not 2xx
+        .json::<User>()
+        .await?;
     Ok(user)
 }

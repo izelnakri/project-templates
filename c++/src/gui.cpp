@@ -15,7 +15,8 @@
 #include <sstream>
 #include <thread>
 
-#include "style_css.hpp" // NOLINT(clang-diagnostic-error)
+// NOLINTNEXTLINE
+#include "style_css.hpp" // NOLINT
 
 // Path to the CSS file
 /*#ifdef NDEBUG*/
