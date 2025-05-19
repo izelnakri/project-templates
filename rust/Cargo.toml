@@ -36,6 +36,6 @@ serde_json = "1.0" # Do I really need this?
 async-channel = "2.3.1" # Is this really needed or most elegant solution?, Maybe use use tokio::sync::mpsc;
 
 [dev-dependencies]
-criterion = { version = "0.5.1", features = ["async_tokio"] } # I guess feature needed, update and then remove it
+criterion = { version = "0.6.0", features = ["async_tokio"] } # I guess feature needed, update and then remove it
 wiremock = "0.6"
 libc = "0.2.172"
