@@ -4,16 +4,15 @@ mod user;
 
 use config::{Config, Mode};
 use reqwest::Client;
-use server::run_server;
 
 #[tokio::main]
 async fn main() -> Result<(), Box<dyn std::error::Error + Send + Sync>> {
-    let config = Config::from_args();
+    let config = Config::from_args(std::env::args());
 
     match config.mode {
         Mode::Server => {
             println!("Starting server on port {}", config.port);
-            run_server(config.port).await?;
+            server::listen(config.port).await?;
         }
         Mode::Cli => {
             let client = Client::builder()

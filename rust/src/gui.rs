@@ -1,5 +1,3 @@
-// TODO: Upgrade libs, implement tokio runtime
-// TODO: what if I implement/link it via lib?
 mod user; // Assuming user module contains fetch_github_user and User struct
 
 use gtk4::prelude::*;
