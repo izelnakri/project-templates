@@ -160,6 +160,12 @@ docker-debug: docker-build-image
 	sudo docker load < ./result
 	sudo docker run -it --rm github_user_fetcher zsh
 
+bench:
+	cargo bench
+
+bench-user:
+	cargo bench --bench user_bench
+
 release:
 	@echo "Building in RELEASE mode"
 	$(MAKE) RELEASE=true build
