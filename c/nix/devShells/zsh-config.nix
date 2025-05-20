@@ -1,6 +1,8 @@
 { pkgs, unstable, LS_COLORS }:
 
 pkgs.writeText "zshrc" ''
+setopt PROMPT_SUBST # Required -> Enable parameter expansion, command substitution and arithmetic expansion in the prompt.
+
 if [ -f "$ORIG_HOME/.zshrc" ]; then
   echo "Using existing zsh configuration from $ORIG_HOME/.zshrc..."
   source "$ORIG_HOME/.zshrc"
@@ -65,19 +67,17 @@ function display_jobs_count_if_needed {
   local job_count=$(jobs -s | wc -l | tr -d " ")
 
   if [ $job_count -gt 0 ]; then
-    echo "%B%{$fg[yellow]%}|%j| ";
+    echo "%B%F{yellow}%j| ";
   fi
 }
 
 function parse_git_branch {
-  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\->\ \1/' -e 's/^[[:space:]]*//'
+  git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/\ ->\ \1/'
 }
 
 export IS_NIX_SHELL=true;
 
-# Setup prompt
-setopt PROMPT_SUBST # Required -> Enable parameter expansion, command substitution and arithmetic expansion in the prompt.
-PROMPT='%{$fg[blue]%}$(date +%H:%M:%S) $(display_jobs_count_if_needed)%B%{$fg[green]%}%n %{$fg[blue]%}%~%{$fg[cyan]%} ❄️%{$fg[yellow]%}$(parse_git_branch) %{$reset_color%}';
+PROMPT='%F{blue}$(date +%H:%M:%S) $(display_jobs_count_if_needed)%B%F{green}%n %F{blue}%~%F{cyan} ❄%F{yellow}$(parse_git_branch) %f%{$reset_color%}'
 export PATH="$BIN_PATHS:$PATH"
 
 # Utility functions & aliases
