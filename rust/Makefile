@@ -14,6 +14,8 @@ endif
 # Binaries
 CLI_BIN := github_user_fetcher
 GUI_BIN := github_user_fetcher_gui
+# in future make ENVIRONMENT gets assigned also from RELEASE flag
+ENVIRONMENT := dev
 
 # Rust sources (used by format/lint)
 # RS_SOURCES := $(shell find src benches tests examples -name '*.rs')
@@ -87,10 +89,11 @@ compile-commands:
 	cargo compdb > compile_commands.json
 
 doc:
-	cargo doc --no-deps --document-private-items
-	@echo "Opening documentation in Brave..."
-	@brave target/doc/index.html || echo "Failed to open documentation in Brave"
-	# rather it was target/doc/$(BIN_NAME)/index.html # TODO: maybe remove --no-deps
+	cargo doc --document-private-items --profile ${ENVIRONMENT}
+	rm -rf docs/target
+	mv target/doc docs/target
+	echo "Opening documentation in Brave..."
+	brave docs/target/$(CLI_BIN)/index.html || echo "Failed to open documentation in Brave"
 
 # Flatpak
 flatpak-clean:

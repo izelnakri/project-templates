@@ -3,16 +3,16 @@ use poem::{
     endpoint::StaticFilesEndpoint,
     listener::TcpListener,
     middleware::Tracing,
-    web::{Path, Data},
+    web::{Path as WebPath, Data, Redirect},
     get,
     EndpointExt, Route, Server,
-    handler
+    handler,
 };
 use poem_openapi::{
-    payload::Json as ApiJson, 
-    // param::Path as ApiPath, // NOTE: Currently buggy on ApiPath(param) extraction when param is string
+    payload::Json,
+    param::Path,
     Object, OpenApi, OpenApiService,
-    ApiResponse
+    ApiResponse,
 };
 
 use reqwest::Client;
@@ -38,34 +38,42 @@ struct UserResponse {
     location: Option<String>,
 }
 
-#[derive(Object, Serialize, Deserialize)]
+/// Error response payload.
+///
+/// Returned when the specified user cannot be found or an error occurs.
+#[derive(Object, Serialize, Deserialize, Debug)]
 struct ErrorResponse {
     /// Error message
     message: String,
 }
 
-#[derive(ApiResponse)]
+/// Response wrapper for the `GET /:username` endpoint.
+///
+/// Includes status-specific typed responses for OpenAPI documentation.
+#[derive(ApiResponse, Debug)]
 enum GetUserResponse {
+    /// Success: GitHub user was found and data is returned.
     #[oai(status = 200)]
-    Ok(ApiJson<UserResponse>),
+    Ok(Json<UserResponse>),
 
+    /// Failure: GitHub user not found or an error occurred.
     #[oai(status = 404)]
-    NotFound(ApiJson<ErrorResponse>),
+    NotFound(Json<ErrorResponse>),
 }
 
 #[handler]
-async fn get_user(
+async fn fetch_user(
     client: Data<&Arc<Client>>,
-    Path(username): Path<String>,
+    WebPath(username): WebPath<String>,
 ) -> GetUserResponse {
     match user::fetch_github_user(&client, &username).await {
-        Ok(user) => GetUserResponse::Ok(ApiJson(UserResponse {
+        Ok(user) => GetUserResponse::Ok(Json(UserResponse {
             login: user.login,
             name: user.name,
             company: user.company,
             location: user.location,
         })),
-        Err(e) => GetUserResponse::NotFound(ApiJson(ErrorResponse {
+        Err(e) => GetUserResponse::NotFound(Json(ErrorResponse {
             message: format!("User `{}` not found: {}", username, e),
         })),
     }
@@ -78,18 +86,19 @@ struct Api {
 #[OpenApi]
 impl Api {
     #[oai(method = "get", path = "/:username")]
-    async fn get_user(
+    async fn fetch_user(
         &self,
         Path(username): Path<String>,
     ) -> GetUserResponse {
+        println!("username is {}", &username);
         match user::fetch_github_user(&self.client, &username).await {
-            Ok(user) => GetUserResponse::Ok(ApiJson(UserResponse {
+            Ok(user) => GetUserResponse::Ok(Json(UserResponse {
                 login: user.login,
                 name: user.name,
                 company: user.company,
                 location: user.location,
             })),
-            Err(err) => GetUserResponse::NotFound(ApiJson(ErrorResponse {
+            Err(err) => GetUserResponse::NotFound(Json(ErrorResponse {
                 message: format!("User `{}` not found: {}", username, err),
             })),
         }
@@ -110,17 +119,17 @@ pub async fn listen(port: u16) -> Result<(), std::io::Error> {
     )
     .server(format!("http://localhost:{port}/api"))
     .description("A simple API to fetch GitHub user information")
-    .summary("GitHub User Information API"); // NOTE: .spec() prints it
+    .summary("GitHub User Information API");
 
     let openapi_ui = api_service.swagger_ui();
-    let cargo_docs = StaticFilesEndpoint::new("target/doc/github_user_fetcher")
-        .index_file("index.html");
+    let cargo_docs = StaticFilesEndpoint::new("docs/target");
     let app = Route::new()
         .at("/hello", poem::endpoint::make_sync(|_| "Hello, world!"))
-        .at("/:username", get(get_user))
+        .at("/:username", get(fetch_user))
         .nest("/api", api_service)
         .nest("/openapi", openapi_ui)
-        .nest("/docs", cargo_docs)
+        .at("/docs", poem::endpoint::make_sync(|_| Redirect::temporary("/docs/target/github_user_fetcher/index.html")))
+        .nest("/docs/target", cargo_docs)
         .with(Tracing)
         .data(client.clone());
 
