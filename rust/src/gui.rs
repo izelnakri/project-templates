@@ -2,6 +2,7 @@ mod user; // Assuming user module contains fetch_github_user and User struct
 
 use gtk4::prelude::*;
 use gtk4::{Application, ApplicationWindow, Button, Entry, TextBuffer, TextView, Box as GtkBox, Orientation};
+use glib::clone;
 use glib::MainContext; // No longer need `clone` directly from here, use glib::clone!
 use reqwest::Client;
 use std::sync::OnceLock;
@@ -48,71 +49,82 @@ pub fn build_ui(app: &Application, client: Client) {
     // fetch_github_user is currently returning.
     let (sender, receiver) = bounded::<Result<user::User, Box<dyn Error + Send + Sync>>>(1);
 
-    button.connect_clicked(glib::clone!(@strong entry, @strong buffer, @strong sender, @strong client => move |_| {
-        let username = entry.text().trim().to_string();
-
-        if username.is_empty() {
-            buffer.set_text("Please enter a GitHub username.");
-            return;
-        }
-
-        buffer.set_text("Fetching user data...");
-
-        // Spawn the async task on the Tokio runtime
-        runtime().spawn(glib::clone!(@strong sender, @strong client => async move {
-            // Perform the potentially long-running async operation
-            // The type annotation confirms we expect the boxed error type here
-            let result = user::fetch_github_user(&client, &username).await;
-
-            // Send the result back to the GTK main thread via the channel
-            // We check the send result to catch potential channel errors (e.g., receiver dropped)
-            if let Err(e) = sender.send(result).await {
-                eprintln!("Failed to send result to GTK thread: {}", e);
+    // NOTE: check if this can be simplified
+    button.connect_clicked(clone!(
+        #[strong] entry, 
+        #[strong] buffer, 
+        #[strong] sender, 
+        #[strong] client,
+        move |_| {
+            let username = entry.text().trim().to_string();
+            if username.is_empty() {
+                buffer.set_text("Please enter a GitHub username.");
+                return;
             }
-        }));
-    }));
+
+            buffer.set_text("Fetching user data...");
+
+            // Spawn the async task on the Tokio runtime
+            runtime().spawn(clone!(
+                #[strong] sender, 
+                #[strong] client,
+                async move {
+                    // Perform the potentially long-running async operation
+                    // The type annotation confirms we expect the boxed error type here
+                    let result = user::fetch_github_user(&client, &username).await;
+
+                    // Send the result back to the GTK main thread via the channel
+                    // We check the send result to catch potential channel errors (e.g., receiver dropped)
+                    if let Err(e) = sender.send(result).await {
+                        eprintln!("Failed to send result to GTK thread: {}", e);
+                    }
+                }
+            ));
+        }
+    ));
 
     // Receive result on the GTK main thread and update UI
     // This loop runs on the GTK main context and waits for messages from the channel.
-    MainContext::default().spawn_local(glib::clone!(@strong buffer => async move {
-        while let Ok(result) = receiver.recv().await {
-            match result {
-                Ok(user) => {
-                    // Successfully fetched user data, serialize and display it
-                    match serde_json::to_string_pretty(&user) {
-                        Ok(json) => buffer.set_text(&json),
-                        Err(e) => {
-                            // Handle serialization errors
-                            buffer.set_text(&format!("Serialization error: {e}"));
-                            eprintln!("Serialization error: {}", e);
+    MainContext::default().spawn_local(clone!(
+        #[strong] buffer,
+        async move {
+            while let Ok(result) = receiver.recv().await {
+                match result {
+                    Ok(user) => {
+                        // Successfully fetched user data, serialize and display it
+                        match serde_json::to_string_pretty(&user) {
+                            Ok(json) => buffer.set_text(&json),
+                            Err(e) => {
+                                // Handle serialization errors
+                                buffer.set_text(&format!("Serialization error: {e}"));
+                                eprintln!("Serialization error: {}", e);
+                            }
                         }
                     }
-                }
-                Err(e) => {
-                    // Handle fetch errors (e.g., network issues, user not found)
-                    // Format the boxed error for display
-                    buffer.set_text(&format!("Error: {}", e));
-                    eprintln!("Fetch error: {}", e);
+                    Err(e) => {
+                        // Handle fetch errors (e.g., network issues, user not found)
+                        // Format the boxed error for display
+                        buffer.set_text(&format!("Error: {}", e));
+                        eprintln!("Fetch error: {}", e);
+                    }
                 }
             }
+            // This part is reached if the sender is dropped, which might indicate an issue
+            eprintln!("Channel receiver loop finished. Sender was likely dropped.");
         }
-        // This part is reached if the sender is dropped, which might indicate an issue
-        eprintln!("Channel receiver loop finished. Sender was likely dropped.");
-    }));
+    ));
 }
 
 fn main() {
     let app = Application::builder()
         .application_id("com.example.GitHubUserFetcher")
         .build();
-    let client = Client::builder()
-        .user_agent("rust-poem-github-server")
-        .build()
-        .expect("Failed to build reqwest client"); // Handle client build errors
-
     // Connect the activate signal to build the UI
     app.connect_activate(move |app| {
-        build_ui(app, client.clone());
+        build_ui(app, Client::builder()
+            .user_agent("rust-poem-github-server")
+            .build()
+            .expect("Failed to build reqwest client"));
     });
 
     // Run the GTK application. This will block until the application exits.
