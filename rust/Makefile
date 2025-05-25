@@ -27,7 +27,7 @@ clean:
 	cargo clean
 
 clean-all: clean flatpak-clean
-	rm -rf docs/html
+	rm -rf docs/target
 
 reset: clean-all build
 

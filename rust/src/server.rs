@@ -19,21 +19,40 @@ use reqwest::Client;
 use serde::{Deserialize, Serialize};
 use std::sync::Arc;
 
-#[derive(Object, Serialize, Deserialize)]
+/// Response payload for a successful GitHub user fetch.
+///
+/// Represents a subset of the public GitHub profile information.
+#[derive(Object, Serialize, Deserialize, Debug)]
 struct UserResponse {
     /// GitHub username
+    ///
+    /// Maximum length: 100 characters.
+    ///
+    /// Example: `"octocat"`
     #[oai(validator(max_length = 100))]
     login: String,
 
     /// User's display name (if available)
+    ///
+    /// Maximum length: 255 characters.
+    ///
+    /// Example: `"The Octocat"`
     #[oai(validator(max_length = 255))]
     name: Option<String>,
 
     /// Company information (if available)
+    ///
+    /// Maximum length: 255 characters.
+    ///
+    /// Example: `"GitHub"`
     #[oai(validator(max_length = 255))]
     company: Option<String>,
 
     /// User's location (if available)
+    ///
+    /// Maximum length: 255 characters.
+    ///
+    /// Example: `"San Francisco"`
     #[oai(validator(max_length = 255))]
     location: Option<String>,
 }
@@ -44,6 +63,8 @@ struct UserResponse {
 #[derive(Object, Serialize, Deserialize, Debug)]
 struct ErrorResponse {
     /// Error message
+    ///
+    /// Example: `"User 'octocat' not found"`
     message: String,
 }
 
@@ -61,6 +82,15 @@ enum GetUserResponse {
     NotFound(Json<ErrorResponse>),
 }
 
+/// Synchronous-style Poem handler for directly routing `/username` path.
+///
+/// Used outside of OpenAPI and primarily for internal/static routing.
+///
+/// # Example
+///
+/// ```bash
+/// curl http://localhost:3000/octocat
+/// ```
 #[handler]
 async fn fetch_user(
     client: Data<&Arc<Client>>,
@@ -79,12 +109,32 @@ async fn fetch_user(
     }
 }
 
+/// API service definition implementing the OpenAPI trait.
 struct Api {
+    /// Shared HTTP client used to fetch GitHub user data.
     client: Arc<Client>,
 }
 
 #[OpenApi]
 impl Api {
+    /// Get GitHub user details by username.
+    ///
+    /// Fetches public profile information from the GitHub API.
+    ///
+    /// # Path Parameters
+    ///
+    /// - `username`: GitHub username.
+    ///
+    /// # Returns
+    ///
+    /// - `200 OK` with user data if the user exists.
+    /// - `404 Not Found` if the user does not exist or an error occurs.
+    ///
+    /// # Example
+    ///
+    /// ```sh
+    /// echo true # CHANGE TO: curl http://localhost:3000/api/octocat
+    /// ```
     #[oai(method = "get", path = "/:username")]
     async fn fetch_user(
         &self,
@@ -105,6 +155,26 @@ impl Api {
     }
 }
 
+/// Starts the Poem web server and binds it to the specified port.
+///
+/// This function sets up the OpenAPI routes, static file handlers, and the main application routes.
+///
+/// # Arguments
+///
+/// - `port`: Port to listen on (e.g. `3000`).
+///
+/// # Example
+///
+/// ```rust
+/// #[tokio::main]
+/// async fn main() {
+///     // let _server = github_user_fetcher::server::listen(3000).await.unwrap();
+/// }
+/// ```
+///
+/// # Returns
+///
+/// A Result indicating whether the server started successfully.
 pub async fn listen(port: u16) -> Result<(), std::io::Error> {
     let client = Arc::new(
         Client::builder()
@@ -112,6 +182,7 @@ pub async fn listen(port: u16) -> Result<(), std::io::Error> {
             .build()
             .expect("Failed to build HTTP client"),
     );
+
     let api_service = OpenApiService::new(
         Api { client: client.clone() },
         "GitHub User API",
@@ -136,4 +207,91 @@ pub async fn listen(port: u16) -> Result<(), std::io::Error> {
     Server::new(TcpListener::bind(format!("0.0.0.0:{port}")))
         .run(app)
         .await
+}
+
+#[cfg(test)]
+#[path = "./test_utils.rs"]
+mod test_utils;
+
+#[cfg(test)]
+mod tests {
+    use super::*;
+    use test_utils::with_mock_server;
+    use tokio::{net::TcpStream, time::{Duration}};
+    use std::net::SocketAddr;
+
+    async fn wait_for_port_open(port: u16) -> bool {
+        let addr = SocketAddr::from(([127, 0, 0, 1], port));
+        let start = std::time::Instant::now();
+        let timeout = Duration::from_millis(1000);
+
+        while start.elapsed() < timeout {
+            if TcpStream::connect(addr).await.is_ok() {
+                return true;
+            }
+            tokio::task::yield_now().await;
+        }
+
+        false
+    }
+
+    async fn spawn_server(port: u16) -> tokio::task::JoinHandle<()> {
+        tokio::spawn(async move {
+            let _ = listen(port).await;
+        })
+    }
+
+    #[tokio::test]
+    async fn test_listen_success_on_ports() {
+        let port1 = 3100;
+        let port2 = 3101;
+
+        let handle1 = spawn_server(port1).await;
+        let handle2 = spawn_server(port2).await;
+
+        assert!(wait_for_port_open(port1).await, "Port {port1} should open quickly");
+        assert!(wait_for_port_open(port2).await, "Port {port2} should open quickly");
+
+        handle1.abort();
+        handle2.abort();
+    }
+
+    #[tokio::test]
+    async fn test_listen_fails_on_duplicate_port() {
+        let port = 3200;
+
+        let handle1 = spawn_server(port).await;
+        assert!(wait_for_port_open(port).await, "Port {port} should be open");
+
+        // Second bind to same port should fail
+        let result = listen(port).await;
+        assert!(result.is_err(), "Expected listen to fail on duplicate port");
+
+        handle1.abort();
+    }
+
+    #[tokio::test] 
+    async fn test_fetch_user_handler_success() {
+        use std::sync::Arc;
+
+        let client = Arc::new(
+            Client::builder()
+                .user_agent("rust-poem-github-server")
+                .build()
+                .expect("Failed to build HTTP client"),
+        );
+        let api = Api { client: client.clone() }; // NOTE: Make it an adapter with base_url
+
+        with_mock_server(|_| async {
+            let resp = api.fetch_user(Path("octocat".to_string())).await;
+            if let GetUserResponse::Ok(Json(user_response)) = resp {
+                assert_eq!(user_response.login, "octocat");
+                assert_eq!(user_response.name.as_deref(), Some("The Octocat"));
+                assert_eq!(user_response.company.as_deref(), Some("GitHub"));
+                assert_eq!(user_response.location.as_deref(), Some("San Francisco"));
+            } else {
+                panic!("Expected GetUserResponse::Ok but got smt else")
+            }
+        }).await;
+    }
 }

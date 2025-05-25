@@ -1,3 +1,4 @@
+// TODO: Read up register, mount, register_as_scoped
 use wiremock::{MockServer, Mock, ResponseTemplate, matchers::{method, path}};
 
 pub async fn setup() -> MockServer {
@@ -12,10 +13,23 @@ pub async fn setup() -> MockServer {
     "#;
 
     Mock::given(method("GET"))
-        .and(path("/users/octocat"))
+        .and(path("/users/octocat")) // NOTE: Should this be /:username instead of /users/username?
         .respond_with(ResponseTemplate::new(200).set_body_raw(user_json, "application/json"))
         .mount(&mock_server)
         .await;
+
+    Mock::given(method("GET"))
+        .and(path("/users/notfound"))
+        .respond_with(ResponseTemplate::new(404))
+        .mount(&mock_server)
+        .await;
+
+//        // Mock rate limiting
+//        Mock::given(method("GET"))
+//            .and(path("/users/ratelimited"))
+//            .respond_with(ResponseTemplate::new(429))
+//            .mount(&mock_server)
+//            .await;
 
     return mock_server;
 }

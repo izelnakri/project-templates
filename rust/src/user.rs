@@ -1,3 +1,6 @@
+// NOTE: Maybe pass an adapter instead of reqwest client directly(one adapter per host), for ease
+// of unit testing
+
 //! This module provides functionality to represent and fetch GitHub user information.
 //!
 //! It defines a `User` struct representing a GitHub user’s public profile fields,
@@ -119,23 +122,18 @@ pub async fn fetch_github_user(
 }
 
 #[cfg(test)]
-static TEST_MUTEX: std::sync::Mutex<()> = std::sync::Mutex::new(()); // Add a test mutex for synchronizing tests that modify the base URL
+#[path = "./test_utils.rs"]
+mod test_utils;
 
 #[cfg(test)]
 mod tests {
-    mod mock_server {
-        include!(concat!(env!("CARGO_MANIFEST_DIR"), "/tests/utils/mock_server.rs"));
-    }
-
     use super::*;
+    use test_utils::with_mock_server;
     use reqwest::Client;
     use tokio::runtime::Runtime;
 
     #[test]
     fn test_set_and_get_base_url_override() {
-        let _lock = TEST_MUTEX.lock().unwrap(); // Acquire mutex for this test to prevent race conditions
-        
-        set_base_url_override(None);
         assert_eq!(get_base_url(), DEFAULT_API_BASE.to_string());
 
         let url = "http://localhost:1234".to_string();
@@ -170,33 +168,33 @@ mod tests {
         user.print(); // prints N/A for all optional fields
     }
 
-    #[test]
-    fn test_get_base_url_thread_safety() {
+    #[tokio::test]
+    async fn test_get_base_url_thread_safety() {
         use std::thread;
 
-        let _lock = TEST_MUTEX.lock().unwrap(); // Acquire mutex for this test to prevent race conditions
-        
-        set_base_url_override(None);
-        assert_eq!(get_base_url(), DEFAULT_API_BASE.to_string());
+        with_mock_server(|_| async {
+            set_base_url_override(None);
+            assert_eq!(get_base_url(), DEFAULT_API_BASE.to_string());
 
-        let handles: Vec<_> = (0..10)
-            .map(|i| {
-                thread::spawn(move || { // Spawn threads to concurrently read and write base URL override
-                    if i % 2 == 0 {
-                        set_base_url_override(Some(format!("http://localhost:{}", i)));
-                    } else {
-                        set_base_url_override(None);
-                    }
-                    get_base_url() // Just get the base URL after setting
+            let handles: Vec<_> = (0..10)
+                .map(|i| {
+                    thread::spawn(move || { // Spawn threads to concurrently read and write base URL override
+                        if i % 2 == 0 {
+                            set_base_url_override(Some(format!("http://localhost:{}", i)));
+                        } else {
+                            set_base_url_override(None);
+                        }
+                        get_base_url() // Just get the base URL after setting
+                    })
                 })
-            })
-            .collect();
+                .collect();
 
-        for handle in handles {
-            let _ = handle.join().unwrap(); // Join threads and check that no panic occurs
-        }
-        
-        set_base_url_override(None); // Reset to default state after test
+            for handle in handles {
+                let _ = handle.join().unwrap(); // Join threads and check that no panic occurs
+            }
+
+            set_base_url_override(None); // Reset to default state after test
+        }).await;
     }
 
     #[test]
@@ -215,29 +213,18 @@ mod tests {
 
     #[tokio::test]
     async fn test_fetch_github_user_success_with_mock() {
-        let _lock = TEST_MUTEX.lock().unwrap(); // Acquire mutex for this test to prevent race conditions
-        let mock_server = mock_server::setup().await;
-        let original_url = get_base_url(); // Save the original value to restore it later
-        
-        set_base_url_override(Some(mock_server.uri())); // Set the base URL for this test
-
         let client = Client::builder()
             .user_agent("rust-poem-github-client")
             .build()
             .unwrap();
-        let user = fetch_github_user(&client, "octocat").await.unwrap();
+        with_mock_server(|_| async {
+            let user = fetch_github_user(&client, "octocat").await.unwrap();
 
-        assert_eq!(user.login, "octocat");
-        assert_eq!(user.name.as_deref(), Some("The Octocat"));
-        assert_eq!(user.company.as_deref(), Some("GitHub"));
-        assert_eq!(user.location.as_deref(), Some("San Francisco"));
-
-        // Restore the original URL setting after the test
-        if original_url == DEFAULT_API_BASE {
-            set_base_url_override(None);
-        } else {
-            set_base_url_override(Some(original_url));
-        }
+            assert_eq!(user.login, "octocat");
+            assert_eq!(user.name.as_deref(), Some("The Octocat"));
+            assert_eq!(user.company.as_deref(), Some("GitHub"));
+            assert_eq!(user.location.as_deref(), Some("San Francisco"));
+        }).await;
     }
 
     #[tokio::test]
@@ -245,34 +232,22 @@ mod tests {
         use wiremock::{Mock, ResponseTemplate};
         use wiremock::matchers::{method, path};
 
-        let _lock = TEST_MUTEX.lock().unwrap(); // Acquire mutex for this test to prevent race conditions
-        let mock_server = wiremock::MockServer::start().await;
-
-        Mock::given(method("GET"))
-            .and(path("/users/notfound"))
-            .respond_with(ResponseTemplate::new(404))
-            .mount(&mock_server)
-            .await;
-
-        let original_url = get_base_url(); // Save the original value to restore it later
-    
-        set_base_url_override(Some(mock_server.uri()));
-
         let client = Client::builder()
             .user_agent("rust-poem-github-client")
             .build()
             .unwrap();
-        let result = fetch_github_user(&client, "notfound").await;
+        with_mock_server(|mock_server| async move {
+            Mock::given(method("GET"))
+                .and(path("/users/notfound"))
+                .respond_with(ResponseTemplate::new(404))
+                .mount(&mock_server)
+                .await;
 
-        assert!(result.is_err());
-        let err_str = format!("{}", result.unwrap_err());
-        assert!(err_str.contains("Request failed with status"));
+            let result = fetch_github_user(&client, "notfound").await;
 
-        // Restore the original URL setting after the test
-        if original_url == DEFAULT_API_BASE {
-            set_base_url_override(None);
-        } else {
-            set_base_url_override(Some(original_url));
-        }
+            assert!(result.is_err());
+            let err_str = format!("{}", result.unwrap_err());
+            assert!(err_str.contains("Request failed with status"));
+        }).await;
     }
 }
