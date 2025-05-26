@@ -1,49 +1,65 @@
-use wiremock::{MockServer};
-use std::sync::{Mutex, MutexGuard};
+use wiremock::MockServer;
+use github_user_fetcher::adapter::HttpAdapter;
+use github_user_fetcher::server::HttpServer;
+use tokio::{net::TcpStream, time::Duration};
+use std::net::{SocketAddr, TcpListener};
+use std::error::Error;
 
-pub mod mock_server;
-pub mod network_mock_test_case;
+pub mod mock_github_api;
 
-/// Convenience macro for tests that need to mock network calls
-/// 
-/// # Example
-/// ```rust
-/// use crate::test_utils;
-/// 
-/// #[tokio::test] 
-/// async fn test_something() {
-///     with_mock_server!(mock_server, {
-///         let client = reqwest::Client::new();
-///         let user = fetch_github_user(&client, "octocat").await.unwrap();
-///         assert_eq!(user.login, "octocat");
-///     });
-/// }
-/// ```
-//#[macro_export]
-//macro_rules! with_mock_server {
-//    ($mock_var:ident, $test_body:block) => {
-//        $crate::test_utils::network_mock_test_case::NetworkMockTestCase::register();
-//        let $mock_var = $crate::test_utils::mock_server::setup().await;
-//        $crate::user::set_base_url_override(Some($mock_var.uri()));
-//        $test_body
-//        $crate::user::set_base_url_override(None);
-//    };
-//}
+#[allow(dead_code)]
+pub fn get_random_port() -> u16 {
+    TcpListener::bind("127.0.0.1:0")
+        .expect("failed to bind random port")
+        .local_addr()
+        .unwrap()
+        .port()
+}
 
-/// Convenience function for simple test scenarios
-pub async fn with_mock_server<F, Fut, R>(test_fn: F) -> R 
-where
-    F: FnOnce(MockServer) -> Fut,
-    Fut: std::future::Future<Output = R>,
-{
-    network_mock_test_case::NetworkMockTestCase::register();
-    let mock_server = mock_server::setup().await;
+/// Sets up the mock server and HTTP server, returning handles for test use.
+#[allow(dead_code)]
+pub async fn setup_server(
+    port: u16,
+) -> (
+    MockServer,
+    HttpAdapter,
+    tokio::task::JoinHandle<Result<(), Box<dyn Error + Send + Sync>>>
+) {
+    let mock_server = mock_github_api::setup().await;
+    let github_api_adapter = HttpAdapter::new(mock_server.uri());
+    let http_server = HttpServer::new(port);
+    let join_handle = start_server_with_adapter(http_server, github_api_adapter.clone());
 
-    github_user_fetcher::user::set_base_url_override(Some(mock_server.uri()));
+    (mock_server, github_api_adapter, join_handle)
+}
 
-    let result = test_fn(mock_server).await;
+/// Starts the HttpServer using an adapter, in a background task.
+#[allow(dead_code)]
+pub fn start_server_with_adapter(
+    http_server: HttpServer,
+    github_api_adapter: HttpAdapter,
+) -> tokio::task::JoinHandle<Result<(), Box<dyn Error + Send + Sync>>> {
+    tokio::spawn(async move {
+        http_server
+            .run(github_api_adapter)
+            .await
+            .map_err(|e| -> Box<dyn Error + Send + Sync> { Box::new(e) })
+    })
+}
 
-    github_user_fetcher::user::set_base_url_override(None);
+/// Waits for a port to be ready to accept connections.
+#[allow(dead_code)]
+pub async fn wait_for_port_open(port: u16) -> bool {
+    let addr = SocketAddr::from(([127, 0, 0, 1], port));
+    let start = std::time::Instant::now();
+    let timeout = Duration::from_millis(1000);
 
-    result
+    while start.elapsed() < timeout {
+        if TcpStream::connect(addr).await.is_ok() {
+            return true;
+        }
+        tokio::task::yield_now().await;
+    }
+
+    false
 }

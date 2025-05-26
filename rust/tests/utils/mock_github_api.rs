@@ -1,4 +1,3 @@
-// TODO: Read up register, mount, register_as_scoped
 use wiremock::{MockServer, Mock, ResponseTemplate, matchers::{method, path}};
 
 pub async fn setup() -> MockServer {
@@ -23,13 +22,6 @@ pub async fn setup() -> MockServer {
         .respond_with(ResponseTemplate::new(404))
         .mount(&mock_server)
         .await;
-
-//        // Mock rate limiting
-//        Mock::given(method("GET"))
-//            .and(path("/users/ratelimited"))
-//            .respond_with(ResponseTemplate::new(429))
-//            .mount(&mock_server)
-//            .await;
 
     return mock_server;
 }
