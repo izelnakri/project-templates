@@ -1,9 +1,32 @@
-// NOTE: You do not have to wrap the Client in an Rc or Arc to reuse it, because it already uses an Arc internally.
-// TODO: Simplification, Add missing routes, docs & examples
-// TODO: (!) Add examples and description to: param (query param)
-// (!) Add examples and description to: param (on post body)
-// (!) Turn route handler examples into doctests, add a reqwest wrapper to accomplish this if needed
-// https://chatgpt.com/c/682c0f2f-4db4-8010-939e-5568a0018eae
+//! # GitHub User API Server
+//!
+//! This module provides a REST API server for fetching and managing GitHub user information.
+//! The server is built using the Poem web framework and provides OpenAPI documentation.
+//!
+//! ## Features
+//!
+//! - Fetch individual GitHub users by username
+//! - Create users with auto-incrementing IDs
+//! - Search users with pagination
+//! - List users with pagination
+//! - Built-in statistics endpoint
+//! - OpenAPI/Swagger documentation
+//! - Static file serving for documentation
+//!
+//! ## Usage
+//!
+//! ```rust,no_run
+//! use github_user_fetcher::adapter::HttpAdapter;
+//! use github_user_fetcher::server::HttpServer;
+//! # #[tokio::main]
+//! # async fn main() -> Result<(), Box<dyn std::error::Error>> {
+//! let adapter = HttpAdapter::new("https://api.github.com");
+//! let server = HttpServer::new(3000);
+//! server.run(adapter).await.unwrap();
+//! # Ok(())
+//! # }
+//! ```
+
 use crate::user;
 use poem::{
     endpoint::StaticFilesEndpoint,
@@ -27,61 +50,45 @@ use crate::adapter::{HttpAdapter};
 use serde::{Deserialize, Serialize};
 use std::sync::{Arc, atomic::{AtomicU64, Ordering}};
 
-// Global counter for user IDs (in-memory, not persistent)
+/// Global counter for generating unique user IDs - starts from 1
 static USER_ID_COUNTER: AtomicU64 = AtomicU64::new(1);
 
-// TODO: This can probably be simplified
-// Helper function to parse user from JSON value
-fn parse_user_response(item: &serde_json::Value) -> Option<UserResponse> {
-    let login = item["login"].as_str()?.to_string();
-    let name = item["name"].as_str().map(String::from);
-    let company = item["company"].as_str().map(String::from);
-    let location = item["location"].as_str().map(String::from);
-    
-    Some(UserResponse { login, name, company, location })
-}
-
-/// Response payload for a successful GitHub user fetch.
-///
-/// Represents a subset of the public GitHub profile information.
+/// GitHub user's public profile information
 #[derive(Object, Serialize, Deserialize, Debug, Clone)]
-struct UserResponse {
-    /// GitHub username
-    ///
-    /// Maximum length: 100 characters.
-    ///
-    /// Example: `"octocat"`
+pub struct UserResponse {
+    /// GitHub username. Example: `"octocat"`
     #[oai(validator(max_length = 100))]
-    login: String,
+    pub login: String,
 
-    /// User's display name (if available)
-    ///
-    /// Maximum length: 255 characters.
-    ///
-    /// Example: `"The Octocat"`
+    /// User's display name. Example: `"The Octocat"`
     #[oai(validator(max_length = 255))]
-    name: Option<String>,
+    pub name: Option<String>,
 
-    /// Company information (if available)
-    ///
-    /// Maximum length: 255 characters.
-    ///
-    /// Example: `"GitHub"`
+    /// User's company. Example: `"GitHub"`
     #[oai(validator(max_length = 255))]
-    company: Option<String>,
+    pub company: Option<String>,
 
-    /// User's location (if available)
-    ///
-    /// Maximum length: 255 characters.
-    ///
-    /// Example: `"San Francisco"`
+    /// User's location. Example: `"San Francisco, CA"`
     #[oai(validator(max_length = 255))]
-    location: Option<String>,
+    pub location: Option<String>,
 }
 
 impl UserResponse {
-    /// Convert UserResponse to UserWithIdResponse by adding an ID
-    fn with_id(self, id: u64) -> UserWithIdResponse {
+    /// Adds an ID to create a UserWithIdResponse
+    /// 
+    /// ```rust
+    /// use github_user_fetcher::server::{UserResponse};
+    ///
+    /// let user = UserResponse { 
+    ///     login: "octocat".to_string(), 
+    ///     name: Some("The Octocat".to_string()),
+    ///     company: Some("GitHub".to_string()),
+    ///     location: Some("San Francisco".to_string())
+    /// };
+    /// let user_with_id = user.with_id(42);
+    /// assert_eq!(user_with_id.id, 42);
+    /// ```
+    pub fn with_id(self, id: u64) -> UserWithIdResponse {
         UserWithIdResponse {
             id,
             user: self,
@@ -89,122 +96,101 @@ impl UserResponse {
     }
 }
 
-/// Response payload with ID for POST requests
-///
-/// Extends UserResponse with an incremental ID field
+/// User response with system-generated ID
 #[derive(Object, Serialize, Deserialize, Debug)]
-struct UserWithIdResponse {
-    /// Incremental ID (in-memory only)
-    ///
-    /// Example: `1`
-    id: u64,
+pub struct UserWithIdResponse {
+    /// Auto-incremented ID starting from 1. Example: `42`
+    pub id: u64,
 
-    // TODO: Do you need both?
-    /// User information
+    /// User data flattened into parent object
     #[serde(flatten)]
     #[oai(flatten)]
     user: UserResponse,
 }
 
-/// Request payload for creating a user
+/// Request to create a new user
 #[derive(Object, Deserialize, Debug)]
 struct CreateUserRequest {
-    /// GitHub username to fetch
-    ///
-    /// Example: `"octocat"`
+    /// GitHub username to fetch. Example: `"octocat"`
     username: String,
 }
 
-/// Search users response
+/// Paginated search results for users
 #[derive(Object, Serialize, Deserialize, Debug)]
 struct SearchUsersResponse {
-    /// Total number of users found
+    /// Total matching users. Example: `1234`
     total_count: u64,
 
-    /// Array of users matching the search query
+    /// Current page of user results
     items: Vec<UserResponse>,
 }
 
-/// List users response
+/// Paginated user list with cursor
 #[derive(Object, Serialize, Deserialize, Debug)]
 struct ListUsersResponse {
-    /// Array of users
+    /// Users in current page
     users: Vec<UserResponse>,
 
-    /// Next user ID for pagination (if available)
+    /// Cursor for next page. Example: `583231`
     since: Option<u64>,
 }
 
-/// Error response payload.
-///
-/// Returned when the specified user cannot be found or an error occurs.
+/// Standard error response
 #[derive(Object, Serialize, Deserialize, Debug)]
 struct ErrorResponse {
-    /// Error message
-    ///
-    /// Example: `"User 'octocat' not found"`
+    /// Error description. Example: `"User 'nonexistent' not found: 404 Not Found"`
     message: String,
 }
 
-/// Response wrapper for the `GET /:username` endpoint.
-///
-/// Includes status-specific typed responses for OpenAPI documentation.
+/// Response for get user endpoint
 #[derive(ApiResponse, Debug)]
 enum GetUserResponse {
-    /// Success: GitHub user was found and data is returned.
+    /// User found - returns user data
     #[oai(status = 200)]
     Ok(Json<UserResponse>),
 
-    /// Failure: GitHub user not found or an error occurred.
+    /// User not found or API error
     #[oai(status = 404)]
     NotFound(Json<ErrorResponse>),
 }
 
-/// Response wrapper for the `POST /users` endpoint.
+/// Response for create user endpoint
 #[derive(ApiResponse, Debug)]
 enum CreateUserResponse {
-    /// Success: GitHub user was found and created with ID.
+    /// User created with auto-generated ID
     #[oai(status = 201)]
     Created(Json<UserWithIdResponse>),
 
-    /// Failure: GitHub user not found or an error occurred.
+    /// User not found on GitHub
     #[oai(status = 404)]
     NotFound(Json<ErrorResponse>),
 }
 
-/// Response wrapper for search users endpoint.
+/// Response for search users endpoint
 #[derive(ApiResponse, Debug)]
 enum SearchUsersApiResponse {
-    /// Success: Search completed successfully.
+    /// Search completed successfully
     #[oai(status = 200)]
     Ok(Json<SearchUsersResponse>),
 
-    /// Failure: Search failed or error occurred.
+    /// Invalid parameters or API error
     #[oai(status = 400)]
     BadRequest(Json<ErrorResponse>),
 }
 
-/// Response wrapper for list users endpoint.
+/// Response for list users endpoint
 #[derive(ApiResponse, Debug)]
 enum ListUsersApiResponse {
-    /// Success: Users listed successfully.
+    /// User list retrieved successfully
     #[oai(status = 200)]
     Ok(Json<ListUsersResponse>),
 
-    /// Failure: List failed or error occurred.
+    /// Invalid parameters or API error
     #[oai(status = 400)]
     BadRequest(Json<ErrorResponse>),
 }
 
-/// Synchronous-style Poem handler for directly routing `/username` path.
-///
-/// Used outside of OpenAPI and primarily for internal/static routing.
-///
-/// # Example
-///
-/// ```bash
-/// curl http://localhost:3000/octocat
-/// ```
+/// Legacy handler for non-OpenAPI user fetch route
 #[handler]
 async fn fetch_user(
     github_api_adapter: Data<&Arc<HttpAdapter>>,
@@ -223,35 +209,19 @@ async fn fetch_user(
     }
 }
 
-/// API service definition implementing the OpenAPI trait.
+/// Main API implementation with all endpoint handlers
 struct Api {
-    /// Shared HTTP client used to fetch GitHub user data.
+    /// HTTP adapter for GitHub API requests
     github_api_adapter: Arc<HttpAdapter>,
 }
 
 #[OpenApi]
 impl Api {
-    /// Get GitHub user details by username.
-    ///
-    /// Fetches public profile information from the GitHub API.
-    ///
-    /// # Path Parameters
-    ///
-    /// - `username`: GitHub username.
-    ///
-    /// # Returns
-    ///
-    /// - `200 OK` with user data if the user exists.
-    /// - `404 Not Found` if the user does not exist or an error occurs.
-    ///
-    /// # Example
-    ///
-    /// ```sh
-    /// curl http://localhost:3000/api/octocat
-    /// ```
+    /// Fetch a GitHub user by username
     #[oai(method = "get", path = "/:username")]
     async fn fetch_user(
         &self,
+        /// The GitHub username to fetch profile for (e.g., "octocat", "torvalds")
         Path(username): Path<String>,
     ) -> GetUserResponse {
         println!("username is {}", &username);
@@ -268,27 +238,7 @@ impl Api {
         }
     }
 
-    /// Create a user by fetching from GitHub and assigning an incremental ID.
-    ///
-    /// Fetches user data from GitHub API and assigns an in-memory incremental ID.
-    /// The ID counter is not persistent and resets when the server restarts.
-    ///
-    /// # Request Body
-    ///
-    /// - `username`: GitHub username to fetch and create.
-    ///
-    /// # Returns
-    ///
-    /// - `201 Created` with user data including incremental ID if successful.
-    /// - `404 Not Found` if the user does not exist or an error occurs.
-    ///
-    /// # Example
-    ///
-    /// ```sh
-    /// curl -X POST http://localhost:3000/api/users \
-    ///   -H "Content-Type: application/json" \
-    ///   -d '{"username": "octocat"}'
-    /// ```
+    /// Create a new user with auto-generated ID
     #[oai(method = "post", path = "/users")]
     async fn create_user(
         &self,
@@ -311,31 +261,15 @@ impl Api {
         }
     }
 
-    /// Search GitHub users by query.
-    ///
-    /// Searches for GitHub users using the GitHub Search API.
-    ///
-    /// # Query Parameters
-    ///
-    /// - `query`: Search query string (required).
-    /// - `per_page`: Number of results per page (optional, default: 30, max: 100).
-    /// - `page`: Page number (optional, default: 1).
-    ///
-    /// # Returns
-    ///
-    /// - `200 OK` with search results.
-    /// - `400 Bad Request` if the query is invalid or an error occurs.
-    ///
-    /// # Example
-    ///
-    /// ```sh
-    /// curl "http://localhost:3000/api/users/search?query=octocat&per_page=10&page=1"
-    /// ```
+    /// Search GitHub users with pagination
     #[oai(method = "get", path = "/users/search")]
     async fn search_users(
         &self,
+        /// Search query string to match against usernames (e.g., "octo", "john")
         OpenApiQuery(query): OpenApiQuery<String>,
+        /// Number of results per page, maximum 100 (default: 30)
         OpenApiQuery(per_page): OpenApiQuery<Option<u32>>,
+        /// Page number for pagination, starts at 1 (default: 1)
         OpenApiQuery(page): OpenApiQuery<Option<u32>>,
     ) -> SearchUsersApiResponse {
         let response = match self.github_api_adapter
@@ -369,35 +303,19 @@ impl Api {
             .as_array()
             .unwrap_or(&vec![])
             .iter()
-            .filter_map(parse_user_response)
+            .filter_map(|item| serde_json::from_value(item.clone()).ok())
             .collect();
 
         SearchUsersApiResponse::Ok(Json(SearchUsersResponse { total_count, items }))
     }
 
-    /// List GitHub users with pagination.
-    ///
-    /// Lists GitHub users using the GitHub Users API with cursor-based pagination.
-    ///
-    /// # Query Parameters
-    ///
-    /// - `since`: User ID to start listing from (optional).
-    /// - `per_page`: Number of results per page (optional, default: 30, max: 100).
-    ///
-    /// # Returns
-    ///
-    /// - `200 OK` with list of users and pagination info.
-    /// - `400 Bad Request` if parameters are invalid or an error occurs.
-    ///
-    /// # Example
-    ///
-    /// ```sh
-    /// curl "http://localhost:3000/api/users?since=1000&per_page=10"
-    /// ```
+    /// List GitHub users with cursor-based pagination
     #[oai(method = "get", path = "/users")]
     async fn list_users(
         &self,
+        /// Cursor for pagination, use the user ID from where to start listing (optional)
         OpenApiQuery(since): OpenApiQuery<Option<u64>>,
+        /// Number of users per page, maximum 100 (default: 30)
         OpenApiQuery(per_page): OpenApiQuery<Option<u32>>,
     ) -> ListUsersApiResponse {
         let per_page = per_page.unwrap_or(30).min(100);
@@ -424,7 +342,7 @@ impl Api {
         };
         let users: Vec<UserResponse> = users_json
             .iter()
-            .filter_map(parse_user_response)
+            .filter_map(|item| serde_json::from_value(item.clone()).ok())
             .collect();
         let next_since = users_json.last().and_then(|user| user["id"].as_u64());
 
@@ -434,23 +352,37 @@ impl Api {
         }))
     }
 
+    /// Get API statistics and health information
     #[oai(method = "get", path = "/stats")]
     async fn get_stats(&self) -> Json<stats::StatsResponse> {
         Json(stats::get_stats())
     }
 }
 
+/// HTTP server for the GitHub User API
 pub struct HttpServer {
-    port: u16,
+    /// Port number to bind to. Example: `3000`
+    pub port: u16,
+    
+    /// Pre-configured Poem server instance
     poem_server: Server<poem::listener::TcpListener<String>, std::convert::Infallible>,
 }
 
 impl HttpServer {
+    /// Create a new HTTP server instance
+    /// 
+    /// ```rust
+    /// use github_user_fetcher::server::{HttpServer};
+    ///
+    /// let server = HttpServer::new(3000);
+    /// assert_eq!(server.port, 3000);
+    /// ```
     pub fn new(port: u16) -> Self {
         let server = Server::new(TcpListener::bind(format!("0.0.0.0:{port}")));
         Self { port: port, poem_server: server }
     }
 
+    /// Start the HTTP server with GitHub API adapter
     pub fn run(self, github_api_adapter: HttpAdapter) -> impl std::future::Future<Output = std::result::Result<(), std::io::Error>> {
         let adapter = Arc::new(github_api_adapter);
         let api_service = OpenApiService::new(
@@ -478,6 +410,7 @@ impl HttpServer {
     }
 }
 
+/// Test utilities for mock servers and helpers
 #[cfg(test)]
 #[path = "../../tests/utils/mod.rs"]
 mod test_utils;
@@ -487,6 +420,7 @@ mod tests {
     use super::*;
     use crate::adapter::{DEFAULT_API_BASE_URL};
 
+    /// Spawn a test server on specified port
     async fn spawn_server(port: u16) -> tokio::task::JoinHandle<()> {
         tokio::spawn(async move {
             let github_api_adapter = HttpAdapter::new(DEFAULT_API_BASE_URL);
@@ -494,6 +428,7 @@ mod tests {
         })
     }
 
+    /// Test server binding to different ports
     #[tokio::test]
     async fn test_listen_success_on_ports() {
         let port1 = 3100;
@@ -509,6 +444,7 @@ mod tests {
         handle2.abort();
     }
 
+    /// Test server fails on duplicate port binding
     #[tokio::test]
     async fn test_listen_fails_on_duplicate_port() {
         let port = 3200;
@@ -523,6 +459,7 @@ mod tests {
         handle.abort();
     }
 
+    /// Test successful user fetching with mock API
     #[tokio::test] 
     async fn test_fetch_user_handler_success() {
         let mock_server = test_utils::mock_github_api::setup().await;
@@ -539,6 +476,7 @@ mod tests {
         }
     }
 
+    /// Test user creation with auto-incrementing IDs
     #[tokio::test]
     async fn test_create_user_with_incremental_id() {
         let mock_server = test_utils::mock_github_api::setup().await;
@@ -546,7 +484,7 @@ mod tests {
         let api = Api { github_api_adapter: adapter.clone() };
         
         // Reset counter for test consistency
-        USER_ID_COUNTER.store(1, Ordering::SeqCst);
+        USER_ID_COUNTER.store(1, Ordering::SeqCst); 
         
         let request = CreateUserRequest {
             username: "octocat".to_string(),
@@ -571,6 +509,6 @@ mod tests {
             panic!("Expected CreateUserResponse::Created but got something else")
         }
     }
-
-    // TODO: Missing tests for GET /users/search and GET /users
 }
+
+// TODO: Missing tests for GET /users/search and GET /users
