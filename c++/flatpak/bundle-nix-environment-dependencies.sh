@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Define packages - add gtkmm-specific dependencies
-INITIAL_PACKAGES=("boost" "nlohmann_json" "gtkmm4" "lerc")
+# Define packages - only what's strictly necessary
+INITIAL_PACKAGES=("boost" "nlohmann_json" "gtkmm4")
 
 TEMP_DIR=$(mktemp -d)
 FINAL_STAGE="$TEMP_DIR/final"
@@ -12,6 +12,10 @@ mkdir -p "$FINAL_STAGE/include" "$FINAL_STAGE/lib/pkgconfig" "$FINAL_STAGE/bin" 
 
 declare -A VISITED
 ALL_PACKAGES=("${INITIAL_PACKAGES[@]}")
+
+# This allows for parallel execution of commands
+MAX_JOBS=$(nproc)
+echo "🚀 Using $MAX_JOBS parallel jobs for faster processing"
 
 function resolve_nix_path() {
   nix eval --inputs-from . --raw "nixpkgs#$1" 2>/dev/null || true
@@ -24,6 +28,7 @@ function fetch_pc_files() {
     dev_path=$(resolve_nix_path "$try_pkg")
     if [[ -n "$dev_path" && -d "$dev_path/lib/pkgconfig" ]]; then
       cp -Lr "$dev_path/lib/pkgconfig/"*.pc "$PC_TEMP/" 2>/dev/null || true
+      break  # Exit after finding the first matching package
     fi
   done
 }
@@ -35,82 +40,90 @@ function parse_pc_requires() {
     | awk '{print $1}' \
     | sed 's/[><=].*//' \
     | grep -v '^$' \
-    | sort -u
-}
-
-function get_all_needed_pc_files() {
-  grep -h -E '^Requires(\.private)?\s*:' "$FINAL_STAGE/lib/pkgconfig/"*.pc 2>/dev/null \
-    | cut -d: -f2- \
-    | tr ',' '\n' \
-    | awk '{print $1}' \
-    | sed 's/[><=].*//' \
-    | grep -v '^$' \
-    | sort -u
+    | sort -u || echo ""
 }
 
 function pc_file_exists() {
   [[ -f "$FINAL_STAGE/lib/pkgconfig/$1.pc" ]] || [[ -f "$PC_TEMP/$1.pc" ]]
 }
 
-function try_fetch_and_copy_pc_file() {
-  local dep="$1"
-  if pc_file_exists "$dep"; then return 0; fi
-  fetch_pc_files "$dep"
-  if ls "$PC_TEMP/$dep.pc" > /dev/null 2>&1; then
-    echo "📦 Copied $dep.pc"
-    return 0
-  else
-    echo "❌ Still missing $dep.pc"
-    return 1
-  fi
-}
-
-# STEP 1: Fetch initial PC files
+# STEP 1: Fetch initial PC files (in parallel)
+echo "📦 Fetching initial package-config files..."
+pids=()
 for pkg in "${INITIAL_PACKAGES[@]}"; do
-  fetch_pc_files "$pkg"
-  VISITED[$pkg]=1
+  {
+    fetch_pc_files "$pkg"
+    VISITED[$pkg]=1
+  } &
+  pids+=($!)
+  
+  # Control number of parallel jobs
+  if [[ ${#pids[@]} -ge $MAX_JOBS ]]; then
+    wait "${pids[0]}"
+    pids=("${pids[@]:1}")
+  fi
 done
 
+# Wait for all background processes to finish
+wait
+
 # STEP 2: Resolve transitive dependencies recursively
+echo "🔍 Resolving transitive dependencies..."
 while true; do
   NEW_DEPS=()
-  for dep in $(parse_pc_requires); do
+  readarray -t deps < <(parse_pc_requires)
+  
+  if [[ ${#deps[@]} -eq 0 || ( ${#deps[@]} -eq 1 && -z "${deps[0]}" ) ]]; then
+    break
+  fi
+  
+  pids=()
+  for dep in "${deps[@]}"; do
     if [[ -z "${VISITED[$dep]+x}" ]]; then
       echo "📦 Discovered transitive dep: $dep"
       VISITED[$dep]=1
-      fetch_pc_files "$dep"
+      {
+        fetch_pc_files "$dep"
+      } &
+      pids+=($!)
       NEW_DEPS+=("$dep")
+      
+      # Control number of parallel jobs
+      if [[ ${#pids[@]} -ge $MAX_JOBS ]]; then
+        wait "${pids[0]}"
+        pids=("${pids[@]:1}")
+      fi
     fi
   done
+  
+  # Wait for all background processes to finish
+  wait
+  
   [[ ${#NEW_DEPS[@]} -eq 0 ]] && break
   ALL_PACKAGES+=("${NEW_DEPS[@]}")
 done
 
-# STEP 3: Copy closure
+# STEP 3: Gather paths (optimized)
+echo "📊 Gathering package paths..."
 ALL_PATHS=()
-for pkg in "${ALL_PACKAGES[@]}"; do
-  echo "📦 Resolving closure for $pkg"
-  dev_path=$(resolve_nix_path "$pkg.dev")
-  out_path=$(resolve_nix_path "$pkg.out")
 
-  [[ -n "$dev_path" ]] && mapfile -t dev_paths < <(nix path-info --recursive "$dev_path" 2>/dev/null || echo "") 
-  if [[ -n "$dev_path" && ${#dev_paths[@]} -gt 0 && -n "${dev_paths[0]}" ]]; then
-    ALL_PATHS+=("${dev_paths[@]}")
-  fi
+# Do this in a single nix operation rather than one per package
+all_pkgs_str=$(printf "nixpkgs#%s.dev nixpkgs#%s.out " "${ALL_PACKAGES[@]}" "${ALL_PACKAGES[@]}")
+mapfile -t COMBINED_PATHS < <(nix path-info --inputs-from . --recursive $all_pkgs_str 2>/dev/null | sort -u)
+
+if [[ ${#COMBINED_PATHS[@]} -gt 0 ]]; then
+  ALL_PATHS=("${COMBINED_PATHS[@]}")
+fi
+
+echo "📂 Found ${#ALL_PATHS[@]} paths to process"
+
+# STEP 4: Copy files (with parallelism)
+echo "📄 Copying files from paths..."
+process_path() {
+  local STORE_PATH="$1"
+  local temp_output="$TEMP_DIR/copy_log_$(basename "$STORE_PATH")"
   
-  [[ -n "$out_path" ]] && mapfile -t out_paths < <(nix path-info --recursive "$out_path" 2>/dev/null || echo "")
-  if [[ -n "$out_path" && ${#out_paths[@]} -gt 0 && -n "${out_paths[0]}" ]]; then
-    ALL_PATHS+=("${out_paths[@]}")
-  fi
-done
-
-readarray -t ALL_PATHS < <(printf "%s\n" "${ALL_PATHS[@]}" | sort -u)
-
-# Record all config files for later processing
-CONFIG_FILES=()
-
-for STORE_PATH in "${ALL_PATHS[@]}"; do
-  echo "📁 Copying from $STORE_PATH"
+  echo "📁 Processing $STORE_PATH" > "$temp_output"
   
   # Copy header files
   if [[ -d "$STORE_PATH/include" ]]; then
@@ -119,7 +132,7 @@ for STORE_PATH in "${ALL_PATHS[@]}"; do
   
   # Copy libraries
   if [[ -d "$STORE_PATH/lib" ]]; then
-    # Copy all shared libraries
+    # Copy shared libraries
     find "$STORE_PATH/lib" -maxdepth 1 -type f -name '*.so*' \
       ! -name 'libc.so*' \
       ! -name 'libpthread.so*' \
@@ -128,7 +141,7 @@ for STORE_PATH in "${ALL_PATHS[@]}"; do
       ! -name 'libstdc++.so*' \
       -exec cp -L --no-preserve=mode {} "$FINAL_STAGE/lib/" \; 2>/dev/null || true
     
-    # Copy symlinks as real symlinks, not resolved files
+    # Copy symlinks as real symlinks
     find "$STORE_PATH/lib" -maxdepth 1 -type l -name '*.so*' \
       ! -name 'libc.so*' \
       ! -name 'libpthread.so*' \
@@ -147,18 +160,16 @@ for STORE_PATH in "${ALL_PATHS[@]}"; do
       cp -Lr --no-preserve=mode "$STORE_PATH/lib/pkgconfig/"* "$FINAL_STAGE/lib/pkgconfig/" 2>/dev/null || true
     fi
     
-    # Handle C++ *config.h files (crucial for gtkmm)
-    # These might be in lib subdirectories like lib/gtkmm-4.0/include/
-    for config_file in $(find "$STORE_PATH/lib" -type f -name "*config.h" -o -name "*Config.h"); do
-      CONFIG_FILES+=("$config_file")
-    done
-    
-    # Copy specific library subdirectories that might contain important headers
-    for lib_subdir in $(find "$STORE_PATH/lib" -type d -name "*mm*" -o -name "*mm-*" -o -name "*sigc*"); do
-      if [[ -d "$lib_subdir/include" ]]; then
-        target_dir="$FINAL_STAGE/$(echo "$lib_subdir" | sed "s|^$STORE_PATH/||")"
-        mkdir -p "$target_dir"
-        cp -Lr --no-preserve=mode "$lib_subdir/include/"* "$target_dir/include/" 2>/dev/null || true
+    # KEY FIX: Copy C++ configuration headers from lib subdirectories
+    # Find all library subdirectories with an include folder
+    for lib_dir in $(find "$STORE_PATH/lib" -maxdepth 1 -mindepth 1 -type d); do
+      lib_name=$(basename "$lib_dir")
+      if [[ -d "$lib_dir/include" ]]; then
+        # Create the target directory
+        mkdir -p "$FINAL_STAGE/lib/$lib_name/include"
+        # Copy all files from the include directory
+        cp -Lr --no-preserve=mode "$lib_dir/include/"* "$FINAL_STAGE/lib/$lib_name/include/" 2>/dev/null || true
+        echo "✅ Copied config headers from $lib_name" >> "$temp_output"
       fi
     done
   fi
@@ -171,18 +182,30 @@ for STORE_PATH in "${ALL_PATHS[@]}"; do
   if [[ -d "$STORE_PATH/share" ]]; then
     cp -LR --no-preserve=mode "$STORE_PATH/share/"* "$FINAL_STAGE/share/" 2>/dev/null || true
   fi
+}
+
+# Process paths in parallel
+pids=()
+for STORE_PATH in "${ALL_PATHS[@]}"; do
+  process_path "$STORE_PATH" &
+  pids+=($!)
+  
+  # Control number of parallel jobs
+  if [[ ${#pids[@]} -ge $MAX_JOBS ]]; then
+    wait "${pids[0]}"
+    pids=("${pids[@]:1}")
+  fi
 done
 
-# Process config files to ensure they are available in the standard include path
-for config_file in "${CONFIG_FILES[@]}"; do
-  filename=$(basename "$config_file")
-  echo "🔧 Processing config file: $filename"
-  cp -L --no-preserve=mode "$config_file" "$FINAL_STAGE/include/" 2>/dev/null || true
-done
+# Wait for all background processes to finish
+wait
 
-# STEP 4: Patch all pkg-config files on /lib
-for pc_file in "$FINAL_STAGE/lib/pkgconfig/"*.pc; do
-  [ -f "$pc_file" ] || continue
+# STEP 5: Patch pkg-config files (in parallel)
+echo "🔧 Patching pkg-config files..."
+patch_pc_file() {
+  local pc_file="$1"
+  [ -f "$pc_file" ] || return
+  
   # If prefix is present, replace it; if not, add it to the top
   if grep -q '^prefix=' "$pc_file"; then
     sed -i 's|^prefix=.*|prefix=/app|' "$pc_file"
@@ -206,43 +229,29 @@ for pc_file in "$FINAL_STAGE/lib/pkgconfig/"*.pc; do
 
   # Remove problematic dependencies
   sed -i '/sysprof-capture-4/d' "$pc_file"
+}
+
+# Patch lib and share pkgconfig files in parallel
+find "$FINAL_STAGE/lib/pkgconfig" "$FINAL_STAGE/share/pkgconfig" -name "*.pc" 2>/dev/null | \
+while read -r pc_file; do
+  patch_pc_file "$pc_file" &
+  
+  # Control number of parallel jobs
+  current_jobs=$(jobs -p | wc -l)
+  if [[ $current_jobs -ge $MAX_JOBS ]]; then
+    wait -n
+  fi
 done
 
-# STEP 4: Patch all pkg-config files on /share
-for pc_file in "$FINAL_STAGE/share/pkgconfig/"*.pc; do
-  [ -f "$pc_file" ] || continue
-  # If prefix is present, replace it; if not, add it to the top
-  if grep -q '^prefix=' "$pc_file"; then
-    sed -i 's|^prefix=.*|prefix=/app|' "$pc_file"
-  else
-    sed -i '1i prefix=/app' "$pc_file"
-  fi
+# Wait for all background patch jobs to finish
+wait
 
-  # Set libdir
-  if grep -q '^libdir=' "$pc_file"; then
-    sed -i 's|^libdir=.*|libdir=/app/lib|' "$pc_file"
-  else
-    sed -i '2i libdir=/app/lib' "$pc_file"
-  fi
+# Print summary
+echo "📋 Library directories found:"
+find "$FINAL_STAGE/lib" -type d -name "include" | sort
 
-  # Set includedir
-  if grep -q '^includedir=' "$pc_file"; then
-    sed -i 's|^includedir=.*|includedir=/app/include|' "$pc_file"
-  else
-    sed -i '3i includedir=/app/include' "$pc_file"
-  fi
-
-  # Remove problematic dependencies
-  sed -i '/sysprof-capture-4/d' "$pc_file"
-done
-
-# Print library directory contents for verification
-echo "📋 Contents of $FINAL_STAGE/lib:"
-ls -la "$FINAL_STAGE/lib" | grep -v "total"
-
-# Print config files found
-echo "📋 Config files in include directory:"
-find "$FINAL_STAGE/include" -name "*config.h" -o -name "*Config.h"
+echo "📋 Configuration headers found:"
+find "$FINAL_STAGE/lib" -path "*/include/*config.h" | sort
 
 # Clean up empty directories
 find "$FINAL_STAGE" -type d -empty -delete

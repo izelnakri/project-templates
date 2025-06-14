@@ -61,7 +61,7 @@ let
     ${setupGitHooks}
     
     # Enter the shell
-    exec zsh
+    exec zsh # TODO: maybe source it?
   '';
 
   # Grouped package lists for better organization
@@ -79,6 +79,7 @@ let
     flatpak-builder
     doxygen
     graphviz
+    lerc # needed for flatpak?
   ];
   
   shellTools = with pkgs; [

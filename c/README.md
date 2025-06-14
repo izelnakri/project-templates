@@ -163,7 +163,7 @@ make install
 - **Run static analysis tools (e.g., `clang-tidy`, `cppcheck`, `flawfinder`):**
 
   ```bash
-  make lint
+  make lint # clang-tidy is a very slow but comprehensive linter in C++
   ```
 
   - To run specific tools like `cppcheck` or `flawfinder`, use:
@@ -204,4 +204,3 @@ This will generate the documentation and attempt to open it in **Brave**.
 ---
 
 For further details, consult the [official documentation](https://izelnakri.github.io/project-templates/c) or refer to the [project repository](https://github.com/izelnakri/project-templates).
-```

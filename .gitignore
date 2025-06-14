@@ -15,4 +15,7 @@ c++/docs/html
 rust/flatpak/build
 rust/flatpak/nix-deps.tar.gz
 rust/target
-rust/docs/html
+rust/docs/target
+
+content-provider-dbus-example/target
+content-provider-dbus-example/docs/target

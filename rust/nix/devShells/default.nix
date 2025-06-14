@@ -73,6 +73,7 @@ let
     kcachegrind
     gdb
     flatpak-builder
+    gnuplot # for benchmark plots
   ];
   
   shellTools = with pkgs; [

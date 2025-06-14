@@ -483,8 +483,7 @@ mod tests {
         let adapter = Arc::new(HttpAdapter::new(mock_server.uri()));
         let api = Api { github_api_adapter: adapter.clone() };
         
-        // Reset counter for test consistency
-        USER_ID_COUNTER.store(1, Ordering::SeqCst); 
+        USER_ID_COUNTER.store(1, Ordering::SeqCst);  // Reset counter for test consistency
         
         let request = CreateUserRequest {
             username: "octocat".to_string(),
