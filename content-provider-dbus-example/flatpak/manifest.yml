@@ -1,0 +1,32 @@
+app-id: org.example.ContentProvider
+runtime: org.freedesktop.Platform
+runtime-version: '23.08'
+sdk: org.freedesktop.Sdk
+sdk-extensions:
+  - org.freedesktop.Sdk.Extension.rust-stable
+command: content_provider
+finish-args:
+  - --talk-name=org.freedesktop.portal.Clipboard
+  - --talk-name=org.freedesktop.portal.Contacts
+  - --filesystem=xdg-documents
+  - --own-name=org.example.ContentProvider
+  - --env=RUST_BACKTRACE=1
+  - --env=RUST_LOG=debug
+  - --env=DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+  - --share=network
+
+modules:
+  - name: content_provider
+    buildsystem: simple
+    build-commands:
+      - PATH=/usr/lib/sdk/rust-stable/bin:$PATH cargo build --release
+      - install -Dm755 target/release/content_provider /app/bin/content_provider
+    build-options:
+      # This is the key to get extensions loaded for build
+      build-args:
+        - --share=network
+      # env:
+      #   PATH: /usr/lib/sdk/rust-stable/bin:${PATH}
+    sources:
+      - type: dir
+        path: ..

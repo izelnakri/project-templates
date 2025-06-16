@@ -1,0 +1,31 @@
+[package]
+name = "content_provider"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "content_provider"
+path = "src/main.rs"
+
+[[bin]]
+name = "content_provider_zbus"
+path = "src/zbus.rs"
+
+[[bin]]
+name = "zbus_object_server_example"
+path = "src/object_server_example.rs"
+
+[dependencies]
+zbus = "5.7.1"
+zbus_macros = "5.7.1"
+tokio = { version = "1", features = ["full"] }
+once_cell = "1"
+directories = "6"
+uuid = "1.17.0"
+event-listener = "5" # for example.rs
+
+[dev-dependencies]
+zbus = "5"
+tokio = { version = "1", features = ["full"] }
+uuid = { version = "1", features = ["v4"] }
+serial_test = "3"
