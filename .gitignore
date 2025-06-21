@@ -18,6 +18,7 @@ rust/target
 rust/docs/target
 
 rust_nvim_rpc_client/target
+rust_sound_recorder/target
 
 content-provider-dbus-example/target
 content-provider-dbus-example/docs/target
