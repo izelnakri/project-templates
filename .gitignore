@@ -17,5 +17,9 @@ rust/flatpak/nix-deps.tar.gz
 rust/target
 rust/docs/target
 
+rust_nvim_rpc_client/target
+
 content-provider-dbus-example/target
 content-provider-dbus-example/docs/target
+
+typescript/node_modules

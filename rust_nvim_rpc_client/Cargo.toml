@@ -1,0 +1,8 @@
+[package]
+name = "nvim_rpc_client"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+nvim-rs = { version = "0.9.2", features = ["use_tokio"] }
+tokio = { version = "1", features = ["full"] }
