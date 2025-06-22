@@ -3,8 +3,18 @@ name = "rust_sound_recorder"
 version = "0.1.0"
 edition = "2024"
 
+[[bin]]
+name = "rust_sound_recorder"
+path = "src/main.rs"
+
+[[bin]]
+name = "rust_video_and_sound_recorder"
+path = "src/video_capture_example.rs"
+
+# TODO: update these packages version
 [dependencies]
 anyhow = "1.0.98"
 cpal = "0.15"
 hound = "3.5"
 tokio = { version = "1", features = ["full"] }
+v4l = "0.14" # TODO: added for video

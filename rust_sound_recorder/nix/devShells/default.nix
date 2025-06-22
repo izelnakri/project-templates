@@ -97,10 +97,16 @@ pkgs.mkShell rec {
     pkgs.clippy
     pkgs.pkg-config
     pkgs.openssl
+    pkgs.linuxHeaders # needed for the v4l crate
+    pkgs.llvmPackages.libclang # needed for the v4l crate
+    pkgs.libv4l # needed for the v4l crate
+    pkgs.glibc.dev # needed for the v4l crate
   ];
 
   # PKG_CONFIG_PATH = getAllPkgConfigPaths pkgs (inputsFrom ++ buildInputs ++ nativeBuildInputs);
   PKG_CONFIG_PATH = getAllPkgConfigPaths pkgs (buildInputs ++ nativeBuildInputs);
+  LIBCLANG_PATH="${pkgs.llvmPackages.libclang.lib}/lib";
+  BINDGEN_EXTRA_CLANG_ARGS="-I${pkgs.linuxHeaders}/include -I${pkgs.glibc.dev}/include";
 
   shellHook = with pkgs; ''
     set -eo pipefail;

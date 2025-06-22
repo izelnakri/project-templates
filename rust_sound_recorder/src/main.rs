@@ -4,7 +4,6 @@ use std::{
     sync::{Arc, atomic::{AtomicBool, Ordering}},
     time::Duration,
 };
-
 use cpal::traits::{DeviceTrait, HostTrait, StreamTrait};
 use hound;
 use tokio::time::sleep;
@@ -14,13 +13,10 @@ async fn main() -> anyhow::Result<()> {
     let duration = Duration::from_secs(5);
 
     std::fs::create_dir_all("samples")?;
+
     let path = "samples/izel.wav";
-
-    // CPAL Setup
-    let host = cpal::default_host();
-    let device = host.default_input_device().expect("No input device available");
+    let device = cpal::default_host().default_input_device().expect("No input device available");
     let config = device.default_input_config()?;
-
     let sample_rate = config.sample_rate().0;
     let channels = config.channels();
 
@@ -33,14 +29,12 @@ async fn main() -> anyhow::Result<()> {
         duration.as_secs()
     );
 
-    let spec = hound::WavSpec {
+    let writer = hound::WavWriter::create(path, hound::WavSpec {
         channels,
         sample_rate,
         bits_per_sample: 32,
         sample_format: hound::SampleFormat::Float,
-    };
-
-    let writer = hound::WavWriter::create(path, spec)?;
+    })?;
     let writer = Arc::new(std::sync::Mutex::new(Some(writer)));
     let stop_flag = Arc::new(AtomicBool::new(false));
 
@@ -70,8 +64,10 @@ async fn main() -> anyhow::Result<()> {
     };
 
     stream.play()?;
+
     sleep(duration).await;
-    stop_flag.store(true, Ordering::Relaxed);
+
+    stop_flag.store(true, Ordering::Relaxed); // stop_flag, stream_pause, writer_finalize
     stream.pause()?;
 
     let mut writer_guard = writer.lock().unwrap();
