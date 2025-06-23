@@ -18,9 +18,13 @@ rust/target
 rust/docs/target
 
 rust_nvim_rpc_client/target
+
 rust_sound_recorder/target
+rust_sound_recorder/samples
 
 content-provider-dbus-example/target
 content-provider-dbus-example/docs/target
 
 typescript/node_modules
+
+zsh_module_example/target

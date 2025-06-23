@@ -4,17 +4,21 @@ version = "0.1.0"
 edition = "2024"
 
 [[bin]]
-name = "rust_sound_recorder"
+name = "voice"
 path = "src/main.rs"
 
 [[bin]]
-name = "rust_video_and_sound_recorder"
-path = "src/video_capture_example.rs"
+name = "record"
+path = "src/record.rs"
 
-# TODO: update these packages version
+[[bin]]
+name = "record-video"
+path = "src/record-video.rs"
+
 [dependencies]
 anyhow = "1.0.98"
-cpal = "0.15"
+cpal = "0.16"
 hound = "3.5"
 tokio = { version = "1", features = ["full"] }
-v4l = "0.14" # TODO: added for video
+v4l = "0.14"
+bytemuck = "1.13" # NOTE: for streaming, check latest version
