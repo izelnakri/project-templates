@@ -1,9 +1,25 @@
 [project]
-name = "hello-uv"
+name = "github_user_fetcher"
 version = "0.1.0"
-description = "A Hello World example using uv"
-requires-python = ">=3.8"
-dependencies = []
+description = "GitHub user fetcher in FastAPI" 
+requires-python = ">=3.12"
+dependencies = [
+  "fastapi",
+  "uvicorn[standard]",
+  "httpx",
+  "pydantic"
+]
 
 [project.optional-dependencies]
-dev = ["black", "pytest"]
+dev = [
+  "pytest",
+  "black",
+  "ruff",
+  "respx",
+]
+
+[project.scripts]
+cli = "github_user_fetcher.cli:main"
+server = "github_user_fetcher.server:app"
+gui = "github_user_fetcher.gui:main"
+

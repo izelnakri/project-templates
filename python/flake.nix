@@ -1,5 +1,5 @@
 {
-  description = "Hello World Python app with uv";
+  description = "Python project template with uv";
 
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
@@ -13,7 +13,12 @@
         python = pkgs.python312Full;
       in {
         devShells.default = pkgs.mkShell {
-          buildInputs = [ python pkgs.uv ];
+          buildInputs = [
+            python
+            pkgs.uv
+            pkgs.pkg-config
+          ];
+
           shellHook = ''
             echo "🐍 Python: $(python3 --version)"
             echo "⚡ uv: $(uv --version)"
